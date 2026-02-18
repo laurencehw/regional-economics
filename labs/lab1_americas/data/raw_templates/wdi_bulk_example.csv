@@ -1,0 +1,19 @@
+Country Name,Country Code,Indicator Name,Indicator Code,2023,2024
+Country A,R01,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,1.8,2.1
+Country A,R01,GDP per capita (constant 2015 US$),NY.GDP.PCAP.KD,9800,10050
+Country A,R01,Manufacturing value added (% of GDP),NV.IND.MANF.ZS,21.0,20.5
+Country B,R02,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,2.4,2.6
+Country B,R02,GDP per capita (constant 2015 US$),NY.GDP.PCAP.KD,8900,9150
+Country B,R02,Manufacturing value added (% of GDP),NV.IND.MANF.ZS,18.2,18.9
+Country C,R03,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,1.2,1.5
+Country C,R03,GDP per capita (constant 2015 US$),NY.GDP.PCAP.KD,7600,7800
+Country C,R03,Manufacturing value added (% of GDP),NV.IND.MANF.ZS,15.6,15.9
+Country D,R04,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,2.0,2.3
+Country D,R04,GDP per capita (constant 2015 US$),NY.GDP.PCAP.KD,10200,10400
+Country D,R04,Manufacturing value added (% of GDP),NV.IND.MANF.ZS,22.5,22.1
+Country E,R05,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,1.6,1.9
+Country E,R05,GDP per capita (constant 2015 US$),NY.GDP.PCAP.KD,8400,8600
+Country E,R05,Manufacturing value added (% of GDP),NV.IND.MANF.ZS,16.8,17.2
+Country F,R06,GDP growth (annual %),NY.GDP.MKTP.KD.ZG,2.3,2.8
+Country F,R06,GDP per capita (constant 2015 US$),NY.GDP.PCAP.KD,9300,9650
+Country F,R06,Manufacturing value added (% of GDP),NV.IND.MANF.ZS,19.1,19.7

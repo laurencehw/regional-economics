@@ -1,0 +1,2 @@
+libpysal>=4.10
+spreg>=1.4

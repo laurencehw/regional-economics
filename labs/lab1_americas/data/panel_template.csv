@@ -1,0 +1,3 @@
+region,year,gdp_growth,log_gdp_pc,manufacturing_share,border_delay_index
+R01,2024,0.0,10.0,0.25,0.30
+R02,2024,0.0,10.1,0.27,0.35

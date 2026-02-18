@@ -1,0 +1,13 @@
+{
+  "panel_rows": 12,
+  "panel_regions": 6,
+  "panel_years": [
+    2023,
+    2024
+  ],
+  "trade_rows": 2,
+  "trade_years": [
+    2024
+  ],
+  "missing_border_delay_share": 0.5
+}

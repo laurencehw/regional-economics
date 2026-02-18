@@ -1,0 +1,3 @@
+origin,destination,trade_value
+R01,R02,100
+R02,R01,95
