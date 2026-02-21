@@ -27,5 +27,5 @@ Working repository for drafting and replication assets for *The New Regional Eco
 
 ## Immediate Priorities
 1. Acquire WIOD/TiVA (with ADB MRIO/OECD TiVA fallback review) and Eurostat NUTS-2, then register metadata in `docs/data_inventory.md`.
-2. Open ACLED licensing/access workflow and prototype a broader Lab 1 friction proxy (World Bank LPI) beyond USA/CAN/MEX coverage.
+2. Open ACLED licensing/access workflow and run the broader Lab 1 friction proxy comparison (World Bank LPI blend vs BTS-only) beyond USA/CAN/MEX coverage.
 3. Prepare early classroom pilot package for Labs 1 and 5 (cloud-first execution path + interpretation notes).

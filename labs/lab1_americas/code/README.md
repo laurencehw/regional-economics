@@ -5,6 +5,8 @@
 - `prepare_lab1_inputs.py` (maps raw WDI/Comtrade/BTS to canonical files)
 - `lab1_americas_sar_scaffold.py` (estimates SAR on canonical files)
 - `run_real_americas_specs.py` (runs multi-spec robustness comparisons on real-Americas inputs)
+- `../../../scripts/fetch_wdi_lpi_americas.py` (pulls LPI indicator for broad Americas friction coverage)
+- `../../../scripts/derive_lab1_lpi_border_proxy.py` (builds LPI-based border friction proxy; optionally blends BTS)
 
 ## Quick Start
 1. Install base dependencies:
@@ -23,11 +25,14 @@
    `python ../../../scripts/build_lab1_americas_real_raw.py --year 2024 --batch-size 8 --date-stamp 2026-02-20`
 2. Build BTS border proxy:
    `python ../../../scripts/derive_lab1_bts_border_proxy.py --input-csv ../../../data/raw/bts/bts_border_crossings_keg4_3bc2_2018_2026-02-20.csv --output-csv ../../../data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv`
-3. Map to canonical files:
-   `python prepare_lab1_inputs.py --wdi-input ../../../data/raw/wdi/wdi_americas_core_long_2026-02-20.csv --comtrade-input ../../../data/raw/comtrade/comtrade_americas_total_x_2024_2026-02-20.csv --bts-input ../../../data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv --mappings ../data/source_mappings_americas_real.json --output-dir ../data/real_americas --year 2024`
-4. Run real-sample SAR gate:
+3. Build broader LPI border proxy (and optionally blend BTS coverage):
+   `python ../../../scripts/fetch_wdi_lpi_americas.py --output-csv ../../../data/raw/wdi/wdi_lpi_americas_long_2026-02-21.csv`
+   `python ../../../scripts/derive_lab1_lpi_border_proxy.py --input-csv ../../../data/raw/wdi/wdi_lpi_americas_long_2026-02-21.csv --bts-input-csv ../../../data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv --start-year 2018 --end-year 2025 --output-csv ../../../data/processed/lab1/border_delay_proxy_americas_lpi_blend_2018_2025_2026-02-21.csv`
+4. Map to canonical files:
+   `python prepare_lab1_inputs.py --wdi-input ../../../data/raw/wdi/wdi_americas_core_long_2026-02-20.csv --comtrade-input ../../../data/raw/comtrade/comtrade_americas_total_x_2024_2026-02-20.csv --bts-input ../../../data/processed/lab1/border_delay_proxy_americas_lpi_blend_2018_2025_2026-02-21.csv --mappings ../data/source_mappings_americas_real.json --output-dir ../data/real_americas --year 2024`
+5. Run real-sample SAR gate:
    `python lab1_americas_sar_scaffold.py --panel ../data/real_americas/panel_mapped.csv --trade ../data/real_americas/trade_mapped.csv --year 2024 --y-col gdp_growth --x-cols log_gdp_pc,manufacturing_share --output-dir ../output/real_americas_2024`
-5. Run robustness spec bundle:
+6. Run robustness spec bundle:
    `python run_real_americas_specs.py --panel ../data/real_americas/panel_mapped.csv --trade ../data/real_americas/trade_mapped.csv --year 2024 --output-dir ../output/real_americas_2024/specs`
 
 ## Canonical Input Schemas

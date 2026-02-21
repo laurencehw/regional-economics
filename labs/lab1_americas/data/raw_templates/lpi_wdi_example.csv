@@ -1,0 +1,9 @@
+country_iso3,country_name,indicator_code,indicator_name,year,value,fetched_at_utc
+USA,United States,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,3.89,2026-02-21T00:00:00+00:00
+USA,United States,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2023,4.01,2026-02-21T00:00:00+00:00
+CAN,Canada,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,3.73,2026-02-21T00:00:00+00:00
+CAN,Canada,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2023,3.88,2026-02-21T00:00:00+00:00
+MEX,Mexico,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,3.05,2026-02-21T00:00:00+00:00
+MEX,Mexico,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2023,3.20,2026-02-21T00:00:00+00:00
+BRA,Brazil,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.99,2026-02-21T00:00:00+00:00
+BRA,Brazil,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2023,3.16,2026-02-21T00:00:00+00:00

@@ -50,3 +50,4 @@ How much of a region's GDP growth is explained by neighbor growth transmitted th
 - Robustness bundle outputs: `output/real_americas_2024/specs/spec_results.csv` and `output/real_americas_2024/specs/spec_results.md`.
 - Narrative gate note: `output/real_americas_2024/real_gate_summary.md`.
 - Current interpretation: near-zero unconditional `rho` is treated as a feature motivating institutional interaction terms, not as a failed baseline.
+- LPI-based broad friction proxy workflow is now available via `scripts/fetch_wdi_lpi_americas.py` and `scripts/derive_lab1_lpi_border_proxy.py`.
