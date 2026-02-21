@@ -244,9 +244,9 @@ def main() -> None:
         output_md=output_dir / "spec_results.md",
     )
 
-    print(f"Wrote spec results: {(output_dir / 'spec_results.csv').resolve()}")
-    print(f"Wrote markdown summary: {(output_dir / 'spec_results.md').resolve()}")
-    print(f"Wrote input coverage: {(output_dir / 'input_coverage.json').resolve()}")
+    print(f"Wrote spec results: {output_dir / 'spec_results.csv'}")
+    print(f"Wrote markdown summary: {output_dir / 'spec_results.md'}")
+    print(f"Wrote input coverage: {output_dir / 'input_coverage.json'}")
 
 
 if __name__ == "__main__":

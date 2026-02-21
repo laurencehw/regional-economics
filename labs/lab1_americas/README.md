@@ -49,3 +49,4 @@ How much of a region's GDP growth is explained by neighbor growth transmitted th
 - Current gate used 2024 cross-section with `x-cols=log_gdp_pc,manufacturing_share` (border proxy coverage is currently limited to USA/CAN/MEX).
 - Robustness bundle outputs: `output/real_americas_2024/specs/spec_results.csv` and `output/real_americas_2024/specs/spec_results.md`.
 - Narrative gate note: `output/real_americas_2024/real_gate_summary.md`.
+- Current interpretation: near-zero unconditional `rho` is treated as a feature motivating institutional interaction terms, not as a failed baseline.

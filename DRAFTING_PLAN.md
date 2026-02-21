@@ -15,10 +15,12 @@ This plan organizes the writing process into phases. Each phase produces a self-
 | # | Task | Notes |
 |---|---|---|
 | 0.1 | **Finalize the outline and chapter specifications** | Write a 1–2 page "chapter spec" for each of the 15 chapters: thesis statement, 3–5 key arguments, target length (word count), required datasets, and 2–3 anchor references. |
-| 0.2 | **Build the replication repository** | Create a GitHub repo with folder structure for each Applied Lab. Set up R and Python environments (Docker or `renv`/`conda`). Confirm access to all datasets (WIOD, VIIRS, NUTS-2, WDI, Afrobarometer). |
+| 0.2 | **Build the replication repository** | Create a GitHub repo with folder structure for each Applied Lab. Set up R and Python environments (Docker or `renv`/`conda`) and add zero-install cloud execution targets (Colab/Codespaces) for student onboarding. Confirm access to all datasets (WIOD, VIIRS, NUTS-2, WDI, Afrobarometer). |
 | 0.3 | **Draft Appendix B (Data & Software Guide)** | Writing this early forces resolution of all data-access and tooling decisions before chapter drafting begins. |
 | 0.4 | **Secure "Institutional Spotlight" contacts** | Identify and begin outreach for 8–12 interview subjects across regions (policy-makers, trade negotiators, regional development officials). |
 | 0.5 | **Commission GIS base maps** | Engage a cartographer or GIS specialist to produce the base map layers (administrative boundaries, trade corridors, night-lights composites) that will be populated with chapter-specific data throughout drafting. |
+| 0.6 | **Create dataset fallback matrix** | For each lab, document primary and backup data sources (e.g., WIOD with ADB MRIO/OECD TiVA backups) plus update cadence and known deprecation risk. |
+| 0.7 | **Adopt data storage policy** | Enforce a split between in-repo fixtures and external full-size datasets before Labs 2-5 scale up. |
 
 ---
 
@@ -32,12 +34,13 @@ This plan organizes the writing process into phases. Each phase produces a self-
 |---|---|
 | **Ch. 1: Micro-Foundations of Space** | Draft as a self-contained survey. Use as a "test chapter" for tone, notation, and pedagogical style. Circulate for early feedback. |
 | **Ch. 2: Evolutionary & Institutional Frameworks** | Draft in parallel with Ch. 1. The two chapters establish the "two lenses" (spatial economics + institutional economics) that structure every regional chapter. |
-| **Ch. 3: The Modern Spatial Toolkit** | Draft after Chs. 1–2 are stable, since it operationalizes their concepts. Build the first code notebooks (SAR, SEM, SDM estimation) alongside the prose — the text and the code should co-evolve. |
+| **Ch. 3: The Modern Spatial Toolkit** | Draft after Chs. 1–2 are stable, since it operationalizes their concepts. Build the first code notebooks (SAR, SEM, SDM estimation) alongside the prose — the text and the code should co-evolve. Add explicit intuition for spatial counterfactuals and boundary discontinuities to bridge into Labs 3 and 4. |
 
 ### Review Gate
 
 - Internal review of Part I.
 - Pilot-test Ch. 3 code notebooks with a small group of graduate students.
+- Validate "Methods Mini-Primer" inserts for Ch. 8 (Spatial RDD) and Ch. 11 (SCM/event-study) before those chapters enter drafting.
 - Revise before proceeding to regional parts.
 
 ---
@@ -51,8 +54,8 @@ This plan organizes the writing process into phases. Each phase produces a self-
 | Wave | Chapters | Rationale |
 |---|---|---|
 | **Wave A** | Part II (Americas): Chs. 4–5 + Lab 1 | Most developed in the existing outlines. Strong anchor material on USMCA, CHIPS Act, and the Middle-Income Trap. Draft first to establish the "regional chapter template." |
-| **Wave B** | Part VI (Africa): Chs. 12–13 + Lab 5 | Second-most developed outline. Night-lights lab is a strong pedagogical hook. Drafting Africa early also ensures it is not an afterthought — consistent with the book's ethos of treating all regions with equal analytical seriousness. |
-| **Wave C** | Part III (Asia): Chs. 6–7 + Lab 2 | Requires WIOD data pipeline (set up in Phase 0). Flying Geese and China divergence material is well-established in the literature. |
+| **Wave B** | Part VI (Africa): Chs. 12–13 + Lab 5 | Second-most developed outline. Night-lights lab is a strong pedagogical hook and nowcasting bridge to modern GDP measurement. Drafting Africa early also ensures it is not an afterthought — consistent with the book's ethos of treating all regions with equal analytical seriousness. |
+| **Wave C** | Part III (Asia): Chs. 6–7 + Lab 2 | Requires MRIO data pipeline (set up in Phase 0): WIOD primary, with ADB MRIO and OECD TiVA as active backups to reduce currency risk. |
 | **Wave D** | Part IV (Europe): Chs. 8–9 + Lab 3 | Spatial RDD lab requires NUTS-2 data and careful econometric exposition. Benefits from having the SAR/SDM code from Lab 1 already tested. |
 | **Wave E** | Part V (MENA): Chs. 10–11 + Lab 4 | Synthetic Control Method lab is methodologically self-contained. MENA chapters require the most original synthesis due to relative data scarcity and institutional complexity. |
 
@@ -65,10 +68,11 @@ For each wave:
 3. **Lab development** — Build the Applied Lab notebook (code + data + instructions) in parallel with the prose.
 4. **Pedagogical features** — Draft "Data in Depth" boxes, "Institutional Spotlight" sidebars, comparative maps, and end-of-chapter questions.
 5. **Internal review** — Cross-check against Part I for consistency of terminology, notation, and analytical framework.
+6. **Cloud execution check** — Ensure each lab runs in at least one zero-install environment (Colab or Codespaces) before wave sign-off.
 
 ### Review Gate
 
-- After Waves A and B: full internal review. These two sections serve as the "template" — all subsequent regional chapters should match their structure, depth, and tone.
+- After Waves A and B: full internal review plus classroom pilot of Labs 1 and 5 to de-risk methods difficulty and setup friction before Waves C-E.
 - After all five waves: external review of all regional parts by 2–3 area-studies specialists per region.
 
 ---
@@ -109,7 +113,7 @@ For each wave:
 | # | Task |
 |---|---|
 | 5.1 | **External peer review** — Send full manuscript to 3–5 reviewers spanning spatial economics, development economics, and economic geography. |
-| 5.2 | **Classroom pilot** — Use selected chapters (ideally Parts I, II, and VI) in a graduate seminar. Collect student feedback on clarity, difficulty level, and lab usability. |
+| 5.2 | **Late-stage classroom validation** — Re-test revised chapters/labs after full-draft integration to confirm edits from the early pilot and external review. |
 | 5.3 | **Revision round** — Incorporate reviewer and classroom feedback. |
 | 5.4 | **Final manuscript submission** |
 

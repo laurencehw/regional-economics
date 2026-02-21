@@ -2,7 +2,7 @@
 
 This script reads COMTRADE_API_KEY from either:
 1. Environment variable (default: COMTRADE_API_KEY), or
-2. A Claude settings JSON file at C:/Users/lwils/.claude/settings.json.
+2. A Claude settings JSON file at ~/.claude/settings.json.
 
 Outputs a CSV suitable for `prepare_lab1_inputs.py` under the Comtrade mapping.
 """
@@ -19,7 +19,7 @@ import pandas as pd
 import requests
 
 
-DEFAULT_SETTINGS_PATH = r"C:\Users\lwils\.claude\settings.json"
+DEFAULT_SETTINGS_PATH = str(Path.home() / ".claude" / "settings.json")
 BASE_URL_TEMPLATE = "https://comtradeapi.un.org/data/v1/get/{type_code}/{freq_code}/{classification}"
 
 
@@ -199,8 +199,8 @@ def main() -> None:
             f"Warning: API reports count={total_count} but returned {len(data_rows)} rows. "
             "Increase maxRecords and/or add pagination support."
         )
-    print(f"CSV: {output_csv.resolve()}")
-    print(f"JSON: {output_json.resolve()}")
+    print(f"CSV: {output_csv}")
+    print(f"JSON: {output_json}")
 
 
 if __name__ == "__main__":

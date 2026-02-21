@@ -3,3 +3,9 @@ w27850.pdf
 
 __pycache__/
 *.pyc
+.pytest_cache/
+.venv/
+.tmp/
+
+data/external/
+data/staging/

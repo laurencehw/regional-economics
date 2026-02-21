@@ -24,6 +24,7 @@
 - Raw USMCA-border spec: skipped (`n=1`)
 
 ## Interpretation Notes
-- Spillover parameter is currently near zero across tested specifications.
+- Near-zero unconditional `rho` is an informative result, not a failure: average spillovers appear weak when countries are pooled without institutional interactions.
+- This motivates the next model tier: interact spatial exposure with institutional quality/friction terms to test conditional spillovers rather than forcing a global average effect.
 - Border proxy is not yet suitable for full-Americas specification without imputation.
-- Next improvement should prioritize a broader friction proxy with coverage beyond USA/CAN/MEX.
+- Next improvement should prioritize a broader friction proxy (for example, World Bank LPI-based measures) with coverage beyond USA/CAN/MEX.

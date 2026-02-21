@@ -284,7 +284,7 @@ def main() -> None:
     with (output_dir / "model_summary.json").open("w", encoding="utf-8") as fp:
         json.dump(summary, fp, indent=2)
 
-    print(f"Wrote outputs to: {output_dir.resolve()}")
+    print(f"Wrote outputs to: {output_dir}")
     print(f"Estimation method: {summary['method']}")
 
 

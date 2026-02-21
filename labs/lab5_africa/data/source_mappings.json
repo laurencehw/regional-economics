@@ -1,0 +1,17 @@
+{
+  "viirs": {
+    "region_col": "iso3",
+    "year_col": "year",
+    "radiance_col": "avg_radiance"
+  },
+  "afrobarometer": {
+    "region_col": "iso3",
+    "year_col": "year",
+    "governance_col": "trust_local_gov"
+  },
+  "adjacency": {
+    "region_col": "iso3",
+    "neighbor_col": "neighbor_iso3",
+    "weight_col": "shared_border_km"
+  }
+}

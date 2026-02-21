@@ -26,6 +26,6 @@ Working repository for drafting and replication assets for *The New Regional Eco
 5. Keep methods, notation, and variable naming consistent with Part I.
 
 ## Immediate Priorities
-1. Complete Chapter 1-3 specs with concrete thesis/argument/data decisions.
-2. Stand up Lab 1 and Lab 5 minimum reproducible notebooks.
-3. Resolve access and licensing for WIOD, VIIRS, NUTS-2, ACLED, and Afrobarometer.
+1. Acquire WIOD/TiVA (with ADB MRIO/OECD TiVA fallback review) and Eurostat NUTS-2, then register metadata in `docs/data_inventory.md`.
+2. Open ACLED licensing/access workflow and prototype a broader Lab 1 friction proxy (World Bank LPI) beyond USA/CAN/MEX coverage.
+3. Prepare early classroom pilot package for Labs 1 and 5 (cloud-first execution path + interpretation notes).

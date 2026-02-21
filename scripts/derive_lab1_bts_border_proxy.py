@@ -131,7 +131,7 @@ def main() -> None:
     out.to_csv(output_path, index=False)
 
     print(f"Rows written: {len(out)}")
-    print(f"Output: {output_path.resolve()}")
+    print(f"Output: {output_path}")
 
 
 if __name__ == "__main__":

@@ -23,7 +23,7 @@ import requests
 WB_COUNTRY_URL = "https://api.worldbank.org/v2/country"
 WB_INDICATOR_URL = "https://api.worldbank.org/v2/country/all/indicator/{indicator}"
 COMTRADE_URL = "https://comtradeapi.un.org/data/v1/get/C/A/HS"
-DEFAULT_SETTINGS_PATH = r"C:\Users\lwils\.claude\settings.json"
+DEFAULT_SETTINGS_PATH = str(Path.home() / ".claude" / "settings.json")
 
 
 def parse_args() -> argparse.Namespace:
@@ -349,10 +349,10 @@ def main() -> None:
     print(f"Reporter code count: {len(reporter_codes)}")
     print(f"WDI rows: {len(wdi)}")
     print(f"Comtrade rows: {len(comtrade)}")
-    print(f"Code map: {map_path.resolve()}")
-    print(f"WDI: {wdi_path.resolve()}")
-    print(f"Comtrade: {comtrade_path.resolve()}")
-    print(f"Comtrade summary: {summary_path.resolve()}")
+    print(f"Code map: {map_path}")
+    print(f"WDI: {wdi_path}")
+    print(f"Comtrade: {comtrade_path}")
+    print(f"Comtrade summary: {summary_path}")
 
 
 if __name__ == "__main__":

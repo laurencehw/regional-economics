@@ -29,7 +29,7 @@ Before exploring specific geographies, this part grounds the student in the form
 - **From OLS to Spatial Models:** Why ordinary regression fails when observations are spatially dependent. The Spatial Autoregressive (SAR) model, Spatial Error Model (SEM), and Spatial Durbin Model (SDM).
 - **The Spatial Weight Matrix ($W$):** Construction methods — contiguity, distance-decay, k-nearest neighbors, and trade-flow weights. The consequences of $W$-specification for inference.
 - **Endogeneity and the Reflection Problem:** Manski's identification challenge — separating endogenous, exogenous, and correlated effects in spatial models.
-- **Spatial Causal Inference:** Spatial Regression Discontinuity Design (RDD), Synthetic Control Methods, and difference-in-differences with spatial spillovers.
+- **Spatial Causal Inference:** Spatial Regression Discontinuity Design (RDD), Synthetic Control Methods, and difference-in-differences with spatial spillovers, with explicit counterfactual intuition and boundary-discontinuity logic before advanced regional applications.
 - **Data Sources and Reproducibility:** An orientation to key datasets (World Bank WDI, IMF, Penn World Tables, WIOD, Afrobarometer, VIIRS night-lights, enterprise surveys) and reproducible workflows in R/Python.
 
 ---
@@ -47,7 +47,7 @@ Before exploring specific geographies, this part grounds the student in the form
 - **Institutional Levers:**
   - The Defense Production Act (Title III) as a tool for expanding regional capacity in critical materials.
   - CFIUS and FDI screening for "TID businesses" (Technology, Infrastructure, Data) across the continent.
-- **The Rust Belt Paradox:** Why the hollowing out of traditional manufacturing persists alongside massive public investment in reshoring.
+- **The Rust Belt Paradox:** Why the hollowing out of traditional manufacturing persists alongside massive public investment in reshoring, and how that divergence mirrors the rise of superstar metro clusters versus left-behind regions.
 
 ### Chapter 5: Latin America and the Middle-Income Trap
 
@@ -175,7 +175,7 @@ Using Geoeconomic Monitor data, students design a hypothetical "Strategic Reserv
 
 - **Method:** Raster data analysis and spatial autocorrelation (Moran's $I$).
 - **Application:** Using VIIRS satellite night-lights data to proxy economic activity and measure cross-border spatial spillovers where formal GDP statistics are thin or unreliable.
-- **Extension:** GIS mapping of the "Product Space" for SADC countries — identifying which "neighboring" products (e.g., from copper to electric cables) are within reach based on current capabilities.
+- **Extension:** Connect night-lights to GDP nowcasting workflows (high-frequency consensus estimates and spatial dashboards), then map the "Product Space" for SADC countries to identify nearby upgrading paths (e.g., from copper to electric cables).
 
 ---
 

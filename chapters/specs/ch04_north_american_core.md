@@ -14,7 +14,7 @@ Since USMCA implementation and the CHIPS-era policy shift, North American reshor
 1. The NAFTA-to-USMCA transition changed the payoff structure from pure cost minimization to compliance-intensive regional production.
 2. Rules-of-origin and labor-value-content provisions create heterogeneous regional adjustment costs tied to local institutional capacity.
 3. Border frictions act as variable trade costs that can dampen or amplify spatial spillovers in regional growth.
-4. CHIPS and related industrial-policy tools increase regional concentration where supplier ecosystems and implementation capacity already exist.
+4. CHIPS and related industrial-policy tools increase regional concentration where supplier ecosystems and implementation capacity already exist, reinforcing internal divergence between superstar metros and left-behind manufacturing regions.
 5. Domestic value-added gains are largest where regional policy coordination reduces compliance and logistics uncertainty.
 
 ## Institutional Variable Operationalization

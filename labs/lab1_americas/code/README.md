@@ -11,8 +11,8 @@
    `pip install -r requirements.txt`
 2. Optionally install PySAL spatial packages:
    `pip install -r requirements-optional-spatial.txt`
-3. Pull Comtrade rows (uses `COMTRADE_API_KEY` from env or `C:\Users\lwils\.claude\settings.json`):
-   `C:\Python314\python.exe fetch_comtrade_api.py --period 2024 --reporter-code 840,124,484 --flow-code X --cmd-code TOTAL --output-csv ../data/comtrade_api_pull.csv --output-json ../data/comtrade_api_pull.json`
+3. Pull Comtrade rows (uses `COMTRADE_API_KEY` from env or `~/.claude/settings.json`):
+   `python fetch_comtrade_api.py --period 2024 --reporter-code 840,124,484 --flow-code X --cmd-code TOTAL --output-csv ../data/comtrade_api_pull.csv --output-json ../data/comtrade_api_pull.json`
 4. Map raw source files:
    `python prepare_lab1_inputs.py --wdi-input ../data/raw_templates/wdi_bulk_example.csv --comtrade-input ../data/comtrade_api_pull.csv --bts-input ../data/raw_templates/bts_border_delay_example.csv --mappings ../data/source_mappings.json --output-dir ../data --year 2024`
 5. Run SAR on mapped files:
@@ -20,9 +20,9 @@
 
 ## Real Americas Pipeline (Current Gate)
 1. Build broader raw inputs:
-   `C:\Python314\python.exe ../../../scripts/build_lab1_americas_real_raw.py --year 2024 --batch-size 8 --date-stamp 2026-02-20`
+   `python ../../../scripts/build_lab1_americas_real_raw.py --year 2024 --batch-size 8 --date-stamp 2026-02-20`
 2. Build BTS border proxy:
-   `C:\Python314\python.exe ../../../scripts/derive_lab1_bts_border_proxy.py --input-csv ../../../data/raw/bts/bts_border_crossings_keg4_3bc2_2018_2026-02-20.csv --output-csv ../../../data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv`
+   `python ../../../scripts/derive_lab1_bts_border_proxy.py --input-csv ../../../data/raw/bts/bts_border_crossings_keg4_3bc2_2018_2026-02-20.csv --output-csv ../../../data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv`
 3. Map to canonical files:
    `python prepare_lab1_inputs.py --wdi-input ../../../data/raw/wdi/wdi_americas_core_long_2026-02-20.csv --comtrade-input ../../../data/raw/comtrade/comtrade_americas_total_x_2024_2026-02-20.csv --bts-input ../../../data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv --mappings ../data/source_mappings_americas_real.json --output-dir ../data/real_americas --year 2024`
 4. Run real-sample SAR gate:

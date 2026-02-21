@@ -208,9 +208,9 @@ def main() -> None:
     with summary_path.open("w", encoding="utf-8") as fp:
         json.dump(summary, fp, indent=2)
 
-    print(f"Wrote mapped panel: {panel_path.resolve()}")
-    print(f"Wrote mapped trade: {trade_path.resolve()}")
-    print(f"Wrote mapping summary: {summary_path.resolve()}")
+    print(f"Wrote mapped panel: {panel_path}")
+    print(f"Wrote mapped trade: {trade_path}")
+    print(f"Wrote mapping summary: {summary_path}")
 
 
 if __name__ == "__main__":
