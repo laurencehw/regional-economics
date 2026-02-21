@@ -42,3 +42,8 @@ How much of a region's GDP growth is explained by neighbor growth transmitted th
 - Spatial weight matrix artifact (`output/weight_matrix.csv`).
 - Estimation-ready cross-section (`output/cross_section_used.csv`).
 - One short memo interpreting rho and policy relevance.
+
+## Current Real-Data Gate Status
+- Real mapped inputs: `data/real_americas/panel_mapped.csv`, `data/real_americas/trade_mapped.csv`.
+- Real SAR run output: `output/real_americas_2024/model_summary.json`.
+- Current gate used 2024 cross-section with `x-cols=log_gdp_pc,manufacturing_share` (border proxy coverage is currently limited to USA/CAN/MEX).

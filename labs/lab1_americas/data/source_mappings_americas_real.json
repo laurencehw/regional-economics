@@ -1,0 +1,24 @@
+{
+  "wdi": {
+    "region_col": "country_iso3",
+    "indicator_code_col": "indicator_code",
+    "year_col": "year",
+    "value_col": "value",
+    "indicator_to_feature": {
+      "NY.GDP.MKTP.KD.ZG": "gdp_growth",
+      "NY.GDP.PCAP.KD": "gdp_per_capita_constant",
+      "NV.IND.MANF.ZS": "manufacturing_share"
+    }
+  },
+  "comtrade": {
+    "origin_col": "reporter_iso",
+    "destination_col": "partner_iso",
+    "year_col": "year",
+    "trade_value_col": "trade_value_usd"
+  },
+  "bts": {
+    "region_col": "region",
+    "year_col": "year",
+    "border_delay_col": "border_delay_index"
+  }
+}
