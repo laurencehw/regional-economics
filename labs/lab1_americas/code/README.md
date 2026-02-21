@@ -4,6 +4,7 @@
 - `fetch_comtrade_api.py` (pulls UN Comtrade data using API key)
 - `prepare_lab1_inputs.py` (maps raw WDI/Comtrade/BTS to canonical files)
 - `lab1_americas_sar_scaffold.py` (estimates SAR on canonical files)
+- `run_real_americas_specs.py` (runs multi-spec robustness comparisons on real-Americas inputs)
 
 ## Quick Start
 1. Install base dependencies:
@@ -16,6 +17,18 @@
    `python prepare_lab1_inputs.py --wdi-input ../data/raw_templates/wdi_bulk_example.csv --comtrade-input ../data/comtrade_api_pull.csv --bts-input ../data/raw_templates/bts_border_delay_example.csv --mappings ../data/source_mappings.json --output-dir ../data --year 2024`
 5. Run SAR on mapped files:
    `python lab1_americas_sar_scaffold.py --panel ../data/panel_mapped.csv --trade ../data/trade_mapped.csv --year 2024 --y-col gdp_growth --x-cols log_gdp_pc,manufacturing_share,border_delay_index --output-dir ../output`
+
+## Real Americas Pipeline (Current Gate)
+1. Build broader raw inputs:
+   `C:\Python314\python.exe ../../../scripts/build_lab1_americas_real_raw.py --year 2024 --batch-size 8 --date-stamp 2026-02-20`
+2. Build BTS border proxy:
+   `C:\Python314\python.exe ../../../scripts/derive_lab1_bts_border_proxy.py --input-csv ../../../data/raw/bts/bts_border_crossings_keg4_3bc2_2018_2026-02-20.csv --output-csv ../../../data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv`
+3. Map to canonical files:
+   `python prepare_lab1_inputs.py --wdi-input ../../../data/raw/wdi/wdi_americas_core_long_2026-02-20.csv --comtrade-input ../../../data/raw/comtrade/comtrade_americas_total_x_2024_2026-02-20.csv --bts-input ../../../data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv --mappings ../data/source_mappings_americas_real.json --output-dir ../data/real_americas --year 2024`
+4. Run real-sample SAR gate:
+   `python lab1_americas_sar_scaffold.py --panel ../data/real_americas/panel_mapped.csv --trade ../data/real_americas/trade_mapped.csv --year 2024 --y-col gdp_growth --x-cols log_gdp_pc,manufacturing_share --output-dir ../output/real_americas_2024`
+5. Run robustness spec bundle:
+   `python run_real_americas_specs.py --panel ../data/real_americas/panel_mapped.csv --trade ../data/real_americas/trade_mapped.csv --year 2024 --output-dir ../output/real_americas_2024/specs`
 
 ## Canonical Input Schemas
 - Panel file columns: `region`, `year`, `gdp_growth`, `log_gdp_pc`, `manufacturing_share`, `border_delay_index`
