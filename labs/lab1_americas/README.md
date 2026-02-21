@@ -47,3 +47,5 @@ How much of a region's GDP growth is explained by neighbor growth transmitted th
 - Real mapped inputs: `data/real_americas/panel_mapped.csv`, `data/real_americas/trade_mapped.csv`.
 - Real SAR run output: `output/real_americas_2024/model_summary.json`.
 - Current gate used 2024 cross-section with `x-cols=log_gdp_pc,manufacturing_share` (border proxy coverage is currently limited to USA/CAN/MEX).
+- Robustness bundle outputs: `output/real_americas_2024/specs/spec_results.csv` and `output/real_americas_2024/specs/spec_results.md`.
+- Narrative gate note: `output/real_americas_2024/real_gate_summary.md`.

@@ -4,6 +4,7 @@
 - `fetch_comtrade_api.py` (pulls UN Comtrade data using API key)
 - `prepare_lab1_inputs.py` (maps raw WDI/Comtrade/BTS to canonical files)
 - `lab1_americas_sar_scaffold.py` (estimates SAR on canonical files)
+- `run_real_americas_specs.py` (runs multi-spec robustness comparisons on real-Americas inputs)
 
 ## Quick Start
 1. Install base dependencies:
@@ -26,6 +27,8 @@
    `python prepare_lab1_inputs.py --wdi-input ../../../data/raw/wdi/wdi_americas_core_long_2026-02-20.csv --comtrade-input ../../../data/raw/comtrade/comtrade_americas_total_x_2024_2026-02-20.csv --bts-input ../../../data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv --mappings ../data/source_mappings_americas_real.json --output-dir ../data/real_americas --year 2024`
 4. Run real-sample SAR gate:
    `python lab1_americas_sar_scaffold.py --panel ../data/real_americas/panel_mapped.csv --trade ../data/real_americas/trade_mapped.csv --year 2024 --y-col gdp_growth --x-cols log_gdp_pc,manufacturing_share --output-dir ../output/real_americas_2024`
+5. Run robustness spec bundle:
+   `python run_real_americas_specs.py --panel ../data/real_americas/panel_mapped.csv --trade ../data/real_americas/trade_mapped.csv --year 2024 --output-dir ../output/real_americas_2024/specs`
 
 ## Canonical Input Schemas
 - Panel file columns: `region`, `year`, `gdp_growth`, `log_gdp_pc`, `manufacturing_share`, `border_delay_index`

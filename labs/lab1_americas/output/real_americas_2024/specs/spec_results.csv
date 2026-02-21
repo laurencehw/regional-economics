@@ -1,0 +1,5 @@
+spec_id,status,n_obs,method,rho,x_cols,notes,output_subdir
+baseline_all,ok,34,SAR_manual_ML,-0.0037890099945734825,"log_gdp_pc,manufacturing_share",Primary all-Americas baseline.,G:\My Drive\book drafts\regional economics\regional-economics\labs\lab1_americas\output\real_americas_2024\specs\baseline_all
+macro_only_all,ok,41,SAR_manual_ML,0.032934094855666764,log_gdp_pc,Less restrictive sample requirement.,G:\My Drive\book drafts\regional economics\regional-economics\labs\lab1_americas\output\real_americas_2024\specs\macro_only_all
+border_imputed_all,ok,34,SAR_manual_ML,-0.0010804167113120141,"log_gdp_pc,manufacturing_share,border_delay_index_filled",Border proxy mean-imputed outside USA/CAN/MEX (robustness only).,G:\My Drive\book drafts\regional economics\regional-economics\labs\lab1_americas\output\real_americas_2024\specs\border_imputed_all
+usmca_border_raw,skipped,1,,,"log_gdp_pc,manufacturing_share,border_delay_index",Insufficient observations (n=1),

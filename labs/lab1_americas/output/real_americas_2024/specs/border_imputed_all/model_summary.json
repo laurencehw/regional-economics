@@ -1,0 +1,19 @@
+{
+  "method": "SAR_manual_ML",
+  "rho": -0.0010804167113120141,
+  "betas": [
+    -20.34477131198324,
+    2.907502176946604,
+    -0.14194303717914059,
+    -2.2833228060823942
+  ],
+  "beta_names": [
+    "intercept",
+    "log_gdp_pc",
+    "manufacturing_share",
+    "border_delay_index_filled"
+  ],
+  "sigma2": 45.064727216574546,
+  "log_likelihood": -112.9816086409654,
+  "n_obs": 34
+}
