@@ -1,0 +1,53 @@
+country_iso3,country_name,indicator_code,indicator_name,year,value,fetched_at_utc
+ARG,Argentina,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.89,2026-02-22T04:01:20.496143+00:00
+ARG,Argentina,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.8,2026-02-22T04:01:20.496143+00:00
+ATG,Antigua and Barbuda,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.9,2026-02-22T04:01:20.496143+00:00
+BHS,"Bahamas, The",LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.53,2026-02-22T04:01:20.496143+00:00
+BHS,"Bahamas, The",LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.7,2026-02-22T04:01:20.496143+00:00
+BOL,Bolivia,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.36,2026-02-22T04:01:20.496143+00:00
+BOL,Bolivia,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.4,2026-02-22T04:01:20.496143+00:00
+BRA,Brazil,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.99,2026-02-22T04:01:20.496143+00:00
+BRA,Brazil,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,3.2,2026-02-22T04:01:20.496143+00:00
+CAN,Canada,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,3.73,2026-02-22T04:01:20.496143+00:00
+CAN,Canada,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,4.0,2026-02-22T04:01:20.496143+00:00
+CHL,Chile,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,3.32,2026-02-22T04:01:20.496143+00:00
+CHL,Chile,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,3.0,2026-02-22T04:01:20.496143+00:00
+COL,Colombia,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.94,2026-02-22T04:01:20.496143+00:00
+COL,Colombia,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.9,2026-02-22T04:01:20.496143+00:00
+CRI,Costa Rica,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.79,2026-02-22T04:01:20.496143+00:00
+CRI,Costa Rica,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.9,2026-02-22T04:01:20.496143+00:00
+CUB,Cuba,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.2,2026-02-22T04:01:20.496143+00:00
+CUB,Cuba,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.2,2026-02-22T04:01:20.496143+00:00
+DOM,Dominican Republic,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.66,2026-02-22T04:01:20.496143+00:00
+DOM,Dominican Republic,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.6,2026-02-22T04:01:20.496143+00:00
+ECU,Ecuador,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.88,2026-02-22T04:01:20.496143+00:00
+GRD,Grenada,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.5,2026-02-22T04:01:20.496143+00:00
+GTM,Guatemala,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.41,2026-02-22T04:01:20.496143+00:00
+GTM,Guatemala,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.6,2026-02-22T04:01:20.496143+00:00
+GUY,Guyana,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.36,2026-02-22T04:01:20.496143+00:00
+GUY,Guyana,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.4,2026-02-22T04:01:20.496143+00:00
+HND,Honduras,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.6,2026-02-22T04:01:20.496143+00:00
+HND,Honduras,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.9,2026-02-22T04:01:20.496143+00:00
+HTI,Haiti,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.11,2026-02-22T04:01:20.496143+00:00
+HTI,Haiti,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.1,2026-02-22T04:01:20.496143+00:00
+JAM,Jamaica,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.52,2026-02-22T04:01:20.496143+00:00
+JAM,Jamaica,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.5,2026-02-22T04:01:20.496143+00:00
+MEX,Mexico,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,3.05,2026-02-22T04:01:20.496143+00:00
+MEX,Mexico,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.9,2026-02-22T04:01:20.496143+00:00
+NIC,Nicaragua,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.5,2026-02-22T04:01:20.496143+00:00
+PAN,Panama,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,3.28,2026-02-22T04:01:20.496143+00:00
+PAN,Panama,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,3.1,2026-02-22T04:01:20.496143+00:00
+PER,Peru,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.69,2026-02-22T04:01:20.496143+00:00
+PER,Peru,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,3.0,2026-02-22T04:01:20.496143+00:00
+PRY,Paraguay,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.78,2026-02-22T04:01:20.496143+00:00
+PRY,Paraguay,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.7,2026-02-22T04:01:20.496143+00:00
+SLV,El Salvador,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.58,2026-02-22T04:01:20.496143+00:00
+SLV,El Salvador,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.7,2026-02-22T04:01:20.496143+00:00
+TTO,Trinidad and Tobago,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.42,2026-02-22T04:01:20.496143+00:00
+TTO,Trinidad and Tobago,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.5,2026-02-22T04:01:20.496143+00:00
+URY,Uruguay,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.69,2026-02-22T04:01:20.496143+00:00
+URY,Uruguay,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,3.0,2026-02-22T04:01:20.496143+00:00
+USA,United States,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,3.89,2026-02-22T04:01:20.496143+00:00
+USA,United States,LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,3.8,2026-02-22T04:01:20.496143+00:00
+VEN,"Venezuela, RB",LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2018,2.23,2026-02-22T04:01:20.496143+00:00
+VEN,"Venezuela, RB",LP.LPI.OVRL.XQ,Logistics performance index: Overall (1=low to 5=high),2022,2.3,2026-02-22T04:01:20.496143+00:00
