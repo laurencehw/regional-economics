@@ -26,6 +26,6 @@ Working repository for drafting and replication assets for *The New Regional Eco
 5. Keep methods, notation, and variable naming consistent with Part I.
 
 ## Immediate Priorities
-1. Acquire WIOD/TiVA (with ADB MRIO/OECD TiVA fallback review) and Eurostat NUTS-2, then register metadata in `docs/data_inventory.md`.
-2. Open ACLED licensing/access workflow and run the broader Lab 1 friction proxy comparison (World Bank LPI blend vs BTS-only) beyond USA/CAN/MEX coverage.
+1. Expand WIOD/TiVA pulls from starter extracts to production-scale Lab 2 inputs (full WIOTS + additional TiVA measures), then lock concordances.
+2. Open ACLED licensing/access workflow and build the first MENA-lab intake checklist while data access is pending.
 3. Prepare early classroom pilot package for Labs 1 and 5 (cloud-first execution path + interpretation notes).

@@ -2,6 +2,11 @@
 
 This plan consolidates reviewer feedback received through 2026-02-21 and maps each point to an execution step.
 
+## Progress Update (2026-02-22)
+- WIOD starter pull completed (NIOTS + documentation files logged via manifest; full WIOTS still pending due size).
+- OECD TiVA constrained extract pulled for core Asia economies.
+- Eurostat NUTS-2 GDP and NUTS 2024 geometry pulled and registered.
+
 ## Priority Actions
 
 | Priority | Feedback Item | Action | Status | Target Date |
@@ -20,7 +25,7 @@ This plan consolidates reviewer feedback received through 2026-02-21 and maps ea
 ## Immediate Execution Queue
 1. Land Lab 5 smoke tests and run full smoke suite (Lab 1 + Lab 5).
 2. Finalize code-hygiene sweep (remaining path prints and docs normalization).
-3. Start dataset pulls for WIOD/TiVA and Eurostat NUTS-2 with metadata registration.
+3. Expand WIOD/TiVA pulls from starter extracts to production-scale Lab 2 inputs, and initiate ACLED licensing request in parallel.
 4. Run institution-interaction specs using the blended proxy to test conditional spillovers after fixing friction coverage. (completed; see `labs/lab1_americas/output/real_americas_2024_lpi_blend/interaction_specs/`)
 
 ## Definition of Done for This Feedback Round

@@ -1,0 +1,16 @@
+{
+  "fetched_at_utc": "2026-02-22T15:51:17.665666+00:00",
+  "dataset_code": "nama_10r_2gdp",
+  "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp",
+  "source_updated": "2026-02-10T11:00:00+0100",
+  "unit_filter": "MIO_EUR",
+  "year_range": [
+    2000,
+    2024
+  ],
+  "rows_written": 7498,
+  "nuts2_regions": 309,
+  "output_csv": "data\\raw\\eurostat\\nama_10r_2gdp_nuts2_mio_eur_2000_2024_2026-02-22.csv",
+  "geometry_url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/download/ref-nuts-2024-20m.geojson.zip",
+  "geometry_zip": "data\\raw\\eurostat\\ref-nuts-2024-20m.geojson.zip"
+}

@@ -8,8 +8,8 @@ Track acquisition status, access requirements, update cadence, and intended usag
 | UN Comtrade | Trade flows for gravity and spatial interaction | Ready | `data/raw/comtrade/comtrade_americas_total_x_2024_2026-02-20.csv` | Ready for Lab 1 Americas scope; post-process patch applied from `data/raw/comtrade/comtrade_patch_batch_2024_2026-02-20.csv`; final normalized rows: 895. |
 | Bureau of Transportation Statistics (BTS) | North American corridor and border-friction context | Ready | `data/raw/bts/bts_border_crossings_keg4_3bc2_2018_2026-02-20.csv` | Ready for Lab 1 border proxy derivation; processed proxy in `data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv`. Coverage is strongest for USA/CAN/MEX. |
 | World Bank LPI (WDI `LP.LPI.OVRL.XQ`) | Broad Americas logistics-friction proxy for Lab 1 robustness | Ready | `data/raw/wdi/wdi_lpi_americas_long_2026-02-22.csv` | Fetched via `scripts/fetch_wdi_lpi_americas.py`; transformed/blended via `scripts/derive_lab1_lpi_border_proxy.py` to `data/processed/lab1/border_delay_proxy_americas_lpi_blend_2018_2025_2026-02-22.csv`. 2024 non-missing border coverage increased from 3 to 28 regions. |
-| WIOD / TiVA | MRIO and value-added decomposition in Asia | Not started | TBD | Next low-friction acquisition target after Lab 5 scaffold; validate latest release and concordances. Keep ADB MRIO and OECD TiVA as backup sources if WIOD currency is insufficient. |
-| Eurostat NUTS-2 | Regional GDP and treatment boundaries for Spatial RDD | Not started | TBD | Next low-friction acquisition target; record exact NUTS revision used. |
+| WIOD / TiVA | MRIO and value-added decomposition in Asia | In progress | `data/raw/metadata/wiod_2016_pull_manifest_2026-02-22.json`, `data/raw/tiva/tiva_mainlv_asia_oecd_exgr_dva_2000_2023_2026-02-22.csv` | WIOD 2016 Dataverse pull started (NIOTS + docs pulled to `data/external/wiod/2016_release/`; see manifest for hashes and file IDs). OECD TiVA 2025 MainLV constrained extract pulled for 10 Asian economies (`EXGR_DVA`, counterpart `OECD`, annual, USD; 230 rows, 2000-2022 observed). |
+| Eurostat NUTS-2 | Regional GDP and treatment boundaries for Spatial RDD | Ready | `data/raw/eurostat/nama_10r_2gdp_nuts2_mio_eur_2000_2024_2026-02-22.csv`, `data/raw/eurostat/ref-nuts-2024-20m.geojson.zip` | Eurostat API pull completed (`nama_10r_2gdp`, `MIO_EUR`, NUTS-2 filter, 7,498 rows / 309 regions). NUTS 2024 geometry bundle (20m geojson) pulled from GISCO. Metadata log: `data/raw/metadata/eurostat_nuts2_pull_2026-02-22.json`. |
 | VIIRS Night Lights | Alternative proxy for economic activity in Africa | In progress | `labs/lab5_africa/data/raw_templates/viirs_example.csv` | Lab 5 scaffold is wired with template inputs; real pull still needs cloud masking and annual compositing decisions. |
 | Afrobarometer | Institutional and governance proxies | In progress | `labs/lab5_africa/data/raw_templates/afrobarometer_example.csv` | Lab 5 scaffold is wired with template inputs; real-wave selection and redistribution constraints still pending. |
 | ACLED | Conflict event timing/intensity for MENA SCM | Not started | TBD | Start licensing/access request before MENA wave to avoid blocking SCM build-out. |
@@ -30,6 +30,6 @@ Track acquisition status, access requirements, update cadence, and intended usag
 - Known caveats.
 
 ## Near-Term Acquisition Queue (as of 2026-02-21)
-1. WIOD / TiVA (Asia Lab 2 readiness; low-friction public download path).
-2. Eurostat NUTS-2 (Europe Lab 3 readiness; low-friction public download path).
+1. Expand WIOD pull from starter files to full WIOTS package(s) in external storage and finalize concordances.
+2. Validate TiVA indicator/partner choices for Lab 2 core exercises and add at least one alternative measure extract.
 3. ACLED access/licensing confirmation (MENA Lab 4 critical path item).
