@@ -1,0 +1,21 @@
+{
+  "method": "SAR_manual_ML",
+  "rho": -0.017945107820958678,
+  "betas": [
+    -12.092842197932436,
+    2.468617693845329,
+    -0.06814048709633114,
+    -18.271410891456167,
+    4.0028046718676045
+  ],
+  "beta_names": [
+    "intercept",
+    "log_gdp_pc",
+    "manufacturing_share",
+    "border_quality_index",
+    "quality_x_manufacturing"
+  ],
+  "sigma2": 36.84183067875332,
+  "log_likelihood": -109.55702959052014,
+  "n_obs": 34
+}

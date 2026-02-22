@@ -5,6 +5,7 @@
 - `prepare_lab1_inputs.py` (maps raw WDI/Comtrade/BTS to canonical files)
 - `lab1_americas_sar_scaffold.py` (estimates SAR on canonical files)
 - `run_real_americas_specs.py` (runs multi-spec robustness comparisons on real-Americas inputs)
+- `run_real_americas_interaction_specs.py` (runs institution-interaction SAR specs on blended inputs)
 - `../../../scripts/fetch_wdi_lpi_americas.py` (pulls LPI indicator for broad Americas friction coverage)
 - `../../../scripts/derive_lab1_lpi_border_proxy.py` (builds LPI-based border friction proxy; optionally blends BTS)
 
@@ -34,6 +35,8 @@
    `python lab1_americas_sar_scaffold.py --panel ../data/real_americas/panel_mapped.csv --trade ../data/real_americas/trade_mapped.csv --year 2024 --y-col gdp_growth --x-cols log_gdp_pc,manufacturing_share --output-dir ../output/real_americas_2024`
 6. Run robustness spec bundle:
    `python run_real_americas_specs.py --panel ../data/real_americas/panel_mapped.csv --trade ../data/real_americas/trade_mapped.csv --year 2024 --output-dir ../output/real_americas_2024/specs`
+7. Run institution-interaction spec bundle:
+   `python run_real_americas_interaction_specs.py --panel ../data/real_americas_lpi_blend/panel_mapped.csv --trade ../data/real_americas_lpi_blend/trade_mapped.csv --year 2024 --output-dir ../output/real_americas_2024_lpi_blend/interaction_specs`
 
 ## Canonical Input Schemas
 - Panel file columns: `region`, `year`, `gdp_growth`, `log_gdp_pc`, `manufacturing_share`, `border_delay_index`

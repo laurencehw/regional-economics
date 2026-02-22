@@ -1,0 +1,11 @@
+{
+  "year": 2024,
+  "rows_year": 41,
+  "regions_year": 41,
+  "nonmissing_gdp_growth": 41,
+  "nonmissing_log_gdp_pc": 41,
+  "nonmissing_manufacturing_share": 34,
+  "nonmissing_border_quality_index": 41,
+  "nonmissing_quality_x_log_gdp": 41,
+  "nonmissing_quality_x_manufacturing": 34
+}

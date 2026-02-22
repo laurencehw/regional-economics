@@ -52,3 +52,5 @@ How much of a region's GDP growth is explained by neighbor growth transmitted th
 - Current interpretation: near-zero unconditional `rho` is treated as a feature motivating institutional interaction terms, not as a failed baseline.
 - LPI-based broad friction proxy workflow is now available via `scripts/fetch_wdi_lpi_americas.py` and `scripts/derive_lab1_lpi_border_proxy.py`.
 - LPI-blend 2024 rerun outputs are in `output/real_americas_2024_lpi_blend/`; border coverage rose from 3 to 28 regions while `rho` remained near zero in all-Americas specs.
+- Institution-interaction follow-up specs are run via `code/run_real_americas_interaction_specs.py` and written under `output/real_americas_2024_lpi_blend/interaction_specs/`.
+- Interaction gate note: `output/real_americas_2024_lpi_blend/interaction_specs/interaction_gate_summary.md`.
