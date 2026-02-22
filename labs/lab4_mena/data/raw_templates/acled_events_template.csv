@@ -1,0 +1,2 @@
+event_id_cnty,event_date,year,iso3,country,admin1,admin2,latitude,longitude,event_type,sub_event_type,fatalities,source
+EXAMPLE0001,2024-01-15,2024,EGY,Egypt,Cairo,Cairo,30.0444,31.2357,Protests,Peaceful protest,0,Example Source

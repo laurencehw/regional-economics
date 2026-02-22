@@ -40,6 +40,11 @@ def parse_args() -> argparse.Namespace:
         default="data/raw/metadata/wiod_2016_pull_manifest_2026-02-22.json",
         help="Path for pull manifest JSON",
     )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Reuse existing files when their size matches Dataverse metadata",
+    )
     parser.add_argument("--timeout", type=int, default=120)
     return parser.parse_args()
 
@@ -100,16 +105,42 @@ def main() -> None:
         filename = item["filename"]
         expected_size = int(item.get("filesize", 0))
         dst = output_dir / filename
-
         url = DATAFILE_URL_TEMPLATE.format(file_id=file_id)
-        with requests.get(url, stream=True, timeout=args.timeout) as response:
-            response.raise_for_status()
-            with dst.open("wb") as fp:
-                for chunk in response.iter_content(chunk_size=1024 * 1024):
-                    if chunk:
-                        fp.write(chunk)
+
+        should_download = True
+        if args.skip_existing and dst.exists() and expected_size > 0:
+            existing_size = dst.stat().st_size
+            if existing_size == expected_size:
+                should_download = False
+
+        if should_download:
+            tmp = dst.with_suffix(dst.suffix + ".part")
+            if tmp.exists():
+                tmp.unlink()
+
+            with requests.get(url, stream=True, timeout=args.timeout) as response:
+                response.raise_for_status()
+                with tmp.open("wb") as fp:
+                    for chunk in response.iter_content(chunk_size=1024 * 1024):
+                        if chunk:
+                            fp.write(chunk)
+
+            actual_tmp_size = tmp.stat().st_size
+            if expected_size > 0 and actual_tmp_size != expected_size:
+                tmp.unlink(missing_ok=True)
+                raise RuntimeError(
+                    f"Downloaded size mismatch for {filename}: "
+                    f"expected {expected_size}, got {actual_tmp_size}"
+                )
+
+            tmp.replace(dst)
 
         actual_size = dst.stat().st_size
+        if expected_size > 0 and actual_size != expected_size:
+            raise RuntimeError(
+                f"Size check failed for {filename}: expected {expected_size}, got {actual_size}"
+            )
+
         downloads.append(
             {
                 "file_id": file_id,

@@ -1,0 +1,23 @@
+{
+  "wdi": {
+    "region_col": "iso3",
+    "year_col": "year",
+    "outcome_col": "NY.GDP.PCAP.KD.ZG"
+  },
+  "acled": {
+    "event_id_col": "event_id_cnty",
+    "date_col": "event_date",
+    "region_col": "iso3",
+    "country_col": "country",
+    "fatalities_col": "fatalities",
+    "event_type_col": "event_type",
+    "sub_event_type_col": "sub_event_type",
+    "latitude_col": "latitude",
+    "longitude_col": "longitude"
+  },
+  "unhcr": {
+    "region_col": "iso3",
+    "year_col": "year",
+    "displacement_col": "displaced_population"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "dataset_doi": "doi:10.34894/PJ2M1C",
+  "fetched_at_utc": "2026-02-22T16:42:07.852679+00:00",
+  "dataset_url": "https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/PJ2M1C",
+  "downloads": [
+    {
+      "file_id": 199097,
+      "filename": "Exchange_Rates.xlsx",
+      "expected_size_bytes": 19308,
+      "actual_size_bytes": 19308,
+      "sha256": "0d5b270867d604f484b44f75768f4e22c5cc1c0292f6a06f8eabd1ab20e4c3cc",
+      "download_path": "data\\external\\wiod\\2016_release\\Exchange_Rates.xlsx",
+      "download_url": "https://dataverse.nl/api/access/datafile/199097"
+    },
+    {
+      "file_id": 199099,
+      "filename": "NIOTS.zip",
+      "expected_size_bytes": 68437603,
+      "actual_size_bytes": 68437603,
+      "sha256": "ac0b35c89a09e99e67ea67324b0f7c107b0ffb709b27d4088fe548215e64c583",
+      "download_path": "data\\external\\wiod\\2016_release\\NIOTS.zip",
+      "download_url": "https://dataverse.nl/api/access/datafile/199099"
+    },
+    {
+      "file_id": 199101,
+      "filename": "WIOTS_in_R.zip",
+      "expected_size_bytes": 641578409,
+      "actual_size_bytes": 641578409,
+      "sha256": "30b17452273ea4ae94b6cb015aacb112be3a8f8d27e0a0f35c1b5c584b60ce90",
+      "download_path": "data\\external\\wiod\\2016_release\\WIOTS_in_R.zip",
+      "download_url": "https://dataverse.nl/api/access/datafile/199101"
+    },
+    {
+      "file_id": 199104,
+      "filename": "WIOTS_in_EXCEL.zip",
+      "expected_size_bytes": 919328606,
+      "actual_size_bytes": 919328606,
+      "sha256": "d5ae1cd7f1c1534962ba3022a666971ed1520a1b0aa105236d5ea0c147f06deb",
+      "download_path": "data\\external\\wiod\\2016_release\\WIOTS_in_EXCEL.zip",
+      "download_url": "https://dataverse.nl/api/access/datafile/199104"
+    },
+    {
+      "file_id": 199337,
+      "filename": "Documentation_References.pdf",
+      "expected_size_bytes": 49465,
+      "actual_size_bytes": 49465,
+      "sha256": "abb9a9f76cf7d5478370e609c3858430bc263389c100b99cd5f28063b11e738c",
+      "download_path": "data\\external\\wiod\\2016_release\\Documentation_References.pdf",
+      "download_url": "https://dataverse.nl/api/access/datafile/199337"
+    }
+  ]
+}

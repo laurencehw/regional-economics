@@ -26,6 +26,6 @@ Working repository for drafting and replication assets for *The New Regional Eco
 5. Keep methods, notation, and variable naming consistent with Part I.
 
 ## Immediate Priorities
-1. Expand WIOD/TiVA pulls from starter extracts to production-scale Lab 2 inputs (full WIOTS + additional TiVA measures), then lock concordances.
-2. Open ACLED licensing/access workflow and build the first MENA-lab intake checklist while data access is pending.
+1. Add one additional TiVA measure pull (for example `EXGR_FVA`) and compare it against the current `EXGR_DVA` baseline for Lab 2 robustness.
+2. Submit ACLED licensing/access request and log approval metadata (workflow/checklist is now initialized).
 3. Prepare early classroom pilot package for Labs 1 and 5 (cloud-first execution path + interpretation notes).
