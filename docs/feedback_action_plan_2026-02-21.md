@@ -2,9 +2,10 @@
 
 This plan consolidates reviewer feedback received through 2026-02-21 and maps each point to an execution step.
 
-## Progress Update (2026-02-22)
+## Progress Update (2026-02-23)
 - WIOD pull expanded to full WIOTS packages (`WIOTS_in_R.zip`, `WIOTS_in_EXCEL.zip`) with size-validated manifest logging.
 - OECD TiVA constrained extract pulled for core Asia economies.
+- Additional TiVA robustness extract pulled (`EXGR_FNL` with `OECD` counterpart) and compared against `EXGR_DVA`.
 - WIOD-TiVA country/activity concordance templates generated in `data/processed/lab2/`.
 - Eurostat NUTS-2 GDP and NUTS 2024 geometry pulled and registered.
 - ACLED licensing workflow and intake checklist initialized (request submission pending).
@@ -28,10 +29,11 @@ This plan consolidates reviewer feedback received through 2026-02-21 and maps ea
 1. Land Lab 5 smoke tests and run full smoke suite (Lab 1 + Lab 5).
 2. Finalize code-hygiene sweep (remaining path prints and docs normalization).
 3. Submit ACLED licensing request and log approval metadata in tracker JSON.
-4. Pull one additional TiVA measure (for example `EXGR_FVA`) and compare with `EXGR_DVA` for Lab 2 robustness.
+4. Stage UNHCR intake schema template aligned with Lab 4 country-year panel keys.
 
 Completed item:
 - Institution-interaction specs were run on the blended proxy; see `labs/lab1_americas/output/real_americas_2024_lpi_blend/interaction_specs/`.
+- TiVA alternative measure robustness step completed (`EXGR_FNL` vs `EXGR_DVA`) with summary in `data/processed/lab2/tiva_measure_comparison_summary_exgr_dva_vs_exgr_fnl_2026-02-23.json`.
 
 ## Definition of Done for This Feedback Round
 - Drafting plan updated to reflect cloud execution, early pilot timing, and dataset fallback strategy.

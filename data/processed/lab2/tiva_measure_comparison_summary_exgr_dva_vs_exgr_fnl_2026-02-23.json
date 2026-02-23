@@ -1,0 +1,22 @@
+{
+  "generated_at_utc": "2026-02-23T03:01:28.782557+00:00",
+  "base_csv": "data\\raw\\tiva\\tiva_mainlv_asia_oecd_exgr_dva_2000_2023_2026-02-22.csv",
+  "alt_csv": "data\\raw\\tiva\\tiva_mainlv_asia_oecd_exgr_fnl_2000_2023_2026-02-23.csv",
+  "base_measure_codes": [
+    "EXGR_DVA"
+  ],
+  "alt_measure_codes": [
+    "EXGR_FNL"
+  ],
+  "rows_base": 230,
+  "rows_alt": 230,
+  "rows_overlap": 230,
+  "ref_area_count": 10,
+  "time_min": 2000,
+  "time_max": 2022,
+  "global_corr_base_alt": 0.9946753070409468,
+  "mean_ratio_alt_to_base": 0.7026770946185753,
+  "median_ratio_alt_to_base": 0.6982774266355587,
+  "mean_pct_gap_alt_vs_base": -29.73229053814247,
+  "output_csv": "data\\processed\\lab2\\tiva_measure_comparison_exgr_dva_vs_exgr_fnl_2026-02-23.csv"
+}
