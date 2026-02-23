@@ -1,10 +1,11 @@
 {
   "dataset": "ACLED",
   "workflow_opened_date": "2026-02-22",
-  "status": "workflow_initialized",
+  "status": "request_draft_ready",
   "request_submitted": false,
   "request_submitted_at_utc": null,
   "request_reference": null,
+  "request_draft_path": "docs/acled_request_draft_2026-02-23.md",
   "approval_received": false,
   "approval_received_at_utc": null,
   "license_notes": "",
@@ -12,5 +13,5 @@
   "allowed_time_coverage": null,
   "raw_storage_path": "EXTERNAL_ONLY",
   "redistribution_policy": "TBD_FROM_APPROVED_TERMS",
-  "next_action": "Submit ACLED access request and log request metadata."
+  "next_action": "Submit ACLED access request and log request reference/timestamp metadata."
 }

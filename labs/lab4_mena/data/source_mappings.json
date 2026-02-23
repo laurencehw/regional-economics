@@ -18,6 +18,9 @@
   "unhcr": {
     "region_col": "iso3",
     "year_col": "year",
-    "displacement_col": "displaced_population"
+    "refugees_col": "refugees_under_mandate",
+    "asylum_seekers_col": "asylum_seekers",
+    "idps_col": "idps",
+    "displacement_col": "total_displaced"
   }
 }

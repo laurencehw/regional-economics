@@ -5,6 +5,7 @@ This runbook opens the ACLED licensing track for Lab 4 (MENA) so data intake can
 ## Current Status
 - Workflow opened: 2026-02-22
 - Request submitted: No
+- Request draft prepared: Yes (`docs/acled_request_draft_2026-02-23.md`)
 - Approval received: No
 - Tracker file: `data/raw/metadata/acled_access_tracker_2026-02-22.json`
 - Lab checklist: `labs/lab4_mena/data/acled_intake_checklist_2026-02-22.md`

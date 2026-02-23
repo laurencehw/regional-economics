@@ -17,6 +17,7 @@ Synthetic Control and event-study diagnostics
 Mappings and intake requirements are tracked in:
 - `labs/lab4_mena/data/source_mappings.json`
 - `labs/lab4_mena/data/acled_intake_checklist_2026-02-22.md`
+- `labs/lab4_mena/data/unhcr_intake_checklist_2026-02-23.md`
 - `docs/acled_access_workflow_2026-02-22.md`
 
 ## Folder Layout
