@@ -6,6 +6,7 @@ This runbook opens the ACLED licensing track for Lab 4 (MENA) so data intake can
 - Workflow opened: 2026-02-22
 - Request submitted: No
 - Request draft prepared: Yes (`docs/acled_request_draft_2026-02-23.md`)
+- API credentials received for account access (validation pull pending).
 - Approval received: No
 - Tracker file: `data/raw/metadata/acled_access_tracker_2026-02-22.json`
 - Lab checklist: `labs/lab4_mena/data/acled_intake_checklist_2026-02-22.md`
@@ -28,3 +29,8 @@ This runbook opens the ACLED licensing track for Lab 4 (MENA) so data intake can
 2. Validate schema against `labs/lab4_mena/data/raw_templates/acled_events_template.csv`.
 3. Produce a mapped country-year panel keyed by `iso3`, `year`.
 4. Log extraction date, endpoint, and filter scope in tracker JSON.
+
+## Scripted Pull Path
+1. Export credentials in shell env vars (`ACLED_USERNAME`, `ACLED_PASSWORD`).
+2. Run `scripts/fetch_acled_lab4_events.py` with Lab 4 country/date scope.
+3. Save metadata JSON in `data/raw/metadata/` and register output in `docs/data_inventory.md`.

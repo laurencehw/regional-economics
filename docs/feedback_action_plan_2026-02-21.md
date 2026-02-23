@@ -8,7 +8,7 @@ This plan consolidates reviewer feedback received through 2026-02-21 and maps ea
 - Additional TiVA robustness extract pulled (`EXGR_FNL` with `OECD` counterpart) and compared against `EXGR_DVA`.
 - WIOD-TiVA country/activity concordance templates generated in `data/processed/lab2/`.
 - Eurostat NUTS-2 GDP and NUTS 2024 geometry pulled and registered.
-- ACLED licensing workflow initialized with a submit-ready request draft (submission pending).
+- ACLED licensing workflow initialized with a submit-ready request draft and scripted API pull path.
 - UNHCR intake schema template and checklist staged for Lab 4 controls.
 
 ## Priority Actions
@@ -29,7 +29,7 @@ This plan consolidates reviewer feedback received through 2026-02-21 and maps ea
 ## Immediate Execution Queue
 1. Land Lab 5 smoke tests and run full smoke suite (Lab 1 + Lab 5).
 2. Finalize code-hygiene sweep (remaining path prints and docs normalization).
-3. Submit ACLED licensing request and log approval metadata in tracker JSON.
+3. Run first ACLED validation pull and log request/approval metadata in tracker JSON.
 4. Execute first UNHCR pull and map to canonical Lab 4 country-year controls.
 
 Completed item:

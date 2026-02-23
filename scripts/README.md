@@ -10,6 +10,7 @@ Current scripts:
 - `build_lab2_wiod_tiva_concordance.py`: builds WIOD-country and TiVA-code concordance templates for Lab 2.
 - `compare_lab2_tiva_measures.py`: compares two TiVA extracts (same scope keys) and writes overlap diagnostics.
 - `fetch_eurostat_nuts2_lab3.py`: pulls Eurostat NUTS-2 GDP panel and NUTS geometry bundle.
+- `fetch_acled_lab4_events.py`: pulls ACLED event records via OAuth using env-var credentials.
 
 Typical usage:
 - `python scripts/fetch_wdi_lab1.py --output-csv data/raw/wdi/wdi_usmca_core_long_2026-02-20.csv`
@@ -22,6 +23,10 @@ Typical usage:
 - `python scripts/build_lab2_wiod_tiva_concordance.py --date-stamp 2026-02-22`
 - `python scripts/compare_lab2_tiva_measures.py --base-csv data/raw/tiva/tiva_mainlv_asia_oecd_exgr_dva_2000_2023_2026-02-22.csv --alt-csv data/raw/tiva/tiva_mainlv_asia_oecd_exgr_fnl_2000_2023_2026-02-23.csv --output-csv data/processed/lab2/tiva_measure_comparison_exgr_dva_vs_exgr_fnl_2026-02-23.csv --summary-json data/processed/lab2/tiva_measure_comparison_summary_exgr_dva_vs_exgr_fnl_2026-02-23.json`
 - `python scripts/fetch_eurostat_nuts2_lab3.py --output-csv data/raw/eurostat/nama_10r_2gdp_nuts2_mio_eur_2000_2024_2026-02-22.csv --geometry-zip data/raw/eurostat/ref-nuts-2024-20m.geojson.zip --metadata-json data/raw/metadata/eurostat_nuts2_pull_2026-02-22.json`
+- `python scripts/fetch_acled_lab4_events.py --countries Egypt,Iraq,Jordan,Lebanon,Libya,Morocco,Saudi Arabia,Syria,Tunisia,Yemen --start-date 2018-01-01 --end-date 2025-12-31 --output-csv data/raw/acled/acled_lab4_mena_2018_2025_2026-02-23.csv --metadata-json data/raw/metadata/acled_lab4_pull_mena_2018_2025_2026-02-23.json`
 
 TiVA note:
 - `EXGR_FVA` is valid in MainLV but constrained to `COUNTERPART_AREA=W`; use measures like `EXGR_FNL` when `COUNTERPART_AREA=OECD` is required for comparability with existing pulls.
+
+ACLED credential note:
+- Set `ACLED_USERNAME` and `ACLED_PASSWORD` in the shell environment before running the ACLED fetch script.
