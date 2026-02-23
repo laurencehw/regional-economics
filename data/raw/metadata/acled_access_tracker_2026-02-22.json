@@ -1,13 +1,16 @@
 {
   "dataset": "ACLED",
   "workflow_opened_date": "2026-02-22",
-  "status": "credentials_received_pull_pending",
+  "status": "validation_pull_complete_request_meta_pending",
   "request_submitted": false,
   "request_submitted_at_utc": null,
   "request_reference": null,
   "request_draft_path": "docs/acled_request_draft_2026-02-23.md",
   "credentials_received_at_utc": "2026-02-23T00:00:00Z",
-  "credentials_validated": false,
+  "credentials_validated": true,
+  "credentials_validated_at_utc": "2026-02-23T20:50:15.046629+00:00",
+  "validation_pull_metadata_json": "data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json",
+  "validation_pull_rows": 129,
   "approval_received": false,
   "approval_received_at_utc": null,
   "license_notes": "",
@@ -15,5 +18,5 @@
   "allowed_time_coverage": null,
   "raw_storage_path": "EXTERNAL_ONLY",
   "redistribution_policy": "TBD_FROM_APPROVED_TERMS",
-  "next_action": "Run first ACLED validation pull via env-var credentials and log request/approval metadata."
+  "next_action": "Capture request/approval reference and run production MENA-scope ACLED pull to external storage."
 }

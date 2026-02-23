@@ -26,6 +26,6 @@ Working repository for drafting and replication assets for *The New Regional Eco
 5. Keep methods, notation, and variable naming consistent with Part I.
 
 ## Immediate Priorities
-1. Run the first ACLED validation pull and log request/approval metadata in the tracker.
-2. Execute first UNHCR pull and map it to Lab 4 country-year controls.
+1. Capture ACLED request/approval metadata and redistribution constraints in the tracker.
+2. Run production-scope ACLED pull for Lab 4 MENA and map treatment metrics.
 3. Prepare early classroom pilot package for Labs 1 and 5 (cloud-first execution path + interpretation notes).

@@ -1,0 +1,24 @@
+{
+  "pulled_at_utc": "2026-02-23T20:50:15.046629+00:00",
+  "token_url": "https://acleddata.com/oauth/token",
+  "data_url": "https://acleddata.com/api/acled/read",
+  "query_params": {
+    "country": "Egypt",
+    "event_date": "2024-01-01|2024-12-31",
+    "event_date_where": "BETWEEN",
+    "fields": "event_id_cnty,event_date,year,country,admin1,admin2,event_type,sub_event_type,fatalities,latitude,longitude,source",
+    "limit": "500"
+  },
+  "rows": 129,
+  "country_filter_count": 1,
+  "countries": [
+    "Egypt"
+  ],
+  "start_date": "2024-01-01",
+  "end_date": "2024-12-31",
+  "output_csv": "data\\external\\acled\\acled_lab4_validation_egypt_2024_2026-02-23.csv",
+  "credential_env_vars": {
+    "username_env": "ACLED_USERNAME",
+    "password_env": "ACLED_PASSWORD"
+  }
+}

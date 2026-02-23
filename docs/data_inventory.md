@@ -12,8 +12,8 @@ Track acquisition status, access requirements, update cadence, and intended usag
 | Eurostat NUTS-2 | Regional GDP and treatment boundaries for Spatial RDD | Ready | `data/raw/eurostat/nama_10r_2gdp_nuts2_mio_eur_2000_2024_2026-02-22.csv`, `data/raw/eurostat/ref-nuts-2024-20m.geojson.zip` | Eurostat API pull completed (`nama_10r_2gdp`, `MIO_EUR`, NUTS-2 filter, 7,498 rows / 309 regions). NUTS 2024 geometry bundle (20m geojson) pulled from GISCO. Metadata log: `data/raw/metadata/eurostat_nuts2_pull_2026-02-22.json`. |
 | VIIRS Night Lights | Alternative proxy for economic activity in Africa | In progress | `labs/lab5_africa/data/raw_templates/viirs_example.csv` | Lab 5 scaffold is wired with template inputs; real pull still needs cloud masking and annual compositing decisions. |
 | Afrobarometer | Institutional and governance proxies | In progress | `labs/lab5_africa/data/raw_templates/afrobarometer_example.csv` | Lab 5 scaffold is wired with template inputs; real-wave selection and redistribution constraints still pending. |
-| ACLED | Conflict event timing/intensity for MENA SCM | In progress | `docs/acled_access_workflow_2026-02-22.md`, `docs/acled_request_draft_2026-02-23.md`, `data/raw/metadata/acled_access_tracker_2026-02-22.json`, `labs/lab4_mena/data/acled_intake_checklist_2026-02-22.md`, `scripts/fetch_acled_lab4_events.py` | Licensing/access track opened with request draft prepared, credentials received, and scripted OAuth pull path added. Pending: run first validation pull and log request/approval metadata before production-scale extraction. |
-| UNHCR Population Statistics | Refugee/displacement spillovers | In progress | `labs/lab4_mena/data/raw_templates/unhcr_displacement_template.csv`, `labs/lab4_mena/data/unhcr_intake_checklist_2026-02-23.md` | Intake schema and QA checklist are staged for Lab 4 panel integration. Pending: run first real pull and register mapped output path. |
+| ACLED | Conflict event timing/intensity for MENA SCM | In progress | `docs/acled_access_workflow_2026-02-22.md`, `docs/acled_request_draft_2026-02-23.md`, `data/raw/metadata/acled_access_tracker_2026-02-22.json`, `data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json`, `labs/lab4_mena/data/acled_intake_checklist_2026-02-22.md`, `scripts/fetch_acled_lab4_events.py` | Licensing/access track opened with request draft prepared, credentials validated via sample pull (129 Egypt 2024 rows), and scripted OAuth pull path added. Pending: capture request/approval reference metadata and run production MENA extraction to external storage. |
+| UNHCR Population Statistics | Refugee/displacement spillovers | Ready | `data/raw/unhcr/unhcr_lab4_origin_controls_2000_2024_2026-02-23.csv`, `data/processed/lab4/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv`, `data/raw/metadata/unhcr_lab4_pull_mena_origin_2000_2024_2026-02-23.json` | First real pull completed for 10 Lab 4 MENA countries (2000-2024) with mapped country-year controls (`iso3`, `year`, displacement fields). |
 
 ## Status Legend
 - `Not started`: dataset not yet downloaded or validated.
@@ -30,6 +30,6 @@ Track acquisition status, access requirements, update cadence, and intended usag
 - Known caveats.
 
 ## Near-Term Acquisition Queue (as of 2026-02-23)
-1. Run first ACLED validation pull and log request reference/approval metadata in tracker JSON.
-2. Confirm ACLED redistribution constraints and update inventory notes.
-3. Execute first UNHCR pull and map to (`iso3`, `year`) panel controls.
+1. Capture ACLED request/approval reference metadata and redistribution constraints in tracker JSON.
+2. Run production-scope ACLED pull for Lab 4 MENA and map to country-year treatment metrics.
+3. Integrate ACLED + UNHCR controls with WDI outcomes in the first Lab 4 estimation-ready panel.

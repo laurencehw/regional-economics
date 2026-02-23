@@ -34,5 +34,6 @@ Mappings and intake requirements are tracked in:
 6. Export reproducible outputs and interpretation notes.
 
 ## Current Gate Status
-- Access workflow is initialized; ACLED request submission is pending.
-- Intake template and checklist are in place so pull/validation can start immediately after approval.
+- ACLED credential validation pull completed (Egypt 2024 sample, 129 rows) with metadata logged in `data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json`.
+- UNHCR first real pull completed for Lab 4 scope (10 countries, 2000-2024) and mapped controls exported to `data/processed/lab4/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv`.
+- Remaining blocker: capture ACLED request/approval reference metadata before production-scale ACLED extraction.
