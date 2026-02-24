@@ -32,4 +32,4 @@ Track acquisition status, access requirements, update cadence, and intended usag
 ## Near-Term Acquisition Queue (as of 2026-02-24)
 1. Capture ACLED request/approval reference metadata and confirm historical row-level access scope.
 2. Validate count-based ACLED proxy sensitivity once row-level fields are available.
-3. Run first Lab 4 SCM baseline using `data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`.
+3. Run Lab 4 placebo/robustness SCM checks on top of `labs/lab4_mena/output/scm_baseline/`.

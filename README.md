@@ -27,5 +27,5 @@ Working repository for drafting and replication assets for *The New Regional Eco
 
 ## Immediate Priorities
 1. Capture ACLED request/approval metadata and confirm historical row-level access scope.
-2. Run first Lab 4 SCM baseline from `data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`.
+2. Run Lab 4 placebo/robustness SCM checks on top of the baseline run in `labs/lab4_mena/output/scm_baseline/`.
 3. Prepare early classroom pilot package for Labs 1 and 5 (cloud-first execution path + interpretation notes).

@@ -1,0 +1,31 @@
+{
+  "run_at_utc": "2026-02-24T03:56:48.224088+00:00",
+  "panel_csv": "data\\processed\\lab4\\lab4_mena_estimation_panel_2000_2024_2026-02-23.csv",
+  "treated_iso3": "SYR",
+  "intervention_year": 2018,
+  "outcome_col": "outcome_main",
+  "donor_count": 9,
+  "donors_used": [
+    "EGY",
+    "IRQ",
+    "JOR",
+    "LBN",
+    "LBY",
+    "MAR",
+    "SAU",
+    "TUN",
+    "YEM"
+  ],
+  "pre_year_count": 18,
+  "post_year_count": 7,
+  "pre_rmspe": 10.380778481283603,
+  "post_rmspe": 4.201806569850333,
+  "post_pre_rmspe_ratio": 0.40476796392738085,
+  "mean_post_gap": -3.3296175951453826,
+  "median_post_gap": -2.0549664246695563,
+  "outputs": {
+    "weights_csv": "labs\\lab4_mena\\output\\scm_baseline\\scm_weights_syr_2018_2026-02-24.csv",
+    "path_csv": "labs\\lab4_mena\\output\\scm_baseline\\scm_path_syr_2018_2026-02-24.csv",
+    "summary_json": "labs\\lab4_mena\\output\\scm_baseline\\scm_summary_syr_2018_2026-02-24.json"
+  }
+}

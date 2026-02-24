@@ -38,4 +38,5 @@ Mappings and intake requirements are tracked in:
 - ACLED production query executed for Lab 4 scope; row-level historical fields are currently restricted, so country-year event-count proxy is used (`data/processed/lab4/acled_lab4_country_year_counts_2018_2025_2026-02-23.csv`).
 - UNHCR first real pull completed for Lab 4 scope (10 countries, 2000-2024) and mapped controls exported to `data/processed/lab4/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv`.
 - First estimation-ready panel is built: `data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`.
+- First SCM baseline run completed (treated `SYR`, intervention year `2018`): `labs/lab4_mena/output/scm_baseline/scm_summary_syr_2018_2026-02-24.json`.
 - Remaining blocker: capture ACLED request/approval reference metadata and confirm expanded row-level access terms.
