@@ -7,6 +7,8 @@ This runbook opens the ACLED licensing track for Lab 4 (MENA) so data intake can
 - Request submitted: No
 - Request draft prepared: Yes (`docs/acled_request_draft_2026-02-23.md`)
 - API credentials received and validation pull completed (`data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json`).
+- Production-scope pull executed; count metadata available but row-level fields are restricted under current access window.
+- Country-year count proxy generated at `data/processed/lab4/acled_lab4_country_year_counts_2018_2025_2026-02-23.csv`.
 - Approval received: No
 - Tracker file: `data/raw/metadata/acled_access_tracker_2026-02-22.json`
 - Lab checklist: `labs/lab4_mena/data/acled_intake_checklist_2026-02-22.md`

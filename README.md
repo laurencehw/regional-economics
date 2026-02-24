@@ -26,6 +26,6 @@ Working repository for drafting and replication assets for *The New Regional Eco
 5. Keep methods, notation, and variable naming consistent with Part I.
 
 ## Immediate Priorities
-1. Capture ACLED request/approval metadata and redistribution constraints in the tracker.
-2. Run production-scope ACLED pull for Lab 4 MENA and map treatment metrics.
+1. Capture ACLED request/approval metadata and confirm historical row-level access scope.
+2. Run first Lab 4 SCM baseline from `data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`.
 3. Prepare early classroom pilot package for Labs 1 and 5 (cloud-first execution path + interpretation notes).

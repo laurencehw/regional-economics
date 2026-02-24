@@ -1,24 +1,33 @@
 {
-  "pulled_at_utc": "2026-02-24T01:09:29.576652+00:00",
+  "pulled_at_utc": "2026-02-24T01:09:36.672422+00:00",
   "token_url": "https://acleddata.com/oauth/token",
   "data_url": "https://acleddata.com/api/acled/read",
   "query_params": {
-    "country": "Egypt",
-    "event_date": "2024-01-01|2024-12-31",
+    "country": "Egypt:OR:country=Iraq:OR:country=Jordan:OR:country=Lebanon:OR:country=Libya:OR:country=Morocco:OR:country=Saudi Arabia:OR:country=Syria:OR:country=Tunisia:OR:country=Yemen",
+    "event_date": "2018-01-01|2025-12-31",
     "event_date_where": "BETWEEN",
     "fields": "event_id_cnty,event_date,year,country,admin1,admin2,event_type,sub_event_type,fatalities,latitude,longitude,source",
-    "limit": "500"
+    "limit": "200000"
   },
   "rows": 0,
-  "api_reported_total_count": 129,
+  "api_reported_total_count": 74720,
   "row_level_redacted": true,
-  "country_filter_count": 1,
+  "country_filter_count": 10,
   "countries": [
-    "Egypt"
+    "Egypt",
+    "Iraq",
+    "Jordan",
+    "Lebanon",
+    "Libya",
+    "Morocco",
+    "Saudi Arabia",
+    "Syria",
+    "Tunisia",
+    "Yemen"
   ],
-  "start_date": "2024-01-01",
-  "end_date": "2024-12-31",
-  "output_csv": "data\\external\\acled\\acled_lab4_validation_egypt_2024_2026-02-23.csv",
+  "start_date": "2018-01-01",
+  "end_date": "2025-12-31",
+  "output_csv": "data\\external\\acled\\acled_lab4_mena_2018_2025_2026-02-23.csv",
   "data_query_restrictions": {
     "countries": [],
     "event_types": [],
@@ -29,7 +38,7 @@
       "quantity": 12,
       "unit": "Months",
       "description": "12 Months old",
-      "timestamp": 1740359371,
+      "timestamp": 1740359379,
       "date": "2025-02-24"
     }
   },

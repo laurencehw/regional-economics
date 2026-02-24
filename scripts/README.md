@@ -12,6 +12,8 @@ Current scripts:
 - `fetch_eurostat_nuts2_lab3.py`: pulls Eurostat NUTS-2 GDP panel and NUTS geometry bundle.
 - `fetch_acled_lab4_events.py`: pulls ACLED event records via OAuth using env-var credentials.
 - `fetch_unhcr_lab4_controls.py`: pulls UNHCR origin-based displacement controls and maps Lab 4 country-year panel fields.
+- `fetch_acled_lab4_country_year_counts.py`: pulls ACLED country-year event counts (works when row-level fields are restricted).
+- `build_lab4_mena_estimation_panel.py`: merges ACLED, UNHCR, and WDI into Lab 4 estimation-ready panel outputs.
 
 Typical usage:
 - `python scripts/fetch_wdi_lab1.py --output-csv data/raw/wdi/wdi_usmca_core_long_2026-02-20.csv`
@@ -26,9 +28,12 @@ Typical usage:
 - `python scripts/fetch_eurostat_nuts2_lab3.py --output-csv data/raw/eurostat/nama_10r_2gdp_nuts2_mio_eur_2000_2024_2026-02-22.csv --geometry-zip data/raw/eurostat/ref-nuts-2024-20m.geojson.zip --metadata-json data/raw/metadata/eurostat_nuts2_pull_2026-02-22.json`
 - `python scripts/fetch_acled_lab4_events.py --countries Egypt,Iraq,Jordan,Lebanon,Libya,Morocco,Saudi Arabia,Syria,Tunisia,Yemen --start-date 2018-01-01 --end-date 2025-12-31 --output-csv data/external/acled/acled_lab4_mena_2018_2025_2026-02-23.csv --metadata-json data/raw/metadata/acled_lab4_pull_mena_2018_2025_2026-02-23.json`
 - `python scripts/fetch_unhcr_lab4_controls.py --iso3-list EGY,IRQ,JOR,LBN,LBY,MAR,SAU,SYR,TUN,YEM --start-year 2000 --end-year 2024 --raw-output-csv data/raw/unhcr/unhcr_lab4_origin_controls_2000_2024_2026-02-23.csv --mapped-output-csv data/processed/lab4/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv --metadata-json data/raw/metadata/unhcr_lab4_pull_mena_origin_2000_2024_2026-02-23.json`
+- `python scripts/fetch_acled_lab4_country_year_counts.py --countries \"Egypt,Iraq,Jordan,Lebanon,Libya,Morocco,Saudi Arabia,Syria,Tunisia,Yemen\" --start-year 2018 --end-year 2025 --output-csv data/processed/lab4/acled_lab4_country_year_counts_2018_2025_2026-02-23.csv --metadata-json data/raw/metadata/acled_lab4_country_year_counts_2018_2025_2026-02-23.json`
+- `python scripts/build_lab4_mena_estimation_panel.py --acled-country-year-csv data/processed/lab4/acled_lab4_country_year_2018_2025_2026-02-23.csv --panel-output-csv data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv --metadata-json data/raw/metadata/lab4_mena_panel_build_2026-02-23.json`
 
 TiVA note:
 - `EXGR_FVA` is valid in MainLV but constrained to `COUNTERPART_AREA=W`; use measures like `EXGR_FNL` when `COUNTERPART_AREA=OECD` is required for comparability with existing pulls.
 
 ACLED credential note:
 - Set `ACLED_USERNAME` and `ACLED_PASSWORD` in the shell environment before running the ACLED fetch script.
+- If row-level responses are redacted, use `fetch_acled_lab4_country_year_counts.py` and proceed with count-based treatment intensity.

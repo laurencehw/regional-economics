@@ -12,7 +12,7 @@ import json
 import os
 from datetime import date, datetime, timezone
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 import pandas as pd
 import requests
@@ -113,7 +113,7 @@ def fetch_access_token(username: str, password: str, timeout: int) -> str:
     return token
 
 
-def fetch_events(access_token: str, params: Dict[str, str], timeout: int) -> List[Dict[str, object]]:
+def fetch_events(access_token: str, params: Dict[str, str], timeout: int) -> Tuple[List[object], Dict[str, object]]:
     headers = {"Authorization": f"Bearer {access_token}"}
     response = requests.get(DATA_URL, params=params, headers=headers, timeout=timeout)
     response.raise_for_status()
@@ -122,11 +122,12 @@ def fetch_events(access_token: str, params: Dict[str, str], timeout: int) -> Lis
         rows = payload["data"]
     elif isinstance(payload, list):
         rows = payload
+        payload = {"status": 200, "data": rows}
     else:
         rows = []
-    if not isinstance(rows, list):
+    if not isinstance(rows, list) or not isinstance(payload, dict):
         raise RuntimeError("Unexpected ACLED response structure for data rows")
-    return rows
+    return rows, payload
 
 
 def main() -> None:
@@ -146,12 +147,30 @@ def main() -> None:
     }
 
     token = fetch_access_token(username=username, password=password, timeout=args.timeout)
-    rows = fetch_events(access_token=token, params=params, timeout=args.timeout)
-    df = pd.DataFrame(rows)
+    rows, payload = fetch_events(access_token=token, params=params, timeout=args.timeout)
+    row_level_redacted = False
+    if rows and isinstance(rows[0], dict):
+        df = pd.DataFrame(rows)
+    elif rows and isinstance(rows[0], list):
+        field_names = parse_csv_list(args.fields)
+        if rows[0] and len(rows[0]) == len(field_names):
+            df = pd.DataFrame(rows, columns=field_names)
+        else:
+            # Some access levels expose counts but redact row-level values.
+            row_level_redacted = True
+            df = pd.DataFrame()
+    else:
+        df = pd.DataFrame()
 
     output_csv = Path(args.output_csv)
     output_csv.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_csv, index=False)
+
+    api_count = payload.get("total_count", payload.get("count", len(rows)))
+    try:
+        api_count_int = int(api_count)
+    except Exception:
+        api_count_int = int(len(rows))
 
     metadata = {
         "pulled_at_utc": pulled_at,
@@ -159,11 +178,14 @@ def main() -> None:
         "data_url": DATA_URL,
         "query_params": params,
         "rows": int(len(df)),
+        "api_reported_total_count": api_count_int,
+        "row_level_redacted": row_level_redacted,
         "country_filter_count": int(len(countries)),
         "countries": countries,
         "start_date": args.start_date,
         "end_date": args.end_date,
         "output_csv": str(output_csv),
+        "data_query_restrictions": payload.get("data_query_restrictions", {}),
         "credential_env_vars": {
             "username_env": args.username_env,
             "password_env": args.password_env,
@@ -174,6 +196,8 @@ def main() -> None:
     metadata_json.write_text(json.dumps(metadata, indent=2), encoding="utf-8")
 
     print(f"Rows written: {len(df)}")
+    print(f"API reported total count: {api_count_int}")
+    print(f"Row-level redacted: {row_level_redacted}")
     print(f"Output CSV: {output_csv}")
     print(f"Metadata: {metadata_json}")
 

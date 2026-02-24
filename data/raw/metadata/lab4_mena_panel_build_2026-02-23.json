@@ -1,0 +1,20 @@
+{
+  "built_at_utc": "2026-02-24T00:43:23.690948+00:00",
+  "inputs": {
+    "acled_source": "data\\processed\\lab4\\acled_lab4_country_year_counts_2018_2025_2026-02-23.csv",
+    "acled_events_csv": "data\\external\\acled\\acled_lab4_mena_2018_2025_2026-02-23.csv",
+    "acled_counts_csv": "data\\processed\\lab4\\acled_lab4_country_year_counts_2018_2025_2026-02-23.csv",
+    "wdi_outcome_csv": "data\\raw\\wdi\\wdi_lab4_mena_outcome_long_2000_2024_2026-02-23.csv",
+    "unhcr_mapped_csv": "data\\processed\\lab4\\unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv"
+  },
+  "outputs": {
+    "acled_country_year_csv": "data\\processed\\lab4\\acled_lab4_country_year_2018_2025_2026-02-23.csv",
+    "panel_output_csv": "data\\processed\\lab4\\lab4_mena_estimation_panel_2000_2024_2026-02-23.csv"
+  },
+  "rows_acled_country_year": 80,
+  "rows_panel": 250,
+  "countries_panel": 10,
+  "year_min_panel": 2000,
+  "year_max_panel": 2024,
+  "missing_outcome_main_rows": 9
+}

@@ -1,0 +1,69 @@
+{
+  "pulled_at_utc": "2026-02-23T23:28:29.653308+00:00",
+  "token_url": "https://acleddata.com/oauth/token",
+  "data_url": "https://acleddata.com/api/acled/read",
+  "countries": [
+    "Egypt",
+    "Iraq",
+    "Jordan",
+    "Lebanon",
+    "Libya",
+    "Morocco",
+    "Saudi Arabia",
+    "Syria",
+    "Tunisia",
+    "Yemen"
+  ],
+  "start_year": 2018,
+  "end_year": 2025,
+  "rows": 80,
+  "output_csv": "data\\processed\\lab4\\acled_lab4_country_year_counts_2018_2025_2026-02-23.csv",
+  "credential_env_vars": {
+    "username_env": "ACLED_USERNAME",
+    "password_env": "ACLED_PASSWORD"
+  },
+  "restriction_samples": [
+    {
+      "countries": [],
+      "event_types": [],
+      "regions": [],
+      "history": [],
+      "recency": [],
+      "date_recency": {
+        "quantity": 12,
+        "unit": "Months",
+        "description": "12 Months old",
+        "timestamp": 1740353311,
+        "date": "2025-02-23"
+      }
+    },
+    {
+      "countries": [],
+      "event_types": [],
+      "regions": [],
+      "history": [],
+      "recency": [],
+      "date_recency": {
+        "quantity": 12,
+        "unit": "Months",
+        "description": "12 Months old",
+        "timestamp": 1740353312,
+        "date": "2025-02-23"
+      }
+    },
+    {
+      "countries": [],
+      "event_types": [],
+      "regions": [],
+      "history": [],
+      "recency": [],
+      "date_recency": {
+        "quantity": 12,
+        "unit": "Months",
+        "description": "12 Months old",
+        "timestamp": 1740353313,
+        "date": "2025-02-23"
+      }
+    }
+  ]
+}

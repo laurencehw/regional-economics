@@ -2,14 +2,15 @@
 
 This plan consolidates reviewer feedback received through 2026-02-21 and maps each point to an execution step.
 
-## Progress Update (2026-02-23)
+## Progress Update (2026-02-24)
 - WIOD pull expanded to full WIOTS packages (`WIOTS_in_R.zip`, `WIOTS_in_EXCEL.zip`) with size-validated manifest logging.
 - OECD TiVA constrained extract pulled for core Asia economies.
 - Additional TiVA robustness extract pulled (`EXGR_FNL` with `OECD` counterpart) and compared against `EXGR_DVA`.
 - WIOD-TiVA country/activity concordance templates generated in `data/processed/lab2/`.
 - Eurostat NUTS-2 GDP and NUTS 2024 geometry pulled and registered.
-- ACLED licensing workflow initialized with a submit-ready request draft, scripted API pull path, and successful validation pull.
+- ACLED licensing workflow initialized with a submit-ready request draft, scripted API pull path, validation pull, and production country-year count extraction.
 - UNHCR first real pull completed and mapped to Lab 4 country-year controls.
+- First Lab 4 estimation-ready panel built by merging WDI outcomes, UNHCR controls, and ACLED count-based treatment proxy.
 
 ## Priority Actions
 
@@ -29,15 +30,16 @@ This plan consolidates reviewer feedback received through 2026-02-21 and maps ea
 ## Immediate Execution Queue
 1. Land Lab 5 smoke tests and run full smoke suite (Lab 1 + Lab 5).
 2. Finalize code-hygiene sweep (remaining path prints and docs normalization).
-3. Capture ACLED request/approval metadata and redistribution constraints in tracker JSON.
-4. Build first estimation-ready Lab 4 panel by merging WDI outcomes with ACLED + UNHCR controls.
+3. Capture ACLED request/approval metadata and confirm historical row-level field access scope.
+4. Run first Lab 4 SCM baseline and diagnostics using the new estimation panel.
 
 Completed item:
 - Institution-interaction specs were run on the blended proxy; see `labs/lab1_americas/output/real_americas_2024_lpi_blend/interaction_specs/`.
 - TiVA alternative measure robustness step completed (`EXGR_FNL` vs `EXGR_DVA`) with summary in `data/processed/lab2/tiva_measure_comparison_summary_exgr_dva_vs_exgr_fnl_2026-02-23.json`.
 - UNHCR intake schema staging completed (`labs/lab4_mena/data/raw_templates/unhcr_displacement_template.csv` and `labs/lab4_mena/data/unhcr_intake_checklist_2026-02-23.md`).
-- ACLED validation pull completed (`data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json`; raw sample stored externally).
+- ACLED validation pull completed with count-only access under current scope (`data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json`).
 - UNHCR real pull and mapped controls completed (`data/raw/unhcr/unhcr_lab4_origin_controls_2000_2024_2026-02-23.csv`, `data/processed/lab4/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv`).
+- ACLED country-year count proxy extracted for 10 countries (2018-2025) and merged into Lab 4 panel (`data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`).
 
 ## Definition of Done for This Feedback Round
 - Drafting plan updated to reflect cloud execution, early pilot timing, and dataset fallback strategy.

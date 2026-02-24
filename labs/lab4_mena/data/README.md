@@ -8,3 +8,5 @@ Key files:
 - `raw_templates/unhcr_displacement_template.csv`: minimum schema template for UNHCR country-year controls.
 - `data/raw/unhcr/unhcr_lab4_origin_controls_2000_2024_2026-02-23.csv`: first real UNHCR pull for Lab 4 scope.
 - `data/processed/lab4/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv`: mapped country-year displacement controls.
+- `data/processed/lab4/acled_lab4_country_year_counts_2018_2025_2026-02-23.csv`: ACLED country-year event-count proxy under current access scope.
+- `data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`: merged WDI + ACLED + UNHCR estimation-ready panel.

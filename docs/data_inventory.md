@@ -4,7 +4,7 @@ Track acquisition status, access requirements, update cadence, and intended usag
 
 | Dataset | Primary Use | Status | Access Path | Notes |
 |---|---|---|---|---|
-| World Development Indicators (WDI) | Cross-country macro controls and outcomes | Ready | `data/raw/wdi/wdi_americas_core_long_2026-02-20.csv` | Ready for Lab 1 Americas scope (45 Americas economies; indicators `NY.GDP.MKTP.KD.ZG`, `NY.GDP.PCAP.KD`, `NV.IND.MANF.ZS`). |
+| World Development Indicators (WDI) | Cross-country macro controls and outcomes | Ready | `data/raw/wdi/wdi_americas_core_long_2026-02-20.csv`, `data/raw/wdi/wdi_lab4_mena_outcome_long_2000_2024_2026-02-23.csv` | Ready for Lab 1 Americas scope and Lab 4 MENA outcome pull (`NY.GDP.PCAP.KD.ZG`; 241 rows for 10 countries, 2000-2024 window). |
 | UN Comtrade | Trade flows for gravity and spatial interaction | Ready | `data/raw/comtrade/comtrade_americas_total_x_2024_2026-02-20.csv` | Ready for Lab 1 Americas scope; post-process patch applied from `data/raw/comtrade/comtrade_patch_batch_2024_2026-02-20.csv`; final normalized rows: 895. |
 | Bureau of Transportation Statistics (BTS) | North American corridor and border-friction context | Ready | `data/raw/bts/bts_border_crossings_keg4_3bc2_2018_2026-02-20.csv` | Ready for Lab 1 border proxy derivation; processed proxy in `data/processed/lab1/bts_border_delay_proxy_americas_2018_2025_2026-02-20.csv`. Coverage is strongest for USA/CAN/MEX. |
 | World Bank LPI (WDI `LP.LPI.OVRL.XQ`) | Broad Americas logistics-friction proxy for Lab 1 robustness | Ready | `data/raw/wdi/wdi_lpi_americas_long_2026-02-22.csv` | Fetched via `scripts/fetch_wdi_lpi_americas.py`; transformed/blended via `scripts/derive_lab1_lpi_border_proxy.py` to `data/processed/lab1/border_delay_proxy_americas_lpi_blend_2018_2025_2026-02-22.csv`. 2024 non-missing border coverage increased from 3 to 28 regions. |
@@ -12,7 +12,7 @@ Track acquisition status, access requirements, update cadence, and intended usag
 | Eurostat NUTS-2 | Regional GDP and treatment boundaries for Spatial RDD | Ready | `data/raw/eurostat/nama_10r_2gdp_nuts2_mio_eur_2000_2024_2026-02-22.csv`, `data/raw/eurostat/ref-nuts-2024-20m.geojson.zip` | Eurostat API pull completed (`nama_10r_2gdp`, `MIO_EUR`, NUTS-2 filter, 7,498 rows / 309 regions). NUTS 2024 geometry bundle (20m geojson) pulled from GISCO. Metadata log: `data/raw/metadata/eurostat_nuts2_pull_2026-02-22.json`. |
 | VIIRS Night Lights | Alternative proxy for economic activity in Africa | In progress | `labs/lab5_africa/data/raw_templates/viirs_example.csv` | Lab 5 scaffold is wired with template inputs; real pull still needs cloud masking and annual compositing decisions. |
 | Afrobarometer | Institutional and governance proxies | In progress | `labs/lab5_africa/data/raw_templates/afrobarometer_example.csv` | Lab 5 scaffold is wired with template inputs; real-wave selection and redistribution constraints still pending. |
-| ACLED | Conflict event timing/intensity for MENA SCM | In progress | `docs/acled_access_workflow_2026-02-22.md`, `docs/acled_request_draft_2026-02-23.md`, `data/raw/metadata/acled_access_tracker_2026-02-22.json`, `data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json`, `labs/lab4_mena/data/acled_intake_checklist_2026-02-22.md`, `scripts/fetch_acled_lab4_events.py` | Licensing/access track opened with request draft prepared, credentials validated via sample pull (129 Egypt 2024 rows), and scripted OAuth pull path added. Pending: capture request/approval reference metadata and run production MENA extraction to external storage. |
+| ACLED | Conflict event timing/intensity for MENA SCM | In progress | `docs/acled_access_workflow_2026-02-22.md`, `docs/acled_request_draft_2026-02-23.md`, `data/raw/metadata/acled_access_tracker_2026-02-22.json`, `data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json`, `data/raw/metadata/acled_lab4_pull_mena_2018_2025_2026-02-23.json`, `data/raw/metadata/acled_lab4_country_year_counts_2018_2025_2026-02-23.json`, `data/processed/lab4/acled_lab4_country_year_counts_2018_2025_2026-02-23.csv`, `scripts/fetch_acled_lab4_events.py`, `scripts/fetch_acled_lab4_country_year_counts.py` | Credentials are active and production-scope queries run; current access exposes reliable country-year counts but redacts row-level historical fields under date-recency restrictions. Count-based treatment proxy is available; pending formal request/approval metadata and expanded row-level scope confirmation. |
 | UNHCR Population Statistics | Refugee/displacement spillovers | Ready | `data/raw/unhcr/unhcr_lab4_origin_controls_2000_2024_2026-02-23.csv`, `data/processed/lab4/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv`, `data/raw/metadata/unhcr_lab4_pull_mena_origin_2000_2024_2026-02-23.json` | First real pull completed for 10 Lab 4 MENA countries (2000-2024) with mapped country-year controls (`iso3`, `year`, displacement fields). |
 
 ## Status Legend
@@ -29,7 +29,7 @@ Track acquisition status, access requirements, update cadence, and intended usag
 - Core variables used.
 - Known caveats.
 
-## Near-Term Acquisition Queue (as of 2026-02-23)
-1. Capture ACLED request/approval reference metadata and redistribution constraints in tracker JSON.
-2. Run production-scope ACLED pull for Lab 4 MENA and map to country-year treatment metrics.
-3. Integrate ACLED + UNHCR controls with WDI outcomes in the first Lab 4 estimation-ready panel.
+## Near-Term Acquisition Queue (as of 2026-02-24)
+1. Capture ACLED request/approval reference metadata and confirm historical row-level access scope.
+2. Validate count-based ACLED proxy sensitivity once row-level fields are available.
+3. Run first Lab 4 SCM baseline using `data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`.
