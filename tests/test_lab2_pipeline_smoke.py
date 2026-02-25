@@ -1,4 +1,5 @@
 import json
+import math
 import sys
 
 import pandas as pd
@@ -112,3 +113,45 @@ def test_convergence_scaffold_smoke(tmp_path, run_cmd):
     est_df = pd.read_csv(est_csv)
     assert not est_df.empty, "estimation_panel.csv is empty"
     assert "log_dva_lag" in est_df.columns, "Estimation panel should contain log_dva_lag"
+
+
+def test_prepare_then_convergence_integration(tmp_path, run_cmd):
+    prepared_dir = tmp_path / "prepared"
+    prepared_dir.mkdir()
+
+    run_cmd([
+        sys.executable,
+        "labs/lab2_asia/code/prepare_lab2_inputs.py",
+        "--base-input",
+        "labs/lab2_asia/data/raw_templates/tiva_base_example.csv",
+        "--alt-input",
+        "labs/lab2_asia/data/raw_templates/tiva_alt_example.csv",
+        "--mappings",
+        "labs/lab2_asia/data/source_mappings.json",
+        "--output-dir",
+        str(prepared_dir),
+    ])
+
+    panel_csv = prepared_dir / "panel_mapped.csv"
+    assert panel_csv.exists(), "panel_mapped.csv missing after prepare step"
+
+    est_dir = tmp_path / "convergence"
+    est_dir.mkdir()
+
+    run_cmd([
+        sys.executable,
+        "labs/lab2_asia/code/lab2_asia_convergence_scaffold.py",
+        "--panel",
+        str(panel_csv),
+        "--output-dir",
+        str(est_dir),
+    ])
+
+    summary_json = est_dir / "model_summary.json"
+    assert summary_json.exists(), "model_summary.json missing after convergence step"
+    summary = json.loads(summary_json.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "Beta_Convergence_OLS_HC1"
+    assert summary["n_obs"] >= 3, f"Expected >= 3 obs from template data, got {summary['n_obs']}"
+    assert math.isfinite(summary["beta"]), f"beta should be finite, got {summary['beta']}"
+    assert summary["n_countries"] == 3, f"Expected 3 countries, got {summary['n_countries']}"

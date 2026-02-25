@@ -1,0 +1,18 @@
+{
+  "method": "Beta_Convergence_OLS_HC1",
+  "outcome": "dva_growth",
+  "regressor": "log(dva_lag)",
+  "beta": -3.1484927485086907,
+  "se_beta": 0.8158578586579198,
+  "t_stat": -3.859119226586771,
+  "p_value": 0.00011379641356379366,
+  "r_squared": 0.057522665961673214,
+  "half_life_years": 0.22015206510742644,
+  "convergence_detected": true,
+  "n_obs": 198,
+  "n_countries": 9,
+  "year_range": [
+    2001,
+    2022
+  ]
+}

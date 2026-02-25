@@ -1,0 +1,5 @@
+spec_id,status,n_obs,n_countries,beta,se_beta,p_value,convergence,half_life,notes,output_subdir
+full_panel,ok,220,10,-1.1537224470239755,0.6992896294037749,0.09897377967552967,YES,0.6007919689418516,"All 10 Asian economies, full time range.",/home/user/regional-economics/labs/lab2_asia/output/real_asia/specs/full_panel
+asean_6,ok,132,6,-3.610748227114072,1.4714623156394866,0.014133581031053444,YES,0.19196774102246125,ASEAN subset — flying-geese within Southeast Asia.,/home/user/regional-economics/labs/lab2_asia/output/real_asia/specs/asean_6
+east_asia_core,ok,66,3,0.19210273401587571,1.7764434110981675,0.9138854677355177,NO,,Northeast Asia core — highest-DVA economies.,/home/user/regional-economics/labs/lab2_asia/output/real_asia/specs/east_asia_core
+ex_china,ok,198,9,-3.1484927485086907,0.8158578586579198,0.00011379641356379366,YES,0.22015206510742644,All except CHN — tests whether China drives the result.,/home/user/regional-economics/labs/lab2_asia/output/real_asia/specs/ex_china
