@@ -1,0 +1,115 @@
+import json
+import sys
+
+import pandas as pd
+
+
+def test_prepare_lab3_inputs_smoke(tmp_path, run_cmd):
+    """Test that the preparation script produces a valid panel from template data."""
+    out_dir = tmp_path / "mapped"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab3_europe/code/prepare_lab3_inputs.py",
+        "--eurostat-input",
+        "labs/lab3_europe/data/raw_templates/eurostat_gdp_example.csv",
+        "--eligibility-input",
+        "labs/lab3_europe/data/raw_templates/eligibility_example.csv",
+        "--mappings",
+        "labs/lab3_europe/data/source_mappings.json",
+        "--output-dir",
+        str(out_dir),
+    ])
+
+    panel = out_dir / "panel_mapped.csv"
+    summary = out_dir / "mapping_summary.json"
+
+    assert panel.exists(), "panel_mapped.csv missing"
+    assert summary.exists(), "mapping_summary.json missing"
+
+    df = pd.read_csv(panel)
+    assert not df.empty, "panel_mapped.csv is empty"
+
+    expected_cols = {"nuts2_code", "year", "gdp_mio_eur", "gdp_growth", "forcing_var", "treated"}
+    assert expected_cols.issubset(set(df.columns)), f"Missing columns: {expected_cols - set(df.columns)}"
+
+    assert df["treated"].isin([0, 1]).all(), "treated column must be binary"
+    assert df["treated"].sum() > 0, "No treated regions in panel"
+    assert (df["treated"] == 0).sum() > 0, "No control regions in panel"
+
+    payload = json.loads(summary.read_text(encoding="utf-8"))
+    assert payload["panel_rows"] > 0
+    assert payload["treated_regions"] > 0
+    assert payload["control_regions"] > 0
+
+
+def test_rdd_scaffold_smoke(tmp_path, run_cmd):
+    """Test that the RDD scaffold runs in smoke-test mode and recovers a plausible estimate."""
+    out_dir = tmp_path / "rdd"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab3_europe/code/lab3_europe_rdd_scaffold.py",
+        "--run-smoke-test",
+        "--output-dir",
+        str(out_dir),
+    ])
+
+    summary_path = out_dir / "model_summary.json"
+    assert summary_path.exists(), "model_summary.json missing"
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["method"] == "Sharp_RDD_Local_Linear"
+    assert summary["n_obs"] >= 5
+
+    tau = float(summary["tau"])
+    assert 0.5 < tau < 4.0, f"Estimated tau={tau} outside plausible range for synthetic data"
+
+    sample_path = out_dir / "rdd_sample.csv"
+    assert sample_path.exists(), "rdd_sample.csv missing"
+    sample = pd.read_csv(sample_path)
+    assert not sample.empty, "rdd_sample.csv is empty"
+
+
+def test_prepare_then_rdd_integration(tmp_path, run_cmd):
+    """End-to-end: prepare panel from templates, then run RDD on it."""
+    panel_dir = tmp_path / "panel"
+    panel_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab3_europe/code/prepare_lab3_inputs.py",
+        "--eurostat-input",
+        "labs/lab3_europe/data/raw_templates/eurostat_gdp_example.csv",
+        "--eligibility-input",
+        "labs/lab3_europe/data/raw_templates/eligibility_example.csv",
+        "--mappings",
+        "labs/lab3_europe/data/source_mappings.json",
+        "--output-dir",
+        str(panel_dir),
+        "--year",
+        "2022",
+    ])
+
+    rdd_dir = tmp_path / "rdd_integration"
+    rdd_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab3_europe/code/lab3_europe_rdd_scaffold.py",
+        "--panel",
+        str(panel_dir / "panel_mapped.csv"),
+        "--year",
+        "2022",
+        "--output-dir",
+        str(rdd_dir),
+    ])
+
+    summary_path = rdd_dir / "model_summary.json"
+    assert summary_path.exists(), "model_summary.json missing"
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["method"] == "Sharp_RDD_Local_Linear"
+    assert summary["n_obs"] >= 4
