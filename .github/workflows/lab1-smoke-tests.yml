@@ -24,4 +24,4 @@ jobs:
 
       - name: Run smoke tests
         run: |
-          pytest -q tests/test_lab1_pipeline_smoke.py tests/test_lab1_lpi_proxy_smoke.py tests/test_lab1_interaction_specs_smoke.py tests/test_lab5_pipeline_smoke.py tests/test_lab2_pipeline_smoke.py tests/test_lab4_pipeline_smoke.py
+          pytest -q tests/test_lab1_pipeline_smoke.py tests/test_lab1_lpi_proxy_smoke.py tests/test_lab1_interaction_specs_smoke.py tests/test_lab5_pipeline_smoke.py tests/test_lab2_pipeline_smoke.py tests/test_lab4_pipeline_smoke.py tests/test_lab3_pipeline_smoke.py

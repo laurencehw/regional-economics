@@ -1,0 +1,16 @@
+{
+  "eurostat_gdp": {
+    "region_col": "nuts2_code",
+    "year_col": "year",
+    "gdp_col": "gdp_value",
+    "unit_col": "unit",
+    "frequency_col": "frequency"
+  },
+  "eligibility": {
+    "region_col": "nuts2_code",
+    "period_col": "programming_period",
+    "gdp_pc_pps_col": "gdp_pc_pps",
+    "threshold_col": "eu_threshold_75pct",
+    "eligible_col": "eligible"
+  }
+}
