@@ -84,10 +84,6 @@ def build_panel(
     if year_filter is not None:
         panel = panel.loc[panel["year"] == year_filter].copy()
 
-    for col in CANONICAL_PANEL_COLS:
-        if col not in panel.columns:
-            panel = panel.assign(**{col: np.nan})
-
     panel = panel[CANONICAL_PANEL_COLS].sort_values(["country", "year"]).reset_index(drop=True)
     return panel
 
