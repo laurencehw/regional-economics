@@ -91,7 +91,24 @@ def test_convergence_scaffold_smoke(tmp_path, run_cmd):
     assert summary["convergence_detected"] is True
     assert summary["half_life_years"] > 0
 
+    # Statistical validity checks
+    assert summary["se_beta"] > 0, "Standard error must be positive"
+    assert 0.0 <= summary["p_value"] <= 1.0, f"p_value={summary['p_value']} outside [0, 1]"
+    assert 0.0 <= summary["r_squared"] <= 1.0, f"r_squared={summary['r_squared']} outside [0, 1]"
+    assert summary["p_value"] < 0.05, "Synthetic β=-0.10 should be significant at 5%"
+
+    # Panel dimension checks (synthetic: 30 countries × 20 years)
+    assert summary["n_countries"] == 30, f"Expected 30 countries, got {summary['n_countries']}"
+    assert summary["year_range"][0] == 2001, f"Expected first estimation year 2001, got {summary['year_range'][0]}"
+    assert summary["year_range"][1] == 2019, f"Expected last year 2019, got {summary['year_range'][1]}"
+
+    # Half-life should be economically plausible (not near-zero or centuries)
+    assert 1.0 < summary["half_life_years"] < 100.0, (
+        f"half_life={summary['half_life_years']} outside plausible range"
+    )
+
     est_csv = out_dir / "estimation_panel.csv"
     assert est_csv.exists(), "estimation_panel.csv missing"
     est_df = pd.read_csv(est_csv)
     assert not est_df.empty, "estimation_panel.csv is empty"
+    assert "log_dva_lag" in est_df.columns, "Estimation panel should contain log_dva_lag"
