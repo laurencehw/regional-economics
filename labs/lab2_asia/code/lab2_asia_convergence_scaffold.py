@@ -10,7 +10,7 @@ Model:
     β ≥ 0  → no convergence
 
 This script supports two modes:
-1. Smoke-test mode with synthetic data (known β = -0.05).
+1. Smoke-test mode with synthetic data (known β = -0.10).
 2. Real-data mode using a mapped panel CSV.
 
 Outputs are written to the selected output directory.
@@ -225,7 +225,7 @@ def main() -> None:
     convergence_str = "YES" if summary["convergence_detected"] else "NO"
     print(f"Convergence: {convergence_str}")
     print(f"  beta: {summary['beta']:.4f} (se={summary['se_beta']:.4f}, p={summary['p_value']:.4f})")
-    if result["half_life_years"] != float("nan") and summary["convergence_detected"]:
+    if summary["convergence_detected"]:
         print(f"  half-life: {summary['half_life_years']:.1f} years")
 
 
