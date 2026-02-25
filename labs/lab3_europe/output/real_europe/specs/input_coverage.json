@@ -1,0 +1,13 @@
+{
+  "total_rows": 7498,
+  "n_regions": 309,
+  "year_range": [
+    2000,
+    2024
+  ],
+  "n_years": 25,
+  "treated_regions": 125,
+  "control_regions": 184,
+  "missing_gdp_growth_share": 0.044411843158175514,
+  "missing_forcing_var_share": 0.0
+}

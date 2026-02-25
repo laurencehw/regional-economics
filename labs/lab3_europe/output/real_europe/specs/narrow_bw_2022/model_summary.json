@@ -1,0 +1,15 @@
+{
+  "method": "Sharp_RDD_Local_Linear",
+  "year": 2022,
+  "outcome": "gdp_growth",
+  "forcing": "forcing_var",
+  "tau": 1.0864649859323883,
+  "se_tau": 2.0585949043064526,
+  "t_stat": 0.5277701716153922,
+  "p_value": 0.5976588624672068,
+  "bandwidth": 162985.62916666665,
+  "bandwidth_frac": 0.25,
+  "kernel": "triangular",
+  "n_obs": 289,
+  "n_effective": 241.9277423462002
+}

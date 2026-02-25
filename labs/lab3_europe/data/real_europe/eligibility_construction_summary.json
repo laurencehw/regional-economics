@@ -1,0 +1,13 @@
+{
+  "ref_period": [
+    2014,
+    2016
+  ],
+  "threshold_pct": 0.75,
+  "eu_median_gdp": 24794.066666666666,
+  "threshold_value": 18595.55,
+  "total_regions": 309,
+  "treated_regions": 125,
+  "control_regions": 184,
+  "treated_share": 0.4045307443365696
+}

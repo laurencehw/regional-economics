@@ -1,0 +1,15 @@
+{
+  "method": "Sharp_RDD_Local_Linear",
+  "year": 2020,
+  "outcome": "gdp_growth",
+  "forcing": "forcing_var",
+  "tau": 1.622555476406214,
+  "se_tau": 1.0048054436835632,
+  "t_stat": 1.6147956667690933,
+  "p_value": 0.10635495186029353,
+  "bandwidth": 325971.2583333333,
+  "bandwidth_frac": 0.5,
+  "kernel": "triangular",
+  "n_obs": 306,
+  "n_effective": 276.4042477057857
+}
