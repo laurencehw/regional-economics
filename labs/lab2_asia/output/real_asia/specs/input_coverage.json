@@ -1,0 +1,27 @@
+{
+  "total_rows": 230,
+  "countries": [
+    "CHN",
+    "IDN",
+    "IND",
+    "JPN",
+    "KOR",
+    "MYS",
+    "PHL",
+    "SGP",
+    "THA",
+    "VNM"
+  ],
+  "n_countries": 10,
+  "year_range": [
+    2000,
+    2022
+  ],
+  "n_years": 23,
+  "nonmissing_dva_value": 230,
+  "nonmissing_fnl_value": 230,
+  "nonmissing_dva_growth": 220,
+  "nonmissing_dva_lag": 220,
+  "missing_dva_growth_share": 0.043478260869565216,
+  "missing_dva_lag_share": 0.043478260869565216
+}
