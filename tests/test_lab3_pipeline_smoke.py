@@ -67,10 +67,23 @@ def test_rdd_scaffold_smoke(tmp_path, run_cmd):
     tau = float(summary["tau"])
     assert 0.5 < tau < 4.0, f"Estimated tau={tau} outside plausible range for synthetic data"
 
+    # Statistical validity checks
+    assert summary["se_tau"] > 0, "Standard error must be positive"
+    assert 0.0 <= summary["p_value"] <= 1.0, f"p_value={summary['p_value']} outside [0, 1]"
+    assert summary["p_value"] < 0.05, "Synthetic tau=2.0 should be significant at 5%"
+    assert summary["bandwidth"] > 0, "Bandwidth must be positive"
+    assert summary["n_effective"] > 0, "Effective sample size must be positive"
+
+    # t-stat sign should match tau
+    assert (summary["t_stat"] > 0) == (tau > 0), "t_stat sign should match tau sign"
+
     sample_path = out_dir / "rdd_sample.csv"
     assert sample_path.exists(), "rdd_sample.csv missing"
     sample = pd.read_csv(sample_path)
     assert not sample.empty, "rdd_sample.csv is empty"
+    assert {"nuts2_code", "gdp_growth", "forcing_var", "treated"}.issubset(
+        set(sample.columns)
+    ), "RDD sample missing expected columns"
 
 
 def test_prepare_then_rdd_integration(tmp_path, run_cmd):

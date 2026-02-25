@@ -1,6 +1,7 @@
 import json
 import sys
 
+import numpy as np
 import pandas as pd
 
 
@@ -39,14 +40,28 @@ def test_scm_baseline_smoke(tmp_path, run_cmd, lab4_panel):
     weights = pd.read_csv(weights_files[0])
     assert len(weights) >= 2, "Need at least 2 donors in weights"
 
+    # SCM weights must be non-negative and sum to ~1
+    w_vals = weights["weight"].to_numpy(dtype=float)
+    assert (w_vals >= -1e-10).all(), "SCM weights must be non-negative"
+    assert np.isclose(w_vals.sum(), 1.0, atol=1e-6), f"SCM weights sum to {w_vals.sum()}, expected ~1.0"
+
     path_files = list(scm_dir.glob("scm_path_*.csv"))
     assert len(path_files) >= 1, "scm_path CSV missing"
     path_df = pd.read_csv(path_files[0])
     assert "pre" in set(path_df["period"]), "Missing pre period in SCM path"
     assert "post" in set(path_df["period"]), "Missing post period in SCM path"
 
+    # Path values should be finite where available
+    for col in ["treated_outcome", "synthetic_outcome"]:
+        vals = path_df[col].dropna()
+        assert len(vals) > 0, f"{col} has no non-null values"
+        assert np.all(np.isfinite(vals.to_numpy(dtype=float))), f"{col} contains non-finite values"
+
     summary_files = list(scm_dir.glob("scm_summary_*.json"))
     assert len(summary_files) >= 1, "scm_summary JSON missing"
     summary = json.loads(summary_files[0].read_text(encoding="utf-8"))
     assert summary["donor_count"] >= 2
     assert summary["pre_rmspe"] is not None
+    assert summary["pre_rmspe"] > 0, "Pre-RMSPE should be positive"
+    assert summary["pre_year_count"] >= 3, "Need at least 3 pre-intervention years"
+    assert summary["post_year_count"] >= 1, "Need at least 1 post-intervention year"
