@@ -1,28 +1,12 @@
 import json
-import subprocess
 import sys
-from pathlib import Path
 
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-
-
-def run_cmd(args, cwd=REPO_ROOT):
-    completed = subprocess.run(
-        args,
-        cwd=str(cwd),
-        capture_output=True,
-        text=True,
-        check=True,
-    )
-    return completed
-
-
-def test_prepare_lab5_inputs_smoke(tmp_path):
+def test_prepare_lab5_inputs_smoke(tmp_path, run_cmd):
     out_dir = tmp_path / "mapped"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    args = [
+    run_cmd([
         sys.executable,
         "labs/lab5_africa/code/prepare_lab5_inputs.py",
         "--viirs-input",
@@ -37,8 +21,7 @@ def test_prepare_lab5_inputs_smoke(tmp_path):
         str(out_dir),
         "--year",
         "2024",
-    ]
-    run_cmd(args)
+    ])
 
     panel = out_dir / "panel_mapped.csv"
     adjacency = out_dir / "adjacency_mapped.csv"
@@ -53,18 +36,17 @@ def test_prepare_lab5_inputs_smoke(tmp_path):
     assert payload["adjacency_rows"] > 0
 
 
-def test_moran_scaffold_smoke(tmp_path):
+def test_moran_scaffold_smoke(tmp_path, run_cmd):
     out_dir = tmp_path / "moran"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    args = [
+    run_cmd([
         sys.executable,
         "labs/lab5_africa/code/lab5_africa_moran_scaffold.py",
         "--run-smoke-test",
         "--output-dir",
         str(out_dir),
-    ]
-    run_cmd(args)
+    ])
 
     summary_path = out_dir / "model_summary.json"
     assert summary_path.exists(), "model_summary.json missing"

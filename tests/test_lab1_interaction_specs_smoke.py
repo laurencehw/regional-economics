@@ -1,29 +1,13 @@
-import subprocess
 import sys
-from pathlib import Path
 
 import pandas as pd
 
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-
-
-def run_cmd(args, cwd=REPO_ROOT):
-    completed = subprocess.run(
-        args,
-        cwd=str(cwd),
-        capture_output=True,
-        text=True,
-        check=True,
-    )
-    return completed
-
-
-def test_run_interaction_specs_smoke(tmp_path):
+def test_run_interaction_specs_smoke(tmp_path, run_cmd):
     mapped_dir = tmp_path / "mapped"
     mapped_dir.mkdir(parents=True, exist_ok=True)
 
-    map_args = [
+    run_cmd([
         sys.executable,
         "labs/lab1_americas/code/prepare_lab1_inputs.py",
         "--wdi-input",
@@ -38,13 +22,12 @@ def test_run_interaction_specs_smoke(tmp_path):
         str(mapped_dir),
         "--year",
         "2024",
-    ]
-    run_cmd(map_args)
+    ])
 
     out_dir = tmp_path / "interaction_specs"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    run_args = [
+    run_cmd([
         sys.executable,
         "labs/lab1_americas/code/run_real_americas_interaction_specs.py",
         "--panel",
@@ -55,8 +38,7 @@ def test_run_interaction_specs_smoke(tmp_path):
         str(out_dir),
         "--year",
         "2024",
-    ]
-    run_cmd(run_args)
+    ])
 
     summary_csv = out_dir / "spec_results.csv"
     coverage_json = out_dir / "input_coverage.json"
