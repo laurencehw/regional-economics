@@ -126,3 +126,39 @@ def test_prepare_then_rdd_integration(tmp_path, run_cmd):
     summary = json.loads(summary_path.read_text(encoding="utf-8"))
     assert summary["method"] == "Sharp_RDD_Local_Linear"
     assert summary["n_obs"] >= 4
+
+
+def test_build_eligibility_smoke(tmp_path, run_cmd):
+    """Test that the eligibility builder produces valid output from template GDP data."""
+    out_csv = tmp_path / "eligibility.csv"
+
+    run_cmd([
+        sys.executable,
+        "scripts/build_lab3_eligibility.py",
+        "--gdp-input",
+        "labs/lab3_europe/data/raw_templates/eurostat_gdp_example.csv",
+        "--ref-start", "2018",
+        "--ref-end", "2020",
+        "--min-ref-years", "2",
+        "--output",
+        str(out_csv),
+    ])
+
+    assert out_csv.exists(), "eligibility CSV missing"
+    df = pd.read_csv(out_csv)
+    assert not df.empty, "eligibility CSV is empty"
+
+    expected_cols = {"nuts2_code", "programming_period", "gdp_pc_pps", "eu_threshold_75pct", "eligible"}
+    assert expected_cols.issubset(set(df.columns)), f"Missing columns: {expected_cols - set(df.columns)}"
+
+    assert df["eligible"].isin([0, 1]).all(), "eligible column must be binary"
+    assert df["eligible"].sum() > 0, "No treated regions"
+    assert (df["eligible"] == 0).sum() > 0, "No control regions"
+    assert (df["eu_threshold_75pct"] > 0).all(), "Threshold must be positive"
+
+    summary_path = out_csv.parent / "eligibility_construction_summary.json"
+    assert summary_path.exists(), "construction summary JSON missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["treated_regions"] > 0
+    assert summary["control_regions"] > 0
+    assert summary["threshold_value"] > 0
