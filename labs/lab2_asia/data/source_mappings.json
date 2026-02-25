@@ -1,0 +1,10 @@
+{
+  "tiva": {
+    "ref_area_col": "REF_AREA",
+    "time_period_col": "TIME_PERIOD",
+    "obs_value_col": "OBS_VALUE",
+    "measure_col": "MEASURE",
+    "activity_col": "ACTIVITY",
+    "counterpart_area_col": "COUNTERPART_AREA"
+  }
+}
