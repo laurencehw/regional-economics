@@ -16,6 +16,8 @@ Sovereign-wealth-led diversification in MENA succeeds when institutional reforms
 3. Labor-market segmentation (including migrant labor institutions) shapes transmission from investment to productivity.
 4. Logistics connectivity and trade openness determine whether projects integrate into broader value chains.
 5. Diversification outcomes should be assessed by tradable-sector depth, not headline construction activity.
+6. **The Gulf's most successful diversification is in tradable services, not manufacturing.** Dubai and Doha have engineered themselves as global services hubs through strategic investment in aviation (Emirates, Qatar Airways as spatial policy instruments), logistics (Jebel Ali, Hamad Port), finance (DIFC, QFC, ADGM as regulatory free zones), and tourism. These are not natural agglomeration outcomes — they are state-constructed service economies built on connectivity advantages. The hub-and-spoke airline network model creates a spatial externality: by routing global passenger and cargo flows through Gulf airports, these states capture transit-based services trade that would otherwise bypass the region entirely. Medical tourism (Turkey's Istanbul hair-transplant cluster, Jordan and UAE as medical destinations) extends this logic to health services, representing Mode 2 trade where the consumer moves to the service provider (Connell 2013). Cloud infrastructure (AWS Bahrain, Oracle Saudi Arabia) represents the newest frontier — data center placement as spatial policy for digital services.
+7. **Telemedicine as a natural experiment in services geography.** The pandemic-era expansion of cross-border telehealth services across MENA — particularly between Gulf specialist centers and underserved populations in the wider region — provides a contained case study of whether digital delivery reduces or reinforces geographic concentration of specialist care.
 
 ## Institutional Variable Operationalization
 - Institutional variable: `diversification_governance_rt`.
@@ -31,6 +33,9 @@ Sovereign-wealth-led diversification in MENA succeeds when institutional reforms
 - SWF annual reports/investment announcements (PIF, ADIA, Mubadala) with project geolocation.
 - Port/logistics throughput indicators where available.
 - Sectoral employment composition data (ILO or national labor-force releases).
+- ICAO/IATA aviation traffic data (passenger and cargo flows through Gulf hubs).
+- WTO BOP-based services trade statistics for Gulf economies (tourism, transport, financial services).
+- UNWTO tourism expenditure data for medical and general tourism flows.
 
 ## Anchor References (2-3)
 1. Beblawi and Luciani (1987), rentier-state foundations.

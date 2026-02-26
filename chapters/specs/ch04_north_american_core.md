@@ -16,6 +16,16 @@ Since USMCA implementation and the CHIPS-era policy shift, North American reshor
 3. Border frictions act as variable trade costs that can dampen or amplify spatial spillovers in regional growth.
 4. CHIPS and related industrial-policy tools increase regional concentration where supplier ecosystems and implementation capacity already exist, reinforcing internal divergence between superstar metros and left-behind manufacturing regions.
 5. Domestic value-added gains are largest where regional policy coordination reduces compliance and logistics uncertainty.
+6. North America's services trade — the US is the world's largest services exporter — operates through a distinct regulatory geography: USMCA's digital trade and financial services provisions create a more liberal regime than exists between any other major trading partners, while professional licensing and regulatory divergence still fragment the continental services market.
+
+## Services Trade Dimension
+
+The chapter's goods-focused analysis of USMCA should be complemented by a services trade section covering:
+
+- **USMCA's digital trade provisions** (Chapter 19) as the most advanced digital trade framework in any major trade agreement: prohibition of data localization requirements, customs duty moratorium on digital products, source code protection, and cross-border data flow guarantees. These provisions create a de facto "North American digital single market" that contrasts sharply with the EU's GDPR-based approach and China's data sovereignty model.
+- **Advanced Producer Services (APS) networks**: New York, Toronto, Chicago, and Mexico City as command centers in the GaWC global city network (Taylor et al. 2011). The spatial organization of financial services, legal services, and management consulting across the continent — and how USMCA provisions on financial services, temporary entry for business persons, and mutual recognition shape the geography of these networks.
+- **Local multiplier effects**: How the concentration of high-skill tradable services (tech, finance, consulting) in superstar metros generates Moretti-style local multipliers in non-tradable services, and how remote work adoption is partially redistributing these multiplier effects to secondary cities and exurban locations (Althoff et al. 2022).
+- **Nearshoring of services to Mexico**: Monterrey, Guadalajara, and Mexico City as emerging nearshore technology and BPO hubs for US firms — a services-track integration that operates alongside the manufacturing-track (automotive, electronics) more commonly discussed.
 
 ## Institutional Variable Operationalization
 - Institutional variable: `compliance_capacity_rt`.
@@ -31,11 +41,16 @@ Since USMCA implementation and the CHIPS-era policy shift, North American reshor
 - WDI macro controls (growth, inflation, exchange-rate stability proxies).
 - BEA regional accounts and BLS QCEW for US subnational output/employment structure.
 - USMCA product-rule mapping (annex-derived concordance).
+- BEA International Services trade data (bilateral services trade by type).
+- OECD STRI scores for US, Canada, Mexico (for services barrier comparison).
+- GaWC firm-level APS connectivity data (for global city network analysis).
 
 ## Anchor References (2-3)
 1. Hanson (2001), "U.S.-Mexico Integration and Regional Economies," *JEP*.
 2. Autor, Dorn, and Hanson (2013), "The China Syndrome," *AER* (for trade-shock identification logic).
 3. LeSage and Pace (2009), *Introduction to Spatial Econometrics*.
+4. Moretti (2010), "Local Multipliers," *AER: P&P* (for services multiplier framework).
+5. Taylor, Ni, Derudder et al. (2011), *Global Urban Analysis* (for APS network mapping).
 
 ## Figures/Maps Needed
 - North American manufacturing corridor map (Great Lakes, Texas-Northern Mexico, Quebec-Ontario).

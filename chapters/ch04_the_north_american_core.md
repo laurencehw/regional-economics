@@ -212,7 +212,40 @@ A third possibility — which the empirical literature has not yet tested rigoro
 
 ---
 
-## 4.5 Lab 1 and the Spatial Evidence: Conditional Spillovers Across the Americas
+## 4.5 The Other Integration: Services Trade and the APS Geography of North America
+
+The preceding sections focus on goods — automobiles, semiconductors, steel — because USMCA's most visible provisions govern physical production. But the United States is the world's largest exporter of services, and services account for a growing share of North American economic integration. The spatial economics of services trade are fundamentally different from goods, and understanding them is essential for a complete picture of continental economic geography.
+
+### Command Centers and the GaWC Network
+
+Sassen's (2001) "global city" thesis argued that the geographic dispersal of manufacturing required the *centralization* of the command-and-control functions that coordinate global production — corporate headquarters, financial services, corporate law, management consulting, and accounting. These "advanced producer services" (APS) cluster in a small number of cities that serve as command nodes for the global economy.
+
+In the GaWC (Globalization and World Cities) research network's classification, New York is the single highest-ranked global city — the dominant node for financial services, corporate law, and management consulting. Toronto ranks among the top fifteen, anchoring Canadian financial services and increasingly attracting technology headquarters. Mexico City functions as the command center for Latin American operations of global APS firms. The three cities form a continental hierarchy: New York generates the strategies, Toronto and Chicago implement them for Canadian and US midwestern clients, and Mexico City translates them into the institutional context of Latin American markets.
+
+This hierarchy is not merely descriptive — it has spatial multiplier consequences. Moretti (2010) estimated that each additional high-skill tradable-sector job in a US metro area generates approximately 2.5 additional jobs in local non-tradable services: baristas, cleaners, personal trainers, restaurant workers, healthcare support staff. The mechanism is income-driven: high-earning professionals consume local services whose provision requires physical proximity. The multiplier is larger for innovation-intensive jobs (approximately 5:1) than for manufacturing jobs (approximately 1.6:1), because innovation workers earn more and consume more skill-intensive local services. This means that the concentration of APS employment in superstar metros produces a proportional concentration of non-tradable service employment — and its wages, which are set by the interaction of high-income demand and local housing costs.
+
+### USMCA's Digital Trade Provisions
+
+USMCA's Chapter 19 (Digital Trade) is, by some measures, the most consequential services trade framework in any major trade agreement. Its core provisions include:
+
+- **Prohibition of data localization requirements**: no party may require that computing facilities be located in its territory as a condition for conducting business. This creates a de facto North American data space that contrasts sharply with the EU's GDPR-based approach and China's data sovereignty requirements.
+- **Cross-border data flow guarantees**: parties must allow the cross-border transfer of information by electronic means for business purposes.
+- **Customs duty moratorium on digital products**: no customs duties on content transmitted electronically (software, music, video, e-books).
+- **Source code protection**: no party may require the transfer of source code as a condition of market access.
+
+These provisions create a regulatory geography for digital services that is distinct from the goods-trade regime. A software company in Toronto can serve US clients without establishing a physical presence in the United States, without storing data on US servers, and without paying customs duties on its product. A Mexican fintech firm can process transactions across the border under the same data-flow protections. This is integration of a qualitatively different kind from the automotive rules of origin — it creates a continental platform for services trade that operates largely outside the compliance-intensive framework governing physical goods.
+
+### Remote Work and the Spatial Redistribution of Services
+
+The post-pandemic shift to remote work has partially disrupted the APS concentration pattern. Althoff, Eckert, Ganapati, and Walsh (2022) document that "remoteable" service jobs — those that can be performed from any location with an internet connection — shifted significantly toward lower-cost metros and exurban locations between 2020 and 2023. Delventhal, Kwon, and Parkhomenko (2022) model this shift in a spatial general equilibrium framework and find that a permanent increase in remote work feasibility reduces central-city rents, increases suburban and secondary-city populations, and compresses the urban wage premium — but does not eliminate it.
+
+The North American context adds a cross-border dimension to this story. Monterrey, Guadalajara, and Mexico City are emerging as nearshore technology and BPO hubs for US firms — offering time-zone alignment, cultural familiarity (many nearshore workers have US education or work experience), and labor costs roughly 30–40 percent below comparable US cities. This "nearshore services" integration operates alongside the manufacturing-track integration that the rest of this chapter documents, but through different channels: Mode 1 (cross-border delivery) rather than Mode 3 (commercial presence), digital platforms rather than physical supply chains, professional services rather than physical goods.
+
+The spatial implications are significant. If the remote work revolution continues — and the evidence so far suggests it is durable for a subset of service occupations — the local multiplier effects documented by Moretti may partially redistribute from superstar metros to secondary cities and cross-border locations. A management consultant who moves from Manhattan to Austin takes her consumption expenditure (and the non-tradable service jobs it supports) with her. A software development team that shifts from San Francisco to Guadalajara transfers not only the coding jobs but also the local multiplier from one country to another. The net effect on North American spatial inequality is ambiguous: remote work may reduce *within-country* inequality (by deconcentrating from superstar metros) while increasing *cross-border* integration (by enabling services trade that physical distance previously prevented).
+
+---
+
+## 4.6 Lab 1 and the Spatial Evidence: Conditional Spillovers Across the Americas
 
 ### The Lab 1 Framework
 
@@ -315,3 +348,5 @@ The lesson extends beyond USMCA. Every trade agreement, every investment treaty,
 4. The border effect at Laredo is different from the border effect at Nogales. What does this heterogeneity imply for gravity-model estimates of the "average" US-Mexico border effect? How would you estimate port-specific border effects, and what identification challenges would you face?
 
 5. Pittsburgh reinvented itself after deindustrialization; Detroit did not. Using the institutional frameworks of Chapter 2 and the spatial tools of Chapter 3, describe an empirical strategy to identify the institutional factors that distinguish regions that successfully transition from those that do not. What data would you need, and what identification assumption would be most vulnerable to criticism?
+
+6. USMCA's digital trade provisions (Chapter 19) create a largely frictionless North American space for cross-border services trade, while its goods provisions (automotive rules of origin, LVC) create intensive compliance requirements. How might this asymmetry affect the relative geography of goods and services production in North America? Would you expect services trade to concentrate in the same cities that dominate goods trade, or in different ones? Using Moretti's local multiplier framework, what happens to a metro area's non-tradable service economy when a major APS firm relocates from New York to Austin — or from Austin to Monterrey?
