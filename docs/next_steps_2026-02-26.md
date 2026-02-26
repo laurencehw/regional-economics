@@ -8,8 +8,8 @@ This document captures the current project state and prioritized next steps base
 
 ### What's Done
 - **Book structure:** Restructured to 16 chapters (from 15) with Asia split into East Asia (Part III-A) and South Asia (Part III-B), Ch 3 split into 3-A (Spatial Econometrics) and 3-B (Trade/Gravity), and 7 labs (from 6)
-- **Chapter prose drafted:** Chs. 1 (361 lines), 2 (267 lines), 3 (559 lines, needs splitting), 4 (352 lines), 5 (307 lines), 13 (265 lines, was Ch 12) — 6 chapters
-- **Chapter specs:** 14 of 18 detailed (Chs. 1–9, 11, 13–14, 16 + new 3-A, 3-B, 8); stubs for Chs. 10, 12, 15
+- **Chapter prose drafted:** Chs. 1 (361 lines), 2 (267 lines), 3 (559 lines, needs splitting), 4 (352 lines), 5 (307 lines), 13 (265 lines), 14 (326 lines) — 7 chapters
+- **Chapter specs:** 15 of 18 detailed (Chs. 1–9, 11, 13–16 + 3-A, 3-B, 8); Chs. 10, 12 are stubs; Ch. 15 has partial content
 - **Services trade cross-cutting theme:** Fully integrated across outline, drafting plan, all detailed specs, and drafted chapters
 - **Editorial feedback integrated:** New outline with Pathways, Regional Diagnostics Dashboard, Spatial Data Challenge boxes, climate distributed into regions, tourism/education as recurring themes, gravity model consolidated
 - **Lab 1 (Americas):** Complete — real-data SAR pipeline, 3 specification bundles, Bartik extension
@@ -23,11 +23,11 @@ This document captures the current project state and prioritized next steps base
 - **Data:** WDI, Comtrade, BTS, LPI, Eurostat NUTS-2, WIOD, TiVA, ACLED (count-only), UNHCR acquired; VIIRS and Afrobarometer template-only
 
 ### What's Not Done
-- Chapters 6–12, 14–16 prose (10 remaining chapters)
+- Chapters 6–12, 15–16 prose (9 remaining chapters)
 - Ch 3 prose needs splitting into 3-A and 3-B files
 - Ch 2 prose needs slimming (path dependency to Ch 5, VoC to Ch 9, Windows to Ch 6)
 - Ch 1 prose needs opening case study (Bangalore vs Kolkata)
-- 3 companion chapter specs still stubs (Chs. 10, 12, 15)
+- 2 companion chapter specs still stubs (Chs. 10, 12); Ch. 15 partially filled
 - Lab 3 code implementation (4 planned scripts)
 - Lab 7 code implementation (6 planned scripts)
 - Lab 6 real-data validation (VIIRS/Afrobarometer acquisition)
@@ -55,11 +55,11 @@ This document captures the current project state and prioritized next steps base
 
 ### Tier 2: High Priority
 
-#### 3. Complete Wave B (Africa): Expand Ch. 13, Draft Ch. 14
-- **Status:** Ch. 13 has initial prose (265 lines). Ch. 14 spec is detailed.
+#### 3. Complete Wave B (Africa): Expand Chs. 13 and 14
+- **Status:** Ch. 13 has initial prose (265 lines). Ch. 14 has initial prose (326 lines). Both need expansion to target length.
 
-#### 4. Fill Remaining Companion Chapter Specs (Chs. 10, 12, 15)
-- **Priority order:** Ch. 10 (Wave D, Europe), Ch. 12 (Wave E, MENA), Ch. 15 (Phase 3).
+#### 4. Fill Remaining Stub Chapter Specs (Chs. 10, 12)
+- **Priority order:** Ch. 10 (Wave D, Europe), Ch. 12 (Wave E, MENA). Ch. 15 has partial content but needs Institutional Spotlight and lab linkage.
 
 #### 5. Acquire VIIRS Data and Validate Lab 6 at Scale
 

@@ -14,7 +14,7 @@ This plan organizes the writing process into phases. Each phase produces a self-
 
 | # | Task | Notes |
 |---|---|---|
-| 0.1 | **Finalize the outline and chapter specifications** | Write a 1–2 page "chapter spec" for each of the 16 chapters (including 3-A/3-B): thesis statement, 3–5 key arguments, target length, required datasets, and 2–3 anchor references. **Status:** 14 of 18 specs detailed; Chs. 10, 12, 15 remain stubs; Ch. 14 needs stub-to-spec conversion. |
+| 0.1 | **Finalize the outline and chapter specifications** | Write a 1–2 page "chapter spec" for each of the 16 chapters (including 3-A/3-B): thesis statement, 3–5 key arguments, target length, required datasets, and 2–3 anchor references. **Status:** 15 of 18 specs detailed; Chs. 10 and 12 remain stubs; Ch. 15 has partial content. |
 | 0.2 | **Build the replication repository** | Create a GitHub repo with folder structure for each Applied Lab. Set up R and Python environments and add zero-install cloud execution targets (Colab/Codespaces). |
 | 0.3 | **Draft Appendix B (Data & Software Guide)** | Writing this early forces resolution of all data-access and tooling decisions before chapter drafting begins. |
 | 0.4 | **Secure "Institutional Spotlight" contacts** | Identify and begin outreach for 8–12 interview subjects across regions. |
@@ -195,7 +195,7 @@ Key references anchoring this thread:
 
 | # | Task | Status |
 |---|---|---|
-| 0.1 | Outline and chapter specifications | 14/18 specs detailed (Chs. 10, 12, 15 are stubs; Ch. 14 needs expansion) |
+| 0.1 | Outline and chapter specifications | 15/18 specs detailed (Chs. 10, 12 are stubs; Ch. 15 has partial content) |
 | 0.2 | Replication repository | Done — Labs 1–7 scaffolded, CI passing |
 | 0.3 | Appendix B (Data & Software Guide) | Not started |
 | 0.4 | Institutional Spotlight contacts | Not started |
@@ -218,7 +218,7 @@ Key references anchoring this thread:
 | Wave | Chapters | Prose Status | Lab Status |
 |---|---|---|---|
 | A (Americas) | Chs. 4–5 | Initial drafts (352 + 307 lines); need expansion | Lab 1: Complete |
-| B (Africa) | Chs. 13–14 | Ch. 13 initial draft (265 lines); Ch. 14 not started | Lab 6: Scaffolded (synthetic data only) |
+| B (Africa) | Chs. 13–14 | Ch. 13 initial draft (265 lines); Ch. 14 initial draft (326 lines) | Lab 6: Scaffolded (synthetic data only) |
 | C (East Asia) | Chs. 6–7 | Not started | Lab 2: Scaffolded (TiVA wired) |
 | C' (South Asia) | Ch. 8 | Not started | Lab 3: Scaffolded (directory created) |
 | D (Europe) | Chs. 9–10 | Not started | Lab 4: Scaffolded (NUTS-2 wired) |
@@ -228,7 +228,7 @@ Key references anchoring this thread:
 
 | Chapter | Prose Status | Spec Status |
 |---|---|---|
-| Ch. 15 | Not started | Stub (needs repurposing as climate synthesis) |
+| Ch. 15 | Not started | Partial (climate synthesis thesis and key arguments drafted; institutional spotlight TBD) |
 | Ch. 16 | Not started | Detailed (services-trade synthesis) |
 
 ### Lab 7 (Services Trade — Cross-Regional Capstone)

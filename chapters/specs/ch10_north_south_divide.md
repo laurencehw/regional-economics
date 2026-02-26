@@ -1,4 +1,4 @@
-# Chapter Spec: Ch.9 - The North-South Divide and Post-Socialist Transitions
+# Chapter Spec: Ch.10 - The North-South Divide and Post-Socialist Transitions
 
 ## Metadata
 - Part: Part IV - Europe
@@ -35,7 +35,7 @@ TBD
 - Why included: TBD
 
 ## Applied Lab Linkage
-- Relevant lab: Lab 3 (Europe)
+- Relevant lab: Lab 4 (Europe)
 - Econometric method: Institutional mismatch and natural experiments
 - Required code artifacts: TBD
 

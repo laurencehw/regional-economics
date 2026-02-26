@@ -1,4 +1,4 @@
-# Chapter Spec: Ch.11 - Fragile States, Conflict Economics, and the Youth Bulge
+# Chapter Spec: Ch.12 - Fragile States, Conflict Economics, and the Youth Bulge
 
 ## Metadata
 - Part: Part V - MENA
@@ -35,7 +35,7 @@ TBD
 - Why included: TBD
 
 ## Applied Lab Linkage
-- Relevant lab: Lab 4 (MENA)
+- Relevant lab: Lab 5 (MENA)
 - Econometric method: Conflict shocks and demographic pressure
 - Required code artifacts: TBD
 
