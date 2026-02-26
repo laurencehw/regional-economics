@@ -1,0 +1,42 @@
+[
+  {
+    "treated_unit": "YEM",
+    "intervention_year": 2013,
+    "donor_count": 9,
+    "pre_rmspe": 2.732851906036616,
+    "post_rmspe": 16.74154915126547,
+    "post_pre_rmspe_ratio": 6.1260359971518925,
+    "mean_post_gap": -4.501160078338351,
+    "weights": {
+      "EGY": 0.03070950557713348,
+      "IRQ": 0.016310837723079976,
+      "JOR": 0.0,
+      "LBN": 0.0,
+      "LBY": 0.22063447597870683,
+      "MAR": 0.0,
+      "SAU": 0.0,
+      "SYR": 0.7323451807210798,
+      "TUN": 0.0
+    }
+  },
+  {
+    "treated_unit": "YEM",
+    "intervention_year": 2018,
+    "donor_count": 9,
+    "pre_rmspe": 7.883633355699381,
+    "post_rmspe": 2.0158315546638303,
+    "post_pre_rmspe_ratio": 0.2556982883033885,
+    "mean_post_gap": -2.0158315546638303,
+    "weights": {
+      "EGY": 0.0,
+      "IRQ": 0.0,
+      "JOR": 0.9796922918983328,
+      "LBN": 0.0,
+      "LBY": 0.020307708101667203,
+      "MAR": 0.0,
+      "SAU": 0.0,
+      "SYR": 0.0,
+      "TUN": 0.0
+    }
+  }
+]

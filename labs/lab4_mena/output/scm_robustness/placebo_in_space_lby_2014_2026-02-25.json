@@ -1,0 +1,212 @@
+[
+  {
+    "treated_unit": "EGY",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 1.3239056619954737,
+    "post_rmspe": 4.401976167714856,
+    "post_pre_rmspe_ratio": 3.3249923269305466,
+    "mean_post_gap": 2.6579350265805646,
+    "weights": {
+      "IRQ": 0.007081882778197622,
+      "JOR": 0.0,
+      "LBN": 0.14879776394749528,
+      "LBY": 0.0,
+      "MAR": 0.21475354409360997,
+      "SAU": 0.05386954106581206,
+      "SYR": 0.04044036698897784,
+      "TUN": 0.4849262702486694,
+      "YEM": 0.05013063087723784
+    },
+    "is_baseline": false
+  },
+  {
+    "treated_unit": "IRQ",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 16.925284610259066,
+    "post_rmspe": 5.52618526987498,
+    "post_pre_rmspe_ratio": 0.32650471747608584,
+    "mean_post_gap": -0.022856071858483352,
+    "weights": {
+      "EGY": 0.0,
+      "JOR": 0.5928724050391379,
+      "LBN": 0.0,
+      "LBY": 0.0,
+      "MAR": 0.0,
+      "SAU": 0.1567738947447506,
+      "SYR": 0.0,
+      "TUN": 0.25035370021611153,
+      "YEM": 0.0
+    },
+    "is_baseline": false
+  },
+  {
+    "treated_unit": "JOR",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 1.5760754847555456,
+    "post_rmspe": 3.3099300224974377,
+    "post_pre_rmspe_ratio": 2.100108817447166,
+    "mean_post_gap": -1.0798439045600097,
+    "weights": {
+      "EGY": 5.291538679634789e-14,
+      "IRQ": 0.04765907839780868,
+      "LBN": 0.09306846022127845,
+      "LBY": 0.03406438776386389,
+      "MAR": 0.5275531293035441,
+      "SAU": 2.9031611244735377e-13,
+      "SYR": 0.15254134268521605,
+      "TUN": 0.09380129377526908,
+      "YEM": 0.05131230785267656
+    },
+    "is_baseline": false
+  },
+  {
+    "treated_unit": "LBN",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 2.8610395941370292,
+    "post_rmspe": 7.461218884550535,
+    "post_pre_rmspe_ratio": 2.607869845576552,
+    "mean_post_gap": -4.294933308633416,
+    "weights": {
+      "EGY": 0.6062278739576016,
+      "IRQ": 0.011021811616630522,
+      "JOR": 0.215929032564631,
+      "LBY": 0.02224132622016728,
+      "MAR": 0.0,
+      "SAU": 0.0,
+      "SYR": 0.14457995564096965,
+      "TUN": 0.0,
+      "YEM": 0.0
+    },
+    "is_baseline": false
+  },
+  {
+    "treated_unit": "LBY",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 27.28712137117718,
+    "post_rmspe": 23.83599116840427,
+    "post_pre_rmspe_ratio": 0.8735253104998365,
+    "mean_post_gap": 12.432468593947236,
+    "weights": {
+      "EGY": 0.0,
+      "IRQ": 0.0,
+      "JOR": 0.0,
+      "LBN": 0.0,
+      "MAR": 0.0,
+      "SAU": 0.0,
+      "SYR": 0.0,
+      "TUN": 0.0,
+      "YEM": 1.0
+    },
+    "is_baseline": true
+  },
+  {
+    "treated_unit": "MAR",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 2.393445823251461,
+    "post_rmspe": 2.707546341164947,
+    "post_pre_rmspe_ratio": 1.1312336025583338,
+    "mean_post_gap": 0.9148171481026335,
+    "weights": {
+      "EGY": 0.34594098832302506,
+      "IRQ": 0.0,
+      "JOR": 0.30018338445524145,
+      "LBN": 0.0,
+      "LBY": 0.0,
+      "SAU": 0.05782407171967885,
+      "SYR": 0.0,
+      "TUN": 0.2960515555020547,
+      "YEM": 0.0
+    },
+    "is_baseline": false
+  },
+  {
+    "treated_unit": "SAU",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 4.39628667364429,
+    "post_rmspe": 3.8336927742749074,
+    "post_pre_rmspe_ratio": 0.8720297512120561,
+    "mean_post_gap": -0.05802022155489641,
+    "weights": {
+      "EGY": 0.23523156726973082,
+      "IRQ": 0.052650602874962094,
+      "JOR": 1.5441164105946937e-12,
+      "LBN": 6.175968163332288e-12,
+      "LBY": 0.036039001456258726,
+      "MAR": 0.48062611630585245,
+      "SYR": 0.19545271208222603,
+      "TUN": 2.222934179631256e-12,
+      "YEM": 1.026648500671497e-12
+    },
+    "is_baseline": false
+  },
+  {
+    "treated_unit": "SYR",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 8.868415924751925,
+    "post_rmspe": 5.44291097332106,
+    "post_pre_rmspe_ratio": 0.613741058099202,
+    "mean_post_gap": -0.1577912668901384,
+    "weights": {
+      "EGY": 0.0,
+      "IRQ": 0.0,
+      "JOR": 0.017343041186133928,
+      "LBN": 0.7262088851626798,
+      "LBY": 0.0,
+      "MAR": 0.0,
+      "SAU": 0.2564480736511862,
+      "TUN": 0.0,
+      "YEM": 0.0
+    },
+    "is_baseline": false
+  },
+  {
+    "treated_unit": "TUN",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 1.1060739105850688,
+    "post_rmspe": 2.3455475304953444,
+    "post_pre_rmspe_ratio": 2.1206065056309336,
+    "mean_post_gap": -0.6939113934982856,
+    "weights": {
+      "EGY": 0.4578857749831008,
+      "IRQ": 0.023401359202746025,
+      "JOR": 0.02738267924028766,
+      "LBN": 0.004931882019127932,
+      "LBY": 0.03136624342723776,
+      "MAR": 0.3186596845644801,
+      "SAU": 4.817322955680902e-13,
+      "SYR": 8.588673124744521e-16,
+      "YEM": 0.13637237656253712
+    },
+    "is_baseline": false
+  },
+  {
+    "treated_unit": "YEM",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 4.048515011015265,
+    "post_rmspe": 15.13174296111174,
+    "post_pre_rmspe_ratio": 3.7376032742724306,
+    "mean_post_gap": -11.540688721785502,
+    "weights": {
+      "EGY": 0.001493345418573243,
+      "IRQ": 0.0,
+      "JOR": 0.0,
+      "LBN": 0.0,
+      "LBY": 0.05766960406917917,
+      "MAR": 0.0,
+      "SAU": 0.0,
+      "SYR": 0.15890039488609378,
+      "TUN": 0.7819366556261539
+    },
+    "is_baseline": false
+  }
+]

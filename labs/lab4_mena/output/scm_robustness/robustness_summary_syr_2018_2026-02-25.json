@@ -1,0 +1,29 @@
+{
+  "run_at_utc": "2026-02-26T04:07:05.895756+00:00",
+  "panel_csv": "data\\processed\\lab4\\lab4_mena_estimation_panel_2000_2024_2026-02-23.csv",
+  "treated_iso3": "SYR",
+  "intervention_year": 2018,
+  "in_space_placebo_count": 10,
+  "in_space_rank_p_value": 0.7,
+  "baseline_post_pre_rmspe_ratio": 0.5811907960904114,
+  "in_time_placebo_years": [
+    2014,
+    2020
+  ],
+  "in_time_placebo_count": 2,
+  "in_time_results": [
+    {
+      "year": 2014,
+      "post_pre_rmspe_ratio": 0.613741058099202
+    },
+    {
+      "year": 2020,
+      "post_pre_rmspe_ratio": 0.7298118744319568
+    }
+  ],
+  "outputs": {
+    "in_space_json": "labs\\lab4_mena\\output\\scm_robustness\\placebo_in_space_syr_2018_2026-02-25.json",
+    "in_time_json": "labs\\lab4_mena\\output\\scm_robustness\\placebo_in_time_syr_2018_2026-02-25.json",
+    "summary_json": "labs\\lab4_mena\\output\\scm_robustness\\robustness_summary_syr_2018_2026-02-25.json"
+  }
+}

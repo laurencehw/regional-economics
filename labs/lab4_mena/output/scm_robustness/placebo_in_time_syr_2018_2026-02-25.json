@@ -1,0 +1,41 @@
+[
+  {
+    "treated_unit": "SYR",
+    "intervention_year": 2014,
+    "donor_count": 9,
+    "pre_rmspe": 8.868415924751925,
+    "post_rmspe": 5.44291097332106,
+    "post_pre_rmspe_ratio": 0.613741058099202,
+    "mean_post_gap": -0.1577912668901384,
+    "weights": {
+      "EGY": 0.0,
+      "IRQ": 0.0,
+      "JOR": 0.017343041186133928,
+      "LBN": 0.7262088851626798,
+      "LBY": 0.0,
+      "MAR": 0.0,
+      "SAU": 0.2564480736511862,
+      "TUN": 0.0,
+      "YEM": 0.0
+    }
+  },
+  {
+    "treated_unit": "SYR",
+    "intervention_year": 2020,
+    "donor_count": 8,
+    "pre_rmspe": 7.64031538374905,
+    "post_rmspe": 5.5759928914652095,
+    "post_pre_rmspe_ratio": 0.7298118744319568,
+    "mean_post_gap": 1.30916486055511,
+    "weights": {
+      "EGY": 0.0,
+      "IRQ": 0.0,
+      "JOR": 0.2722882618359439,
+      "LBN": 0.4815336414424653,
+      "LBY": 0.0,
+      "MAR": 0.0,
+      "SAU": 0.24617809672159088,
+      "TUN": 0.0
+    }
+  }
+]
