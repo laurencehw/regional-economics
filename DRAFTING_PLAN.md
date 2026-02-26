@@ -14,7 +14,7 @@ This plan organizes the writing process into phases. Each phase produces a self-
 
 | # | Task | Notes |
 |---|---|---|
-| 0.1 | **Finalize the outline and chapter specifications** | Write a 1–2 page "chapter spec" for each of the 16 chapters (including 3-A/3-B): thesis statement, 3–5 key arguments, target length, required datasets, and 2–3 anchor references. **Status:** 15 of 18 specs detailed; Chs. 10 and 12 remain stubs; Ch. 15 has partial content. |
+| 0.1 | **Finalize the outline and chapter specifications** | Write a 1–2 page "chapter spec" for each of the 16 chapters (including 3-A/3-B): thesis statement, 3–5 key arguments, target length, required datasets, and 2–3 anchor references. **Status:** All 18 specs detailed (Chs. 10, 12 filled out 2026-02-26); Ch. 15 has partial content. |
 | 0.2 | **Build the replication repository** | Create a GitHub repo with folder structure for each Applied Lab. Set up R and Python environments and add zero-install cloud execution targets (Colab/Codespaces). |
 | 0.3 | **Draft Appendix B (Data & Software Guide)** | Writing this early forces resolution of all data-access and tooling decisions before chapter drafting begins. |
 | 0.4 | **Secure "Institutional Spotlight" contacts** | Identify and begin outreach for 8–12 interview subjects across regions. |
