@@ -14,7 +14,7 @@ This plan organizes the writing process into phases. Each phase produces a self-
 
 | # | Task | Notes |
 |---|---|---|
-| 0.1 | **Finalize the outline and chapter specifications** | Write a 1–2 page "chapter spec" for each of the 15 chapters: thesis statement, 3–5 key arguments, target length (word count), required datasets, and 2–3 anchor references. |
+| 0.1 | **Finalize the outline and chapter specifications** | Write a 1–2 page "chapter spec" for each of the 15 chapters: thesis statement, 3–5 key arguments, target length (word count), required datasets, and 2–3 anchor references. **Status:** 11 of 15 detailed; Chs. 7, 9, 11, 14 remain stubs. |
 | 0.2 | **Build the replication repository** | Create a GitHub repo with folder structure for each Applied Lab. Set up R and Python environments (Docker or `renv`/`conda`) and add zero-install cloud execution targets (Colab/Codespaces) for student onboarding. Confirm access to all datasets (WIOD, VIIRS, NUTS-2, WDI, Afrobarometer). |
 | 0.3 | **Draft Appendix B (Data & Software Guide)** | Writing this early forces resolution of all data-access and tooling decisions before chapter drafting begins. |
 | 0.4 | **Secure "Institutional Spotlight" contacts** | Identify and begin outreach for 8–12 interview subjects across regions (policy-makers, trade negotiators, regional development officials). |
@@ -177,3 +177,55 @@ Key references anchoring this thread:
 4. **Equal analytical seriousness across regions:** Africa and MENA receive the same methodological depth as the Americas and Europe — a deliberate correction of the typical textbook pattern.
 5. **Review gates prevent compounding errors:** The manuscript is reviewed at three checkpoints (after Part I, after the first two regional parts, and after the full draft) rather than only at the end.
 6. **Services trade as cross-cutting thread:** Rather than a standalone services chapter, services trade content is woven through every regional chapter and synthesized in Chapter 15 and Lab 6. This ensures students encounter services geography as a recurring analytical lens, not a one-off topic.
+
+---
+
+## Progress Tracker
+
+### Phase 0 Status
+
+| # | Task | Status |
+|---|---|---|
+| 0.1 | Outline and chapter specifications | 11/15 detailed (Chs. 7, 9, 11, 14 are stubs) |
+| 0.2 | Replication repository | Done — Labs 1–6 scaffolded, CI passing |
+| 0.3 | Appendix B (Data & Software Guide) | Not started |
+| 0.4 | Institutional Spotlight contacts | Not started |
+| 0.5 | GIS base maps | Not started |
+| 0.6 | Dataset fallback matrix | Partially done (documented in `docs/data_storage_strategy.md`) |
+| 0.7 | Data storage policy | Done |
+
+### Phase 1 Status (Part I)
+
+| Chapter | Prose | Services Content | Review |
+|---|---|---|---|
+| Ch. 1 | Draft complete (361 lines) | §1.5 spatial paradox of intangibility | Pending internal review |
+| Ch. 2 | Draft complete (267 lines) | — | Pending internal review |
+| Ch. 3 | Draft complete (559 lines) | §3.7 services data sources | Pending internal review |
+
+### Phase 2 Status (Regional Parts)
+
+| Wave | Chapters | Prose Status | Lab Status |
+|---|---|---|---|
+| A (Americas) | Chs. 4–5 | Initial drafts (352 + 307 lines); need expansion to target length | Lab 1: Complete |
+| B (Africa) | Chs. 12–13 | Ch. 12 initial draft (265 lines); Ch. 13 not started | Lab 5: Scaffolded (synthetic data only) |
+| C (Asia) | Chs. 6–7 | Not started | Lab 2: Scaffolded (TiVA wired) |
+| D (Europe) | Chs. 8–9 | Not started | Lab 3: Scaffolded (NUTS-2 wired) |
+| E (MENA) | Chs. 10–11 | Not started | Lab 4: Partially complete (SCM baselines) |
+
+### Phase 3 Status (Synthesis)
+
+| Chapter | Prose Status | Spec Status |
+|---|---|---|
+| Ch. 14 | Not started | Stub |
+| Ch. 15 | Not started | Detailed (services-trade synthesis) |
+
+### Lab 6 (Services Trade — Cross-Regional Capstone)
+
+| Script | Status |
+|---|---|
+| `gravity_services_scaffold.py` | Not started |
+| `stri_tariff_equivalent.py` | Not started |
+| `servicification_decomposition.py` | Not started |
+| `cloud_geography_mapper.py` | Not started |
+| `fetch_wto_services_trade.py` | Not started |
+| `fetch_oecd_stri.py` | Not started |
