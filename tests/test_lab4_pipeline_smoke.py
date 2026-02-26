@@ -1,139 +1,164 @@
 import json
 import sys
 
-import numpy as np
 import pandas as pd
 
 
-def test_build_lab4_panel_smoke(lab4_panel):
-    panel_csv = lab4_panel["panel_csv"]
-    assert panel_csv.exists(), "panel_output.csv missing"
-    panel = pd.read_csv(panel_csv)
-    assert not panel.empty, "panel_output.csv is empty"
-
-    acled_cy_csv = lab4_panel["acled_cy_csv"]
-    assert acled_cy_csv.exists(), "acled_country_year.csv missing"
-
-    meta_json = lab4_panel["meta_json"]
-    assert meta_json.exists(), "metadata.json missing"
-    meta = json.loads(meta_json.read_text(encoding="utf-8"))
-    assert meta["rows_panel"] > 0
-    assert meta["countries_panel"] >= 3
-
-
-def test_scm_baseline_smoke(tmp_path, run_cmd, lab4_panel):
-    scm_dir = tmp_path / "scm_output"
-    scm_dir.mkdir(parents=True, exist_ok=True)
+def test_prepare_lab4_inputs_smoke(tmp_path, run_cmd):
+    """Test that the preparation script produces a valid panel from template data."""
+    out_dir = tmp_path / "mapped"
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     run_cmd([
         sys.executable,
-        "scripts/run_lab4_scm_baseline.py",
-        "--panel-csv", str(lab4_panel["panel_csv"]),
-        "--treated-iso3", "SYR",
-        "--intervention-year", "2022",
-        "--output-dir", str(scm_dir),
-        "--date-stamp", "smoke",
+        "labs/lab4_europe/code/prepare_lab4_inputs.py",
+        "--eurostat-input",
+        "labs/lab4_europe/data/raw_templates/eurostat_gdp_example.csv",
+        "--eligibility-input",
+        "labs/lab4_europe/data/raw_templates/eligibility_example.csv",
+        "--mappings",
+        "labs/lab4_europe/data/source_mappings.json",
+        "--output-dir",
+        str(out_dir),
     ])
 
-    weights_files = list(scm_dir.glob("scm_weights_*.csv"))
-    assert len(weights_files) >= 1, "scm_weights CSV missing"
-    weights = pd.read_csv(weights_files[0])
-    assert len(weights) >= 2, "Need at least 2 donors in weights"
+    panel = out_dir / "panel_mapped.csv"
+    summary = out_dir / "mapping_summary.json"
 
-    # SCM weights must be non-negative and sum to ~1
-    w_vals = weights["weight"].to_numpy(dtype=float)
-    assert (w_vals >= -1e-10).all(), "SCM weights must be non-negative"
-    assert np.isclose(w_vals.sum(), 1.0, atol=1e-6), f"SCM weights sum to {w_vals.sum()}, expected ~1.0"
+    assert panel.exists(), "panel_mapped.csv missing"
+    assert summary.exists(), "mapping_summary.json missing"
 
-    path_files = list(scm_dir.glob("scm_path_*.csv"))
-    assert len(path_files) >= 1, "scm_path CSV missing"
-    path_df = pd.read_csv(path_files[0])
-    assert "pre" in set(path_df["period"]), "Missing pre period in SCM path"
-    assert "post" in set(path_df["period"]), "Missing post period in SCM path"
+    df = pd.read_csv(panel)
+    assert not df.empty, "panel_mapped.csv is empty"
 
-    # Path values should be finite where available
-    for col in ["treated_outcome", "synthetic_outcome"]:
-        vals = path_df[col].dropna()
-        assert len(vals) > 0, f"{col} has no non-null values"
-        assert np.all(np.isfinite(vals.to_numpy(dtype=float))), f"{col} contains non-finite values"
+    expected_cols = {"nuts2_code", "year", "gdp_mio_eur", "gdp_growth", "forcing_var", "treated"}
+    assert expected_cols.issubset(set(df.columns)), f"Missing columns: {expected_cols - set(df.columns)}"
 
-    summary_files = list(scm_dir.glob("scm_summary_*.json"))
-    assert len(summary_files) >= 1, "scm_summary JSON missing"
-    summary = json.loads(summary_files[0].read_text(encoding="utf-8"))
-    assert summary["donor_count"] >= 2
-    assert summary["pre_rmspe"] is not None
-    assert summary["pre_rmspe"] > 0, "Pre-RMSPE should be positive"
-    assert summary["pre_year_count"] >= 3, "Need at least 3 pre-intervention years"
-    assert summary["post_year_count"] >= 1, "Need at least 1 post-intervention year"
+    assert df["treated"].isin([0, 1]).all(), "treated column must be binary"
+    assert df["treated"].sum() > 0, "No treated regions in panel"
+    assert (df["treated"] == 0).sum() > 0, "No control regions in panel"
+
+    payload = json.loads(summary.read_text(encoding="utf-8"))
+    assert payload["panel_rows"] > 0
+    assert payload["treated_regions"] > 0
+    assert payload["control_regions"] > 0
 
 
-def test_scm_robustness_smoke(tmp_path, run_cmd, lab4_panel):
-    """Run in-space and in-time placebos on template data."""
-    rob_dir = tmp_path / "scm_robustness"
-    rob_dir.mkdir(parents=True, exist_ok=True)
+def test_rdd_scaffold_smoke(tmp_path, run_cmd):
+    """Test that the RDD scaffold runs in smoke-test mode and recovers a plausible estimate."""
+    out_dir = tmp_path / "rdd"
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     run_cmd([
         sys.executable,
-        "scripts/run_lab4_scm_robustness.py",
-        "--panel-csv", str(lab4_panel["panel_csv"]),
-        "--treated-iso3", "SYR",
-        "--intervention-year", "2022",
-        "--placebo-years", "2021,2023",
-        "--output-dir", str(rob_dir),
-        "--date-stamp", "smoke",
+        "labs/lab4_europe/code/lab4_europe_rdd_scaffold.py",
+        "--run-smoke-test",
+        "--output-dir",
+        str(out_dir),
     ])
 
-    # --- In-space placebo checks ---
-    in_space_files = list(rob_dir.glob("placebo_in_space_*.json"))
-    assert len(in_space_files) >= 1, "placebo_in_space JSON missing"
-    in_space = json.loads(in_space_files[0].read_text(encoding="utf-8"))
+    summary_path = out_dir / "model_summary.json"
+    assert summary_path.exists(), "model_summary.json missing"
 
-    # Template has 4 units; all should be feasible at year 2022
-    assert len(in_space) >= 3, f"Expected >= 3 in-space placebos, got {len(in_space)}"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["method"] == "Sharp_RDD_Local_Linear"
+    assert summary["n_obs"] >= 5
 
-    # Exactly one entry should be the baseline
-    baseline_entries = [r for r in in_space if r.get("is_baseline")]
-    assert len(baseline_entries) == 1, "Exactly one baseline entry expected"
+    tau = float(summary["tau"])
+    assert 0.5 < tau < 4.0, f"Estimated tau={tau} outside plausible range for synthetic data"
 
-    # All RMSPE ratios should be positive where available
-    for r in in_space:
-        ratio = r.get("post_pre_rmspe_ratio")
-        if ratio is not None:
-            assert ratio > 0, f"RMSPE ratio for {r['treated_unit']} should be positive"
+    # Statistical validity checks
+    assert summary["se_tau"] > 0, "Standard error must be positive"
+    assert 0.0 <= summary["p_value"] <= 1.0, f"p_value={summary['p_value']} outside [0, 1]"
+    assert summary["p_value"] < 0.05, "Synthetic tau=2.0 should be significant at 5%"
+    assert summary["bandwidth"] > 0, "Bandwidth must be positive"
+    assert summary["n_effective"] > 0, "Effective sample size must be positive"
 
-    # Weights for each placebo should be non-negative and sum to ~1
-    for r in in_space:
-        w_dict = r.get("weights", {})
-        w_vals = np.array(list(w_dict.values()), dtype=float)
-        if len(w_vals) > 0:
-            assert (w_vals >= -1e-10).all(), f"Placebo weights negative for {r['treated_unit']}"
-            assert np.isclose(w_vals.sum(), 1.0, atol=1e-6), (
-                f"Placebo weights sum to {w_vals.sum()} for {r['treated_unit']}"
-            )
+    # t-stat sign should match tau
+    assert (summary["t_stat"] > 0) == (tau > 0), "t_stat sign should match tau sign"
 
-    # --- In-time placebo checks ---
-    in_time_files = list(rob_dir.glob("placebo_in_time_*.json"))
-    assert len(in_time_files) >= 1, "placebo_in_time JSON missing"
-    in_time = json.loads(in_time_files[0].read_text(encoding="utf-8"))
-    assert len(in_time) >= 1, "Expected at least 1 in-time placebo result"
+    sample_path = out_dir / "rdd_sample.csv"
+    assert sample_path.exists(), "rdd_sample.csv missing"
+    sample = pd.read_csv(sample_path)
+    assert not sample.empty, "rdd_sample.csv is empty"
+    assert {"nuts2_code", "gdp_growth", "forcing_var", "treated"}.issubset(
+        set(sample.columns)
+    ), "RDD sample missing expected columns"
 
-    for r in in_time:
-        assert r["treated_unit"] == "SYR"
-        assert r["intervention_year"] in [2021, 2023]
 
-    # --- Robustness summary checks ---
-    summary_files = list(rob_dir.glob("robustness_summary_*.json"))
-    assert len(summary_files) >= 1, "robustness_summary JSON missing"
-    summary = json.loads(summary_files[0].read_text(encoding="utf-8"))
+def test_prepare_then_rdd_integration(tmp_path, run_cmd):
+    """End-to-end: prepare panel from templates, then run RDD on it."""
+    panel_dir = tmp_path / "panel"
+    panel_dir.mkdir(parents=True, exist_ok=True)
 
-    assert summary["treated_iso3"] == "SYR"
-    assert summary["intervention_year"] == 2022
-    assert summary["in_space_placebo_count"] >= 3
+    run_cmd([
+        sys.executable,
+        "labs/lab4_europe/code/prepare_lab4_inputs.py",
+        "--eurostat-input",
+        "labs/lab4_europe/data/raw_templates/eurostat_gdp_example.csv",
+        "--eligibility-input",
+        "labs/lab4_europe/data/raw_templates/eligibility_example.csv",
+        "--mappings",
+        "labs/lab4_europe/data/source_mappings.json",
+        "--output-dir",
+        str(panel_dir),
+        "--year",
+        "2022",
+    ])
 
-    # Rank-based p-value should be in (0, 1]
-    rank_p = summary["in_space_rank_p_value"]
-    if rank_p is not None:
-        assert 0.0 < rank_p <= 1.0, f"Rank p-value={rank_p} outside (0, 1]"
+    rdd_dir = tmp_path / "rdd_integration"
+    rdd_dir.mkdir(parents=True, exist_ok=True)
 
-    assert summary["in_time_placebo_count"] >= 1
-    assert summary["in_time_placebo_years"] == [2021, 2023]
+    run_cmd([
+        sys.executable,
+        "labs/lab4_europe/code/lab4_europe_rdd_scaffold.py",
+        "--panel",
+        str(panel_dir / "panel_mapped.csv"),
+        "--year",
+        "2022",
+        "--output-dir",
+        str(rdd_dir),
+    ])
+
+    summary_path = rdd_dir / "model_summary.json"
+    assert summary_path.exists(), "model_summary.json missing"
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["method"] == "Sharp_RDD_Local_Linear"
+    assert summary["n_obs"] >= 4
+
+
+def test_build_eligibility_smoke(tmp_path, run_cmd):
+    """Test that the eligibility builder produces valid output from template GDP data."""
+    out_csv = tmp_path / "eligibility.csv"
+
+    run_cmd([
+        sys.executable,
+        "scripts/build_lab4_eligibility.py",
+        "--gdp-input",
+        "labs/lab4_europe/data/raw_templates/eurostat_gdp_example.csv",
+        "--ref-start", "2018",
+        "--ref-end", "2020",
+        "--min-ref-years", "2",
+        "--output",
+        str(out_csv),
+    ])
+
+    assert out_csv.exists(), "eligibility CSV missing"
+    df = pd.read_csv(out_csv)
+    assert not df.empty, "eligibility CSV is empty"
+
+    expected_cols = {"nuts2_code", "programming_period", "gdp_pc_pps", "eu_threshold_75pct", "eligible"}
+    assert expected_cols.issubset(set(df.columns)), f"Missing columns: {expected_cols - set(df.columns)}"
+
+    assert df["eligible"].isin([0, 1]).all(), "eligible column must be binary"
+    assert df["eligible"].sum() > 0, "No treated regions"
+    assert (df["eligible"] == 0).sum() > 0, "No control regions"
+    assert (df["eu_threshold_75pct"] > 0).all(), "Threshold must be positive"
+
+    summary_path = out_csv.parent / "eligibility_construction_summary.json"
+    assert summary_path.exists(), "construction summary JSON missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["treated_regions"] > 0
+    assert summary["control_regions"] > 0
+    assert summary["threshold_value"] > 0

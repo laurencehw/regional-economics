@@ -23,9 +23,9 @@ def run_cmd():
 
 
 @pytest.fixture
-def lab4_panel(tmp_path, run_cmd):
+def lab5_panel(tmp_path, run_cmd):
     """Build the Lab 4 estimation panel from raw templates and return output paths."""
-    out_dir = tmp_path / "lab4_panel"
+    out_dir = tmp_path / "lab5_panel"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     panel_csv = out_dir / "panel.csv"
@@ -36,11 +36,11 @@ def lab4_panel(tmp_path, run_cmd):
 
     run_cmd([
         sys.executable,
-        "scripts/build_lab4_mena_estimation_panel.py",
+        "scripts/build_lab5_mena_estimation_panel.py",
         "--acled-events-csv", str(dummy_events),
-        "--acled-counts-csv", "labs/lab4_mena/data/raw_templates/acled_counts_example.csv",
-        "--wdi-outcome-csv", "labs/lab4_mena/data/raw_templates/wdi_outcome_example.csv",
-        "--unhcr-mapped-csv", "labs/lab4_mena/data/raw_templates/unhcr_mapped_example.csv",
+        "--acled-counts-csv", "labs/lab5_mena/data/raw_templates/acled_counts_example.csv",
+        "--wdi-outcome-csv", "labs/lab5_mena/data/raw_templates/wdi_outcome_example.csv",
+        "--unhcr-mapped-csv", "labs/lab5_mena/data/raw_templates/unhcr_mapped_example.csv",
         "--acled-country-year-csv", str(acled_cy_csv),
         "--panel-output-csv", str(panel_csv),
         "--metadata-json", str(meta_json),
