@@ -131,7 +131,41 @@ This table summarizes the book's integrated structure, ensuring each regional se
 | IV | Europe | 8–9 | Lab 3 | Spatial RDD | Eurostat NUTS-2 |
 | V | MENA | 10–11 | Lab 4 | Synthetic Control Method | WDI, ACLED, UNHCR |
 | VI | Africa | 12–13 | Lab 5 | Night-lights / Moran's $I$ | VIIRS, Afrobarometer |
-| VII | Synthesis | 14–15 | — | Comparative synthesis | Cross-cutting |
+| VII | Synthesis | 14–15 | Lab 6 | Services trade gravity, STRI | WTO BOP, OECD STRI, TiVA, ECIPE |
+
+---
+
+## Cross-Cutting Theme: Services Trade and the Spatial Paradox of Intangibility
+
+A services trade thread runs through the entire book, integrated into existing chapters rather than isolated in a standalone section. The integration points are:
+
+| Chapter | Services Trade Content |
+|---|---|
+| Ch. 1 | Spatial paradox of intangibility; Storper & Venables buzz; Haskel & Westlake four S's |
+| Ch. 2 | STRI and regulatory heterogeneity as institutional barriers to services trade |
+| Ch. 3 | Services trade measurement (BOP modes, TiVA servicification, STRI); gravity model for services |
+| Ch. 4 | USMCA digital trade provisions; North American APS networks; local multipliers; nearshoring |
+| Ch. 5 | BPO/digital labor as upgrading path; platform-mediated telemigration; medical tourism; tourism multipliers |
+| Ch. 6 | India's IT services geography; Grossman & Rossi-Hansberg task trading; servicification of Asian manufacturing |
+| Ch. 7 | Platform economies (Alibaba, Grab, Gojek); Digital Silk Road; data sovereignty |
+| Ch. 8 | EU Services Directive failure; Digital Single Market; GDPR; APS networks; education as traded service |
+| Ch. 9 | CEE nearshore BPO hubs; Brexit financial services relocation |
+| Ch. 10 | Gulf aviation/logistics/finance hubs; medical tourism; cloud infrastructure; telemedicine |
+| Ch. 12 | M-Pesa and digital financial services; productive service agglomeration in African cities |
+| Ch. 13 | AfCFTA Protocol on Trade in Services; mobile money interoperability |
+| Ch. 15 | Telemigration synthesis; splinternet; gravity model for services; remote work spatial equilibrium |
+| Lab 6 | Services trade gravity model; STRI tariff equivalents; TiVA servicification; cloud geography |
+
+Key references anchoring this thread:
+- Grossman & Rossi-Hansberg (2008), "Trading Tasks" — theoretical backbone
+- Kimura & Lee (2006) / Head, Mayer & Ries (2009) — gravity for services empirics
+- Storper & Venables (2004), "Buzz" — why services cluster
+- Haskel & Westlake (2018), *Capitalism Without Capital* — intangible economy framework
+- Borchert, Gootiiz & Mattoo (2014) — STRI measurement
+- Faber & Gaubert (2019) — tourism as services trade with spatial identification
+- Suri & Jack (2016) — M-Pesa and digital financial inclusion
+- Connell (2013) — medical tourism as Mode 2 services trade
+- Diamond (2016) — spatial equilibrium of service cities
 
 ---
 
@@ -142,3 +176,4 @@ This table summarizes the book's integrated structure, ensuring each regional se
 3. **Code-alongside-prose:** Applied Labs are developed in tandem with the chapters they accompany, not bolted on afterward.
 4. **Equal analytical seriousness across regions:** Africa and MENA receive the same methodological depth as the Americas and Europe — a deliberate correction of the typical textbook pattern.
 5. **Review gates prevent compounding errors:** The manuscript is reviewed at three checkpoints (after Part I, after the first two regional parts, and after the full draft) rather than only at the end.
+6. **Services trade as cross-cutting thread:** Rather than a standalone services chapter, services trade content is woven through every regional chapter and synthesized in Chapter 15 and Lab 6. This ensures students encounter services geography as a recurring analytical lens, not a one-off topic.

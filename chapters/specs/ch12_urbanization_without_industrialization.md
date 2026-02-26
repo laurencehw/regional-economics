@@ -16,6 +16,8 @@ Urbanization in Sub-Saharan Africa raises productivity only where municipal serv
 3. Informal institutions can sustain exchange, but often at higher variance and lower scale efficiency.
 4. Corridor integration mediates whether urban centers become production nodes or consumption hubs.
 5. Night-lights and alternative data can recover spatial dynamics where official GDP data are sparse.
+6. **Digital financial services challenge the "low-productivity services" narrative.** The M-Pesa revolution (Suri & Jack 2016) demonstrates that Africa's urban service sector is not uniformly unproductive — mobile money has reshaped spatial access to finance, with measurable long-run effects on poverty and gender equity. Nairobi, Lagos, Cape Town, and Kigali are emerging as digital services hubs with genuine agglomeration economies in fintech, BPO, and software development. This complicates the "urbanization without industrialization" thesis: some African cities may be generating productive agglomeration through service-sector clustering that bypasses the manufacturing stage entirely. The question is whether this represents a viable alternative development path or an enclave phenomenon limited to a few cities with sufficient institutional and infrastructure capacity.
+7. **E-government and digital public service delivery** (Ganapati & Ravi 2023) create their own spatial patterns — digital identification systems can either reduce or reinforce spatial inequality in access to government services, depending on infrastructure and digital literacy gradients.
 
 ## Institutional Variable Operationalization
 - Institutional variable: `urban_service_capacity_rt`.
@@ -36,6 +38,8 @@ Urbanization in Sub-Saharan Africa raises productivity only where municipal serv
 1. Gollin, Jedwab, and Vollrath (2016), urbanization without industrialization.
 2. Henderson, Storeygard, and Weil (2012), night-lights as economic proxy.
 3. Duranton and Puga (2004), micro-foundations of agglomeration.
+4. Suri & Jack (2016), "The Long-Run Poverty and Gender Effects of Mobile Money," *Science* — M-Pesa as a case study in digital financial services reshaping spatial access to finance.
+5. Ganapati & Ravi (2023), "Digital Identification and Government Service Delivery" — how digital ID systems reshape spatial access to public services.
 
 ## Figures/Maps Needed
 - VIIRS-based map of urban growth hotspots and corridor adjacency.
