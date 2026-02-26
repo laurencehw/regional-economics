@@ -238,16 +238,16 @@ Region A's only neighbor is B; region C's only neighbor is B; but B has two neig
 Now suppose $\rho = 0.4$ and $\beta = 1$ for a single covariate $x$. The spatial multiplier is:
 
 $$
-(I - 0.4W)^{-1} \approx \begin{pmatrix} 1.07 & 0.43 & 0.07 \\ 0.21 & 1.14 & 0.21 \\ 0.07 & 0.43 & 1.07 \end{pmatrix}
+(I - 0.4W)^{-1} \approx \begin{pmatrix} 1.10 & 0.48 & 0.10 \\ 0.24 & 1.19 & 0.24 \\ 0.10 & 0.48 & 1.10 \end{pmatrix}
 $$
 
-The diagonal elements (1.07, 1.14, 1.07) are the direct effects. A one-unit increase in $x_A$ raises $y_A$ by 1.07, not 1.00 — the extra 0.07 comes from the feedback loop: $x_A$ raises $y_A$, which raises $y_B$ (through the spatial lag), which feeds back to raise $y_A$ further (because B is A's neighbor). The feedback is modest here because $\rho = 0.4$ and the loop passes through two edges.
+The diagonal elements (1.10, 1.19, 1.10) are the direct effects. A one-unit increase in $x_A$ raises $y_A$ by 1.10, not 1.00 — the extra 0.10 comes from the feedback loop: $x_A$ raises $y_A$, which raises $y_B$ (through the spatial lag), which feeds back to raise $y_A$ further (because B is A's neighbor). The feedback is modest here because $\rho = 0.4$ and the loop passes through two edges.
 
-The off-diagonal elements are the indirect effects. A one-unit increase in $x_A$ raises $y_B$ by 0.43 and $y_C$ by 0.07. The spillover to B is direct (A is B's neighbor). The spillover to C is indirect — it passes through B, and it is much smaller because it involves two edges and is attenuated by $\rho^2$.
+The off-diagonal elements are the indirect effects. A one-unit increase in $x_A$ raises $y_B$ by 0.24 and $y_C$ by 0.10. The spillover to B is direct (A is B's neighbor). The spillover to C is indirect — it passes through B, and it is much smaller because it involves two edges and is attenuated by $\rho^2$.
 
-The total effect of increasing $x_A$ by one unit on total output ($y_A + y_B + y_C$) is $1.07 + 0.43 + 0.07 = 1.57$. In other words, the spatial multiplier increases the aggregate return to a localized intervention by 57 percent. This is the quantitative content of the claim that ignoring spatial spillovers understates the benefits of place-based policy.
+The total effect of increasing $x_A$ by one unit on total output ($y_A + y_B + y_C$) is $1.10 + 0.24 + 0.10 = 1.44$. In other words, the spatial multiplier increases the aggregate return to a localized intervention by 44 percent. This is the quantitative content of the claim that ignoring spatial spillovers understates the benefits of place-based policy.
 
-Notice that region B — the central hub — has a higher direct effect (1.14) than the peripheral regions (1.07). This is because B has more connections, so the feedback loop is richer. In real-world applications, better-connected regions (trade hubs, capital cities, transport nodes) will systematically show larger direct effects. This is not a statistical artifact — it reflects the genuine economic logic that well-connected regions benefit more from their own improvements because those improvements propagate further and return more forcefully.
+Notice that region B — the central hub — has a higher direct effect (1.19) than the peripheral regions (1.10). This is because B has more connections, so the feedback loop is richer. In real-world applications, better-connected regions (trade hubs, capital cities, transport nodes) will systematically show larger direct effects. This is not a statistical artifact — it reflects the genuine economic logic that well-connected regions benefit more from their own improvements because those improvements propagate further and return more forcefully.
 
 ### The Asymmetry in SDM Effects
 
