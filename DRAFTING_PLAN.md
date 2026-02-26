@@ -14,7 +14,7 @@ This plan organizes the writing process into phases. Each phase produces a self-
 
 | # | Task | Notes |
 |---|---|---|
-| 0.1 | **Finalize the outline and chapter specifications** | Write a 1–2 page "chapter spec" for each of the 16 chapters (including 3-A/3-B): thesis statement, 3–5 key arguments, target length, required datasets, and 2–3 anchor references. **Status:** 14 of 18 specs detailed; Chs. 10, 12, 15 remain stubs; Ch. 14 needs stub-to-spec conversion. |
+| 0.1 | **Finalize the outline and chapter specifications** | Write a 1–2 page "chapter spec" for each of the 16 chapters (including 3-A/3-B): thesis statement, 3–5 key arguments, target length, required datasets, and 2–3 anchor references. **Status:** All 18 specs detailed (Chs. 10, 12 filled out 2026-02-26); Ch. 15 has partial content. |
 | 0.2 | **Build the replication repository** | Create a GitHub repo with folder structure for each Applied Lab. Set up R and Python environments and add zero-install cloud execution targets (Colab/Codespaces). |
 | 0.3 | **Draft Appendix B (Data & Software Guide)** | Writing this early forces resolution of all data-access and tooling decisions before chapter drafting begins. |
 | 0.4 | **Secure "Institutional Spotlight" contacts** | Identify and begin outreach for 8–12 interview subjects across regions. |
@@ -195,7 +195,7 @@ Key references anchoring this thread:
 
 | # | Task | Status |
 |---|---|---|
-| 0.1 | Outline and chapter specifications | 14/18 specs detailed (Chs. 10, 12, 15 are stubs; Ch. 14 needs expansion) |
+| 0.1 | Outline and chapter specifications | All 18 specs detailed (Chs. 10, 12 filled out 2026-02-26) |
 | 0.2 | Replication repository | Done — Labs 1–7 scaffolded, CI passing |
 | 0.3 | Appendix B (Data & Software Guide) | Not started |
 | 0.4 | Institutional Spotlight contacts | Not started |
@@ -210,15 +210,16 @@ Key references anchoring this thread:
 | Chapter | Prose | Key Content | Review |
 |---|---|---|---|
 | Ch. 1 | Draft complete (361 lines) | Spatial paradox of intangibility | Needs opening case study (Bangalore vs Kolkata) |
-| Ch. 2 | Draft complete (267 lines) | Institutional toolkit | Needs slimming: move path dependency, VoC, windows of opportunity to regional chapters |
-| Ch. 3 | Draft complete (559 lines) | Spatial toolkit + services data | Needs splitting into 3-A and 3-B; add inequality measurement, MAUP, Bartik, QSMs |
+| Ch. 2 | Draft revised (233 lines) | Institutional toolkit | Slimmed: path-dependency case studies condensed, VoC condensed with forward refs to Chs. 5, 6, 9 |
+| Ch. 3-A | Split from Ch. 3 (559 lines) | Spatial econometrics | Lab references updated to new numbering; section numbers renumbered to 3A.x |
+| Ch. 3-B | New draft (236 lines) | Trade measurement & gravity | PPML gravity, GATS modes, servicification, TiVA decomposition, trading tasks framework |
 
 ### Phase 2 Status (Regional Parts)
 
 | Wave | Chapters | Prose Status | Lab Status |
 |---|---|---|---|
 | A (Americas) | Chs. 4–5 | Initial drafts (352 + 307 lines); need expansion | Lab 1: Complete |
-| B (Africa) | Chs. 13–14 | Ch. 13 initial draft (265 lines); Ch. 14 not started | Lab 6: Scaffolded (synthetic data only) |
+| B (Africa) | Chs. 13–14 | Ch. 13 initial draft (265 lines); Ch. 14 initial draft (326 lines) | Lab 6: Scaffolded (synthetic data only) |
 | C (East Asia) | Chs. 6–7 | Not started | Lab 2: Scaffolded (TiVA wired) |
 | C' (South Asia) | Ch. 8 | Not started | Lab 3: Scaffolded (directory created) |
 | D (Europe) | Chs. 9–10 | Not started | Lab 4: Scaffolded (NUTS-2 wired) |
@@ -228,7 +229,7 @@ Key references anchoring this thread:
 
 | Chapter | Prose Status | Spec Status |
 |---|---|---|
-| Ch. 15 | Not started | Stub (needs repurposing as climate synthesis) |
+| Ch. 15 | Not started | Partial (climate synthesis thesis and key arguments drafted; institutional spotlight TBD) |
 | Ch. 16 | Not started | Detailed (services-trade synthesis) |
 
 ### Lab 7 (Services Trade — Cross-Regional Capstone)

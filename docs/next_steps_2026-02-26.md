@@ -8,8 +8,8 @@ This document captures the current project state and prioritized next steps base
 
 ### What's Done
 - **Book structure:** Restructured to 16 chapters (from 15) with Asia split into East Asia (Part III-A) and South Asia (Part III-B), Ch 3 split into 3-A (Spatial Econometrics) and 3-B (Trade/Gravity), and 7 labs (from 6)
-- **Chapter prose drafted:** Chs. 1 (361 lines), 2 (267 lines), 3 (559 lines, needs splitting), 4 (352 lines), 5 (307 lines), 13 (265 lines, was Ch 12) — 6 chapters
-- **Chapter specs:** 14 of 18 detailed (Chs. 1–9, 11, 13–14, 16 + new 3-A, 3-B, 8); stubs for Chs. 10, 12, 15
+- **Chapter prose drafted:** Chs. 1 (361 lines), 2 (233 lines, slimmed), 3-A (559 lines, split from Ch 3), 3-B (236 lines, new), 4 (352 lines), 5 (307 lines), 13 (265 lines), 14 (326 lines) — 8 chapter files
+- **Chapter specs:** All 18 specs detailed (Chs. 10 and 12 filled out 2026-02-26)
 - **Services trade cross-cutting theme:** Fully integrated across outline, drafting plan, all detailed specs, and drafted chapters
 - **Editorial feedback integrated:** New outline with Pathways, Regional Diagnostics Dashboard, Spatial Data Challenge boxes, climate distributed into regions, tourism/education as recurring themes, gravity model consolidated
 - **Lab 1 (Americas):** Complete — real-data SAR pipeline, 3 specification bundles, Bartik extension
@@ -23,11 +23,11 @@ This document captures the current project state and prioritized next steps base
 - **Data:** WDI, Comtrade, BTS, LPI, Eurostat NUTS-2, WIOD, TiVA, ACLED (count-only), UNHCR acquired; VIIRS and Afrobarometer template-only
 
 ### What's Not Done
-- Chapters 6–12, 14–16 prose (10 remaining chapters)
-- Ch 3 prose needs splitting into 3-A and 3-B files
-- Ch 2 prose needs slimming (path dependency to Ch 5, VoC to Ch 9, Windows to Ch 6)
+- Chapters 6–12, 15–16 prose (9 remaining chapters)
+- ~~Ch 3 prose needs splitting into 3-A and 3-B files~~ **Done** (2026-02-26)
+- ~~Ch 2 prose needs slimming (path dependency to Ch 5, VoC to Ch 9, Windows to Ch 6)~~ **Done** (2026-02-26)
 - Ch 1 prose needs opening case study (Bangalore vs Kolkata)
-- 3 companion chapter specs still stubs (Chs. 10, 12, 15)
+- ~~Companion chapter specs stubs~~ **Done** — all 18 specs now detailed (2026-02-26)
 - Lab 3 code implementation (4 planned scripts)
 - Lab 7 code implementation (6 planned scripts)
 - Lab 6 real-data validation (VIIRS/Afrobarometer acquisition)
@@ -45,9 +45,9 @@ This document captures the current project state and prioritized next steps base
 ### Tier 1: Critical Path
 
 #### 1. Stabilize Part I After Restructuring
-- **Why now:** Ch 3 needs splitting into 3-A (spatial econometrics) and 3-B (trade/gravity). Ch 2 needs slimming. Ch 1 needs opening case study.
-- **Action:** Split ch03 prose file into ch03a and ch03b. Move path dependency, VoC, and windows of opportunity content from Ch 2 prose to regional chapter stubs. Add Bangalore vs Kolkata case study to Ch 1.
-- **Co-deliverable:** Verify all Part I prose is internally consistent after restructuring.
+- **Why now:** Ch 1 still needs its opening case study. Part I internal consistency review needed after Ch 3 split and Ch 2 slimming.
+- **Completed:** Ch 3 split into 3-A and 3-B. Ch 2 slimmed (VoC condensed, path-dependency cases condensed, forward references to Chs. 5, 6, 9 added).
+- **Remaining:** Add Bangalore vs Kolkata case study to Ch 1. Verify all Part I cross-references are consistent.
 
 #### 2. Complete Wave A (Americas): Expand Chs. 4-5
 - **Status:** Both chapters have initial prose drafts including services trade content. Need expansion to target length (30-40 pages), Data in Depth boxes, Spatial Data Challenge boxes, Institutional Spotlight sidebars, climate sections, and Convergence Diagnostic figures.
@@ -55,11 +55,11 @@ This document captures the current project state and prioritized next steps base
 
 ### Tier 2: High Priority
 
-#### 3. Complete Wave B (Africa): Expand Ch. 13, Draft Ch. 14
-- **Status:** Ch. 13 has initial prose (265 lines). Ch. 14 spec is detailed.
+#### 3. Complete Wave B (Africa): Expand Chs. 13 and 14
+- **Status:** Ch. 13 has initial prose (265 lines). Ch. 14 has initial prose (326 lines). Both need expansion to target length.
 
-#### 4. Fill Remaining Companion Chapter Specs (Chs. 10, 12, 15)
-- **Priority order:** Ch. 10 (Wave D, Europe), Ch. 12 (Wave E, MENA), Ch. 15 (Phase 3).
+#### 4. ~~Fill Remaining Stub Chapter Specs (Chs. 10, 12)~~ **Done** (2026-02-26)
+- Both specs now fully detailed with core thesis, key arguments, institutional variables, datasets, references, and lab linkage.
 
 #### 5. Acquire VIIRS Data and Validate Lab 6 at Scale
 
@@ -85,19 +85,18 @@ This document captures the current project state and prioritized next steps base
 ## Suggested Execution Sequence
 
 ```
-Week 1-2:  Split Ch. 3 prose into 3-A and 3-B
-           Slim Ch. 2 (distribute to regional chapters)
+Week 1-2:  [DONE] Split Ch. 3 prose into 3-A and 3-B
+           [DONE] Slim Ch. 2 (distribute to regional chapters)
+           [DONE] Fill Ch. 10 and Ch. 12 specs
            Add Ch. 1 opening case study
            Part I internal review gate
 Week 3-4:  Expand Ch. 4 to full draft (boxes, sidebars, climate)
            Acquire VIIRS, start Lab 6 real-data validation
 Week 5-6:  Expand Ch. 5 to full draft
-           Fill Ch. 10 spec (unblocks Wave D)
 Week 7-8:  Wave A review gate
            Expand Ch. 13 to full draft
            Build Lab 3 IT-BPO mapping script
-Week 9-10: Draft Ch. 14 prose
-           Fill Ch. 12 spec (unblocks Wave E)
+Week 9-10: Expand Ch. 14 to full draft
            Build Lab 7 gravity script + WTO data fetch
 Week 11-12: Classroom pilot (Labs 1 + 6)
             Wave A+B review gate
@@ -109,8 +108,8 @@ Week 11-12: Classroom pilot (Labs 1 + 6)
 
 | Risk | Mitigation | Owner |
 |---|---|---|
-| Ch 3 splitting complexity | Careful section assignment; shared utility module | Phase 1 |
-| Ch 2 content redistribution | Mark moved content with forward references | Phase 1 |
+| ~~Ch 3 splitting complexity~~ | **Resolved** — split complete with section renumbering and lab ref updates | Done |
+| ~~Ch 2 content redistribution~~ | **Resolved** — VoC and path-dependency condensed with forward refs | Done |
 | ACLED row-level access denied | Continue with count-based proxy | Pending |
 | VIIRS raster processing at 30+ countries | Pre-aggregated NOAA annual composites | Lab 6 |
 | RBI/KLEMS data for Lab 3 | NASSCOM reports as fallback | Lab 3 |
@@ -131,6 +130,14 @@ Week 11-12: Classroom pilot (Labs 1 + 6)
 - **All files renumbered:** Specs, chapters, labs, tests, scripts, processed data
 - **BOOK_OUTLINE.md completely rewritten** for new structure
 - **DRAFTING_PLAN.md completely rewritten** for new structure
+
+### 2026-02-26: Part I Stabilization and Spec Completion
+- Ch 3 split into ch03a_spatial_econometrics.md (559 lines) and ch03b_trade_measurement_gravity.md (236 lines, new)
+- Ch 2 slimmed: VoC condensed to 3 paragraphs with forward ref to Ch 9; path-dependency case studies condensed with forward refs to Chs 5, 6
+- All lab references in Ch 3-A updated to new numbering (Lab 3→4, Lab 4→5, Lab 5→6, Lab 6→7)
+- Ch 10 spec filled: Eurozone crisis, post-socialist integration, Brexit, institutional mismatch
+- Ch 12 spec filled: Conflict economics, refugee spatial shocks, youth bulge, climate-conflict nexus
+- DRAFTING_PLAN and next_steps updated to reflect completed work
 
 ### 2026-02-26: Services Trade Integration
 - Cross-cutting services trade theme integrated throughout the book
