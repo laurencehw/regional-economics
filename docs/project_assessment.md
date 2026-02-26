@@ -10,10 +10,10 @@
 
 | # | Issue (rev raised) | Status | Evidence |
 |---|---|---|---|
-| 1 | Chapter specs empty for Parts II–VII (rev 1) | **Closed** | Chs 4, 6, 8, 10, 12 have full specs with falsifiable theses and institutional operationalization |
-| 2 | Data acquisition not started (rev 1) | **Partially closed** | WDI, Comtrade, BTS acquired and validated; VIIRS/Afrobarometer wired to Lab 5 templates; 4 datasets remain outstanding |
+| 1 | Chapter specs empty for Parts II–VII (rev 1) | **Closed** | Chs 4, 6, 9, 11, 13 have full specs with falsifiable theses and institutional operationalization |
+| 2 | Data acquisition not started (rev 1) | **Partially closed** | WDI, Comtrade, BTS acquired and validated; VIIRS/Afrobarometer wired to Lab 6 templates; 4 datasets remain outstanding |
 | 3 | Risk of overextension (rev 1) | **Mitigated** | Phased plan with review gates and classroom pilot after Waves A+B; dual-track framing (modular publication) adopted in spirit |
-| 4 | Lab code untested on real data (rev 1) | **Closed** | Lab 1 SAR on 34 economies; Lab 5 Moran scaffold runs on synthetic (15 regions). Both pass CI |
+| 4 | Lab code untested on real data (rev 1) | **Closed** | Lab 1 SAR on 34 economies; Lab 6 Moran scaffold runs on synthetic (15 regions). Both pass CI |
 | 5 | Missing test infrastructure (rev 1) | **Closed** | 4 smoke tests (2 per lab), GitHub Actions CI, top-level pytest.ini |
 | 6 | Institutional analysis underspecified (rev 1) | **Closed** | Each regional spec has named variable, measurement strategy, and spatial interaction term |
 | 7 | Companion specs (5, 7, 9, 11, 13) still stubs (rev 2) | **Open** | Acknowledged as Phase 2 backlog |
@@ -29,13 +29,13 @@
 
 ## What Changed Since Revision 2
 
-### 1. Lab 5 (Africa) is now scaffolded with working code
+### 1. Lab 6 (Africa) is now scaffolded with working code
 
 Two new scripts (~470 lines total):
 
-- **`prepare_lab5_inputs.py`** (209 lines) — maps VIIRS radiance, Afrobarometer governance, and adjacency edge-list CSVs into canonical panel and adjacency files. Handles both wide and long VIIRS formats. Symmetrizes adjacency links. Well-structured with the same pattern as Lab 1's preparation script.
+- **`prepare_lab6_inputs.py`** (209 lines) — maps VIIRS radiance, Afrobarometer governance, and adjacency edge-list CSVs into canonical panel and adjacency files. Handles both wide and long VIIRS formats. Symmetrizes adjacency links. Well-structured with the same pattern as Lab 1's preparation script.
 
-- **`lab5_africa_moran_scaffold.py`** (261 lines) — computes global Moran's I on night-lights, then re-estimates on governance-residualized values. Features:
+- **`lab6_africa_moran_scaffold.py`** (261 lines) — computes global Moran's I on night-lights, then re-estimates on governance-residualized values. Features:
   - Permutation-based inference (configurable draws, seeded RNG)
   - Adjacency-based W construction with row standardization
   - OLS residualization before computing residual Moran's I
@@ -44,25 +44,25 @@ Two new scripts (~470 lines total):
 
 Both scripts follow Lab 1's architectural template: CLI arguments, JSON config-driven mappings, CSV/JSON outputs. The pattern is now validated across two labs.
 
-### 2. Template data fixtures for Lab 5
+### 2. Template data fixtures for Lab 6
 
-Three example CSVs in `labs/lab5_africa/data/raw_templates/`:
+Three example CSVs in `labs/lab6_africa/data/raw_templates/`:
 - `viirs_example.csv` — 8 Sub-Saharan African countries, 2024, avg_radiance values
 - `afrobarometer_example.csv` — 8 countries, 2024, trust_local_gov scores
 - `adjacency_example.csv` — 12 border-sharing pairs with `shared_border_km` weights
 
-Plus `source_mappings.json` connecting raw column names to canonical names. The Lab 5 README documents the full variable mapping and build checklist.
+Plus `source_mappings.json` connecting raw column names to canonical names. The Lab 6 README documents the full variable mapping and build checklist.
 
 ### 3. Smoke tests pass (4/4)
 
 ```
 tests/test_lab1_pipeline_smoke.py::test_prepare_lab1_inputs_smoke    PASSED
 tests/test_lab1_pipeline_smoke.py::test_sar_scaffold_smoke           PASSED
-tests/test_lab5_pipeline_smoke.py::test_prepare_lab5_inputs_smoke    PASSED
-tests/test_lab5_pipeline_smoke.py::test_moran_scaffold_smoke         PASSED
+tests/test_lab6_pipeline_smoke.py::test_prepare_lab6_inputs_smoke    PASSED
+tests/test_lab6_pipeline_smoke.py::test_moran_scaffold_smoke         PASSED
 ```
 
-CI workflow updated to run both Lab 1 and Lab 5 tests.
+CI workflow updated to run both Lab 1 and Lab 6 tests.
 
 ### 4. Infrastructure improvements
 
@@ -78,10 +78,10 @@ Key additions to `DRAFTING_PLAN.md`:
 - Zero-install execution targets (Colab/Codespaces) added to Phase 0 deliverables
 - Dataset fallback matrix added as Phase 0.6
 - Data storage policy as Phase 0.7
-- Wave B is now Africa (not Asia), reflecting Lab 5 as second proof-of-concept
+- Wave B is now Africa (not Asia), reflecting Lab 6 as second proof-of-concept
 - Cloud execution check added to per-wave process
 - Post-Wave-A+B classroom pilot gate before proceeding to Waves C–E
-- Methods mini-primer validation gate for Chs 8 and 11 before those chapters enter drafting
+- Methods mini-primer validation gate for Chs 9 and 12 before those chapters enter drafting
 
 ---
 
@@ -89,13 +89,13 @@ Key additions to `DRAFTING_PLAN.md`:
 
 ### Foundation (~55% complete, up from ~50%)
 - Book outline, drafting plan, and data storage strategy in place
-- 8 of 15 chapter specs detailed (Chs 1–4, 6, 8, 10, 12)
+- 8 of 16 chapter specs detailed (Chs 1–4, 6, 9, 11, 13)
 - Feedback action plan with prioritized execution queue
 
 ### Implementation (~25% complete, up from ~20%)
 - **Lab 1:** Complete real-data pipeline (fetch → map → estimate → robustness), 3 specs documented
-- **Lab 5:** Complete scaffold (prepare → Moran's I with permutation inference), smoke-tested on synthetic data
-- **Labs 2–4:** Scaffolded directories only
+- **Lab 6:** Complete scaffold (prepare → Moran's I with permutation inference), smoke-tested on synthetic data
+- **Labs 2–5:** Scaffolded directories only
 - 4 data acquisition scripts, 4 smoke tests, CI pipeline
 - Top-level requirements, data storage policy, expanded .gitignore
 - No chapter prose yet
@@ -104,13 +104,13 @@ Key additions to `DRAFTING_PLAN.md`:
 
 ## What's Working Well (New Observations)
 
-### 1. The Lab 1 → Lab 5 pattern transfer worked cleanly
+### 1. The Lab 1 → Lab 6 pattern transfer worked cleanly
 
-Lab 5 follows the same architectural template as Lab 1 — CLI-driven scripts, JSON-configured mappings, canonical CSVs, JSON model summaries — but adapts it for a fundamentally different method (Moran's I vs. SAR). This validates the claim that the Lab 1 pattern can scale to the remaining labs without major refactoring. The consistency will also help students: once they understand one lab's structure, the others follow.
+Lab 6 follows the same architectural template as Lab 1 — CLI-driven scripts, JSON-configured mappings, canonical CSVs, JSON model summaries — but adapts it for a fundamentally different method (Moran's I vs. SAR). This validates the claim that the Lab 1 pattern can scale to the remaining labs without major refactoring. The consistency will also help students: once they understand one lab's structure, the others follow.
 
-### 2. Lab 5's framing is stronger than a data-scarcity workaround
+### 2. Lab 6's framing is stronger than a data-scarcity workaround
 
-The README and drafting plan now frame Lab 5 as a "nowcasting/on-time measurement" use case, not just "we use night-lights because GDP data are bad." This is the right framing — night-lights analysis is a legitimate measurement innovation used by development economists regardless of data availability (Henderson, Storeygard, and Weil 2012). The two-step estimation (raw Moran's I → governance-residualized Moran's I) directly operationalizes Chapter 12's thesis about service capacity conditioning urbanization outcomes.
+The README and drafting plan now frame Lab 6 as a "nowcasting/on-time measurement" use case, not just "we use night-lights because GDP data are bad." This is the right framing — night-lights analysis is a legitimate measurement innovation used by development economists regardless of data availability (Henderson, Storeygard, and Weil 2012). The two-step estimation (raw Moran's I → governance-residualized Moran's I) directly operationalizes Chapter 13's thesis about service capacity conditioning urbanization outcomes.
 
 ### 3. The feedback action plan shows project management maturity
 
@@ -118,13 +118,13 @@ The `feedback_action_plan_2026-02-21.md` document does something most academic p
 
 ### 4. Drafting order change (Africa → Wave B) is smart
 
-Moving Africa to Wave B (right after Americas) rather than leaving it for later ensures it isn't treated as an afterthought — which is one of the book's stated design principles. It also means Labs 1 and 5 (the two implemented labs) get classroom-tested together before investing in the more data-dependent Labs 2–4.
+Moving Africa to Wave B (right after Americas) rather than leaving it for later ensures it isn't treated as an afterthought — which is one of the book's stated design principles. It also means Labs 1 and 6 (the two implemented labs) get classroom-tested together before investing in the more data-dependent Labs 2–5.
 
 ---
 
 ## Remaining Issues and Recommendations
 
-### Issue 1: Companion chapter specs (5, 7, 9, 11, 13) — still open
+### Issue 1: Companion chapter specs (5, 7, 10, 12, 14) — still open
 
 These are correctly deprioritized behind Part I prose and Wave A/B implementation, but they should be drafted before their respective waves begin. In particular, **Ch. 5 (Latin America middle-income trap)** needs a spec before Wave A can be considered complete.
 
@@ -132,15 +132,15 @@ These are correctly deprioritized behind Part I prose and Wave A/B implementatio
 
 ### Issue 2: Four datasets still unacquired (WIOD, NUTS-2, ACLED, UNHCR)
 
-VIIRS and Afrobarometer have moved from "not started" to "in progress" via Lab 5 template wiring. The remaining four are correctly prioritized in the feedback action plan (WIOD/NUTS-2 as low-friction next targets, ACLED licensing as early-start item).
+VIIRS and Afrobarometer have moved from "not started" to "in progress" via Lab 6 template wiring. The remaining four are correctly prioritized in the feedback action plan (WIOD/NUTS-2 as low-friction next targets, ACLED licensing as early-start item).
 
 **Recommendation:** No change from rev 2 guidance. Execute per the action plan.
 
-### Issue 3: Lab 5 needs real data to validate at scale
+### Issue 3: Lab 6 needs real data to validate at scale
 
-Lab 5 is in the same position Lab 1 was at rev 1 — mechanically correct on synthetic data, but untested with real VIIRS rasters and Afrobarometer surveys. The Moran's I implementation is clean, but the adjacency weighting strategy (shared border km) may behave differently with real African border geometries (some borders are extremely long — DRC shares borders with 9 countries).
+Lab 6 is in the same position Lab 1 was at rev 1 — mechanically correct on synthetic data, but untested with real VIIRS rasters and Afrobarometer surveys. The Moran's I implementation is clean, but the adjacency weighting strategy (shared border km) may behave differently with real African border geometries (some borders are extremely long — DRC shares borders with 9 countries).
 
-**Recommendation:** When VIIRS and Afrobarometer data arrive, run Lab 5 on at least 30 Sub-Saharan African countries and check sensitivity of Moran's I to: (a) binary vs. border-length weighting, (b) k-nearest-neighbor alternatives, (c) different Afrobarometer survey waves. Document this as a robustness spec table parallel to Lab 1's `spec_results.md`.
+**Recommendation:** When VIIRS and Afrobarometer data arrive, run Lab 6 on at least 30 Sub-Saharan African countries and check sensitivity of Moran's I to: (a) binary vs. border-length weighting, (b) k-nearest-neighbor alternatives, (c) different Afrobarometer survey waves. Document this as a robustness spec table parallel to Lab 1's `spec_results.md`.
 
 ### Issue 4: CI tests cover pipeline mechanics but not statistical output
 
@@ -153,17 +153,17 @@ The smoke tests check that scripts run and produce files with expected schema. T
 
 These are cheap checks that catch real bugs.
 
-### Issue 5: No Lab 5 robustness runner yet
+### Issue 5: No Lab 6 robustness runner yet
 
-Lab 1 has `run_real_americas_specs.py` which orchestrates multiple specifications and produces a comparison table. Lab 5 doesn't have an equivalent yet. When real data arrives, you'll want to compare multiple W construction strategies and governance measures systematically.
+Lab 1 has `run_real_americas_specs.py` which orchestrates multiple specifications and produces a comparison table. Lab 6 doesn't have an equivalent yet. When real data arrives, you'll want to compare multiple W construction strategies and governance measures systematically.
 
 **Recommendation:** Build `run_real_africa_specs.py` following the Lab 1 pattern, but defer until real data are available. The Lab 1 spec runner can serve as a direct template.
 
-### Issue 6: Methods transition steepness (Labs 3 and 4)
+### Issue 6: Methods transition steepness (Labs 4 and 5)
 
-The feedback action plan notes this (P2) and plans bridge content in Chapter 3 plus mini-primers in Chs 8 and 11. This is important — the jump from "here is a SAR model" and "here is Moran's I" to "here is a spatial RDD" and "here is synthetic control" is substantial. Students who can run Labs 1 and 5 will not automatically be ready for Labs 3 and 4.
+The feedback action plan notes this (P2) and plans bridge content in Chapter 3 plus mini-primers in Chs 9 and 12. This is important — the jump from "here is a SAR model" and "here is Moran's I" to "here is a spatial RDD" and "here is synthetic control" is substantial. Students who can run Labs 1 and 6 will not automatically be ready for Labs 4 and 5.
 
-**Recommendation:** When writing Chapter 3, include a dedicated subsection (~2 pages) on "From correlation to causation in spatial settings" that introduces the intuition for boundary discontinuities, donor pool construction, and parallel-trends-with-spillovers. This prepares students for Labs 3–4 without requiring them to learn the methods cold in those chapters.
+**Recommendation:** When writing Chapter 3, include a dedicated subsection (~2 pages) on "From correlation to causation in spatial settings" that introduces the intuition for boundary discontinuities, donor pool construction, and parallel-trends-with-spillovers. This prepares students for Labs 4–5 without requiring them to learn the methods cold in those chapters.
 
 ---
 
@@ -175,16 +175,16 @@ The feedback action plan notes this (P2) and plans bridge content in Chapter 3 p
 2. **Rev 2:** Specs have analytical teeth, Lab 1 works on real data, tests exist — risk has shifted from conception to execution
 3. **Rev 3:** Two labs implemented with a consistent reusable pattern, infrastructure professionalized (requirements, data strategy, CI, feedback tracking), drafting plan adapted based on feedback
 
-The project is now past the "is this a real project?" threshold. Two of five labs work. Eight of fifteen chapter specs are substantive. The infrastructure can support scaling. The feedback action plan shows the author is integrating critique rather than just collecting it.
+The project is now past the "is this a real project?" threshold. Two of seven labs work. Eight of sixteen chapter specs are substantive. The infrastructure can support scaling. The feedback action plan shows the author is integrating critique rather than just collecting it.
 
 **What should happen next:**
 
 1. **Write Chapter 1 prose.** This is the single most important next step. Specs and infrastructure are necessary but insufficient — the project needs to demonstrate it can produce readable, teachable text. Chapter 1 (micro-foundations of space) is the right test case: self-contained, well-specified, and foundational for everything else.
 
-2. **Acquire VIIRS + run Lab 5 at scale.** Lab 5 is close to a real-data gate. VIIRS is NASA open data with no licensing friction. Running Moran's I on 30+ African countries validates the Lab 1→5 pattern transfer on real data and produces a publishable result.
+2. **Acquire VIIRS + run Lab 6 at scale.** Lab 6 is close to a real-data gate. VIIRS is NASA open data with no licensing friction. Running Moran's I on 30+ African countries validates the Lab 1→5 pattern transfer on real data and produces a publishable result.
 
 3. **Draft Ch. 5 spec.** Completes Part II specification before Wave A prose drafting begins in earnest.
 
 4. **Add statistical assertions to smoke tests.** Cheap investment that catches real regressions.
 
-The remaining risks are execution pace and data access for Labs 2–4, not project viability.
+The remaining risks are execution pace and data access for Labs 2–5, not project viability.

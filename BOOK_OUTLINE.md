@@ -1,219 +1,284 @@
 # The New Regional Economics: Spatial Dynamics, Institutions, and Applied Methods
 
+**Target Length:** 650–800 pages
 **Target Audience:** Advanced Undergraduates, Master's, and Early PhD students in Economics, Public Policy, and Economic Geography.
 
-**Animating Vision:** This textbook bridges classical regional geography and modern political economy. It rejects purely descriptive accounts in favor of rigorous spatial econometrics, institutional analysis, and applied causal inference to explain why certain regions diverge, integrate, or stagnate. A cross-cutting theme is the growing importance of services trade and the spatial paradox of intangibility — why services cluster in expensive cities despite near-zero digital transmission costs, how regulatory heterogeneity creates invisible borders in the service economy, and how the "servicification" of manufacturing blurs the boundary between goods and services trade. Every regional section pairs substantive expertise with a hands-on Applied Lab, bringing students from passive readers to active empirical researchers.
+**Animating Vision:** This textbook bridges classical economic geography and modern causal inference, anchored in intangibles and the service economy. It rejects purely descriptive accounts in favor of rigorous spatial econometrics, institutional analysis, and applied causal inference to explain why certain regions diverge, integrate, or stagnate. A cross-cutting theme is the growing importance of services trade and the spatial paradox of intangibility — why services cluster in expensive cities despite near-zero digital transmission costs, how regulatory heterogeneity creates invisible borders in the service economy, and how the "servicification" of manufacturing blurs the boundary between goods and services trade. Every regional section pairs substantive expertise with a hands-on Applied Lab, bringing students from passive readers to active empirical researchers.
+
+---
+
+## Preface & Front Matter
+
+### Pathways Through This Book
+
+To prevent syllabus bloat, the preface includes a visual Dependency Diagram (DAG) and 5 curated tracks:
+
+1. **Spatial Econometrics Track:** Ch 1, 3-A, 3-B → All Labs → Ch 16. Regional chapters used as case-study readings.
+2. **International Trade in Services Track:** Ch 1, 2, 3-B → Services threads in Ch 4, 7, 8, 9, 14 → Lab 7 → Ch 16.
+3. **Development Economics Track:** Ch 1, 2 → Ch 5 (LatAm), Ch 8 (South Asia), Parts V & VI (MENA/Africa) → Ch 15–16.
+4. **Comparative Regionalism Track:** Ch 1, 2 → Part IV (Europe) → Ch 4 (USMCA) → Ch 14 (AfCFTA) → Lab 4 → Ch 16.
+5. **Geoeconomics & Industrial Policy:** Ch 1, 2 → Ch 4 (CHIPS) → Ch 6–7 (Asia) → Ch 6 (Weaponized Interdependence) → Ch 15–16.
+
+Each chapter begins with a one-line "Prerequisites" note (e.g., "This chapter requires Chapter 1 and Section 3-B.5. No prior regional chapters needed.").
 
 ---
 
 ## Part I: Theoretical and Methodological Foundations
 
-Before exploring specific geographies, this part grounds the student in the formal theories of spatial economics and the modern empirical toolkit. It establishes the analytical "language" used throughout the book.
+Restructured to reduce front-loading. Heavy institutional theories (path dependency, varieties of capitalism, windows of opportunity) have been distributed to the regional chapters where they come alive. Methods are split by discipline: spatial econometrics (3-A) and trade measurement (3-B).
 
-### Chapter 1: The Micro-Foundations of Space — From Classical to New Economic Geography
+### Chapter 1: The Micro-Foundations of Space
 
-- **Classical Roots:** Von Thünen, Weber, Christaller, and Lösch — the origins of location theory.
-- **The NEG Revolution:** Krugman's core-periphery model; centripetal forces (market access, thick labor markets, knowledge spillovers) versus centrifugal forces (congestion, land rents, commuting costs).
+- **Opening Case Study:** The spatial puzzle of Bangalore vs. Kolkata — why does a global services hub emerge in one Indian city and not another?
+- **Classical Roots to NEG:** Von Thünen, Weber, Christaller, Lösch → Krugman's core-periphery model. Centripetal forces (market access, thick labor markets, knowledge spillovers) versus centrifugal forces (congestion, land rents, commuting costs).
 - **The Marshallian Trinity of Agglomeration:** Input-sharing, labor-market pooling (matching), and knowledge spillovers as micro-foundations for clustering.
+- **Agglomeration vs. Spatial Sorting:** Do cities make workers more productive, or do highly skilled people simply self-select into rich cities? Introduction to worker fixed-effects.
+- **Housing Constraints & Spatial Misallocation:** Why doesn't everyone move to Silicon Valley? Hsieh & Moretti on how zoning acts as the ultimate centrifugal force.
 - **The Spatial Paradox of Intangibility:** Why services cluster in the most expensive cities despite near-zero digital transmission costs. The economics of "capitalism without capital" (Haskel & Westlake's four S's: scalability, spillovers, sunkenness, synergies) and the persistence of face-to-face contact for tacit knowledge exchange (Storper & Venables 2004).
-- **Functional Regions vs. Administrative Boundaries:** Why analysis of "functional regions" (e.g., the Silicon Valley–Hsinchu corridor) often matters more than analysis bounded by national borders.
+- **Defining the Spatial Unit:** Functional vs. administrative boundaries. Introduction to Commuting Zones (CZs). Why analysis of "functional regions" (e.g., the Silicon Valley–Hsinchu corridor) often matters more than analysis bounded by national borders.
+- **Preview Boxes:** Call-forward boxes in every theory chapter (e.g., "In Chapter 9, we apply these agglomeration principles to EU Cohesion Funds...").
 
-### Chapter 2: Evolutionary and Institutional Frameworks
+### Chapter 2: The Institutional Toolkit & Services Architecture
 
-- **Institutional Thickness:** Measuring the density and quality of local norms, legal frameworks, regulatory bodies, and "soft" infrastructure at the sub-national level.
-- **Path Dependency:** How historical colonial, industrial, and political legacies constrain modern economic choices — and when "windows of opportunity" allow escape.
-- **Related Variety and Regional Upgrading:** Why regions diversify into "nearby" industries (Hidalgo & Hausmann's Product Space) rather than leaping to unrelated sectors.
-- **Regulatory Heterogeneity as a Services Trade Barrier:** Why institutional barriers — professional licensing, data localization, divergent regulatory standards — matter more for services trade than tariffs. The OECD Services Trade Restrictiveness Index (STRI) and World Bank STRI as tools for measuring invisible borders (Borchert, Gootiiz & Mattoo 2014).
-- **Varieties of Capitalism at the Regional Scale:** Applying Hall & Soskice to sub-national economic governance.
+Slimmed down. Path dependency, varieties of capitalism, and windows of opportunity moved to regional chapters where they come alive through cases.
 
-### Chapter 3: The Modern Spatial Econometric Toolkit
+- **Institutional Thickness & Related Variety:** Measuring sub-national governance quality; the Product Space (Hidalgo & Hausmann) — why regions diversify into "nearby" industries rather than leaping to unrelated sectors.
+- **The Architecture of Services Trade:** How trade agreements actually handle services. The 4 GATS modes, positive vs. negative listing (GATS vs. NAFTA/CPTPP), and Mutual Recognition Agreements (MRAs) for professional services. The distinction between market access and national treatment commitments.
+- **Regulatory Heterogeneity as a Services Trade Barrier:** Why institutional barriers — professional licensing, data localization, divergent regulatory standards — matter more for services trade than tariffs. The OECD STRI and World Bank STRI as tools for measuring invisible borders (Borchert, Gootiiz & Mattoo 2014). The EU Services Directive as a case study in incomplete liberalization.
 
-- **From OLS to Spatial Models:** Why ordinary regression fails when observations are spatially dependent. The Spatial Autoregressive (SAR) model, Spatial Error Model (SEM), and Spatial Durbin Model (SDM).
+### Chapter 3-A: Spatial Econometrics & Inequality Measurement
+
+- **Measuring Spatial Inequality:** Formal definitions of unconditional/conditional β-convergence, σ-convergence, Theil indices, and spatial Gini coefficients. The Williamson hypothesis (inverted-U of regional inequality over development).
+- **From OLS to Spatial Regressions:** Why ordinary regression fails when observations are spatially dependent. The Spatial Autoregressive (SAR) model, Spatial Error Model (SEM), and Spatial Durbin Model (SDM).
 - **The Spatial Weight Matrix ($W$):** Construction methods — contiguity, distance-decay, k-nearest neighbors, and trade-flow weights. The consequences of $W$-specification for inference.
 - **Endogeneity and the Reflection Problem:** Manski's identification challenge — separating endogenous, exogenous, and correlated effects in spatial models.
-- **Spatial Causal Inference:** Spatial Regression Discontinuity Design (RDD), Synthetic Control Methods, and difference-in-differences with spatial spillovers, with explicit counterfactual intuition and boundary-discontinuity logic before advanced regional applications.
-- **The Gravity Model for Services Trade:** The gravity model — the workhorse of empirical trade economics — produces strikingly different results for services than for goods. Distance elasticities are often *larger* for services (counterintuitively), language and colonial ties matter more, and regulatory barriers captured by the STRI show up differently from tariffs (Kimura & Lee 2006; Head, Mayer & Ries 2009). The chapter introduces the gravity framework here so that regional chapters can deploy it. The Grossman & Rossi-Hansberg (2008) "trading tasks" framework provides the theoretical scaffolding for understanding which service tasks are tradable across borders and which resist offshoring — based on the interaction of communication costs, task routineness, and factor price differences.
-- **Measuring Services Trade:** Why standard BOP-based statistics undercount services trade — the four GATS modes (cross-border, consumption abroad, commercial presence, movement of persons), the gap between Mode 1 and Mode 3 estimates, and the OECD TiVA framework for capturing "servicification" (the service content embedded in manufacturing exports). Data sources: WTO BOP-based services statistics, OECD TiVA, OECD STRI, ECIPE Digital Trade Estimates.
-- **Data Sources and Reproducibility:** An orientation to key datasets (World Bank WDI, IMF, Penn World Tables, WIOD, Afrobarometer, VIIRS night-lights, enterprise surveys) and reproducible workflows in R/Python.
+- **The Modifiable Areal Unit Problem (MAUP):** The statistical danger of drawing arbitrary geographic boundaries and how it affects inference.
+- **Spatial Causal Inference & The Bartik Instrument:** Spatial Regression Discontinuity Design (RDD), Synthetic Control Methods, difference-in-differences with spatial spillovers, and using the Shift-Share (Bartik) instrument to evaluate localized trade shocks.
+- **Quantitative Spatial Models (QSMs):** A conceptual introduction to structural general equilibrium counterfactuals.
+- **Data in Depth Box:** Computing σ-convergence for EU NUTS-2 regions and Chinese provinces using the same code template, illustrating how the same measure reveals very different convergence patterns.
+
+### Chapter 3-B: Trade Measurement and the Gravity Model
+
+- **The Gravity Model Consolidated:** Structural gravity (Anderson & van Wincoop 2003), PPML estimators (Santos Silva & Tenreyro 2006), and the counterintuitive reality of distance elasticities for services (Kimura & Lee 2006; Head, Mayer & Ries 2009). All regional chapters cross-reference this treatment.
+- **Measuring the Intangible:** Task trading (Grossman & Rossi-Hansberg 2008), the four GATS modes (BOP-based), the gap in Mode 3 data, and OECD TiVA for capturing "servicification." Data sources: WTO BOP-based services statistics, OECD TiVA, OECD STRI, ECIPE Digital Trade Estimates.
+- **Running Gravity Results Table:** A canonical estimates table that first appears here and is reprinted/extended in Lab 7 when students add their own estimates. Cross-regional comparison of distance elasticities for services vs. goods as a throughline.
+- **Data Sources and Reproducibility:** Orientation to key datasets (World Bank WDI, IMF, Penn World Tables, WIOD, Afrobarometer, VIIRS night-lights, enterprise surveys) and reproducible workflows in R/Python.
+
+---
+
+## Regional Pedagogical Features (Applied to Parts II through VII)
+
+- **Regional Diagnostics Dashboard:** A standardized 1-page visual opening each Part: convergence plots (β/σ), sub-national services GDP map, spatial Gini, night-lights composite, and top 5 GATS exports. Consistent color scheme and cartographic projection across all regional maps.
+- **Spatial Data Challenge Box:** A 1-page feature in each chapter highlighting what data is missing or distorted in that specific region.
+- **Climate Exposure:** Integrated into every regional Part rather than saved for the end.
+- **Convergence Diagnostic:** A standardized figure or table in each regional chapter showing β-convergence and σ-convergence for that region's sub-national units over the most recent available period.
 
 ---
 
 ## Part II: The Americas — Agglomeration, Geoeconomics, and Traps
 
-**Core Theme:** Supply chain security, extreme intra-regional spatial inequality, the tension between the integrated North American high-tech corridor and the institutional barriers facing Latin America. The Americas also illustrate the full spectrum of services geography — from the advanced producer services (APS) networks of New York, Toronto, and Mexico City to the digital labor platforms connecting Latin American freelancers to US clients.
+**Core Theme:** Supply chain security, extreme intra-regional spatial inequality, the tension between the integrated North American high-tech corridor and the institutional barriers facing Latin America. The Americas illustrate the full spectrum of services geography — from APS networks of New York, Toronto, and Mexico City to the digital labor platforms connecting Latin American freelancers to US clients.
 
-### Chapter 4: The North American Core — USMCA and the Geoeconomics of Resilience
+### Chapter 4: North America — Resilience and Discontent
 
-- **The Core Thesis:** Integration in North America has shifted from a "least-cost" efficiency model (NAFTA era) to a "value-added and national security" model (USMCA era). The agreement is now an institutional framework for friend-shoring and industrial base protection.
-- **Value Chain Circulation:** Analyzing the transformation of North American logistics from simple cost minimization to the science of resilient circulation systems.
-- **The Border Effect:** Using gravity models to calculate the "shadow costs" of increased security, regulatory standards, and Rules of Origin at the US–Mexico border.
-- **Semiconductor Regionalism:** The CHIPS Act guardrails and how they incentivize a North American microelectronics ecosystem — the industrial economics of supply chain protection.
-- **Institutional Levers:**
-  - The Defense Production Act (Title III) as a tool for expanding regional capacity in critical materials.
-  - CFIUS and FDI screening for "TID businesses" (Technology, Infrastructure, Data) across the continent.
-- **The Rust Belt Paradox:** Why the hollowing out of traditional manufacturing persists alongside massive public investment in reshoring, and how that divergence mirrors the rise of superstar metro clusters versus left-behind regions.
-- **Services Trade and the APS Geography of North America:** The US as the world's largest services exporter. How USMCA's digital trade and financial services provisions create a distinct regulatory geography. The local multiplier (Moretti 2010): how one high-skill APS job generates multiple local service jobs, and why tech/finance hub openings reshape surrounding service economies. The post-pandemic remote work shock and its spatial redistribution effects (Delventhal, Kwon & Parkhomenko 2022).
+- **Geoeconomics:** USMCA friend-shoring, CHIPS Act semiconductor regionalism, and CFIUS.
+- **Applying Gravity:** Using Ch 3-B's framework to calculate the "shadow costs" of the US–Mexico border — deploy as an applied tool, not re-derive.
+- **International Education (Mode 2):** US university towns as massive service export clusters with deep local multipliers. Bound, Braga, Khanna & Turner (2021) on the globalization of postsecondary education. Spatial concentration of international students in specific metro areas.
+- **Services Trade and the APS Geography:** The US as the world's largest services exporter. USMCA's digital trade and financial services provisions. The local multiplier (Moretti 2010). The post-pandemic remote work shock (Delventhal, Kwon & Parkhomenko 2022).
+- **The Geography of Discontent:** The Rust Belt paradox — how local trade shocks (measured via Bartik instruments) translate into spatial inequality and populist political realignments.
+- **Climate:** IRA green subsidies, CBAM implications for USMCA, and stranded Appalachian coal regions.
+- **Spatial Data Challenge:** The Mode 3 FDI measurement gap — BEA surveys capture US MNE foreign affiliates but miss foreign affiliates operating in the US. Mismatch between BLS occupational categories and actual task content for "remoteability" estimates.
 
 ### Chapter 5: Latin America and the Middle-Income Trap
 
-- **The Core Thesis:** The "Middle-Income Trap" in Latin America is driven by an inability to structurally upgrade from low- to high-value-added production. Institutional Thickness explains why proximity to the US hasn't triggered convergence.
-- **Commodity Dependence:** The "Resource Curse" in the 21st century — why control over lithium (the Andean Triangle) or oil (Venezuela, Ecuador) doesn't automatically produce institutional quality or diversification.
-- **Premature Deindustrialization and the Services Question:** The decline of manufacturing as a share of GDP. But not all service transitions are equal — regions with institutional capacity can transition into productive tradable services (BPO, software, fintech) rather than informal non-tradable services. The emerging geography of Latin American digital labor: Montevideo, Buenos Aires, Medellín, and Guadalajara as tech hubs. Platform-mediated digital labor (Graham, Hjorth & Lehdonvirta 2017) as a new form of service-sector integration with global markets.
-- **Green Commodity Frontiers:** The Andean lithium economy and Southern Cone hydrogen ambitions — can "green" commodities break the resource curse pattern?
-- **Informal Economic Coercion:** How "gray zone" tactics — sudden regulatory shifts, sanitary inspections, export bans — are used to pressure regional neighbors.
+- **Path Dependency (from Ch 2):** Historical colonial, industrial, and political legacies constraining modern economic choices — and when "windows of opportunity" allow escape.
+- **Commodity Dependence:** The "Resource Curse" in the 21st century — lithium (Andean Triangle), oil (Venezuela, Ecuador).
+- **Tourism as Spatial Strategy (Mode 2):** Mexico's coastline and the Caribbean. Clean causal identification of tourism's local agglomeration impacts (Faber & Gaubert 2019). Airbnb's impact on hotel revenues and local housing markets (Zervas, Proserpio & Byers 2017).
+- **Premature Deindustrialization:** Informal services vs. productive digital labor platforms (Montevideo, Guadalajara, Medellín). Platform-mediated digital labor (Graham, Hjorth & Lehdonvirta 2017) as a new form of service-sector integration.
+- **Climate:** Green commodity frontiers (Andean lithium) and Central American climate migration as a spatial force.
 - **The Institutional Gap:** Why institutional quality varies so dramatically between North and Latin America despite overlapping resource endowments.
+- **Spatial Data Challenge:** Undercounting informal cross-border trade — ECLAC estimates 40–60% of Andean cross-border trade is informal and unrecorded. Measuring "premature deindustrialization" when the services sector includes everything from fintech to street vending.
 
-### Applied Lab 1: Modeling Spatial Interaction in the Americas
+### Applied Lab 1: Spatial Lag Models & Border Frictions
 
-- **Method:** Building the Spatial Weight Matrix ($W$) using trade-flow weights rather than simple geographic proximity.
-- **Model:** The Spatial Lag model: $y = \rho Wy + X\beta + \epsilon$
-  - $y$: Regional GDP growth.
-  - $\rho$: The spatial autoregressive coefficient (measuring spillover from neighbors).
-  - $Wy$: The "spatial lag" of neighboring growth.
-- **Application (R/Python):** Calculating the "shadow costs" of border security and regulatory friction between the US and Mexico.
-- **Chokepoint Mapping:** Analyzing the Panama Canal as a vital trade node; case studies on the Canamex Corridor and NASCO Network as functional regional units transcending national borders.
-
-### Student Lab: "Friend-Shoring" Simulation
-
-Using Geoeconomic Monitor data, students design a hypothetical "Strategic Reserve" for critical minerals (Lithium/Cobalt) located in the Andean region. They calculate:
-- **Transport Mode Choice:** How choosing between rail and sea impacts the optimal location of processing.
-- **Regulatory Harmonization:** The impact of adopting European-style standards ("Brussels Effect") versus North American standards on regional export potential.
+- **Method:** Building the Spatial Weight Matrix ($W$) using trade-flow weights. The Spatial Lag model.
+- **Application:** Calculating the "shadow costs" of border security and regulatory friction between the US and Mexico.
+- **Extension:** Bartik instrument — using the Shift-Share instrument to evaluate localized trade shocks.
+- **Chokepoint Mapping:** Analyzing the Panama Canal as a vital trade node; case studies on the Canamex Corridor and NASCO Network.
 
 ---
 
-## Part III: Asia — The Developmental State and Networked Value Chains
+## Part III-A: East Asia and ASEAN
 
-**Core Theme:** Structural transformation, demographic shifts, multipolar production networks, and the spatial economics of state-directed industrial policy. Asia also hosts the world's most dramatic services trade story — India's IT services revolution — and the platform economies (Alibaba, Grab, Gojek) that are redefining how services are organized, delivered, and traded across borders.
+**Core Theme:** Structural transformation via developmental-state industrial policy, semiconductor geopolitics, demographic aging, and platform economies. East Asia demonstrates the "flying geese" model of sequential manufacturing upgrading and its 21st-century extension into weaponized interdependence.
 
-### Chapter 6: The "Flying Geese" and East Asia's Tech Ascendancy
+### Chapter 6: East Asia's Tech Ascendancy
 
+- **Windows of Opportunity (from Ch 2):** How developmental states seize narrow windows — Korea/Taiwan semiconductor clusters as the canonical example.
 - **The Flying Geese Model and Its Evolution:** From Japan's post-war industrial leadership to a multi-polar regional tech hub.
-- **The East Asian Miracle 2.0:** How South Korea and Taiwan used spatial clustering policy to transition from manufacturing to R&D-led semiconductor monopolies.
-- **Smart Clustering:** The spatial economics of science parks (Hsinchu, Pangyo, Tsukuba) — why geographic concentration persists in an era of digital connectivity.
-- **India's IT Services Geography — The Other Asian Miracle:** The spatial economics of Bangalore, Hyderabad, Pune, and Chennai as globally integrated services export hubs. How state coordination (STPI, SEZ policy), language advantage, and time-zone arbitrage produced a service-sector analogue to East Asia's manufacturing upgrading. The "smile curve" of services value chains: from routine BPO (data entry, call centers) to high-value KPO (analytics, R&D, product design) — and how this upgrading trajectory maps onto spatial concentration (Dossani & Kenney 2007).
-- **Demographic Aging as a Spatial Force:** How Japan's and South Korea's demographic transitions reshape regional labor markets, automation incentives, and fiscal geography. Japan's "cost disease" in non-tradable services (Baumol 2012) as a spatial force driving automation and regional fiscal stress.
+- **The East Asian Miracle 2.0:** Korea and Taiwan — spatial clustering policy transitioning from manufacturing to R&D-led semiconductor monopolies. The spatial economics of science parks (Hsinchu, Pangyo, Tsukuba).
+- **Weaponized Interdependence:** The spatial economics of semiconductor sanctions and the severing of cross-strait supply chains.
+- **Demographics:** Japan/Korea aging, Baumol's cost disease in non-tradable services as a spatial force driving automation and regional fiscal stress.
+- **Spatial Data Challenge:** Japan's detailed regional GDP data availability vs. China's provincial-level statistical manipulation concerns.
 
-### Chapter 7: China's Internal Divergence and ASEAN Fragmentation
+### Chapter 7: China's Divergence and ASEAN Fragmentation
 
-- **China's "Great Divergence":** Coastal Special Economic Zones (SEZs) versus inland provinces — the spatial consequences of sequential liberalization.
-- **The Hukou System:** How administrative restrictions on spatial labor mobility create persistent regional inequality within a single national economy.
-- **ASEAN: Unified Bloc or Competing Export Platforms?** The challenge of integrating Southeast Asian economies beyond "China Plus One" strategies. The rise of ASEAN digital services economies — Grab (Singapore), Gojek (Indonesia), and Sea Group as platform-mediated service providers that reorganize urban labor markets across borders.
-- **The Belt and Road as Spatial Policy:** How Chinese infrastructure investment reshapes connectivity, dependency, and regional hierarchies across Asia.
-- **The Digital Silk Road and Platform Geopolitics:** How Chinese platform companies (Alibaba, TikTok, Huawei Cloud) and their Western competitors create competing digital service infrastructures across Asia, and how data localization laws and digital sovereignty create new trade barriers in the service economy (Ferracane 2017).
+- **China's "Great Divergence":** Coastal SEZs versus inland provinces — the spatial consequences of sequential liberalization.
+- **The Hukou System:** Administrative restrictions on spatial labor mobility creating persistent regional inequality.
+- **Medical Tourism (Mode 2):** Thailand (Bumrungrad International) and Singapore as case studies in service clustering and regulatory arbitrage. The spatial economics of the Bangkok medical tourism corridor, digital intermediation through medical tourism platforms.
+- **ASEAN Platforms:** Grab/Gojek reorganizing urban labor markets across borders.
+- **The Belt and Road as Spatial Policy:** Chinese infrastructure investment reshaping connectivity and dependency.
+- **The Digital Silk Road and Platform Geopolitics:** Alibaba, TikTok, Huawei Cloud vs. Western competitors creating competing digital service infrastructures. Data localization and digital sovereignty as new trade barriers (Ferracane 2017).
+- **Climate:** Managed retreat in the Mekong Delta and Pearl River Delta; China's renewable energy industrial policy as spatial policy.
+- **Spatial Data Challenge:** The Hukou distortion hiding ~300M internal migrants from official population registers.
 
-### Applied Lab 2: Network Econometrics and Global Value Chains
+### Applied Lab 2: Multi-Regional Input-Output (MRIO) & GVC Servicification
 
 - **Method:** Multi-Regional Input-Output (MRIO) tables.
-- **Application:** Using the World Input-Output Database (WIOD) to map Global Value Chains across Asia, calculating the actual domestic value-added (TiVA) of electronics manufacturing in each node.
-- **Services Extension:** Using TiVA to decompose the service content embedded in manufacturing exports — the "servicification" share. How large is the services value-added in a Korean semiconductor or a Japanese automobile, and where is that service value created?
-- **Extension:** Network centrality metrics — identifying which regional economies are "hubs" versus "spokes" in Asian production networks.
+- **Application:** Using WIOD to map Global Value Chains across Asia, calculating domestic value-added (TiVA) of electronics manufacturing in each node.
+- **Services Extension:** Using TiVA to decompose the service content embedded in manufacturing exports — the "servicification" share.
+- **Extension:** Network centrality metrics — identifying "hubs" versus "spokes" in Asian production networks.
 
 ---
 
-## Part IV: Europe — Integration, Convergence, and the Core-Periphery
+## Part III-B: South Asia — Services, Demographics, and Leapfrogging
 
-**Core Theme:** Supranational integration, smart specialization, and the limits of policy-driven convergence. Europe provides the most ambitious experiment in services trade liberalization (the Single Market's "four freedoms") — and also the most instructive failures, since the EU Services Directive's incomplete implementation reveals how regulatory heterogeneity creates persistent barriers even within a nominally unified market.
+**Core Theme:** India's IT services revolution as the world's most dramatic services trade success story, with spatial dynamics analytically distinct from East Asian developmental-state manufacturing. The demographic dividend, brain circulation, and the contrast between services-led and manufacturing-led growth paths.
 
-### Chapter 8: The Single Market and the Convergence Machine
+### Chapter 8: India and the Geography of IT Services
 
-- **The Economics of EU Structural and Cohesion Funds:** Does top-down spatial redistribution create $\beta$-convergence, or does it generate "agglomeration shadows" where peripheral talent drains to the core?
-- **Smart Specialization Strategies (S3):** The EU's attempt to tailor regional industrial policy — successes, failures, and the risk of "me-too" strategies.
-- **The Four Freedoms as Spatial Policy:** How free movement of goods, services, capital, and people reshapes Europe's economic geography.
-- **The Unfinished Services Market:** Why the 2006 Services Directive failed to create a true single market for services — the "country of origin" principle vs. mutual recognition, professional licensing barriers, and the political economy of sheltered domestic services. The Digital Single Market Strategy and GDPR as competing forces: harmonization that enables cross-border digital services vs. compliance costs that favor incumbents. London as Europe's APS command center — and the spatial consequences of Brexit for financial, legal, and consulting services networks (Faulconbridge 2008).
+- **The South Asian Services Track:** Bangalore, Hyderabad, Pune, Chennai as globally integrated services export hubs. STPI policy, SEZ scaffolding, and the BPO-to-KPO smile curve. Language advantage and time-zone arbitrage (Dossani & Kenney 2007). Grossman & Rossi-Hansberg (2008) task-trading framework applied to Indian IT services.
+- **Brain Circulation (Mode 2):** India as both a massive source of international students and an emerging destination (IITs, ISB). The brain drain vs. brain circulation debate with explicit spatial dimensions.
+- **Telemedicine Leapfrogging:** Apollo Telemedicine and eSanjeevani addressing rural-urban spatial healthcare gaps via Mode 1 services. India's telemedicine expansion as a case of leapfrogging in health services delivery.
+- **Contrasts:** Bangladesh's garment GVCs as a comparator to India's services track; SAARC failures; Sri Lanka's debt crisis as a cautionary tale for services-without-institutions.
+- **Demographic Dividend:** The opposite spatial force from East Asian aging — youth bulge as opportunity vs. challenge.
+- **Spatial Data Challenge:** India's delayed and contested GDP methodology revisions. Measuring IT-BPO exports at the state level (RBI data vs. NASSCOM industry estimates vs. STPI zone-level data). The "missing middle" in firm-level data.
 
-### Chapter 9: The North-South Divide and Post-Socialist Transitions
+### Applied Lab 3: Mapping IT-BPO Exports
 
-- **The Eurozone Crisis as Institutional Mismatch:** Analyzing the North–South divide through the lens of institutional differences between Germany/Benelux and the Mediterranean periphery. Real exchange rate divergence, current account imbalances, and the absence of fiscal union.
-- **Post-Socialist Convergence:** The Visegrád Group's rapid integration into "Factory Germany" — automotive supply chains, wage convergence, and the risk of "dependent development." The parallel emergence of CEE cities (Warsaw, Bucharest, Prague, Budapest) as nearshore business services hubs — shared services centers, IT outsourcing, and financial back-offices that represent a services-track integration distinct from the manufacturing-track.
-- **Brexit as a Natural Experiment:** The spatial economic consequences of dis-integration — border effects, FDI reallocation, and regulatory divergence. Brexit's disproportionate impact on financial services and APS networks: the relocation of clearing, trading, and advisory functions from London to Dublin, Frankfurt, Amsterdam, and Paris as a natural experiment in how regulatory borders reshape services geography.
+- **Method:** State-level services trade mapping using RBI/KLEMS data.
+- **Application:** Mapping the spatial distribution of IT-BPO exports across Indian states. Comparing concentration indices across service sub-sectors (BPO, KPO, fintech).
+- **Extension:** Constructing a services-sector "smile curve" for India — plotting value-added per worker against skill intensity for different service tiers across cities.
 
-### Applied Lab 3: Causal Inference in Space
+---
+
+## Part IV: Europe — Integration and the Core-Periphery
+
+**Core Theme:** Supranational integration, smart specialization, and the limits of policy-driven convergence. Europe provides the most ambitious experiment in services trade liberalization (the Single Market's "four freedoms") — and also the most instructive failures.
+
+### Chapter 9: The Single Market and the Convergence Machine
+
+- **Varieties of Capitalism (from Ch 2):** Hall & Soskice applied to sub-national economic governance — liberal vs. coordinated market economies and how they generate distinct spatial patterns.
+- **The Economics of EU Structural and Cohesion Funds:** Does top-down spatial redistribution create β-convergence, or does it generate "agglomeration shadows"?
+- **The "People vs. Places" Debate:** Does the EU subsidize agglomeration shadows? The Glaeser vs. Kline/Moretti debate applied to Cohesion Funds.
+- **Smart Specialization Strategies (S3):** The EU's attempt to tailor regional industrial policy — successes, failures, and "me-too" risk.
+- **Education Integration:** The Bologna Process and Erasmus as a massive Mutual Recognition Agreement (MRA) for human capital — the harmonization of higher education as intra-European services integration.
+- **The Unfinished Services Market:** The limits of the 2006 Services Directive. The Digital Single Market Strategy and GDPR. London as Europe's APS command center (Faulconbridge 2008).
+- **Spatial Data Challenge:** NUTS-2 boundary changes over time — the "changing geography" problem for panel studies. Measuring regulatory barriers that exist in practice but not in law.
+
+### Chapter 10: The North-South Divide and Dis-Integration
+
+- **The Eurozone Crisis:** Institutional mismatches between Germany/Benelux and Mediterranean periphery. Real exchange rate divergence, current account imbalances, and the absence of fiscal union.
+- **Post-Socialist Integration:** Visegrád manufacturing ("Factory Germany") vs. CEE nearshore business services hubs (Warsaw, Bucharest, Prague, Budapest) — shared services centers, IT outsourcing, financial back-offices as a distinct services-track integration.
+- **Brexit & The Geography of Discontent:** Dis-integration as a natural experiment in severing APS networks. How "left-behind" regions destroy trade frameworks. Relocation of clearing, trading, and advisory functions from London to Dublin, Frankfurt, Amsterdam, Paris.
+
+### Applied Lab 4: Spatial RDD (Evaluating EU Cohesion Funds)
 
 - **Method:** Spatial Regression Discontinuity Design (Spatial RDD).
-- **Application:** Using NUTS-2 regional data to evaluate the causal impact of EU Cohesion Funds on GDP growth for towns just inside versus just outside the eligibility border.
+- **Application:** Using NUTS-2 regional data to evaluate the causal impact of EU Cohesion Funds on GDP growth for regions just inside versus just outside the eligibility border.
 - **Extension:** Difference-in-differences with spatial spillovers — do treated regions grow at the expense of untreated neighbors?
 
 ---
 
-## Part V: MENA — Rentier States, Climate Risk, and Fragile Geographies
+## Part V: MENA — Rentier States and Fragile Geographies
 
 **Core Theme:** Resource economics, spatial Dutch Disease, conflict spillovers, and the challenge of engineering diversification from above.
 
-### Chapter 10: The Post-Carbon Transition and Sovereign Wealth
+### Chapter 11: Post-Carbon Transition and Sovereign Wealth
 
 - **Rentier State Theory and the Resource Curse:** Why resource abundance weakens the institutional feedback loop between taxation, representation, and public goods provision.
-- **State-Led Mega-Projects:** Analyzing "Vision 2030"–style programs (Saudi Arabia, UAE, Oman) as attempts to artificially engineer agglomeration economies from scratch — NEOM, KAEC, Masdar City.
-- **Sovereign Wealth as Regional Strategy:** How Gulf SWFs (PIF, ADIA, Mubadala) function as instruments of spatial economic policy beyond national borders.
-- **The Gulf as Global Services Hub:** Dubai and Doha as engineered connectivity nodes — aviation (Emirates, Qatar Airways as spatial policy tools), logistics (Jebel Ali, Hamad Port), and financial services (DIFC, QFC) that function as command centers for MENA and South Asian trade flows. The spatial economics of hub-and-spoke airline networks as instruments of services trade facilitation. Abu Dhabi and Riyadh's push into cloud infrastructure (AWS, Oracle data centers) and the geography of data sovereignty in the region.
-- **The Gulf's Labor Geography:** Kafala systems, spatial segmentation of labor markets, and the economic geography of migration corridors from South Asia and East Africa.
+- **State-Led Mega-Projects:** "Vision 2030"–style programs as attempts to artificially engineer agglomeration — NEOM, KAEC, Masdar City.
+- **Sovereign Wealth as Regional Strategy:** How Gulf SWFs (PIF, ADIA, Mubadala) function as instruments of spatial economic policy.
+- **Comparative Sidebar — Australia:** "Resource Boom Without the Curse" — comparing Gulf SWFs with Australian institutional frameworks (Future Fund, mining tax debate, strong pre-existing institutions).
+- **Tourism & Connectivity:** Dubai's state-engineered tourism/aviation agglomeration (Emirates as spatial policy tool) vs. Istanbul's organic medical/cosmetic tourism cluster.
+- **The Gulf as Global Services Hub:** Aviation, logistics, financial services (DIFC, QFC), cloud infrastructure (AWS, Oracle data centers), and medical tourism.
+- **Climate:** Extreme water scarcity and the "green hydrogen" spatial gambit.
+- **Spatial Data Challenge:** The opacity of SWF investment data (PIF, ADIA). GDP data quality in conflict zones — when does a national statistical office stop functioning?
 
-### Chapter 11: Fragile States, Conflict Economics, and the Youth Bulge
+### Chapter 12: Fragile States and Conflict Economics
 
-- **The Collapse of Institutional Thickness:** How civil conflict in the Levant and North Africa destroys the institutional fabric necessary for regional trade.
-- **Conflict as a Spatial Shock:** Refugee flows, diaspora remittances, and the redrawing of functional economic regions across formal borders.
-- **Human Capital and the Youth Bulge:** Why regional growth hasn't translated into high-quality employment for the world's youngest population — spatial mismatches between education, labor demand, and economic opportunity.
-- **Climate–Conflict Nexus:** Water scarcity, agricultural collapse, and climate-induced displacement as drivers of regional instability.
+- **The Collapse of Institutional Thickness:** How civil conflict destroys the institutional fabric necessary for regional trade.
+- **Conflict as Spatial Shock:** Institutional collapse, refugee flows, and redrawing functional borders. Diaspora remittances as economic lifelines.
+- **Human Capital and the Youth Bulge:** Spatial mismatches between education, labor demand, and economic opportunity.
+- **Climate–Conflict Nexus:** Water scarcity, agricultural collapse, and climate-induced displacement.
+- **Spatial Data Challenge:** GDP data quality in conflict zones — when does a statistical office stop functioning?
 
-### Applied Lab 4: Evaluating Regional Shocks
+### Applied Lab 5: Synthetic Control Method (Counterfactual GDP)
 
 - **Method:** Synthetic Control Method (SCM).
-- **Application:** Estimating the counterfactual GDP trajectory of a conflict-affected state (e.g., Syria, Libya, Yemen) had the conflict not occurred, constructing a synthetic control from regional peers.
+- **Application:** Estimating the counterfactual GDP trajectory of a conflict-affected state (Syria, Libya, Yemen) had the conflict not occurred.
 - **Extension:** Event-study designs for measuring the spatial diffusion of conflict shocks to neighboring economies.
 
 ---
 
-## Part VI: Sub-Saharan Africa — Demographics, Informality, and the New Structuralism
+## Part VI: Sub-Saharan Africa — Demographics and New Structuralism
 
 **Core Theme:** Data scarcity, informal institutions, urbanization without industrialization, and the potential of continental integration.
 
-### Chapter 12: Urbanization Without Industrialization
+### Chapter 13: Urbanization Without Industrialization
 
-- **The African Anomaly:** Why African megacities (Lagos, Kinshasa, Dar es Salaam) generate steep congestion costs rather than agglomeration benefits — the absence of the traditional agriculture-to-manufacturing transition.
-- **The "Premature Deindustrialization" Hypothesis:** Why African regions shift directly from agriculture to low-productivity services — and whether regional trade in intermediate goods can reverse this. But is the "services = low productivity" narrative too simple? The M-Pesa revolution (Suri & Jack 2016) and the emergence of Nairobi, Lagos, and Kigali as digital services hubs suggest that some African cities are generating productive service-sector agglomeration — leapfrogging manufacturing entirely through mobile money, fintech, and BPO.
-- **Agglomeration vs. Congestion:** To what extent are African cities generating the Marshallian trinity (sharing, matching, learning) versus functioning as "consumption cities" or "poverty traps" due to infrastructure deficits?
+- **The African Anomaly:** Congestion vs. agglomeration in Lagos, Kinshasa, Dar es Salaam — the absence of the traditional agriculture-to-manufacturing transition.
+- **Leapfrogging:** M-Pesa (Suri & Jack 2016), digital hubs (Nairobi, Lagos, Kigali), and productive services without manufacturing — is the "services = low productivity" narrative too simple?
+- **Agglomeration vs. Congestion:** Marshallian trinity (sharing, matching, learning) vs. "consumption cities" and "poverty traps" due to infrastructure deficits.
 - **The Urban-Rural Productivity Gap:** Africa's central spatial challenge — a gap far wider than the analogous European core-periphery wage gap.
+- **Climate:** The shifting Sahel agricultural belt and the climate-conflict nexus.
+- **Spatial Data Challenge:** The famous "GDP revision" problem (Nigeria's 2014 rebasing doubled measured GDP overnight). Night-lights as proxy — when it works and when it doesn't. The absence of firm-level census data.
 
-### Chapter 13: The AfCFTA, Regional Hegemons, and Functional Corridors
+### Chapter 14: The AfCFTA and Functional Corridors
 
-- **The African Continental Free Trade Area (AfCFTA):** Can a continental "rules-based" agreement override domestic protectionist institutions? The "Nested Institutions" model applied. The AfCFTA's Protocol on Trade in Services — covering business services, communications, finance, tourism, and transport — as potentially more transformative than goods liberalization, since Africa's service-sector share of GDP already exceeds manufacturing.
-- **The Border Effect in African Trade:** Why it remains ~3x more expensive to move a container between two African neighbors than between Africa and Europe — and what institutional and infrastructural reforms can change this.
-- **Informal Cross-Border Trade (ICBT):** Recognizing the trade that dominates the Sahel and Great Lakes regions not as "chaos" but as a sophisticated, non-state institutional framework with its own enforcement mechanisms.
-- **Regional Hegemons as Growth Poles:** The roles of South Africa (SADC), Nigeria (ECOWAS), and Kenya (EAC) as nodes that structure their respective sub-regional economies.
-- **Functional Corridors:** The Northern Corridor (Kenya–Uganda–Rwanda) as a case study — how digital customs clearing (an institutional fix) had a larger impact on regional GDP than a 10% tariff reduction.
+- **Continental Integration:** The AfCFTA Protocol on Trade in Services — covering business services, communications, finance, tourism, and transport — as potentially more transformative than goods liberalization.
+- **Eco-Tourism Corridors:** The spatial economics of multi-country safari ecosystems (Serengeti-Mara ecosystem, Victoria Falls) as functional economic regions crossing national borders.
+- **The Border Effect in African Trade:** Why it remains ~3× more expensive to move a container between African neighbors than between Africa and Europe.
+- **Informal Cross-Border Trade (ICBT):** Recognizing non-state institutional frameworks with their own enforcement mechanisms.
+- **Regional Hegemons as Growth Poles:** South Africa (SADC), Nigeria (ECOWAS), Kenya (EAC).
+- **Functional Corridors:** The Northern Corridor (Kenya–Uganda–Rwanda) — how digital customs clearing had a larger impact than a 10% tariff reduction.
 
-### Applied Lab 5: Alternative Data and Machine Learning
+### Applied Lab 6: Raster Data & Spatial Autocorrelation
 
 - **Method:** Raster data analysis and spatial autocorrelation (Moran's $I$).
-- **Application:** Using VIIRS satellite night-lights data to proxy economic activity and measure cross-border spatial spillovers where formal GDP statistics are thin or unreliable.
-- **Extension:** Connect night-lights to GDP nowcasting workflows (high-frequency consensus estimates and spatial dashboards), then map the "Product Space" for SADC countries to identify nearby upgrading paths (e.g., from copper to electric cables).
+- **Application:** Using VIIRS satellite night-lights data to proxy economic activity and measure cross-border spatial spillovers. Integration of SafeGraph high-frequency mobility data alongside night-lights to proxy cross-border spillovers.
+- **Extension:** GDP nowcasting workflows; mapping the "Product Space" for SADC countries to identify nearby upgrading paths.
 
 ---
 
 ## Part VII: Global Synthesis
 
-### Applied Lab 6: The Gravity of Services — Measuring Barriers to Services Trade
+### Chapter 15: Climate, Stranded Regions, and the Future Map
 
-- **Method:** Gravity models of services trade, augmented with the OECD Services Trade Restrictiveness Index (STRI) and cultural/linguistic proximity measures.
-- **Application:** Estimating the "tariff equivalent" of regulatory barriers to cross-border services trade. Using WTO BOP-based services trade data and OECD STRI scores, students estimate a gravity model for bilateral services trade and decompose the border effect into its regulatory, linguistic, and geographic components (Melitz & Toubal 2014).
-- **Servicification Extension:** Using OECD TiVA data, decompose the service content embedded in manufacturing exports for a single sector (e.g., automobiles, electronics). Compare the "servicification" share across exporting countries and identify where the service value-added is geographically located — connecting to Lab 2's MRIO analysis.
-- **Cloud Geography Exercise:** Map the global distribution of AWS, Azure, and Google Cloud data center regions and cross-reference with ECIPE data localization scores. Where do regulatory borders and infrastructure geography align, and where do they diverge? What does this imply for the future geography of digital services trade?
-- **Comparative Component:** Students compare services trade barriers across two contrasting region-pairs (e.g., US–Mexico vs. France–Germany, or Kenya–South Africa vs. India–Singapore) to test whether regional integration agreements reduce regulatory barriers for services as effectively as they reduce tariffs for goods.
+Repurposed from a standalone climate introduction to a true capstone synthesis. Regional climate subsections now provide the empirical foundation; this chapter provides the cross-regional framework.
 
-### Chapter 14: Climate Change and the Future Economic Map
-
-- **Spatial Reallocation of Capital and Labor:** How climate-induced physical risks, shifting agricultural belts, and stranded regional assets redraw the world's economic geography.
-- **Climate-Induced Migration:** How the shifting Sahelian belt and rising sea levels redefine regional economic boundaries.
+- **Spatial Reallocation:** Formal modeling of climate-induced capital/labor shifts across regions.
+- **Comparative Sidebar — Pacific Islands:** SIDS as extreme cases of managed retreat and remittance-dependency. Where managed retreat means emigration, and remittances become the primary economic link to the former homeland.
+- **Stranded Regions:** Cross-regional comparisons of adaptive capacity — which regions are most exposed? Where does adaptive capacity come from?
 - **Green Industrial Policy as Spatial Policy:** Carbon border adjustments (CBAM), green subsidies (IRA), and their effects on regional comparative advantage.
-- **Stranded Regions:** The political economy of regions whose primary assets (fossil fuels, climate-vulnerable agriculture) lose value in the transition.
-- **Telemedicine and the Geography of Health Services:** The pandemic-era expansion of cross-border telehealth as a natural experiment in whether digital delivery reduces or reinforces geographic concentration of specialist care (Zeltzer et al. 2023). A contained case study of the "does digital flatten geography?" question that complements the broader remote work analysis in Chapter 15.
+- **Global Comparative Spread:** A 2-page visual compiling all regional diagnostics into a single comparative spread.
 
-### Chapter 15: The Future of Global Regionalism — Services, Telemigration, and the Splinternet
+### Chapter 16: The Future of Global Regionalism & Services Trade
 
-- **Fortress Blocs vs. Flexible Networks:** Are we moving toward a hyper-regionalized world of friend-shoring blocs, or will global value chains adapt and reweave?
-- **The Telemigration Hypothesis:** Will white-collar service jobs follow the same spatial offshoring trajectory that blue-collar manufacturing did in the 1990s? Baldwin's (2019) "globotics upheaval" — freelancers in developing nations performing service-sector work in developed nations via digital platforms — as the next great spatial restructuring. Evidence from remote work adoption (Althoff et al. 2022) and spatial general equilibrium models of city restructuring (Delventhal, Kwon & Parkhomenko 2022).
-- **The Splinternet and Regulatory Borders in the Service Economy:** How data localization laws, digital service taxes, geo-blocking, and content licensing territories erect new borders that are invisible in goods trade. The geography of cloud infrastructure (AWS, Azure, Google Cloud regions) as the physical footprint of the digital service economy, cross-referenced with regulatory borders (ECIPE Digital Trade Estimates). Three competing digital-regulatory models: the US (market-led), the EU (rights-based/GDPR), and China (sovereignty-first) — and how each creates a distinct geography of services trade.
-- **Comparative Synthesis:** Drawing cross-regional lessons — what the European convergence machine can teach Africa, what Asian developmental states reveal about MENA diversification, and what Latin America's traps warn about for all middle-income regions.
-- **The Discipline's Frontier:** Open questions in spatial economics — machine learning for spatial prediction, causal inference with interference, network-based models of trade and growth. The emerging frontier of services trade measurement and spatial modeling in a digital economy.
+- **The Telemigration Hypothesis:** Baldwin's (2019) "globotics upheaval" — freelancers in developing nations performing service-sector work via digital platforms as the next great spatial restructuring. Evidence from remote work adoption (Althoff et al. 2022) and spatial GE models (Delventhal, Kwon & Parkhomenko 2022).
+- **Telemedicine:** Expanding on Zeltzer et al. (2023). Does Mode 1 digital delivery reduce or reinforce geographic concentration of specialized care?
+- **The Splinternet:** Cloud infrastructure geography, data localization, and US/EU/China digital borders. Three competing digital-regulatory models.
+- **Global Comparative Spread:** A master matrix comparing services frameworks across USMCA, EU Single Market, AfCFTA, CPTPP, and RCEP. Columns: listing approach, Mode 1–4 coverage, e-commerce/data provisions, MRAs, dispute settlement.
+- **Fortress Blocs vs. Flexible Networks:** Hyper-regionalized friend-shoring blocs or adaptive global value chains?
+- **The Discipline's Frontier:** Machine learning for spatial prediction, causal inference with interference, network-based models. The emerging frontier of services trade measurement in a digital economy.
+
+### Applied Lab 7: Gravity of Services (Augmenting Baseline Gravity with STRI Data)
+
+- **Method:** Gravity models of services trade, augmented with OECD STRI and cultural/linguistic proximity measures.
+- **Application:** Estimating the "tariff equivalent" of regulatory barriers to cross-border services trade. Decomposing the border effect into regulatory, linguistic, and geographic components (Melitz & Toubal 2014).
+- **Servicification Extension:** Using TiVA data, decompose service content in manufacturing exports — connecting to Lab 2's MRIO analysis.
+- **Cloud Geography Exercise:** Map global distribution of AWS, Azure, and Google Cloud data center regions; cross-reference with ECIPE data localization scores.
+- **Comparative Component:** Compare services trade barriers across two contrasting region-pairs to test whether regional integration agreements reduce regulatory barriers for services as effectively as they reduce tariffs for goods.
 
 ---
 
@@ -223,34 +288,31 @@ Each chapter is built around a consistent pedagogical structure that reinforces 
 
 ### Recurring Chapter Features
 
-1. **"Data in Depth" Boxes:** Each chapter includes a guided tutorial on using specific datasets (World Bank WDI, IMF IFS, WIOD, Afrobarometer, VIIRS, UN Comtrade) to replicate a key empirical result or regional growth regression discussed in the text.
+1. **"Data in Depth" Boxes:** Guided tutorials on using specific datasets to replicate key empirical results discussed in the text.
 
-2. **"Institutional Spotlight" Sidebars:** Short profiles of regional institutions, policy-makers, or governance experiments — drawing on interviews and primary documents. Examples: the AfCFTA Secretariat in Accra, CFIUS review processes, the EU's DG Regio, Saudi Arabia's PIF.
+2. **"Institutional Spotlight" Sidebars:** Short profiles of regional institutions, policy-makers, or governance experiments — drawing on interviews and primary documents.
 
-3. **Comparative Maps (GIS Visualizations):** Full-color maps using GIS to visualize spatial inequality *within* regions, not just between countries. Examples: night-lights intensity across the Sahel, wage gradients across the US–Mexico border, manufacturing density in the Pearl River Delta.
+3. **"Spatial Data Challenge" Boxes:** A 1-page feature in each regional chapter highlighting what data is missing or distorted in that specific region — teaching students about measurement limitations alongside methodology.
 
-4. **"Comparative Spotlight" Tables:** Structured cross-regional comparisons at the end of each Part, linking back to earlier sections. Example:
+4. **Comparative Maps (GIS Visualizations):** Full-color maps using GIS to visualize spatial inequality *within* regions, not just between countries. Consistent color scheme and cartographic projection across all regional maps.
 
-   | Feature | European Regionalism (Part IV) | New African Regionalism (Part VI) |
-   |---|---|---|
-   | Driver | Supranational Law (*acquis communautaire*) | Functional Infrastructure (Corridors) |
-   | Main Challenge | Core-Periphery Wage Gap | Urban-Rural Productivity Gap |
-   | Key Metric | Convergence of Interest Rates | Convergence of Transport Costs |
+5. **"Comparative Spotlight" Tables:** Structured cross-regional comparisons at the end of each Part.
 
-5. **"Modern Empirical Questions" Sections:** End-of-chapter questions at the advanced undergrad/early PhD level, requiring a blend of econometric technique and political economy reasoning. Designed to be assignable as problem sets or short research proposals.
+6. **"Modern Empirical Questions" Sections:** End-of-chapter questions requiring a blend of econometric technique and political economy reasoning.
 
-6. **Applied Labs (one per regional Part):** Self-contained empirical exercises with code templates (R/Python), replication data, and step-by-step instructions. Each lab introduces a distinct spatial method tied to the region's core analytical challenge.
+7. **Applied Labs (one per regional Part + synthesis):** Self-contained empirical exercises with code templates (R/Python), replication data, and step-by-step instructions. Each lab offers a "Minimum Viable Version" (2–3 hours) and an "Extended Version" (6–10 hours).
 
 ### Lab Summary Table
 
 | Lab | Region | Method | Application |
 |---|---|---|---|
-| Lab 1 | Americas | Spatial Lag Model (SAR), Weight Matrix $W$ | Shadow costs of US–Mexico border friction |
-| Lab 2 | Asia | Multi-Regional Input-Output (MRIO) | Domestic value-added in Asian electronics GVCs; servicification decomposition |
-| Lab 3 | Europe | Spatial Regression Discontinuity Design | Causal impact of EU Cohesion Funds |
-| Lab 4 | MENA | Synthetic Control Method (SCM) | Counterfactual GDP of conflict-affected states |
-| Lab 5 | Africa | Night-lights raster data, Moran's $I$ | Cross-border spillovers with alternative data |
-| Lab 6 | Cross-regional | Services trade gravity model, STRI | Regulatory barriers to services trade; cloud infrastructure geography |
+| Lab 1 | Americas | Spatial Lag Model (SAR), Bartik Instrument | Shadow costs of US–Mexico border friction |
+| Lab 2 | East Asia | Multi-Regional Input-Output (MRIO) | Domestic value-added in Asian electronics GVCs; servicification |
+| Lab 3 | South Asia | State-level services mapping (RBI/KLEMS) | IT-BPO export geography across Indian states |
+| Lab 4 | Europe | Spatial Regression Discontinuity Design | Causal impact of EU Cohesion Funds |
+| Lab 5 | MENA | Synthetic Control Method (SCM) | Counterfactual GDP of conflict-affected states |
+| Lab 6 | Africa | Night-lights raster data, Moran's $I$, SafeGraph | Cross-border spillovers with alternative data |
+| Lab 7 | Cross-regional | Services trade gravity model, STRI | Regulatory barriers to services trade; cloud geography |
 
 ---
 
@@ -265,6 +327,25 @@ Each chapter is built around a consistent pedagogical structure that reinforces 
 - Detailed instructions for accessing all datasets referenced in the text.
 - Setup guides for R (`spdep`, `spatialreg`, `sf`) and Python (`PySAL`, `geopandas`, `libpysal`).
 - Replication repositories and data dictionaries for each Applied Lab.
+- Lab technical specifications: estimated time, prerequisite software, data sizes, difficulty level.
 
 ### Appendix C: Glossary of Key Terms
 - Definitions of all technical terms, institutional acronyms, and spatial econometric notation used throughout the text.
+
+---
+
+## Chapter–Lab–Page Targets
+
+| Component | Target Pages | Notes |
+|---|---|---|
+| Preface + Pathways | 15–20 | Includes dependency diagram |
+| Ch. 1: Micro-Foundations | 35–40 | Core theory + opening case |
+| Ch. 2: Institutions (slimmed) | 20–25 | Toolkit only; heavy material distributed |
+| Ch. 3-A: Spatial Econometrics | 30–35 | SAR/SEM/SDM + causal inference |
+| Ch. 3-B: Trade Measurement | 25–30 | Gravity + GATS modes + TiVA |
+| Regional chapters (×11) | 30–40 each | 330–440 pp total |
+| Applied Labs (×7) | 10–15 each | 70–105 pp total |
+| Ch. 15: Climate Synthesis | 25–30 | Cross-regional, not standalone intro |
+| Ch. 16: Future/Synthesis | 30–35 | Telemigration + comparative table |
+| Appendices (A–C) | 30–40 | Math + data guide + glossary |
+| **TOTAL** | **650–800** | Comparable to Combes/Mayer/Thisse |

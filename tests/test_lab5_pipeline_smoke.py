@@ -5,87 +5,135 @@ import numpy as np
 import pandas as pd
 
 
-def test_prepare_lab5_inputs_smoke(tmp_path, run_cmd):
-    out_dir = tmp_path / "mapped"
-    out_dir.mkdir(parents=True, exist_ok=True)
+def test_build_lab5_panel_smoke(lab5_panel):
+    panel_csv = lab5_panel["panel_csv"]
+    assert panel_csv.exists(), "panel_output.csv missing"
+    panel = pd.read_csv(panel_csv)
+    assert not panel.empty, "panel_output.csv is empty"
+
+    acled_cy_csv = lab5_panel["acled_cy_csv"]
+    assert acled_cy_csv.exists(), "acled_country_year.csv missing"
+
+    meta_json = lab5_panel["meta_json"]
+    assert meta_json.exists(), "metadata.json missing"
+    meta = json.loads(meta_json.read_text(encoding="utf-8"))
+    assert meta["rows_panel"] > 0
+    assert meta["countries_panel"] >= 3
+
+
+def test_scm_baseline_smoke(tmp_path, run_cmd, lab5_panel):
+    scm_dir = tmp_path / "scm_output"
+    scm_dir.mkdir(parents=True, exist_ok=True)
 
     run_cmd([
         sys.executable,
-        "labs/lab5_africa/code/prepare_lab5_inputs.py",
-        "--viirs-input",
-        "labs/lab5_africa/data/raw_templates/viirs_example.csv",
-        "--afrobarometer-input",
-        "labs/lab5_africa/data/raw_templates/afrobarometer_example.csv",
-        "--adjacency-input",
-        "labs/lab5_africa/data/raw_templates/adjacency_example.csv",
-        "--mappings",
-        "labs/lab5_africa/data/source_mappings.json",
-        "--output-dir",
-        str(out_dir),
-        "--year",
-        "2024",
+        "scripts/run_lab5_scm_baseline.py",
+        "--panel-csv", str(lab5_panel["panel_csv"]),
+        "--treated-iso3", "SYR",
+        "--intervention-year", "2022",
+        "--output-dir", str(scm_dir),
+        "--date-stamp", "smoke",
     ])
 
-    panel = out_dir / "panel_mapped.csv"
-    adjacency = out_dir / "adjacency_mapped.csv"
-    summary = out_dir / "mapping_summary.json"
+    weights_files = list(scm_dir.glob("scm_weights_*.csv"))
+    assert len(weights_files) >= 1, "scm_weights CSV missing"
+    weights = pd.read_csv(weights_files[0])
+    assert len(weights) >= 2, "Need at least 2 donors in weights"
 
-    assert panel.exists(), "panel_mapped.csv missing"
-    assert adjacency.exists(), "adjacency_mapped.csv missing"
-    assert summary.exists(), "mapping_summary.json missing"
+    # SCM weights must be non-negative and sum to ~1
+    w_vals = weights["weight"].to_numpy(dtype=float)
+    assert (w_vals >= -1e-10).all(), "SCM weights must be non-negative"
+    assert np.isclose(w_vals.sum(), 1.0, atol=1e-6), f"SCM weights sum to {w_vals.sum()}, expected ~1.0"
 
-    payload = json.loads(summary.read_text(encoding="utf-8"))
-    assert payload["panel_rows"] > 0
-    assert payload["adjacency_rows"] > 0
+    path_files = list(scm_dir.glob("scm_path_*.csv"))
+    assert len(path_files) >= 1, "scm_path CSV missing"
+    path_df = pd.read_csv(path_files[0])
+    assert "pre" in set(path_df["period"]), "Missing pre period in SCM path"
+    assert "post" in set(path_df["period"]), "Missing post period in SCM path"
+
+    # Path values should be finite where available
+    for col in ["treated_outcome", "synthetic_outcome"]:
+        vals = path_df[col].dropna()
+        assert len(vals) > 0, f"{col} has no non-null values"
+        assert np.all(np.isfinite(vals.to_numpy(dtype=float))), f"{col} contains non-finite values"
+
+    summary_files = list(scm_dir.glob("scm_summary_*.json"))
+    assert len(summary_files) >= 1, "scm_summary JSON missing"
+    summary = json.loads(summary_files[0].read_text(encoding="utf-8"))
+    assert summary["donor_count"] >= 2
+    assert summary["pre_rmspe"] is not None
+    assert summary["pre_rmspe"] > 0, "Pre-RMSPE should be positive"
+    assert summary["pre_year_count"] >= 3, "Need at least 3 pre-intervention years"
+    assert summary["post_year_count"] >= 1, "Need at least 1 post-intervention year"
 
 
-def test_moran_scaffold_smoke(tmp_path, run_cmd):
-    out_dir = tmp_path / "moran"
-    out_dir.mkdir(parents=True, exist_ok=True)
+def test_scm_robustness_smoke(tmp_path, run_cmd, lab5_panel):
+    """Run in-space and in-time placebos on template data."""
+    rob_dir = tmp_path / "scm_robustness"
+    rob_dir.mkdir(parents=True, exist_ok=True)
 
     run_cmd([
         sys.executable,
-        "labs/lab5_africa/code/lab5_africa_moran_scaffold.py",
-        "--run-smoke-test",
-        "--output-dir",
-        str(out_dir),
+        "scripts/run_lab5_scm_robustness.py",
+        "--panel-csv", str(lab5_panel["panel_csv"]),
+        "--treated-iso3", "SYR",
+        "--intervention-year", "2022",
+        "--placebo-years", "2021,2023",
+        "--output-dir", str(rob_dir),
+        "--date-stamp", "smoke",
     ])
 
-    summary_path = out_dir / "model_summary.json"
-    assert summary_path.exists(), "model_summary.json missing"
+    # --- In-space placebo checks ---
+    in_space_files = list(rob_dir.glob("placebo_in_space_*.json"))
+    assert len(in_space_files) >= 1, "placebo_in_space JSON missing"
+    in_space = json.loads(in_space_files[0].read_text(encoding="utf-8"))
 
-    summary = json.loads(summary_path.read_text(encoding="utf-8"))
-    assert summary["method"] == "Global_Morans_I"
-    assert summary["n_obs"] >= 5
-    assert abs(float(summary["moran_i"])) <= 1.5
+    # Template has 4 units; all should be feasible at year 2022
+    assert len(in_space) >= 3, f"Expected >= 3 in-space placebos, got {len(in_space)}"
 
-    # Synthetic data has positive spatial autocorrelation
-    assert summary["moran_i"] > 0, "Synthetic grid data should exhibit positive Moran's I"
-    assert summary["moran_i"] > summary["expected_i_null"], (
-        "Moran's I should exceed null expectation for spatially autocorrelated data"
-    )
+    # Exactly one entry should be the baseline
+    baseline_entries = [r for r in in_space if r.get("is_baseline")]
+    assert len(baseline_entries) == 1, "Exactly one baseline entry expected"
 
-    # p-value validity
-    assert 0.0 <= summary["p_value_two_sided"] <= 1.0, (
-        f"p_value={summary['p_value_two_sided']} outside [0, 1]"
-    )
+    # All RMSPE ratios should be positive where available
+    for r in in_space:
+        ratio = r.get("post_pre_rmspe_ratio")
+        if ratio is not None:
+            assert ratio > 0, f"RMSPE ratio for {r['treated_unit']} should be positive"
 
-    # Residualized Moran's I: governance should explain some spatial clustering
-    assert "residual_moran_i" in summary, "Residual Moran's I missing from summary"
-    assert summary["residual_moran_i"] < summary["moran_i"], (
-        "Residual Moran's I should be smaller after partialing out governance"
-    )
-    assert 0.0 <= summary["residual_p_value_two_sided"] <= 1.0
+    # Weights for each placebo should be non-negative and sum to ~1
+    for r in in_space:
+        w_dict = r.get("weights", {})
+        w_vals = np.array(list(w_dict.values()), dtype=float)
+        if len(w_vals) > 0:
+            assert (w_vals >= -1e-10).all(), f"Placebo weights negative for {r['treated_unit']}"
+            assert np.isclose(w_vals.sum(), 1.0, atol=1e-6), (
+                f"Placebo weights sum to {w_vals.sum()} for {r['treated_unit']}"
+            )
 
-    # Weight density should be positive (grid has neighbors)
-    assert summary["weight_density"] > 0, "Weight density should be positive"
+    # --- In-time placebo checks ---
+    in_time_files = list(rob_dir.glob("placebo_in_time_*.json"))
+    assert len(in_time_files) >= 1, "placebo_in_time JSON missing"
+    in_time = json.loads(in_time_files[0].read_text(encoding="utf-8"))
+    assert len(in_time) >= 1, "Expected at least 1 in-time placebo result"
 
-    # Weight matrix: symmetric, zero diagonal
-    wm_path = out_dir / "weight_matrix.csv"
-    assert wm_path.exists(), "weight_matrix.csv missing"
-    wm = pd.read_csv(wm_path, index_col=0).to_numpy(dtype=float)
-    assert wm.shape[0] == wm.shape[1], "Weight matrix not square"
-    assert np.allclose(np.diag(wm), 0.0), "Weight matrix diagonal should be zero"
-    row_sums = wm.sum(axis=1)
-    nonzero_rows = row_sums[row_sums > 0]
-    assert np.allclose(nonzero_rows, 1.0, atol=1e-8), "Non-zero rows should sum to 1"
+    for r in in_time:
+        assert r["treated_unit"] == "SYR"
+        assert r["intervention_year"] in [2021, 2023]
+
+    # --- Robustness summary checks ---
+    summary_files = list(rob_dir.glob("robustness_summary_*.json"))
+    assert len(summary_files) >= 1, "robustness_summary JSON missing"
+    summary = json.loads(summary_files[0].read_text(encoding="utf-8"))
+
+    assert summary["treated_iso3"] == "SYR"
+    assert summary["intervention_year"] == 2022
+    assert summary["in_space_placebo_count"] >= 3
+
+    # Rank-based p-value should be in (0, 1]
+    rank_p = summary["in_space_rank_p_value"]
+    if rank_p is not None:
+        assert 0.0 < rank_p <= 1.0, f"Rank p-value={rank_p} outside (0, 1]"
+
+    assert summary["in_time_placebo_count"] >= 1
+    assert summary["in_time_placebo_years"] == [2021, 2023]

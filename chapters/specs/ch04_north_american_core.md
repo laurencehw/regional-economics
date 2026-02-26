@@ -8,7 +8,7 @@
 - Draft due: 2026-04-05
 
 ## Core Thesis
-Since USMCA implementation and the CHIPS-era policy shift, North American reshoring gains are concentrated in regions with higher regulatory-compliance capacity and border-governance quality. Trade exposure alone does not predict upgrading; the key interaction is between network position and institutional execution.
+Since USMCA implementation and the CHIPS-era policy shift, North American reshoring gains are concentrated in regions with higher regulatory-compliance capacity and border-governance quality. Trade exposure alone does not predict upgrading; the key interaction is between network position and institutional execution. A geoeconomic lens — applying the gravity framework from Ch 3-B ("Applying Gravity") — reveals that border frictions, industrial-policy subsidies, and compliance regimes reshape the effective economic distance between North American regions, while the geography of discontent shows how spatially concentrated trade shocks drive political realignment in left-behind manufacturing corridors.
 
 ## Key Arguments (3-5)
 1. The NAFTA-to-USMCA transition changed the payoff structure from pure cost minimization to compliance-intensive regional production.
@@ -17,6 +17,8 @@ Since USMCA implementation and the CHIPS-era policy shift, North American reshor
 4. CHIPS and related industrial-policy tools increase regional concentration where supplier ecosystems and implementation capacity already exist, reinforcing internal divergence between superstar metros and left-behind manufacturing regions.
 5. Domestic value-added gains are largest where regional policy coordination reduces compliance and logistics uncertainty.
 6. North America's services trade — the US is the world's largest services exporter — operates through a distinct regulatory geography: USMCA's digital trade and financial services provisions create a more liberal regime than exists between any other major trading partners, while professional licensing and regulatory divergence still fragment the continental services market.
+7. **International Education (Mode 2):** US university towns function as massive service export clusters — international students consuming education on US soil constitute one of the largest Mode 2 trade flows globally. Bound, Braga, Khanna & Turner (2021) document the globalization of postsecondary education and its labor-market consequences; Hausman (2022) shows how university-driven innovation generates measurable local economic growth, making college towns a distinctive spatial unit in the services-trade geography.
+8. **The Geography of Discontent:** The Rust Belt paradox — local trade shocks, identified via Bartik instruments, generate persistent spatial inequality that maps onto populist political realignment. Regions that lost manufacturing employment to import competition did not simply adjust through labor mobility; instead, concentrated job losses produced durable declines in local wages, labor-force participation, and institutional capacity, fueling the politics of economic grievance that now shapes trade-policy formation itself.
 
 ## Services Trade Dimension
 
@@ -27,6 +29,11 @@ The chapter's goods-focused analysis of USMCA should be complemented by a servic
 - **Local multiplier effects**: How the concentration of high-skill tradable services (tech, finance, consulting) in superstar metros generates Moretti-style local multipliers in non-tradable services, and how remote work adoption is partially redistributing these multiplier effects to secondary cities and exurban locations (Althoff et al. 2022).
 - **Nearshoring of services to Mexico**: Monterrey, Guadalajara, and Mexico City as emerging nearshore technology and BPO hubs for US firms — a services-track integration that operates alongside the manufacturing-track (automotive, electronics) more commonly discussed.
 
+## Climate and Energy Transition
+- **IRA green subsidies**: The Inflation Reduction Act's place-based clean energy tax credits (e.g., 48C Advanced Manufacturing, energy community bonus credits) channel green investment toward specific regions, reinforcing or reshaping existing spatial hierarchies of industrial capacity. The geographic targeting of IRA incentives creates a new layer of regional competition within North America.
+- **CBAM implications for USMCA**: The EU's Carbon Border Adjustment Mechanism raises the question of whether USMCA partners will need to align carbon-pricing regimes to maintain competitiveness in third markets and avoid carbon leakage — with divergent national approaches (US subsidies vs. potential Canadian carbon pricing) creating intra-continental regulatory friction.
+- **Stranded Appalachian coal regions**: Coal-dependent communities in Appalachia and the Interior Basin face compound exposure — declining global coal demand, federal regulatory tightening, and limited institutional capacity for transition — making them the sharpest case of climate-driven regional economic dislocation in North America.
+
 ## Institutional Variable Operationalization
 - Institutional variable: `compliance_capacity_rt`.
 - Measurement:
@@ -34,6 +41,10 @@ The chapter's goods-focused analysis of USMCA should be complemented by a servic
   - Border-governance proxy from BTS throughput stability and mode-specific crossing composition.
   - State/provincial implementation capacity proxy from public-sector effectiveness indicators where available.
 - Spatial interaction term: `compliance_capacity_rt × W*growth_rt` and `compliance_capacity_rt × trade_centrality_rt`.
+
+## Spatial Data Challenge
+- **The Mode 3 FDI measurement gap:** BEA data capture US MNE affiliates operating abroad (outward FDI) in detail, but systematic measurement of foreign-owned affiliates operating inside the US (inward FDI) is far less granular at the sub-national level. This asymmetry means that the regional employment and output footprint of foreign direct investment in the US — a core Mode 3 services trade channel — is systematically undermeasured, complicating any spatial analysis of FDI-driven economic integration.
+- **Remoteability estimation mismatch:** BLS occupational categories (SOC codes) were designed to classify jobs by industry and function, not by task content or "remoteability." Estimating which occupations can be delivered remotely — and thus which regions are exposed to or benefit from Mode 1 services trade — requires mapping SOC codes to task-content measures (e.g., Dingel & Neiman 2020), introducing measurement uncertainty that compounds at the sub-national level.
 
 ## Required Datasets
 - UN Comtrade HS6 bilateral trade (US, Canada, Mexico).
@@ -51,11 +62,13 @@ The chapter's goods-focused analysis of USMCA should be complemented by a servic
 3. LeSage and Pace (2009), *Introduction to Spatial Econometrics*.
 4. Moretti (2010), "Local Multipliers," *AER: P&P* (for services multiplier framework).
 5. Taylor, Ni, Derudder et al. (2011), *Global Urban Analysis* (for APS network mapping).
+6. Bound, Braga, Khanna & Turner (2021), "The Globalization of Postsecondary Education," *Journal of Economic Perspectives* — documents the scale and spatial concentration of international education as a Mode 2 service export.
 
 ## Figures/Maps Needed
 - North American manufacturing corridor map (Great Lakes, Texas-Northern Mexico, Quebec-Ontario).
 - Border-port heatmap of inbound truck and container crossings.
 - Graph of estimated spillover elasticity by compliance-capacity tercile.
+- "Applying Gravity" — border effect visualization showing how the Ch 3-B gravity framework maps onto North American trade flows: estimated border effects at US-Canada and US-Mexico borders, illustrating the gap between predicted frictionless trade and observed flows as a measure of effective economic distance.
 
 ## Data in Depth Box
 - Topic: Building a border-friction index from port-level crossing data.
@@ -67,8 +80,8 @@ The chapter's goods-focused analysis of USMCA should be complemented by a servic
 - Why included: Shows how implementation institutions, not treaty text alone, determine realized regional integration.
 
 ## Applied Lab Linkage
-- Relevant lab: Lab 1 (Americas)
-- Econometric method: Geoeconomics and border-friction gravity logic
+- Relevant lab: Lab 1 (Americas) — with Bartik extension
+- Econometric method: Geoeconomics and border-friction gravity logic; Bartik shift-share instrument for identifying local trade-shock exposure in the geography-of-discontent analysis
 - Required code artifacts:
   - `labs/lab1_americas/code/fetch_comtrade_api.py`
   - `labs/lab1_americas/code/prepare_lab1_inputs.py`

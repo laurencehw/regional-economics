@@ -4,8 +4,8 @@ Working repository for drafting and replication assets for *The New Regional Eco
 
 ## Current Scope
 - Outline and drafting plan are in place.
-- Chapter spec stubs are available for Chapters 1-15.
-- Applied lab folders are scaffolded for Labs 1-5.
+- Chapter spec stubs are available for Chapters 1-16 (including 3-A and 3-B).
+- Applied lab folders are scaffolded for Labs 1-7.
 
 ## Repository Layout
 - `BOOK_OUTLINE.md`: full conceptual outline.
@@ -27,5 +27,5 @@ Working repository for drafting and replication assets for *The New Regional Eco
 
 ## Immediate Priorities
 1. Capture ACLED request/approval metadata and confirm historical row-level access scope.
-2. Run Lab 4 placebo/robustness SCM checks on top of the baseline run in `labs/lab4_mena/output/scm_baseline/`.
-3. Prepare early classroom pilot package for Labs 1 and 5 (cloud-first execution path + interpretation notes).
+2. Stabilize Part I (split Ch 3 prose into 3-A/3-B, slim Ch 2, add Ch 1 case study).
+3. Prepare early classroom pilot package for Labs 1 and 6 (cloud-first execution path + interpretation notes).

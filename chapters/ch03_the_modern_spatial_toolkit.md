@@ -243,7 +243,7 @@ $$
 
 The diagonal elements (1.10, 1.19, 1.10) are the direct effects. A one-unit increase in $x_A$ raises $y_A$ by 1.10, not 1.00 — the extra 0.10 comes from the feedback loop: $x_A$ raises $y_A$, which raises $y_B$ (through the spatial lag), which feeds back to raise $y_A$ further (because B is A's neighbor). The feedback is modest here because $\rho = 0.4$ and the loop passes through two edges.
 
-The off-diagonal elements are the indirect effects. A one-unit increase in $x_A$ raises $y_B$ by 0.24 and $y_C$ by 0.10. The spillover to B is direct (A is B's neighbor). The spillover to C is indirect — it passes through B, and it is much smaller because it involves two edges and is attenuated by $\rho^2$.
+The off-diagonal elements are the indirect effects. A one-unit increase in $x_A$ raises $y_B$ by 0.24 and $y_C$ by 0.10. The spillover to B occurs because it is a neighbor of A. The spillover to C is indirect — it passes through B, and is smaller because it involves two edges in the network and is attenuated by higher powers of $\rho$.
 
 The total effect of increasing $x_A$ by one unit on total output ($y_A + y_B + y_C$) is $1.10 + 0.24 + 0.10 = 1.44$. In other words, the spatial multiplier increases the aggregate return to a localized intervention by 44 percent. This is the quantitative content of the claim that ignoring spatial spillovers understates the benefits of place-based policy.
 
