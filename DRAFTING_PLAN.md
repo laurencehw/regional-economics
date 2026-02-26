@@ -195,7 +195,7 @@ Key references anchoring this thread:
 
 | # | Task | Status |
 |---|---|---|
-| 0.1 | Outline and chapter specifications | 15/18 specs detailed (Chs. 10, 12 are stubs; Ch. 15 has partial content) |
+| 0.1 | Outline and chapter specifications | All 18 specs detailed (Chs. 10, 12 filled out 2026-02-26) |
 | 0.2 | Replication repository | Done — Labs 1–7 scaffolded, CI passing |
 | 0.3 | Appendix B (Data & Software Guide) | Not started |
 | 0.4 | Institutional Spotlight contacts | Not started |
@@ -210,8 +210,9 @@ Key references anchoring this thread:
 | Chapter | Prose | Key Content | Review |
 |---|---|---|---|
 | Ch. 1 | Draft complete (361 lines) | Spatial paradox of intangibility | Needs opening case study (Bangalore vs Kolkata) |
-| Ch. 2 | Draft complete (267 lines) | Institutional toolkit | Needs slimming: move path dependency, VoC, windows of opportunity to regional chapters |
-| Ch. 3 | Draft complete (559 lines) | Spatial toolkit + services data | Needs splitting into 3-A and 3-B; add inequality measurement, MAUP, Bartik, QSMs |
+| Ch. 2 | Draft revised (233 lines) | Institutional toolkit | Slimmed: path-dependency case studies condensed, VoC condensed with forward refs to Chs. 5, 6, 9 |
+| Ch. 3-A | Split from Ch. 3 (559 lines) | Spatial econometrics | Lab references updated to new numbering; section numbers renumbered to 3A.x |
+| Ch. 3-B | New draft (236 lines) | Trade measurement & gravity | PPML gravity, GATS modes, servicification, TiVA decomposition, trading tasks framework |
 
 ### Phase 2 Status (Regional Parts)
 
