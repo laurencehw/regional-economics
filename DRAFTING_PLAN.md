@@ -57,11 +57,11 @@ This plan organizes the writing process into phases. Each phase produces a self-
 | Wave | Chapters | Rationale |
 |---|---|---|
 | **Wave A** | Part II (Americas): Chs. 4–5 + Lab 1 | Most developed in the existing outlines. Strong anchor material on USMCA, CHIPS Act, and the Middle-Income Trap. Draft first to establish the "regional chapter template." |
-| **Wave B** | Part VII (Africa): Chs. 13–14 + Lab 6 | Second-most developed outline. Night-lights lab is a strong pedagogical hook. Drafting Africa early ensures equal analytical seriousness. |
+| **Wave B** | Part VI (Africa): Chs. 13–14 + Lab 6 | Second-most developed outline. Night-lights lab is a strong pedagogical hook. Drafting Africa early ensures equal analytical seriousness. |
 | **Wave C** | Part III-A (East Asia): Chs. 6–7 + Lab 2 | Requires MRIO data pipeline: WIOD primary, ADB MRIO and OECD TiVA as backups. |
 | **Wave C'** | Part III-B (South Asia): Ch. 8 + Lab 3 | New part. India's IT services geography warrants its own chapter. Lab 3 uses RBI/KLEMS data. Can draft in parallel with Wave C. |
-| **Wave D** | Part V (Europe): Chs. 9–10 + Lab 4 | Spatial RDD lab requires NUTS-2 data. Benefits from having SAR/SDM code from Lab 1 already tested. |
-| **Wave E** | Part VI (MENA): Chs. 11–12 + Lab 5 | SCM lab is methodologically self-contained. MENA chapters require the most original synthesis. |
+| **Wave D** | Part IV (Europe): Chs. 9–10 + Lab 4 | Spatial RDD lab requires NUTS-2 data. Benefits from having SAR/SDM code from Lab 1 already tested. |
+| **Wave E** | Part V (MENA): Chs. 11–12 + Lab 5 | SCM lab is methodologically self-contained. MENA chapters require the most original synthesis. |
 
 ### Per-Wave Process
 
@@ -82,7 +82,7 @@ For each wave:
 
 ---
 
-## Phase 3: Global Synthesis (Part VIII — Chapters 15–16)
+## Phase 3: Global Synthesis (Part VII — Chapters 15–16)
 
 **Goal:** Write the capstone chapters that tie the regional analyses together.
 
@@ -132,10 +132,10 @@ For each wave:
 | II | Americas | 4–5 | Lab 1 | Spatial Lag Model, Bartik | WDI, UN Comtrade, BTS |
 | III-A | East Asia/ASEAN | 6–7 | Lab 2 | MRIO / Network Econometrics | WIOD, TiVA |
 | III-B | South Asia | 8 | Lab 3 | Services mapping (RBI/KLEMS) | RBI, KLEMS India |
-| V | Europe | 9–10 | Lab 4 | Spatial RDD | Eurostat NUTS-2 |
-| VI | MENA | 11–12 | Lab 5 | Synthetic Control Method | WDI, ACLED, UNHCR |
-| VII | Africa | 13–14 | Lab 6 | Night-lights / Moran's $I$ | VIIRS, Afrobarometer |
-| VIII | Synthesis | 15–16 | Lab 7 | Services trade gravity, STRI | WTO BOP, OECD STRI, TiVA |
+| IV | Europe | 9–10 | Lab 4 | Spatial RDD | Eurostat NUTS-2 |
+| V | MENA | 11–12 | Lab 5 | Synthetic Control Method | WDI, ACLED, UNHCR |
+| VI | Africa | 13–14 | Lab 6 | Night-lights / Moran's $I$ | VIIRS, Afrobarometer |
+| VII | Synthesis | 15–16 | Lab 7 | Services trade gravity, STRI | WTO BOP, OECD STRI, TiVA |
 
 ---
 

@@ -31,7 +31,7 @@ This plan consolidates reviewer feedback received through 2026-02-21 and maps ea
 1. Land Lab 6 smoke tests and run full smoke suite (Lab 1 + Lab 6).
 2. Finalize code-hygiene sweep (remaining path prints and docs normalization).
 3. Capture ACLED request/approval metadata and confirm historical row-level field access scope.
-4. Run Lab 6 placebo/robustness SCM checks (alternative treated units and intervention years).
+4. Run Lab 5 placebo/robustness SCM checks (alternative treated units and intervention years).
 
 Completed item:
 - Institution-interaction specs were run on the blended proxy; see `labs/lab1_americas/output/real_americas_2024_lpi_blend/interaction_specs/`.
@@ -39,8 +39,8 @@ Completed item:
 - UNHCR intake schema staging completed (`labs/lab5_mena/data/raw_templates/unhcr_displacement_template.csv` and `labs/lab5_mena/data/unhcr_intake_checklist_2026-02-23.md`).
 - ACLED validation pull completed with count-only access under current scope (`data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json`).
 - UNHCR real pull and mapped controls completed (`data/raw/unhcr/unhcr_lab4_origin_controls_2000_2024_2026-02-23.csv`, `data/processed/lab5/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv`).
-- ACLED country-year count proxy extracted for 10 countries (2018-2025) and merged into Lab 6 panel (`data/processed/lab5/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`).
-- First Lab 6 SCM baseline executed for `SYR` (intervention `2018`) with outputs in `labs/lab5_mena/output/scm_baseline/`.
+- ACLED country-year count proxy extracted for 10 countries (2018-2025) and merged into Lab 5 panel (`data/processed/lab5/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`).
+- First Lab 5 SCM baseline executed for `SYR` (intervention `2018`) with outputs in `labs/lab5_mena/output/scm_baseline/`.
 
 ## Definition of Done for This Feedback Round
 - Drafting plan updated to reflect cloud execution, early pilot timing, and dataset fallback strategy.

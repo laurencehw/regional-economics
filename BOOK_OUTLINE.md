@@ -15,9 +15,9 @@ To prevent syllabus bloat, the preface includes a visual Dependency Diagram (DAG
 
 1. **Spatial Econometrics Track:** Ch 1, 3-A, 3-B → All Labs → Ch 16. Regional chapters used as case-study readings.
 2. **International Trade in Services Track:** Ch 1, 2, 3-B → Services threads in Ch 4, 7, 8, 9, 14 → Lab 7 → Ch 16.
-3. **Development Economics Track:** Ch 1, 2 → Ch 5 (LatAm), Ch 8 (South Asia), Parts VI & VII (MENA/Africa) → Ch 15–16.
-4. **Comparative Regionalism Track:** Ch 1, 2 → Part V (Europe) → Ch 4 (USMCA) → Ch 14 (AfCFTA) → Lab 4 → Ch 16.
-5. **Geoeconomics & Industrial Policy:** Ch 1, 2 → Ch 4 (CHIPS) → Ch 6–7 (Asia) → Ch 11 (Sanctions) → Ch 15–16.
+3. **Development Economics Track:** Ch 1, 2 → Ch 5 (LatAm), Ch 8 (South Asia), Parts V & VI (MENA/Africa) → Ch 15–16.
+4. **Comparative Regionalism Track:** Ch 1, 2 → Part IV (Europe) → Ch 4 (USMCA) → Ch 14 (AfCFTA) → Lab 4 → Ch 16.
+5. **Geoeconomics & Industrial Policy:** Ch 1, 2 → Ch 4 (CHIPS) → Ch 6–7 (Asia) → Ch 6 (Weaponized Interdependence) → Ch 15–16.
 
 Each chapter begins with a one-line "Prerequisites" note (e.g., "This chapter requires Chapter 1 and Section 3-B.5. No prior regional chapters needed.").
 
@@ -66,7 +66,7 @@ Slimmed down. Path dependency, varieties of capitalism, and windows of opportuni
 
 ---
 
-## Regional Pedagogical Features (Applied to Parts II through VIII)
+## Regional Pedagogical Features (Applied to Parts II through VII)
 
 - **Regional Diagnostics Dashboard:** A standardized 1-page visual opening each Part: convergence plots (β/σ), sub-national services GDP map, spatial Gini, night-lights composite, and top 5 GATS exports. Consistent color scheme and cartographic projection across all regional maps.
 - **Spatial Data Challenge Box:** A 1-page feature in each chapter highlighting what data is missing or distorted in that specific region.
@@ -343,7 +343,7 @@ Each chapter is built around a consistent pedagogical structure that reinforces 
 | Ch. 2: Institutions (slimmed) | 20–25 | Toolkit only; heavy material distributed |
 | Ch. 3-A: Spatial Econometrics | 30–35 | SAR/SEM/SDM + causal inference |
 | Ch. 3-B: Trade Measurement | 25–30 | Gravity + GATS modes + TiVA |
-| Regional chapters (×12) | 30–40 each | 360–480 pp total |
+| Regional chapters (×11) | 30–40 each | 330–440 pp total |
 | Applied Labs (×7) | 10–15 each | 70–105 pp total |
 | Ch. 15: Climate Synthesis | 25–30 | Cross-regional, not standalone intro |
 | Ch. 16: Future/Synthesis | 30–35 | Telemigration + comparative table |
