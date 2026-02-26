@@ -24,7 +24,7 @@ def run_cmd():
 
 @pytest.fixture
 def lab5_panel(tmp_path, run_cmd):
-    """Build the Lab 4 estimation panel from raw templates and return output paths."""
+    """Build the Lab 5 estimation panel from raw templates and return output paths."""
     out_dir = tmp_path / "lab5_panel"
     out_dir.mkdir(parents=True, exist_ok=True)
 

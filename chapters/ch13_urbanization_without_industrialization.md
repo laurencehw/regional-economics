@@ -1,4 +1,4 @@
-# Chapter 12: Urbanization Without Industrialization — Density, Service Capacity, and the African Urban Transition
+# Chapter 13: Urbanization Without Industrialization — Density, Service Capacity, and the African Urban Transition
 
 ---
 
@@ -12,11 +12,11 @@ Sub-Saharan Africa has broken this model. The region is urbanizing at approximat
 
 This chapter argues that the puzzle has an institutional resolution. Urbanization raises productivity only where municipal service capacity and trade-corridor connectivity convert density into lower transaction costs. Where institutional capacity is weak, density primarily scales congestion and informality, producing limited agglomeration gains. The chapter's analytical framework combines Chapter 1's agglomeration theory (Marshallian sharing, matching, and learning) with Chapter 2's institutional analysis (institutional thickness, path dependence, formal-informal interactions) to explain why the same process — rural-urban migration — produces Silicon Valley in one institutional environment and Lagos's Oshodi Market in another.
 
-Lab 5 provides the empirical tools. Night-lights data (VIIRS) proxy for economic activity where official GDP data are sparse, unreliable, or delayed. Moran's $I$ measures whether economic activity clusters spatially — and the two-step procedure (raw clustering, then governance-residualized clustering) tests whether the spatial pattern of institutional quality explains the spatial pattern of economic activity. If governance-residualized Moran's $I$ is substantially lower than raw Moran's $I$, then institutional geography is doing real explanatory work.
+Lab 6 provides the empirical tools. Night-lights data (VIIRS) proxy for economic activity where official GDP data are sparse, unreliable, or delayed. Moran's $I$ measures whether economic activity clusters spatially — and the two-step procedure (raw clustering, then governance-residualized clustering) tests whether the spatial pattern of institutional quality explains the spatial pattern of economic activity. If governance-residualized Moran's $I$ is substantially lower than raw Moran's $I$, then institutional geography is doing real explanatory work.
 
 ---
 
-## 12.1 The African Urban Transition in Numbers
+## 13.1 The African Urban Transition in Numbers
 
 ### Scale and Speed
 
@@ -58,7 +58,7 @@ The spatial consequence is a dual urban economy that mirrors the dual national e
 
 ---
 
-## 12.2 When Density Produces Productivity — and When It Does Not
+## 13.2 When Density Produces Productivity — and When It Does Not
 
 ### The Institutional Threshold
 
@@ -66,7 +66,7 @@ Not all African cities fail to generate agglomeration economies. Nairobi, Johann
 
 The answer is institutional capacity — specifically, the capacity to provide three urban services without which agglomeration economies cannot operate:
 
-**Reliable electricity.** Manufacturing requires continuous power. A factory that loses power for four hours per day (the average for Nigerian manufacturers, according to World Bank Enterprise Surveys) operates at roughly 70 percent capacity, cannot run precision equipment, and loses perishable inputs. Service firms — call centers, data processing, financial services — similarly require uninterrupted connectivity. Nairobi's 99 percent grid reliability (supported by geothermal baseload and a well-managed utility, Kenya Power) is a foundational competitive advantage over Lagos's 50–60 percent reliability. The night-lights data in Lab 5 are, in part, a proxy for this variable: brighter regions are regions with more reliable electricity, and the correlation between night-lights intensity and economic productivity is partly mediated by power reliability.
+**Reliable electricity.** Manufacturing requires continuous power. A factory that loses power for four hours per day (the average for Nigerian manufacturers, according to World Bank Enterprise Surveys) operates at roughly 70 percent capacity, cannot run precision equipment, and loses perishable inputs. Service firms — call centers, data processing, financial services — similarly require uninterrupted connectivity. Nairobi's 99 percent grid reliability (supported by geothermal baseload and a well-managed utility, Kenya Power) is a foundational competitive advantage over Lagos's 50–60 percent reliability. The night-lights data in Lab 6 are, in part, a proxy for this variable: brighter regions are regions with more reliable electricity, and the correlation between night-lights intensity and economic productivity is partly mediated by power reliability.
 
 **Functional transport.** Agglomeration economies require that workers can reach firms and that goods can reach markets within a reasonable time and cost. In Johannesburg, the Gautrain rapid rail and extensive highway network keep average commute times below 45 minutes for formal-sector workers. In Lagos, average commute times exceed 90 minutes, and freight transport within the metropolitan area costs more per kilometer than freight transport between Lagos and London by sea. The transport deficit converts density from an asset (proximity to markets and labor) into a liability (congestion that raises the effective cost of every transaction).
 
@@ -84,7 +84,7 @@ Above the institutional threshold, density produces agglomeration economies. Bel
 
 - **Crime and insecurity.** Dense, poorly governed urban areas produce higher crime rates, which in turn raise the cost of doing business (security expenditure, insurance, theft losses) and reduce the willingness of formal firms to locate in the city. Johannesburg's inner-city decline in the 1990s and 2000s — driven by crime that drove formal businesses and middle-class residents to the suburbs — is a case study in how insecurity can reverse agglomeration.
 
-The balance between agglomeration benefits and congestion costs determines whether urbanization is growth-enhancing or growth-neutral. The institutional framework of this chapter predicts that the balance tips toward agglomeration only when municipal service capacity exceeds a threshold. Lab 5's Moran's $I$ analysis provides a spatial test: if economic activity (night-lights) clusters more strongly in regions with better governance (higher Afrobarometer scores), the agglomeration-congestion balance favors the institutionally strong regions.
+The balance between agglomeration benefits and congestion costs determines whether urbanization is growth-enhancing or growth-neutral. The institutional framework of this chapter predicts that the balance tips toward agglomeration only when municipal service capacity exceeds a threshold. Lab 6's Moran's $I$ analysis provides a spatial test: if economic activity (night-lights) clusters more strongly in regions with better governance (higher Afrobarometer scores), the agglomeration-congestion balance favors the institutionally strong regions.
 
 ### Case Study: Nairobi vs. Lagos
 
@@ -116,7 +116,7 @@ The question is whether the digital services path can scale — whether the mult
 
 ---
 
-## 12.3 Night-Lights as Measurement Innovation
+## 13.3 Night-Lights as Measurement Innovation
 
 ### The Data Scarcity Problem
 
@@ -134,29 +134,29 @@ The night-lights proxy has specific strengths and limitations:
 
 **Strengths.** Night-lights capture both formal and informal economic activity (any activity that generates light — residential, commercial, industrial — registers). They are available at high spatial resolution (750 meters for VIIRS), enabling subnational and even intra-urban analysis. They are produced by a single sensor with consistent calibration, eliminating the cross-country measurement incomparabilities that plague GDP data. They are available in near-real-time, enabling "nowcasting" of economic conditions months or years before official statistics are released.
 
-**Limitations.** Night-lights are a proxy, not a direct measure. They capture light, not value — and the relationship between light and economic value varies across contexts. Agricultural activity generates little light (farmers work during the day); mining generates concentrated light at the extraction site but does not capture the value chain; service activities generate light proportional to their energy intensity, not their economic productivity. Night-lights are subject to sensor saturation in very bright areas (city centers) and to interference from gas flaring (Nigeria, Angola), fishing boats at sea, and moonlight reflection. Careful processing — background subtraction, gas-flare masking, saturation correction — is necessary, and Lab 5's preprocessing pipeline handles these steps.
+**Limitations.** Night-lights are a proxy, not a direct measure. They capture light, not value — and the relationship between light and economic value varies across contexts. Agricultural activity generates little light (farmers work during the day); mining generates concentrated light at the extraction site but does not capture the value chain; service activities generate light proportional to their energy intensity, not their economic productivity. Night-lights are subject to sensor saturation in very bright areas (city centers) and to interference from gas flaring (Nigeria, Angola), fishing boats at sea, and moonlight reflection. Careful processing — background subtraction, gas-flare masking, saturation correction — is necessary, and Lab 6's preprocessing pipeline handles these steps.
 
 ### Calibration and Validation
 
 The night-lights-GDP relationship requires calibration for the African context. Henderson, Storeygard, and Weil's (2012) original elasticity of 0.3 was estimated on a global sample. African-specific estimates vary: Michalopoulos and Papaioannou (2013) found elasticities of 0.3–0.5 for ethnic homelands within Africa, suggesting that the night-lights-GDP relationship may be stronger (not weaker) in Africa than globally — perhaps because a larger share of African economic activity is directly visible as light (market trading, informal commerce, residential activity) than in rich countries, where much economic value is generated in offices that emit less light per dollar of GDP.
 
-Validation against known quantities is essential. South Africa provides the best test case: it has both high-quality subnational GDP data (from Statistics South Africa) and VIIRS night-lights coverage. Comparing night-lights-predicted GDP with actual GDP at the provincial level reveals where the proxy works and where it fails. Gauteng province (Johannesburg-Pretoria) is typically overpredicted by night-lights (the metropolitan area is very bright, but much of the value generated there — financial services, mining headquarters, government administration — is knowledge-intensive and generates relatively little light per dollar). Limpopo province is typically underpredicted (agricultural and mining activity generates economic value but limited night-lights). Understanding these systematic biases is critical for interpreting Lab 5's results.
+Validation against known quantities is essential. South Africa provides the best test case: it has both high-quality subnational GDP data (from Statistics South Africa) and VIIRS night-lights coverage. Comparing night-lights-predicted GDP with actual GDP at the provincial level reveals where the proxy works and where it fails. Gauteng province (Johannesburg-Pretoria) is typically overpredicted by night-lights (the metropolitan area is very bright, but much of the value generated there — financial services, mining headquarters, government administration — is knowledge-intensive and generates relatively little light per dollar). Limpopo province is typically underpredicted (agricultural and mining activity generates economic value but limited night-lights). Understanding these systematic biases is critical for interpreting Lab 6's results.
 
 Nigeria provides a complementary validation. Since Nigeria's GDP rebasing in 2014 (which roughly doubled measured GDP overnight by updating the base year and including previously unmeasured sectors), the country's night-lights-GDP relationship has shifted — the pre-2014 and post-2014 series imply different elasticities. This is a reminder that night-lights capture physical activity, while GDP captures statistical choices. When the two diverge, the analyst must determine whether the discrepancy reflects measurement error in GDP, measurement error in night-lights, or a genuine change in the relationship between light and economic value.
 
 ### The Nowcasting Application
 
-Lab 5 frames the night-lights analysis not merely as a data-scarcity workaround but as a measurement innovation with value even in data-rich environments. GDP nowcasting — using high-frequency indicators (satellite data, mobile phone records, shipping container volumes, electricity consumption) to estimate current GDP before official statistics are released — is an active research frontier. Night-lights provide a spatially granular nowcasting signal that is particularly valuable for disaster response (how much economic activity was lost in a flood zone?), conflict monitoring (has economic activity recovered in a post-conflict area?), and policy evaluation (did a new road change the spatial distribution of economic activity?).
+Lab 6 frames the night-lights analysis not merely as a data-scarcity workaround but as a measurement innovation with value even in data-rich environments. GDP nowcasting — using high-frequency indicators (satellite data, mobile phone records, shipping container volumes, electricity consumption) to estimate current GDP before official statistics are released — is an active research frontier. Night-lights provide a spatially granular nowcasting signal that is particularly valuable for disaster response (how much economic activity was lost in a flood zone?), conflict monitoring (has economic activity recovered in a post-conflict area?), and policy evaluation (did a new road change the spatial distribution of economic activity?).
 
-For this chapter, the nowcasting framing is important because it elevates Lab 5 from a "we use night-lights because GDP data are bad" exercise to a "night-lights reveal spatial dynamics that GDP data miss even when available" exercise. South Africa has excellent subnational GDP data, but those data are reported annually with a two-year lag. VIIRS composites are available within months. The analytical question is not "are night-lights better than GDP?" but "what can night-lights tell us that GDP cannot, and on what timescale?"
+For this chapter, the nowcasting framing is important because it elevates Lab 6 from a "we use night-lights because GDP data are bad" exercise to a "night-lights reveal spatial dynamics that GDP data miss even when available" exercise. South Africa has excellent subnational GDP data, but those data are reported annually with a two-year lag. VIIRS composites are available within months. The analytical question is not "are night-lights better than GDP?" but "what can night-lights tell us that GDP cannot, and on what timescale?"
 
 ---
 
-## 12.4 Lab 5 and the Governance-Activity Nexus
+## 13.4 Lab 6 and the Governance-Activity Nexus
 
 ### The Two-Step Procedure
 
-Lab 5's analytical design tests a specific hypothesis: the spatial clustering of economic activity in Sub-Saharan Africa is partly explained by the spatial pattern of governance quality. The procedure is:
+Lab 6's analytical design tests a specific hypothesis: the spatial clustering of economic activity in Sub-Saharan Africa is partly explained by the spatial pattern of governance quality. The procedure is:
 
 **Step 1: Raw Moran's $I$.** Compute the global Moran's $I$ on night-lights radiance using an adjacency-based spatial weight matrix (countries that share a border are neighbors, with optional border-length weighting). A positive, significant $I$ indicates that economic activity clusters spatially — bright countries tend to be near bright countries.
 
@@ -168,51 +168,51 @@ The magnitude of the decline — $\Delta I = I_\text{raw} - I_\text{residual}$ �
 
 The two-step result directly tests this chapter's core argument. If urbanization-without-industrialization is an institutional phenomenon — if density is productive only where governance capacity is adequate — then we would expect:
 
-1. **Positive raw Moran's $I$**: economic activity clusters geographically (confirmed on synthetic data in Lab 5; to be validated on real data).
+1. **Positive raw Moran's $I$**: economic activity clusters geographically (confirmed on synthetic data in Lab 6; to be validated on real data).
 
 2. **Significant governance-residualization effect**: the clustering is partly explained by the spatial distribution of governance quality.
 
 3. **Heterogeneity by urbanization level**: the governance effect should be stronger in more urbanized countries (where the agglomeration-congestion tradeoff is operative) than in rural countries (where the tradeoff is less relevant).
 
-These predictions are testable with the existing Lab 5 scaffold once real VIIRS and Afrobarometer data are acquired. The robustness runner (`run_real_africa_specs.py`, planned) will extend the analysis to test sensitivity to alternative weight matrices (border-length vs. binary, k-nearest-neighbor), alternative governance measures (service delivery quality, corruption perceptions, tax compliance), and alternative night-lights preprocessing (with and without gas-flare masking, with and without saturation correction).
+These predictions are testable with the existing Lab 6 scaffold once real VIIRS and Afrobarometer data are acquired. The robustness runner (`run_real_africa_specs.py`, planned) will extend the analysis to test sensitivity to alternative weight matrices (border-length vs. binary, k-nearest-neighbor), alternative governance measures (service delivery quality, corruption perceptions, tax compliance), and alternative night-lights preprocessing (with and without gas-flare masking, with and without saturation correction).
 
 ### The Weight Matrix Choice for Africa
 
-The spatial weight matrix for Lab 5 deserves particular attention because Africa's political geography creates unusual challenges.
+The spatial weight matrix for Lab 6 deserves particular attention because Africa's political geography creates unusual challenges.
 
 **Contiguity.** African borders are the result of European colonial partition (the Berlin Conference of 1884–1885) and bear limited relationship to economic geography. The DRC shares borders with nine countries — more than any other African state — but many of these borders are drawn through dense forest or across lakes, with minimal economic interchange. Conversely, some non-contiguous countries (e.g., South Africa and Kenya, which are not neighbors) have deep economic ties through supply chains, investment, and migration. Contiguity $W$ captures physical adjacency but misses economic reality.
 
-**Border-length weighting.** Lab 5's default $W$ optionally weights neighbors by shared border length (in kilometers). This is more informative than binary contiguity: Tanzania and Kenya share a long border (approximately 700 km) with substantial cross-border trade, while Tanzania and Malawi share a short border (approximately 160 km) with less interchange. But border length is an imperfect proxy for economic interaction — some long borders run through uninhabited terrain (the Chad-Libya border, approximately 1,000 km of Sahara Desert) while some short borders carry enormous traffic (the Kenya-Tanzania border at Namanga).
+**Border-length weighting.** Lab 6's default $W$ optionally weights neighbors by shared border length (in kilometers). This is more informative than binary contiguity: Tanzania and Kenya share a long border (approximately 700 km) with substantial cross-border trade, while Tanzania and Malawi share a short border (approximately 160 km) with less interchange. But border length is an imperfect proxy for economic interaction — some long borders run through uninhabited terrain (the Chad-Libya border, approximately 1,000 km of Sahara Desert) while some short borders carry enormous traffic (the Kenya-Tanzania border at Namanga).
 
 **K-nearest-neighbor.** With $k = 5$ or $k = 6$, this approach gives every country the same number of neighbors, addressing the problem that island nations (Madagascar, Mauritius) and peninsular nations (Somalia) have few or no contiguity neighbors. It also handles the DRC problem (too many contiguity neighbors) and the Lesotho problem (exactly one contiguity neighbor).
 
-**Trade-weighted.** Intra-African trade data from Comtrade could be used to construct economic $W$, but the data quality is poor: mirror statistics diverge by 50 percent or more for many African bilateral pairs, reflecting customs under-reporting, ICBT, and limited statistical capacity. A trade-weighted $W$ built on unreliable data may introduce more noise than signal. Lab 5's robustness checks should compare geographic and trade-weighted specifications and interpret the differences cautiously.
+**Trade-weighted.** Intra-African trade data from Comtrade could be used to construct economic $W$, but the data quality is poor: mirror statistics diverge by 50 percent or more for many African bilateral pairs, reflecting customs under-reporting, ICBT, and limited statistical capacity. A trade-weighted $W$ built on unreliable data may introduce more noise than signal. Lab 6's robustness checks should compare geographic and trade-weighted specifications and interpret the differences cautiously.
 
 ---
 
-## 12.5 The Corridor Dimension
+## 13.5 The Corridor Dimension
 
 Cities do not exist in isolation. They are nodes in transport networks, and their economic function depends on their connectivity to other nodes — ports, markets, resource sites, and other cities. In Africa, where overland transport costs are the highest in the world (approximately $0.05–0.10 per ton-kilometer compared to $0.01–0.03 in Asia), the location of a city relative to a trade corridor is a primary determinant of its economic viability.
 
 The "functional corridor" concept — developed by the World Bank's Africa Transport team and by TradeMark Africa — holds that the corridor, not the country, is the natural unit of economic integration in Africa. The Northern Corridor (Mombasa–Kampala–Kigali), the Central Corridor (Dar es Salaam–Dodoma–Kigali), the Abidjan-Lagos Corridor, and the North-South Corridor (Durban–Lusaka–Dar es Salaam) are economic arteries along which trade, investment, and urbanization concentrate. Cities on these corridors — Nairobi, Kampala, Arusha, Lusaka — are integrated into regional and global supply chains. Cities off the corridors — inland towns in the DRC, the Sahel, or Madagascar — are effectively isolated, with transport costs that make manufactured exports uncompetitive and imported inputs unaffordable.
 
-Lab 5's spatial analysis can test the corridor hypothesis directly. If economic activity (night-lights) clusters along corridors — with high radiance on the corridor and a steep decay away from it — the corridor is the organizing geography of African economic activity. If governance quality conditions this relationship (stronger clustering along corridors with better border governance, weaker clustering along poorly governed corridors), then institutional reform of corridor management is the highest-return spatial policy intervention available to African governments. Chapter 13 examines this possibility in detail through the lens of the AfCFTA and the functional-corridor model.
+Lab 6's spatial analysis can test the corridor hypothesis directly. If economic activity (night-lights) clusters along corridors — with high radiance on the corridor and a steep decay away from it — the corridor is the organizing geography of African economic activity. If governance quality conditions this relationship (stronger clustering along corridors with better border governance, weaker clustering along poorly governed corridors), then institutional reform of corridor management is the highest-return spatial policy intervention available to African governments. Chapter 13 examines this possibility in detail through the lens of the AfCFTA and the functional-corridor model.
 
 ---
 
-## 12.6 Conclusion: Density as Opportunity and Threat
+## 13.6 Conclusion: Density as Opportunity and Threat
 
 Africa's urban transition is the largest demographic event of the twenty-first century. Whether it produces prosperity or crisis depends on institutions — specifically, on whether municipal and national governments can build the service capacity that converts density into productivity before density produces intolerable congestion.
 
 The evidence of this chapter suggests that the outcome will be spatially uneven. Cities with adequate institutional capacity — Nairobi, Kigali, Accra, Johannesburg — will generate agglomeration economies that justify their growth. Cities without it — Kinshasa, Luanda, many secondary cities across the Sahel and the Great Lakes region — will grow anyway, driven by demographics, but the growth will produce congestion without proportionate productivity gains.
 
-Lab 5's Moran's $I$ analysis offers a spatial diagnostic: if governance quality explains a significant share of the spatial clustering of economic activity, then the institutional thesis has empirical support. If it does not — if night-lights cluster for purely geographic reasons (coastal access, resource deposits, river systems) that governance cannot explain — then the policy prescription shifts from institutional reform to infrastructure investment and geographic targeting.
+Lab 6's Moran's $I$ analysis offers a spatial diagnostic: if governance quality explains a significant share of the spatial clustering of economic activity, then the institutional thesis has empirical support. If it does not — if night-lights cluster for purely geographic reasons (coastal access, resource deposits, river systems) that governance cannot explain — then the policy prescription shifts from institutional reform to infrastructure investment and geographic targeting.
 
-The spatial tools of this book — particularly Lab 5's Moran's $I$ analysis with governance residualization — offer a framework for monitoring the outcome. If governance-residualized Moran's $I$ declines over time (governance becomes a weaker predictor of spatial clustering), it may indicate that institutional reform is succeeding — economic activity is becoming less dependent on governance quality and more determined by market forces and geographic fundamentals. If it increases (governance becomes a stronger predictor), institutional inequality is deepening, and the urban transition is producing winners and losers along governance lines.
+The spatial tools of this book — particularly Lab 6's Moran's $I$ analysis with governance residualization — offer a framework for monitoring the outcome. If governance-residualized Moran's $I$ declines over time (governance becomes a weaker predictor of spatial clustering), it may indicate that institutional reform is succeeding — economic activity is becoming less dependent on governance quality and more determined by market forces and geographic fundamentals. If it increases (governance becomes a stronger predictor), institutional inequality is deepening, and the urban transition is producing winners and losers along governance lines.
 
 The policy stakes could not be higher. By 2050, one in four humans will live in Africa, and the majority will live in cities. Whether those cities look like Nairobi (productive, connected, institutionally capable) or like Kinshasa (congested, disconnected, institutionally weak) will determine not just Africa's economic trajectory but the global economy's center of gravity. Productive African urbanization would add hundreds of millions of consumers and workers to the global economy. Unproductive urbanization would create a humanitarian crisis of unprecedented scale — billions of urban residents trapped in congested cities without the infrastructure, governance, or economic opportunity to build decent lives.
 
-The next chapter examines the continental-scale institutional response to this challenge: the African Continental Free Trade Area and the functional-corridor model of regional integration. If Chapter 12 asks why some African cities are productive and others are not, Chapter 13 asks whether continental-scale institutional reform can raise the floor — connecting the productive cities to each other and giving the unproductive ones a path to institutional upgrading.
+The next chapter examines the continental-scale institutional response to this challenge: the African Continental Free Trade Area and the functional-corridor model of regional integration. If Chapter 13 asks why some African cities are productive and others are not, Chapter 14 asks whether continental-scale institutional reform can raise the floor — connecting the productive cities to each other and giving the unproductive ones a path to institutional upgrading.
 
 ---
 
@@ -224,7 +224,7 @@ The next chapter examines the continental-scale institutional response to this c
 
 **Expected findings.** The scatter plot should show a positive relationship (better governance → more night-lights), but with substantial dispersion reflecting the role of geography, resources, and other factors. $I_\text{raw}$ should be positive and significant (geographic clustering of economic activity). $I_\text{residual}$ should be smaller (governance explains some clustering), with a $\Delta I$ of 15–35 percent providing evidence for the institutional-geography thesis.
 
-**Student exercise.** Using the Lab 5 scaffold, replicate the analysis with a different governance measure (Afrobarometer service delivery quality, World Bank governance indicators, or Transparency International corruption perceptions index). Does the $\Delta I$ vary across governance measures? If so, which dimension of governance — trust, service quality, transparency — has the strongest spatial signature?
+**Student exercise.** Using the Lab 6 scaffold, replicate the analysis with a different governance measure (Afrobarometer service delivery quality, World Bank governance indicators, or Transparency International corruption perceptions index). Does the $\Delta I$ vary across governance measures? If so, which dimension of governance — trust, service quality, transparency — has the strongest spatial signature?
 
 ---
 
@@ -256,7 +256,7 @@ The Northern Corridor reforms illustrate the chapter's central argument: institu
 
 3. Kigali is often cited as an African urban success story — clean, well-governed, economically dynamic. But Rwanda's governance model includes significant state control over economic activity and limited political competition. Can the "institutional threshold" for productive urbanization be met by authoritarian as well as democratic governance? What evidence would help answer this question?
 
-4. The Lab 5 two-step procedure (raw Moran's $I$ → governance-residualized Moran's $I$) assumes that governance quality is exogenous to economic activity. This assumption is questionable — economic activity may cause governance quality (through tax revenue, demand for public services, or civic engagement) rather than the other way around. How would you address this endogeneity concern? What instrument or identification strategy would you propose?
+4. The Lab 6 two-step procedure (raw Moran's $I$ → governance-residualized Moran's $I$) assumes that governance quality is exogenous to economic activity. This assumption is questionable — economic activity may cause governance quality (through tax revenue, demand for public services, or civic engagement) rather than the other way around. How would you address this endogeneity concern? What instrument or identification strategy would you propose?
 
 5. Secondary cities — places with populations between 100,000 and 1 million — are growing faster than megacities in Africa but receive almost no policy attention. Using the frameworks of Chapters 1 and 2, argue either that secondary cities represent the best opportunity for productive urbanization in Africa (because they can reach the institutional threshold more easily than megacities) or that megacities will dominate (because agglomeration economies are self-reinforcing once established).
 

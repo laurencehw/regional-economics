@@ -23,7 +23,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run Lab 5 SCM baseline")
     parser.add_argument(
         "--panel-csv",
-        default="data/processed/lab5/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv",
+        default="data/processed/lab5/lab5_mena_estimation_panel_2000_2024_2026-02-23.csv",
         help="Estimation-ready panel CSV path",
     )
     parser.add_argument("--treated-iso3", default="SYR")

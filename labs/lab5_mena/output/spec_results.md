@@ -1,7 +1,7 @@
-# Lab 4 MENA SCM Spec Comparison
+# Lab 5 MENA SCM Spec Comparison
 
 Run date: 2026-02-25
-Panel: `data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`
+Panel: `data/processed/lab5/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv`
 Outcome: `outcome_main` (WDI GDP-per-capita growth, annual %)
 Method: Synthetic Control (SLSQP + projected-gradient fallback), in-space and in-time placebos
 

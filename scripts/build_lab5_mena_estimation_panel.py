@@ -1,4 +1,4 @@
-"""Build Lab 4 estimation-ready panel by merging ACLED, UNHCR, and WDI.
+"""Build Lab 5 estimation-ready panel by merging ACLED, UNHCR, and WDI.
 
 Inputs:
 - ACLED event-level extract (external storage recommended)
@@ -7,7 +7,7 @@ Inputs:
 
 Outputs:
 - ACLED country-year aggregates
-- Lab 4 estimation-ready panel
+- Lab 5 estimation-ready panel
 - Build metadata JSON
 """
 
@@ -37,7 +37,7 @@ COUNTRY_TO_ISO3 = {
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Build Lab 4 MENA estimation-ready panel")
+    parser = argparse.ArgumentParser(description="Build Lab 5 MENA estimation-ready panel")
     parser.add_argument(
         "--acled-events-csv",
         default="data/external/acled/acled_lab4_mena_2018_2025_2026-02-23.csv",
@@ -45,7 +45,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--acled-counts-csv",
-        default="data/processed/lab4/acled_lab4_country_year_counts_2018_2025_2026-02-23.csv",
+        default="data/processed/lab5/acled_lab4_country_year_counts_2018_2025_2026-02-23.csv",
         help="Optional ACLED country-year counts CSV path (used if present)",
     )
     parser.add_argument(
@@ -55,17 +55,17 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--unhcr-mapped-csv",
-        default="data/processed/lab4/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv",
+        default="data/processed/lab5/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv",
         help="UNHCR mapped control CSV path",
     )
     parser.add_argument(
         "--acled-country-year-csv",
-        default="data/processed/lab4/acled_lab4_country_year_2018_2025_2026-02-23.csv",
+        default="data/processed/lab5/acled_lab4_country_year_2018_2025_2026-02-23.csv",
         help="Output path for ACLED country-year aggregates",
     )
     parser.add_argument(
         "--panel-output-csv",
-        default="data/processed/lab4/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv",
+        default="data/processed/lab5/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv",
         help="Output path for estimation-ready panel",
     )
     parser.add_argument(

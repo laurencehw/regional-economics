@@ -14,7 +14,7 @@ Night-lights raster analysis and Moran's I
 - `governance_score` <- Afrobarometer governance/trust index (`trust_local_gov` in template files)
 - Spatial links <- adjacency edge list (`shared_border_km` in template files)
 
-Mappings are configured in `data/source_mappings.json` and transformed via `code/prepare_lab5_inputs.py`.
+Mappings are configured in `data/source_mappings.json` and transformed via `code/prepare_lab6_inputs.py`.
 
 ## Research Question
 To what extent are national night-lights levels spatially clustered across African economies, and how much clustering remains after conditioning on governance quality?

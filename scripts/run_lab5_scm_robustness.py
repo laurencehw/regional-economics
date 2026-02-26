@@ -1,4 +1,4 @@
-"""Run SCM placebo and robustness checks for Lab 5MENA.
+"""Run SCM placebo and robustness checks for Lab 5 MENA.
 
 Two types of placebo tests:
 1. In-space: treat each donor unit as if it were the treated unit,
@@ -26,7 +26,7 @@ from run_lab5_scm_baseline import rmspe, solve_scm_weights
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Lab 5SCM placebo / robustness checks")
+    parser = argparse.ArgumentParser(description="Lab 5 SCM placebo / robustness checks")
     parser.add_argument(
         "--panel-csv",
         required=True,
