@@ -71,6 +71,8 @@ This document captures the current project state and prioritized next steps base
 - Both specs now fully detailed with core thesis, key arguments, institutional variables, datasets, references, and lab linkage.
 
 #### 5. Acquire VIIRS Data and Validate Lab 6 at Scale
+- **Completed (2026-02-26):** `scripts/fetch_viirs_africa.py` built. Supports `--smoke-test` (synthetic 54-country panel) and `--local-tif` (real NOAA/EOG VNL v2.1 GeoTIFF). Also builds Africa adjacency edge list from Natural Earth boundaries (`--write-adjacency`). Three new tests added to `test_lab6_pipeline_smoke.py` (19/19 passing). rasterio 1.5.0 + geopandas 1.1.1 already installed.
+- **Remaining:** Download real VIIRS VNL v2.1 rasters from eogdata.mines.edu (requires registration). Files are ~200-500 MB/year. Run `python scripts/fetch_viirs_africa.py --local-tif VNL_YYYY.tif --year YYYY` for each year (2015-2023 recommended for panel depth). Afrobarometer licensing still pending.
 
 ### Tier 3: Important
 
@@ -81,7 +83,8 @@ This document captures the current project state and prioritized next steps base
 
 ### Tier 4: Deferred (Phase 3+)
 
-- Chapters 6-7 prose (Wave C: East Asia)
+- Chapter 6 prose: first draft complete (~8,460 words, 2026-02-26); needs expansion to ~10,500 words and Data in Depth box
+- Chapter 7 prose (Wave C: China/ASEAN): not started
 - Chapter 8 prose (Wave C': South Asia)
 - Chapters 9-10 prose (Wave D: Europe)
 - Chapters 11-12 prose (Wave E: MENA)

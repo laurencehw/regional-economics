@@ -219,8 +219,8 @@ Key references anchoring this thread:
 | Wave | Chapters | Prose Status | Lab Status |
 |---|---|---|---|
 | A (Americas) | Chs. 4–5 | Initial drafts (352 + 307 lines); need expansion | Lab 1: Complete |
-| B (Africa) | Chs. 13–14 | Ch. 13 initial draft (265 lines); Ch. 14 initial draft (326 lines) | Lab 6: Scaffolded (synthetic data only) |
-| C (East Asia) | Chs. 6–7 | Not started | Lab 2: Scaffolded (TiVA wired) |
+| B (Africa) | Chs. 13–14 | Ch. 13 initial draft (265 lines); Ch. 14 initial draft (326 lines) | Lab 6: Scaffolded + VIIRS fetch script built |
+| C (East Asia) | Chs. 6–7 | Ch. 6 complete first draft (~10,273 words); Ch. 7 not started | Lab 2: Scaffolded (TiVA wired) |
 | C' (South Asia) | Ch. 8 | Not started | Lab 3: Scaffolded (directory created) |
 | D (Europe) | Chs. 9–10 | Not started | Lab 4: Scaffolded (NUTS-2 wired) |
 | E (MENA) | Chs. 11–12 | Not started | Lab 5: Partially complete (SCM baselines) |
