@@ -45,13 +45,12 @@ This document captures the current project state and prioritized next steps base
 ### Tier 1: Critical Path
 
 #### 1. Stabilize Part I After Restructuring
-- **Why now:** Ch 1 still needs its opening case study. Part I internal consistency review needed after Ch 3 split and Ch 2 slimming.
-- **Completed:** Ch 3 split into 3-A and 3-B. Ch 2 slimmed (VoC condensed, path-dependency cases condensed, forward references to Chs. 5, 6, 9 added).
-- **Remaining:** Add Bangalore vs Kolkata case study to Ch 1. Verify all Part I cross-references are consistent.
+- **Completed (2026-02-26):** Bangalore vs Kolkata opening case study added to Ch 1 (7 paragraphs, ~900 words). Part I cross-references verified and fixed (Ch 1 conclusion updated to reference "Chapters 3-A and 3-B"). Discussion Question 6 added to Ch 1 linking back to case study.
 
 #### 2. Complete Wave A (Americas): Expand Chs. 4-5
-- **Status:** Both chapters have initial prose drafts including services trade content. Need expansion to target length (30-40 pages), Data in Depth boxes, Spatial Data Challenge boxes, Institutional Spotlight sidebars, climate sections, and Convergence Diagnostic figures.
+- **Completed (2026-02-26):** Ch 4 expanded with IRA/green industrial policy subsection, Mode 2 international education section, and two Spatial Data Challenge boxes (Mode 3 FDI measurement gap; remoteability estimation mismatch). Ch 5 expanded with Central American climate migration subsection and two Spatial Data Challenge boxes (informal trade undercounting; diagnosing premature deindustrialization in heterogeneous services).
 - **Lab 1** is complete and validated.
+- **Remaining:** Convergence Diagnostic figures (placeholder only — requires actual data visualization).
 
 ### Tier 2: High Priority
 
