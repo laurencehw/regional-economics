@@ -13,7 +13,7 @@
 | 1 | Chapter specs empty for Parts II–VII (rev 1) | **Closed** | All 18 specs detailed as of 2026-02-26 |
 | 2 | Data acquisition not started (rev 1) | **Partially closed** | WDI, Comtrade, BTS, LPI, WIOD, TiVA, NUTS-2, ACLED (count-only), UNHCR acquired; VIIRS requires license (blocker), Afrobarometer template-only |
 | 3 | Risk of overextension (rev 1) | **Mitigated** | Phased plan with review gates; Waves A+B complete before proceeding to Waves C–E |
-| 4 | Lab code untested on real data (rev 1) | **Closed** | Lab 1 SAR on 34 economies; Lab 4 RDD on Eurostat NUTS-2; Lab 5 SCM with UNHCR/ACLED panel. Lab 6 still synthetic only |
+| 4 | Lab code untested on real data (rev 1) | **Closed** | Lab 1 SAR on 34 economies; Lab 4 RDD on Eurostat NUTS-2; Lab 5 SCM with UNHCR/ACLED panel; Lab 6 real-data testing tracked separately under Issue #14 |
 | 5 | Missing test infrastructure (rev 1) | **Closed** | 19 smoke tests, GitHub Actions CI, top-level pytest.ini; all passing |
 | 6 | Institutional analysis underspecified (rev 1) | **Closed** | Each regional spec has named variable, measurement strategy, and spatial interaction term |
 | 7 | Companion specs (5, 7, 9, 11, 13) still stubs (rev 2) | **Closed** | All 18 specs now detailed — Chs 5, 10, 12 filled in 2026-02-26 session |
@@ -30,7 +30,7 @@
 | 18 | Numerical inconsistency in Ch 5 (rev 5) | **Closed** | "six CEPALSTAT countries" → "five" to match Data in Depth enumeration |
 | 19 | Services trade undercounting stat discrepancy (rev 5) | **Closed** | Ch 3-A and Ch 3-B now use consistent "50–70 percent larger" framing |
 
-**Summary:** 16 of 19 issues closed, 1 mitigated, 1 partially closed, 1 open.
+**Summary:** 16 of 19 issues effectively closed (including 1 mostly closed and 1 substantially closed), 1 mitigated, 1 partially closed, 1 open.
 
 ---
 
