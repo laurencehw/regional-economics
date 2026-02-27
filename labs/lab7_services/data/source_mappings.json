@@ -1,0 +1,24 @@
+{
+  "trade": {
+    "exporter_col": "exporter",
+    "importer_col": "importer",
+    "year_col": "year",
+    "services_col": "services_trade",
+    "goods_col": "goods_trade"
+  },
+  "gravity": {
+    "origin_col": "iso_o",
+    "destination_col": "iso_d",
+    "dist_col": "dist",
+    "contiguity_col": "contig",
+    "language_col": "comlang_ethno",
+    "colony_col": "colony",
+    "legal_col": "comleg_posttrans"
+  },
+  "stri": {
+    "country_col": "country",
+    "year_col": "year",
+    "sector_col": "sector",
+    "score_col": "stri_score"
+  }
+}

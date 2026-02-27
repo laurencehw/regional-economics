@@ -222,7 +222,7 @@ Key references anchoring this thread:
 | B (Africa) | Chs. 13–14 | Expanded drafts (~309 + ~388 lines); Sahel climate, e-govt, eco-tourism, services protocol, 2 SDC boxes; cross-refs updated | Lab 6: Scaffolded + VIIRS fetch script built |
 | C (East Asia) | Chs. 6–7 | Ch. 6 complete first draft (~335 lines); Ch. 7 first draft (~227 lines) | Lab 2: Scaffolded (TiVA wired) |
 | C' (South Asia) | Ch. 8 | First draft (~228 lines); STPI, task trading, brain circulation, telemedicine, Bangladesh comparator, 2 SDC boxes | Lab 3: Complete (concentration scaffold + smoke tests) |
-| D (Europe) | Chs. 9–10 | Not started | Lab 4: Scaffolded (NUTS-2 wired) |
+| D (Europe) | Chs. 9–10 | First drafts complete; Ch. 9: VoC, Cohesion Funds, S3, Bologna/Erasmus, Services Directive, London/Brexit, 2 SDC boxes; Ch. 10: eurozone crisis, CEE integration, Brexit geography of discontent, 2 SDC boxes | Lab 4: Complete (RDD scaffold + real-data specs) |
 | E (MENA) | Chs. 11–12 | Not started | Lab 5: Partially complete (SCM baselines) |
 
 ### Phase 3 Status (Synthesis)
@@ -236,8 +236,8 @@ Key references anchoring this thread:
 
 | Script | Status |
 |---|---|
-| `gravity_services_scaffold.py` | Not started |
-| `stri_tariff_equivalent.py` | Not started |
+| `gravity_services_scaffold.py` | Complete (PPML estimation, services vs. goods comparison, smoke tests) |
+| `stri_tariff_equivalent.py` | Complete (STRI-to-tariff conversion, smoke tests) |
 | `servicification_decomposition.py` | Not started |
 | `cloud_geography_mapper.py` | Not started |
 | `fetch_wto_services_trade.py` | Not started |
