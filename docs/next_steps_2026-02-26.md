@@ -55,7 +55,7 @@ This document captures the current project state and prioritized next steps base
 ### Tier 2: High Priority
 
 #### 3. Complete Wave B (Africa): Expand Chs. 13 and 14
-- **Status:** Ch. 13 has initial prose (265 lines). Ch. 14 has initial prose (326 lines). Both need expansion to target length.
+- **Completed (2026-02-26):** Ch. 13 expanded with Sahel climate-migration subsection (Lake Chad, Dell/Jones/Olken, distress urbanization), e-government/digital-ID subsection (Rwanda Irembo, Nigeria BVN/NIN, Ganapati & Ravi), and Spatial Data Challenge box (GDP rebasing, gas-flare masking, VIIRS limits). Ch. 14 expanded with eco-tourism corridors subsection (KAZA UniVisa, Serengeti-Mara revenue sharing, Virunga conflict vulnerability), new §14.5 on the AfCFTA Protocol on Trade in Services (mobile money interoperability, Mode 3 banking, professional MRAs), and Spatial Data Challenge box (mirror statistics divergence, zero trade flows, PPML lower-bounds caveat). Sections renumbered: old §14.5 Lab 6 → §14.6; old §14.6 Conclusion → §14.7.
 
 #### 4. ~~Fill Remaining Stub Chapter Specs (Chs. 10, 12)~~ **Done** (2026-02-26)
 - Both specs now fully detailed with core thesis, key arguments, institutional variables, datasets, references, and lab linkage.
