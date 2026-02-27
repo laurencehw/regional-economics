@@ -22,7 +22,7 @@
 | 10 | No top-level requirements.txt (rev 2) | **Closed** | Root `requirements.txt` in place; all 6 used packages listed |
 | 11 | No data storage strategy (rev 2) | **Closed** | `docs/data_storage_strategy.md` established |
 | 12 | Border proxy coverage (3/44) (rev 2) | **Closed** | LPI blend prototype completed; interaction specs run |
-| 13 | No chapter prose (rev 3) | **Substantially closed** | 8+1 chapters drafted; Waves A+B complete with climate, services, and SDC box content; Ch 6 first draft |
+| 13 | No chapter prose (rev 3) | **Substantially closed** | 8+1 chapters drafted; Waves A+B complete with climate, services, and SDC box content; Ch 6 & Ch 7 first drafts |
 | 14 | Lab 6 untested on real data (rev 3) | **Open** | Still synthetic only; VIIRS license is blocker |
 | 15 | Stale cross-references after Ch 3 split and lab renumbering (rev 5) | **Closed** | 20+ stale "Chapter 3" → "Chapter 3-A/3-B" refs fixed; 5 wrong chapter xrefs fixed (Ch 12→13, Ch 6→8); 3 stale lab numbers fixed (Lab 5→6); old ch03_the_modern_spatial_toolkit.md deleted |
 | 16 | Typos and grammatical errors (rev 5) | **Closed** | "a engine"→"an engine", "understated"→"understate", "incumbant"→"incumbent", "arterie"→"artery" |
