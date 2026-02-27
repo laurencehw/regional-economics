@@ -140,6 +140,8 @@ The VoC framework was developed at the national level, but its logic extends to 
 
 Chapter 9 (Europe) develops the VoC framework's spatial implications in detail, examining how the CME-LME distinction shapes the EU's core-periphery dynamics, the post-socialist transition, and the geography of the Eurozone crisis.
 
+The VoC framework has particular consequences for services trade that will recur throughout this book. CMEs tend to develop strong professional and business services sectors — engineering consulting, industrial design, logistics optimization — that complement their incremental-innovation manufacturing base. LMEs tend to develop strong advanced producer services (APS) sectors — finance, law, management consulting, advertising — that serve their fluid capital markets. The mismatch problem extends to services: when CEE economies attracted CME-type manufacturing through FDI (Chapter 10), the associated business services — legal compliance, accounting, logistics coordination — were initially imported from Western European CMEs rather than developing locally. The gradual development of CEE nearshore business services hubs (Warsaw, Prague, Bucharest) represents an institutional catch-up process: building the regulatory frameworks, professional training systems, and reputational capital needed to provide these services domestically rather than importing them. This is related variety applied to services — each new service capability is built on the institutional foundation of the previous one, following a relatedness gradient analogous to the product space for goods.
+
 ---
 
 ## 2.5 Informal Institutions: Compensation, Entrenchment, and the Gray Zone

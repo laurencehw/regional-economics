@@ -152,7 +152,7 @@ $$
 y = X\beta + u, \qquad u = \lambda Wu + \varepsilon, \qquad \varepsilon \sim N(0, \sigma^2 I)
 $$
 
-Here $\lambda$ captures the degree of spatial correlation in the disturbances. The SEM does not claim that neighbors' outcomes directly affect one another — it claims that neighbors share unobserved shocks. The practical consequence is that OLS estimates of $\beta$ remain consistent (no omitted variable bias from $Wy$), but standard errors computed under the independence assumption are wrong, typically too small. The SEM corrects the variance-covariance matrix.
+Here $\lambda$ captures the degree of spatial correlation in the disturbances. (Note: $\lambda$ denotes the spatial error parameter throughout this chapter; Chapter 1 uses $\lambda$ for the manufacturing share in the core-periphery model. The two usages are standard in their respective literatures and do not overlap in any equation.) The SEM does not claim that neighbors' outcomes directly affect one another — it claims that neighbors share unobserved shocks. The practical consequence is that OLS estimates of $\beta$ remain consistent (no omitted variable bias from $Wy$), but standard errors computed under the independence assumption are wrong, typically too small. The SEM corrects the variance-covariance matrix.
 
 The SEM is appropriate when the analyst believes that spatial patterns in the outcome are driven entirely by shared exposure to omitted variables — common weather shocks across adjacent agricultural regions, shared exposure to a national fiscal policy, or similar regulatory environments that the model does not explicitly control for. In practice, the SEM is also useful as a diagnostic: if a SAR specification produces a small $\rho$ but a large $\lambda$ in the residuals, the spatial pattern is likely in the errors, not the outcomes.
 
@@ -411,7 +411,7 @@ $$
 y_{it} = \tau y_{i,t-1} + \rho W y_{it} + x_{it}'\beta + \mu_i + \gamma_t + \varepsilon_{it}
 $$
 
-The coefficient $\tau$ captures temporal persistence (how much of this year's growth is predicted by last year's) and $\rho$ captures contemporaneous spatial spillovers. The interaction between the two is important: if $\tau$ is large and $\rho$ is moderate, a local shock first propagates to neighbors (the spatial channel) and then persists in both the origin and destination regions (the temporal channel), generating long-lived spatial clusters from one-time innovations. This is the econometric expression of the lock-in dynamics that Chapter 2 described theoretically.
+The coefficient $\tau$ captures temporal persistence (how much of this year's growth is predicted by last year's). (Note: $\tau$ denotes the temporal autoregressive parameter here; Chapter 1 uses $\tau$ for iceberg transport costs in the NEG model.) and $\rho$ captures contemporaneous spatial spillovers. The interaction between the two is important: if $\tau$ is large and $\rho$ is moderate, a local shock first propagates to neighbors (the spatial channel) and then persists in both the origin and destination regions (the temporal channel), generating long-lived spatial clusters from one-time innovations. This is the econometric expression of the lock-in dynamics that Chapter 2 described theoretically.
 
 Lab 2 (Asia) uses panel convergence specifications that relate initial income to subsequent growth rates across countries and time periods, with spatial lags capturing whether convergence is influenced by neighbors' performance — a spatial $\beta$-convergence test.
 
