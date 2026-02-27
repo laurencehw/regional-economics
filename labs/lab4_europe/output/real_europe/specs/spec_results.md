@@ -1,4 +1,4 @@
-# Real-Europe Lab 3 RDD Spec Comparison
+# Real-Europe Lab 4 RDD Spec Comparison
 
 | Spec | Status | Year | n_obs | n_eff | tau | se | p-value | BW | Kernel | Notes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|---|

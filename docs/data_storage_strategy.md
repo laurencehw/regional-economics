@@ -37,5 +37,5 @@ Before using a new dataset in prose or code, add:
 
 ## Upcoming Pressure Points
 - Lab 2 MRIO tables (WIOD/ADB MRIO/OECD TiVA) can exceed practical git sizes.
-- Lab 4 ACLED event data may have license-based redistribution limits; keep raw files external and commit only metadata/templates.
-- Lab 5 VIIRS raster files are expected to be large and should remain external with scripted pulls.
+- Lab 5 ACLED event data may have license-based redistribution limits; keep raw files external and commit only metadata/templates.
+- Lab 6 VIIRS raster files are expected to be large and should remain external with scripted pulls.

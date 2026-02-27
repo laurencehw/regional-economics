@@ -209,7 +209,7 @@ Key references anchoring this thread:
 
 | Chapter | Prose | Key Content | Review |
 |---|---|---|---|
-| Ch. 1 | Draft complete (361 lines) | Spatial paradox of intangibility | Needs opening case study (Bangalore vs Kolkata) |
+| Ch. 1 | Draft complete (381 lines) | Spatial paradox of intangibility + Bangalore vs Kolkata case study | Opening case study added; cross-refs updated to 3-A/3-B |
 | Ch. 2 | Draft revised (233 lines) | Institutional toolkit | Slimmed: path-dependency case studies condensed, VoC condensed with forward refs to Chs. 5, 6, 9 |
 | Ch. 3-A | Split from Ch. 3 (559 lines) | Spatial econometrics | Lab references updated to new numbering; section numbers renumbered to 3A.x |
 | Ch. 3-B | New draft (236 lines) | Trade measurement & gravity | PPML gravity, GATS modes, servicification, TiVA decomposition, trading tasks framework |
@@ -218,9 +218,9 @@ Key references anchoring this thread:
 
 | Wave | Chapters | Prose Status | Lab Status |
 |---|---|---|---|
-| A (Americas) | Chs. 4–5 | Initial drafts (352 + 307 lines); need expansion | Lab 1: Complete |
-| B (Africa) | Chs. 13–14 | Ch. 13 initial draft (265 lines); Ch. 14 initial draft (326 lines) | Lab 6: Scaffolded + VIIRS fetch script built |
-| C (East Asia) | Chs. 6–7 | Ch. 6 complete first draft (~10,273 words); Ch. 7 not started | Lab 2: Scaffolded (TiVA wired) |
+| A (Americas) | Chs. 4–5 | Expanded drafts (~400 + ~359 lines); IRA, Mode 2, climate, 4 SDC boxes; cross-refs updated to 3-A/3-B | Lab 1: Complete |
+| B (Africa) | Chs. 13–14 | Expanded drafts (~309 + ~388 lines); Sahel climate, e-govt, eco-tourism, services protocol, 2 SDC boxes; cross-refs updated | Lab 6: Scaffolded + VIIRS fetch script built |
+| C (East Asia) | Chs. 6–7 | Ch. 6 complete first draft (~335 lines); Ch. 7 first draft (~227 lines) | Lab 2: Scaffolded (TiVA wired) |
 | C' (South Asia) | Ch. 8 | Not started | Lab 3: Scaffolded (directory created) |
 | D (Europe) | Chs. 9–10 | Not started | Lab 4: Scaffolded (NUTS-2 wired) |
 | E (MENA) | Chs. 11–12 | Not started | Lab 5: Partially complete (SCM baselines) |
