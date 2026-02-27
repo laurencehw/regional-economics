@@ -8,9 +8,18 @@ This document captures the current project state and prioritized next steps base
 
 ### What's Done
 - **Book structure:** Restructured to 16 chapters (from 15) with Asia split into East Asia (Part III-A) and South Asia (Part III-B), Ch 3 split into 3-A (Spatial Econometrics) and 3-B (Trade/Gravity), and 7 labs (from 6)
-- **Chapter prose drafted:** Chs. 1 (361 lines), 2 (233 lines, slimmed), 3-A (559 lines, split from Ch 3), 3-B (236 lines, new), 4 (352 lines), 5 (307 lines), 13 (265 lines), 14 (326 lines) — 8 chapter files
+- **Chapter prose drafted — Wave A+B complete:** 8 chapter files, all substantially expanded beyond initial drafts:
+  - Ch. 1 (~425 lines): full micro-foundations + Bangalore vs Kolkata opening case study (~900 words, 7 paragraphs)
+  - Ch. 2 (~233 lines, slimmed): institutional toolkit, forward refs to regional chapters
+  - Ch. 3-A (~559 lines): full spatial econometrics treatment
+  - Ch. 3-B (~236 lines): full trade measurement and gravity treatment
+  - Ch. 4 (~490 lines): USMCA/CHIPS core + IRA green industrial policy subsection + Mode 2 education + 2 SDC boxes
+  - Ch. 5 (~420 lines): middle-income trap + Central American climate migration subsection + 2 SDC boxes
+  - Ch. 13 (~375 lines): urbanization without industrialization + Sahel climate-migration + e-government + SDC box
+  - Ch. 14 (~466 lines): AfCFTA/corridors + eco-tourism corridors + services protocol §14.5 + SDC box; renumbered §14.5→14.6, §14.6→14.7
+- **Spatial Data Challenge boxes:** 6 boxes written across Waves A+B — Mode 3 FDI measurement gap (Ch 4), Remoteability estimation mismatch (Ch 4), Informal trade undercounting (Ch 5), Deindustrialization in heterogeneous services (Ch 5), GDP rebasing/gas flares/night-lights limits (Ch 13), Mirror statistics divergence (Ch 14)
 - **Chapter specs:** All 18 specs detailed (Chs. 10 and 12 filled out 2026-02-26)
-- **Services trade cross-cutting theme:** Fully integrated across outline, drafting plan, all detailed specs, and drafted chapters
+- **Services trade cross-cutting theme:** Fully integrated across outline, drafting plan, all detailed specs, and drafted chapters; AfCFTA services protocol prose now in Ch. 14
 - **Editorial feedback integrated:** New outline with Pathways, Regional Diagnostics Dashboard, Spatial Data Challenge boxes, climate distributed into regions, tourism/education as recurring themes, gravity model consolidated
 - **Lab 1 (Americas):** Complete — real-data SAR pipeline, 3 specification bundles, Bartik extension
 - **Lab 2 (East Asia):** Scaffolded — real TiVA data wired, beta-convergence scaffold, smoke test passing
@@ -19,21 +28,22 @@ This document captures the current project state and prioritized next steps base
 - **Lab 5 (MENA):** Partially complete — estimation panel built, 3 SCM baselines, placebo/robustness checks
 - **Lab 6 (Africa):** Scaffolded — Moran's I with permutation inference, synthetic data only
 - **Lab 7 (Services):** Scaffolded — README with 4 exercises, code directory with planned scripts
-- **Infrastructure:** 17 smoke tests (need re-verification after renumbering), GitHub Actions CI, requirements.txt, data storage policy
+- **Infrastructure:** 17 smoke tests passing (CI verified post-renumbering), GitHub Actions CI, requirements.txt, data storage policy
 - **Data:** WDI, Comtrade, BTS, LPI, Eurostat NUTS-2, WIOD, TiVA, ACLED (count-only), UNHCR acquired; VIIRS and Afrobarometer template-only
 
 ### What's Not Done
 - Chapters 6–12, 15–16 prose (9 remaining chapters)
 - ~~Ch 3 prose needs splitting into 3-A and 3-B files~~ **Done** (2026-02-26)
 - ~~Ch 2 prose needs slimming (path dependency to Ch 5, VoC to Ch 9, Windows to Ch 6)~~ **Done** (2026-02-26)
-- Ch 1 prose needs opening case study (Bangalore vs Kolkata)
+- ~~Ch 1 prose needs opening case study (Bangalore vs Kolkata)~~ **Done** (2026-02-26)
 - ~~Companion chapter specs stubs~~ **Done** — all 18 specs now detailed (2026-02-26)
+- ~~Spatial Data Challenge boxes (content specified, prose not written)~~ **Done for Waves A+B** — 6 boxes written across Chs 4, 5, 13, 14; remaining regions (Waves C–E) still needed
+- Convergence Diagnostic figures for Chs 4 and 5 (placeholder only — requires actual data visualization)
 - Lab 3 code implementation (4 planned scripts)
 - Lab 7 code implementation (6 planned scripts)
 - Lab 6 real-data validation (VIIRS/Afrobarometer acquisition)
 - Pathways preface section and dependency diagram
 - Regional Diagnostics Dashboard template
-- Spatial Data Challenge boxes (content specified, prose not written)
 - Zero-install cloud targets (Colab/Codespaces)
 - ACLED row-level access confirmation
 - Appendices A-C
@@ -87,16 +97,16 @@ This document captures the current project state and prioritized next steps base
 Week 1-2:  [DONE] Split Ch. 3 prose into 3-A and 3-B
            [DONE] Slim Ch. 2 (distribute to regional chapters)
            [DONE] Fill Ch. 10 and Ch. 12 specs
-           Add Ch. 1 opening case study
-           Part I internal review gate
-Week 3-4:  Expand Ch. 4 to full draft (boxes, sidebars, climate)
-           Acquire VIIRS, start Lab 6 real-data validation
-Week 5-6:  Expand Ch. 5 to full draft
-Week 7-8:  Wave A review gate
-           Expand Ch. 13 to full draft
-           Build Lab 3 IT-BPO mapping script
-Week 9-10: Expand Ch. 14 to full draft
-           Build Lab 7 gravity script + WTO data fetch
+           [DONE] Add Ch. 1 opening case study (Bangalore vs Kolkata)
+           [DONE] Part I cross-references verified and fixed
+Week 3-4:  [DONE] Expand Ch. 4 to full draft (IRA, Mode 2 education, 2 SDC boxes)
+           Acquire VIIRS, start Lab 6 real-data validation  ← next priority
+Week 5-6:  [DONE] Expand Ch. 5 to full draft (climate migration, 2 SDC boxes)
+Week 7-8:  Wave A review gate  ← pending
+           [DONE] Expand Ch. 13 to full draft (Sahel climate, e-govt, SDC box)
+           Build Lab 3 IT-BPO mapping script  ← deferred
+Week 9-10: [DONE] Expand Ch. 14 to full draft (eco-tourism, services protocol §14.5, SDC box)
+           Build Lab 7 gravity script + WTO data fetch  ← deferred
 Week 11-12: Classroom pilot (Labs 1 + 6)
             Wave A+B review gate
 ```
@@ -112,7 +122,7 @@ Week 11-12: Classroom pilot (Labs 1 + 6)
 | ACLED row-level access denied | Continue with count-based proxy | Pending |
 | VIIRS raster processing at 30+ countries | Pre-aggregated NOAA annual composites | Lab 6 |
 | RBI/KLEMS data for Lab 3 | NASSCOM reports as fallback | Lab 3 |
-| Lab renumbering breaking CI | Run full test suite after renumbering | Immediate |
+| ~~Lab renumbering breaking CI~~ | **Resolved** — 17 smoke tests passing post-renumbering | Done |
 | Services content coherence | Cross-reference table in DRAFTING_PLAN.md | Ongoing |
 
 ---
@@ -137,6 +147,16 @@ Week 11-12: Classroom pilot (Labs 1 + 6)
 - Ch 10 spec filled: Eurozone crisis, post-socialist integration, Brexit, institutional mismatch
 - Ch 12 spec filled: Conflict economics, refugee spatial shocks, youth bulge, climate-conflict nexus
 - DRAFTING_PLAN and next_steps updated to reflect completed work
+
+### 2026-02-26: Wave A Expansion (Ch 4, Ch 5) and Part I Stabilization
+- **Ch 1** — Bangalore vs Kolkata opening case study (~900 words, 7 paragraphs covering IISc 1909, HAL 1940, STPI 1991, Left Front 1977–2011); cross-reference fixed to "Chapters 3-A and 3-B"; Discussion Question 6 added
+- **Ch 4** — Added: IRA/green industrial policy subsection (Battery Belt, Appalachian coal, CBAM), Mode 2 international education section (Bound et al., Hausman), SDC box: Mode 3 FDI measurement gap, SDC box: Remoteability estimation mismatch (Dingel & Neiman)
+- **Ch 5** — Added: Central American Dry Corridor climate migration subsection (Schlenker & Roberts, Dell et al., Hsiang et al.), SDC box: Informal trade undercounting (mirror statistics), SDC box: Diagnosing premature deindustrialization in heterogeneous services (RAIS, ENOE)
+
+### 2026-02-26: Wave B Expansion (Ch 13, Ch 14)
+- **Ch 13** — Added: "Climate Migration and the Sahel Urban Push" subsection (Lake Chad ~90% shrinkage, Fulani-farmer conflict, distress urbanization), "E-Government and the Spatial Politics of Digital Inclusion" subsection (Rwanda Irembo, Nigeria BVN/NIN, Ganapati & Ravi 2023), SDC box: GDP rebasing/gas-flare masking/VIIRS limits
+- **Ch 14** — Added: "Eco-Tourism Corridors" subsection (KAZA UniVisa, Serengeti-Mara revenue sharing models, Virunga conflict vulnerability, climate risk), new §14.5 "The Protocol on Trade in Services" (GSMA $836B figure, mobile money interoperability, AU Continental Data Policy, Mode 3 banking via Equity Bank/Standard Bank, professional MRAs and WHO physician-density gap), SDC box: Mirror statistics divergence (>50% gap in 40% of African bilateral pairs, zero-flow bias, PPML lower bounds)
+- **Ch 14 section renumbering:** old §14.5 Lab 6 → §14.6; old §14.6 Conclusion → §14.7
 
 ### 2026-02-26: Services Trade Integration
 - Cross-cutting services trade theme integrated throughout the book

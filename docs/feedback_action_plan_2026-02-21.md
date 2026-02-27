@@ -2,6 +2,13 @@
 
 This plan consolidates reviewer feedback received through 2026-02-21 and maps each point to an execution step.
 
+## Progress Update (2026-02-26)
+- **Wave A complete:** Ch 4 expanded with IRA green industrial policy, Mode 2 education, 2 SDC boxes. Ch 5 expanded with Central American Dry Corridor climate migration, 2 SDC boxes.
+- **Wave B complete:** Ch 13 expanded with Sahel climate-migration subsection, e-government/digital-ID subsection, SDC box. Ch 14 expanded with eco-tourism corridors subsection, new §14.5 on AfCFTA Protocol on Trade in Services (mobile money interoperability, Mode 3 banking, professional MRAs), SDC box on mirror statistics.
+- **All 18 specs detailed:** Chs 5, 10, 12 filled in; P3 companion-specs item closed.
+- **Ch 1 opening case study:** Bangalore vs Kolkata (~900 words) added; Part I cross-references verified.
+- **CI verified:** 17 smoke tests passing post-renumbering; lab renumbering risk resolved.
+
 ## Progress Update (2026-02-24)
 - WIOD pull expanded to full WIOTS packages (`WIOTS_in_R.zip`, `WIOTS_in_EXCEL.zip`) with size-validated manifest logging.
 - OECD TiVA constrained extract pulled for core Asia economies.
@@ -25,7 +32,7 @@ This plan consolidates reviewer feedback received through 2026-02-21 and maps ea
 | P2 | Methods transition to Lab 4/5 is steep | Add Chapter 3 bridge content (counterfactual intuition + boundary discontinuities) and mini-primers in Ch. 9/12. | Planned | 2026-03-15 |
 | P2 | Africa lab relevance | Explicitly frame Lab 6 as a nowcasting/on-time measurement use case, not only a data-scarcity workaround. | Done | 2026-02-21 |
 | P2 | Americas thematic parallel | Expand Ch. 4 framing of internal US divergence (superstar metros vs left-behind regions). | Done | 2026-02-21 |
-| P3 | Companion chapter specs (5/7/9/11/13) remain stubs | Keep as Phase 2 backlog; do not block Part I drafting and methods stabilization. | Acknowledged | 2026-03-20 |
+| P3 | Companion chapter specs (5/7/9/11/13) remain stubs | Keep as Phase 2 backlog; do not block Part I drafting and methods stabilization. | **Done** — all 18 specs detailed as of 2026-02-26 | 2026-02-26 |
 
 ## Immediate Execution Queue
 1. Land Lab 6 smoke tests and run full smoke suite (Lab 1 + Lab 6).
