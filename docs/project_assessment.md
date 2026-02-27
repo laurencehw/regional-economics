@@ -1,8 +1,8 @@
 # Project Assessment: The New Regional Economics
 
-**Date:** 2026-02-26 (revision 4)
+**Date:** 2026-02-27 (revision 5)
 **Reviewer:** Claude (automated structural review)
-**Prior reviews:** 2026-02-18 (rev 1), 2026-02-21 (rev 2), 2026-02-21 (rev 3)
+**Prior reviews:** 2026-02-18 (rev 1), 2026-02-21 (rev 2), 2026-02-21 (rev 3), 2026-02-26 (rev 4)
 
 ---
 
@@ -11,21 +11,65 @@
 | # | Issue (rev raised) | Status | Evidence |
 |---|---|---|---|
 | 1 | Chapter specs empty for Parts II–VII (rev 1) | **Closed** | All 18 specs detailed as of 2026-02-26 |
-| 2 | Data acquisition not started (rev 1) | **Partially closed** | WDI, Comtrade, BTS, LPI, WIOD, TiVA, NUTS-2, ACLED (count-only), UNHCR acquired; VIIRS and Afrobarometer template-only |
+| 2 | Data acquisition not started (rev 1) | **Partially closed** | WDI, Comtrade, BTS, LPI, WIOD, TiVA, NUTS-2, ACLED (count-only), UNHCR acquired; VIIRS requires license (blocker), Afrobarometer template-only |
 | 3 | Risk of overextension (rev 1) | **Mitigated** | Phased plan with review gates; Waves A+B complete before proceeding to Waves C–E |
 | 4 | Lab code untested on real data (rev 1) | **Closed** | Lab 1 SAR on 34 economies; Lab 4 RDD on Eurostat NUTS-2; Lab 5 SCM with UNHCR/ACLED panel. Lab 6 still synthetic only |
-| 5 | Missing test infrastructure (rev 1) | **Closed** | 17 smoke tests, GitHub Actions CI, top-level pytest.ini; all passing post-renumbering |
+| 5 | Missing test infrastructure (rev 1) | **Closed** | 19 smoke tests, GitHub Actions CI, top-level pytest.ini; all passing |
 | 6 | Institutional analysis underspecified (rev 1) | **Closed** | Each regional spec has named variable, measurement strategy, and spatial interaction term |
 | 7 | Companion specs (5, 7, 9, 11, 13) still stubs (rev 2) | **Closed** | All 18 specs now detailed — Chs 5, 10, 12 filled in 2026-02-26 session |
 | 8 | Near-zero rho interpretation needed (rev 2) | **Closed** | Gate summary updated with conditional-spillover framing |
 | 9 | Code hygiene: hardcoded paths (rev 2) | **Mostly closed** | `build_lab1_americas_real_raw.py` now uses `Path.home()` |
-| 10 | No top-level requirements.txt (rev 2) | **Closed** | Root `requirements.txt` in place |
+| 10 | No top-level requirements.txt (rev 2) | **Closed** | Root `requirements.txt` in place; all 6 used packages listed |
 | 11 | No data storage strategy (rev 2) | **Closed** | `docs/data_storage_strategy.md` established |
 | 12 | Border proxy coverage (3/44) (rev 2) | **Closed** | LPI blend prototype completed; interaction specs run |
-| 13 | No chapter prose (rev 3) | **Substantially closed** | 8 chapters drafted; Waves A+B complete with climate, services, and SDC box content |
-| 14 | Lab 6 untested on real data (rev 3) | **Open** | Still synthetic only; VIIRS acquisition is next priority |
+| 13 | No chapter prose (rev 3) | **Substantially closed** | 8+1 chapters drafted; Waves A+B complete with climate, services, and SDC box content; Ch 6 first draft |
+| 14 | Lab 6 untested on real data (rev 3) | **Open** | Still synthetic only; VIIRS license is blocker |
+| 15 | Stale cross-references after Ch 3 split and lab renumbering (rev 5) | **Closed** | 20+ stale "Chapter 3" → "Chapter 3-A/3-B" refs fixed; 5 wrong chapter xrefs fixed (Ch 12→13, Ch 6→8); 3 stale lab numbers fixed (Lab 5→6); old ch03_the_modern_spatial_toolkit.md deleted |
+| 16 | Typos and grammatical errors (rev 5) | **Closed** | "a engine"→"an engine", "understated"→"understate", "incumbant"→"incumbent", "arterie"→"artery" |
+| 17 | Section count mismatch in Ch 4 intro (rev 5) | **Closed** | "five sections" → "six sections"; missing §4.5 (services) added to roadmap |
+| 18 | Numerical inconsistency in Ch 5 (rev 5) | **Closed** | "six CEPALSTAT countries" → "five" to match Data in Depth enumeration |
+| 19 | Services trade undercounting stat discrepancy (rev 5) | **Closed** | Ch 3-A and Ch 3-B now use consistent "50–70 percent larger" framing |
 
-**Summary:** 12 of 14 issues closed, 1 mitigated, 1 open.
+**Summary:** 16 of 19 issues closed, 1 mitigated, 1 partially closed, 1 open.
+
+---
+
+## What Changed Since Revision 4
+
+### 1. Wave A+B consistency review completed — 20+ cross-reference errors fixed
+
+A systematic chapter-by-chapter review of all 8+1 drafted chapters uncovered significant stale cross-references from the Ch 3 split (Ch 3 → Ch 3-A/3-B) and the lab renumbering (old Labs 3-5 → new Labs 4-6). Fixes include:
+
+- **20+ "Chapter 3" references** updated to "Chapter 3-A" or "Chapter 3-B" across Chs 4, 5, 13, 14
+- **5 wrong chapter cross-references** fixed: Ch 1 referenced India as Ch 6 (should be Ch 8); Ch 5 referenced Diao/McMillan/Rodrik as Ch 12 (should be Ch 13); Ch 13 referenced the AfCFTA chapter as Ch 13 (should be Ch 14); Ch 14 referenced urbanization thesis as Ch 12 (should be Ch 13) in 4 places; Ch 14 referenced "Section 13.4" (should be Section 14.4)
+- **3 stale lab numbers** fixed: Ch 5 "Lab 5" → "Lab 6" (Africa); data_storage_strategy "Lab 4/5" → "Lab 5/6"; Lab 4 output header "Lab 3" → "Lab 4"
+- **Old ch03_the_modern_spatial_toolkit.md deleted** — the pre-split version was left behind and contained entirely stale references
+
+### 2. Typos, grammatical errors, and inconsistencies fixed
+
+- "a engine" → "an engine" (Ch 4)
+- "will understated" → "will understate" (Ch 4)
+- "incumbant" → "incumbent" (Ch 13)
+- "arterie" → "artery" (Ch 14)
+- "five sections" → "six sections" in Ch 4 intro (Section 4.5 on services was omitted from the roadmap)
+- "six CEPALSTAT countries" → "five" in Ch 5 (matched to Data in Depth enumeration)
+- Services undercounting statistic harmonized between Ch 3-A and Ch 3-B
+
+### 3. DRAFTING_PLAN progress tracker updated
+
+Phase 1 and Phase 2 status tables updated to reflect current line counts and completed content (SDC boxes, climate sections, services thread, cross-reference updates).
+
+### 4. Statistical assertions already in place (contrary to rev 4 recommendation)
+
+Rev 4 recommended adding statistical assertions to Lab 6 smoke tests. Upon audit, these were already present: `moran_i > 0`, `residual_moran_i < moran_i`, symmetric W matrix, row-standardized W, p-value bounds. All labs (1, 2, 4, 5, 6) have comparable statistical assertions in their smoke tests. The CI pipeline is stronger than rev 4 recognized.
+
+### 5. Remaining known issues from review (deferred, not blocking)
+
+- **Notation conflicts across chapters**: $\tau$ means iceberg transport costs in Ch 1 but temporal lag in Ch 3-A; $\lambda$ means manufacturing share in Ch 1 but spatial error parameter in Ch 3-A. These are standard in their respective contexts but should be flagged with notation notes in final manuscript.
+- **Ch 2 services thread is weak**: The institutional chapter does not substantively connect its frameworks to services trade barriers. A paragraph in the VoC section linking CME/LME to service-sector specialization would close the gap.
+- **Ch 2 section numbering inconsistent**: Uses mixed numbered/unnumbered headings unlike Chs 1, 3-A, 3-B.
+- **Part I chapters lack Spatial Data Challenge boxes**: These are present in Waves A/B regional chapters but not in the foundational chapters. May be by design (SDC is a "regional" feature).
+- **Ch 6 needs climate content and expanded services thread**: First draft is complete but lacks climate subsection and could strengthen services trade integration.
 
 ---
 

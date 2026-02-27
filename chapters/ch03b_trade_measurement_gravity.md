@@ -182,7 +182,7 @@ $$
 
 Report the distance elasticity $\hat{\beta}_1$, which should fall in the $-0.9$ to $-1.1$ range.
 
-2. **Services baseline.** Estimate the same specification for bilateral services trade. Report $\hat{\beta}_1$ for services and compare with goods. The services distance elasticity is typically $-1.2$ to $-1.5$ — larger in absolute value than goods.
+2. **Services baseline.** Estimate the same specification for bilateral services trade. Report $\hat{\beta}_1$ for services and compare with goods. The services distance elasticity is typically $-1.2$ to $-1.5$ across the literature — larger in absolute value than goods.
 
 3. **STRI-augmented.** Add the importer's sector-average STRI score to the services gravity specification:
 
