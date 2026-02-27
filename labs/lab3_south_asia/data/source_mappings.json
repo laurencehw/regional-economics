@@ -1,0 +1,10 @@
+{
+  "klems": {
+    "region_col": "state",
+    "year_col": "year",
+    "it_va_col": "it_sector_va",
+    "total_gdp_col": "total_gdp",
+    "it_employment_col": "it_employment",
+    "total_employment_col": "total_employment"
+  }
+}

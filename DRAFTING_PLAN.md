@@ -221,7 +221,7 @@ Key references anchoring this thread:
 | A (Americas) | Chs. 4–5 | Expanded drafts (~400 + ~359 lines); IRA, Mode 2, climate, 4 SDC boxes; cross-refs updated to 3-A/3-B | Lab 1: Complete |
 | B (Africa) | Chs. 13–14 | Expanded drafts (~309 + ~388 lines); Sahel climate, e-govt, eco-tourism, services protocol, 2 SDC boxes; cross-refs updated | Lab 6: Scaffolded + VIIRS fetch script built |
 | C (East Asia) | Chs. 6–7 | Ch. 6 complete first draft (~335 lines); Ch. 7 first draft (~227 lines) | Lab 2: Scaffolded (TiVA wired) |
-| C' (South Asia) | Ch. 8 | Not started | Lab 3: Scaffolded (directory created) |
+| C' (South Asia) | Ch. 8 | First draft (~228 lines); STPI, task trading, brain circulation, telemedicine, Bangladesh comparator, 2 SDC boxes | Lab 3: Complete (concentration scaffold + smoke tests) |
 | D (Europe) | Chs. 9–10 | Not started | Lab 4: Scaffolded (NUTS-2 wired) |
 | E (MENA) | Chs. 11–12 | Not started | Lab 5: Partially complete (SCM baselines) |
 

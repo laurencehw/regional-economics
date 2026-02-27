@@ -1,8 +1,8 @@
 # Project Assessment: The New Regional Economics
 
-**Date:** 2026-02-27 (revision 5)
+**Date:** 2026-02-27 (revision 6)
 **Reviewer:** Claude (automated structural review)
-**Prior reviews:** 2026-02-18 (rev 1), 2026-02-21 (rev 2), 2026-02-21 (rev 3), 2026-02-26 (rev 4)
+**Prior reviews:** 2026-02-18 (rev 1), 2026-02-21 (rev 2), 2026-02-21 (rev 3), 2026-02-26 (rev 4), 2026-02-27 (rev 5)
 
 ---
 
@@ -22,7 +22,7 @@
 | 10 | No top-level requirements.txt (rev 2) | **Closed** | Root `requirements.txt` in place; all 6 used packages listed |
 | 11 | No data storage strategy (rev 2) | **Closed** | `docs/data_storage_strategy.md` established |
 | 12 | Border proxy coverage (3/44) (rev 2) | **Closed** | LPI blend prototype completed; interaction specs run |
-| 13 | No chapter prose (rev 3) | **Substantially closed** | 8+1 chapters drafted; Waves A+B complete with climate, services, and SDC box content; Ch 6 & Ch 7 first drafts |
+| 13 | No chapter prose (rev 3) | **Substantially closed** | 10+1 chapters drafted; Waves A+B complete; Ch 6, 7, 8 first drafts; Lab 3 operational |
 | 14 | Lab 6 untested on real data (rev 3) | **Open** | Still synthetic only; VIIRS license is blocker |
 | 15 | Stale cross-references after Ch 3 split and lab renumbering (rev 5) | **Closed** | 20+ stale "Chapter 3" → "Chapter 3-A/3-B" refs fixed; 5 wrong chapter xrefs fixed (Ch 12→13, Ch 6→8); 3 stale lab numbers fixed (Lab 5→6); old ch03_the_modern_spatial_toolkit.md deleted |
 | 16 | Typos and grammatical errors (rev 5) | **Closed** | "a engine"→"an engine", "understated"→"understate", "incumbant"→"incumbent", "arterie"→"artery" |
@@ -31,6 +31,43 @@
 | 19 | Services trade undercounting stat discrepancy (rev 5) | **Closed** | Ch 3-A and Ch 3-B now use consistent "50–70 percent larger" framing |
 
 **Summary:** 16 of 19 issues effectively closed (including 1 mostly closed and 1 substantially closed), 1 mitigated, 1 partially closed, 1 open.
+
+---
+
+## What Changed Since Revision 5
+
+### 1. Chapter 8 (India and the Geography of IT Services) — first draft complete
+
+Full ~228-line chapter covering:
+- Section 8.1: Bangalore, Hyderabad, Pune, Chennai cluster origins (STPI, agglomeration, Y2K lock-in, tier-2 question)
+- Section 8.2: Grossman–Rossi-Hansberg task-trading framework, smile curve, BPO-to-GCC institutional transition
+- Section 8.3: Brain circulation — IIT-to-Silicon Valley pipeline, diaspora network effects, India as education destination
+- Section 8.4: Telemedicine (Apollo ATNF, eSanjeevani) as Mode 1 test case — limits of digital delivery
+- Section 8.5: Bangladesh garment comparator, SAARC failures, Sri Lanka's debt crisis
+- Section 8.6: Lab 3 connection — concentration indices, smile curve, comparative Gini
+- Includes: 2 Spatial Data Challenge boxes, Data in Depth (state-level IT-BPO mapping with LQ and HHI formulas), Institutional Spotlight (STPI), 6 discussion questions
+
+### 2. Lab 3 (South Asia) — fully operational
+
+Two new scripts following the Lab 1/Lab 6 architectural template:
+- **`prepare_lab3_inputs.py`** — Maps KLEMS IT-sector data to canonical panel (region, year, it_va, total_gdp, it_share, va_per_worker, etc.)
+- **`lab3_concentration_scaffold.py`** — Computes Location Quotients, Herfindahl index, Gini coefficient, and time-series HHI. Includes synthetic data generator (12 Indian states with realistic IT concentration).
+
+Three new smoke tests (all passing):
+- `test_prepare_lab3_inputs_smoke` — validates data mapping from template CSV
+- `test_concentration_scaffold_smoke` — validates HHI > 0.10, Gini > 0.3, Karnataka/Telangana in top LQ
+- `test_prepare_then_concentration_integration` — end-to-end pipeline test
+
+Template data: `klems_it_example.csv` with 9 states × 4 years.
+
+### 3. Colab notebooks created for Labs 1 and 6
+
+- **`Lab1_Americas_SAR.ipynb`** — Walks students through weight matrix construction, SAR estimation, visualization, and real-data loading. Includes 4 exercises.
+- **`Lab6_Africa_Morans_I.ipynb`** — Walks students through adjacency matrix construction, Moran's I computation, permutation testing, and governance residualization. Includes 4 exercises.
+
+Both notebooks are zero-install on Google Colab (only numpy/pandas/scipy required).
+
+### 4. Test suite expanded: 22 tests passing (up from 19)
 
 ---
 
