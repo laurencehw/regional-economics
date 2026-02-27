@@ -223,14 +223,14 @@ Key references anchoring this thread:
 | C (East Asia) | Chs. 6–7 | Ch. 6 complete first draft (~335 lines); Ch. 7 first draft (~227 lines) | Lab 2: Scaffolded (TiVA wired) |
 | C' (South Asia) | Ch. 8 | First draft (~228 lines); STPI, task trading, brain circulation, telemedicine, Bangladesh comparator, 2 SDC boxes | Lab 3: Complete (concentration scaffold + smoke tests) |
 | D (Europe) | Chs. 9–10 | First drafts complete; Ch. 9: VoC, Cohesion Funds, S3, Bologna/Erasmus, Services Directive, London/Brexit, 2 SDC boxes; Ch. 10: eurozone crisis, CEE integration, Brexit geography of discontent, 2 SDC boxes | Lab 4: Complete (RDD scaffold + real-data specs) |
-| E (MENA) | Chs. 11–12 | Not started | Lab 5: Partially complete (SCM baselines) |
+| E (MENA) | Chs. 11–12 | First drafts complete; Ch. 11: rentier theory, NEOM/KAEC/Masdar mega-projects, SWF spatial policy, Australia comparator, Gulf services hub, green hydrogen, 2 SDC boxes; Ch. 12: institutional collapse, displacement geography, youth bulge, climate-conflict nexus, 2 SDC boxes | Lab 5: Partially complete (SCM baselines) |
 
 ### Phase 3 Status (Synthesis)
 
 | Chapter | Prose Status | Spec Status |
 |---|---|---|
-| Ch. 15 | Not started | Partial (climate synthesis thesis and key arguments drafted; institutional spotlight TBD) |
-| Ch. 16 | Not started | Detailed (services-trade synthesis) |
+| Ch. 15 | First draft complete; spatial reallocation framework, Pacific SIDS, stranded regions index, green industrial policy (CBAM/IRA), global comparative spread table | Complete |
+| Ch. 16 | First draft complete; telemigration hypothesis, Splinternet, services trade comparative matrix, fortress blocs vs. flexible networks, frontier methods (ML, causal inference with interference, network models) | Complete |
 
 ### Lab 7 (Services Trade — Cross-Regional Capstone)
 

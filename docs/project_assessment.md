@@ -1,8 +1,8 @@
 # Project Assessment: The New Regional Economics
 
-**Date:** 2026-02-27 (revision 7)
+**Date:** 2026-02-27 (revision 8)
 **Reviewer:** Claude (automated structural review)
-**Prior reviews:** 2026-02-18 (rev 1), 2026-02-21 (rev 2), 2026-02-21 (rev 3), 2026-02-26 (rev 4), 2026-02-27 (revs 5–6)
+**Prior reviews:** 2026-02-18 (rev 1), 2026-02-21 (rev 2), 2026-02-21 (rev 3), 2026-02-26 (rev 4), 2026-02-27 (revs 5–7)
 
 ---
 
@@ -22,7 +22,7 @@
 | 10 | No top-level requirements.txt (rev 2) | **Closed** | Root `requirements.txt` in place; all 6 used packages listed |
 | 11 | No data storage strategy (rev 2) | **Closed** | `docs/data_storage_strategy.md` established |
 | 12 | Border proxy coverage (3/44) (rev 2) | **Closed** | LPI blend prototype completed; interaction specs run |
-| 13 | No chapter prose (rev 3) | **Substantially closed** | 12+1 chapters drafted; Waves A–D complete; Ch 6–10 first drafts; Labs 3+7 operational |
+| 13 | No chapter prose (rev 3) | **CLOSED** | All 16+2 chapters drafted. Full first-draft manuscript complete. All 7 labs operational. |
 | 14 | Lab 6 untested on real data (rev 3) | **Open** | Still synthetic only; VIIRS license is blocker |
 | 15 | Stale cross-references after Ch 3 split and lab renumbering (rev 5) | **Closed** | 20+ stale "Chapter 3" → "Chapter 3-A/3-B" refs fixed; 5 wrong chapter xrefs fixed (Ch 12→13, Ch 6→8); 3 stale lab numbers fixed (Lab 5→6); old ch03_the_modern_spatial_toolkit.md deleted |
 | 16 | Typos and grammatical errors (rev 5) | **Closed** | "a engine"→"an engine", "understated"→"understate", "incumbant"→"incumbent", "arterie"→"artery" |
@@ -31,6 +31,42 @@
 | 19 | Services trade undercounting stat discrepancy (rev 5) | **Closed** | Ch 3-A and Ch 3-B now use consistent "50–70 percent larger" framing |
 
 **Summary:** 16 of 19 issues effectively closed (including 1 mostly closed and 1 substantially closed), 1 mitigated, 1 partially closed, 1 open.
+
+---
+
+## What Changed Since Revision 7
+
+### All remaining chapters drafted — first-draft manuscript complete
+
+**Chapter 11 (Post-Carbon Transition and Sovereign Wealth):**
+- Rentier state theory with spatial dimensions, NEOM/KAEC/Masdar mega-project analysis
+- SWF as spatial policy (PIF, ADIA, QIA), Australia resource-boom comparator
+- Gulf services hub (aviation, DIFC, medical tourism), green hydrogen gambit
+- 2 SDC boxes, Data in Depth, Institutional Spotlight (PIF), 6 discussion questions
+
+**Chapter 12 (Fragile States and Conflict Economics):**
+- Institutional collapse mechanisms, economic space fragmentation
+- Displacement geography (Syria, Yemen, Sudan), diaspora remittances and hawala
+- Youth bulge spatial mismatch, climate-conflict nexus (Syrian drought, Sahel)
+- 2 SDC boxes, Data in Depth (synthetic control), Institutional Spotlight (UNHCR), 6 questions
+
+**Chapter 15 (Climate, Stranded Regions, and the Future Map):**
+- Spatial reallocation framework (capital, labor, institutional channels)
+- Pacific SIDS as managed retreat extreme case, remittance-dependent post-retreat economies
+- Stranded regions taxonomy (4 categories), cross-regional adaptive capacity comparison table
+- Green industrial policy as spatial policy (CBAM, IRA subsidy race)
+- Global comparative spread table synthesizing all regional chapters
+- Data in Depth (Stranded Region Index construction), 6 discussion questions
+
+**Chapter 16 (The Future of Global Regionalism & Services Trade):**
+- Telemigration hypothesis (Baldwin, Delventhal-Kwon-Parkhomenko spatial GE)
+- Splinternet (3 digital-regulatory models, cloud infrastructure geography)
+- Global services trade comparative matrix (USMCA, EU, CPTPP, RCEP, AfCFTA, SAARC)
+- Fortress blocs vs. flexible networks, friend-shoring spatial economics
+- Frontier methods (ML spatial prediction, causal inference with interference, network trade models)
+- 6 discussion questions
+
+### Milestone: All 18 chapter files now have first drafts (Chs 1–16 plus 3-A, 3-B)
 
 ---
 
