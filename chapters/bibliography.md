@@ -196,13 +196,13 @@ Hidalgo, César A., and Ricardo Hausmann. 2009. "The Building Blocks of Economic
 
 Hidalgo, César A., Bailey Klinger, Albert-László Barabási, and Ricardo Hausmann. 2007. "The Product Space Conditions the Development of Nations." *Science* 317(5837): 482--487. [Ch. 2]
 
-Hinnebusch, Raymond. 2018. "The Devastation of Syria." *Third World Quarterly* 39(1): 1--6. [Ch. 12] [incomplete]
+Hinnebusch, Raymond, and Omar Imady, eds. 2018. *The Syrian Uprising: Domestic Origins and Early Trajectory.* London: Routledge. [Ch. 12]
 
 Hsiang, Solomon M., Kyle C. Meng, and Mark A. Cane. 2011. "Civil Conflicts Are Associated with the Global Climate." *Nature* 476(7361): 438--441. [Ch. 13]
 
 Hsieh, Chang-Tai, and Enrico Moretti. 2019. "Housing Constraints and Spatial Misallocation." *American Economic Journal: Macroeconomics* 11(2): 1--39. [Ch. 1]
 
-Huber, Martin, and Andreas Steinmayr. 2021. "A Framework for Estimation of Causal Effects in the Presence of Interference." *Journal of Econometrics* 225(2): 281--302. [Ch. 16] [incomplete]
+Huber, Martin, and Andreas Steinmayr. 2021. "A Framework for Separating Individual-Level Treatment Effects From Spillover Effects." *Journal of Business & Economic Statistics* 39(2): 422--436. [Ch. 16]
 
 Iammarino, Simona, Andrés Rodríguez-Pose, and Michael Storper. 2019. "Regional Inequality in Europe: Evidence, Theory, and Policy Implications." *Journal of Economic Geography* 19(2): 273--298. [Ch. 9]
 
@@ -296,7 +296,7 @@ Nagaraj, Abhishek. 2021. "The Private Impact of Public Data: Landsat Satellite M
 
 Nagaraj, Abhishek, and Scott Stern. 2020. "The Economics of Maps." *Journal of Economic Perspectives* 34(1): 196--221. [Ch. 3A]
 
-Nagaraj, Abhishek, Scott Stern, and Fiona Scott Morton. 2022. "The Effects of Public Data Access: Evidence from the USGS Landsat Archive." Working paper. [Ch. 3A] [incomplete]
+Luca, Michael, Abhishek Nagaraj, and Gauri Subramani. 2022. "Getting on the Map: The Impact of Online Listings on Business Performance." NBER Working Paper 30810. [Ch. 3A]
 
 Neffke, Frank, Martin Henning, and Ron Boschma. 2011. "How Do Regions Diversify over Time? Industry Relatedness and the Development of New Growth Paths in Regions." *Economic Geography* 87(3): 237--265. [Ch. 2]
 
@@ -331,8 +331,6 @@ Rodríguez-Pose, Andrés. 2018. "The Revenge of the Places That Don't Matter (an
 Rodríguez-Pose, Andrés, and Ugo Fratesi. 2004. "Between Development and Social Policies: The Impact of European Structural Funds in Objective 1 Regions." *Regional Studies* 38(1): 97--113. [Ch. 9]
 
 Rodrik, Dani. 2016. "Premature Deindustrialization." *Journal of Economic Growth* 21(1): 1--33. [Ch. 5]
-
-Rodrik, Dani. 2019. [Title unknown -- cited in context of premature deindustrialization and structural change in Africa]. [Ch. 5, Ch. 13] [incomplete]
 
 Rodrik, Dani, Arvind Subramanian, and Francesco Trebbi. 2004. "Institutions Rule: The Primacy of Institutions over Geography and Integration in Economic Development." *Journal of Economic Growth* 9(2): 131--165. [Ch. 2]
 
@@ -380,13 +378,13 @@ Wilmsen, Brooke. 2016. "After the Deluge: A Longitudinal Study of Resettlement a
 
 Winnick, Louis. 1966. "Place Prosperity vs. People Prosperity: Welfare Considerations in the Geographic Redistribution of Economic Activity." In *Essays in Urban Land Economics.* Los Angeles: UCLA Real Estate Research Program. [Ch. 9]
 
-World Bank. 2022. *Remittance Flows in 2022.* Washington, DC: World Bank. [Ch. 12] [incomplete]
+World Bank. 2023. *Migration and Development Brief 39: Remittances Remain Resilient But Are Slowing.* Washington, DC: World Bank. [Ch. 12]
 
-World Bank. 2024. *Migration and Development Brief.* Washington, DC: World Bank. [Ch. 5] [incomplete]
+World Bank. 2024. *Migration and Development Brief 40.* Washington, DC: World Bank. [Ch. 5]
 
 WTO (World Trade Organization). 2023. *World Trade Statistical Review 2023.* Geneva: WTO. [Ch. 16]
 
-Yang, Yang, Yongpeng Ai, and Costas Arkolakis. 2025. "Measuring Economic Activity from Space: The Case of Air Pollution." Working paper. [Ch. 3A, Ch. 16] [incomplete]
+Yang, Anton, Jianwei Ai, and Costas Arkolakis. 2025. "A Geospatial Approach to Measuring Economic Activity." NBER Working Paper 33619. [Ch. 3A, Ch. 16]
 
 Zeltzer, Dan, Liran Einav, Joseph Rashba, and Ran D. Balicer. 2023. "The Impact of Increased Access to Telemedicine." *Journal of the European Economic Association* 21(3): 1020--1062. [Ch. 16]
 
@@ -414,7 +412,7 @@ Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 
 
 ## Consistency Notes and Flags
 
-1. **Rodrik (2019):** Cited in Ch. 5 and Ch. 13 without a specific title. Likely refers to Rodrik, Dani. 2019. "Where Are We in the Economics of Industrial Policies?" or a related piece on premature deindustrialization. Marked [incomplete].
+1. **Rodrik (2019) in Ch. 5 and Ch. 13:** Both chapters cite "Diao, McMillan, and Rodrik (2019)" — the Palgrave Handbook chapter on structural change. No separate solo Rodrik (2019) entry needed.
 
 2. **Henderson (1993) in Ch. 1:** This is Rebecca Henderson, co-author of Jaffe, Trajtenberg, and Henderson (1993) -- not J. Vernon Henderson. Listed under Jaffe, Trajtenberg, and Henderson.
 
@@ -434,7 +432,7 @@ Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 
 
 10. **Iammarino, Rodríguez-Pose, and Storper (2019):** Cited in Ch. 9 without parenthetical year in some instances; included as a full reference.
 
-11. **Nagaraj, Stern, and Scott Morton (2022):** Title uncertain. Marked [incomplete].
+11. **Luca, Nagaraj, and Subramani (2022):** Ch. 3A originally cited as "Nagaraj, Stern, and Scott Morton (2022)" — corrected to Luca, Nagaraj, and Subramani per NBER WP 30810. Chapter text updated.
 
 12. **Chen et al. (2019):** In Ch. 6, cited as "Wei Chen and colleagues (2019)"; in Ch. 7, cited as "Chen et al. (2019)." Same paper -- the *Brookings Papers* forensic examination of China's national accounts.
 
@@ -443,8 +441,8 @@ Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 
 ## Summary Statistics
 
 - **Total unique references (main section):** 195
-- **References with complete bibliographic information:** 188
-- **References marked [incomplete]:** 7
+- **References with complete bibliographic information:** 194
+- **References marked [incomplete]:** 0
 - **Legislation/treaty/policy documents:** 8
 - **Grand total (references + legislation):** 203
 - **Chapters with most citations:** Ch. 1 (33), Ch. 2 (24), Ch. 16 (24), Ch. 3A (20)
