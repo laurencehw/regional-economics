@@ -239,10 +239,10 @@ Key references anchoring this thread:
 | `ppml_estimator.py` | Complete (shared PPML/IRLS estimator with robust SEs; extracted from gravity scaffold) |
 | `gravity_services_scaffold.py` | Complete (PPML estimation, services vs. goods comparison, smoke tests; imports shared estimator) |
 | `stri_tariff_equivalent.py` | Complete (STRI-to-tariff conversion, smoke tests; imports shared estimator) |
-| `servicification_decomposition.py` | Not started |
-| `cloud_geography_mapper.py` | Not started |
-| `fetch_wto_services_trade.py` | Not started |
-| `fetch_oecd_stri.py` | Not started |
+| `servicification_decomposition.py` | **Complete** (TiVA decomposition, 10 countries × 5 sectors × 6 service types; smoke test passing) |
+| `cloud_geography_mapper.py` | **Complete** (15 countries × 3 providers, localization correlation, concentration metrics; smoke test passing) |
+| `fetch_wto_services_trade.py` | **Complete** (smoke-test synthetic + local-csv mode; 20 traders × 6 categories) |
+| `fetch_oecd_stri.py` | **Complete** (smoke-test synthetic + local-csv mode; 30 countries × 5 sectors × 5 years) |
 
 ### Phase 4 Readiness Assessment
 
@@ -253,9 +253,9 @@ All Phase 1–3 prose deliverables are complete (expanded drafts). All 16 chapte
 | 4.1 | Appendix A (Mathematical Foundations) | **Complete** | SAR/SEM/SDM derivations, structural gravity, convergence, Moran's I, notation index |
 | 4.2 | Appendix C (Glossary) | **Complete** | ~80 terms, ~60 acronyms, organized by domain |
 | 4.3 | GIS maps and figures | Not started | Regional Diagnostics Dashboards, comparative spread |
-| 4.4 | Finalize all Applied Lab code | In progress | Labs 1,3,4,7 complete; Lab 5 partial; Labs 2,6 scaffolded; remaining Lab 7 scripts TBD |
+| 4.4 | Finalize all Applied Lab code | In progress | Labs 1,3,4,7 **complete** (all 7 Lab 7 scripts done, 27/27 tests); Lab 5 partial; Labs 2,6 scaffolded (Lab 6 blocked on VIIRS license) |
 | 4.5 | Comparative Spotlight tables | Partially done | Ch 15 global comparative spread drafted |
-| 4.6 | Full manuscript copyedit and reference audit | **In progress** | Gemini consistency review completed 2026-02-28: cross-refs, numbers, citations fixed. Full structural standardization completed: identical ordering (DiD → SDC → Spotlight → Conclusion → DQ) across all 16 chapters; SDC boxes converted to standalone ##; Conclusion numbering stripped; word counts balanced (3-A, 4, 5, 14 trimmed to target). Remaining: bibliography compilation |
+| 4.6 | Full manuscript copyedit and reference audit | **In progress** | Gemini consistency review + structural standardization completed 2026-02-28. Bibliography compiled: 203 entries in `chapters/bibliography.md` (195 academic + 8 legislation/treaty, 7 marked [incomplete]). Remaining: resolve incomplete entries, final proofread |
 | 4.7 | Index preparation | Not started | |
 | 0.3 | Appendix B (Data & Software Guide) | **Complete** | Master dataset inventory, per-lab tech specs, software setup, troubleshooting |
 | 0.8 | "Pathways Through This Book" preface | **Complete** | 5 curated tracks with dependency DAG, instructor notes |
