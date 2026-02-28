@@ -327,7 +327,7 @@ The complication is the spatial spillover problem. If Cohesion Fund transfers to
 
 ### The Synthetic Control Method (Lab 5: MENA)
 
-When the treatment is a rare, large event — a civil war, an oil price shock, the imposition of sanctions — there is no threshold to exploit and no comparison group that arises naturally. The Synthetic Control Method (Abadie, Hesterberg, and Diamond, 2010) constructs a counterfactual by finding a weighted combination of untreated "donor" regions that best matches the treated region's pre-treatment trajectory.
+When the treatment is a rare, large event — a civil war, an oil price shock, the imposition of sanctions — there is no threshold to exploit and no comparison group that arises naturally. The Synthetic Control Method (Abadie, Diamond, and Hainmueller 2010) constructs a counterfactual by finding a weighted combination of untreated "donor" regions that best matches the treated region's pre-treatment trajectory.
 
 The logic is straightforward:
 
