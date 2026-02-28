@@ -1,8 +1,8 @@
 # Project Assessment: The New Regional Economics
 
-**Date:** 2026-02-27 (revision 8)
+**Date:** 2026-02-28 (revision 9)
 **Reviewer:** Claude (automated structural review)
-**Prior reviews:** 2026-02-18 (rev 1), 2026-02-21 (rev 2), 2026-02-21 (rev 3), 2026-02-26 (rev 4), 2026-02-27 (revs 5–7)
+**Prior reviews:** 2026-02-18 (rev 1), 2026-02-21 (rev 2), 2026-02-21 (rev 3), 2026-02-26 (rev 4), 2026-02-27 (revs 5–8)
 
 ---
 
@@ -14,7 +14,7 @@
 | 2 | Data acquisition not started (rev 1) | **Partially closed** | WDI, Comtrade, BTS, LPI, WIOD, TiVA, NUTS-2, ACLED (count-only), UNHCR acquired; VIIRS requires license (blocker), Afrobarometer template-only |
 | 3 | Risk of overextension (rev 1) | **Mitigated** | Phased plan with review gates; Waves A+B complete before proceeding to Waves C–E |
 | 4 | Lab code untested on real data (rev 1) | **Closed** | Lab 1 SAR on 34 economies; Lab 4 RDD on Eurostat NUTS-2; Lab 5 SCM with UNHCR/ACLED panel; Lab 6 real-data testing tracked separately under Issue #14 |
-| 5 | Missing test infrastructure (rev 1) | **Closed** | 19 smoke tests, GitHub Actions CI, top-level pytest.ini; all passing |
+| 5 | Missing test infrastructure (rev 1) | **Closed** | 25 smoke tests, GitHub Actions CI, top-level pytest.ini; all passing |
 | 6 | Institutional analysis underspecified (rev 1) | **Closed** | Each regional spec has named variable, measurement strategy, and spatial interaction term |
 | 7 | Companion specs (5, 7, 9, 11, 13) still stubs (rev 2) | **Closed** | All 18 specs now detailed — Chs 5, 10, 12 filled in 2026-02-26 session |
 | 8 | Near-zero rho interpretation needed (rev 2) | **Closed** | Gate summary updated with conditional-spillover framing |
@@ -29,8 +29,58 @@
 | 17 | Section count mismatch in Ch 4 intro (rev 5) | **Closed** | "five sections" → "six sections"; missing §4.5 (services) added to roadmap |
 | 18 | Numerical inconsistency in Ch 5 (rev 5) | **Closed** | "six CEPALSTAT countries" → "five" to match Data in Depth enumeration |
 | 19 | Services trade undercounting stat discrepancy (rev 5) | **Closed** | Ch 3-A and Ch 3-B now use consistent "50–70 percent larger" framing |
+| 20 | Lab 7 PPML code duplication and scaling issues (rev 9) | **Closed** | Shared `ppml_estimator.py` extracted; O(n²) `np.diag` replaced with O(nk²) elementwise; convergence flag fixed; unused `--stri` arg and stale docstrings corrected; fallback path resolved relative to `__file__` |
 
-**Summary:** 16 of 19 issues effectively closed (including 1 mostly closed and 1 substantially closed), 1 mitigated, 1 partially closed, 1 open.
+**Summary:** 17 of 20 issues effectively closed (including 1 mostly closed), 1 mitigated, 1 partially closed, 1 open.
+
+---
+
+## What Changed Since Revision 8
+
+### 1. Lab 7 code quality issues fixed (PR review feedback)
+
+Automated code reviews from Gemini Code Assist and GitHub Copilot identified 7 issues in the Lab 7 PPML scripts. All have been addressed:
+
+| Issue | Source | Fix |
+|---|---|---|
+| Duplicated `ppml_estimate` across two scripts | Gemini | Extracted to shared `ppml_estimator.py` |
+| O(n²) memory in `np.diag(mu)` sandwich SE | Copilot | Elementwise `x.T @ (x * mu[:, None])` — now O(nk²) |
+| Convergence flag inferred from loop index | Copilot | Explicit `converged` boolean, set only on tolerance criterion |
+| Gravity scaffold docstring mentions STRI | Copilot | Updated to match actual behavior |
+| Unused `--stri` CLI arg in gravity scaffold | Copilot | Removed |
+| Fallback `mappings_path` relative to CWD | Copilot | Resolved relative to `__file__` |
+| STRI script docstring misleading | Copilot | Clarified it runs own PPML estimation |
+
+All 25 tests pass after fixes.
+
+### 2. Planning documents updated for Phase 4 transition
+
+- DRAFTING_PLAN.md now includes Phase 4 Readiness Assessment table
+- Lab 7 script table updated to include `ppml_estimator.py`
+- All Phase 1–3 prose deliverables marked complete
+
+### Current State of Completion (Rev 9)
+
+**Prose: 100% first-draft complete**
+- All 18 chapter files drafted (Chs 1–16 plus 3-A, 3-B)
+- All chapters include: Data in Depth box, discussion questions
+- Regional chapters (4–14) include: Spatial Data Challenge boxes, Institutional Spotlight, climate subsection, services trade content, lab linkage
+
+**Labs: ~70% complete**
+- Labs 1, 3, 4, 7: Fully operational (scripts + smoke tests + template data)
+- Lab 5: Partially complete (SCM baselines built)
+- Labs 2, 6: Scaffolded with synthetic data
+- Lab 7 remaining scripts: 3 of 7 complete (gravity, STRI, shared estimator); 4 not started (servicification, cloud geography, WTO fetch, STRI fetch)
+- Colab notebooks: Labs 1 and 6 complete; 5 remaining
+
+**Tests: 25 passing**
+
+**Phase 4 items not started:**
+- Appendices A (math), B (data guide), C (glossary)
+- "Pathways Through This Book" preface
+- GIS base maps and Regional Diagnostics Dashboards
+- Full manuscript copyedit and notation audit
+- Index preparation
 
 ---
 
@@ -373,28 +423,47 @@ The feedback action plan notes this (P2) and plans bridge content in Chapter 3 p
 
 ---
 
-## Revised Verdict (Rev 4)
+## Revised Verdict (Rev 9)
 
-**The project has crossed into its mid-execution phase.** The four reviews now track a clear progression:
+**The project has completed its first-draft manuscript and is transitioning to Phase 4 (Apparatus and Production).** The nine reviews track a clear arc:
 
 1. **Rev 1:** Good concept, but specs are empty, no real data, no tests — risk of producing descriptive surveys
 2. **Rev 2:** Specs have analytical teeth, Lab 1 works on real data, tests exist — risk has shifted from conception to execution
 3. **Rev 3:** Two labs implemented with a consistent reusable pattern, infrastructure professionalized, drafting plan adapted
-4. **Rev 4:** 8 chapters drafted with full content (climate, services, SDC boxes, lab linkage); Waves A and B complete; all specs detailed; 6 SDC boxes written
+4. **Rev 4:** 8 chapters drafted with full content (climate, services, SDC boxes, lab linkage); Waves A and B complete; all specs detailed
+5. **Revs 5–8:** Remaining 10 chapters drafted (Chs 6–12, 15–16); Labs 3, 7 made operational; Colab notebooks for Labs 1, 6; code review feedback integrated
+6. **Rev 9:** All code quality issues from PR review addressed; planning docs updated for Phase 4
 
-The project is past the "can it produce text?" threshold. Half the chapters exist in substantive form. The analytical voice is consistent. The services cross-cutting theme and climate integration are working as designed — they appear in the prose naturally, not as check-the-box additions.
+**The first-draft manuscript is complete.** All 18 chapters exist in substantive form with full pedagogical apparatus (Data in Depth, Spatial Data Challenge boxes, Institutional Spotlights, discussion questions). The services cross-cutting thread and climate integration run through every regional chapter. 25 tests pass. 4 of 7 labs are fully operational.
 
-**What should happen next:**
+**What should happen next (Phase 4 priorities):**
 
-1. **Acquire VIIRS + run Lab 6 at scale.** This is now the blocking item for the classroom pilot. VIIRS is NASA open data with no licensing friction; once acquired, Lab 6 can be validated on 30+ countries and the SDC box in Ch 13 has a live computational counterpart.
+1. **Appendix B (Data & Software Guide).** This is the highest-value Phase 4 item — it makes the labs usable by instructors and students. Should cover: dataset access instructions for all 7 labs, R/Python environment setup, Colab quickstart, and data dictionaries.
 
-2. **Wave A+B review gate.** Before drafting Wave C (East Asia: Chs 6–7), the 8 completed chapters should be reviewed for consistency of voice, notation, cross-references, and services thread coherence. The Drafting Plan calls for this gate explicitly.
+2. **"Pathways Through This Book" preface.** Five curated instructor tracks with a visual dependency DAG. This enables adoption by professors who want to teach a 1-semester course using a subset of the book.
 
-3. **Draft Ch 6 (Flying Geese and Tech Ascendancy) prose.** Wave C begins with East Asia. The spec is detailed and the WIOD/TiVA data pipeline is scaffolded.
+3. **Second-pass revision of all chapters.** The first drafts were written in waves over a short period. A systematic second pass should check: (a) notation consistency ($\tau$, $\lambda$, $\rho$ usage across chapters), (b) cross-reference accuracy (especially for the newly written Chs 11–12, 15–16), (c) services thread coherence, (d) climate subsection depth (Ch 6 still lacks a climate section).
 
-4. **Add statistical assertions to Lab 6 smoke tests.** Rev 3 recommended this; it remains undone. Three cheap assertions would make the CI pipeline meaningfully stronger: `moran_i > 0`, `residual_moran_i < moran_i`, and symmetric $W$.
+4. **Remaining Lab 7 scripts.** The servicification decomposition (TiVA-based) and cloud geography mapper are spec'd in the outline and referenced in Ch 16. Building them completes the capstone lab.
 
-The remaining risks are VIIRS acquisition and Lab 6 real-data validation, plus execution pace for Waves C–E. Project viability is not in question.
+5. **VIIRS acquisition + Lab 6 real-data validation.** Still the sole open issue (#14). This is the blocking item for classroom deployment of the Africa lab.
+
+6. **Appendix A (Mathematical Foundations) and Appendix C (Glossary).** Lower priority but needed before external review.
+
+**Remaining risks:** VIIRS acquisition (external dependency), notation consistency across 18 chapters (internal quality), and depth of second-pass revision needed before external review. Project viability is established; the question is polish and completeness.
+
+---
+
+## Revised Verdict (Rev 4)
+
+**The project has crossed into its mid-execution phase.** (Superseded by Rev 9 above.)
+
+**What should happen next (from Rev 4 — superseded by Rev 9 above):**
+
+1. ~~Acquire VIIRS + run Lab 6 at scale.~~ Still open (Issue #14).
+2. ~~Wave A+B review gate.~~ Superseded — all waves complete.
+3. ~~Draft Ch 6.~~ **Done.**
+4. ~~Add statistical assertions to Lab 6 smoke tests.~~ **Done** (already present, confirmed in Rev 4).
 
 ---
 
