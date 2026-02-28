@@ -1,4 +1,4 @@
-# Chapter Spec: Ch.3-A - Spatial Econometrics & Inequality Measurement
+# Chapter Spec: Ch.3-A - Spatial Econometrics — Methods for Regional Analysis
 
 ## Metadata
 - Part: Part I - Foundations

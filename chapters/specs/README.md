@@ -5,7 +5,7 @@
 | Ch. 1 - The Micro-Foundations of Space | `chapters/specs/ch01_micro_foundations_of_space.md` |
 | Ch. 2 - Evolutionary and Institutional Frameworks | `chapters/specs/ch02_evolutionary_and_institutional_frameworks.md` |
 | Ch. 3 - The Modern Spatial Econometric Toolkit | `chapters/specs/ch03_modern_spatial_toolkit.md` |
-| Ch. 3-A - Spatial Econometrics and Inequality Measurement | `chapters/specs/ch03a_spatial_econometrics.md` |
+| Ch. 3-A - Spatial Econometrics — Methods for Regional Analysis | `chapters/specs/ch03a_spatial_econometrics.md` |
 | Ch. 3-B - Trade Measurement and Gravity | `chapters/specs/ch03b_trade_measurement_gravity.md` |
 | Ch. 4 - The North American Core | `chapters/specs/ch04_north_american_core.md` |
 | Ch. 5 - Latin America and the Middle-Income Trap | `chapters/specs/ch05_latin_america_middle_income_trap.md` |
