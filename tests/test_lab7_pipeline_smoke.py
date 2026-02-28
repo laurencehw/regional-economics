@@ -93,6 +93,48 @@ def test_stri_tariff_equivalent_smoke(tmp_path, run_cmd):
     assert te_summary["mean_pct"] >= 0, "Mean tariff equivalent should be non-negative"
 
 
+def test_servicification_smoke(tmp_path, run_cmd):
+    out_dir = tmp_path / "servicification"
+    out_dir.mkdir()
+
+    run_cmd([
+        sys.executable,
+        "labs/lab7_services/code/servicification_decomposition.py",
+        "--run-smoke-test",
+        "--output-dir",
+        str(out_dir),
+    ])
+
+    # --- Summary JSON ---
+    summary_json = out_dir / "servicification_summary.json"
+    assert summary_json.exists(), "servicification_summary.json missing"
+    summary = json.loads(summary_json.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "TiVA_Servicification_Decomposition"
+    assert summary["n_countries"] > 5, (
+        f"Expected >5 countries, got {summary['n_countries']}"
+    )
+    assert summary["n_sectors"] > 0
+    assert summary["n_service_types"] > 0
+
+    # --- Panel CSV ---
+    panel_csv = out_dir / "servicification_panel.csv"
+    assert panel_csv.exists(), "servicification_panel.csv missing"
+    panel = pd.read_csv(panel_csv)
+    assert not panel.empty, "Panel CSV is empty"
+
+    # Servicification shares must be in [0, 1]
+    assert (panel["servicification_share"] >= 0).all(), (
+        "Servicification shares must be >= 0"
+    )
+    assert (panel["servicification_share"] <= 1).all(), (
+        "Servicification shares must be <= 1"
+    )
+
+    # Country ranking should be consistent
+    assert summary["most_servicified"]["share"] >= summary["least_servicified"]["share"]
+
+
 def test_gravity_with_template_data(tmp_path, run_cmd):
     """Integration test using template CSV files."""
     out_dir = tmp_path / "gravity_template"
@@ -118,3 +160,53 @@ def test_gravity_with_template_data(tmp_path, run_cmd):
     assert summary["method"] == "PPML_Gravity_Comparison"
     assert summary["services_model"]["n_obs"] > 0
     assert summary["services_model"]["converged"] is True
+
+
+def test_cloud_geography_smoke(tmp_path, run_cmd):
+    out_dir = tmp_path / "cloud"
+    out_dir.mkdir()
+
+    run_cmd([
+        sys.executable,
+        "labs/lab7_services/code/cloud_geography_mapper.py",
+        "--run-smoke-test",
+        "--output-dir",
+        str(out_dir),
+    ])
+
+    # --- Summary JSON ---
+    summary_json = out_dir / "cloud_summary.json"
+    assert summary_json.exists(), "cloud_summary.json missing"
+    summary = json.loads(summary_json.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "Cloud_Geography_Mapping"
+    assert summary["n_countries"] > 10, (
+        f"Expected >10 countries, got {summary['n_countries']}"
+    )
+
+    # Correlation between localization score and cloud presence should exist
+    assert "correlation_localization_cloud" in summary
+    assert summary["correlation_localization_cloud"] is not None, (
+        "correlation_localization_cloud should not be None"
+    )
+
+    # Cloud concentration metrics should exist and be sensible
+    conc = summary["cloud_concentration"]
+    assert "top3_share" in conc
+    assert "hhi" in conc
+    assert conc["top3_share"] > 0, "Top-3 share should be positive"
+    assert conc["hhi"] > 0, "HHI should be positive"
+    assert len(conc["top3_countries"]) == 3
+
+    # Provider totals
+    assert "provider_totals" in summary
+    assert summary["provider_totals"]["AWS"] > 0
+
+    # --- Panel CSV ---
+    panel_csv = out_dir / "cloud_geography.csv"
+    assert panel_csv.exists(), "cloud_geography.csv missing"
+    panel = pd.read_csv(panel_csv)
+    assert not panel.empty, "Panel CSV is empty"
+    assert "total_cloud_regions" in panel.columns
+    assert "localization_score" in panel.columns
+    assert len(panel) > 10
