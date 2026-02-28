@@ -229,8 +229,8 @@ Key references anchoring this thread:
 
 | Chapter | Prose Status | Spec Status |
 |---|---|---|
-| Ch. 15 | First draft complete; spatial reallocation framework, Pacific SIDS, stranded regions index, green industrial policy (CBAM/IRA), global comparative spread table | Complete |
-| Ch. 16 | First draft complete; telemigration hypothesis, Splinternet, services trade comparative matrix, fortress blocs vs. flexible networks, frontier methods (ML, causal inference with interference, network models) | Complete |
+| Ch. 15 | **Expanded prose complete** (~9,981w): Phoenix heat dome vignette, all-chapter climate cross-refs, capital/labor/institutional channel deepening (Carbon Tracker $1-4T, Rigaud Groundswell, COP27 loss & damage), Cruz & Rossi-Hansberg (2024) welfare decomposition, Pacific Islands (Falepili Union, Kiribati Vanua Levu, Marshall Islands Compact, Fiji COP23), just transition (Germany Kohlekommission, SA/Indonesia/Vietnam JETPs), CBAM spatial vulnerability (Indian steel, Turkey cement), water stress (Murray-Darling, Aral Sea, Punjab GRACE), green industrial policy (CBAM phase-in/WTO, IRA Battery Belt, NZIA/CRMA, lithium triangle), GCF Institutional Spotlight, Weitzman fat tails, political economy of managed decline | Complete |
+| Ch. 16 | **Expanded prose complete** (~10,945w): Nairobi-vs-SF Upwork vignette, platform scale (Upwork $3.8B GMV, ILO 14M workers), missing middle in task complexity, education/healthcare telemigration frontiers (Coursera 130M+, eSanjeevani 100M+, Zeltzer et al.), Autor-Dorn-Hanson services analog, DFFT, India as fourth digital model (UPI 117B txns), Africa cloud deficit, AI compute sovereignty, Mode 4 binding constraint, AfCFTA services opportunity, CHIPS Act friend-shoring (BCG 35-65% cost), Vietnam swing state, non-alignment strategy, services decoupling stickiness, methods frontier (foundation models, causal forests, Butts/Huber-Steinmayr interference, GaWC networks, QSMs, data frontiers), Data in Depth (services gravity + Lab 7 scripts), WTO Institutional Spotlight (TISA collapse, Joint Initiative 2021), synthesis conclusion | Complete |
 
 ### Lab 7 (Services Trade — Cross-Regional Capstone)
 
@@ -246,7 +246,7 @@ Key references anchoring this thread:
 
 ### Phase 4 Readiness Assessment
 
-All Phase 1–3 prose deliverables are complete (first drafts). The project is now entering Phase 4 (Apparatus and Production). Key items:
+All Phase 1–3 prose deliverables are complete (expanded drafts). All 16 chapters have full expanded prose (~9,000-11,000w each). The project is now entering Phase 4 (Apparatus and Production). Key items:
 
 | # | Task | Status | Notes |
 |---|---|---|---|
