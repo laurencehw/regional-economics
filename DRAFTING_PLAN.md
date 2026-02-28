@@ -255,7 +255,7 @@ All Phase 1–3 prose deliverables are complete (expanded drafts). All 16 chapte
 | 4.3 | GIS maps and figures | Not started | Regional Diagnostics Dashboards, comparative spread |
 | 4.4 | Finalize all Applied Lab code | In progress | Labs 1,3,4,7 complete; Lab 5 partial; Labs 2,6 scaffolded; remaining Lab 7 scripts TBD |
 | 4.5 | Comparative Spotlight tables | Partially done | Ch 15 global comparative spread drafted |
-| 4.6 | Full manuscript copyedit and reference audit | **In progress** | Gemini 3-batch consistency review completed 2026-02-28: 1 broken cross-ref fixed (Ch 14 → Ch 9), 3 numerical inconsistencies resolved (AfCFTA/Aadhaar population, nearshore costs), 10 citation format fixes (4+ authors → et al.), notation/terminology verified clean. Remaining: final copyedit pass, bibliography compilation |
+| 4.6 | Full manuscript copyedit and reference audit | **In progress** | Gemini consistency review completed 2026-02-28: cross-refs, numbers, citations fixed. Full structural standardization completed: identical ordering (DiD → SDC → Spotlight → Conclusion → DQ) across all 16 chapters; SDC boxes converted to standalone ##; Conclusion numbering stripped; word counts balanced (3-A, 4, 5, 14 trimmed to target). Remaining: bibliography compilation |
 | 4.7 | Index preparation | Not started | |
 | 0.3 | Appendix B (Data & Software Guide) | **Complete** | Master dataset inventory, per-lab tech specs, software setup, troubleshooting |
 | 0.8 | "Pathways Through This Book" preface | **Complete** | 5 curated tracks with dependency DAG, instructor notes |
