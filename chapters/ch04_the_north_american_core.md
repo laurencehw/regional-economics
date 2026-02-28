@@ -319,10 +319,6 @@ The Lab 1 results are subject to several caveats that the student should take se
 
 **Cross-sectional identification.** A single cross-section cannot distinguish genuine spatial spillovers from correlated effects (shared exposure to global commodity prices, common macroeconomic conditions). The interaction specifications mitigate this concern by introducing heterogeneity — the interaction between institutional quality and the spatial lag is less susceptible to the correlated-effects critique than the unconditional $\rho$ — but a panel specification exploiting within-country time-series variation would be more convincing. Lab 2 (Asia) uses a panel convergence design that addresses this limitation.
 
-### What Comes Next
-
-This is the central empirical message of Part II: the spatial structure of growth in the Americas is not a simple matter of proximity or trade volume. It is mediated by institutions — and the institutions are not uniformly distributed. The next chapter extends this argument to Latin America, where the institutional fragmentation is most severe and its consequences for structural upgrading most visible. Where this chapter examined the spatial effects of a specific institutional shock (the NAFTA-to-USMCA transition) on a specific set of regions (the USMCA corridor), Chapter 5 examines the structural conditions — premature deindustrialization, informality, the resource curse — that determine whether Latin American regions can participate in the compliance-intensive economy that USMCA creates.
-
 ---
 
 ## Data in Depth: Building a Border-Friction Index from Port-Level Crossing Data
@@ -388,6 +384,14 @@ The customs coordination dimension is equally important but less visible. The FT
 For the student, the USMCA institutional apparatus illustrates a principle that recurs throughout this book: the distance between a trade agreement's text and its economic effects is mediated by implementing institutions. Two countries may be signatories to the same agreement, but if one has a functioning customs service and the other does not, the agreement generates different economic outcomes in each country. The spatial weight matrix in a trade-weighted SAR captures the economic linkages between countries, but it cannot capture the institutional friction that determines how much of a shock actually transmits through those linkages. That friction is what this chapter's interaction specifications are designed to measure.
 
 The lesson extends beyond USMCA. Every trade agreement, every investment treaty, and every regulatory framework creates an institutional demand — a set of capabilities that the participating regions must possess to capture the agreement's benefits. Regions with those capabilities gain; regions without them fall further behind. The institution, not the agreement, is the binding constraint.
+
+---
+
+## Conclusion: The Institutional Mediation of North American Integration
+
+This is the central empirical message of Part II: the spatial structure of growth in the Americas is not a simple matter of proximity or trade volume. It is mediated by institutions — and the institutions are not uniformly distributed. The NAFTA-to-USMCA transition illustrates the mechanism at continental scale: a trade agreement that raised compliance requirements rewarded regions with strong institutional capacity (the USMCA corridor from Ontario through Michigan to Querétaro) while leaving institutionally weaker regions further behind. The CHIPS Act and IRA repeat the pattern in a different register — industrial policy that channels investment toward regions that can meet regulatory, workforce, and infrastructure prerequisites. The border-friction evidence confirms that even between closely integrated economies, institutional barriers impose trade costs equivalent to thousands of miles of additional distance. And the Lab 1 spatial analysis reveals that the growth spillovers which should flow through trade networks are conditional on institutional quality: regions below a threshold of governance capacity are connected to the continental economy but cannot absorb its growth impulses.
+
+The next chapter extends this argument to Latin America, where the institutional fragmentation is most severe and its consequences for structural upgrading most visible. Where this chapter examined the spatial effects of a specific institutional shock (the NAFTA-to-USMCA transition) on a specific set of regions (the USMCA corridor), Chapter 5 examines the structural conditions — premature deindustrialization, informality, the resource curse — that determine whether Latin American regions can participate in the compliance-intensive economy that USMCA creates.
 
 ---
 
