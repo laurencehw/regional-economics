@@ -273,7 +273,7 @@ The comparison also illuminates a temporal dimension. South Korea's institutiona
 **Method.** Following Rodrik (2016), estimate the relationship between manufacturing share and log income using a quadratic specification:
 
 $$
-\text{mfg\_share}_{it} = \alpha_i + \beta_1 \ln y_{it} + \beta_2 (\ln y_{it})^2 + \gamma X_{it} + \varepsilon_{it}
+\text{mfg_share}_{it} = \alpha_i + \beta_1 \ln y_{it} + \beta_2 (\ln y_{it})^2 + \gamma X_{it} + \varepsilon_{it}
 $$
 
 where $X_{it}$ includes institutional quality proxies (formal employment share, fiscal autonomy index) and time effects. The turning point — the income level at which manufacturing peaks — is $y^* = \exp(-\beta_1 / 2\beta_2)$. The key test is whether the turning point shifts upward when institutional quality is high — that is, whether institutionally strong regions sustain manufacturing to higher income levels before deindustrializing.

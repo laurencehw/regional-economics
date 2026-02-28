@@ -44,7 +44,7 @@ The spatial economic implications are profound. In a neoclassical world without 
 >
 > China's official population statistics assign individuals to their Hukou registration location, not their actual place of residence and work. This creates a systematic mismeasurement of approximately 300 million internal migrants who live and work in coastal cities but are statistically counted in their rural home provinces. The distortion cascades into per-capita GDP calculations (overstating inland GDP per capita, understating coastal GDP per capita), urbanization rates (China's de facto urbanization rate exceeds its de jure rate by roughly 15 percentage points), and fiscal burden estimates (interior provinces appear to have more residents per unit of public expenditure than they actually serve).
 >
-> Researchers must use census micro-data (the decennial census and the inter-census 1% population survey), mobile phone location data (Baidu Migration Index, Tencent Mobility), or satellite-derived proxies (nighttime lights as a cross-check on population and economic activity claims) to approximate actual population distributions. Chapter 6's Spatial Data Challenge on Chinese provincial GDP manipulation compounds the problem: not only is the population denominator wrong, but the GDP numerator is also potentially unreliable. Any panel regression using Chinese sub-national data should treat both sides of the per-capita calculation as measured with substantial and likely non-random error.
+> Researchers must use census micro-data (the decennial census and the inter-census 1% population survey), mobile phone location data (Baidu Migration Index, Tencent Mobility), or satellite-derived proxies (night-lights as a cross-check on population and economic activity claims) to approximate actual population distributions. Chapter 6's Spatial Data Challenge on Chinese provincial GDP manipulation compounds the problem: not only is the population denominator wrong, but the GDP numerator is also potentially unreliable. Any panel regression using Chinese sub-national data should treat both sides of the per-capita calculation as measured with substantial and likely non-random error.
 
 ---
 
@@ -156,7 +156,7 @@ The interaction with this chapter's institutional analysis is direct. The Hukou 
 
 ---
 
-## Data in Depth: Cross-Validating Chinese Provincial GDP with Nighttime Lights
+## Data in Depth: Cross-Validating Chinese Provincial GDP with Night-Lights
 
 **The question.** How much of the variation in Chinese provincial GDP is genuine economic activity, and how much is statistical manipulation? The well-documented "GDP inflation" problem — provincial GDP totals routinely exceeding the national total by 5–10 percent — raises fundamental questions about the reliability of China's sub-national economic statistics.
 
@@ -168,17 +168,17 @@ The interaction with this chapter's institutional analysis is direct. The Hukou 
 
 **Construction.**
 1. Download VIIRS annual composites for 2012–2022. Extract mean radiance within provincial boundaries using zonal statistics (analogous to the procedure in Lab 6, but at the provincial rather than country level).
-2. Construct a panel: province × year observations with official GDP, nighttime light radiance, electricity consumption, and tax revenue.
+2. Construct a panel: province × year observations with official GDP, night-light radiance, electricity consumption, and tax revenue.
 3. Estimate the relationship between official GDP and each alternative indicator:
 
 $$
 \ln(\text{GDP}_{it}) = \alpha_i + \beta_1 \ln(\text{lights}_{it}) + \gamma_t + \varepsilon_{it}
 $$
 
-4. Compute "adjusted GDP" using the nighttime lights coefficient: $\widehat{\text{GDP}}_{it} = \exp(\hat{\alpha}_i + \hat{\beta}_1 \ln(\text{lights}_{it}) + \hat{\gamma}_t)$.
+4. Compute "adjusted GDP" using the night-lights coefficient: $\widehat{\text{GDP}}_{it} = \exp(\hat{\alpha}_i + \hat{\beta}_1 \ln(\text{lights}_{it}) + \hat{\gamma}_t)$.
 5. Compare official and adjusted GDP growth trajectories. Provinces where official growth substantially exceeds adjusted growth are candidates for statistical inflation.
 
-**Expected findings.** Following Chen et al. (2019), adjusted growth rates for northeastern provinces (Liaoning, Jilin, Heilongjiang) are expected to be significantly below official figures, reflecting the well-known statistical inflation in the "Rust Belt" provinces whose heavy industrial output declined but whose reported GDP did not. Coastal provinces — where economic activity is genuinely intense and where nighttime lights are bright — should show smaller discrepancies between official and adjusted figures.
+**Expected findings.** Following Chen et al. (2019), adjusted growth rates for northeastern provinces (Liaoning, Jilin, Heilongjiang) are expected to be significantly below official figures, reflecting the well-known statistical inflation in the "Rust Belt" provinces whose heavy industrial output declined but whose reported GDP did not. Coastal provinces — where economic activity is genuinely intense and where night-lights are bright — should show smaller discrepancies between official and adjusted figures.
 
 **Student exercise.** Replicate the analysis for a subset of provinces (e.g., Guangdong, Liaoning, Gansu — representing coastal-successful, northeastern-declining, and interior-lagging archetypes) and interpret the discrepancies in light of the institutional incentives described in Section 7.1. If provincial officials are promoted based on GDP growth (the "tournament" model of Li and Zhou 2005), which provinces have the strongest incentive to inflate?
 
