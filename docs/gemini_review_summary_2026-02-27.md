@@ -56,7 +56,7 @@ Reviews conducted on 10 chapters (Chs 1, 2, 3-A, 4, 5, 6, 7, 8, 13, 14). Chapter
 - Section 6.3 / Institutional Spotlight overlap on "astronauts" and ITRI — de-duplicate.
 
 ### Ch 8 — India IT
-- **Lab 3 mapping conflict**: Chapter 8 says Lab 3 = India IT mapping, but `fetch_eurostat_nuts2_lab3.py` is European data. Reconcile numbering.
+- **Lab 3 mapping conflict**: Chapter 8 says Lab 3 = India IT mapping, but `fetch_eurostat_nuts2_lab4.py (renamed from lab3)` is European data. Reconcile numbering.
 - Medical tourism cross-ref to Ch 7 — verify this is intentional (it is; Ch 7 now has full medical tourism section).
 
 ### Ch 14
