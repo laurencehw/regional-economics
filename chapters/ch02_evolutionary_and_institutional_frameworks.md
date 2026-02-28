@@ -78,7 +78,7 @@ Path dependence is strong but not absolute. Three mechanisms can open "windows o
 
 ### Capabilities, Products, and the Network of Knowledge
 
-The evolutionary framework for regional development asks a different question than the institutional one: given where a region is now, where can it realistically go? The answer, in the product space framework of Hidalgo, Klinger, Barabási, and Hausmann (2007), is: to adjacent products in the network of shared capabilities.
+The evolutionary framework for regional development asks a different question than the institutional one: given where a region is now, where can it realistically go? The answer, in the product space framework of Hidalgo et al. (2007), is: to adjacent products in the network of shared capabilities.
 
 The central insight of the product space is that making different products requires different combinations of productive capabilities — knowledge, skills, machinery, organizational routines, infrastructure, and regulatory systems. Some products share many of the same capabilities (cotton shirts and synthetic fabric shirts require similar dyeing, cutting, and sewing capabilities); others share almost none (cotton shirts and petroleum refining require almost entirely distinct capability sets). The **product space** is a network where nodes are products and links connect products that are frequently co-exported by the same countries — a revealed-preference measure of shared underlying capabilities.
 
