@@ -1,7 +1,8 @@
 """Lab 7 scaffold for converting STRI scores to ad-valorem tariff equivalents.
 
-Uses the gravity model estimated in gravity_services_scaffold.py to compute
-the trade-cost equivalent of STRI regulatory barriers.
+Uses a PPML gravity model (estimated within this script from the provided
+trade, gravity, and STRI data) to compute the trade-cost equivalent of
+STRI regulatory barriers.
 
 Methodology:
 Given a PPML gravity estimate with STRI as a regressor:
@@ -24,6 +25,8 @@ from typing import Dict, List, Tuple
 
 import numpy as np
 import pandas as pd
+
+from ppml_estimator import ppml_estimate
 
 
 def parse_args() -> argparse.Namespace:
@@ -52,47 +55,6 @@ def parse_cols(raw: str) -> List[str]:
 
 def ensure_dir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
-
-
-def ppml_estimate(
-    y: np.ndarray, x: np.ndarray, x_names: List[str],
-    max_iter: int = 200, tol: float = 1e-8,
-) -> Dict[str, object]:
-    """PPML via IRLS (duplicated from gravity scaffold for standalone use)."""
-    n, k = x.shape
-    beta = np.zeros(k)
-
-    for iteration in range(max_iter):
-        eta = np.clip(x @ beta, -20, 20)
-        mu = np.exp(eta)
-        w = mu
-        z = eta + (y - mu) / np.where(mu > 1e-10, mu, 1e-10)
-        w_sqrt = np.sqrt(w)
-        xw = x * w_sqrt[:, None]
-        zw = z * w_sqrt
-        try:
-            beta_new = np.linalg.lstsq(xw, zw, rcond=None)[0]
-        except np.linalg.LinAlgError:
-            break
-        if np.max(np.abs(beta_new - beta)) < tol:
-            beta = beta_new
-            break
-        beta = beta_new
-
-    eta = np.clip(x @ beta, -20, 20)
-    mu = np.exp(eta)
-    residuals = y - mu
-    bread = np.linalg.pinv(x.T @ np.diag(mu) @ x)
-    meat = x.T @ np.diag(residuals**2) @ x
-    vcov = bread @ meat @ bread
-    se = np.sqrt(np.maximum(np.diag(vcov), 0))
-
-    return {
-        "betas": [float(b) for b in beta],
-        "se": [float(s) for s in se],
-        "beta_names": list(x_names),
-        "n_obs": int(n),
-    }
 
 
 def compute_tariff_equivalents(

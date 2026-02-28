@@ -6,6 +6,7 @@ Scripts for the services trade gravity capstone lab.
 
 | Script | Description | Status |
 |---|---|---|
+| `ppml_estimator.py` | Shared PPML (IRLS) estimator with robust SEs | Complete |
 | `gravity_services_scaffold.py` | PPML gravity estimation (services vs. goods) | Complete |
 | `stri_tariff_equivalent.py` | Convert STRI to ad-valorem tariff equivalents | Complete |
 | `servicification_decomposition.py` | TiVA service content decomposition | Not started |

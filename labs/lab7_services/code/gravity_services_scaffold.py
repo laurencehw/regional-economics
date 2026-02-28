@@ -2,11 +2,11 @@
 
 This script supports two modes:
 1. Smoke test mode with synthetic data.
-2. Real-data mode using trade, gravity, and STRI CSV inputs.
+2. Real-data mode using trade and gravity CSV inputs.
 
 Estimates parallel gravity models for services and goods trade via
 Poisson Pseudo-Maximum Likelihood (PPML), then compares distance
-elasticities and institutional-barrier coefficients.
+elasticities and other gravity coefficients.
 
 Outputs are written to the selected output directory.
 """
@@ -21,6 +21,8 @@ from typing import Dict, List, Tuple
 import numpy as np
 import pandas as pd
 
+from ppml_estimator import ppml_estimate
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -28,7 +30,6 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--trade", type=str, default=None, help="Path to trade CSV")
     parser.add_argument("--gravity", type=str, default=None, help="Path to gravity variables CSV")
-    parser.add_argument("--stri", type=str, default=None, help="Path to STRI CSV (optional)")
     parser.add_argument("--year", type=int, default=2019, help="Cross-section year")
     parser.add_argument(
         "--gravity-vars",
@@ -49,81 +50,6 @@ def parse_cols(raw: str) -> List[str]:
 
 def ensure_dir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
-
-
-def ppml_estimate(
-    y: np.ndarray,
-    x: np.ndarray,
-    x_names: List[str],
-    max_iter: int = 200,
-    tol: float = 1e-8,
-) -> Dict[str, object]:
-    """Poisson Pseudo-Maximum Likelihood estimation via IRLS.
-
-    Estimates: E[y | x] = exp(x @ beta)
-    Uses iteratively reweighted least squares (IRLS) following
-    Santos Silva and Tenreyro (2006).
-    """
-    n, k = x.shape
-    beta = np.zeros(k)
-
-    for iteration in range(max_iter):
-        eta = x @ beta
-        eta = np.clip(eta, -20, 20)  # prevent overflow
-        mu = np.exp(eta)
-
-        # IRLS weight and working variable
-        w = mu
-        z = eta + (y - mu) / np.where(mu > 1e-10, mu, 1e-10)
-
-        # Weighted least squares step
-        w_sqrt = np.sqrt(w)
-        xw = x * w_sqrt[:, None]
-        zw = z * w_sqrt
-
-        try:
-            beta_new = np.linalg.lstsq(xw, zw, rcond=None)[0]
-        except np.linalg.LinAlgError:
-            break
-
-        if np.max(np.abs(beta_new - beta)) < tol:
-            beta = beta_new
-            break
-        beta = beta_new
-
-    # Final fitted values and diagnostics
-    eta = x @ beta
-    eta = np.clip(eta, -20, 20)
-    mu = np.exp(eta)
-
-    # Pseudo R-squared (deviance-based)
-    y_safe = np.where(y > 0, y, 1e-10)
-    deviance = 2 * np.sum(
-        np.where(y > 0, y * np.log(y_safe / np.where(mu > 1e-10, mu, 1e-10)), 0)
-        - (y - mu)
-    )
-    null_mu = np.mean(y)
-    null_deviance = 2 * np.sum(
-        np.where(y > 0, y * np.log(y_safe / null_mu), 0) - (y - null_mu)
-    )
-    pseudo_r2 = 1.0 - (deviance / null_deviance) if null_deviance > 0 else 0.0
-
-    # Robust (sandwich) standard errors
-    residuals = y - mu
-    bread = np.linalg.pinv(x.T @ np.diag(mu) @ x)
-    meat = x.T @ np.diag(residuals**2) @ x
-    vcov = bread @ meat @ bread
-    se = np.sqrt(np.maximum(np.diag(vcov), 0))
-
-    return {
-        "betas": [float(b) for b in beta],
-        "se": [float(s) for s in se],
-        "beta_names": list(x_names),
-        "n_obs": int(n),
-        "pseudo_r2": float(pseudo_r2),
-        "iterations": iteration + 1 if iteration < max_iter else max_iter,
-        "converged": iteration < max_iter - 1,
-    }
 
 
 def merge_gravity_data(
@@ -256,13 +182,11 @@ def main() -> None:
 
         mappings_path = Path(args.trade).parent / "source_mappings.json"
         if not mappings_path.exists():
-            mappings_path = Path("labs/lab7_services/data/source_mappings.json")
+            mappings_path = Path(__file__).resolve().parent.parent / "data" / "source_mappings.json"
         with mappings_path.open("r") as fp:
             mappings = json.load(fp)
         trade_cfg = mappings["trade"]
         gravity_cfg = mappings["gravity"]
-
-        stri_df = pd.read_csv(args.stri) if args.stri else None
 
     # --- Merge and filter ---
     merged = merge_gravity_data(trade_df, gravity_df, trade_cfg, gravity_cfg)
