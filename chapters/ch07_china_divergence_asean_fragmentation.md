@@ -58,12 +58,6 @@ The 2014 New Urbanization Plan acknowledged the Hukou system's distortions and i
 
 The comparative institutional parallel with Vietnam is instructive. Vietnam's hộ khẩu (household registration) system was modeled on China's Hukou and served a similar function of controlling rural-to-urban migration. But Vietnam liberalized its system more aggressively: a 2006 reform allowed registration transfers after three years of residence in a new location, and subsequent reforms further reduced barriers. The result has been more rapid urbanization (Vietnam's urban share rose from 24 percent in 2000 to 39 percent in 2023) and stronger convergence in regional incomes, though at the cost of congestion and strain on urban infrastructure in Ho Chi Minh City and Hanoi. The contrast suggests that Hukou reform is not merely an equity measure — it is a spatial efficiency intervention whose absence imposes measurable costs on aggregate productivity by preventing labor from reaching its highest-value use.
 
-> **Spatial Data Challenge: The Hukou Distortion**
->
-> China's official population statistics assign individuals to their Hukou registration location, not their actual place of residence and work. This creates a systematic mismeasurement of approximately 300 million internal migrants who live and work in coastal cities but are statistically counted in their rural home provinces. The distortion cascades into per-capita GDP calculations (overstating inland GDP per capita, understating coastal GDP per capita), urbanization rates (China's de facto urbanization rate exceeds its de jure rate by roughly 15 percentage points), and fiscal burden estimates (interior provinces appear to have more residents per unit of public expenditure than they actually serve).
->
-> Researchers must use census micro-data (the decennial census and the inter-census 1% population survey), mobile phone location data (Baidu Migration Index, Tencent Mobility), or satellite-derived proxies (night-lights as a cross-check on population and economic activity claims) to approximate actual population distributions. Chapter 6's Spatial Data Challenge on Chinese provincial GDP manipulation compounds the problem: not only is the population denominator wrong, but the GDP numerator is also potentially unreliable. Any panel regression using Chinese sub-national data should treat both sides of the per-capita calculation as measured with substantial and likely non-random error.
-
 ---
 
 ## 7.2 Medical Tourism: Mode 2 Services Trade and Institutional Design
@@ -228,12 +222,6 @@ How will these patterns evolve? Three scenarios merit consideration. First, cont
 
 The interaction with this chapter's institutional analysis is direct. The Hukou system, fiscal federalism, and sequential liberalization described in Section 7.1 contribute to China's outlier status: China's domestic value-added growth is driven not by market-mediated convergence dynamics but by state-directed industrial policy at a scale that no other economy in the sample can replicate.
 
-> **Spatial Data Challenge: ASEAN Regulatory Fragmentation and Data Comparability**
->
-> Cross-country economic analysis in ASEAN confronts a data landscape that is substantially more heterogeneous than East Asia or Europe. National statistical offices in ASEAN-10 vary enormously in capacity, methodology, and reporting frequency. Singapore publishes quarterly GDP by sector with a two-month lag; Myanmar's GDP statistics are annual and of uncertain reliability. Manufacturing census data, which is essential for calculating domestic value-added at the firm level, is available for Thailand (annually), Vietnam (intermittently), Indonesia (irregularly), and not at all for Laos, Cambodia, or Myanmar.
->
-> The WIOD resolves this heterogeneity for the economies it covers (Indonesia, Japan, Korea, and Taiwan are included; Vietnam, Thailand, and the Philippines are added in some extensions), but at the cost of imposing a common sector classification that may not reflect the actual structure of production in less diversified economies. The TiVA database provides broader coverage but at a coarser sector level. Researchers working with ASEAN panel data should report results with and without the less reliably measured economies and should treat cross-country comparisons with appropriate caution.
-
 ---
 
 ## Data in Depth: Cross-Validating Chinese Provincial GDP with Night-Lights
@@ -261,6 +249,22 @@ $$
 **Expected findings.** Following Chen et al. (2019), adjusted growth rates for northeastern provinces (Liaoning, Jilin, Heilongjiang) are expected to be significantly below official figures, reflecting the well-known statistical inflation in the "Rust Belt" provinces whose heavy industrial output declined but whose reported GDP did not. Coastal provinces — where economic activity is genuinely intense and where night-lights are bright — should show smaller discrepancies between official and adjusted figures.
 
 **Student exercise.** Replicate the analysis for a subset of provinces (e.g., Guangdong, Liaoning, Gansu — representing coastal-successful, northeastern-declining, and interior-lagging archetypes) and interpret the discrepancies in light of the institutional incentives described in Section 7.1. If provincial officials are promoted based on GDP growth (the "tournament" model of Li and Zhou 2005), which provinces have the strongest incentive to inflate?
+
+---
+
+## Spatial Data Challenge: The Hukou Distortion
+
+China's official population statistics assign individuals to their Hukou registration location, not their actual place of residence and work. This creates a systematic mismeasurement of approximately 300 million internal migrants who live and work in coastal cities but are statistically counted in their rural home provinces. The distortion cascades into per-capita GDP calculations (overstating inland GDP per capita, understating coastal GDP per capita), urbanization rates (China's de facto urbanization rate exceeds its de jure rate by roughly 15 percentage points), and fiscal burden estimates (interior provinces appear to have more residents per unit of public expenditure than they actually serve).
+
+Researchers must use census micro-data (the decennial census and the inter-census 1% population survey), mobile phone location data (Baidu Migration Index, Tencent Mobility), or satellite-derived proxies (night-lights as a cross-check on population and economic activity claims) to approximate actual population distributions. Chapter 6's Spatial Data Challenge on Chinese provincial GDP manipulation compounds the problem: not only is the population denominator wrong, but the GDP numerator is also potentially unreliable. Any panel regression using Chinese sub-national data should treat both sides of the per-capita calculation as measured with substantial and likely non-random error.
+
+---
+
+## Spatial Data Challenge: ASEAN Regulatory Fragmentation and Data Comparability
+
+Cross-country economic analysis in ASEAN confronts a data landscape that is substantially more heterogeneous than East Asia or Europe. National statistical offices in ASEAN-10 vary enormously in capacity, methodology, and reporting frequency. Singapore publishes quarterly GDP by sector with a two-month lag; Myanmar's GDP statistics are annual and of uncertain reliability. Manufacturing census data, which is essential for calculating domestic value-added at the firm level, is available for Thailand (annually), Vietnam (intermittently), Indonesia (irregularly), and not at all for Laos, Cambodia, or Myanmar.
+
+The WIOD resolves this heterogeneity for the economies it covers (Indonesia, Japan, Korea, and Taiwan are included; Vietnam, Thailand, and the Philippines are added in some extensions), but at the cost of imposing a common sector classification that may not reflect the actual structure of production in less diversified economies. The TiVA database provides broader coverage but at a coarser sector level. Researchers working with ASEAN panel data should report results with and without the less reliably measured economies and should treat cross-country comparisons with appropriate caution.
 
 ---
 

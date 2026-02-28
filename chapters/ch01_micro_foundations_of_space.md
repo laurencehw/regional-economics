@@ -318,22 +318,6 @@ The empirical trade literature confirms this persistence in a striking way: when
 
 ---
 
-## 1.6 Conclusion: Toward a Unified Framework
-
-This chapter has traced the intellectual genealogy of spatial economics from the classical tradition's cost-minimization logic through the NEG's general equilibrium formalization of clustering, to the Marshallian trinity's micro-behavioral foundations, to the measurement implications of functional regions. Three themes connect these threads.
-
-**Increasing returns are the engine.** Whether in Krugman's monopolistic competition framework, Duranton and Puga's input-sharing model, or Helsley and Strange's thick-market matching, the source of spatial concentration is the same: some costs are fixed, so it is cheaper to serve large concentrated markets than small dispersed ones. Von Thünen and Weber's competitive models could not generate this dynamic because they assumed constant returns. The moment you allow increasing returns, circular causation and multiple equilibria follow naturally.
-
-**Multiple equilibria mean history matters.** The NEG's most important policy-relevant prediction is not about where firms will locate, but about the structural role of history in locking in spatial outcomes. Two otherwise identical regions can be in radically different equilibria because of where they started. This does not mean that spatial configuration is immutable — exogenous shocks (a new technology that makes the existing agglomeration less relevant, infrastructure investment that changes relative transport costs) can displace an economy from one equilibrium to another. But it means that policy interventions need to be evaluated against the equilibrium they are trying to shift, not just against a competitive partial-equilibrium benchmark.
-
-**Measurement units are theory, not convention.** The choice between state-level, metropolitan, and commuting-zone analysis is not merely a question of data availability. It reflects assumptions about what the relevant economic unit is — what constitutes a labor market, a supply chain, an innovation system. Choosing the wrong unit can produce systematically biased estimates of agglomeration economies, policy effects, and spatial inequality. Functional regions, defined by economic flows rather than administrative boundaries, are the theoretically appropriate unit.
-
-Chapter 2 takes up a question this chapter has largely bracketed: once spatial concentration has occurred, what determines whether it is productivity-enhancing or rent-extracting? The NEG model is agnostic about institutions — it generates agglomeration economies regardless of the quality of local governance, contract enforcement, or regulatory environment. But empirically, the same forces that produce Silicon Valley can also produce rent-seeking clusters in natural-resource enclaves or state-patronage industries. Understanding the institutional conditions that determine which kind of cluster emerges is the subject of the next chapter.
-
-Chapters 3-A and 3-B then provide the empirical toolkits: Chapter 3-A covers how to estimate agglomeration economies while accounting for the spatial dependence between observations, how to choose and defend a spatial weight matrix, and how to move from spatial correlation to spatial causation; Chapter 3-B covers trade measurement and the gravity model for goods and services. The measurement challenges introduced here — the identification problem in wage-density regressions, the MAUP, the endogeneity of density — all receive formal treatment in Chapter 3-A.
-
----
-
 ## Data in Depth: Estimating the Urban Wage Premium
 
 **Dataset:** American Community Survey (ACS) 1-year microdata, merged to the Tolbert-Sizer commuting zone crosswalk via county FIPS codes. Employment density constructed from the 2020 Census population grid (GHSL) divided by land area.
@@ -373,6 +357,22 @@ The OMB definitions serve administrative purposes — they determine which commu
 The OECD's FUA methodology was developed precisely to enable international comparison that sidesteps differences in national administrative structures. The methodology, described in Dijkstra and Poelman (2012), defines a dense urban core using a 1,500 inhabitants per square kilometer threshold applied to 1-km² population grid cells, then adds surrounding municipalities where at least 15 percent of the working population commutes to the core. The result is 1,891 FUAs across 35 OECD countries. Crucially, FUAs are defined using the same algorithmic procedure everywhere, making the London FUA and the Seoul FUA genuinely comparable in a way that Greater London Authority and Seoul Metropolitan Area are not.
 
 Both the OMB and OECD approaches involve trade-offs. Administrative definitions have the advantage of long time series, legal recognition, and operational simplicity. Functional definitions are more theoretically coherent but face practical challenges when administrative data (tax records, employment surveys, census) are not collected at the fine spatial resolution needed to implement them precisely. The measurement institution shapes what we can know about the economy.
+
+---
+
+## Conclusion: Toward a Unified Framework
+
+This chapter has traced the intellectual genealogy of spatial economics from the classical tradition's cost-minimization logic through the NEG's general equilibrium formalization of clustering, to the Marshallian trinity's micro-behavioral foundations, to the measurement implications of functional regions. Three themes connect these threads.
+
+**Increasing returns are the engine.** Whether in Krugman's monopolistic competition framework, Duranton and Puga's input-sharing model, or Helsley and Strange's thick-market matching, the source of spatial concentration is the same: some costs are fixed, so it is cheaper to serve large concentrated markets than small dispersed ones. Von Thünen and Weber's competitive models could not generate this dynamic because they assumed constant returns. The moment you allow increasing returns, circular causation and multiple equilibria follow naturally.
+
+**Multiple equilibria mean history matters.** The NEG's most important policy-relevant prediction is not about where firms will locate, but about the structural role of history in locking in spatial outcomes. Two otherwise identical regions can be in radically different equilibria because of where they started. This does not mean that spatial configuration is immutable — exogenous shocks (a new technology that makes the existing agglomeration less relevant, infrastructure investment that changes relative transport costs) can displace an economy from one equilibrium to another. But it means that policy interventions need to be evaluated against the equilibrium they are trying to shift, not just against a competitive partial-equilibrium benchmark.
+
+**Measurement units are theory, not convention.** The choice between state-level, metropolitan, and commuting-zone analysis is not merely a question of data availability. It reflects assumptions about what the relevant economic unit is — what constitutes a labor market, a supply chain, an innovation system. Choosing the wrong unit can produce systematically biased estimates of agglomeration economies, policy effects, and spatial inequality. Functional regions, defined by economic flows rather than administrative boundaries, are the theoretically appropriate unit.
+
+Chapter 2 takes up a question this chapter has largely bracketed: once spatial concentration has occurred, what determines whether it is productivity-enhancing or rent-extracting? The NEG model is agnostic about institutions — it generates agglomeration economies regardless of the quality of local governance, contract enforcement, or regulatory environment. But empirically, the same forces that produce Silicon Valley can also produce rent-seeking clusters in natural-resource enclaves or state-patronage industries. Understanding the institutional conditions that determine which kind of cluster emerges is the subject of the next chapter.
+
+Chapters 3-A and 3-B then provide the empirical toolkits: Chapter 3-A covers how to estimate agglomeration economies while accounting for the spatial dependence between observations, how to choose and defend a spatial weight matrix, and how to move from spatial correlation to spatial causation; Chapter 3-B covers trade measurement and the gravity model for goods and services. The measurement challenges introduced here — the identification problem in wage-density regressions, the MAUP, the endogeneity of density — all receive formal treatment in Chapter 3-A.
 
 ---
 

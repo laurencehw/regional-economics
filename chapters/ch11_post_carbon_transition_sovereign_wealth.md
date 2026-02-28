@@ -104,12 +104,6 @@ One dimension of Australia's resource geography that has no Gulf parallel is the
 
 Australia's Future Fund, established in 2006 with initial capital from the sale of the government's remaining stake in Telstra, is a sovereign wealth fund modeled on international best practice. Its mandate is narrower than the Gulf SWFs — it was designed primarily to fund future government superannuation liabilities — and its governance is more transparent: investment performance is reported publicly, the board is independent of government, and investment decisions are shielded from political direction. The contrast with the PIF, which is chaired by the Crown Prince and directed by royal decree, illustrates the institutional difference that determines whether sovereign wealth serves long-term development or short-term political objectives.
 
-> **Spatial Data Challenge: The Opacity of SWF Investment Data**
->
-> Sovereign wealth fund investment portfolios are among the least transparent major asset pools in the global financial system. While the Santiago Principles (2008) established voluntary transparency standards for SWFs, compliance varies enormously. Norway's Government Pension Fund Global publishes its complete portfolio annually, down to individual stock holdings. ADIA publishes a brief annual review with aggregate asset allocation but no details on individual investments. The PIF publishes even less: its domestic investments are announced through government media, but its international portfolio is largely opaque.
->
-> For spatial analysis, this opacity is a binding constraint. Estimating the domestic economic impact of SWF investment — which sectors receive how much capital, which regions benefit from SWF-funded projects, how SWF investment interacts with private sector activity — requires data that the funds themselves do not publish. Researchers resort to partial sources: media reports of announced deals (which may not be completed as announced), commercial databases of FDI and private equity transactions (which capture some SWF activities but miss others), and government budget documents (which may consolidate SWF spending with other public investment). The result is a measurement landscape where the largest investors in many MENA economies are the least transparent.
-
 ---
 
 ## 11.5 The Gulf as Global Services Hub
@@ -158,12 +152,6 @@ The uncertainty is enormous. Green hydrogen is not yet cost-competitive with gre
 
 But the spatial economics are clear: if the transition occurs, the regions with the lowest-cost renewable energy will have a new comparative advantage, and the Gulf's solar endowment positions it well. The competition, however, is already intensifying across MENA and beyond. Morocco's Noor-Ouarzazate solar complex, one of the world's largest concentrated solar power plants, has positioned the country as a potential green hydrogen exporter to Europe, with the advantage of geographic proximity (a planned subsea pipeline or short shipping route across the Mediterranean). Oman's SalalaH2 project and the broader Oman Green Hydrogen Strategy aim to leverage the country's southern coast, which benefits from both solar irradiance and monsoon-driven wind resources. Egypt's Ain Sokhna green hydrogen zone, located near the Suez Canal, combines renewable energy potential with logistics access to global shipping routes. The emerging pattern is a new spatial competition among MENA states — one that echoes the oil-era competition but is organized around renewable energy endowments, logistics infrastructure, and the ability to attract the massive capital investment that green hydrogen production requires. Whether this competition will produce the diversification that oil wealth never delivered, or simply replace one form of commodity dependence with another, remains the defining question for MENA's post-carbon spatial economics.
 
-> **Spatial Data Challenge: GDP Data Quality in Conflict Zones**
->
-> The MENA region contains several states — Syria, Yemen, Libya, Iraq — where civil conflict has degraded or destroyed the statistical infrastructure needed to produce reliable economic data. Syria's Central Bureau of Statistics effectively ceased publishing national accounts data after 2010. Yemen's Central Statistical Organization has produced only sporadic estimates since 2015. Libya's Bureau of Statistics has operated intermittently.
->
-> Researchers working on conflict-affected economies must rely on proxy indicators: satellite-measured night-lights as a proxy for economic activity (Henderson, Storeygard & Weil 2012), mobile phone records as a proxy for population movement, commodity prices as a proxy for informal market conditions, and cross-border trade data from partner countries as a proxy for the affected country's external economic activity. Each proxy has well-documented limitations (night-lights saturate in dense urban areas and fail to capture underground or indoor economic activity; mobile phone data depends on network infrastructure that may be damaged), but they represent the best available evidence for economies where the conventional data-generating process has collapsed.
-
 ---
 
 ## 11.7 Lab 5 and the Synthetic Control Framework
@@ -209,6 +197,22 @@ where $HHI_{it}^{exports}$ is the Herfindahl index of merchandise export concent
 **Caveats.** The HHI-based diversification index, while widely used, has important limitations that students should recognize. First, the HHI measures merchandise export concentration and thus misses services exports entirely — a critical omission for economies like Dubai and Qatar where aviation, tourism, and financial services constitute a large share of total exports. Second, the HHI treats all export products as equally "diversified," ignoring the distinction between genuine structural diversification (developing new comparative advantages in unrelated sectors) and nominal diversification (exporting multiple petroleum products — crude, refined, petrochemical — that are all downstream of the same resource). A country that exports crude oil, gasoline, polyethylene, and ammonia will show a lower HHI than one that exports only crude, but its vulnerability to a collapse in hydrocarbon demand is only marginally reduced. Third, the HHI does not capture the domestic economy's structure: a country can have concentrated exports but a diversified domestic economy (as Australia does), or diversified exports but a domestic economy that depends on government spending funded by a single resource.
 
 **Student exercise.** Compute two alternative diversification measures — the share of non-oil GDP in total GDP and the share of non-oil exports in total exports — for each Gulf state over the 2000-2023 period and compare their trends with the HHI-based index. Where do the measures agree and where do they diverge? What does the divergence tell you about the nature of diversification in each country?
+
+---
+
+## Spatial Data Challenge: The Opacity of SWF Investment Data
+
+Sovereign wealth fund investment portfolios are among the least transparent major asset pools in the global financial system. While the Santiago Principles (2008) established voluntary transparency standards for SWFs, compliance varies enormously. Norway's Government Pension Fund Global publishes its complete portfolio annually, down to individual stock holdings. ADIA publishes a brief annual review with aggregate asset allocation but no details on individual investments. The PIF publishes even less: its domestic investments are announced through government media, but its international portfolio is largely opaque.
+
+For spatial analysis, this opacity is a binding constraint. Estimating the domestic economic impact of SWF investment — which sectors receive how much capital, which regions benefit from SWF-funded projects, how SWF investment interacts with private sector activity — requires data that the funds themselves do not publish. Researchers resort to partial sources: media reports of announced deals (which may not be completed as announced), commercial databases of FDI and private equity transactions (which capture some SWF activities but miss others), and government budget documents (which may consolidate SWF spending with other public investment). The result is a measurement landscape where the largest investors in many MENA economies are the least transparent.
+
+---
+
+## Spatial Data Challenge: GDP Data Quality in Conflict Zones
+
+The MENA region contains several states — Syria, Yemen, Libya, Iraq — where civil conflict has degraded or destroyed the statistical infrastructure needed to produce reliable economic data. Syria's Central Bureau of Statistics effectively ceased publishing national accounts data after 2010. Yemen's Central Statistical Organization has produced only sporadic estimates since 2015. Libya's Bureau of Statistics has operated intermittently.
+
+Researchers working on conflict-affected economies must rely on proxy indicators: satellite-measured night-lights as a proxy for economic activity (Henderson, Storeygard & Weil 2012), mobile phone records as a proxy for population movement, commodity prices as a proxy for informal market conditions, and cross-border trade data from partner countries as a proxy for the affected country's external economic activity. Each proxy has well-documented limitations (night-lights saturate in dense urban areas and fail to capture underground or indoor economic activity; mobile phone data depends on network infrastructure that may be damaged), but they represent the best available evidence for economies where the conventional data-generating process has collapsed.
 
 ---
 
