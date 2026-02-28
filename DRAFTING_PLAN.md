@@ -197,12 +197,12 @@ Key references anchoring this thread:
 |---|---|---|
 | 0.1 | Outline and chapter specifications | All 18 specs detailed (Chs. 10, 12 filled out 2026-02-26) |
 | 0.2 | Replication repository | Done — Labs 1–7 scaffolded, CI passing |
-| 0.3 | Appendix B (Data & Software Guide) | Not started |
+| 0.3 | Appendix B (Data & Software Guide) | Done — `chapters/appendix_b_data_software_guide.md` |
 | 0.4 | Institutional Spotlight contacts | Not started |
 | 0.5 | GIS base maps | Not started |
 | 0.6 | Dataset fallback matrix | Partially done (documented in `docs/data_storage_strategy.md`) |
 | 0.7 | Data storage policy | Done |
-| 0.8 | Pathways preface section | Not started |
+| 0.8 | Pathways preface section | Done — `chapters/preface_pathways.md` (5 tracks + dependency DAG) |
 | 0.9 | Regional Diagnostics Dashboard template | Not started |
 
 ### Phase 1 Status (Part I)
@@ -236,9 +236,27 @@ Key references anchoring this thread:
 
 | Script | Status |
 |---|---|
-| `gravity_services_scaffold.py` | Complete (PPML estimation, services vs. goods comparison, smoke tests) |
-| `stri_tariff_equivalent.py` | Complete (STRI-to-tariff conversion, smoke tests) |
+| `ppml_estimator.py` | Complete (shared PPML/IRLS estimator with robust SEs; extracted from gravity scaffold) |
+| `gravity_services_scaffold.py` | Complete (PPML estimation, services vs. goods comparison, smoke tests; imports shared estimator) |
+| `stri_tariff_equivalent.py` | Complete (STRI-to-tariff conversion, smoke tests; imports shared estimator) |
 | `servicification_decomposition.py` | Not started |
 | `cloud_geography_mapper.py` | Not started |
 | `fetch_wto_services_trade.py` | Not started |
 | `fetch_oecd_stri.py` | Not started |
+
+### Phase 4 Readiness Assessment
+
+All Phase 1–3 prose deliverables are complete (first drafts). The project is now entering Phase 4 (Apparatus and Production). Key items:
+
+| # | Task | Status | Notes |
+|---|---|---|---|
+| 4.1 | Appendix A (Mathematical Foundations) | **Complete** | SAR/SEM/SDM derivations, structural gravity, convergence, Moran's I, notation index |
+| 4.2 | Appendix C (Glossary) | **Complete** | ~80 terms, ~60 acronyms, organized by domain |
+| 4.3 | GIS maps and figures | Not started | Regional Diagnostics Dashboards, comparative spread |
+| 4.4 | Finalize all Applied Lab code | In progress | Labs 1,3,4,7 complete; Lab 5 partial; Labs 2,6 scaffolded; remaining Lab 7 scripts TBD |
+| 4.5 | Comparative Spotlight tables | Partially done | Ch 15 global comparative spread drafted |
+| 4.6 | Full manuscript copyedit and reference audit | Not started | Cross-references, citations, notation consistency |
+| 4.7 | Index preparation | Not started | |
+| 0.3 | Appendix B (Data & Software Guide) | **Complete** | Master dataset inventory, per-lab tech specs, software setup, troubleshooting |
+| 0.8 | "Pathways Through This Book" preface | **Complete** | 5 curated tracks with dependency DAG, instructor notes |
+| 0.9 | Regional Diagnostics Dashboard template | Not started | Standardized 1-page visual per region |
