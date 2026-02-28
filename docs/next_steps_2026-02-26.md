@@ -83,12 +83,12 @@ This document captures the current project state and prioritized next steps base
 
 ### Tier 4: Deferred (Phase 3+)
 
-- Chapter 6 prose: first draft complete (~8,460 words, 2026-02-26); needs expansion to ~10,500 words and Data in Depth box
-- Chapter 7 prose (Wave C: China/ASEAN): not started
-- Chapter 8 prose (Wave C': South Asia)
-- Chapters 9-10 prose (Wave D: Europe)
-- Chapters 11-12 prose (Wave E: MENA)
-- Chapters 15-16 prose (Phase 3: Synthesis)
+- Chapter 6 prose: COMPLETE (~10,273 words)
+- Chapter 7 prose: COMPLETE (~10,800+ words)
+- Chapter 8 prose (Wave C': South Asia): not started — next priority
+- Chapters 9-10 prose (Wave D: Europe): **COMPLETE** — Ch 9 ~10,400w, Ch 10 ~10,900w (expanded 2026-02-28)
+- Chapters 11-12 prose (Wave E: MENA): not started
+- Chapters 15-16 prose (Phase 3: Synthesis): not started
 - Appendices A and C
 - GIS base maps and publication-quality figures
 
@@ -166,3 +166,26 @@ Week 11-12: Classroom pilot (Labs 1 + 6)
 - 8 specs enriched; Ch. 13 and Ch. 16 specs fully written
 - Prose updated in Chs. 1, 4, 5, 13
 - Lab 7 scaffolded
+
+### 2026-02-28: Wave D Prose Expansion (Chs 9-10)
+- **Ch 9** expanded from ~6,126w to ~10,400w (+4,241w):
+  - Introduction: Bratislava/Prešov vignette, per-capita transfer humanization, Ch 10 forward cross-ref
+  - §9.1: CME inequality ratios (Hamburg:Mecklenburg 1.8:1 vs London:Blackpool 4:1), Sparkassen (380) and Fraunhofer (76) as spatial policy instruments, French intermediate case (Schmidt 2002, Paris 31% GDP), Nordic expansion (Sweden Gini 0.12 vs UK 0.28, Nokia/Finland flexicurity), DME forward ref
+  - §9.2: Becker et al. heterogeneity (tertiary education threshold), Rodríguez-Pose & Fratesi spending decomposition (infrastructure vs human capital), Boldrin-Canova counterfactual detail, political economy of transfers, freedom of movement as organic "people" strategy, Austin/Glaeser/Summers non-employment, Barca Report institutional traps, US comparison
+  - §9.3: Foray/David/Hall European Paradox, Basque Country (Mondragon 80K, 9% R&D), Lower Austria bioeconomy, Calabria 12-priority failure, Foray "me-too" (80% listed health/biotech), institutional paradox
+  - §9.4: Bologna scale (5.6M mobile students), Romania brain drain (15%), Dutch English programs (200→1,600), Parey & Waldinger causal evidence, Erasmus top-20 city concentration, Brexit/Turing Scheme loss
+  - §9.5: EC 1.8% GDP gain estimate (~€300B), tariff-equivalent (45% professional services), legal services fragmentation, EU-US productivity gap, Digital Single Market geo-blocking/VAT
+  - §9.6: RDD identification detail, institutional heterogeneity extension, spatial spillover concern
+  - Data in Depth: PPS measurement caveats, spatial lag student exercise
+  - ERDF Spotlight: additionality principle, climate conditionality (30% threshold)
+  - Conclusion: NEG framework connection, polycentric financial geography, Ch 10 transition
+- **Ch 10** expanded from ~5,484w to ~10,900w (+5,402w):
+  - Introduction: Castellón urbanizaciones vignette, Ch 1-2 analytical framework cross-ref
+  - §10.1: Krugman (1993) OCA warning, convergence play (600→20bp spreads, current accounts Spain 10%/Greece 15%/Germany +6%), OCA endogeneity failure (4% vs 30% mobility), internal devaluation spatial mechanism, Italy lost generation (quarter-century zero growth, Lombardy 8% vs Calabria 23%), Basque resilience comparison, emigration (500K Greeks, 700K Spaniards, 1M Italians), Portugal recovery, doom loop mechanism (Ireland 40% GDP), Draghi institutional improvisation, Fiscal Compact procyclicality, NGEU governance (€750B, 527 milestones), US fiscal federalism comparison (30¢ vs 5¢), Balassa-Samuelson SDC expansion
+  - §10.2: FDI scale (€200B cumulative, >50% foreign-owned mfg), Nölke/Vliegenthart DME, Czech auto spatial granularity (Mladá Boleslav/Nošovice/Kolín), EV transition threat (2,000→200 parts), wage convergence (20→35-40%), re-shoring/automation phase, Poland 430K SSC workers, Warsaw Mokotów detail (Goldman/JPMorgan/Samsung), Kraków BPO→R&D trajectory, mfg-services labor competition, Poland resilience (only EU state avoiding 2008-09 recession)
+  - §10.3: Brexit timing/COVID overlap, TCA services omission, Goodwin/Heath education decomposition, Los et al. Sunderland paradox, Springford synthetic control (5% GDP loss), regulatory divergence, NI Protocol dual-market, Rodríguez-Pose comparative geography of discontent (Le Pen, AfD, Fidesz), McCann fiscal centralization (UK 5% vs Germany 23%), Levelling Up assessment, Ch 4 Rust Belt comparison
+  - Data in Depth: ecological inference caveat, spatial lag student exercise
+  - ECB Spotlight: governance tension (20 NCBs), TPI (2022), Weidmann resignation
+  - Conclusion: Mezzogiorno as sobering case, deeper-vs-heterogeneity choice, defense/security dimension (Ukraine), Ch 11 transition
+- **Tests:** 25/25 passing
+- **Documentation:** DRAFTING_PLAN.md Phase 2 table updated
