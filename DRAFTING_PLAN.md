@@ -209,7 +209,7 @@ Key references anchoring this thread:
 
 | Chapter | Prose | Key Content | Review |
 |---|---|---|---|
-| Ch. 1 | Draft complete (381 lines) | Spatial paradox of intangibility + Bangalore vs Kolkata case study | Opening case study added; cross-refs updated to 3-A/3-B |
+| Ch. 1 | Draft complete (381 lines) | Spatial paradox of intangibility + Bangalore vs Kolkata case study | Opening case study added; cross-refs updated to 3-A/3-B; 4+ author citations standardized to "et al." |
 | Ch. 2 | Draft revised (233 lines) | Institutional toolkit | Slimmed: path-dependency case studies condensed, VoC condensed with forward refs to Chs. 5, 6, 9 |
 | Ch. 3-A | Expanded draft (~12,144w) | Spatial econometrics + geospatial data ecosystem | Lab references updated; new subsection on geospatial data ecosystem (Nagaraj & Stern 2020, Nagaraj 2021, Yang-Ai-Arkolakis 2025, Boeing 2025 OSMnx, open-source stack, frontier sensing, measurement reflexivity) |
 | Ch. 3-B | Expanded draft (~8,482w) | Trade measurement & gravity | Full expansion: BMW Spartanburg vignette, McCallum border puzzle, PPML guidance, CEPII dataset, BOP construction, Mode 3 magnitudes, mirror statistics, STRI construction, Storper-Venables buzz, Diamond (2016) sorting, TiVA practical guide, cross-chapter examples, smile curve deepened |
@@ -218,7 +218,7 @@ Key references anchoring this thread:
 
 | Wave | Chapters | Prose Status | Lab Status |
 |---|---|---|---|
-| A (Americas) | Chs. 4–5 | Expanded drafts (~400 + ~359 lines); IRA, Mode 2, climate, 4 SDC boxes; cross-refs updated to 3-A/3-B | Lab 1: Complete |
+| A (Americas) | Chs. 4–5 | Expanded drafts (~400 + ~359 lines); IRA, Mode 2, climate, 4 SDC boxes; cross-refs updated to 3-A/3-B; formal Conclusion sections added (relocated from body to post-Spotlight position); citation format standardized | Lab 1: Complete |
 | B (Africa) | Chs. 13–14 | Expanded drafts (~309 + ~388 lines); Sahel climate, e-govt, eco-tourism, services protocol, 2 SDC boxes; cross-refs updated | Lab 6: Scaffolded + VIIRS fetch script built |
 | C (East Asia) | Chs. 6–7 | Ch. 6 complete first draft (~335 lines); Ch. 7 first draft (~227 lines) | Lab 2: Scaffolded (TiVA wired) |
 | C' (South Asia) | Ch. 8 | **Expanded prose complete** (~10,600w): STPI/SEZ institutional detail (59 centers, Section 10A), Hyderabad HITEC City/Genome Valley, Pune automotive-to-IT, tier-2 cities (Coimbatore/Trivandrum/Bhubaneswar), Grossman-Rossi-Hansberg task trading (city-level specialization, AI/automation threat), brain circulation (IIT system, Saxenian new Argonauts, Indian-origin tech executives), telemedicine (Apollo 900+ centers, eSanjeevani 100M+ consultations), Bangladesh comparator (Dhaka garment cluster $40B, Rana Plaza upgrading, SAARC-ASEAN comparison), Sri Lanka 2022 crisis, 2 SDC boxes | Lab 3: Complete (concentration scaffold + smoke tests) |
