@@ -150,6 +150,12 @@ Each pathway specifies a set of core chapters (required reading), elective chapt
 
 ---
 
+## Companion Volume
+
+This book analyzes spatial economics at the regional and global scale — how regions compete through trade networks, institutional frameworks, and global value chains. For readers seeking deeper treatment of intra-metropolitan dynamics — housing markets, transportation networks, municipal finance, urban design, and the consumer city — the companion volume *City Economies: An Introduction to Urban Economics* provides the within-city foundations that this book's regional analysis builds upon. The two books share theoretical roots in agglomeration economics, spatial equilibrium, and the New Economic Geography, but operate at complementary scales: *City Economies* asks how cities function internally, while *The New Regional Economics* asks how cities and regions connect to global systems. Chapter 13 of this book (Urbanization Without Industrialization) serves as the primary bridge between the two, applying the structural frameworks of both to African cities that are growing without the productivity gains that the urban economics literature typically takes as given.
+
+---
+
 ## Notes for Instructors
 
 **Selecting a pathway.** The pathways are designed to be self-contained: each provides enough theoretical foundation (from Part I) to support the regional chapters it includes. Students who have taken a prior course in international trade can skip Ch. 3-B; students with spatial econometrics background can skim Ch. 3-A. The elective chapters allow instructors to add depth in areas that match their expertise or their students' interests.
