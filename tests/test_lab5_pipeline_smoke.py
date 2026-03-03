@@ -137,3 +137,134 @@ def test_scm_robustness_smoke(tmp_path, run_cmd, lab5_panel):
 
     assert summary["in_time_placebo_count"] >= 1
     assert summary["in_time_placebo_years"] == [2021, 2023]
+
+
+# ── New visualization + analysis script smoke tests ─────────────────────
+
+
+def test_scm_gap_plotter_smoke(tmp_path, run_cmd):
+    """Smoke test for scm_gap_plotter.py."""
+    out_dir = tmp_path / "gap_plot"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab5_mena/code/scm_gap_plotter.py",
+        "--run-smoke-test",
+        "--output-dir", str(out_dir),
+    ])
+
+    summary_path = out_dir / "gap_plot_summary.json"
+    assert summary_path.exists(), "gap_plot_summary.json missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "SCM_Gap_Plot"
+    assert summary["n_pre_years"] >= 5, "Need at least 5 pre years"
+    assert summary["n_post_years"] >= 1
+    assert summary["pre_rmspe"] is not None and summary["pre_rmspe"] > 0
+
+    pdf_path = out_dir / "scm_gap_plot.pdf"
+    assert pdf_path.exists(), "scm_gap_plot.pdf missing"
+
+
+def test_placebo_distribution_smoke(tmp_path, run_cmd):
+    """Smoke test for placebo_distribution_plotter.py."""
+    out_dir = tmp_path / "placebo_dist"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab5_mena/code/placebo_distribution_plotter.py",
+        "--run-smoke-test",
+        "--output-dir", str(out_dir),
+    ])
+
+    summary_path = out_dir / "placebo_summary.json"
+    assert summary_path.exists(), "placebo_summary.json missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "Placebo_Distribution"
+    assert summary["n_placebos"] >= 5
+    assert 0.0 < summary["rank_p_value"] <= 1.0, (
+        f"rank_p_value={summary['rank_p_value']} outside (0, 1]"
+    )
+
+    pdf_path = out_dir / "placebo_distribution.pdf"
+    assert pdf_path.exists(), "placebo_distribution.pdf missing"
+
+
+def test_donor_weight_visualizer_smoke(tmp_path, run_cmd):
+    """Smoke test for donor_weight_visualizer.py."""
+    out_dir = tmp_path / "donor_wt"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab5_mena/code/donor_weight_visualizer.py",
+        "--run-smoke-test",
+        "--output-dir", str(out_dir),
+    ])
+
+    summary_path = out_dir / "donor_weights_summary.json"
+    assert summary_path.exists(), "donor_weights_summary.json missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "Donor_Weight_Visualization"
+    assert summary["n_donors"] >= 3
+    assert 0.0 < summary["top_weight"] <= 1.0, (
+        f"top_weight={summary['top_weight']} outside (0, 1]"
+    )
+
+    pdf_path = out_dir / "donor_weights.pdf"
+    assert pdf_path.exists(), "donor_weights.pdf missing"
+
+
+def test_scm_comparison_table_smoke(tmp_path, run_cmd):
+    """Smoke test for scm_comparison_table.py."""
+    out_dir = tmp_path / "comparison"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab5_mena/code/scm_comparison_table.py",
+        "--run-smoke-test",
+        "--output-dir", str(out_dir),
+    ])
+
+    summary_path = out_dir / "comparison_summary.json"
+    assert summary_path.exists(), "comparison_summary.json missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "SCM_Comparison"
+    assert summary["n_specs"] >= 2
+
+    tex_path = out_dir / "scm_comparison_table.tex"
+    assert tex_path.exists(), "scm_comparison_table.tex missing"
+    tex_content = tex_path.read_text(encoding="utf-8")
+    assert r"\toprule" in tex_content, "LaTeX table missing \\toprule"
+
+
+def test_conflict_event_study_smoke(tmp_path, run_cmd):
+    """Smoke test for conflict_event_study.py."""
+    out_dir = tmp_path / "event_study"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab5_mena/code/conflict_event_study.py",
+        "--run-smoke-test",
+        "--output-dir", str(out_dir),
+    ])
+
+    summary_path = out_dir / "event_study_summary.json"
+    assert summary_path.exists(), "event_study_summary.json missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "Conflict_Event_Study"
+    assert summary["estimated_effect"] is not None
+    assert np.isfinite(summary["estimated_effect"]), "estimated_effect must be finite"
+
+    csv_path = out_dir / "event_study.csv"
+    assert csv_path.exists(), "event_study.csv missing"
+    es_df = pd.read_csv(csv_path)
+    assert not es_df.empty, "event_study.csv is empty"
