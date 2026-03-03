@@ -193,10 +193,6 @@ def main() -> None:
     csv_path = out_dir / "event_study.csv"
     es_df.to_csv(csv_path, index=False)
 
-    # Plot
-    plot_event_study(es_df, args.treated_iso3, args.event_year,
-                     out_dir / "event_study.pdf")
-
     # Summary
     pre_effects = es_df.loc[es_df["period"] == "pre", "effect"]
     post_effects = es_df.loc[es_df["period"] == "post", "effect"]
@@ -215,10 +211,16 @@ def main() -> None:
 
     summary_path = out_dir / "event_study_summary.json"
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
-
     print(f"Summary: {summary_path}")
     print(f"CSV: {csv_path}")
     print(f"Estimated effect: {summary['estimated_effect']}")
+
+    # Plot (optional — requires plotnine)
+    try:
+        plot_event_study(es_df, args.treated_iso3, args.event_year,
+                         out_dir / "event_study.pdf")
+    except ImportError:
+        print("plotnine not installed — skipping figure generation")
 
 
 if __name__ == "__main__":

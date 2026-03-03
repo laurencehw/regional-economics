@@ -108,17 +108,16 @@ def main() -> None:
 
     summary_path = out_dir / "donor_weights_summary.json"
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
-
-    plot_weights(df, args.treated_iso3, labels[0] if labels else None,
-                 out_dir / "donor_weights.pdf")
-
-    # If multiple specs, generate one figure per spec
-    if len(all_weights) > 1:
-        for i, (wdf, lab) in enumerate(zip(all_weights, labels)):
-            fname = f"donor_weights_{i}.pdf"
-            plot_weights(wdf, args.treated_iso3, lab, out_dir / fname)
-
     print(f"Summary: {summary_path}")
+
+    try:
+        plot_weights(df, args.treated_iso3, labels[0] if labels else None,
+                     out_dir / "donor_weights.pdf")
+        if len(all_weights) > 1:
+            for i, (wdf, lab) in enumerate(zip(all_weights, labels)):
+                plot_weights(wdf, args.treated_iso3, lab, out_dir / f"donor_weights_{i}.pdf")
+    except ImportError:
+        print("plotnine not installed — skipping figure generation")
 
 
 if __name__ == "__main__":

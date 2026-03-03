@@ -176,10 +176,12 @@ def main() -> None:
 
     summary_path = out_dir / "gap_plot_summary.json"
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
-
-    plot_gap(df, intervention_year, treated_iso3, out_dir / "scm_gap_plot.pdf")
-
     print(f"Summary: {summary_path}")
+
+    try:
+        plot_gap(df, intervention_year, treated_iso3, out_dir / "scm_gap_plot.pdf")
+    except ImportError:
+        print("plotnine not installed — skipping figure generation")
 
 
 if __name__ == "__main__":

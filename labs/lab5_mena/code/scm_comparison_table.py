@@ -165,9 +165,6 @@ def main() -> None:
     tex_path.write_text(tex, encoding="utf-8")
     print(f"LaTeX table: {tex_path}")
 
-    # Figure
-    plot_comparison(specs, out_dir / "scm_comparison.pdf")
-
     # Summary JSON
     valid_specs = [
         s for s in specs
@@ -192,6 +189,12 @@ def main() -> None:
     summary_path = out_dir / "comparison_summary.json"
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
     print(f"Summary: {summary_path}")
+
+    # Figure (optional — requires plotnine)
+    try:
+        plot_comparison(specs, out_dir / "scm_comparison.pdf")
+    except ImportError:
+        print("plotnine not installed — skipping figure generation")
 
 
 if __name__ == "__main__":

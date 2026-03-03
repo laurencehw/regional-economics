@@ -139,11 +139,13 @@ def main() -> None:
 
     summary_path = out_dir / "placebo_summary.json"
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
-
-    plot_distribution(placebos, baseline_unit, rank_p, out_dir / "placebo_distribution.pdf")
-
     print(f"Summary: {summary_path}")
     print(f"Rank p-value: {rank_p}")
+
+    try:
+        plot_distribution(placebos, baseline_unit, rank_p, out_dir / "placebo_distribution.pdf")
+    except ImportError:
+        print("plotnine not installed — skipping figure generation")
 
 
 if __name__ == "__main__":
