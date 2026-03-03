@@ -22,31 +22,35 @@ This document captures the current project state and prioritized next steps base
 - **Services trade cross-cutting theme:** Fully integrated across outline, drafting plan, all detailed specs, and drafted chapters; AfCFTA services protocol prose now in Ch. 14
 - **Editorial feedback integrated:** New outline with Pathways, Regional Diagnostics Dashboard, Spatial Data Challenge boxes, climate distributed into regions, tourism/education as recurring themes, gravity model consolidated
 - **Lab 1 (Americas):** Complete — real-data SAR pipeline, 3 specification bundles, Bartik extension
-- **Lab 2 (East Asia):** Scaffolded — real TiVA data wired, beta-convergence scaffold, smoke test passing
-- **Lab 3 (South Asia):** Scaffolded — directory structure and README created
-- **Lab 4 (Europe):** Scaffolded — real Eurostat NUTS-2 data wired, RDD scaffold, smoke test passing
-- **Lab 5 (MENA):** Partially complete — estimation panel built, 3 SCM baselines, placebo/robustness checks
-- **Lab 6 (Africa):** Scaffolded — Moran's I with permutation inference, synthetic data only
-- **Lab 7 (Services):** Scaffolded — README with 4 exercises, code directory with planned scripts
-- **Infrastructure:** 17 smoke tests passing (CI verified post-renumbering), GitHub Actions CI, requirements.txt, data storage policy
+- **Lab 2 (East Asia):** **Complete** — 8 scripts (convergence scaffold, prepare inputs, run specs, DVA trajectory plotter, convergence comparison table, fetch TiVA electronics, DVA decomposition, trade network visualizer); 9 tests passing
+- **Lab 3 (South Asia):** **Complete** — concentration scaffold + prepare inputs; 3 tests passing
+- **Lab 4 (Europe):** **Complete** — RDD scaffold + prepare inputs + real-data specs; 4 tests passing
+- **Lab 5 (MENA):** **Complete** — SCM baseline + robustness pipeline + 5 visualization/analysis scripts (gap plotter, placebo distribution, donor weights, comparison table, conflict event study); 8 tests passing
+- **Lab 6 (Africa):** Scaffolded — Moran's I with permutation inference, synthetic data only; VIIRS fetch script built; 4 tests passing. Real VIIRS data blocked on EOG license
+- **Lab 7 (Services):** **Complete** — 7 scripts (PPML estimator, gravity scaffold, STRI tariff equivalent, servicification decomposition, cloud geography mapper, 2 fetch scripts); 5 tests passing
+- **Infrastructure:** 37 smoke tests passing, GitHub Actions CI, requirements.txt, data storage policy
 - **Data:** WDI, Comtrade, BTS, LPI, Eurostat NUTS-2, WIOD, TiVA, ACLED (count-only), UNHCR acquired; VIIRS and Afrobarometer template-only
 
 ### What's Not Done
-- Chapters 6–12, 15–16 prose (9 remaining chapters)
+- ~~Chapters 6–12, 15–16 prose (9 remaining chapters)~~ **Done** — all 16 chapters have expanded prose (~9,000–11,600w each)
 - ~~Ch 3 prose needs splitting into 3-A and 3-B files~~ **Done** (2026-02-26)
 - ~~Ch 2 prose needs slimming (path dependency to Ch 5, VoC to Ch 9, Windows to Ch 6)~~ **Done** (2026-02-26)
 - ~~Ch 1 prose needs opening case study (Bangalore vs Kolkata)~~ **Done** (2026-02-26)
 - ~~Companion chapter specs stubs~~ **Done** — all 18 specs now detailed (2026-02-26)
 - ~~Spatial Data Challenge boxes (content specified, prose not written)~~ **Done for Waves A+B** — 6 boxes written across Chs 4, 5, 13, 14; remaining regions (Waves C–E) still needed
+- ~~Lab 3 code implementation~~ **Done** (2026-02-28)
+- ~~Lab 7 code implementation~~ **Done** (2026-02-28)
+- ~~Pathways preface section and dependency diagram~~ **Done** — `chapters/preface_pathways.md`
+- ~~Appendices A-C~~ **Done** — all three appendices complete
+- ~~Bibliography incomplete entries~~ **Done** — 0 incomplete entries remaining
 - Convergence Diagnostic figures for Chs 4 and 5 (placeholder only — requires actual data visualization)
-- Lab 3 code implementation (4 planned scripts)
-- Lab 7 code implementation (6 planned scripts)
 - Lab 6 real-data validation (VIIRS/Afrobarometer acquisition)
-- Pathways preface section and dependency diagram
 - Regional Diagnostics Dashboard template
 - Zero-install cloud targets (Colab/Codespaces)
 - ACLED row-level access confirmation
-- Appendices A-C
+- GIS maps and publication-quality figures
+- Index preparation
+- Final manuscript proofread
 
 ---
 
@@ -76,42 +80,43 @@ This document captures the current project state and prioritized next steps base
 
 ### Tier 3: Important
 
-#### 6. Implement Lab 3 (South Asia) and Lab 7 (Services) Code
+#### 6. ~~Implement Lab 3 (South Asia) and Lab 7 (Services) Code~~ **Done** (2026-02-28)
 #### 7. Add Zero-Install Cloud Execution Targets
 #### 8. Design Regional Diagnostics Dashboard Template
-#### 9. Write Pathways Preface Section
+#### 9. ~~Write Pathways Preface Section~~ **Done** — `chapters/preface_pathways.md`
 
-### Tier 4: Deferred (Phase 3+)
+### Tier 4: All Chapter Prose Complete
 
-- Chapter 6 prose: COMPLETE (~10,273 words)
-- Chapter 7 prose: COMPLETE (~10,800+ words)
-- Chapter 8 prose (Wave C': South Asia): not started — next priority
-- Chapters 9-10 prose (Wave D: Europe): **COMPLETE** — Ch 9 ~10,400w, Ch 10 ~10,900w (expanded 2026-02-28)
-- Chapters 11-12 prose (Wave E: MENA): not started
-- Chapters 15-16 prose (Phase 3: Synthesis): not started
-- Appendices A and C
-- GIS base maps and publication-quality figures
+- ~~Chapter 6 prose~~ **COMPLETE** (~10,964w)
+- ~~Chapter 7 prose~~ **COMPLETE** (~11,618w)
+- ~~Chapter 8 prose (Wave C': South Asia)~~ **COMPLETE** (~10,622w)
+- ~~Chapters 9-10 prose (Wave D: Europe)~~ **COMPLETE** — Ch 9 ~10,356w, Ch 10 ~10,877w
+- ~~Chapters 11-12 prose (Wave E: MENA)~~ **COMPLETE** — Ch 11 ~10,423w, Ch 12 ~9,894w
+- ~~Chapters 15-16 prose (Phase 3: Synthesis)~~ **COMPLETE** — Ch 15 ~9,981w, Ch 16 ~11,295w
+- ~~Appendices A-C~~ **COMPLETE**
+- GIS base maps and publication-quality figures — not started
+- Index preparation — not started
 
 ---
 
 ## Suggested Execution Sequence
 
 ```
-Week 1-2:  [DONE] Split Ch. 3 prose into 3-A and 3-B
-           [DONE] Slim Ch. 2 (distribute to regional chapters)
-           [DONE] Fill Ch. 10 and Ch. 12 specs
-           [DONE] Add Ch. 1 opening case study (Bangalore vs Kolkata)
-           [DONE] Part I cross-references verified and fixed
-Week 3-4:  [DONE] Expand Ch. 4 to full draft (IRA, Mode 2 education, 2 SDC boxes)
-           Acquire VIIRS, start Lab 6 real-data validation  ← next priority
-Week 5-6:  [DONE] Expand Ch. 5 to full draft (climate migration, 2 SDC boxes)
-Week 7-8:  Wave A review gate  ← pending
-           [DONE] Expand Ch. 13 to full draft (Sahel climate, e-govt, SDC box)
-           Build Lab 3 IT-BPO mapping script  ← deferred
-Week 9-10: [DONE] Expand Ch. 14 to full draft (eco-tourism, services protocol §14.5, SDC box)
-           Build Lab 7 gravity script + WTO data fetch  ← deferred
-Week 11-12: Classroom pilot (Labs 1 + 6)
-            Wave A+B review gate
+Week 1-2:   [DONE] Split Ch. 3, slim Ch. 2, fill specs, add Ch. 1 case study
+Week 3-6:   [DONE] Expand Chs. 4-5, 13-14 (Waves A+B)
+Week 7-8:   [DONE] Expand Chs. 6-8 (Waves C/C'), complete Labs 2-3
+Week 9-10:  [DONE] Expand Chs. 9-12 (Waves D/E), complete Labs 4-5
+Week 11-12: [DONE] Expand Chs. 15-16, complete Lab 7, appendices, bibliography
+            [DONE] Structural standardization, consistency review
+--- Current: Phase 4 (Apparatus and Production) ---
+Next:       Complete Lab 6 (visualization scripts on synthetic data)
+            Acquire VIIRS real data, validate Lab 6 at scale
+            GIS maps and publication-quality figures
+            Regional Diagnostics Dashboards
+            Index preparation
+            Final manuscript proofread
+            Zero-install cloud targets (Colab/Codespaces)
+            Classroom pilot (Labs 1 + 6)
 ```
 
 ---
@@ -125,8 +130,9 @@ Week 11-12: Classroom pilot (Labs 1 + 6)
 | ACLED row-level access denied | Continue with count-based proxy | Pending |
 | VIIRS raster processing at 30+ countries | Pre-aggregated NOAA annual composites | Lab 6 |
 | RBI/KLEMS data for Lab 3 | NASSCOM reports as fallback | Lab 3 |
-| ~~Lab renumbering breaking CI~~ | **Resolved** — 17 smoke tests passing post-renumbering | Done |
+| ~~Lab renumbering breaking CI~~ | **Resolved** — 37 smoke tests passing | Done |
 | Services content coherence | Cross-reference table in DRAFTING_PLAN.md | Ongoing |
+| Lab 6 real data | VIIRS fetch script built; blocked on EOG license/download | Lab 6 |
 
 ---
 
@@ -189,3 +195,12 @@ Week 11-12: Classroom pilot (Labs 1 + 6)
   - Conclusion: Mezzogiorno as sobering case, deeper-vs-heterogeneity choice, defense/security dimension (Ukraine), Ch 11 transition
 - **Tests:** 25/25 passing
 - **Documentation:** DRAFTING_PLAN.md Phase 2 table updated
+
+### 2026-03-02: Lab 2 + Lab 5 Completion, Bibliography Cleanup
+- **Lab 2 (East Asia):** Complete — 8 scripts total (convergence scaffold, prepare inputs, run specs, DVA trajectory plotter, convergence comparison table, fetch TiVA electronics, DVA decomposition, trade network visualizer); 9/9 tests passing
+- **Lab 5 (MENA):** Complete — added 5 visualization/analysis scripts (scm_gap_plotter, placebo_distribution_plotter, donor_weight_visualizer, scm_comparison_table, conflict_event_study); all support `--run-smoke-test` mode; 8/8 tests passing
+- **Bibliography:** All incomplete entries resolved (was 7 incomplete, now 0)
+- **Real SCM data:** 3 real-data SCM specifications run (YEM 2015, SYR 2018, LBY 2014) with outputs in `labs/lab5_mena/output/real_scm_baseline/`
+- **Tests:** 37/37 passing (up from 32)
+- **Lab status:** 6 of 7 labs complete (Lab 6 Africa remains scaffolded, blocked on VIIRS license)
+- **Documentation:** DRAFTING_PLAN.md, next_steps, MEMORY.md updated
