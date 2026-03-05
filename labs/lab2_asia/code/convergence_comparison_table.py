@@ -205,7 +205,10 @@ def main() -> None:
 
     # Scatter plot
     if panel is not None:
-        plot_scatter(panel, out_dir / "convergence_scatter.pdf")
+        try:
+            plot_scatter(panel, out_dir / "convergence_scatter.pdf")
+        except ImportError:
+            print("plotnine not installed — skipping scatter plot")
 
     # Summary JSON
     summary = {

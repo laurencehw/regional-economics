@@ -258,7 +258,10 @@ def main() -> None:
     summary_path.write_text(json.dumps(stats, indent=2), encoding="utf-8")
 
     # Plot
-    plot_network(A, economies, centrality, out_dir / "trade_network.pdf")
+    try:
+        plot_network(A, economies, centrality, out_dir / "trade_network.pdf")
+    except ImportError:
+        print("matplotlib not installed — skipping network figure")
 
     print(f"Centrality CSV: {cent_path}")
     print(f"Summary: {summary_path}")

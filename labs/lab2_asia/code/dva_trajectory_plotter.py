@@ -150,7 +150,10 @@ def main() -> None:
     summary_path = out_dir / "trajectory_summary.json"
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
-    plot_trajectories(df, out_dir / "dva_trajectories.pdf")
+    try:
+        plot_trajectories(df, out_dir / "dva_trajectories.pdf")
+    except ImportError:
+        print("plotnine not installed — skipping trajectory figure")
 
     print(f"Summary: {summary_path}")
     print(f"Economies: {list(slopes.keys())}")

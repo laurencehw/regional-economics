@@ -15,7 +15,6 @@ from typing import Dict, List
 
 import numpy as np
 import pandas as pd
-import requests
 
 ECONOMIES = ["CHN", "JPN", "KOR", "IND", "IDN", "VNM", "THA", "MYS", "PHL", "SGP"]
 BASE_URL = "https://sdmx.oecd.org/sti-public/rest"
@@ -76,6 +75,7 @@ def synthetic_electronics(seed: int = 42) -> pd.DataFrame:
 
 
 def fetch_xml(url: str, timeout: int) -> bytes:
+    import requests
     response = requests.get(url, timeout=timeout)
     response.raise_for_status()
     return response.content

@@ -205,7 +205,10 @@ def main() -> None:
     summary_path = out_dir / "decomposition_summary.json"
     summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
-    plot_decomposition(df, out_dir / "dva_decomposition.pdf")
+    try:
+        plot_decomposition(df, out_dir / "dva_decomposition.pdf")
+    except ImportError:
+        print("plotnine not installed — skipping decomposition figure")
 
     print(f"CSV: {csv_path}")
     print(f"Summary: {summary_path}")
