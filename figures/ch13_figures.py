@@ -18,7 +18,7 @@ from figure_utils import (
     FIGSIZE_MAP, LAND_COLOR, WATER_COLOR, BORDER_COLOR, REGION_COLORS,
     add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
-    annotate_cities, annotate_corridors,
+    annotate_cities, annotate_corridors, project_cities, project_corridors,
 )
 
 
@@ -48,9 +48,10 @@ def plot_ssa_urbanization_map(output_dir: Path, seed: int = 42) -> dict:
     setup_map_ax(ax, "Sub-Saharan Africa: Primate Cities and Urbanization Corridors")
 
     ann = load_annotations("ch13")
+    crs = PROJECTIONS["africa"]
     if ann.get("cities"):
         # Plot cities with size proportional to importance
-        for city in ann["cities"]:
+        for city in project_cities(ann["cities"], crs):
             ax.scatter(city["lon"], city["lat"], s=50, c="#e6ab02",
                        edgecolors="#333333", linewidths=0.5, zorder=5)
             dx, dy = city.get("label_offset", [5, 3])
@@ -59,7 +60,7 @@ def plot_ssa_urbanization_map(output_dir: Path, seed: int = 42) -> dict:
                         xytext=(dx, dy), textcoords="offset points",
                         zorder=6)
     if ann.get("corridors"):
-        annotate_corridors(ax, ann["corridors"])
+        annotate_corridors(ax, project_corridors(ann["corridors"], crs))
 
     add_figure_source(fig, "Natural Earth; UN World Urbanization Prospects.")
     fig.tight_layout(rect=[0, 0.03, 1, 1])

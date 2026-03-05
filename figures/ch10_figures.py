@@ -18,7 +18,7 @@ from figure_utils import (
     FIGSIZE_MAP, LAND_COLOR, WATER_COLOR, BORDER_COLOR, REGION_COLORS,
     add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
-    annotate_cities,
+    annotate_cities, project_cities,
 )
 
 
@@ -70,8 +70,9 @@ def plot_north_south_map(output_dir: Path, seed: int = 42) -> dict:
     setup_map_ax(ax, "EU North-South Divide and Brexit Geography")
 
     ann = load_annotations("ch10")
+    crs = PROJECTIONS["europe"]
     if ann.get("cities"):
-        annotate_cities(ax, ann["cities"])
+        annotate_cities(ax, project_cities(ann["cities"], crs))
 
     # Legend
     from matplotlib.patches import Patch

@@ -18,7 +18,7 @@ from figure_utils import (
     FIGSIZE_MAP, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
     add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
-    annotate_cities, annotate_arrows,
+    annotate_cities, annotate_arrows, project_cities, project_arrows,
 )
 
 
@@ -60,10 +60,11 @@ def plot_conflict_zones_map(output_dir: Path, seed: int = 42) -> dict:
     setup_map_ax(ax, "MENA Conflict Zones and Refugee Displacement")
 
     ann = load_annotations("ch12")
+    crs = PROJECTIONS["mena"]
     if ann.get("cities"):
-        annotate_cities(ax, ann["cities"])
+        annotate_cities(ax, project_cities(ann["cities"], crs))
     if ann.get("refugee_flows"):
-        annotate_arrows(ax, ann["refugee_flows"])
+        annotate_arrows(ax, project_arrows(ann["refugee_flows"], crs))
 
     from matplotlib.patches import Patch
     legend_items = [

@@ -18,7 +18,7 @@ from figure_utils import (
     FIGSIZE_MAP, LAND_COLOR, WATER_COLOR, BORDER_COLOR, REGION_COLORS,
     add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
-    annotate_cities,
+    annotate_cities, project_cities,
 )
 
 
@@ -58,17 +58,21 @@ def plot_mena_energy_map(output_dir: Path, seed: int = 42) -> dict:
     setup_map_ax(ax, "MENA: GCC Energy Economies and Diversification Hubs")
 
     ann = load_annotations("ch11")
+    crs = PROJECTIONS["mena"]
     if ann.get("cities"):
-        annotate_cities(ax, ann["cities"])
+        annotate_cities(ax, project_cities(ann["cities"], crs))
 
-    # Energy field markers
-    for field in ann.get("energy_zones", []):
-        ax.plot(field["lon"], field["lat"], "^", color="#d62728",
-                markersize=8, zorder=5, alpha=0.8)
-        ax.annotate(field["name"], (field["lon"], field["lat"]),
-                    fontsize=4.5, ha="left", va="bottom",
-                    xytext=(3, 3), textcoords="offset points",
-                    color="#d62728")
+    # Energy field markers (project to map CRS)
+    energy_zones = ann.get("energy_zones", [])
+    if energy_zones:
+        proj_zones = project_cities(energy_zones, crs)  # same lon/lat structure
+        for field in proj_zones:
+            ax.plot(field["lon"], field["lat"], "^", color="#d62728",
+                    markersize=8, zorder=5, alpha=0.8)
+            ax.annotate(field["name"], (field["lon"], field["lat"]),
+                        fontsize=4.5, ha="left", va="bottom",
+                        xytext=(3, 3), textcoords="offset points",
+                        color="#d62728")
 
     from matplotlib.patches import Patch
     from matplotlib.lines import Line2D

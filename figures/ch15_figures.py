@@ -18,7 +18,7 @@ from figure_utils import (
     FIGSIZE_WIDE, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
     add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
-    annotate_arrows,
+    annotate_arrows, project_arrows,
 )
 
 

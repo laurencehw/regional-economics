@@ -202,10 +202,61 @@ def load_annotations(chapter: str | None = None) -> Dict[str, Any]:
     return data
 
 
+def _project_point(lon: float, lat: float, crs) -> Tuple[float, float]:
+    """Transform a single lon/lat point to the target CRS."""
+    from pyproj import Transformer
+    transformer = Transformer.from_crs("EPSG:4326", crs, always_xy=True)
+    return transformer.transform(lon, lat)
+
+
+def project_cities(cities: List[Dict], crs) -> List[Dict]:
+    """Return a copy of city dicts with lon/lat projected to target CRS."""
+    from pyproj import Transformer
+    transformer = Transformer.from_crs("EPSG:4326", crs, always_xy=True)
+    out = []
+    for city in cities:
+        c = dict(city)
+        c["lon"], c["lat"] = transformer.transform(city["lon"], city["lat"])
+        out.append(c)
+    return out
+
+
+def project_corridors(corridors: List[Dict], crs) -> List[Dict]:
+    """Return a copy of corridor dicts with waypoints projected to target CRS."""
+    from pyproj import Transformer
+    transformer = Transformer.from_crs("EPSG:4326", crs, always_xy=True)
+    out = []
+    for corr in corridors:
+        c = dict(corr)
+        projected = []
+        for lon, lat in corr["waypoints"]:
+            px, py = transformer.transform(lon, lat)
+            projected.append([px, py])
+        c["waypoints"] = projected
+        out.append(c)
+    return out
+
+
+def project_arrows(arrows: List[Dict], crs) -> List[Dict]:
+    """Return a copy of arrow dicts with start/end projected to target CRS."""
+    from pyproj import Transformer
+    transformer = Transformer.from_crs("EPSG:4326", crs, always_xy=True)
+    out = []
+    for arrow in arrows:
+        a = dict(arrow)
+        sx, sy = transformer.transform(arrow["start"][0], arrow["start"][1])
+        ex, ey = transformer.transform(arrow["end"][0], arrow["end"][1])
+        a["start"] = [sx, sy]
+        a["end"] = [ex, ey]
+        out.append(a)
+    return out
+
+
 def annotate_cities(ax, cities: List[Dict], transform=None):
     """Plot city markers and labels on a matplotlib axis.
 
     Each city dict: {name, lat, lon, label_offset: [dx, dy], style: str}
+    Cities should already be projected to the map CRS via project_cities().
     """
     for city in cities:
         x, y = city["lon"], city["lat"]
@@ -216,20 +267,19 @@ def annotate_cities(ax, cities: List[Dict], transform=None):
         color = "#333333" if style == "major" else "#666666"
         fontsize = 7 if style == "major" else 6
 
-        kwargs = {"transform": transform} if transform is not None else {}
-        ax.scatter(x, y, s=size, c=color, marker=marker, zorder=5, **kwargs)
+        ax.scatter(x, y, s=size, c=color, marker=marker, zorder=5)
         ax.annotate(
             city["name"], (x, y), xytext=(dx, dy),
             textcoords="offset points", fontsize=fontsize,
             ha="left", va="bottom", zorder=6,
-            **({} if transform is None else {}),
         )
 
 
 def annotate_corridors(ax, corridors: List[Dict], transform=None):
     """Draw corridor route lines on a matplotlib axis.
 
-    Each corridor dict: {name, waypoints: [[lon,lat],...], style: str}
+    Each corridor dict: {name, waypoints: [[x,y],...], style: str}
+    Waypoints should already be projected to the map CRS via project_corridors().
     """
     for corridor in corridors:
         pts = np.array(corridor["waypoints"])
@@ -254,7 +304,8 @@ def annotate_corridors(ax, corridors: List[Dict], transform=None):
 def annotate_arrows(ax, arrows: List[Dict], transform=None):
     """Draw directional flow arrows on a matplotlib axis.
 
-    Each arrow dict: {label, start: [lon,lat], end: [lon,lat], style: str}
+    Each arrow dict: {label, start: [x,y], end: [x,y], style: str}
+    Points should already be projected to the map CRS via project_arrows().
     """
     for arrow in arrows:
         x0, y0 = arrow["start"]

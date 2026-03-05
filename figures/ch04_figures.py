@@ -19,7 +19,7 @@ from figure_utils import (
     FIGSIZE_MAP, FIGSIZE_THEMATIC, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
     REGION_COLORS, add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
-    annotate_cities, annotate_corridors,
+    annotate_cities, annotate_corridors, project_cities, project_corridors,
 )
 
 
@@ -55,10 +55,11 @@ def plot_north_america_map(output_dir: Path, seed: int = 42) -> dict:
     setup_map_ax(ax, "North America: USMCA, Industrial Belts & Trade Corridors")
 
     ann = load_annotations("ch04")
+    crs = PROJECTIONS["americas"]
     if ann.get("cities"):
-        annotate_cities(ax, ann["cities"])
+        annotate_cities(ax, project_cities(ann["cities"], crs))
     if ann.get("corridors"):
-        annotate_corridors(ax, ann["corridors"])
+        annotate_corridors(ax, project_corridors(ann["corridors"], crs))
 
     add_figure_source(fig, "Natural Earth; BTS cross-border flow data.")
     fig.tight_layout(rect=[0, 0.03, 1, 1])

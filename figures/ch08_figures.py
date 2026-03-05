@@ -19,7 +19,7 @@ from figure_utils import (
     FIGSIZE_MAP, FIGSIZE_THEMATIC, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
     REGION_COLORS, add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
-    annotate_cities,
+    annotate_cities, project_cities,
 )
 
 
@@ -48,8 +48,9 @@ def plot_india_it_map(output_dir: Path, seed: int = 42) -> dict:
     setup_map_ax(ax, "India: IT-BPO Clusters and Special Economic Zones")
 
     ann = load_annotations("ch08")
+    crs = PROJECTIONS["south_asia"]
     if ann.get("cities"):
-        annotate_cities(ax, ann["cities"])
+        annotate_cities(ax, project_cities(ann["cities"], crs))
 
     add_figure_source(fig, "Natural Earth; NASSCOM; Indian SEZ Board.")
     fig.tight_layout(rect=[0, 0.03, 1, 1])
