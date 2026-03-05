@@ -50,6 +50,15 @@ The geographic distribution of transfers follows predictably from this classific
 
 The political economy of these transfers is worth noting. Net contributions are modest in per-capita terms — Germany's net contribution amounts to approximately €100 per citizen per year, a fraction of what German taxpayers transfer to eastern German Länder through domestic fiscal equalization — but they are politically visible because they cross national borders and are administered by a supranational institution that lacks the democratic legitimacy of a national parliament. The "juste retour" debate (whether each member state should receive back in EU spending what it contributes) has shaped every Multiannual Financial Framework negotiation, and the UK's decision to negotiate a permanent rebate (the "British cheque" obtained by Margaret Thatcher in 1984) set a precedent that continues to distort the allocation process. The tension between efficiency (directing funds to regions where they will have the greatest growth impact) and political acceptability (ensuring that every member state perceives a fair return) is inherent in any international transfer mechanism and explains why the allocation formula has become increasingly complex with each programming period.
 
+| Allocation Category | 2021--2027 Budget (approx.) | Target Regions | Key Objective |
+|---|---|---|---|
+| European Regional Development Fund (ERDF) | ~€226 billion | All regions; largest share to "less developed" (<75% EU-average GDP/capita) | Infrastructure, innovation, SME support, digital transition |
+| European Social Fund Plus (ESF+) | ~€99 billion | All regions; weighted toward less developed | Education, employment, social inclusion, youth employment |
+| Cohesion Fund | ~€48 billion | Member states with GNI/capita <90% of EU average (mainly CEE) | Transport networks (TEN-T), environment, climate |
+| Just Transition Fund | ~€19 billion | Regions dependent on fossil fuels or carbon-intensive industry | Economic diversification for coal and carbon-dependent areas |
+
+*Source: European Commission, Multiannual Financial Framework 2021--2027.*
+
 ### The Convergence Evidence
 
 The empirical literature on Cohesion Fund effectiveness is large, methodologically diverse, and genuinely contested. The central identification challenge is the classic evaluation problem: regions that receive Cohesion Funds differ from regions that do not in ways that are correlated with economic growth, making simple comparisons of treated and untreated regions unreliable.
@@ -79,6 +88,10 @@ The EU's revealed preference is firmly on the "places" side. Cohesion Policy is 
 ## 9.3 Smart Specialization: Tailoring Industrial Policy to Regional Capabilities
 
 ### The S3 Framework
+
+{% hint style="info" %}
+**Smart Specialization (S3).** A place-based industrial policy framework requiring each EU region to identify a small number of domains where it has genuine competitive advantage, then concentrate innovation resources there. The process --- called the Entrepreneurial Discovery Process (EDP) --- involves structured consultation among firms, universities, and government to avoid two failure modes: top-down "picking winners" and bottom-up "me-too" strategies where every region claims to specialize in the same frontier sectors. S3 has been an ex ante conditionality for ERDF funding since 2014.
+{% endhint %}
 
 Smart Specialization Strategies (S3), introduced as an ex ante conditionality for ERDF funding in the 2014–2020 programming period and continued in 2021–2027, represent the EU's most sophisticated attempt to design place-based industrial policy. The concept, developed by Dominique Foray, Paul David, and Bronwyn Hall, starts from the observation that the Product Space (Hidalgo and Hausmann 2007, introduced in Chapter 2) constrains regional diversification: regions can most effectively develop new economic activities that are "nearby" in the Product Space to their existing capabilities, rather than attempting to leap to unrelated activities.
 

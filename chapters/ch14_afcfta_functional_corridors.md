@@ -158,6 +158,13 @@ The logic is straightforward. Continental-scale reform (the AfCFTA) requires agr
 
 **The Abidjan-Lagos Corridor.** This 1,000-kilometer coastal route connects the two largest economies in West Africa through Ghana, Togo, and Benin. Unlike the East African corridors, which have benefited from significant institutional reform, the Abidjan-Lagos corridor remains plagued by the problems this chapter has documented: multiple customs inspections (goods crossing from Côte d'Ivoire to Nigeria pass through four borders), informal payments at roadblocks (the West Africa Trade Hub estimated over 30 roadblocks between Abidjan and Lagos in 2019), and incompatible vehicle and axle-load regulations that force transshipment at some borders. The corridor's unrealized potential — connecting 350 million consumers in the world's most rapidly urbanizing coastal zone — is the strongest argument for the AfCFTA's trade facilitation agenda. If the Abidjan-Lagos corridor could achieve the institutional efficiency of the Northern Corridor, the trade-creation effects would be transformative for West Africa.
 
+| Corridor | Route | Key Products | Status |
+|---|---|---|---|
+| Northern Corridor | Mombasa--Nairobi--Kampala--Kigali--Bujumbura | Manufactures, fuel, agricultural goods | Reformed: transit time cut from 22 to 6 days (2010--2023); trade volumes up ~40% |
+| Maputo Development Corridor | Johannesburg--Maputo (~600 km) | Aluminum, minerals, manufactured goods | Operational PPP; port throughput from 1.5M to 20M+ tons; enclave risk (Mozal) |
+| Trans-Kalahari / Trans-Caprivi | Walvis Bay--Windhoek--Gaborone--Gauteng / Zambia | Bulk cargo, transit goods for landlocked states | Growing: Walvis Bay throughput 2M to 8M+ tons (2010--2023); Zambia extension slower |
+| Abidjan--Lagos | Abidjan--Accra--Lomé--Cotonou--Lagos (~1,000 km) | Consumer goods, agricultural products, fuel | Unreformed: 4 borders, 30+ roadblocks, incompatible regulations; vast unrealized potential |
+
 The contrast between the Northern Corridor and the Abidjan-Lagos Corridor is itself a natural experiment in institutional reform. Both are similar in length and connect economies of comparable size, but the Northern Corridor has benefited from two decades of sustained reform while the Abidjan-Lagos Corridor has not. A spatial difference-in-differences approach — comparing economic activity trajectories along the two corridors before and after the Northern Corridor reforms — could estimate the treatment effect of institutional reform on corridor-adjacent clustering.
 
 ### The Spatial Decay Function: How Far Does the Corridor Reach?
@@ -169,6 +176,10 @@ The Maputo Corridor illustrates the enclave risk: the Mozal aluminum smelter was
 The policy implication is that corridors need complementary interventions to broaden their impact: agricultural market linkages connecting smallholders to export supply chains, and industrial parks at corridor nodes. The corridor provides the transport backbone; the complementary institutions provide the productive connections to the hinterland.
 
 ### The Corridor-Governance Dividend
+
+{% hint style="info" %}
+**The Corridor-Governance Dividend.** The difference in border-effect magnitude between corridor-connected country pairs and non-corridor pairs at comparable distances and income levels. If a functional corridor reduces trade costs through institutional quality at the border --- electronic cargo tracking, one-stop border posts, coordinated customs --- rather than through shorter distances or different products, then the dividend measures the pure institutional contribution of corridor governance to trade facilitation. The Northern Corridor's reforms demonstrate that process improvements alone (not new roads or tariff cuts) can cut transit times by two-thirds.
+{% endhint %}
 
 The concept of a "corridor-governance dividend" is the analytical bridge between this chapter's institutional argument and Lab 6's spatial econometric framework. The dividend is defined as the difference in border-effect magnitude between corridor-connected country pairs and non-corridor country pairs at comparable distances and income levels. If the corridor reduces trade costs by improving institutional quality at the border — not by reducing distance or changing the products traded — then the dividend measures the pure institutional contribution of corridor governance to trade facilitation.
 

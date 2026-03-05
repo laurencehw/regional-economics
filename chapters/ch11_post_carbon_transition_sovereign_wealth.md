@@ -18,6 +18,10 @@ This chapter examines the spatial economics of resource dependence and the diver
 
 ## 11.1 Rentier State Theory and the Spatial Resource Curse
 
+{% hint style="info" %}
+**Rentier State Theory.** Developed by Beblawi and Luciani (1987), rentier state theory holds that governments funded primarily by external rents (oil royalties, mineral exports) rather than domestic taxation face weaker institutional pressure for accountability, transparency, and efficient administration. The mechanism is the severed taxation--representation link: because the state distributes resource wealth *to* citizens rather than extracting revenue *from* them, the feedback loop that drives governance quality in tax-dependent states is broken. The Gulf states are the canonical case --- until 2018, no GCC state levied a VAT, income tax, or corporate tax outside the oil sector.
+{% endhint %}
+
 ### The Institutional Logic of Rentierism
 
 Rentier state theory, developed by Beblawi and Luciani (1987) and extended by subsequent scholars, identifies a distinctive institutional logic in states that derive a substantial share of their revenue from external rents (resource royalties, transit fees, foreign aid) rather than from domestic taxation. The core insight is that the relationship between taxation and institutional quality runs through representation: governments that tax their citizens must provide services and accountability to maintain legitimacy and compliance, creating an institutional feedback loop between revenue extraction and governance quality. Governments that receive external rents can finance public services without taxing citizens, severing this feedback loop and reducing the institutional pressure for transparency, accountability, and efficient public administration.
@@ -67,6 +71,16 @@ Masdar's scale is more realistic than NEOM's — hundreds of millions rather tha
 ## 11.3 Sovereign Wealth Funds as Spatial Policy Instruments
 
 ### The Investment Geography of Gulf SWFs
+
+| Fund | Country | AUM (approx.) | Primary Focus |
+|---|---|---|---|
+| Abu Dhabi Investment Authority (ADIA) | UAE (Abu Dhabi) | ~$990 billion | Global portfolio diversification; real estate in major financial centers |
+| Saudi Public Investment Fund (PIF) | Saudi Arabia | ~$925 billion | Domestic transformation (NEOM, Vision 2030); strategic global stakes |
+| Kuwait Investment Authority (KIA) | Kuwait | ~$800 billion | Long-term intergenerational savings; global diversification |
+| Qatar Investment Authority (QIA) | Qatar | ~$475 billion | Mixed strategic-financial; high-profile global stakes (VW, Barclays, PSG) |
+| Norway GPFG (benchmark comparator) | Norway | ~$1.7 trillion | Fully transparent; global equities/bonds; no domestic investment; ethical exclusions |
+
+*Source: SWF Institute 2024; NBIM 2024.*
 
 The Gulf states' sovereign wealth funds — the Abu Dhabi Investment Authority (ADIA, approximately $990 billion), the Kuwait Investment Authority (KIA, approximately $800 billion), the Qatar Investment Authority (QIA, approximately $475 billion), and the Saudi Public Investment Fund (PIF, approximately $925 billion) — collectively manage over $3 trillion in assets (SWF Institute 2024). These funds serve the primary function of converting a depletable resource (oil in the ground) into a renewable asset (a diversified investment portfolio), but they also function as instruments of spatial economic policy in ways that the standard sovereign wealth fund literature does not fully capture.
 
