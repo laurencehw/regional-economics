@@ -26,7 +26,7 @@ The chapter proceeds in six sections. Section 4.1 traces the NAFTA-to-USMCA tran
 
 ![Figure 4.2: Manufacturing employment share — Rust Belt vs. Sun Belt, 1970–2020](../figures/fig_ch04_thematic_manufacturing_shift.png)
 
-*Source: BLS Current Employment Statistics; calibrated illustration.*
+*Source: BLS Current Employment Statistics. Illustrative; based on patterns in BLS data, not exact reproduction.*
 
 For a quarter century, NAFTA created a distinctive spatial pattern in North American manufacturing. The agreement's relatively simple rules of origin — typically requiring 62.5 percent regional value content for automotive products — allowed firms to optimize production across the continent on cost grounds. The result was a three-tier spatial hierarchy:
 

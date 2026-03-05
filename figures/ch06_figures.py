@@ -96,7 +96,7 @@ def plot_dva_trajectory(output_dir: Path, seed: int = 42) -> dict:
     ax.set_xlim(1999, 2021)
     ax.set_ylim(30, 95)
 
-    add_figure_source(fig, "OECD TiVA database; calibrated illustration.")
+    add_figure_source(fig, "OECD TiVA database. Illustrative; based on patterns in OECD TiVA data, not exact reproduction.")
     fig.tight_layout(rect=[0, 0.04, 1, 1])
     paths = save_figure(fig, output_dir, "fig_ch06_thematic_dva_trajectory")
     plt.close(fig)

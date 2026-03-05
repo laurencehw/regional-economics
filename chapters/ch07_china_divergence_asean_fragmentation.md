@@ -24,7 +24,7 @@ The chapter proceeds in six sections. Section 7.1 analyzes China's coastal-inlan
 
 ![Figure 7.2: China provincial divergence — coastal vs. inland GDP per capita](../figures/fig_ch07_thematic_provincial_divergence.png)
 
-*Source: NBS China Statistical Yearbook; calibrated illustration.*
+*Source: NBS China Statistical Yearbook. Illustrative; based on patterns in NBS data, not exact reproduction.*
 
 ### Sequential Liberalization and the Coastal Premium
 

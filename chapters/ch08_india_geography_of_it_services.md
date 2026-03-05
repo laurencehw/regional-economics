@@ -24,7 +24,7 @@ The chapter proceeds in six sections. Section 8.1 examines the spatial economics
 
 ![Figure 8.2: IT-BPO concentration by Indian state — location quotients](../figures/fig_ch08_thematic_it_concentration.png)
 
-*Source: NASSCOM; RBI state GDP data; calibrated illustration.*
+*Source: NASSCOM; RBI state GDP data. Illustrative; based on patterns in NASSCOM and RBI data, not exact reproduction.*
 
 ### Bangalore: First Mover and Agglomeration Anchor
 

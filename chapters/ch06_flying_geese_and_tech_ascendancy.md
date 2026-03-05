@@ -66,7 +66,7 @@ These aggregate figures mask significant intra-sector variation. A Korean fab pr
 
 ![Figure 6.2: Domestic value added in exports — East Asian economies, 2000–2020](../figures/fig_ch06_thematic_dva_trajectory.png)
 
-*Source: OECD TiVA database; calibrated illustration.*
+*Source: OECD TiVA database. Illustrative; based on patterns in OECD TiVA data, not exact reproduction.*
 
 ### The Concept
 

@@ -133,7 +133,7 @@ def plot_manufacturing_shift(output_dir: Path, seed: int = 42) -> dict:
     ax.spines["right"].set_visible(False)
     ax.set_xlim(1968, 2026)
 
-    add_figure_source(fig, "BLS Current Employment Statistics; calibrated illustration.")
+    add_figure_source(fig, "BLS Current Employment Statistics. Illustrative; based on patterns in BLS data, not exact reproduction.")
     fig.tight_layout(rect=[0, 0.04, 1, 1])
     paths = save_figure(fig, output_dir, "fig_ch04_thematic_manufacturing_shift")
     plt.close(fig)
