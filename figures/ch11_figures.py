@@ -55,7 +55,11 @@ def plot_mena_energy_map(output_dir: Path, seed: int = 42) -> dict:
         subset = mena_proj[mena_proj["_color"] == cv]
         subset.plot(ax=ax, color=cv, edgecolor=BORDER_COLOR, linewidth=0.5, alpha=0.6)
 
-    setup_map_ax(ax, "MENA: GCC Energy Economies and Diversification Hubs")
+    # Zoom to MENA countries with buffer
+    xmin, ymin, xmax, ymax = mena_proj.total_bounds
+    dx, dy = (xmax - xmin) * 0.08, (ymax - ymin) * 0.08
+    setup_map_ax(ax, "MENA: GCC Energy Economies and Diversification Hubs",
+                 bbox=(xmin - dx, ymin - dy, xmax + dx, ymax + dy))
 
     ann = load_annotations("ch11")
     crs = PROJECTIONS["mena"]

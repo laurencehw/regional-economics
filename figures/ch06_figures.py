@@ -34,7 +34,7 @@ def plot_east_asia_map(output_dir: Path, seed: int = 42) -> dict:
     world = get_country_boundaries()
     ea_iso = ISO3_SETS["east_asia"]
     ea = world[world["iso3"].isin(ea_iso)]
-    context = world[world["iso3"].isin(["IND", "BGD", "AUS", "RUS"])]
+    context = world[world["iso3"].isin(["IND", "BGD", "RUS"])]
 
     fig, ax = plt.subplots(figsize=FIGSIZE_MAP)
     try:
@@ -46,7 +46,11 @@ def plot_east_asia_map(output_dir: Path, seed: int = 42) -> dict:
     ctx_proj.plot(ax=ax, color=LAND_COLOR, edgecolor=BORDER_COLOR, linewidth=0.3)
     ea_proj.plot(ax=ax, color="#fde0c5", edgecolor=BORDER_COLOR, linewidth=0.5)
 
-    setup_map_ax(ax, "East Asia & ASEAN: Technology Corridors and SEZs")
+    # Zoom to focus countries with buffer
+    xmin, ymin, xmax, ymax = ea_proj.total_bounds
+    dx, dy = (xmax - xmin) * 0.08, (ymax - ymin) * 0.08
+    setup_map_ax(ax, "East Asia & ASEAN: Technology Corridors and SEZs",
+                 bbox=(xmin - dx, ymin - dy, xmax + dx, ymax + dy))
 
     ann = load_annotations("ch06")
     crs = PROJECTIONS["east_asia"]

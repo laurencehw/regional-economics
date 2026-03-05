@@ -67,7 +67,11 @@ def plot_north_south_map(output_dir: Path, seed: int = 42) -> dict:
         subset.plot(ax=ax, color=color_val, edgecolor=BORDER_COLOR,
                     linewidth=0.5, alpha=0.6)
 
-    setup_map_ax(ax, "EU North-South Divide and Brexit Geography")
+    # Zoom to EU countries with buffer
+    xmin, ymin, xmax, ymax = eu_proj.total_bounds
+    dx, dy = (xmax - xmin) * 0.08, (ymax - ymin) * 0.08
+    setup_map_ax(ax, "EU North-South Divide and Brexit Geography",
+                 bbox=(xmin - dx, ymin - dy, xmax + dx, ymax + dy))
 
     ann = load_annotations("ch10")
     crs = PROJECTIONS["europe"]

@@ -34,7 +34,7 @@ def plot_china_asean_map(output_dir: Path, seed: int = 42) -> dict:
     world = get_country_boundaries()
     asean = ["IDN", "MYS", "THA", "VNM", "PHL", "MMR", "KHM", "LAO", "BRN", "SGP"]
     focus = world[world["iso3"].isin(["CHN"] + asean)]
-    context = world[world["iso3"].isin(["IND", "JPN", "KOR", "TWN", "AUS", "RUS"])]
+    context = world[world["iso3"].isin(["IND", "JPN", "KOR", "TWN", "RUS"])]
 
     fig, ax = plt.subplots(figsize=FIGSIZE_MAP)
     try:
@@ -50,7 +50,11 @@ def plot_china_asean_map(output_dir: Path, seed: int = 42) -> dict:
     china.plot(ax=ax, color="#fbb4ae", edgecolor=BORDER_COLOR, linewidth=0.5)
     others.plot(ax=ax, color="#b3cde3", edgecolor=BORDER_COLOR, linewidth=0.5)
 
-    setup_map_ax(ax, "China & ASEAN: BRI Corridors and Economic Integration")
+    # Zoom to focus countries with buffer
+    xmin, ymin, xmax, ymax = focus_proj.total_bounds
+    dx, dy = (xmax - xmin) * 0.08, (ymax - ymin) * 0.08
+    setup_map_ax(ax, "China & ASEAN: BRI Corridors and Economic Integration",
+                 bbox=(xmin - dx, ymin - dy, xmax + dx, ymax + dy))
 
     ann = load_annotations("ch07")
     crs = PROJECTIONS["east_asia"]

@@ -61,7 +61,11 @@ def plot_eu_convergence_map(output_dir: Path, seed: int = 42) -> dict:
                               "shrink": 0.6, "orientation": "horizontal",
                               "pad": 0.05})
 
-    setup_map_ax(ax, "EU Convergence: GDP per Capita Index and Structural Funds Eligibility")
+    # Zoom to EU countries with buffer
+    xmin, ymin, xmax, ymax = eu_proj.total_bounds
+    dx, dy = (xmax - xmin) * 0.08, (ymax - ymin) * 0.08
+    setup_map_ax(ax, "EU Convergence: GDP per Capita Index and Structural Funds Eligibility",
+                 bbox=(xmin - dx, ymin - dy, xmax + dx, ymax + dy))
 
     ann = load_annotations("ch09")
     crs = PROJECTIONS["europe"]
