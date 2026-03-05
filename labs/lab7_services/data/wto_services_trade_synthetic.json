@@ -1,0 +1,12 @@
+{
+  "source": "synthetic",
+  "smoke_test": true,
+  "local_csv": null,
+  "n_exporters": 20,
+  "n_importers": 20,
+  "n_categories": 6,
+  "n_years": 3,
+  "n_rows": 6840,
+  "total_value_millions_usd": 25211525.7,
+  "fetched_at_utc": "2026-02-28"
+}

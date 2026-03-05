@@ -155,3 +155,159 @@ def test_prepare_then_convergence_integration(tmp_path, run_cmd):
     assert summary["n_obs"] >= 3, f"Expected >= 3 obs from template data, got {summary['n_obs']}"
     assert math.isfinite(summary["beta"]), f"beta should be finite, got {summary['beta']}"
     assert summary["n_countries"] == 3, f"Expected 3 countries, got {summary['n_countries']}"
+
+
+# ---------------------------------------------------------------------------
+# New smoke tests for Lab 2 completion scripts
+# ---------------------------------------------------------------------------
+
+
+def test_dva_trajectory_smoke(tmp_path, run_cmd):
+    """Trajectory plotter produces summary JSON with correct structure."""
+    out_dir = tmp_path / "trajectory"
+    out_dir.mkdir()
+
+    run_cmd([
+        sys.executable,
+        "labs/lab2_asia/code/dva_trajectory_plotter.py",
+        "--run-smoke-test",
+        "--output-dir",
+        str(out_dir),
+    ])
+
+    summary_path = out_dir / "trajectory_summary.json"
+    assert summary_path.exists(), "trajectory_summary.json missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "DVA_Trajectory_Analysis"
+    assert summary["n_countries"] >= 5, f"Expected >= 5 countries, got {summary['n_countries']}"
+    assert len(summary["trend_slopes"]) >= 5
+    assert summary["year_range"][0] < summary["year_range"][1]
+
+    # PDF should exist
+    pdf_path = out_dir / "dva_trajectories.pdf"
+    assert pdf_path.exists(), "dva_trajectories.pdf missing"
+
+
+def test_convergence_comparison_smoke(tmp_path, run_cmd):
+    """Convergence comparison produces summary JSON with >= 2 specs."""
+    out_dir = tmp_path / "comparison"
+    out_dir.mkdir()
+
+    run_cmd([
+        sys.executable,
+        "labs/lab2_asia/code/convergence_comparison_table.py",
+        "--run-smoke-test",
+        "--output-dir",
+        str(out_dir),
+    ])
+
+    summary_path = out_dir / "comparison_summary.json"
+    assert summary_path.exists(), "comparison_summary.json missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "Convergence_Comparison"
+    assert summary["n_specs"] >= 2, f"Expected >= 2 specs, got {summary['n_specs']}"
+
+    # LaTeX table should exist
+    tex_path = out_dir / "convergence_table.tex"
+    assert tex_path.exists(), "convergence_table.tex missing"
+    tex = tex_path.read_text(encoding="utf-8")
+    assert r"\begin{table}" in tex
+    assert r"\toprule" in tex
+
+
+def test_fetch_tiva_electronics_smoke(tmp_path, run_cmd):
+    """Electronics fetch produces non-empty CSV and metadata JSON."""
+    out_dir = tmp_path / "electronics"
+    out_dir.mkdir()
+
+    run_cmd([
+        sys.executable,
+        "labs/lab2_asia/code/fetch_tiva_electronics.py",
+        "--run-smoke-test",
+        "--output-dir",
+        str(out_dir),
+    ])
+
+    csv_path = out_dir / "tiva_electronics_dva.csv"
+    assert csv_path.exists(), "tiva_electronics_dva.csv missing"
+    df = pd.read_csv(csv_path)
+    assert not df.empty, "Electronics CSV is empty"
+    assert "REF_AREA" in df.columns
+    assert "OBS_VALUE" in df.columns
+    assert df["REF_AREA"].nunique() >= 5
+
+    meta_path = out_dir / "tiva_electronics_metadata.json"
+    assert meta_path.exists(), "tiva_electronics_metadata.json missing"
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    assert meta["n_economies"] >= 5
+    assert meta["activity"] == "C26"
+
+
+def test_dva_decomposition_smoke(tmp_path, run_cmd):
+    """DVA decomposition produces shares in [0, 1] with >= 5 countries."""
+    out_dir = tmp_path / "decomposition"
+    out_dir.mkdir()
+
+    run_cmd([
+        sys.executable,
+        "labs/lab2_asia/code/dva_decomposition.py",
+        "--run-smoke-test",
+        "--output-dir",
+        str(out_dir),
+    ])
+
+    summary_path = out_dir / "decomposition_summary.json"
+    assert summary_path.exists(), "decomposition_summary.json missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "TiVA_DVA_Decomposition"
+    assert summary["n_countries"] >= 5, f"Expected >= 5 countries, got {summary['n_countries']}"
+
+    # DVA shares must be in [0, 1]
+    dva_min, dva_max = summary["dva_share_range"]
+    assert dva_min >= 0.0, f"DVA share min {dva_min} < 0"
+    assert dva_max <= 1.0, f"DVA share max {dva_max} > 1"
+
+    csv_path = out_dir / "dva_decomposition.csv"
+    assert csv_path.exists(), "dva_decomposition.csv missing"
+    df = pd.read_csv(csv_path)
+    assert (df["dva_share"] >= 0).all()
+    assert (df["dva_share"] <= 1).all()
+
+
+def test_trade_network_smoke(tmp_path, run_cmd):
+    """Trade network produces positive centrality values with >= 5 nodes."""
+    out_dir = tmp_path / "network"
+    out_dir.mkdir()
+
+    run_cmd([
+        sys.executable,
+        "labs/lab2_asia/code/trade_network_visualizer.py",
+        "--run-smoke-test",
+        "--output-dir",
+        str(out_dir),
+    ])
+
+    summary_path = out_dir / "network_summary.json"
+    assert summary_path.exists(), "network_summary.json missing"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+
+    assert summary["method"] == "Trade_Network_Eigenvector_Centrality"
+    assert summary["n_nodes"] >= 5, f"Expected >= 5 nodes, got {summary['n_nodes']}"
+
+    # All centrality values should be positive
+    for entry in summary["centrality_ranking"]:
+        assert entry["centrality"] > 0, f"{entry['economy']} centrality <= 0"
+
+    # Centrality CSV check
+    cent_path = out_dir / "network_centrality.csv"
+    assert cent_path.exists(), "network_centrality.csv missing"
+    cent_df = pd.read_csv(cent_path)
+    assert (cent_df["eigenvector_centrality"] > 0).all()
+    assert len(cent_df) >= 5
+
+    # PDF should exist
+    pdf_path = out_dir / "trade_network.pdf"
+    assert pdf_path.exists(), "trade_network.pdf missing"

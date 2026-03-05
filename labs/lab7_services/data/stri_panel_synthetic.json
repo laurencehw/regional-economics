@@ -1,0 +1,12 @@
+{
+  "source": "synthetic",
+  "smoke_test": true,
+  "local_csv": null,
+  "n_countries": 30,
+  "n_sectors": 5,
+  "n_years": 5,
+  "n_rows": 750,
+  "stri_min": 0.0645,
+  "stri_max": 0.6887,
+  "fetched_at_utc": "2026-02-28"
+}

@@ -27,7 +27,7 @@ CANONICAL_ADJ_COLS = ["region", "neighbor", "weight"]
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Map raw data sources into Lab 6 canonical inputs")
     parser.add_argument("--viirs-input", required=True, help="Path to VIIRS CSV (wide or long format)")
-    parser.add_argument("--afrobarometer-input", required=True, help="Path to Afrobarometer governance CSV")
+    parser.add_argument("--afrobarometer-input", default=None, help="Path to Afrobarometer governance CSV (optional; omit to skip governance merge)")
     parser.add_argument("--adjacency-input", required=True, help="Path to adjacency edge-list CSV")
     parser.add_argument("--mappings", default="../data/source_mappings.json", help="Path to mapping JSON")
     parser.add_argument("--output-dir", default="../data", help="Directory for mapped outputs")
@@ -169,11 +169,16 @@ def main() -> None:
     mapping = load_mapping(mapping_path)
 
     viirs_raw = pd.read_csv(args.viirs_input)
-    afro_raw = pd.read_csv(args.afrobarometer_input)
     adjacency_raw = pd.read_csv(args.adjacency_input)
 
     viirs_panel = normalize_viirs(viirs_raw, mapping["viirs"])
-    afro_panel = normalize_afrobarometer(afro_raw, mapping["afrobarometer"])
+
+    if args.afrobarometer_input is not None:
+        afro_raw = pd.read_csv(args.afrobarometer_input)
+        afro_panel = normalize_afrobarometer(afro_raw, mapping["afrobarometer"])
+    else:
+        afro_panel = pd.DataFrame(columns=["region", "year", "governance_score"])
+
     adjacency = normalize_adjacency(adjacency_raw, mapping["adjacency"])
     panel = build_panel(viirs_panel, afro_panel, args.year)
 

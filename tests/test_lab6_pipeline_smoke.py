@@ -179,3 +179,105 @@ def test_moran_scaffold_smoke(tmp_path, run_cmd):
     row_sums = wm.sum(axis=1)
     nonzero_rows = row_sums[row_sums > 0]
     assert np.allclose(nonzero_rows, 1.0, atol=1e-8), "Non-zero rows should sum to 1"
+
+
+def test_moran_scatter_smoke(tmp_path, run_cmd):
+    """Smoke test: moran_scatter_plotter.py produces valid summary JSON."""
+    out_dir = tmp_path / "scatter"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab6_africa/code/moran_scatter_plotter.py",
+        "--run-smoke-test",
+        "--output-dir", str(out_dir),
+    ])
+
+    summary_path = out_dir / "moran_scatter_summary.json"
+    assert summary_path.exists(), "moran_scatter_summary.json missing"
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["method"] == "Moran_Scatter"
+    assert summary["n_obs"] >= 5, f"Expected >= 5 obs, got {summary['n_obs']}"
+    assert np.isfinite(summary["moran_i_slope"]), "moran_i_slope not finite"
+
+    qc = summary["quadrant_counts"]
+    total = qc["HH"] + qc["LH"] + qc["LL"] + qc["HL"]
+    assert total == summary["n_obs"], (
+        f"Quadrant counts ({total}) != n_obs ({summary['n_obs']})"
+    )
+
+
+def test_permutation_histogram_smoke(tmp_path, run_cmd):
+    """Smoke test: permutation_histogram_plotter.py produces valid summary JSON."""
+    out_dir = tmp_path / "permhist"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab6_africa/code/permutation_histogram_plotter.py",
+        "--run-smoke-test",
+        "--permutations", "99",
+        "--output-dir", str(out_dir),
+    ])
+
+    summary_path = out_dir / "permutation_hist_summary.json"
+    assert summary_path.exists(), "permutation_hist_summary.json missing"
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["method"] == "Permutation_Histogram"
+    assert np.isfinite(summary["observed_i"]), "observed_i not finite"
+    assert 0.0 <= summary["p_value"] <= 1.0, (
+        f"p_value={summary['p_value']} outside [0, 1]"
+    )
+    assert summary["n_permutations"] >= 99, (
+        f"Expected >= 99 permutations, got {summary['n_permutations']}"
+    )
+
+
+def test_multi_year_comparison_smoke(tmp_path, run_cmd):
+    """Smoke test: multi_year_comparison.py produces valid summary JSON."""
+    out_dir = tmp_path / "multiyear"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab6_africa/code/multi_year_comparison.py",
+        "--run-smoke-test",
+        "--output-dir", str(out_dir),
+    ])
+
+    summary_path = out_dir / "multi_year_summary.json"
+    assert summary_path.exists(), "multi_year_summary.json missing"
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["method"] == "Multi_Year_Moran"
+    assert summary["n_years"] >= 3, f"Expected >= 3 years, got {summary['n_years']}"
+    assert all(np.isfinite(v) for v in summary["i_values"]), "Non-finite i_values"
+    assert all(np.isfinite(v) for v in summary["p_values"]), "Non-finite p_values"
+    assert np.isfinite(summary["trend_slope"]), "trend_slope not finite"
+
+
+def test_governance_residual_comparison_smoke(tmp_path, run_cmd):
+    """Smoke test: governance_residual_comparison.py produces valid summary JSON."""
+    out_dir = tmp_path / "govcomp"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    run_cmd([
+        sys.executable,
+        "labs/lab6_africa/code/governance_residual_comparison.py",
+        "--run-smoke-test",
+        "--output-dir", str(out_dir),
+    ])
+
+    summary_path = out_dir / "governance_comparison_summary.json"
+    assert summary_path.exists(), "governance_comparison_summary.json missing"
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert summary["method"] == "Governance_Residual_Comparison"
+    assert 0 <= summary["pct_explained"] <= 100, (
+        f"pct_explained={summary['pct_explained']} outside [0, 100]"
+    )
+    assert summary["raw_i"] > summary["residual_i"], (
+        f"raw_i ({summary['raw_i']}) should exceed residual_i ({summary['residual_i']})"
+    )

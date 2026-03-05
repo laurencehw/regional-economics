@@ -86,7 +86,7 @@ Bhagwati, Jagdish. 2008. *Termites in the Trading System: How Preferential Agree
 
 Blumenstock, Joshua, Gabriel Cadamuro, and Robert On. 2015. "Predicting Poverty and Wealth from Mobile Phone Metadata." *Science* 350(6264): 1073--1076. [Ch. 16]
 
-Boeing, Geoff. 2025. "Modeling and Analyzing Urban Networks and Amenities with OSMnx." Working paper, University of Southern California. [Ch. 16] [verify]
+Boeing, Geoff. 2025. "Modeling and Analyzing Urban Networks and Amenities with OSMnx." *Geographical Analysis*, published online ahead of print. doi:10.1111/gean.70009. [Ch. 16]
 
 Boldrin, Michele, and Fabio Canova. 2001. "Inequality and Convergence in Europe's Regions: Reconsidering European Regional Policies." *Economic Policy* 16(32): 205--253. [Ch. 9]
 
@@ -132,7 +132,7 @@ Collier, Paul. 2007. *The Bottom Billion: Why the Poorest Countries Are Failing 
 
 Combes, Pierre-Philippe, Gilles Duranton, Laurent Gobillon, and Sébastien Roux. 2010. "Estimating Agglomeration Economies with History, Geology, and Worker Effects." In Edward L. Glaeser, ed., *Agglomeration Economics.* Chicago: University of Chicago Press. [Ch. 1]
 
-Combes, Pierre-Philippe, Sylvie Démurger, and Shi Li. 2020. "Migration, Urbanisation, and Regional Income Disparity in China." In Shenggen Fan, Ravi Kanbur, Shang-Jin Wei, and Xiaobo Zhang, eds., *The Oxford Companion to the Economics of China.* Oxford: Oxford University Press. [Ch. 7] [verify]
+Combes, Pierre-Philippe, Sylvie Démurger, and Shi Li. 2014. "Migration, Urbanisation, and Regional Income Disparity in China." In Shenggen Fan, Ravi Kanbur, Shang-Jin Wei, and Xiaobo Zhang, eds., *The Oxford Companion to the Economics of China.* Oxford: Oxford University Press. [Ch. 7]
 
 Connell, John. 2013. "Contemporary Medical Tourism: Conceptualisation, Culture, and Commodification." *Tourism Management* 34: 1--13. [Ch. 5]
 
@@ -176,7 +176,7 @@ Duranton, Gilles, and Diego Puga. 2001. "Nursery Cities: Urban Diversity, Proces
 
 Duranton, Gilles, and Diego Puga. 2004. "Micro-Foundations of Urban Agglomeration Economies." In J. Vernon Henderson and Jacques-François Thisse, eds., *Handbook of Regional and Urban Economics,* vol. 4, 2063--2117. Amsterdam: Elsevier. [Ch. 1]
 
-ECLAC (Economic Commission for Latin America and the Caribbean) and FAO (Food and Agriculture Organization). 2020. *Food Systems and COVID-19 in Latin America and the Caribbean: Impact and Risks Regarding Food Security.* Santiago: ECLAC. [Ch. 5] [verify]
+ECLAC (Economic Commission for Latin America and the Caribbean) and FAO (Food and Agriculture Organization). 2020. *Food Systems and COVID-19 in Latin America and the Caribbean: Impact and Risks Regarding Food Security.* Bulletin No. 1. Santiago: ECLAC. [Ch. 5]
 
 Engerman, Stanley L., and Kenneth L. Sokoloff. 2000. "Institutions, Factor Endowments, and Paths of Development in the New World." *Journal of Economic Perspectives* 14(3): 217--232. [Ch. 2]
 
@@ -292,7 +292,7 @@ Kapoor, Mudit, Harry H. Kelejian, and Ingmar R. Prucha. 2007. "Panel Data Models
 
 Kaul, Ashok, Stefan Klößner, Gregor Pfeifer, and Manuel Schieler. 2022. "Standard Synthetic Control Methods: The Case of Using All Preintervention Outcomes Together with Covariates." *Journal of Business & Economic Statistics* 40(3): 1362--1376. [Ch. 12]
 
-KAZA Secretariat. 2018. *KAZA TFCA Master Integrated Development Plan 2015--2020.* Kasane, Botswana: Kavango-Zambezi Transfrontier Conservation Area Secretariat. [Ch. 14] [verify]
+KAZA Secretariat. 2015. *KAZA TFCA Master Integrated Development Plan 2015--2020.* Kasane, Botswana: Kavango-Zambezi Transfrontier Conservation Area Secretariat. [Ch. 14]
 
 Keen, David. 1998. *The Economic Functions of Violence in Civil Wars.* London: Adelphi Papers, International Institute for Strategic Studies. [Ch. 12]
 
@@ -486,7 +486,7 @@ Wilmsen, Brooke. 2016. "After the Deluge: A Longitudinal Study of Resettlement a
 
 Winnick, Louis. 1966. "Place Prosperity vs. People Prosperity: Welfare Considerations in the Geographic Redistribution of Economic Activity." In *Essays in Urban Land Economics.* Los Angeles: UCLA Real Estate Research Program. [Ch. 9]
 
-World Bank. 2022. *Iraq Country Climate and Development Report.* Washington, DC: World Bank. [Ch. 12] [verify]
+World Bank. 2022. *Iraq Country Climate and Development Report.* Washington, DC: World Bank. [Ch. 12]
 
 World Bank. 2023. *Migration and Development Brief 39: Remittances Remain Resilient But Are Slowing.* Washington, DC: World Bank. [Ch. 12]
 
@@ -557,8 +557,8 @@ Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 
 ## Summary Statistics
 
 - **Total unique references (main section):** 250
-- **References with complete bibliographic information:** 245
-- **References marked [verify]:** 5 (Boeing 2025, Combes et al. 2020, ECLAC/FAO 2020, KAZA Secretariat 2018, World Bank 2022)
+- **References with complete bibliographic information:** 250
+- **References marked [verify]:** 0
 - **References marked [incomplete]:** 0
 - **Legislation/treaty/policy documents:** 7
 - **Grand total (references + legislation):** 257
