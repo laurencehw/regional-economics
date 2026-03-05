@@ -307,7 +307,7 @@ def annotate_corridors(ax, corridors: List[Dict], transform=None):
         )
 
 
-def annotate_arrows(ax, arrows: List[Dict], transform=None):
+def annotate_arrows(ax, arrows: List[Dict], transform=None, fontsize: float = 6.5):
     """Draw directional flow arrows on a matplotlib axis.
 
     Each arrow dict: {label, start: [x,y], end: [x,y], style: str}
@@ -327,7 +327,7 @@ def annotate_arrows(ax, arrows: List[Dict], transform=None):
         )
         mx, my = (x0 + x1) / 2, (y0 + y1) / 2
         if "label" in arrow:
-            ax.text(mx, my, arrow["label"], fontsize=6.5, color=color,
+            ax.text(mx, my, arrow["label"], fontsize=fontsize, color=color,
                     ha="center", va="bottom", fontstyle="italic", zorder=6,
                     bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1))
 

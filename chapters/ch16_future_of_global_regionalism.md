@@ -115,7 +115,7 @@ The table below compares the services trade frameworks of the major regional int
 | **AfCFTA** (Ch. 14) | Positive list (Phase II) | In negotiation | In negotiation | In negotiation |
 | **SAARC/SAFTA** (Ch. 8) | Positive list | Minimal | Limited | Limited |
 
-*Note: Mode 2 (consumption abroad) is substantially open in all frameworks except SAARC/SAFTA and is omitted for brevity.*
+*Note: Mode 2 (consumption abroad) is covered separately in Table 16.1b.*
 
 **Table 16.1b — Services Trade Frameworks: Regulatory Infrastructure and Data Governance**
 
