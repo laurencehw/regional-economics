@@ -63,10 +63,10 @@
     "cities": [
       {"name": "Shanghai", "lat": 31.23, "lon": 121.47, "label_offset": [5, 3], "style": "major"},
       {"name": "Beijing", "lat": 39.90, "lon": 116.40, "label_offset": [5, 3], "style": "major"},
-      {"name": "Guangzhou", "lat": 23.13, "lon": 113.26, "label_offset": [8, 6], "style": "major"},
-      {"name": "Chengdu", "lat": 30.57, "lon": 104.07, "label_offset": [-22, 10], "style": "major"},
-      {"name": "Kunming", "lat": 25.04, "lon": 102.68, "label_offset": [-18, 5], "style": "minor"},
-      {"name": "Nanning", "lat": 22.82, "lon": 108.32, "label_offset": [-15, -14], "style": "minor"}
+      {"name": "Guangzhou", "lat": 23.13, "lon": 113.26, "label_offset": [10, -14], "style": "major"},
+      {"name": "Chengdu", "lat": 30.57, "lon": 104.07, "label_offset": [-28, 12], "style": "major"},
+      {"name": "Kunming", "lat": 25.04, "lon": 102.68, "label_offset": [-24, -12], "style": "minor"},
+      {"name": "Nanning", "lat": 22.82, "lon": 108.32, "label_offset": [-10, -20], "style": "minor"}
     ],
     "corridors": [
       {"name": "BRI Southern Corridor", "waypoints": [[102.68, 25.04], [108.32, 22.82], [105.85, 21.03], [100.50, 13.76]], "style": "trade"},
@@ -127,12 +127,12 @@
   },
   "ch12": {
     "cities": [
-      {"name": "Damascus", "lat": 33.51, "lon": 36.29, "label_offset": [8, 8], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "Damascus", "lat": 33.51, "lon": 36.29, "label_offset": [12, -16], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
       {"name": "Sanaa", "lat": 15.37, "lon": 44.19, "label_offset": [5, 3], "style": "major"},
       {"name": "Tripoli", "lat": 32.90, "lon": 13.18, "label_offset": [5, 3], "style": "major"},
       {"name": "Baghdad", "lat": 33.31, "lon": 44.37, "label_offset": [5, -8], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
-      {"name": "Amman", "lat": 31.95, "lon": 35.93, "label_offset": [-18, -10], "style": "minor", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
-      {"name": "Beirut", "lat": 33.89, "lon": 35.50, "label_offset": [-22, 8], "style": "minor", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}}
+      {"name": "Amman", "lat": 31.95, "lon": 35.93, "label_offset": [-28, -16], "style": "minor", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "Beirut", "lat": 33.89, "lon": 35.50, "label_offset": [-32, 10], "style": "minor", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}}
     ],
     "refugee_flows": [
       {"label": "Syrian refugees", "start": [36.29, 33.51], "end": [35.93, 31.95], "color": "#e41a1c"},

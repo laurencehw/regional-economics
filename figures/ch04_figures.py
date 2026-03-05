@@ -54,7 +54,38 @@ def plot_north_america_map(output_dir: Path, seed: int = 42) -> dict:
 
     setup_map_ax(ax, "North America: USMCA, Industrial Belts & Trade Corridors")
 
+    # Shade Rust Belt / Sun Belt regions from annotations
     ann = load_annotations("ch04")
+    if ann.get("regions"):
+        try:
+            from figure_utils import get_admin1_boundaries
+            admin1 = get_admin1_boundaries("USA")
+            admin1_proj = admin1.to_crs(crs)
+            # Determine state code column
+            state_col = "iso_3166_2" if "iso_3166_2" in admin1_proj.columns else "postal"
+            for region_key, region_info in ann["regions"].items():
+                state_codes = region_info["states"]
+                # Match on last two chars for iso_3166_2 (e.g. "US-MI" -> "MI")
+                mask = admin1_proj[state_col].apply(
+                    lambda x: str(x).split("-")[-1] if "-" in str(x) else str(x)
+                ).isin(state_codes)
+                region_gdf = admin1_proj[mask]
+                if not region_gdf.empty:
+                    region_gdf.plot(
+                        ax=ax, color=region_info["color"], alpha=0.25,
+                        edgecolor="none", zorder=2,
+                    )
+                    # Label the region at centroid of the union
+                    centroid = region_gdf.dissolve().centroid.iloc[0]
+                    ax.text(
+                        centroid.x, centroid.y, region_info["label"],
+                        fontsize=7, fontweight="bold", ha="center", va="center",
+                        color=region_info["color"], alpha=0.8, zorder=6,
+                        bbox=dict(facecolor="white", alpha=0.6, edgecolor="none", pad=1),
+                    )
+        except Exception:
+            pass  # graceful fallback if admin-1 data unavailable
+
     crs = PROJECTIONS["americas"]
     if ann.get("cities"):
         annotate_cities(ax, project_cities(ann["cities"], crs))
