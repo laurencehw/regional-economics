@@ -1,5 +1,9 @@
 # Chapter 6: The Flying Geese and East Asia's Tech Ascendancy
 
+![Figure 6.1: East Asia & ASEAN — technology corridors and special economic zones](../figures/output/fig_ch06_map_east_asia.png)
+
+*Source: Natural Earth; ASEAN Secretariat; national SEZ databases.*
+
 ---
 
 ## Introduction: The Chip That Built an Economy
@@ -59,6 +63,10 @@ These aggregate figures mask significant intra-sector variation. A Korean fab pr
 ---
 
 ## 6.2 Windows of Opportunity: Seizing Technological Transitions
+
+![Figure 6.2: Domestic value added in exports — East Asian economies, 2000–2020](../figures/output/fig_ch06_thematic_dva_trajectory.png)
+
+*Source: OECD TiVA database; calibrated illustration.*
 
 ### The Concept
 

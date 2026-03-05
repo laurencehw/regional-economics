@@ -30,6 +30,10 @@ labs/lab5_mena/output/real_scm_baseline/
 
 # Generated outputs
 output/
+figures/output/
+
+# Geodata cache (downloaded by figure scripts)
+data/geodata/
 
 # OS files
 .DS_Store

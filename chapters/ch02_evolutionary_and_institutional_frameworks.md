@@ -18,6 +18,10 @@ Together, these frameworks explain a pattern that neither the NEG nor classical 
 
 ## 2.1 What Are Institutions?
 
+![Figure 2.1: Institutional quality spectrum — extractive to inclusive](../figures/output/fig_ch02_concept_institutional_spectrum.png)
+
+*Source: Acemoglu & Robinson (2012); World Governance Indicators.*
+
 ### North's Framework: Rules, Organizations, and Transaction Costs
 
 Douglass North's definition of institutions, from *Institutions, Institutional Change and Economic Performance* (1990), is deceptively simple: "the rules of the game in a society or, more formally, the humanly devised constraints that shape human interaction." Rules, not players; constraints, not resources. The distinction matters because it separates the institutional environment — the framework within which economic decisions are made — from the economic actors who operate within it.

@@ -18,6 +18,10 @@ This chapter proceeds in five sections. Section 16.1 examines the telemigration 
 
 ## 16.1 The Telemigration Hypothesis
 
+![Figure 16.1: Global advanced producer services network (GaWC hierarchy)](../figures/output/fig_ch16_thematic_services_network.png)
+
+*Source: GaWC Research Network; Taylor & Derudder (2016).*
+
 ### Baldwin's Globotics Upheaval
 
 Richard Baldwin's (2019) *The Globotics Upheaval* argued that advances in communication technology, machine translation, and remote collaboration platforms would enable a new wave of services globalization — "telemigration" — in which skilled workers in developing countries would compete directly with service-sector workers in developed countries for white-collar jobs. Unlike the BPO revolution described in Chapter 8, which was mediated by corporate outsourcing contracts, telemigration would operate through digital platforms that connect individual freelancers with individual employers, disintermediating the multinational firms and outsourcing companies that currently manage cross-border services trade.

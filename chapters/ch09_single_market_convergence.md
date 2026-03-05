@@ -1,5 +1,9 @@
 # Chapter 9: The Single Market and the Convergence Machine
 
+![Figure 9.1: EU convergence — GDP per capita index and Structural Funds eligibility](../figures/output/fig_ch09_map_eu_convergence.png)
+
+*Source: Eurostat; Natural Earth. 75% threshold marks Structural Funds eligibility.*
+
 ---
 
 ## Introduction: The European Experiment

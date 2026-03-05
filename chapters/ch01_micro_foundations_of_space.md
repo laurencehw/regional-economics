@@ -50,6 +50,10 @@ At the town's edge ($$n = 0$$), rent captures the full production surplus. As di
 
 Now add multiple crops, each with different values, labor requirements, and transport costs per unit. Dairy products spoil quickly and are heavy: high $$t$$, high $$p$$. Grain is durable and lighter: lower $$t$$, lower $$p$$. Extensive livestock grazing has very low transport cost per unit of land area. The result is a set of bid-rent curves — one per crop — and the land at each distance goes to the highest bidder. The outcome is a series of concentric rings: intensive horticulture and dairy close to the market town, forestry in the second ring (wood's weight-to-value ratio made transport prohibitively expensive at greater distances — a result Von Thünen derived logically from his framework, since fuel and construction timber were essential and bulky), grain farming at middle distances, then extensive grazing at the periphery.
 
+![Figure 1.1: Von Thünen's concentric land-use rings and bid-rent curves](../figures/output/fig_ch01_concept_von_thunen.png)
+
+*Source: Von Thünen (1826); stylized illustration.*
+
 What Von Thünen gave regional economics was not a specific prediction about agricultural rings — most of those have long since been disrupted by railroads, refrigeration, and global commodity markets. He gave it a conceptual architecture: **land rent is the capitalized value of location**, and location's value is determined by proximity to markets and the costs of overcoming distance. Every model of urban form built since — the monocentric city model, hedonic housing price regressions, commercial property valuation — is an elaboration of this architecture.
 
 The framework still appears in contemporary urban economics almost intact. Alonso (1964) and Mills (1967) translated Von Thünen's agricultural rings into an urban model: households trade off housing space (cheaper at the periphery) against commuting costs (higher at the periphery), and the equilibrium bid-rent gradient generates the systematic pattern of density and land prices observed in virtually every major city. The same logic — proximity to the center commands a premium — explains why a square meter in Midtown Manhattan costs one hundred times more than a square meter in rural upstate New York. Distance from a market is not merely a fact of geography; it is a mechanism of economic allocation.
@@ -93,6 +97,10 @@ Their analytical legacy is permanent. Any serious empirical work on land markets
 ## 1.2 The New Economic Geography: Increasing Returns and Circular Causation
 
 ### Krugman's Core-Periphery Model
+
+![Figure 1.2: Core–periphery model — tomahawk bifurcation diagram](../figures/output/fig_ch01_concept_core_periphery.png)
+
+*Source: Krugman (1991); Fujita, Krugman & Venables (1999).*
 
 Paul Krugman's 1991 paper "Increasing Returns and Economic Geography" in the *Journal of Political Economy* is one of the genuinely transformative papers in twentieth-century economics. Its contribution was not discovering that economies of scale matter — Marshall had written about industrial districts in 1890, and economic geographers had studied spatial concentration for decades. Krugman's contribution was showing how to formalize the circular causation between market size and firm location in a tractable general equilibrium model that generated fully endogenous spatial concentration without any natural advantage or historical accident built in by assumption.
 

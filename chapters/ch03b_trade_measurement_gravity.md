@@ -24,6 +24,10 @@ This chapter provides the trade measurement and estimation framework that all re
 
 ## 3B.1 The Structural Gravity Model
 
+![Figure 3B.1: Gravity model — distance decay of trade flows](../figures/output/fig_ch03b_concept_gravity_decay.png)
+
+*Source: Tinbergen (1962); Head & Mayer (2014).*
+
 ### From Newton to Anderson-van Wincoop
 
 The gravity model of trade is one of the most empirically successful relationships in all of economics. In its simplest form, bilateral trade $$X_{ij}$$ between countries $$i$$ and $$j$$ is proportional to the product of their economic masses (GDP) and inversely proportional to the trade costs between them:

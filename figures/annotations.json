@@ -1,0 +1,205 @@
+{
+  "ch04": {
+    "cities": [
+      {"name": "Detroit", "lat": 42.33, "lon": -83.05, "label_offset": [-15, 5], "style": "major"},
+      {"name": "Chicago", "lat": 41.88, "lon": -87.63, "label_offset": [-15, 5], "style": "major"},
+      {"name": "Houston", "lat": 29.76, "lon": -95.37, "label_offset": [5, -8], "style": "major"},
+      {"name": "Atlanta", "lat": 33.75, "lon": -84.39, "label_offset": [5, 3], "style": "major"},
+      {"name": "Phoenix", "lat": 33.45, "lon": -112.07, "label_offset": [-15, -8], "style": "major"},
+      {"name": "Toronto", "lat": 43.65, "lon": -79.38, "label_offset": [5, 3], "style": "major"},
+      {"name": "Mexico City", "lat": 19.43, "lon": -99.13, "label_offset": [5, -8], "style": "major"},
+      {"name": "Monterrey", "lat": 25.67, "lon": -100.31, "label_offset": [5, 3], "style": "minor"},
+      {"name": "Ciudad Juárez", "lat": 31.69, "lon": -106.42, "label_offset": [-15, 5], "style": "minor"},
+      {"name": "San Antonio", "lat": 29.42, "lon": -98.49, "label_offset": [5, 3], "style": "minor"}
+    ],
+    "corridors": [
+      {"name": "USMCA Auto Corridor", "waypoints": [[-83.05, 42.33], [-86.0, 36.0], [-100.31, 25.67]], "style": "trade"},
+      {"name": "Maquiladora Border Zone", "waypoints": [[-117.0, 32.5], [-106.4, 31.7], [-99.5, 27.5], [-97.5, 25.9]], "style": "zone"}
+    ],
+    "regions": {
+      "rust_belt": {"states": ["MI", "OH", "PA", "IN", "IL", "WI"], "color": "#d62728", "label": "Rust Belt"},
+      "sun_belt": {"states": ["TX", "AZ", "FL", "GA", "NC", "SC", "TN"], "color": "#ff7f0e", "label": "Sun Belt"}
+    }
+  },
+  "ch05": {
+    "cities": [
+      {"name": "São Paulo", "lat": -23.55, "lon": -46.63, "label_offset": [5, -8], "style": "major"},
+      {"name": "Mexico City", "lat": 19.43, "lon": -99.13, "label_offset": [5, 3], "style": "major"},
+      {"name": "Santiago", "lat": -33.45, "lon": -70.67, "label_offset": [-20, 3], "style": "major"},
+      {"name": "Bogotá", "lat": 4.71, "lon": -74.07, "label_offset": [5, 3], "style": "major"},
+      {"name": "Buenos Aires", "lat": -34.60, "lon": -58.38, "label_offset": [5, -8], "style": "major"},
+      {"name": "Lima", "lat": -12.05, "lon": -77.04, "label_offset": [-15, 3], "style": "major"}
+    ],
+    "trade_blocs": {
+      "mercosur": {"iso3": ["BRA", "ARG", "URY", "PRY"], "color": "#1b9e77", "label": "Mercosur"},
+      "pacific_alliance": {"iso3": ["MEX", "COL", "PER", "CHL"], "color": "#d95f02", "label": "Pacific Alliance"},
+      "cafta_dr": {"iso3": ["GTM", "HND", "SLV", "NIC", "CRI", "DOM"], "color": "#7570b3", "label": "CAFTA-DR"}
+    }
+  },
+  "ch06": {
+    "cities": [
+      {"name": "Tokyo", "lat": 35.68, "lon": 139.69, "label_offset": [5, 3], "style": "major"},
+      {"name": "Seoul", "lat": 37.57, "lon": 126.98, "label_offset": [-15, 5], "style": "major"},
+      {"name": "Shenzhen", "lat": 22.54, "lon": 114.06, "label_offset": [5, -8], "style": "major"},
+      {"name": "Hong Kong", "lat": 22.32, "lon": 114.17, "label_offset": [5, 3], "style": "major"},
+      {"name": "Hsinchu", "lat": 24.80, "lon": 120.97, "label_offset": [5, 3], "style": "minor"},
+      {"name": "Suwon", "lat": 37.26, "lon": 127.03, "label_offset": [5, -8], "style": "minor"},
+      {"name": "Singapore", "lat": 1.35, "lon": 103.82, "label_offset": [5, 3], "style": "major"},
+      {"name": "Bangkok", "lat": 13.76, "lon": 100.50, "label_offset": [-15, 3], "style": "major"},
+      {"name": "Hanoi", "lat": 21.03, "lon": 105.85, "label_offset": [5, 3], "style": "major"},
+      {"name": "Jakarta", "lat": -6.21, "lon": 106.85, "label_offset": [5, -8], "style": "major"}
+    ],
+    "corridors": [
+      {"name": "Shenzhen–HK Tech Corridor", "waypoints": [[114.06, 22.54], [114.17, 22.32]], "style": "trade"},
+      {"name": "Samsung City (Suwon)", "waypoints": [[126.98, 37.57], [127.03, 37.26]], "style": "trade"}
+    ],
+    "sez_markers": [
+      {"name": "Shenzhen SEZ", "lat": 22.54, "lon": 114.06},
+      {"name": "Batam FTZ", "lat": 1.05, "lon": 104.03},
+      {"name": "Penang FTZ", "lat": 5.41, "lon": 100.33}
+    ]
+  },
+  "ch07": {
+    "cities": [
+      {"name": "Shanghai", "lat": 31.23, "lon": 121.47, "label_offset": [5, 3], "style": "major"},
+      {"name": "Beijing", "lat": 39.90, "lon": 116.40, "label_offset": [5, 3], "style": "major"},
+      {"name": "Guangzhou", "lat": 23.13, "lon": 113.26, "label_offset": [-15, -8], "style": "major"},
+      {"name": "Chengdu", "lat": 30.57, "lon": 104.07, "label_offset": [-15, 3], "style": "major"},
+      {"name": "Kunming", "lat": 25.04, "lon": 102.68, "label_offset": [-15, 3], "style": "minor"},
+      {"name": "Nanning", "lat": 22.82, "lon": 108.32, "label_offset": [5, -8], "style": "minor"}
+    ],
+    "corridors": [
+      {"name": "BRI Southern Corridor", "waypoints": [[102.68, 25.04], [108.32, 22.82], [105.85, 21.03], [100.50, 13.76]], "style": "trade"},
+      {"name": "Yangtze Economic Belt", "waypoints": [[104.07, 30.57], [106.55, 29.56], [114.30, 30.60], [118.80, 32.06], [121.47, 31.23]], "style": "zone"}
+    ]
+  },
+  "ch08": {
+    "cities": [
+      {"name": "Bangalore", "lat": 12.97, "lon": 77.59, "label_offset": [-20, -8], "style": "major"},
+      {"name": "Hyderabad", "lat": 17.39, "lon": 78.49, "label_offset": [5, 3], "style": "major"},
+      {"name": "Pune", "lat": 18.52, "lon": 73.86, "label_offset": [-15, 3], "style": "major"},
+      {"name": "NCR/Delhi", "lat": 28.61, "lon": 77.21, "label_offset": [5, 3], "style": "major"},
+      {"name": "Chennai", "lat": 13.08, "lon": 80.27, "label_offset": [5, 3], "style": "major"},
+      {"name": "Kolkata", "lat": 22.57, "lon": 88.36, "label_offset": [5, 3], "style": "major"},
+      {"name": "Mumbai", "lat": 19.08, "lon": 72.88, "label_offset": [-15, -8], "style": "major"}
+    ],
+    "sez_markers": [
+      {"name": "Mahindra World City", "lat": 12.80, "lon": 80.02},
+      {"name": "SEEPZ Mumbai", "lat": 19.15, "lon": 72.87},
+      {"name": "Noida SEZ", "lat": 28.57, "lon": 77.35},
+      {"name": "ELCOT Chennai", "lat": 12.84, "lon": 80.22}
+    ]
+  },
+  "ch09": {
+    "cities": [
+      {"name": "Brussels", "lat": 50.85, "lon": 4.35, "label_offset": [5, 3], "style": "major"},
+      {"name": "Warsaw", "lat": 52.23, "lon": 21.01, "label_offset": [5, 3], "style": "major"},
+      {"name": "Bratislava", "lat": 48.15, "lon": 17.11, "label_offset": [5, 3], "style": "minor"},
+      {"name": "Bucharest", "lat": 44.43, "lon": 26.10, "label_offset": [5, -8], "style": "major"},
+      {"name": "Athens", "lat": 37.98, "lon": 23.73, "label_offset": [5, -8], "style": "major"}
+    ]
+  },
+  "ch10": {
+    "cities": [
+      {"name": "London", "lat": 51.51, "lon": -0.13, "label_offset": [-15, 5], "style": "major"},
+      {"name": "Frankfurt", "lat": 50.11, "lon": 8.68, "label_offset": [5, 3], "style": "major"},
+      {"name": "Milan", "lat": 45.46, "lon": 9.19, "label_offset": [5, -8], "style": "major"},
+      {"name": "Athens", "lat": 37.98, "lon": 23.73, "label_offset": [5, -8], "style": "major"},
+      {"name": "Madrid", "lat": 40.42, "lon": -3.70, "label_offset": [-15, -8], "style": "major"},
+      {"name": "Paris", "lat": 48.86, "lon": 2.35, "label_offset": [-15, 5], "style": "major"}
+    ]
+  },
+  "ch11": {
+    "cities": [
+      {"name": "Riyadh", "lat": 24.71, "lon": 46.68, "label_offset": [5, 3], "style": "major"},
+      {"name": "Dubai/DIFC", "lat": 25.20, "lon": 55.27, "label_offset": [5, 3], "style": "major"},
+      {"name": "Abu Dhabi", "lat": 24.45, "lon": 54.65, "label_offset": [-20, -8], "style": "major"},
+      {"name": "Doha", "lat": 25.29, "lon": 51.53, "label_offset": [-15, 3], "style": "major"},
+      {"name": "NEOM", "lat": 27.95, "lon": 35.30, "label_offset": [-15, 3], "style": "minor"},
+      {"name": "Masdar City", "lat": 24.43, "lon": 54.62, "label_offset": [5, -10], "style": "minor"},
+      {"name": "Kuwait City", "lat": 29.38, "lon": 47.99, "label_offset": [5, 3], "style": "major"}
+    ],
+    "energy_zones": [
+      {"name": "Ghawar Field", "lat": 25.40, "lon": 49.50},
+      {"name": "North Field/South Pars", "lat": 26.50, "lon": 52.00},
+      {"name": "Burgan Field", "lat": 29.07, "lon": 48.00}
+    ]
+  },
+  "ch12": {
+    "cities": [
+      {"name": "Damascus", "lat": 33.51, "lon": 36.29, "label_offset": [5, 3], "style": "major"},
+      {"name": "Sanaa", "lat": 15.37, "lon": 44.19, "label_offset": [5, 3], "style": "major"},
+      {"name": "Tripoli", "lat": 32.90, "lon": 13.18, "label_offset": [5, 3], "style": "major"},
+      {"name": "Baghdad", "lat": 33.31, "lon": 44.37, "label_offset": [5, -8], "style": "major"},
+      {"name": "Amman", "lat": 31.95, "lon": 35.93, "label_offset": [-15, 3], "style": "minor"},
+      {"name": "Beirut", "lat": 33.89, "lon": 35.50, "label_offset": [-15, 5], "style": "minor"}
+    ],
+    "refugee_flows": [
+      {"label": "Syrian refugees", "start": [36.29, 33.51], "end": [35.93, 31.95], "color": "#e41a1c"},
+      {"label": "Syrian refugees → Turkey", "start": [36.29, 33.51], "end": [32.86, 39.93], "color": "#e41a1c"},
+      {"label": "Yemeni IDPs", "start": [44.19, 15.37], "end": [43.15, 14.80], "color": "#ff7f00"},
+      {"label": "Libyan refugees", "start": [13.18, 32.90], "end": [10.17, 36.80], "color": "#984ea3"}
+    ]
+  },
+  "ch13": {
+    "cities": [
+      {"name": "Lagos", "lat": 6.52, "lon": 3.38, "label_offset": [-15, -8], "style": "major"},
+      {"name": "Nairobi", "lat": -1.29, "lon": 36.82, "label_offset": [5, 3], "style": "major"},
+      {"name": "Kinshasa", "lat": -4.44, "lon": 15.27, "label_offset": [-20, 3], "style": "major"},
+      {"name": "Johannesburg", "lat": -26.20, "lon": 28.05, "label_offset": [5, 3], "style": "major"},
+      {"name": "Addis Ababa", "lat": 9.02, "lon": 38.75, "label_offset": [5, 3], "style": "major"},
+      {"name": "Dar es Salaam", "lat": -6.79, "lon": 39.28, "label_offset": [5, -8], "style": "major"},
+      {"name": "Accra", "lat": 5.60, "lon": -0.19, "label_offset": [-15, -8], "style": "major"},
+      {"name": "Luanda", "lat": -8.84, "lon": 13.23, "label_offset": [-20, 3], "style": "major"}
+    ],
+    "corridors": [
+      {"name": "Lagos–Accra Corridor", "waypoints": [[3.38, 6.52], [1.22, 6.13], [-0.19, 5.60]], "style": "trade"},
+      {"name": "Nairobi–Mombasa", "waypoints": [[36.82, -1.29], [39.66, -4.04]], "style": "trade"}
+    ]
+  },
+  "ch14": {
+    "cities": [
+      {"name": "Lagos", "lat": 6.52, "lon": 3.38, "label_offset": [-15, -8], "style": "major"},
+      {"name": "Abidjan", "lat": 5.36, "lon": -4.01, "label_offset": [-20, 3], "style": "major"},
+      {"name": "Mombasa", "lat": -4.04, "lon": 39.66, "label_offset": [5, 3], "style": "major"},
+      {"name": "Dar es Salaam", "lat": -6.79, "lon": 39.28, "label_offset": [5, -8], "style": "major"},
+      {"name": "Durban", "lat": -29.86, "lon": 31.03, "label_offset": [5, 3], "style": "major"},
+      {"name": "Maputo", "lat": -25.97, "lon": 32.57, "label_offset": [5, 3], "style": "major"},
+      {"name": "Djibouti", "lat": 11.59, "lon": 43.15, "label_offset": [5, 3], "style": "major"}
+    ],
+    "corridors": [
+      {"name": "Northern Corridor", "waypoints": [[39.66, -4.04], [36.82, -1.29], [32.58, 0.35], [29.37, -1.68]], "style": "trade"},
+      {"name": "Trans-Kalahari", "waypoints": [[18.51, -33.92], [25.97, -25.74], [28.05, -26.20]], "style": "trade"},
+      {"name": "Maputo Corridor", "waypoints": [[32.57, -25.97], [28.05, -26.20]], "style": "trade"},
+      {"name": "Abidjan–Lagos Corridor", "waypoints": [[-4.01, 5.36], [-1.02, 5.55], [-0.19, 5.60], [1.22, 6.13], [2.63, 6.37], [3.38, 6.52]], "style": "trade"}
+    ]
+  },
+  "ch15": {
+    "arrows": [
+      {"label": "Climate migration", "start": [20, 10], "end": [10, 35], "color": "#e41a1c"},
+      {"label": "Climate migration", "start": [90, 20], "end": [100, 35], "color": "#e41a1c"},
+      {"label": "Sea-level rise", "start": [-80, 25], "end": [-80, 30], "color": "#377eb8"}
+    ],
+    "vulnerability_zones": [
+      {"name": "Sahel", "bbox": [-15, 10, 40, 20]},
+      {"name": "Bay of Bengal", "bbox": [80, 15, 95, 25]},
+      {"name": "Small Island States", "bbox": [160, -20, 180, 0]}
+    ]
+  },
+  "ch16": {
+    "aps_cities": [
+      {"name": "London", "lat": 51.51, "lon": -0.13, "tier": 1},
+      {"name": "New York", "lat": 40.71, "lon": -74.01, "tier": 1},
+      {"name": "Singapore", "lat": 1.35, "lon": 103.82, "tier": 1},
+      {"name": "Hong Kong", "lat": 22.32, "lon": 114.17, "tier": 1},
+      {"name": "Tokyo", "lat": 35.68, "lon": 139.69, "tier": 2},
+      {"name": "Paris", "lat": 48.86, "lon": 2.35, "tier": 2},
+      {"name": "Sydney", "lat": -33.87, "lon": 151.21, "tier": 2},
+      {"name": "Dubai", "lat": 25.20, "lon": 55.27, "tier": 2},
+      {"name": "Shanghai", "lat": 31.23, "lon": 121.47, "tier": 2},
+      {"name": "Mumbai", "lat": 19.08, "lon": 72.88, "tier": 3},
+      {"name": "São Paulo", "lat": -23.55, "lon": -46.63, "tier": 3},
+      {"name": "Nairobi", "lat": -1.29, "lon": 36.82, "tier": 3}
+    ]
+  }
+}

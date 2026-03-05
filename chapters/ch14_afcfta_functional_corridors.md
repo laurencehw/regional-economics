@@ -1,5 +1,9 @@
 # Chapter 14: The AfCFTA, Regional Hegemons, and Functional Corridors
 
+![Figure 14.1: AfCFTA trade corridors and major ports](../figures/output/fig_ch14_map_afcfta_corridors.png)
+
+*Source: Natural Earth; AfCFTA Secretariat; UNECA corridor database.*
+
 ---
 
 ## Introduction: The Container That Cannot Cross the Continent

@@ -30,6 +30,10 @@ The methods presented here are not alternatives to the theoretical frameworks of
 
 ## 3A.1 The Spatial Weight Matrix: A Substantive Modeling Choice
 
+![Figure 3A.1: Spatial weight matrix — binary contiguity and row-standardized forms](../figures/output/fig_ch03a_concept_weight_matrix.png)
+
+*Source: Stylized 8-region illustration.*
+
 Every spatial econometric model begins with a matrix $$W$$ — an $$n \times n$$ array that encodes the assumed linkage structure among $$n$$ regions. Element $$w_{ij}$$ captures the strength of the connection from region $$j$$ to region $$i$$: how much region $$j$$'s outcomes or characteristics "matter" for region $$i$$. The diagonal is set to zero by convention (a region does not influence itself through the spatial channel), and the matrix is typically row-standardized so that each row sums to one, converting $$Wy$$ into a weighted average of neighbors' outcomes.
 
 The choice of $$W$$ is, conceptually, the most consequential decision in spatial econometrics. It encodes a hypothesis about the channel through which spatial interaction operates. Different hypotheses produce different matrices, and different matrices can produce substantially different parameter estimates. This is not a bug; it is a feature. If inference were invariant to $$W$$, spatial dependence would not be economically meaningful.
@@ -87,6 +91,10 @@ How much do results depend on the choice of $$W$$? The honest answer is: sometim
 The appropriate response is not to search over $$W$$ specifications until one produces the desired result. It is to report results under multiple specifications and interpret sensitivity as information about the robustness of the spillover claim. The Data in Depth box at the end of this chapter illustrates this approach with a concrete example.
 
 ### Moran's $$I$$: The First Diagnostic
+
+![Figure 3A.2: Moran scatter plot with quadrant labels (HH, HL, LH, LL)](../figures/output/fig_ch03a_concept_moran_scatter.png)
+
+*Source: Anselin (1995); stylized illustration with simulated data.*
 
 Before estimating any spatial model, the analyst should establish that spatial autocorrelation is present in the data. Moran's $$I$$ (1950) is the standard global diagnostic:
 

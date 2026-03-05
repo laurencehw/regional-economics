@@ -1,5 +1,9 @@
 # Chapter 7: China's Internal Divergence and ASEAN Fragmentation
 
+![Figure 7.1: China & ASEAN — BRI corridors and economic integration](../figures/output/fig_ch07_map_china_asean.png)
+
+*Source: Natural Earth; BRI official project list.*
+
 ---
 
 ## Introduction: Two Economies in One Country
@@ -17,6 +21,10 @@ The chapter proceeds in six sections. Section 7.1 analyzes China's coastal-inlan
 ---
 
 ## 7.1 China's Great Divergence: Institutions, Not Geography
+
+![Figure 7.2: China provincial divergence — coastal vs. inland GDP per capita](../figures/output/fig_ch07_thematic_provincial_divergence.png)
+
+*Source: NBS China Statistical Yearbook; calibrated illustration.*
 
 ### Sequential Liberalization and the Coastal Premium
 

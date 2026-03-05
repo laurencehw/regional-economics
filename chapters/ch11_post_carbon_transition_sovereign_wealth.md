@@ -1,5 +1,9 @@
 # Chapter 11: Post-Carbon Transition and Sovereign Wealth
 
+![Figure 11.1: MENA — GCC energy economies and diversification hubs](../figures/output/fig_ch11_map_mena_energy.png)
+
+*Source: Natural Earth; EIA International Energy Statistics.*
+
 ---
 
 ## Introduction: Diversification as Spatial Engineering

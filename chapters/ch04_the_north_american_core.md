@@ -16,9 +16,17 @@ The chapter proceeds in six sections. Section 4.1 traces the NAFTA-to-USMCA tran
 
 ---
 
+![Figure 4.1: North America — USMCA corridors, maquiladora zones, and Rust Belt geography](../figures/output/fig_ch04_map_north_america.png)
+
+*Source: Natural Earth boundaries; BTS cross-border flow data.*
+
 ## 4.1 The NAFTA-to-USMCA Transition: Compliance as the New Comparative Advantage
 
 ### The NAFTA Equilibrium
+
+![Figure 4.2: Manufacturing employment share — Rust Belt vs. Sun Belt, 1970–2020](../figures/output/fig_ch04_thematic_manufacturing_shift.png)
+
+*Source: BLS Current Employment Statistics; calibrated illustration.*
 
 For a quarter century, NAFTA created a distinctive spatial pattern in North American manufacturing. The agreement's relatively simple rules of origin — typically requiring 62.5 percent regional value content for automotive products — allowed firms to optimize production across the continent on cost grounds. The result was a three-tier spatial hierarchy:
 
