@@ -1,6 +1,6 @@
 # Chapter 5: Latin America and the Middle-Income Trap
 
-![Figure 5.1: Latin America — trade blocs, commodity zones, and key economies](../figures/output/fig_ch05_map_latin_america.png)
+![Figure 5.1: Latin America — trade blocs, commodity zones, and key economies](../figures/fig_ch05_map_latin_america.png)
 
 *Source: Natural Earth; WTO trade agreements database.*
 
@@ -22,7 +22,7 @@ The chapter proceeds in five sections. Section 5.1 examines premature deindustri
 
 ## 5.1 Premature Deindustrialization: The Spatial Anatomy of Structural Regression
 
-![Figure 5.2: Middle-income trap — GDP per capita vs. growth rate across regions](../figures/output/fig_ch05_thematic_middle_income.png)
+![Figure 5.2: Middle-income trap — GDP per capita vs. growth rate across regions](../figures/fig_ch05_thematic_middle_income.png)
 
 *Source: World Bank WDI; Penn World Table 10.0.*
 

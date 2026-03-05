@@ -30,8 +30,9 @@ labs/lab5_mena/output/real_scm_baseline/
 
 # Generated outputs (lab/dashboard outputs, not figure PNGs)
 /output/
-figures/output/*.pdf
-figures/output/*_summary.json
+figures/*.pdf
+figures/*_summary.json
+figures/output/
 
 # Geodata cache (downloaded by figure scripts)
 data/geodata/

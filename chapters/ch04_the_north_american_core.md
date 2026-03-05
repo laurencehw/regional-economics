@@ -16,7 +16,7 @@ The chapter proceeds in six sections. Section 4.1 traces the NAFTA-to-USMCA tran
 
 ---
 
-![Figure 4.1: North America — USMCA corridors, maquiladora zones, and Rust Belt geography](../figures/output/fig_ch04_map_north_america.png)
+![Figure 4.1: North America — USMCA corridors, maquiladora zones, and Rust Belt geography](../figures/fig_ch04_map_north_america.png)
 
 *Source: Natural Earth boundaries; BTS cross-border flow data.*
 
@@ -24,7 +24,7 @@ The chapter proceeds in six sections. Section 4.1 traces the NAFTA-to-USMCA tran
 
 ### The NAFTA Equilibrium
 
-![Figure 4.2: Manufacturing employment share — Rust Belt vs. Sun Belt, 1970–2020](../figures/output/fig_ch04_thematic_manufacturing_shift.png)
+![Figure 4.2: Manufacturing employment share — Rust Belt vs. Sun Belt, 1970–2020](../figures/fig_ch04_thematic_manufacturing_shift.png)
 
 *Source: BLS Current Employment Statistics; calibrated illustration.*
 

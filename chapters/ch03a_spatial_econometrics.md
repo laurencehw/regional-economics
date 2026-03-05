@@ -30,7 +30,7 @@ The methods presented here are not alternatives to the theoretical frameworks of
 
 ## 3A.1 The Spatial Weight Matrix: A Substantive Modeling Choice
 
-![Figure 3A.1: Spatial weight matrix — binary contiguity and row-standardized forms](../figures/output/fig_ch03a_concept_weight_matrix.png)
+![Figure 3A.1: Spatial weight matrix — binary contiguity and row-standardized forms](../figures/fig_ch03a_concept_weight_matrix.png)
 
 *Source: Stylized 8-region illustration.*
 
@@ -92,7 +92,7 @@ The appropriate response is not to search over $$W$$ specifications until one pr
 
 ### Moran's $$I$$: The First Diagnostic
 
-![Figure 3A.2: Moran scatter plot with quadrant labels (HH, HL, LH, LL)](../figures/output/fig_ch03a_concept_moran_scatter.png)
+![Figure 3A.2: Moran scatter plot with quadrant labels (HH, HL, LH, LL)](../figures/fig_ch03a_concept_moran_scatter.png)
 
 *Source: Anselin (1995); stylized illustration with simulated data.*
 

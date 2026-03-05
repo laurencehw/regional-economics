@@ -18,7 +18,7 @@ Together, these frameworks explain a pattern that neither the NEG nor classical 
 
 ## 2.1 What Are Institutions?
 
-![Figure 2.1: Institutional quality spectrum — extractive to inclusive](../figures/output/fig_ch02_concept_institutional_spectrum.png)
+![Figure 2.1: Institutional quality spectrum — extractive to inclusive](../figures/fig_ch02_concept_institutional_spectrum.png)
 
 *Source: Acemoglu & Robinson (2012); World Governance Indicators.*
 

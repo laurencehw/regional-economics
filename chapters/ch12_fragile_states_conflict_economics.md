@@ -1,6 +1,6 @@
 # Chapter 12: Fragile States and Conflict Economics
 
-![Figure 12.1: MENA conflict zones and refugee displacement](../figures/output/fig_ch12_map_conflict_zones.png)
+![Figure 12.1: MENA conflict zones and refugee displacement](../figures/fig_ch12_map_conflict_zones.png)
 
 *Source: Natural Earth; UNHCR; ACLED conflict data.*
 

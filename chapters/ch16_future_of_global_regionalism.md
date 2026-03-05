@@ -18,7 +18,7 @@ This chapter proceeds in five sections. Section 16.1 examines the telemigration 
 
 ## 16.1 The Telemigration Hypothesis
 
-![Figure 16.1: Global advanced producer services network (GaWC hierarchy)](../figures/output/fig_ch16_thematic_services_network.png)
+![Figure 16.1: Global advanced producer services network (GaWC hierarchy)](../figures/fig_ch16_thematic_services_network.png)
 
 *Source: GaWC Research Network; Taylor & Derudder (2016).*
 

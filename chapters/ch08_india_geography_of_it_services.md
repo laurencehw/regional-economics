@@ -1,6 +1,6 @@
 # Chapter 8: India and the Geography of IT Services
 
-![Figure 8.1: India — IT-BPO clusters and special economic zones](../figures/output/fig_ch08_map_india_it.png)
+![Figure 8.1: India — IT-BPO clusters and special economic zones](../figures/fig_ch08_map_india_it.png)
 
 *Source: Natural Earth; NASSCOM; Indian SEZ Board.*
 
@@ -22,7 +22,7 @@ The chapter proceeds in six sections. Section 8.1 examines the spatial economics
 
 ## 8.1 The Clusters: Bangalore, Hyderabad, and the Institutional Origins of India's IT Geography
 
-![Figure 8.2: IT-BPO concentration by Indian state — location quotients](../figures/output/fig_ch08_thematic_it_concentration.png)
+![Figure 8.2: IT-BPO concentration by Indian state — location quotients](../figures/fig_ch08_thematic_it_concentration.png)
 
 *Source: NASSCOM; RBI state GDP data; calibrated illustration.*
 

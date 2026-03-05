@@ -1,6 +1,6 @@
 # Chapter 15: Climate, Stranded Regions, and the Future Map
 
-![Figure 15.1: Global climate vulnerability — exposure, stranded assets, and migration](../figures/output/fig_ch15_map_climate_vulnerability.png)
+![Figure 15.1: Global climate vulnerability — exposure, stranded assets, and migration](../figures/fig_ch15_map_climate_vulnerability.png)
 
 *Source: ND-GAIN Index; IEA stranded assets data; IPCC AR6.*
 

@@ -14,7 +14,7 @@ This chapter argues that the puzzle has an institutional resolution. Urbanizatio
 
 Lab 6 provides the empirical tools. Night-lights data (VIIRS) proxy for economic activity where official GDP data are sparse, unreliable, or delayed. Moran's $$I$$ measures whether economic activity clusters spatially — and the two-step procedure (raw clustering, then governance-residualized clustering) tests whether the spatial pattern of institutional quality explains the spatial pattern of economic activity. If governance-residualized Moran's $$I$$ is substantially lower than raw Moran's $$I$$, then institutional geography is doing real explanatory work.
 
-![Figure 13.1: Sub-Saharan Africa — primate cities and urbanization corridors](../figures/output/fig_ch13_map_ssa_urbanization.png)
+![Figure 13.1: Sub-Saharan Africa — primate cities and urbanization corridors](../figures/fig_ch13_map_ssa_urbanization.png)
 
 *Source: Natural Earth; UN World Urbanization Prospects.*
 

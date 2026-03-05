@@ -1,6 +1,6 @@
 # Chapter 10: The North-South Divide and Dis-Integration
 
-![Figure 10.1: EU North-South divide and Brexit geography](../figures/output/fig_ch10_map_north_south.png)
+![Figure 10.1: EU North-South divide and Brexit geography](../figures/fig_ch10_map_north_south.png)
 
 *Source: Natural Earth; Eurostat regional accounts.*
 

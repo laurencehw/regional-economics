@@ -414,7 +414,7 @@ def save_summary(output_dir: Path, filename_stem: str, summary: Dict):
 # ------------------------------------------------------------------ #
 
 def default_output_dir() -> Path:
-    return Path(__file__).resolve().parent / "output"
+    return Path(__file__).resolve().parent
 
 
 def add_common_args(parser):

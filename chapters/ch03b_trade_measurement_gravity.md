@@ -24,7 +24,7 @@ This chapter provides the trade measurement and estimation framework that all re
 
 ## 3B.1 The Structural Gravity Model
 
-![Figure 3B.1: Gravity model — distance decay of trade flows](../figures/output/fig_ch03b_concept_gravity_decay.png)
+![Figure 3B.1: Gravity model — distance decay of trade flows](../figures/fig_ch03b_concept_gravity_decay.png)
 
 *Source: Tinbergen (1962); Head & Mayer (2014).*
 

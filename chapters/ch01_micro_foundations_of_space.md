@@ -50,7 +50,7 @@ At the town's edge ($$n = 0$$), rent captures the full production surplus. As di
 
 Now add multiple crops, each with different values, labor requirements, and transport costs per unit. Dairy products spoil quickly and are heavy: high $$t$$, high $$p$$. Grain is durable and lighter: lower $$t$$, lower $$p$$. Extensive livestock grazing has very low transport cost per unit of land area. The result is a set of bid-rent curves — one per crop — and the land at each distance goes to the highest bidder. The outcome is a series of concentric rings: intensive horticulture and dairy close to the market town, forestry in the second ring (wood's weight-to-value ratio made transport prohibitively expensive at greater distances — a result Von Thünen derived logically from his framework, since fuel and construction timber were essential and bulky), grain farming at middle distances, then extensive grazing at the periphery.
 
-![Figure 1.1: Von Thünen's concentric land-use rings and bid-rent curves](../figures/output/fig_ch01_concept_von_thunen.png)
+![Figure 1.1: Von Thünen's concentric land-use rings and bid-rent curves](../figures/fig_ch01_concept_von_thunen.png)
 
 *Source: Von Thünen (1826); stylized illustration.*
 
@@ -98,7 +98,7 @@ Their analytical legacy is permanent. Any serious empirical work on land markets
 
 ### Krugman's Core-Periphery Model
 
-![Figure 1.2: Core–periphery model — tomahawk bifurcation diagram](../figures/output/fig_ch01_concept_core_periphery.png)
+![Figure 1.2: Core–periphery model — tomahawk bifurcation diagram](../figures/fig_ch01_concept_core_periphery.png)
 
 *Source: Krugman (1991); Fujita, Krugman & Venables (1999).*
 
