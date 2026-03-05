@@ -1,11 +1,32 @@
+# Book artifacts
 Regional Economics.gdoc
 w27850.pdf
 
+# Python
 __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
 .tmp/
 
+# Claude Code local state
+.claude/
+
+# Data (all fetched via scripts in labs repo)
 data/external/
 data/staging/
+data/raw/
+data/processed/
+
+# Lab real-data outputs (derived from restricted sources)
+labs/*/output/real*/
+labs/*/data/raw/
+labs/*/data/real/
+labs/lab5_mena/output/real_scm_baseline/
+
+# Generated outputs
+output/
+
+# OS files
+.DS_Store
+Thumbs.db
