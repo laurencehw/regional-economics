@@ -64,25 +64,7 @@ def plot_conflict_zones_map(output_dir: Path, seed: int = 42) -> dict:
     if ann.get("cities"):
         annotate_cities(ax, project_cities(ann["cities"], crs))
     if ann.get("refugee_flows"):
-        projected_flows = project_arrows(ann["refugee_flows"], crs)
-        # Use larger fontsize for flow labels (default 6.5 is too small)
-        for arrow in projected_flows:
-            x0, y0 = arrow["start"]
-            x1, y1 = arrow["end"]
-            color = arrow.get("color", "#e41a1c")
-            ax.annotate(
-                "", xy=(x1, y1), xytext=(x0, y0),
-                arrowprops=dict(
-                    arrowstyle="->,head_width=0.2,head_length=0.15",
-                    lw=1.5, color=color, alpha=0.7,
-                ),
-                zorder=4,
-            )
-            mx, my = (x0 + x1) / 2, (y0 + y1) / 2
-            if "label" in arrow:
-                ax.text(mx, my, arrow["label"], fontsize=8, color=color,
-                        ha="center", va="bottom", fontstyle="italic", zorder=6,
-                        bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1))
+        annotate_arrows(ax, project_arrows(ann["refugee_flows"], crs), fontsize=8)
 
     from matplotlib.patches import Patch
     legend_items = [

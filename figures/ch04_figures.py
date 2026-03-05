@@ -66,9 +66,7 @@ def plot_north_america_map(output_dir: Path, seed: int = 42) -> dict:
             for region_key, region_info in ann["regions"].items():
                 state_codes = region_info["states"]
                 # Match on last two chars for iso_3166_2 (e.g. "US-MI" -> "MI")
-                mask = admin1_proj[state_col].apply(
-                    lambda x: str(x).split("-")[-1] if "-" in str(x) else str(x)
-                ).isin(state_codes)
+                mask = admin1_proj[state_col].str[-2:].isin(state_codes)
                 region_gdf = admin1_proj[mask]
                 if not region_gdf.empty:
                     region_gdf.plot(
