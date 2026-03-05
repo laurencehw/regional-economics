@@ -3,14 +3,14 @@
     "cities": [
       {"name": "Detroit", "lat": 42.33, "lon": -83.05, "label_offset": [-15, 5], "style": "major"},
       {"name": "Chicago", "lat": 41.88, "lon": -87.63, "label_offset": [-15, 5], "style": "major"},
-      {"name": "Houston", "lat": 29.76, "lon": -95.37, "label_offset": [8, -10], "style": "major"},
+      {"name": "Houston", "lat": 29.76, "lon": -95.37, "label_offset": [10, -14], "style": "major"},
       {"name": "Atlanta", "lat": 33.75, "lon": -84.39, "label_offset": [5, 3], "style": "major"},
       {"name": "Phoenix", "lat": 33.45, "lon": -112.07, "label_offset": [-20, -12], "style": "major"},
       {"name": "Toronto", "lat": 43.65, "lon": -79.38, "label_offset": [5, 3], "style": "major"},
       {"name": "Mexico City", "lat": 19.43, "lon": -99.13, "label_offset": [5, -8], "style": "major"},
-      {"name": "Monterrey", "lat": 25.67, "lon": -100.31, "label_offset": [8, -14], "style": "minor"},
-      {"name": "Ciudad Juárez", "lat": 31.69, "lon": -106.42, "label_offset": [-25, 10], "style": "minor"},
-      {"name": "San Antonio", "lat": 29.42, "lon": -98.49, "label_offset": [-22, 10], "style": "minor"}
+      {"name": "Monterrey", "lat": 25.67, "lon": -100.31, "label_offset": [-28, -12], "style": "minor"},
+      {"name": "Ciudad Juárez", "lat": 31.69, "lon": -106.42, "label_offset": [-30, -14], "style": "minor"},
+      {"name": "San Antonio", "lat": 29.42, "lon": -98.49, "label_offset": [-30, 8], "style": "minor"}
     ],
     "corridors": [
       {"name": "USMCA Auto Corridor", "waypoints": [[-83.05, 42.33], [-86.0, 36.0], [-100.31, 25.67]], "style": "trade"},
