@@ -1,8 +1,0 @@
-{
-  "raw_rows": 3677,
-  "normalized_rows": 895,
-  "failed_batches": [],
-  "year": 2024,
-  "postprocess_patch_file": "data/raw/comtrade/comtrade_patch_batch_2024_2026-02-20.csv",
-  "postprocess_note": "Filled previously rate-limited batch (2026-02-20)."
-}

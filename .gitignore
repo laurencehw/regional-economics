@@ -12,11 +12,15 @@ __pycache__/
 # Claude Code local state
 .claude/
 
-# Data (all fetched via scripts in labs repo)
-data/external/
-data/staging/
-data/raw/
-data/processed/
+# Data (all fetched via scripts)
+data/
+
+# Internal planning docs (kept locally, not public)
+DRAFTING_PLAN.md
+BOOK_OUTLINE.md
+docs/
+chapters/specs/
+references/
 
 # Lab real-data outputs (derived from restricted sources)
 labs/*/output/real*/
