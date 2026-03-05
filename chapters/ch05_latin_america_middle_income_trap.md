@@ -42,6 +42,14 @@ Dani Rodrik's (2016) paper on premature deindustrialization documented a strikin
 
 Rodrik argued that the causes were global: trade liberalization exposed developing-country manufacturers to competition from East Asian producers with superior cost structures; automation reduced the labor content of manufacturing globally; and skill-biased technological change flowed imperfectly to middle-income countries where education systems could not keep pace.
 
+| Feature | Normal Deindustrialization | Premature Deindustrialization |
+|---|---|---|
+| Timing | Manufacturing share peaks at high income ($12,000--$16,000 per capita) | Manufacturing share peaks at low income ($4,000--$6,000 per capita) |
+| Peak manufacturing share | 28--35% of GDP (UK, Japan, South Korea) | 15--21% of GDP (Brazil, Mexico, many African economies) |
+| Labor absorption | High-productivity services (finance, IT, professional services) absorb displaced workers | Low-productivity informal services (retail, personal services) absorb displaced workers |
+| Structural change effect on growth | Positive: labor moves to higher-value activities | Negative: labor moves to lower-value activities |
+| Institutional precondition | Deep education systems, formalized labor markets, fiscal capacity | Institutional thinness; workforce lacks skills for productive services |
+
 These explanations are correct at the global level but insufficient at the sub-national level. Within Latin American countries, the timing, depth, and consequences of deindustrialization vary dramatically across regions — and the variation is systematically correlated with institutional quality.
 
 The timing of Brazil's manufacturing collapse illustrates how external demand shocks interact with these structural forces. The China-driven commodity super-cycle (2003--2013) sent iron ore, soybean, and petroleum prices to historic highs, and the resulting export revenues generated classic Dutch Disease dynamics: the Brazilian real appreciated roughly 40 percent in real effective terms between 2003 and 2011 (IMF 2012), making manufactured exports progressively uncompetitive in precisely the sectors -- textiles, footwear, machinery -- where Brazil had built ISI-era capacity (Bresser-Pereira 2008). Manufacturing's share of Brazilian GDP fell from 18 percent in 2002 to 11 percent by 2014 (World Bank 2015), with the steepest annual declines coinciding with the years of peak commodity revenue. The commodity boom did not cause premature deindustrialization -- Rodrik's structural forces were already at work -- but it dramatically compressed the timeline, depriving firms and workers of the adjustment period that a more gradual transition might have allowed. The spatial consequence was that regions dependent on commodity extraction (Minas Gerais iron ore, Mato Grosso soybeans) boomed while manufacturing regions lost ground, widening the sub-national divergence that the rest of this section documents.
