@@ -104,14 +104,27 @@ The emergence of large language models and generative AI is adding a new layer t
 
 The table below compares the services trade frameworks of the major regional integration agreements analyzed in this book. Each column represents a dimension of services trade liberalization; each row represents a regional agreement.
 
-| Framework | Listing Approach | Mode 1 (Cross-border) | Mode 2 (Consumption abroad) | Mode 3 (Commercial presence) | Mode 4 (Natural persons) | E-commerce / Data | MRAs | Dispute Settlement |
-|---|---|---|---|---|---|---|---|---|
-| **USMCA** (Ch. 4) | Negative list | Substantially open | Open | Open with reservations | Limited (TN visa) | Free data flows, no localization | Limited (engineering, accounting) | State-to-state, ISDS removed for most |
-| **EU Single Market** (Chs. 9–10) | Hybrid (Services Directive) | Partially open | Open | Open (right of establishment) | Open (EU citizens only) | GDPR, Digital Single Market | Bologna, Professional Qualifications Directive | ECJ, Commission enforcement |
-| **CPTPP** | Negative list | Substantially open | Open | Open with reservations | Limited | Free data flows, no forced localization | Limited | State-to-state, ISDS |
-| **RCEP** | Positive list (transitioning) | Limited | Open | Moderate | Very limited | Weak data provisions | None | Consultation-based |
-| **AfCFTA** (Ch. 14) | Positive list (Phase II) | In negotiation | In negotiation | In negotiation | In negotiation | Not yet addressed | Planned | AfCFTA Dispute Settlement Body |
-| **SAARC/SAFTA** (Ch. 8) | Positive list | Minimal | Minimal | Limited | Limited | Not addressed | None | Consultation-based |
+**Table 16.1a — Services Trade Frameworks: Market Access by Mode**
+
+| Framework | Listing Approach | Mode 1 (Cross-border) | Mode 2 (Consumption abroad) | Mode 3 (Commercial presence) | Mode 4 (Natural persons) |
+|---|---|---|---|---|---|
+| **USMCA** (Ch. 4) | Negative list | Substantially open | Open | Open with reservations | Limited (TN visa) |
+| **EU Single Market** (Chs. 9–10) | Hybrid (Services Directive) | Partially open | Open | Open (right of establishment) | Open (EU citizens only) |
+| **CPTPP** | Negative list | Substantially open | Open | Open with reservations | Limited |
+| **RCEP** | Positive list (transitioning) | Limited | Open | Moderate | Very limited |
+| **AfCFTA** (Ch. 14) | Positive list (Phase II) | In negotiation | In negotiation | In negotiation | In negotiation |
+| **SAARC/SAFTA** (Ch. 8) | Positive list | Minimal | Minimal | Limited | Limited |
+
+**Table 16.1b — Services Trade Frameworks: Regulatory Infrastructure**
+
+| Framework | E-commerce / Data | MRAs | Dispute Settlement |
+|---|---|---|---|
+| **USMCA** (Ch. 4) | Free data flows, no localization | Limited (engineering, accounting) | State-to-state, ISDS removed for most |
+| **EU Single Market** (Chs. 9–10) | GDPR, Digital Single Market | Bologna, Professional Qualifications Directive | ECJ, Commission enforcement |
+| **CPTPP** | Free data flows, no forced localization | Limited | State-to-state, ISDS |
+| **RCEP** | Weak data provisions | None | Consultation-based |
+| **AfCFTA** (Ch. 14) | Not yet addressed | Planned | AfCFTA Dispute Settlement Body |
+| **SAARC/SAFTA** (Ch. 8) | Not addressed | None | Consultation-based |
 
 The matrix reveals a clear pattern: services trade liberalization is most advanced in agreements among developed countries (USMCA, EU, CPTPP) and least advanced in agreements among developing countries (RCEP, AfCFTA, SAARC). The gap reflects the institutional infrastructure that services liberalization requires — regulatory agencies capable of enforcing mutual recognition, legal systems that protect foreign service providers, and data governance frameworks that facilitate cross-border information flows. Building this infrastructure is the central challenge for the developing-country agreements, and the speed at which they do so will determine whether the global services economy becomes more or less fragmented over the coming decades.
 

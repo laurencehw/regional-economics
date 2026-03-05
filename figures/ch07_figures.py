@@ -95,6 +95,7 @@ def plot_provincial_divergence(output_dir: Path, seed: int = 42) -> dict:
         ax.text(yr, coastal[i] + 1500, f"{ratio:.1f}×", fontsize=5.5,
                 ha="center", color="#808080")
 
+    ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
     ax.set_xlabel("Year", fontsize=8)
     ax.set_ylabel("GDP per capita (CNY)", fontsize=8)
     ax.set_title("China Provincial Divergence: Coastal vs. Inland",

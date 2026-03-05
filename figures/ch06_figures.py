@@ -90,6 +90,7 @@ def plot_dva_trajectory(output_dir: Path, seed: int = 42) -> dict:
     ax.set_title("Domestic Value Added in Exports: East Asian Economies",
                  fontsize=9, fontweight="bold")
     ax.legend(fontsize=6, ncol=2, loc="lower right", frameon=False)
+    ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.set_xlim(1999, 2021)

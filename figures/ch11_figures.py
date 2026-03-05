@@ -74,9 +74,10 @@ def plot_mena_energy_map(output_dir: Path, seed: int = 42) -> dict:
             ax.plot(field["lon"], field["lat"], "^", color="#d62728",
                     markersize=8, zorder=5, alpha=0.8)
             ax.annotate(field["name"], (field["lon"], field["lat"]),
-                        fontsize=4.5, ha="left", va="bottom",
+                        fontsize=6, ha="left", va="bottom",
                         xytext=(3, 3), textcoords="offset points",
-                        color="#d62728")
+                        color="#d62728",
+                        bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=1))
 
     from matplotlib.patches import Patch
     from matplotlib.lines import Line2D
