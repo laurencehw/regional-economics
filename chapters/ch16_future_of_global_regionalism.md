@@ -297,3 +297,24 @@ Between these scenarios lies the actual future, which — as always — will be 
 5. Machine learning methods can predict economic outcomes from satellite imagery and other non-traditional data sources. Discuss the implications for the spatial data challenges identified throughout this book (NUTS-2 boundary changes, SWF opacity, conflict-zone statistical collapse). Can ML methods substitute for traditional statistical systems, or do they complement them? What are the risks of relying on predicted rather than measured economic data?
 
 6. This chapter identifies three forces that will shape the spatial economics of the next quarter-century. Which do you consider most consequential for the global distribution of economic activity, and why? Design a research agenda (data sources, methods, key hypotheses) for studying your chosen force empirically.
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **Aronow and Samii (2017)** — Academic research on causal inference methods and spatial interference in observational studies
+- **Boeing (2025)** — Corporate data on aircraft order backlogs, delivery schedules, and aviation industry demand forecasts
+- **Coursera (2024)** — Platform data on global online education enrollment, cross-border skill acquisition, and digital learning trends
+- **Farrell and Newman (2019)** — Academic research on weaponized interdependence, network chokepoints, and the geopolitics of economic connectivity
+- **Fiverr (2023)** — Platform data on freelance services trade, cross-border gig economy activity, and digital labor market geography
+- **Henderson, Storeygard, and Weil (2012)** — Academic research on using satellite night-lights data as a proxy for economic activity in data-scarce environments
+- **IEA (2024)** — International Energy Agency data on global energy transition investment, renewable energy deployment, and clean technology supply chains
+- **Manski (2013)** — Academic research on public policy analysis under uncertainty and partial identification methods
+- **Melitz (2003)** — Academic research on heterogeneous firms and international trade, providing the theoretical foundation for firm-level trade analysis
+- **NAFSA (2024)** — Association of International Educators data on international student mobility, cross-border education flows, and Mode 2 services trade in education
+- **NPCI (2024)** — National Payments Corporation of India data on UPI digital payment infrastructure and cross-border payment system interoperability
+- **Upwork (2023)** — Platform data on cross-border freelance labor markets, remote work patterns, and digital services trade volumes
+- **World Bank (2023, 2024)** — World Development Indicators providing GDP, trade, poverty, and institutional quality data for global comparative analysis
+- **WTO (2013, 2023)** — World Trade Organization data on services trade volumes, regional trade agreement provisions, and trade liberalization trends

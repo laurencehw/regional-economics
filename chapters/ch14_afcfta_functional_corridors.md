@@ -370,3 +370,23 @@ Chapter 15 will take the analysis beyond Africa to ask how climate change is red
 5. Lab 6's Moran's $$I$$ analysis tests whether governance quality explains the spatial clustering of economic activity. The corridor extension proposed in this chapter tests whether this relationship is stronger along trade corridors. Propose an alternative spatial econometric approach — using the SAR, SEM, or SDM frameworks from Chapter 3-A — that could estimate the causal effect of corridor-governance reform on economic clustering. What identification strategy would you use to address the endogeneity of corridor location?
 
 6. The AfCFTA's Protocol on Digital Trade addresses data flows, electronic commerce, and digital payments across African borders. Given that M-Pesa and other mobile money platforms already facilitate billions of dollars in informal cross-border transactions (Chapter 13's Nairobi case study), is the protocol addressing a real barrier or formalizing a transition that is already occurring? What additional spatial analysis would help answer this question?
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **AfCFTA Secretariat (2023)** — Official data on African Continental Free Trade Area tariff schedules, rules of origin, services protocols, and implementation progress
+- **Anderson and Van Wincoop (2003)** — Academic research on gravity model estimation of trade costs and border effects
+- **ECOWAS Commission (2020)** — Economic Community of West African States data on regional trade, integration benchmarks, and cross-border governance
+- **Fafchamps (2004)** — Academic research on market institutions, trader networks, and informal exchange in African economies
+- **Freightos (2023)** — Global freight rate data and shipping cost comparisons for African and international trade routes
+- **Homewood et al. (2009)** — Academic research on pastoralist economies, cross-border livestock trade, and informal economic networks in East Africa
+- **KAZA Secretariat (2015)** — Kavango-Zambezi Transfrontier Conservation Area data on cross-border conservation, tourism corridors, and community economic impacts
+- **MPDC (2023)** — Maputo Port Development Company data on port throughput, corridor logistics, and southern African trade infrastructure
+- **OICA (2024)** — International Organization of Motor Vehicle Manufacturers data on automotive production and assembly in African markets
+- **TradeMark Africa (2019)** — Data on trade corridor reform outcomes, border post efficiency, and transit time reductions in East and Southern Africa
+- **UNCTAD (2019, 2024)** — UN Conference on Trade and Development data on intra-African trade volumes, non-tariff barriers, and trade facilitation indicators
+- **World Bank (2020, 2023, 2024)** — World Development Indicators and Logistics Performance Index data on trade costs, infrastructure quality, and economic integration in Africa
+- **World Bank LPI (2023)** — Logistics Performance Index data on shipping costs, customs efficiency, and trade infrastructure quality across African countries

@@ -10,6 +10,10 @@
 
 In 1960, Brazil's GDP per capita was roughly 14 percent of the United States' (in PPP terms), peaking at 18 percent in 1980 before sliding back (World Bank 2024). Six decades later, after import substitution, debt crises, structural adjustment, trade liberalization, commodity booms, and multiple democratic transitions, it stood at 15 percent. Mexico, which shares a 3,145-kilometer border with the world's largest consumer market and has been a party to a preferential trade agreement with it since 1994, has seen its ratio to US income (PPP) *decline* from approximately 27 percent in 1981 to roughly 22 percent in 2024 (World Bank 2024). Argentina, once among the ten richest countries in the world, has spent the last century demonstrating that middle-income status can be permanent — not a waystation on the path to prosperity, but an equilibrium from which escape requires more than factor accumulation and trade liberalization.
 
+{% hint style="info" %}
+**The Middle-Income Trap.** Countries that reach per-capita incomes of roughly $3,000--$12,000 (constant 2015 USD) frequently stagnate for decades. The growth strategies that lifted them from poverty --- factor accumulation, cheap-labor manufacturing, commodity exports --- stop working, but the institutional capacity needed for innovation-led growth has not yet developed. Latin America is the world's largest laboratory for this phenomenon: of its twenty most populous countries, only Chile, Uruguay, and Panama have graduated to high-income status in the past half century.
+{% endhint %}
+
 This is the middle-income trap: the empirical regularity that countries which reach per-capita incomes between $3,000 and $12,000 (in constant 2015 dollars) frequently stagnate for decades, unable to sustain the growth that lifted them from poverty. The trap is not uniquely Latin American — Malaysia, Thailand, and Turkey show similar patterns — but Latin America has the most members and the longest duration. Of the twenty most populous Latin American and Caribbean countries, only Chile, Uruguay, and Panama have graduated to high-income status in the past half century (which crossed the World Bank's high-income threshold in 2013 and has remained above it since, though the 2014–2016 commodity price slump and exchange rate depreciation narrowed the margin considerably). The rest are stuck.
 
 The standard explanations — macroeconomic instability, commodity dependence, insufficient trade openness, underinvestment in human capital — are correct at the surface but insufficient at the structural level. Every one has been addressed, at least temporarily, in at least some LAC countries. Chile stabilized its macroeconomy and diversified. Mexico opened its economy through NAFTA/USMCA. Brazil invested in education (FUNDEF, FUNDEB) and technology (Embrapa, Embraer). Colombia liberalized trade and attracted FDI. Yet none — except perhaps Chile — has converged toward rich-country income levels. Something deeper than macro policy is at work.
@@ -369,3 +373,21 @@ The comparison also illuminates a temporal dimension. South Korea's institutiona
 6. Medellín transitioned from a city defined by violence and informality to a significant technology and BPO hub in roughly two decades. Using the Grossman and Rossi-Hansberg (2008) "trading tasks" framework, analyze which service tasks were most likely to flow to Medellín first (and why), and which tasks remain anchored in US cities. What institutional investments were necessary for the city to move up the services "smile curve" from routine call-center work to product development? Is this trajectory replicable in cities with weaker institutional starting points?
 
 7. Faber and Gaubert (2019) find significant local development effects from tourism in Mexican coastal municipalities. Tourism is Mode 2 services trade — the consumer moves to the service. Medical tourism inverts this further — consumers travel specifically for a service that is cheaper abroad. Compare the spatial multiplier effects of these two forms of Mode 2 trade. Under what conditions does medical tourism produce broader local development rather than an enclave of internationally accredited hospitals disconnected from the local health system?
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **Baldwin (2019)** — Academic research on global value chains, trade in tasks, and the "Great Convergence" framework
+- **BEA (2024)** — US Bureau of Economic Analysis data on GDP and income comparisons
+- **Bresser-Pereira (2008)** — Academic research on Dutch disease and deindustrialization in Latin American economies
+- **Connell (2013)** — Academic research on medical tourism flows and health services trade in developing countries
+- **ECLAC/FAO (2020)** — UN Economic Commission for Latin America and the Caribbean and FAO data on agricultural production, food systems, and rural development
+- **EIA (2023)** — US Energy Information Administration data on oil and gas production, reserves, and energy trade
+- **IBGE (2021)** — Brazilian Institute of Geography and Statistics data on regional economic output, demographics, and structural indicators
+- **IMF (2012)** — International Monetary Fund macroeconomic data, fiscal accounts, and country reports for Latin American economies
+- **S&P Global (2024)** — Credit ratings, commodity price data, and economic risk assessments for Latin American sovereigns
+- **USGS (2024)** — US Geological Survey data on lithium reserves, mineral production, and critical mineral supply chains
+- **World Bank (2015, 2024)** — World Development Indicators providing GDP per capita, poverty rates, trade shares, and institutional quality metrics for Latin American economies

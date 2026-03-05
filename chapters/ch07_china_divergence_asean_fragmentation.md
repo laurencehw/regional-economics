@@ -317,3 +317,24 @@ Chapter 8 takes the analysis to South Asia, where India's IT services revolution
 5. The convergence regression in Lab 2 shows strong $$\beta$$-convergence among ASEAN-6 economies but none among the Northeast Asian core (China, Japan, Korea). Propose a structural explanation for this pattern that goes beyond "the ASEAN-6 started lower." What institutional, technological, or geopolitical factors might explain why the Northeast Asian economies are diverging while the ASEAN economies converge? Design a robustness test that could distinguish between your explanation and the simple initial-conditions story.
 
 6. The Digital Silk Road and data localization rules create a new geography of digital infrastructure where server locations are determined partly by regulatory sovereignty rather than technical efficiency. Using the weaponized interdependence framework from Chapter 6, analyze how data localization rules in ASEAN create chokepoints in the digital services economy. Who benefits from these chokepoints — national governments, domestic platform firms, or consumers? What spatial economic consequences would you predict if ASEAN adopted a common data-free-flow framework?
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **ASEAN Secretariat (2024)** — Official data on ASEAN trade flows, economic integration metrics, and regional cooperation statistics
+- **Brautigam (2020)** — Academic research on Chinese development finance, BRI lending practices, and debt sustainability in recipient countries
+- **EDB Singapore (2005)** — Singapore Economic Development Board data on industrial policy, FDI attraction, and cluster development
+- **GoTo Group (2023)** — Corporate data on Southeast Asian platform economy scale, user base, and cross-border digital services
+- **Hsing (2010)** — Academic research on urbanization, land governance, and spatial development in China
+- **IEA (2023)** — International Energy Agency data on renewable energy investment, solar panel manufacturing, and clean energy supply chains
+- **IMF (2015, 2023)** — International Monetary Fund data on debt sustainability, fiscal balances, and macroeconomic indicators for China and ASEAN economies
+- **Laos-China Railway Company (2023)** — Operational data on BRI infrastructure projects and cross-border rail connectivity
+- **NBS China (2006, 2021, 2024)** — China's National Bureau of Statistics data on provincial GDP, inter-regional inequality, industrial output, and urban-rural income gaps
+- **Refinitiv BRI Database (2023)** — Comprehensive project-level data on Belt and Road Initiative investments, loans, and infrastructure projects
+- **Shenzhen Statistics Bureau (2024)** — Municipal statistical data on Shenzhen's economic output, technology industry, and demographic growth
+- **State Grid Corporation (2023)** — Data on China's electricity grid infrastructure, inter-provincial power transmission, and renewable energy integration
+- **TAT (2020)** — Tourism Authority of Thailand data on international tourist arrivals, revenue, and medical tourism statistics
+- **World Bank (2004, 2017, 2020, 2022, 2024)** — World Development Indicators providing GDP, poverty, trade, logistics performance, and institutional quality data for China and ASEAN economies

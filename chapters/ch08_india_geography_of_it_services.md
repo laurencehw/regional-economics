@@ -279,3 +279,22 @@ Chapter 9 shifts the analysis to Europe, where the EU's Single Market represents
 5. The shift from third-party BPO to captive Global Capability Centers represents a move up the services value chain but also a change in institutional structure. Using the NEG framework of Chapter 1, analyze whether the GCC model is more or less likely than the BPO model to generate knowledge spillovers to the local economy. Consider the role of labor mobility, supplier linkages, and entrepreneurial spin-offs in your analysis.
 
 6. Bangladesh's garment sector has been a powerful vehicle for poverty reduction and female economic empowerment despite its labor rights problems. India's IT sector generates much higher value-added per worker but employs fewer people relative to the population and requires university-level education. Design a quantitative framework for comparing the "development impact per dollar of export revenue" across these two models. What variables would you include, and how would you weight employment breadth against value-added intensity?
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **Bangladesh Export Promotion Bureau (2024)** — Official data on Bangladesh's merchandise and services export volumes and composition
+- **BGMEA (2024)** — Bangladesh Garment Manufacturers and Exporters Association data on garment export values, employment, and factory counts
+- **Bound et al. (2021)** — Academic research on immigration, labor markets, and the geography of skilled-worker flows
+- **IIT Council (2023)** — Data on Indian Institutes of Technology enrollment, graduate placement, and institutional capacity
+- **ILO (2013)** — International Labour Organization data on labor force participation, informal employment, and working conditions in South Asia
+- **Ministry of Health and Family Welfare (2024)** — Indian government data on healthcare infrastructure, telemedicine adoption, and public health indicators
+- **NASSCOM (2024)** — National Association of Software and Service Companies data on India's IT-BPO export revenue, employment, firm counts, and cluster geography
+- **NPCI (2024)** — National Payments Corporation of India data on UPI digital payment transaction volumes and adoption rates
+- **Sri Lanka Tourism Development Authority (2019)** — Data on Sri Lanka's tourism arrivals, revenue, and sector composition
+- **UNESCO (2024)** — Data on higher education enrollment, research output, and international student mobility in South Asia
+- **WHO India (2022)** — World Health Organization data on India's healthcare workforce distribution, facility density, and health outcome indicators
+- **World Bank (2023)** — World Development Indicators providing GDP, trade, poverty, and institutional quality data for South Asian economies

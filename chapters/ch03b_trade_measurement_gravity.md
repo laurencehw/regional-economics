@@ -50,6 +50,10 @@ where $$E_j$$ is country $$j$$'s total expenditure, $$Y^W$$ is world income, $$t
 
 The practical implication is that any gravity estimation that omits multilateral resistance will produce biased estimates. The standard solution is to include exporter and importer fixed effects, which absorb $$Y_i$$, $$E_j$$, $$P_j$$, and $$\Pi_i$$ entirely, leaving bilateral trade costs as the only source of identifying variation.
 
+{% hint style="info" %}
+**Multilateral Resistance.** Bilateral trade between countries $$i$$ and $$j$$ depends not only on the trade costs between them but on how costly it is for each to trade with *all other partners*. A country surrounded by high-cost alternatives will trade more with any given partner than an otherwise identical country with many low-cost options. Omitting multilateral resistance inflated McCallum's (1995) Canada--US border effect from a factor of ~10 to ~22. The standard fix --- exporter and importer fixed effects --- absorbs multilateral resistance entirely and should be included in every gravity specification.
+{% endhint %}
+
 ### The McCallum Border Puzzle
 
 The concept of multilateral resistance was not an abstract theoretical refinement — it was developed to resolve one of the most striking empirical puzzles in the trade literature. McCallum (1995) estimated a gravity model for trade among Canadian provinces and US states and found that, controlling for distance and economic size, Canadian provinces traded roughly 22 times more with each other than with equidistant US states. This "border effect" was astonishingly large: it implied that the US-Canada border — between two wealthy, English-speaking countries with deep economic ties and a free trade agreement — imposed trade frictions equivalent to thousands of miles of additional distance.
@@ -59,6 +63,10 @@ Anderson and van Wincoop (2003) showed that McCallum's estimate was inflated by 
 ### The PPML Estimator
 
 The traditional approach to estimating gravity models — log-linearizing the equation and running OLS on $$\ln X_{ij}$$ — has two well-known problems. First, it drops all zero trade flows (since $$\ln 0$$ is undefined), and zeros are informative: they represent country pairs where trade costs are too high for any trade to occur. In services trade, where zeros are far more common than in goods trade, dropping them creates severe selection bias. Second, Jensen's inequality means that $$E[\ln X] \neq \ln E[X]$$, so OLS on the log-linearized equation produces inconsistent estimates when the error term is heteroskedastic — as it almost always is with trade data.
+
+{% hint style="warning" %}
+**The Zero-Trade Problem.** Log-linearized OLS gravity drops all country pairs with zero bilateral trade (since $$\ln 0$$ is undefined). These zeros are informative --- they represent pairs where trade costs exceed the threshold for any exchange. In services trade, zeros can exceed 50 percent of observations; dropping them introduces severe selection bias and overstates the ease of trading. The PPML estimator (below) keeps zeros in the estimation by modeling trade in levels, and it is consistent under the heteroskedasticity that plagues trade data. Always prefer PPML over log-linear OLS for gravity estimation.
+{% endhint %}
 
 Santos Silva and Tenreyro (2006) proposed the **Poisson Pseudo-Maximum Likelihood (PPML)** estimator as the solution. PPML estimates the gravity equation in multiplicative form:
 
@@ -99,6 +107,13 @@ The General Agreement on Trade in Services (GATS), negotiated during the Uruguay
 **Mode 3: Commercial presence.** The supplier establishes a subsidiary, branch, or affiliate in the consumer's territory. Examples: HSBC operating a retail banking network in Mexico; McKinsey maintaining an office in Mumbai; Walmart running stores in South Africa. This is the largest mode for many service sectors — particularly finance, telecommunications, and professional services — and it is the most poorly captured by trade statistics. BOP records FDI inflows and affiliate revenues, but these appear in the capital account and in FATS (Foreign Affiliates Trade in Services) statistics, not in the services trade balance. Most countries do not produce FATS data at all.
 
 **Mode 4: Movement of natural persons.** Individual service suppliers move temporarily to the consumer's territory. Examples: a Filipino nurse working on a two-year contract in a Saudi hospital; an Indian IT consultant on an H-1B visa in the United States; a French architect supervising construction in Qatar. Mode 4 is the most politically sensitive (it intersects with immigration policy) and the most restrictively regulated.
+
+| Mode | Definition | Example | Measurement Challenge |
+|---|---|---|---|
+| Mode 1: Cross-border supply | Service crosses the border; neither party moves | Indian software firm delivers code to a Silicon Valley client | Best captured by BOP; still subject to netting and routing gaps |
+| Mode 2: Consumption abroad | Consumer moves to supplier's territory | Saudi student studying at MIT; medical tourism in Bangkok | Partially in BOP "travel" category; blurred boundary with tourism |
+| Mode 3: Commercial presence | Supplier establishes affiliate in consumer's country | HSBC retail banking in Mexico; McKinsey office in Mumbai | Largely absent from BOP; recorded in FATS data that most countries lack |
+| Mode 4: Movement of persons | Individual supplier moves temporarily | Filipino nurse on contract in Saudi Arabia; IT consultant on H-1B visa | Intersects immigration data; highly incomplete and politically sensitive |
 
 ### How Services Trade Data Are Constructed
 

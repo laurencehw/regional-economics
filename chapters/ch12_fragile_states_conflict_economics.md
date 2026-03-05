@@ -229,3 +229,22 @@ Chapter 13 shifts the analysis to Sub-Saharan Africa, where different but relate
 5. The "lost generation" of children whose education was disrupted by conflict will lack the human capital needed for knowledge-intensive economic activity. Using the brain circulation framework of Chapter 8, analyze whether diaspora communities can substitute for domestic human capital development. Under what conditions might diaspora professionals return to contribute to reconstruction, and what institutional conditions would facilitate their return?
 
 6. The synthetic control method requires a donor pool of comparable non-conflict countries. For a country like Yemen — low-income, resource-dependent, with a history of internal fragmentation predating the current conflict — constructing an appropriate donor pool is challenging. Propose an alternative identification strategy for estimating the economic cost of the Yemeni conflict that does not rely on cross-country comparisons.
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **Assaad (2014)** — Academic research on labor markets, youth unemployment, and economic exclusion in the Middle East
+- **ILO (2023)** — International Labour Organization data on labor force participation, employment conditions, and refugee labor market integration
+- **Kelley et al. (2015)** — Academic research on the relationship between climate change, drought, and the onset of the Syrian civil war
+- **OCHA (2023)** — UN Office for the Coordination of Humanitarian Affairs data on humanitarian needs assessments, aid flows, and population displacement in Yemen and other conflict zones
+- **Sassoon (2009)** — Academic research on Iraq's institutional collapse and the economic consequences of the Ba'athist state's destruction
+- **TEPAV (2020)** — Economic Policy Research Foundation of Turkey data on Syrian refugee economic integration and labor market impacts in Turkey
+- **UNEP (2018, 2023)** — UN Environment Programme data on environmental degradation in conflict zones, resource competition, and climate-conflict linkages
+- **UNHCR (2013, 2023, 2024)** — UN High Commissioner for Refugees data on refugee populations, displacement flows, camp demographics, and protection statistics
+- **UNICEF (2016, 2019, 2023)** — UN Children's Fund data on education disruption, child health indicators, and the humanitarian impact of conflict on children
+- **UNRWA (2024)** — UN Relief and Works Agency data on Palestinian refugee populations, services delivery, and economic conditions in camps
+- **WHO (2017)** — World Health Organization data on healthcare system destruction, facility attacks, and health workforce displacement in conflict zones
+- **World Bank (2011, 2017, 2022, 2023)** — World Development Indicators and country-specific reports providing GDP estimates, poverty data, and economic trajectory analysis for conflict-affected states

@@ -349,3 +349,26 @@ Chapter 7 takes the analysis inside China: the country's internal divergence bet
 5. TSMC's geographic concentration in Taiwan creates what strategists call a "silicon shield" — the argument that Taiwan's indispensability to global chip supply deters military aggression. Evaluate this argument using the weaponized interdependence framework. Does the silicon shield strengthen or weaken Taiwan's security position, and under what conditions?
 
 6. The Spatial Data Challenge box describes the systematic upward bias in Chinese provincial GDP data. How does this data quality problem affect the credibility of empirical studies of China's regional convergence? What robustness strategies would you employ in a study of Chinese provincial income growth?
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **ASML (2024)** — Corporate data on extreme ultraviolet lithography equipment sales, market share, and semiconductor supply chain positioning
+- **Chang (1998)** — Academic research on South Korea's industrial policy and technology catch-up strategies
+- **European Commission (2023)** — EU Chips Act provisions, semiconductor subsidy programs, and industrial policy data
+- **HSIPA (2001, 2011)** — Hsinchu Science and Industrial Park Administration data on tenant firms, output, and employment in Taiwan's premier technology cluster
+- **Intel (2022)** — Corporate data on fabrication facility investments and technology node roadmaps
+- **METI (2023)** — Japan's Ministry of Economy, Trade and Industry data on manufacturing output, industrial structure, and technology policy
+- **NBS China (2020)** — China's National Bureau of Statistics data on provincial GDP, industrial output, and demographic indicators
+- **NIPSSR (2023)** — Japan's National Institute of Population and Social Security Research demographic projections and aging data
+- **National Statistics Taiwan (2024)** — Taiwan's official statistical data on semiconductor industry output, trade, and economic structure
+- **Rhodium Group (2023)** — Research and data on China's outbound investment, technology transfers, and economic decoupling trends
+- **Samsung (2021)** — Corporate data on semiconductor fabrication capacity, capital expenditure, and facility locations
+- **SIA (2023)** — Semiconductor Industry Association data on global chip sales, market share by region, and supply chain structure
+- **Statistics Bureau of Japan (2023)** — Japanese national statistical data on regional economic output, demographics, and industrial structure
+- **Statistics Korea (2024)** — South Korean national statistical data on semiconductor exports, regional GDP, and demographic trends
+- **TSMC (2023, 2024)** — Taiwan Semiconductor Manufacturing Company data on revenue, capital expenditure, technology nodes, and global facility investments
+- **US Congress (2022)** — Legislative text and appropriations data for the CHIPS and Science Act

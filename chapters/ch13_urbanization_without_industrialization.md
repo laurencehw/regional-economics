@@ -315,3 +315,18 @@ One external force is already reshaping the spatial calculus. China's Belt and R
 6. Nairobi's M-Pesa ecosystem and Lagos's fintech sector suggest that some African cities may be generating productive agglomeration through digital services rather than manufacturing. Using the Grossman and Rossi-Hansberg (2008) "trading tasks" framework (see Chapter 3-B), analyze which service tasks are most likely to cluster in African cities (and why), and which will remain anchored in established service hubs (London, New York, Bangalore). Is the "services leapfrogging" hypothesis a viable development path for Africa, or an enclave phenomenon limited to a few cities with exceptional institutional capacity? What spatial evidence would help distinguish between these possibilities?
 
 7. Suri and Jack (2016) show that M-Pesa reduced poverty by improving spatial access to financial services. This is a services trade story: a digital financial service changed the effective economic distance between rural households and financial intermediation. Design a spatial econometric test (using the tools of Chapter 3-A) to measure whether mobile money adoption reduces the spatial autocorrelation of poverty — that is, whether it "flattens" the geography of financial exclusion. What data would you need, and what threats to identification would you face?
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **ILO (2023)** — International Labour Organization data on informal employment, labor force participation, and working conditions in Sub-Saharan African cities
+- **Lagos Chamber of Commerce (2022)** — Data on Lagos's business environment, commercial activity, and private sector composition
+- **NBS Nigeria (2023)** — Nigeria's National Bureau of Statistics data on GDP composition, Lagos's economic output share, and sectoral employment
+- **Partech Africa (2023)** — Data on venture capital investment flows to African technology startups and digital economy growth
+- **Safaricom (2024)** — Corporate data on M-Pesa mobile money transaction volumes, user base, and financial inclusion impact in East Africa
+- **UN Population Division (2022)** — UN population estimates and projections for African urban areas and demographic transition indicators
+- **UN World Urbanization Prospects (2022)** — UN data on urbanization rates, city population projections, and comparative urban growth across world regions
+- **World Bank (2019, 2021)** — World Development Indicators providing data on manufacturing share of GDP, structural transformation indicators, and urban economic productivity in Sub-Saharan Africa

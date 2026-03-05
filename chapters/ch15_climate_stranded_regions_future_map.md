@@ -263,3 +263,25 @@ The climate transition will reshape the map of comparative advantage. But it is 
 5. The Stranded Region Index proposed in the Data in Depth section combines exposure and adaptive capacity into a single measure. Critique this approach: what are the limitations of composite indices? How sensitive is the ranking to the choice of component variables and their weights? Propose an alternative methodology that avoids the limitations you identify.
 
 6. Using the evidence from all regional chapters, identify the three regions in the world that you consider most at risk of being "stranded" by the climate transition. For each, describe the primary threat (physical, policy, or technological), assess the adaptive capacity, and propose a spatial economic strategy that could reduce the risk. Be specific about the institutional mechanisms that would implement your strategy.
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **ABS (2023)** — Australian Bureau of Statistics data on regional economic output, mining sector employment, and climate-exposed industry indicators
+- **BMWi (2020)** — German Federal Ministry for Economic Affairs and Energy data on coal phase-out plans, structural adjustment funding, and energy transition policy
+- **GCF (2023, 2024)** — Green Climate Fund data on climate adaptation and mitigation financing flows to developing countries
+- **IEA (2023)** — International Energy Agency data on stranded fossil fuel assets, energy transition investment, and carbon budget projections
+- **Maricopa County Department of Public Health (2024)** — Public health data on heat-related mortality, emergency room visits, and climate-health impacts in Phoenix, Arizona
+- **Markandya and Gonzalez-Eguino (2019)** — Academic research on the economics of stranded assets and regional transition costs
+- **McGranahan, Balk & Anderson (2007)** — Academic research on coastal zone population exposure, sea-level rise vulnerability, and low-elevation settlement patterns
+- **OECD (2022)** — Data on just transition policies, regional adjustment frameworks, and climate policy impacts on subnational economies
+- **Rodell et al. (2009)** — Academic research using satellite gravimetry (GRACE) data to measure groundwater depletion and water stress indicators
+- **UNEP (2023)** — UN Environment Programme data on climate adaptation gaps, environmental degradation, and emissions trajectories
+- **UNFCCC (2023)** — UN Framework Convention on Climate Change data on loss and damage mechanisms, nationally determined contributions, and climate finance commitments
+- **US Congress (2022)** — Legislative text and appropriations data for the Inflation Reduction Act's climate and energy provisions
+- **USGS (2024)** — US Geological Survey data on water resources, sea-level monitoring, and critical mineral reserves relevant to energy transition
+- **World Bank (2015, 2023)** — World Development Indicators and climate change reports providing vulnerability assessments, adaptation capacity data, and development indicators for climate-exposed regions
+- **Yang (2008)** — Academic research on the economic impacts of natural disasters and climate shocks on developing economies

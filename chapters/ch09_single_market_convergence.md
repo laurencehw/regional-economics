@@ -268,3 +268,21 @@ Chapter 10 turns to the stresses that threaten the convergence machine: the euro
 5. Brexit forced the redistribution of Advanced Producer Services from London to Dublin, Frankfurt, Amsterdam, and Paris. Using the NEG framework of Chapter 1, analyze whether this polycentric redistribution is likely to persist or whether agglomeration forces will eventually reconcentrate financial services in a single European city. What does the London experience tell us about the reversibility of agglomeration?
 
 6. Lab 4's spatial RDD finds significant Cohesion Fund effects in 2019 but insignificant effects in 2022. Propose three hypotheses for why the treatment effect might have weakened during the COVID period. Design an empirical test for at least one of your hypotheses.
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **DSGV (2023)** — German Savings Banks Association data on regional banking, SME lending, and local financial institution density
+- **European Commission (2021, 2023, 2024)** — Data on Cohesion Policy allocations, Structural Funds disbursements, Smart Specialization strategies, and Single Market regulatory frameworks
+- **Eurostat (2023, 2024)** — EU statistical office data on regional GDP per capita, convergence indicators, labor mobility, trade flows, and NUTS-2 level economic indicators
+- **Foray (2015)** — Academic research on Smart Specialization as a place-based innovation policy framework
+- **Fraunhofer-Gesellschaft (2023)** — Data on Germany's applied research institute network and its role in regional innovation ecosystems
+- **INSEE (2023)** — France's national statistics institute data on regional economic output, employment, and spatial inequality indicators
+- **Mondragon Corporation (2023)** — Data on the Basque cooperative network's economic structure, employment model, and regional development impact
+- **Nuffic (2023)** — Dutch organization for internationalization in education data on cross-border student mobility within Europe
+- **OECD (2022, 2023)** — Data on regional inequality, productivity, innovation indicators, and comparative institutional quality across EU member states
+- **ONS (2023)** — UK Office for National Statistics data on regional economic output, trade, and post-Brexit economic indicators
+- **Springford (2022)** — Research estimating the economic costs of Brexit using synthetic control and doppelganger methods

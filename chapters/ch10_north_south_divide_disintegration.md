@@ -252,3 +252,25 @@ Chapter 11 shifts the analysis to the Middle East and North Africa, where the in
 5. The polycentric redistribution of financial services from London to Dublin, Frankfurt, Amsterdam, Paris, and Luxembourg is one of the few natural experiments in services geography. Using the agglomeration framework of Chapter 1, analyze whether this polycentric structure is stable or transitional. What forces favor reconcentration (into a single dominant EU financial center) versus what forces favor maintaining the current polycentric structure?
 
 6. Italy's Mezzogiorno has been the subject of regional development policy since 1950, yet its GDP per capita relative to the EU average has barely improved. Using the institutional analysis of this chapter and the absorptive capacity concept from Chapter 9, explain why seventy years of transfer payments and policy interventions have failed to generate sustained convergence in southern Italy. What would a successful development strategy for the Mezzogiorno need to do differently?
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **ABSL (2023)** — Association of Business Service Leaders data on Central and Eastern Europe's shared services and outsourcing sector
+- **Bundesbank (2008)** — German central bank data on capital flows, TARGET2 balances, and cross-border lending within the eurozone
+- **ECB (2008, 2012, 2022)** — European Central Bank data on monetary policy operations, sovereign bond spreads, and financial stability indicators during the eurozone crisis
+- **ELSTAT (2020)** — Hellenic Statistical Authority data on Greek GDP, unemployment, and fiscal indicators during and after the crisis
+- **European Commission (2021)** — Data on Next Generation EU fund allocations, Recovery and Resilience Facility disbursements, and reform conditionality
+- **European Council (2020)** — Data on the Next Generation EU agreement, common debt issuance, and fiscal governance framework
+- **Eurostat (2013, 2014, 2015, 2024)** — EU statistical office data on regional unemployment, GDP per capita convergence and divergence, and crisis-period economic indicators
+- **GDDKiA (2023)** — Poland's General Directorate for National Roads and Motorways data on highway construction and infrastructure investment
+- **IEA (2023)** — International Energy Agency data on energy transition investments, renewable energy deployment, and energy security indicators
+- **IMF (2008, 2015)** — International Monetary Fund data on eurozone crisis interventions, bailout programs, and fiscal sustainability assessments
+- **INE (2014)** — Spain's National Statistics Institute data on housing construction, unemployment, and regional economic indicators during the crisis
+- **McCann (2016)** — Academic research on the economic geography of UK regional inequality and Brexit voting patterns
+- **OICA (2020)** — International Organization of Motor Vehicle Manufacturers data on automotive production by country and region
+- **ONS (2017)** — UK Office for National Statistics data on regional economic output and the spatial distribution of Brexit vote patterns
+- **UNCTAD (2016)** — UN Conference on Trade and Development data on FDI flows, investment patterns, and trade in value-added

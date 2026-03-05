@@ -259,3 +259,28 @@ Chapter 12 turns to the other pole of MENA's spatial economics: the fragile stat
 5. The green hydrogen strategy assumes that solar energy will give the Gulf a new comparative advantage in the post-carbon economy, analogous to its current advantage in hydrocarbons. Using the spatial economics framework of this chapter, evaluate this assumption. What institutional infrastructure (beyond solar panels) is needed to make green hydrogen a viable export commodity, and how does this compare to the institutional infrastructure that supports oil exports?
 
 6. Lab 5's synthetic control method estimates the counterfactual GDP trajectory of a conflict-affected state. Discuss the limitations of this approach for MENA economies where (a) the donor pool of comparable countries is small, (b) the pre-conflict data may be of low quality, and (c) the conflict itself may have been caused by the same economic factors that the model uses as matching variables. How would you address each of these limitations in your research design?
+
+---
+
+## Data Sources for Factual Claims
+
+The quantitative claims and statistics cited in this chapter draw on the following primary sources:
+
+- **ABC (2010)** — Australian Broadcasting Corporation reporting on automotive industry closures and regional economic impacts
+- **ABS (2014, 2016, 2024)** — Australian Bureau of Statistics data on mining sector output, employment, regional economic indicators, and trade composition
+- **BP (2023)** — BP Statistical Review of World Energy data on global proven oil and gas reserves, production volumes, and energy consumption patterns
+- **Dubai Statistics Center (2023)** — Data on Dubai's GDP composition, tourism revenue, and economic diversification indicators
+- **Emaar Economic City (2023)** — Data on Saudi Arabia's economic city development projects and diversification investments
+- **Emirates Group (2021)** — Corporate data on Emirates airline operations, passenger volumes, and Dubai's aviation hub role
+- **Henderson, Storeygard & Weil (2012)** — Academic research using satellite night-lights data as a proxy for economic activity measurement
+- **IMF (2015, 2017, 2022, 2023)** — International Monetary Fund data on GCC fiscal breakeven oil prices, budget balances, diversification progress, and Article IV consultation reports
+- **ISHRS (2022)** — International Society of Hair Restoration Surgery data on medical tourism flows and health services trade
+- **NBIM (2024)** — Norges Bank Investment Management data on Norway's Government Pension Fund Global holdings, returns, and investment strategy
+- **Oxford Economics (2014)** — Research on Australian automotive industry closure impacts and regional economic adjustment
+- **PIF (2021)** — Saudi Arabia's Public Investment Fund data on NEOM and other Vision 2030 mega-project investments
+- **Qatar Airways (2022)** — Corporate data on airline operations and Qatar's aviation hub strategy
+- **Qatar Foundation (2023)** — Data on Education City, research institutions, and human capital development initiatives in Qatar
+- **Royal Commission for Jubail and Yanbu (2023)** — Data on Saudi Arabia's industrial city development and petrochemical cluster performance
+- **Saudi Aramco (2019)** — Corporate data on oil production capacity, IPO valuation, and downstream diversification
+- **Saudi Ministry of Finance (2023)** — Saudi government budget data, non-oil revenue growth, and fiscal reform progress
+- **SWF Institute (2024)** — Sovereign Wealth Fund Institute data on global sovereign wealth fund assets under management and investment strategies
