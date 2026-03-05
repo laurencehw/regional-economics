@@ -40,15 +40,15 @@ The founding text of location economics is also one of the stranger intellectual
 
 In this thought experiment, how will the land be organized?
 
-The answer turns on transport costs. A farmer located $n$ kilometers from the town can deliver one unit of output to market, but doing so costs $t \cdot n$ in transport per unit, where $t$ is the cost per unit-distance (think of the cost of hauling a wagon). If the market price of the commodity is $p$, and the farmer's production costs per unit are $c$ (labor, seed, etc.), then the surplus available to pay land rent is:
+The answer turns on transport costs. A farmer located $$n$$ kilometers from the town can deliver one unit of output to market, but doing so costs $$t \cdot n$$ in transport per unit, where $$t$$ is the cost per unit-distance (think of the cost of hauling a wagon). If the market price of the commodity is $$p$$, and the farmer's production costs per unit are $$c$$ (labor, seed, etc.), then the surplus available to pay land rent is:
 
 $$
 R(n) = (p - c) - t \cdot n
 $$
 
-At the town's edge ($n = 0$), rent captures the full production surplus. As distance increases, transport costs eat into the surplus, and rent falls. At some distance $n^* = (p - c)/t$, rent hits zero — beyond that point, it does not pay to farm.
+At the town's edge ($$n = 0$$), rent captures the full production surplus. As distance increases, transport costs eat into the surplus, and rent falls. At some distance $$n^* = (p - c)/t$$, rent hits zero — beyond that point, it does not pay to farm.
 
-Now add multiple crops, each with different values, labor requirements, and transport costs per unit. Dairy products spoil quickly and are heavy: high $t$, high $p$. Grain is durable and lighter: lower $t$, lower $p$. Extensive livestock grazing has very low transport cost per unit of land area. The result is a set of bid-rent curves — one per crop — and the land at each distance goes to the highest bidder. The outcome is a series of concentric rings: intensive horticulture and dairy close to the market town, forestry in the second ring (wood's weight-to-value ratio made transport prohibitively expensive at greater distances — a result Von Thünen derived logically from his framework, since fuel and construction timber were essential and bulky), grain farming at middle distances, then extensive grazing at the periphery.
+Now add multiple crops, each with different values, labor requirements, and transport costs per unit. Dairy products spoil quickly and are heavy: high $$t$$, high $$p$$. Grain is durable and lighter: lower $$t$$, lower $$p$$. Extensive livestock grazing has very low transport cost per unit of land area. The result is a set of bid-rent curves — one per crop — and the land at each distance goes to the highest bidder. The outcome is a series of concentric rings: intensive horticulture and dairy close to the market town, forestry in the second ring (wood's weight-to-value ratio made transport prohibitively expensive at greater distances — a result Von Thünen derived logically from his framework, since fuel and construction timber were essential and bulky), grain farming at middle distances, then extensive grazing at the periphery.
 
 What Von Thünen gave regional economics was not a specific prediction about agricultural rings — most of those have long since been disrupted by railroads, refrigeration, and global commodity markets. He gave it a conceptual architecture: **land rent is the capitalized value of location**, and location's value is determined by proximity to markets and the costs of overcoming distance. Every model of urban form built since — the monocentric city model, hedonic housing price regressions, commercial property valuation — is an elaboration of this architecture.
 
@@ -100,21 +100,21 @@ The setup is deliberately spare. There are two regions, labeled 1 and 2. There a
 
 **Agriculture (A):** Constant returns to scale, uses only immobile agricultural workers, produces a homogeneous good traded freely between regions. The immobility of farmers is the key centrifugal force in the model — it anchors purchasing power in both regions regardless of where manufacturing locates.
 
-**Manufacturing (M):** Increasing returns to scale at the firm level (a fixed cost $F$ plus a constant marginal cost $c$), with a Dixit-Stiglitz (1977) monopolistic competition structure. Each firm produces a unique variety, and consumers have a love-of-variety preference captured by a CES utility function:
+**Manufacturing (M):** Increasing returns to scale at the firm level (a fixed cost $$F$$ plus a constant marginal cost $$c$$), with a Dixit-Stiglitz (1977) monopolistic competition structure. Each firm produces a unique variety, and consumers have a love-of-variety preference captured by a CES utility function:
 
 $$
 U = C_A^{\mu} \cdot C_M^{1-\mu}
 $$
 
-where $C_M$ is the standard CES aggregate over manufacturing varieties:
+where $$C_M$$ is the standard CES aggregate over manufacturing varieties:
 
 $$
 C_M = \left[ \sum_i c_i^{(\sigma-1)/\sigma} \right]^{\sigma/(\sigma-1)}
 $$
 
-with $\sigma > 1$ as the elasticity of substitution across varieties. The share $\mu \in (0,1)$ governs what fraction of income goes to agriculture. Manufacturing workers are mobile across regions in the long run and move toward whichever region offers a higher real wage.
+with $$\sigma > 1$$ as the elasticity of substitution across varieties. The share $$\mu \in (0,1)$$ governs what fraction of income goes to agriculture. Manufacturing workers are mobile across regions in the long run and move toward whichever region offers a higher real wage.
 
-**Iceberg transport costs:** Moving one unit of a manufactured good between regions requires shipping $\tau > 1$ units — the excess $(\tau - 1)$ "melts" in transit. This is a convenient way to model transport costs that preserves the tractability of the Dixit-Stiglitz framework. When $\tau = 1$, trade is costless; as $\tau \to \infty$, regions become autarchic.
+**Iceberg transport costs:** Moving one unit of a manufactured good between regions requires shipping $$\tau > 1$$ units — the excess $$(\tau - 1)$$ "melts" in transit. This is a convenient way to model transport costs that preserves the tractability of the Dixit-Stiglitz framework. When $$\tau = 1$$, trade is costless; as $$\tau \to \infty$$, regions become autarchic.
 
 ### Centripetal and Centrifugal Forces
 
@@ -128,13 +128,13 @@ Two related forces reinforce it. **Backward linkages**: each manufacturer is a c
 
 **Centrifugal (dispersing) forces:**
 
-Against these agglomerating forces stands the immobility of farmers and the land they cultivate. Agricultural workers constitute a fraction $\mu$ of each region's population that cannot be lured to the manufacturing core. They represent purchasing power that remains dispersed — and dispersed demand creates an incentive for at least some manufacturing to remain near the agricultural periphery to avoid transport costs. This centrifugal force weakens as agriculture's share of the economy $\mu$ falls (as it has, globally, over the past century). A second centrifugal force is **local competition**: more manufacturers in a region means more intense product-market competition, which limits profit margins and wage bids.
+Against these agglomerating forces stands the immobility of farmers and the land they cultivate. Agricultural workers constitute a fraction $$\mu$$ of each region's population that cannot be lured to the manufacturing core. They represent purchasing power that remains dispersed — and dispersed demand creates an incentive for at least some manufacturing to remain near the agricultural periphery to avoid transport costs. This centrifugal force weakens as agriculture's share of the economy $$\mu$$ falls (as it has, globally, over the past century). A second centrifugal force is **local competition**: more manufacturers in a region means more intense product-market competition, which limits profit margins and wage bids.
 
 ### The Bifurcation: Transport Costs and Spatial Equilibria
 
-The key result emerges from analyzing the equilibrium share of manufacturing $\lambda$ located in region 1 as a function of transport costs $\tau$. Define the **real wage ratio** $\omega(\lambda) = w_1^{\text{real}} / w_2^{\text{real}}$ as a function of the manufacturing share in region 1.
+The key result emerges from analyzing the equilibrium share of manufacturing $$\lambda$$ located in region 1 as a function of transport costs $$\tau$$. Define the **real wage ratio** $$\omega(\lambda) = w_1^{\text{real}} / w_2^{\text{real}}$$ as a function of the manufacturing share in region 1.
 
-When transport costs are very high ($\tau$ large), the centrifugal forces dominate: it is too costly to serve dispersed agricultural demand from a concentrated location. The symmetric equilibrium $\lambda = 0.5$ is stable. When transport costs are very low ($\tau$ close to 1), the centripetal forces dominate: the home market effect is overwhelming, and all manufacturing concentrates in one region.
+When transport costs are very high ($$\tau$$ large), the centrifugal forces dominate: it is too costly to serve dispersed agricultural demand from a concentrated location. The symmetric equilibrium $$\lambda = 0.5$$ is stable. When transport costs are very low ($$\tau$$ close to 1), the centripetal forces dominate: the home market effect is overwhelming, and all manufacturing concentrates in one region.
 
 Between these extremes, the model generates two critical thresholds:
 
@@ -142,13 +142,13 @@ $$
 \tau_S > \tau_B
 $$
 
-where $\tau_S$ is the **sustain point** (above which agglomeration cannot be maintained) and $\tau_B$ is the **break point** (below which the symmetric equilibrium is unstable). In the range $\tau_B < \tau < \tau_S$, both the symmetric equilibrium and the agglomerated equilibrium are locally stable. Which one the economy reaches depends on initial conditions and history.
+where $$\tau_S$$ is the **sustain point** (above which agglomeration cannot be maintained) and $$\tau_B$$ is the **break point** (below which the symmetric equilibrium is unstable). In the range $$\tau_B < \tau < \tau_S$$, both the symmetric equilibrium and the agglomerated equilibrium are locally stable. Which one the economy reaches depends on initial conditions and history.
 
 This **multiple equilibria** property is the model's deepest result. Two regions with identical fundamentals — same technology, same preferences, same factor endowments — can end up in radically different spatial configurations simply because of where they started. History is not incidental; it is structural. The North of England became an industrial heartland in the nineteenth century because it had coal and reached the manufacturing equilibrium first. Its deindustrialization in the late twentieth century reflects not a change in fundamentals (the coal was still there, largely) but a shift in transport costs, technology, and the configuration of global value chains that made the previously stable agglomerated equilibrium unsustainable.
 
 ### The Bifurcation Diagram and the "Bell-Shaped" Regional Inequality
 
-Krugman's 1991 model and its extensions (collected in Fujita, Krugman, and Venables 1999) generate a characteristic prediction about how regional inequality evolves with trade integration: a **bell-shaped pattern**. When transport costs are very high (low integration), both regions have similar manufacturing shares — dispersion. As integration deepens and transport costs fall toward $\tau_B$, concentration increases — the manufacturing core-periphery split widens. But as integration continues toward free trade, the centrifugal forces reassert themselves, and firms begin dispersing back to the periphery (because access to agricultural demand becomes less costly and the savings from clustering diminish when trade is nearly free). Regional inequality narrows again.
+Krugman's 1991 model and its extensions (collected in Fujita, Krugman, and Venables 1999) generate a characteristic prediction about how regional inequality evolves with trade integration: a **bell-shaped pattern**. When transport costs are very high (low integration), both regions have similar manufacturing shares — dispersion. As integration deepens and transport costs fall toward $$\tau_B$$, concentration increases — the manufacturing core-periphery split widens. But as integration continues toward free trade, the centrifugal forces reassert themselves, and firms begin dispersing back to the periphery (because access to agricultural demand becomes less costly and the savings from clustering diminish when trade is nearly free). Regional inequality narrows again.
 
 This prediction has been partially validated by European economic history (Puga 1999; Ottaviano and Puga 1998): nineteenth-century industrialization produced sharp regional concentration; the mid-twentieth century saw some convergence (partly policy-driven, partly reflecting broad manufacturing diffusion); and the late twentieth century produced renewed concentration in services and high-tech, consistent with the middle of the bell. The pattern is never clean — institutions, policies, and geography complicate the theoretical prediction — but the broad shape is recognizable.
 
@@ -182,7 +182,7 @@ The first mechanism is the ability of large local economies to share fixed costs
 
 **Sharing indivisible facilities.** Many economically critical inputs are lumpy: a major research hospital, an international airport, a specialized legal and financial district, a pool of specialized venture capital. These facilities require a minimum scale of economic activity to be financially viable, but once established, they create productivity advantages for all firms and workers who can access them. A pharmaceutical company in Basel benefits from proximity to Switzerland's biomedical research network and specialized regulatory legal expertise in a way that a standalone firm in a lower-density environment cannot. The facility exists because the agglomeration is large; the agglomeration is productive partly because the facility exists.
 
-**Sharing intermediate input suppliers.** Marshall's industrial districts were notable for the extraordinary division of labor among firms. The Birmingham metal trades of the 1890s had firms specializing in screws, firms specializing in the machines that made screws, firms specializing in the steel that fed those machines, firms specializing in the dies that shaped that steel. Each specialization was only economically viable because the cluster was large enough to support it. Formally (following Duranton and Puga 2004): if producing each variety of intermediate good requires a fixed cost $F$, a city with $L$ manufacturing workers can support $M = L/F$ distinct intermediate varieties. Output per worker is increasing in $M$ (through a standard love-of-variety effect in production), so output per worker is increasing in $L$. This generates an agglomeration economy through the input-supplier channel even in an otherwise perfectly competitive economy.
+**Sharing intermediate input suppliers.** Marshall's industrial districts were notable for the extraordinary division of labor among firms. The Birmingham metal trades of the 1890s had firms specializing in screws, firms specializing in the machines that made screws, firms specializing in the steel that fed those machines, firms specializing in the dies that shaped that steel. Each specialization was only economically viable because the cluster was large enough to support it. Formally (following Duranton and Puga 2004): if producing each variety of intermediate good requires a fixed cost $$F$$, a city with $$L$$ manufacturing workers can support $$M = L/F$$ distinct intermediate varieties. Output per worker is increasing in $$M$$ (through a standard love-of-variety effect in production), so output per worker is increasing in $$L$$. This generates an agglomeration economy through the input-supplier channel even in an otherwise perfectly competitive economy.
 
 **Sharing risk in thick labor markets.** In a large local labor market, a worker who loses her job at one firm can find comparable employment nearby without a long search and without relocating. This insurance value encourages workers to invest in firm-specific human capital — to accept lower wages early in tenure in exchange for higher productivity and wages later — because the downside risk of job loss is lower (Helsley and Strange 1990). The risk-sharing mechanism interacts with skill complementarities: Kremer's (1993) O-ring theory showed that when production requires all workers in a team to perform well, high-skill workers sort into teams with other high-skill workers — and into cities where the density of such workers makes high-quality team formation feasible. The result is that thick labor markets generate powerful sorting effects: high-skill workers cluster in high-density environments partly because the insurance against mismatch failure is better there and partly because the quality of available matches is higher.
 
@@ -222,9 +222,9 @@ $$
 \ln w_{irt} = \alpha \ln D_{rt} + X_{irt}'\beta + \delta_i + \gamma_t + \varepsilon_{irt}
 $$
 
-where $w_{irt}$ is the wage of worker $i$ in region $r$ at time $t$, $D_{rt}$ is employment density, $X_{irt}$ is a vector of controls, $\delta_i$ is a worker fixed effect, and $\gamma_t$ is a time effect.
+where $$w_{irt}$$ is the wage of worker $$i$$ in region $$r$$ at time $$t$$, $$D_{rt}$$ is employment density, $$X_{irt}$$ is a vector of controls, $$\delta_i$$ is a worker fixed effect, and $$\gamma_t$$ is a time effect.
 
-Ciccone and Hall (1996) found an elasticity $\hat{\alpha} \approx 0.05$ using US county data: doubling employment density raises labor productivity by about 5 percent. Combes et al. (2010) refine this estimate using French worker-level panel data with individual fixed effects to purge sorting. Their preferred elasticity is around 0.025 to 0.04 — smaller than the raw estimate, as expected once sorting is controlled, but still economically significant. A worker who moves from a region in the 25th percentile to a region in the 75th percentile of the density distribution gains roughly 3 to 6 percent in wages from the density effect alone, even holding her own characteristics constant.
+Ciccone and Hall (1996) found an elasticity $$\hat{\alpha} \approx 0.05$$ using US county data: doubling employment density raises labor productivity by about 5 percent. Combes et al. (2010) refine this estimate using French worker-level panel data with individual fixed effects to purge sorting. Their preferred elasticity is around 0.025 to 0.04 — smaller than the raw estimate, as expected once sorting is controlled, but still economically significant. A worker who moves from a region in the 25th percentile to a region in the 75th percentile of the density distribution gains roughly 3 to 6 percent in wages from the density effect alone, even holding her own characteristics constant.
 
 The **identification challenge** remains substantial. Employment density is endogenous — productive places attract people and firms, making it hard to identify whether density *causes* productivity or productivity *causes* density. Instruments used in the literature include historical population density (Ciccone and Hall 1996), geological suitability for settlement (Combes et al. 2010), and the deep historical determinants of city founding (rivers, colonial ports). The results are broadly consistent across approaches, suggesting that agglomeration economies are real and that the wage premium is not entirely an artifact of selection.
 
@@ -328,19 +328,19 @@ $$
 \ln w_{ict} = \alpha \ln D_{ct} + X_{ict}'\beta + \gamma_t + \varepsilon_{ict}
 $$
 
-where $w_{ict}$ is the weekly wage of individual $i$ in commuting zone $c$ in year $t$, $D_{ct}$ is employment density (employees per square kilometer), $X_{ict}$ includes education, experience, industry fixed effects, and occupation fixed effects, and $\gamma_t$ is a year fixed effect. The coefficient $\alpha$ is the agglomeration elasticity.
+where $$w_{ict}$$ is the weekly wage of individual $$i$$ in commuting zone $$c$$ in year $$t$$, $$D_{ct}$$ is employment density (employees per square kilometer), $$X_{ict}$$ includes education, experience, industry fixed effects, and occupation fixed effects, and $$\gamma_t$$ is a year fixed effect. The coefficient $$\alpha$$ is the agglomeration elasticity.
 
-The raw (pooled OLS) estimate of $\alpha$ in US data is typically 0.04 to 0.06. Adding individual-level controls for education, experience, and occupation reduces the estimate to around 0.025 to 0.04 — indicating that roughly half the raw urban wage premium reflects worker sorting rather than the agglomeration environment itself.
+The raw (pooled OLS) estimate of $$\alpha$$ in US data is typically 0.04 to 0.06. Adding individual-level controls for education, experience, and occupation reduces the estimate to around 0.025 to 0.04 — indicating that roughly half the raw urban wage premium reflects worker sorting rather than the agglomeration environment itself.
 
 **Identifying the causal effect of density.** The OLS estimate is biased upward if more productive workers sort into denser cities. Three identification strategies have been used:
 
-*Strategy 1: Worker fixed effects (panel data).* Using longitudinal linked employer-employee datasets (LEHD in the US, DADS in France), researchers include a worker fixed effect $\delta_i$ that absorbs all time-invariant worker heterogeneity. The agglomeration elasticity is then identified from workers who move between cities of different densities. Combes et al. (2010) find estimates of 0.025 to 0.04 in France using this approach.
+*Strategy 1: Worker fixed effects (panel data).* Using longitudinal linked employer-employee datasets (LEHD in the US, DADS in France), researchers include a worker fixed effect $$\delta_i$$ that absorbs all time-invariant worker heterogeneity. The agglomeration elasticity is then identified from workers who move between cities of different densities. Combes et al. (2010) find estimates of 0.025 to 0.04 in France using this approach.
 
 *Strategy 2: Historical instruments.* Ciccone and Hall (1996) instrument for current employment density with historical population density (e.g., 1880 county population density), arguing that historical settlement reflects agricultural productivity and pre-industrial transport access, which are plausibly unrelated to modern productivity shocks. Estimates are typically 0.04 to 0.05.
 
 *Strategy 3: Geological features.* Combes et al. (2010) also use geological suitability for historical settlement (soil quality, terrain) as instruments. Estimates are similar to the historical instrument approach.
 
-**Sensitivity to region definitions.** A critical robustness check is whether the estimated $\alpha$ varies across region definitions. Estimates using MSAs, commuting zones, and counties typically differ by 20 to 40 percent, reflecting the MAUP. The commuting-zone specification is generally preferred because it better captures the relevant labor market unit — workers within a CZ face the same local density, regardless of which county they live in.
+**Sensitivity to region definitions.** A critical robustness check is whether the estimated $$\alpha$$ varies across region definitions. Estimates using MSAs, commuting zones, and counties typically differ by 20 to 40 percent, reflecting the MAUP. The commuting-zone specification is generally preferred because it better captures the relevant labor market unit — workers within a CZ face the same local density, regardless of which county they live in.
 
 **The remote work question.** Post-2020 estimates using ACS data show a modest decline in the urban wage premium for occupations where remote work is feasible (software, finance, professional services), and no change for occupations requiring physical presence. This is consistent with the theoretical prediction that digital technology reduces, but does not eliminate, the matching and learning components of the agglomeration premium.
 

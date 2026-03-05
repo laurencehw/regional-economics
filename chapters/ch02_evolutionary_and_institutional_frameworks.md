@@ -82,7 +82,7 @@ The evolutionary framework for regional development asks a different question th
 
 The central insight of the product space is that making different products requires different combinations of productive capabilities — knowledge, skills, machinery, organizational routines, infrastructure, and regulatory systems. Some products share many of the same capabilities (cotton shirts and synthetic fabric shirts require similar dyeing, cutting, and sewing capabilities); others share almost none (cotton shirts and petroleum refining require almost entirely distinct capability sets). The **product space** is a network where nodes are products and links connect products that are frequently co-exported by the same countries — a revealed-preference measure of shared underlying capabilities.
 
-Hidalgo et al. (2007) construct this network from Comtrade data on bilateral trade flows, using the **Revealed Comparative Advantage (RCA)** measure: country $c$ has an RCA in product $p$ if its share of world exports in $p$ exceeds its overall share of world exports. The **proximity** between products $p$ and $p'$ is:
+Hidalgo et al. (2007) construct this network from Comtrade data on bilateral trade flows, using the **Revealed Comparative Advantage (RCA)** measure: country $$c$$ has an RCA in product $$p$$ if its share of world exports in $$p$$ exceeds its overall share of world exports. The **proximity** between products $$p$$ and $$p'$$ is:
 
 $$
 \phi_{pp'} = \min \left\{ P(RCA_p | RCA_{p'}),\, P(RCA_{p'} | RCA_p) \right\}
@@ -194,7 +194,7 @@ $$
 \Delta RV_{rt} = \alpha \cdot IQ_{r,t-1} + \beta \cdot \ln Y_{r,t-1} + \mu_r + \gamma_t + \varepsilon_{rt}
 $$
 
-where $\Delta RV_{rt}$ is the change in related variety in region $r$ between periods $t-1$ and $t$, $IQ_{r,t-1}$ is lagged institutional quality, $\ln Y_{r,t-1}$ is lagged GDP per capita, $\mu_r$ is a region fixed effect, and $\gamma_t$ is a period fixed effect. Consistent estimates of $\alpha > 0$ would provide evidence that institutional quality facilitates capability recombination — the mechanism through which institutional thickness converts agglomeration into structural upgrading.
+where $$\Delta RV_{rt}$$ is the change in related variety in region $$r$$ between periods $$t-1$$ and $$t$$, $$IQ_{r,t-1}$$ is lagged institutional quality, $$\ln Y_{r,t-1}$$ is lagged GDP per capita, $$\mu_r$$ is a region fixed effect, and $$\gamma_t$$ is a period fixed effect. Consistent estimates of $$\alpha > 0$$ would provide evidence that institutional quality facilitates capability recombination — the mechanism through which institutional thickness converts agglomeration into structural upgrading.
 
 **Caveat.** Institutional quality is potentially endogenous to economic outcomes: wealthier regions may invest more in institutional quality, rather than causality running from institutions to income. Instruments used in the cross-regional literature include deep historical variables (Romanization, medieval university presence, Protestant Reformation exposure) and geological features that predicted historical settlement patterns. The QoG dataset's within-country cross-regional variation is also useful here: historical and cultural instruments that work at the country level may not vary much within countries, requiring creative within-country instruments.
 

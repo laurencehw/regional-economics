@@ -186,7 +186,7 @@ $$
 D_{it} = 1 - HHI_{it}^{exports}
 $$
 
-where $HHI_{it}^{exports}$ is the Herfindahl index of merchandise export concentration.
+where $$HHI_{it}^{exports}$$ is the Herfindahl index of merchandise export concentration.
 
 3. Plot the diversification index over time for Gulf states versus non-Gulf MENA countries (Turkey, Morocco, Tunisia, Jordan) to compare trajectories.
 4. Compute the non-oil GDP share and its trend for each Gulf state.

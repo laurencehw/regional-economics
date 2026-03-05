@@ -94,25 +94,25 @@ The COVID-19 border closures are particularly instructive. When the US-Mexico la
 
 ### Border Friction in the Gravity Framework
 
-The canonical gravity model — trade between $i$ and $j$ is proportional to the product of their economic masses and inversely proportional to trade costs — predicts that borders matter. The "border effect" literature, initiated by McCallum (1995) and extended by Anderson and van Wincoop (2003), documented that the US-Canada border reduced bilateral trade by a factor of 10 to 20 relative to within-country trade, even after controlling for distance and market size. The US-Mexico border effect is estimated to be even larger, reflecting additional frictions of customs complexity and security inspections.
+The canonical gravity model — trade between $$i$$ and $$j$$ is proportional to the product of their economic masses and inversely proportional to trade costs — predicts that borders matter. The "border effect" literature, initiated by McCallum (1995) and extended by Anderson and van Wincoop (2003), documented that the US-Canada border reduced bilateral trade by a factor of 10 to 20 relative to within-country trade, even after controlling for distance and market size. The US-Mexico border effect is estimated to be even larger, reflecting additional frictions of customs complexity and security inspections.
 
 What the gravity literature typically does not capture is the heterogeneity of the border effect across space and time. The border effect at Laredo differs from Nogales, and both changed after USMCA. Lab 1 constructs a spatially varying friction measure and tests whether it interacts with institutional quality in determining growth spillovers.
 
-In the gravity model, bilateral trade between $i$ and $j$ is:
+In the gravity model, bilateral trade between $$i$$ and $$j$$ is:
 
 $$
 T_{ij} = A \cdot \frac{Y_i \cdot Y_j}{d_{ij}^{\gamma} \cdot B_{ij}^{\delta}}
 $$
 
-where $Y$ is economic mass, $d$ is distance, $B$ is the border-friction term, and $\gamma$ and $\delta$ are elasticities. The border effect $B_{ij}$ is typically modeled as a dummy variable (1 if $i$ and $j$ are in different countries, 0 otherwise), which produces the aggregate border-effect estimate. Lab 1's innovation is to replace the dummy with a continuous measure derived from actual crossing data, allowing the border effect to vary by port, mode, and time period.
+where $$Y$$ is economic mass, $$d$$ is distance, $$B$$ is the border-friction term, and $$\gamma$$ and $$\delta$$ are elasticities. The border effect $$B_{ij}$$ is typically modeled as a dummy variable (1 if $$i$$ and $$j$$ are in different countries, 0 otherwise), which produces the aggregate border-effect estimate. Lab 1's innovation is to replace the dummy with a continuous measure derived from actual crossing data, allowing the border effect to vary by port, mode, and time period.
 
-The spatial weight matrix $W$ in the SAR model is constructed from these trade flows $T_{ij}$, which are themselves functions of border friction. This creates a theoretical link between border governance and the spatial multiplier: improving governance increases trade (lower $B$), strengthens the network (larger off-diagonal $W$ elements), and amplifies the spatial lag ($\rho Wy$ becomes larger for given $\rho$). Border governance reform is not just trade facilitation — it is a spatial connectivity intervention that changes the structure of economic interdependence.
+The spatial weight matrix $$W$$ in the SAR model is constructed from these trade flows $$T_{ij}$$, which are themselves functions of border friction. This creates a theoretical link between border governance and the spatial multiplier: improving governance increases trade (lower $$B$$), strengthens the network (larger off-diagonal $$W$$ elements), and amplifies the spatial lag ($$\rho Wy$$ becomes larger for given $$\rho$$). Border governance reform is not just trade facilitation — it is a spatial connectivity intervention that changes the structure of economic interdependence.
 
 ### The LPI Extension
 
 The original BTS-based proxy covered only three countries at a small number of border ports, severely limiting spatial scope. The World Bank's Logistics Performance Index (LPI) — scoring countries on customs efficiency, infrastructure quality, ease of shipments, tracking, and timeliness — provided an alternative that could be extended to all 34 economies in the Lab 1 sample.
 
-The LPI-blended proxy combines BTS port-level data for the three NAFTA countries with LPI scores for the remaining Western Hemisphere economies. This extension increased border-delay coverage from 3 to 28 countries and allowed the interaction analysis to test whether logistics quality — a broader concept than border friction alone — conditions spatial spillovers across the entire hemisphere. The broader proxy did not produce a strong unconditional spillover ($\rho \approx 0$), but it did produce meaningful interaction terms — consistent with the argument that spillovers are conditional on institutional capacity.
+The LPI-blended proxy combines BTS port-level data for the three NAFTA countries with LPI scores for the remaining Western Hemisphere economies. This extension increased border-delay coverage from 3 to 28 countries and allowed the interaction analysis to test whether logistics quality — a broader concept than border friction alone — conditions spatial spillovers across the entire hemisphere. The broader proxy did not produce a strong unconditional spillover ($$\rho \approx 0$$), but it did produce meaningful interaction terms — consistent with the argument that spillovers are conditional on institutional capacity.
 
 ---
 
@@ -148,7 +148,7 @@ A single advanced fab employs 1,500-3,000 workers directly but supports an estim
 
 The workforce constraint creates its own agglomeration dynamic. A modern fab requires roughly 400-600 engineers with advanced degrees in electrical engineering, chemical engineering, materials science, and computer science, plus 1,000-2,000 technicians with two-year degrees or specialized certifications. This workforce does not exist in most US regions — it must be trained locally (expensive and slow) or recruited from existing clusters (which depletes those clusters). Engineers trained in Phoenix stay in Phoenix, where the next semiconductor employer is nearby. The thick labor market of Chapter 1 — Marshallian matching — emerges rapidly around CHIPS investment sites but does not diffuse outward to regions outside the semiconductor ecosystem. The spatial multiplier thus has a steep distance decay: strong within 200 kilometers, weak beyond 500, negligible beyond 1,000.
 
-Lab 1's finding that $\rho$ is small unconditionally but larger in interaction specifications suggests that CHIPS Act supply chain multipliers may be substantial in regions with strong institutional linkages to the fab location, and minimal in regions that are geographically close but institutionally disconnected.
+Lab 1's finding that $$\rho$$ is small unconditionally but larger in interaction specifications suggests that CHIPS Act supply chain multipliers may be substantial in regions with strong institutional linkages to the fab location, and minimal in regions that are geographically close but institutionally disconnected.
 
 ### The Green Industrial Policy Turn: IRA and the Spatial Logic of Decarbonization
 
@@ -222,7 +222,7 @@ Three approaches attempt to resolve this tension:
 
 The Lab 1 interaction specifications clarify the tradeoffs. The *marginal return* to spatial connectivity is higher in institutionally strong regions — the multiplier is larger where institutions are better. This does not mean investing in weak regions has zero return; it means the spatial spillover channel is weaker there. If the objective is aggregate GDP growth, investing in strong regions is optimal. If the objective is reducing inequality, investing in weak regions is necessary — but the expected return, in terms of spatial spillovers and growth transmission, will be smaller.
 
-A third possibility is that institutional pre-investment in weak regions can shift them from the low-multiplier regime to the high-multiplier regime. If the relationship between institutional quality and spillover strength is nonlinear — with a threshold below which spillovers are near zero and above which they are substantial — then targeted investments in customs modernization, workforce certification, and regulatory capacity might produce discontinuous gains by pushing regions across the threshold. This is "big push" logic applied to subnational regions within a high-income trading bloc. It is theoretically compelling, but the panel data needed to test it — observations of institutional change linked to time-varying $\rho$ estimates — do not yet exist for the Americas.
+A third possibility is that institutional pre-investment in weak regions can shift them from the low-multiplier regime to the high-multiplier regime. If the relationship between institutional quality and spillover strength is nonlinear — with a threshold below which spillovers are near zero and above which they are substantial — then targeted investments in customs modernization, workforce certification, and regulatory capacity might produce discontinuous gains by pushing regions across the threshold. This is "big push" logic applied to subnational regions within a high-income trading bloc. It is theoretically compelling, but the panel data needed to test it — observations of institutional change linked to time-varying $$\rho$$ estimates — do not yet exist for the Americas.
 
 ---
 
@@ -283,25 +283,25 @@ Before interpreting results, it is worth understanding the analytical choices th
 
 **Covariates.** Log GDP per capita (convergence), manufacturing value added share (structural composition), and the border-friction/LPI-blend index (trade facilitation quality). Interaction specifications add border-governance quality and its interactions with other covariates.
 
-**Spatial weight matrix.** Trade-weighted $W$ from UN Comtrade bilateral flows, row-standardized so that $Wy_i$ is the trade-weighted average growth of $i$'s trading partners. The matrix is dense but highly skewed — the US, Mexico, Canada, and Brazil dominate flows.
+**Spatial weight matrix.** Trade-weighted $$W$$ from UN Comtrade bilateral flows, row-standardized so that $$Wy_i$$ is the trade-weighted average growth of $$i$$'s trading partners. The matrix is dense but highly skewed — the US, Mexico, Canada, and Brazil dominate flows.
 
-**Estimation.** Maximum likelihood with concentrated log-likelihood over $\rho$ and analytical solutions for $\beta$ and $\sigma^2$ conditional on $\rho$.
+**Estimation.** Maximum likelihood with concentrated log-likelihood over $$\rho$$ and analytical solutions for $$\beta$$ and $$\sigma^2$$ conditional on $$\rho$$.
 
 ### What the Data Show
 
 Lab 1 estimates a SAR model of GDP growth across 34 Western Hemisphere economies using a trade-weighted spatial weight matrix constructed from UN Comtrade bilateral trade flows. The key findings, documented in the lab's gate summary, are:
 
-1. **The unconditional spatial lag is near zero.** $\hat{\rho} \approx 0$ in the baseline specification, meaning that trade-weighted average neighbor growth does not predict a country's own growth after controlling for standard macro variables (initial income, manufacturing share, border-friction index). This is a null result — and it is informative.
+1. **The unconditional spatial lag is near zero.** $$\hat{\rho} \approx 0$$ in the baseline specification, meaning that trade-weighted average neighbor growth does not predict a country's own growth after controlling for standard macro variables (initial income, manufacturing share, border-friction index). This is a null result — and it is informative.
 
-2. **Institution-interaction terms produce meaningful coefficients.** When border-governance quality is interacted with the spatial lag and other covariates, the estimates change materially. The interaction of institutional quality with log GDP per capita produces a negative coefficient ($\beta \approx -3.7$), suggesting that higher-quality institutions are associated with faster convergence — poorer countries with better institutions catch up more quickly. The interaction with manufacturing share produces a positive coefficient ($\beta \approx 4.0$), suggesting that institutional quality amplifies the growth contribution of manufacturing.
+2. **Institution-interaction terms produce meaningful coefficients.** When border-governance quality is interacted with the spatial lag and other covariates, the estimates change materially. The interaction of institutional quality with log GDP per capita produces a negative coefficient ($$\beta \approx -3.7$$), suggesting that higher-quality institutions are associated with faster convergence — poorer countries with better institutions catch up more quickly. The interaction with manufacturing share produces a positive coefficient ($$\beta \approx 4.0$$), suggesting that institutional quality amplifies the growth contribution of manufacturing.
 
 3. **The spatial lag becomes nonzero and negative in interaction specifications.** This is interpretable: after accounting for institutional heterogeneity, the residual spatial correlation is slightly negative — consistent with competitive dynamics (one country's gain is a neighbor's loss) once the complementary effects of institutional quality are modeled separately.
 
-### Interpreting the Near-Zero $\rho$
+### Interpreting the Near-Zero $$\rho$$
 
-The near-zero unconditional $\rho$ is a design signal, not a failure. The Americas include the world's largest economy (US, $25 trillion GDP) and some of its smallest (Caribbean states under $1 billion), mature democracies and fragile states, commodity exporters and manufacturing powerhouses. Expecting a single $\rho$ to summarize spatial interdependence across this diversity was always ambitious.
+The near-zero unconditional $$\rho$$ is a design signal, not a failure. The Americas include the world's largest economy (US, $25 trillion GDP) and some of its smallest (Caribbean states under $1 billion), mature democracies and fragile states, commodity exporters and manufacturing powerhouses. Expecting a single $$\rho$$ to summarize spatial interdependence across this diversity was always ambitious.
 
-Compare this to European convergence studies, where $\rho$ estimates of 0.2-0.4 are common. The European estimates are larger because EU regions are more homogeneous, Eurostat data is higher-quality and more spatially granular, and contiguity-based $W$ matrices may proxy for correlated shocks more strongly than trade-weighted $W$. A "small" $\rho$ in the Americas and a "large" $\rho$ in Europe may reflect genuine differences in spillover strength, or differences in sample composition and $W$ construction. Chapter 3-A's injunction to report results under multiple specifications applies with full force.
+Compare this to European convergence studies, where $$\rho$$ estimates of 0.2-0.4 are common. The European estimates are larger because EU regions are more homogeneous, Eurostat data is higher-quality and more spatially granular, and contiguity-based $$W$$ matrices may proxy for correlated shocks more strongly than trade-weighted $$W$$. A "small" $$\rho$$ in the Americas and a "large" $$\rho$$ in Europe may reflect genuine differences in spillover strength, or differences in sample composition and $$W$$ construction. Chapter 3-A's injunction to report results under multiple specifications applies with full force.
 
 The interaction specifications reveal what the unconditional specification obscures: spillovers exist but are conditional. Trade linkages transmit growth where institutional capacity allows it — where customs work, contracts are enforced, and supply chains operate reliably. Where institutions are weak, the same linkages may transmit negative shocks (Dutch Disease, competitive pressure from low-wage neighbors) more readily than positive ones. The net effect is approximately zero — the average of positive core-to-core spillovers and negative core-to-periphery competitive effects, precisely as Krugman's core-periphery model predicts for most parameter values.
 
@@ -309,11 +309,11 @@ The interaction specifications reveal what the unconditional specification obscu
 
 The Lab 1 results are subject to several caveats that the student should take seriously:
 
-**Weight-matrix sensitivity.** The trade-weighted $W$ is constructed from contemporaneous Comtrade flows, creating the endogeneity concern discussed in Chapter 3-A. A robustness check using five-year lagged trade or gravity-predicted trade would strengthen identification. Results should be interpreted as conditional associations, not causal estimates.
+**Weight-matrix sensitivity.** The trade-weighted $$W$$ is constructed from contemporaneous Comtrade flows, creating the endogeneity concern discussed in Chapter 3-A. A robustness check using five-year lagged trade or gravity-predicted trade would strengthen identification. Results should be interpreted as conditional associations, not causal estimates.
 
-**Sample size constraints.** With only 34 observations, individual influential cases (especially the US, with GDP many times larger than any other country) can drive results. The macro-only specification (41 economies) produces a slightly larger $\rho$ (0.033), suggesting additional covariates absorb some spatial signal. Jack-knife diagnostics — re-estimating with each country removed in turn — are the appropriate sensitivity check.
+**Sample size constraints.** With only 34 observations, individual influential cases (especially the US, with GDP many times larger than any other country) can drive results. The macro-only specification (41 economies) produces a slightly larger $$\rho$$ (0.033), suggesting additional covariates absorb some spatial signal. Jack-knife diagnostics — re-estimating with each country removed in turn — are the appropriate sensitivity check.
 
-**Cross-sectional identification.** A single cross-section cannot distinguish spatial spillovers from correlated effects (shared exposure to commodity prices, common macroeconomic conditions). The interaction specifications mitigate this — the interaction between institutional quality and the spatial lag is less susceptible to the correlated-effects critique than the unconditional $\rho$ — but a panel specification exploiting within-country time-series variation would be more convincing. Lab 2 (Asia) uses a panel convergence design that addresses this limitation.
+**Cross-sectional identification.** A single cross-section cannot distinguish spatial spillovers from correlated effects (shared exposure to commodity prices, common macroeconomic conditions). The interaction specifications mitigate this — the interaction between institutional quality and the spatial lag is less susceptible to the correlated-effects critique than the unconditional $$\rho$$ — but a panel specification exploiting within-country time-series variation would be more convincing. Lab 2 (Asia) uses a panel convergence design that addresses this limitation.
 
 ---
 
@@ -331,9 +331,9 @@ The Lab 1 results are subject to several caveats that the student should take se
 
 3. *Temporal stability*: the coefficient of variation of monthly crossing volumes, capturing the predictability of border throughput (lower CV = more reliable supply chain planning).
 
-**Extension to non-border countries.** For the 28 countries in the hemisphere without direct BTS coverage, the LPI customs-efficiency sub-score proxies for border-friction quality. The two measures are positively correlated ($r \approx 0.6$) among the three NAFTA countries, providing confidence that the LPI captures similar variation at the country level.
+**Extension to non-border countries.** For the 28 countries in the hemisphere without direct BTS coverage, the LPI customs-efficiency sub-score proxies for border-friction quality. The two measures are positively correlated ($$r \approx 0.6$$) among the three NAFTA countries, providing confidence that the LPI captures similar variation at the country level.
 
-**Validation.** Two checks establish the index's credibility. First, the BTS-based index correlates positively ($r \approx 0.6$) with the LPI customs-efficiency sub-score among the three NAFTA countries, suggesting that the two measures capture similar variation. Second, the index varies meaningfully across border ports in expected ways: Laredo (high volume, high concentration, moderate volatility) has a different score than Nogales (moderate volume, low concentration, low volatility), consistent with the ports' known commercial characteristics.
+**Validation.** Two checks establish the index's credibility. First, the BTS-based index correlates positively ($$r \approx 0.6$$) with the LPI customs-efficiency sub-score among the three NAFTA countries, suggesting that the two measures capture similar variation. Second, the index varies meaningfully across border ports in expected ways: Laredo (high volume, high concentration, moderate volatility) has a different score than Nogales (moderate volume, low concentration, low volatility), consistent with the ports' known commercial characteristics.
 
 **Result.** The combined index ranges from 0 (low friction, high governance) to 1 (high friction, low governance). In the Lab 1 interaction specifications, this index enters both as a direct covariate and as an interaction term with the spatial lag, testing whether border quality conditions the strength of growth spillovers across trading partners.
 
@@ -397,7 +397,7 @@ The next chapter extends this argument to Latin America, where the institutional
 
 2. The CHIPS Act concentrates semiconductor investment in regions with existing technical infrastructure. Does this represent a failure of place-based policy (reinforcing winners) or a success (maximizing the spatial multiplier)? Under what conditions would it be more efficient to invest in institutionally weak regions instead?
 
-3. Lab 1 finds that the unconditional spatial lag coefficient $\rho$ is near zero across the Western Hemisphere, but interaction terms with institutional quality are significant. Does this finding support or undermine the NEG's prediction that trade integration generates positive spatial spillovers? How would you modify the NEG model to accommodate conditional spillovers?
+3. Lab 1 finds that the unconditional spatial lag coefficient $$\rho$$ is near zero across the Western Hemisphere, but interaction terms with institutional quality are significant. Does this finding support or undermine the NEG's prediction that trade integration generates positive spatial spillovers? How would you modify the NEG model to accommodate conditional spillovers?
 
 4. The border effect at Laredo is different from the border effect at Nogales. What does this heterogeneity imply for gravity-model estimates of the "average" US-Mexico border effect? How would you estimate port-specific border effects, and what identification challenges would you face?
 

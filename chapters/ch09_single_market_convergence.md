@@ -195,7 +195,7 @@ $$
 X_{it} = \frac{GDP_{it}^{PC,PPS}}{GDP_{EU,t}^{PC,PPS}} \times 100 - 75
 $$
 
-so that $X_{it} = 0$ at the eligibility threshold, $X_{it} < 0$ for eligible regions, and $X_{it} > 0$ for ineligible regions.
+so that $$X_{it} = 0$$ at the eligibility threshold, $$X_{it} < 0$$ for eligible regions, and $$X_{it} > 0$$ for ineligible regions.
 
 5. Define the outcome as the annualized growth rate of GDP per capita over the subsequent programming period.
 

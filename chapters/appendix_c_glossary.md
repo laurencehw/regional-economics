@@ -18,7 +18,7 @@
 
 **Home market effect.** The prediction that, in the presence of increasing returns and trade costs, countries with larger domestic demand for a good will be net exporters of that good. Opposite of the comparative-advantage prediction. Ch. 1, Ch. 3-B.
 
-**Iceberg transport costs.** A modeling convention where a fraction of the good "melts" during transport — if $\tau > 1$ units must be shipped for 1 unit to arrive, the transport cost is $(\tau - 1)/\tau$. Simplifies general equilibrium analysis by avoiding a separate transport sector. Ch. 1, Ch. 3-B.
+**Iceberg transport costs.** A modeling convention where a fraction of the good "melts" during transport — if $$\tau > 1$$ units must be shipped for 1 unit to arrive, the transport cost is $$(\tau - 1)/\tau$$. Simplifies general equilibrium analysis by avoiding a separate transport sector. Ch. 1, Ch. 3-B.
 
 **Knowledge spillovers.** The uncompensated transfer of knowledge between firms or workers through informal interaction, labor mobility, and observation. The third Marshallian externality. Ch. 1.
 
@@ -34,13 +34,13 @@
 
 **Spatial autocorrelation.** The tendency for values of a variable at nearby locations to be correlated — positive (similar values cluster) or negative (dissimilar values cluster). Ch. 3-A.
 
-**Spatial autoregressive model (SAR).** A regression model where the dependent variable in each unit depends on a weighted average of the dependent variable in neighboring units: $y = \rho W y + X\beta + \varepsilon$. Ch. 3-A, Lab 1, Appendix A.
+**Spatial autoregressive model (SAR).** A regression model where the dependent variable in each unit depends on a weighted average of the dependent variable in neighboring units: $$y = \rho W y + X\beta + \varepsilon$$. Ch. 3-A, Lab 1, Appendix A.
 
-**Spatial Durbin Model (SDM).** A regression model that includes both a spatial lag of the dependent variable and spatial lags of the regressors: $y = \rho W y + X\beta + WX\theta + \varepsilon$. Ch. 3-A, Appendix A.
+**Spatial Durbin Model (SDM).** A regression model that includes both a spatial lag of the dependent variable and spatial lags of the regressors: $$y = \rho W y + X\beta + WX\theta + \varepsilon$$. Ch. 3-A, Appendix A.
 
-**Spatial error model (SEM).** A regression model where spatial dependence enters through the error term: $y = X\beta + u$, $u = \lambda W u + \varepsilon$. Captures spatially correlated unobservables. Ch. 3-A, Appendix A.
+**Spatial error model (SEM).** A regression model where spatial dependence enters through the error term: $$y = X\beta + u$$, $$u = \lambda W u + \varepsilon$$. Captures spatially correlated unobservables. Ch. 3-A, Appendix A.
 
-**Spatial weight matrix ($\mathbf{W}$).** A matrix encoding the spatial relationships between units. Common constructions: binary contiguity, inverse distance, $k$-nearest neighbors. Usually row-standardized. Ch. 3-A, Appendix A.
+**Spatial weight matrix ($$\mathbf{W}$$).** A matrix encoding the spatial relationships between units. Common constructions: binary contiguity, inverse distance, $$k$$-nearest neighbors. Usually row-standardized. Ch. 3-A, Appendix A.
 
 ---
 
@@ -104,7 +104,7 @@
 
 **Bartik instrument.** A shift-share instrument that predicts local employment growth by interacting the local industry composition (shares) with national industry growth rates (shifts). Used to address endogeneity in spatial economic analysis. Ch. 3-A, Lab 1.
 
-**$\beta$-convergence.** The empirical finding that initially poorer regions grow faster than initially richer regions, conditional on other determinants of growth. Ch. 3-A, Appendix A.
+**$$\beta$$-convergence.** The empirical finding that initially poorer regions grow faster than initially richer regions, conditional on other determinants of growth. Ch. 3-A, Appendix A.
 
 **Difference-in-differences (DiD).** A quasi-experimental method that estimates causal effects by comparing the change in outcomes over time between a treated group and a control group. Ch. 3-A.
 
@@ -112,7 +112,7 @@
 
 **Regression discontinuity design (RDD).** A quasi-experimental method that estimates causal effects by comparing units just above and just below a threshold that determines treatment assignment. Spatial RDD uses geographic boundaries. Ch. 9, Lab 4.
 
-**$\sigma$-convergence.** A declining cross-sectional dispersion of income levels over time. Necessary condition: $\beta$-convergence. Ch. 3-A, Appendix A.
+**$$\sigma$$-convergence.** A declining cross-sectional dispersion of income levels over time. Necessary condition: $$\beta$$-convergence. Ch. 3-A, Appendix A.
 
 **Synthetic control method (SCM).** A method for estimating causal effects of events or policies by constructing a weighted combination of untreated units (the "synthetic control") that matches the treated unit's pre-treatment trajectory. Abadie and Gardeazabal (2003). Ch. 12, Lab 5.
 

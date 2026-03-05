@@ -190,7 +190,7 @@ $$
 LQ_{st} = \frac{IT_{st} / GDP_{st}}{\sum_s IT_{st} / \sum_s GDP_{st}}
 $$
 
-where $IT_{st}$ is IT-sector value-added in state $s$ at time $t$ and $GDP_{st}$ is total GDP.
+where $$IT_{st}$$ is IT-sector value-added in state $$s$$ at time $$t$$ and $$GDP_{st}$$ is total GDP.
 
 5. Compute the Herfindahl index for IT-BPO concentration across states in each year:
 

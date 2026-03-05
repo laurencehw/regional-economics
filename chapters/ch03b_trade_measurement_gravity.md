@@ -26,15 +26,15 @@ This chapter provides the trade measurement and estimation framework that all re
 
 ### From Newton to Anderson-van Wincoop
 
-The gravity model of trade is one of the most empirically successful relationships in all of economics. In its simplest form, bilateral trade $X_{ij}$ between countries $i$ and $j$ is proportional to the product of their economic masses (GDP) and inversely proportional to the trade costs between them:
+The gravity model of trade is one of the most empirically successful relationships in all of economics. In its simplest form, bilateral trade $$X_{ij}$$ between countries $$i$$ and $$j$$ is proportional to the product of their economic masses (GDP) and inversely proportional to the trade costs between them:
 
 $$
 X_{ij} = G \cdot \frac{Y_i \cdot Y_j}{d_{ij}^\delta}
 $$
 
-where $Y_i$ and $Y_j$ are GDPs, $d_{ij}$ is bilateral distance (a proxy for trade costs), $\delta$ is the distance elasticity, and $G$ is a gravitational constant. This equation, first applied to trade by Tinbergen (1962), routinely explains 60–80 percent of the variation in bilateral trade flows — a fit that few other empirical relationships in economics can match.
+where $$Y_i$$ and $$Y_j$$ are GDPs, $$d_{ij}$$ is bilateral distance (a proxy for trade costs), $$\delta$$ is the distance elasticity, and $$G$$ is a gravitational constant. This equation, first applied to trade by Tinbergen (1962), routinely explains 60–80 percent of the variation in bilateral trade flows — a fit that few other empirical relationships in economics can match.
 
-For decades, the gravity model's theoretical foundations were uncertain: it "worked" empirically but lacked a clean derivation from trade theory. Anderson and van Wincoop (2003) resolved this by deriving the gravity equation from a general-equilibrium trade model with CES preferences and iceberg trade costs. Their key contribution was the concept of **multilateral resistance** — the idea that bilateral trade between $i$ and $j$ depends not only on the bilateral trade cost between them but also on how costly it is for each of them to trade with *all other partners*. A country that faces high trade costs with everyone will trade relatively more with any given partner, compared to a country with many low-cost alternatives.
+For decades, the gravity model's theoretical foundations were uncertain: it "worked" empirically but lacked a clean derivation from trade theory. Anderson and van Wincoop (2003) resolved this by deriving the gravity equation from a general-equilibrium trade model with CES preferences and iceberg trade costs. Their key contribution was the concept of **multilateral resistance** — the idea that bilateral trade between $$i$$ and $$j$$ depends not only on the bilateral trade cost between them but also on how costly it is for each of them to trade with *all other partners*. A country that faces high trade costs with everyone will trade relatively more with any given partner, compared to a country with many low-cost alternatives.
 
 The structural gravity equation is:
 
@@ -42,9 +42,9 @@ $$
 X_{ij} = \frac{Y_i \cdot E_j}{Y^W} \cdot \left(\frac{t_{ij}}{P_j \cdot \Pi_i}\right)^{1-\sigma}
 $$
 
-where $E_j$ is country $j$'s total expenditure, $Y^W$ is world income, $t_{ij}$ is the bilateral trade cost, $\sigma > 1$ is the elasticity of substitution, and $P_j$ and $\Pi_i$ are the inward and outward multilateral resistance terms — price indices that capture each country's average trade costs with all partners.
+where $$E_j$$ is country $$j$$'s total expenditure, $$Y^W$$ is world income, $$t_{ij}$$ is the bilateral trade cost, $$\sigma > 1$$ is the elasticity of substitution, and $$P_j$$ and $$\Pi_i$$ are the inward and outward multilateral resistance terms — price indices that capture each country's average trade costs with all partners.
 
-The practical implication is that any gravity estimation that omits multilateral resistance will produce biased estimates. The standard solution is to include exporter and importer fixed effects, which absorb $Y_i$, $E_j$, $P_j$, and $\Pi_i$ entirely, leaving bilateral trade costs as the only source of identifying variation.
+The practical implication is that any gravity estimation that omits multilateral resistance will produce biased estimates. The standard solution is to include exporter and importer fixed effects, which absorb $$Y_i$$, $$E_j$$, $$P_j$$, and $$\Pi_i$$ entirely, leaving bilateral trade costs as the only source of identifying variation.
 
 ### The McCallum Border Puzzle
 
@@ -54,7 +54,7 @@ Anderson and van Wincoop (2003) showed that McCallum's estimate was inflated by 
 
 ### The PPML Estimator
 
-The traditional approach to estimating gravity models — log-linearizing the equation and running OLS on $\ln X_{ij}$ — has two well-known problems. First, it drops all zero trade flows (since $\ln 0$ is undefined), and zeros are informative: they represent country pairs where trade costs are too high for any trade to occur. In services trade, where zeros are far more common than in goods trade, dropping them creates severe selection bias. Second, Jensen's inequality means that $E[\ln X] \neq \ln E[X]$, so OLS on the log-linearized equation produces inconsistent estimates when the error term is heteroskedastic — as it almost always is with trade data.
+The traditional approach to estimating gravity models — log-linearizing the equation and running OLS on $$\ln X_{ij}$$ — has two well-known problems. First, it drops all zero trade flows (since $$\ln 0$$ is undefined), and zeros are informative: they represent country pairs where trade costs are too high for any trade to occur. In services trade, where zeros are far more common than in goods trade, dropping them creates severe selection bias. Second, Jensen's inequality means that $$E[\ln X] \neq \ln E[X]$$, so OLS on the log-linearized equation produces inconsistent estimates when the error term is heteroskedastic — as it almost always is with trade data.
 
 Santos Silva and Tenreyro (2006) proposed the **Poisson Pseudo-Maximum Likelihood (PPML)** estimator as the solution. PPML estimates the gravity equation in multiplicative form:
 
@@ -62,15 +62,15 @@ $$
 X_{ij} = \exp(\alpha_i + \gamma_j + \beta_1 \ln d_{ij} + \beta_2 \text{contig}_{ij} + \beta_3 \text{lang}_{ij} + \cdots) \cdot \eta_{ij}
 $$
 
-where the exporter fixed effects $\alpha_i$ and importer fixed effects $\gamma_j$ absorb multilateral resistance. PPML handles zero trade flows naturally (the dependent variable remains in levels), is consistent under heteroskedasticity, and has become the standard estimator in the gravity literature.
+where the exporter fixed effects $$\alpha_i$$ and importer fixed effects $$\gamma_j$$ absorb multilateral resistance. PPML handles zero trade flows naturally (the dependent variable remains in levels), is consistent under heteroskedasticity, and has become the standard estimator in the gravity literature.
 
-In practice, implementing PPML for gravity requires several decisions that affect results. Standard errors should be clustered at the country-pair (dyad) level, since bilateral trade flows between the same pair are correlated over time; some researchers additionally cluster at the exporter or importer level, or use multi-way clustering (Cameron, Gelbach, and Miller 2011). When panel data are available, the specification should include exporter-time and importer-time fixed effects to absorb time-varying multilateral resistance — a demanding but necessary requirement, since multilateral resistance shifts as countries sign new trade agreements or face new competitors. Convergence can be slow when the model includes high-dimensional fixed effects alongside many zeros; the `ppmlhdfe` command in Stata (Correia, Guimarães, and Zylkin 2020) and the `fixest` package in R handle this efficiently and have become the standard implementations. Finally, PPML coefficients should be interpreted carefully: since the model is estimated in levels, the coefficients represent semi-elasticities in the exponential specification. A distance coefficient of $-0.95$ means that a one-unit increase in $\ln d_{ij}$ reduces the *level* of trade by $\exp(-0.95) - 1 \approx -61$ percent — not a 95-percent reduction, as a naive log-linear interpretation would suggest.
+In practice, implementing PPML for gravity requires several decisions that affect results. Standard errors should be clustered at the country-pair (dyad) level, since bilateral trade flows between the same pair are correlated over time; some researchers additionally cluster at the exporter or importer level, or use multi-way clustering (Cameron, Gelbach, and Miller 2011). When panel data are available, the specification should include exporter-time and importer-time fixed effects to absorb time-varying multilateral resistance — a demanding but necessary requirement, since multilateral resistance shifts as countries sign new trade agreements or face new competitors. Convergence can be slow when the model includes high-dimensional fixed effects alongside many zeros; the `ppmlhdfe` command in Stata (Correia, Guimarães, and Zylkin 2020) and the `fixest` package in R handle this efficiently and have become the standard implementations. Finally, PPML coefficients should be interpreted carefully: since the model is estimated in levels, the coefficients represent semi-elasticities in the exponential specification. A distance coefficient of $$-0.95$$ means that a one-unit increase in $$\ln d_{ij}$$ reduces the *level* of trade by $$\exp(-0.95) - 1 \approx -61$$ percent — not a 95-percent reduction, as a naive log-linear interpretation would suggest.
 
 ### What the Gravity Model Identifies
 
 A correctly specified gravity model with exporter and importer fixed effects identifies the *bilateral trade cost* elasticities — how much additional distance, lack of a common language, absence of a colonial tie, or presence of a regulatory barrier reduces trade between a specific pair. It does not identify the level effects of GDP or total expenditure (which are absorbed by the fixed effects), nor does it identify the effect of unilateral trade policies (which are also absorbed). This means the gravity model is precisely the right tool for answering the question that matters most for regional economics: conditional on the characteristics of the trading partners, how much do *bilateral frictions* — distance, borders, language, regulation — reduce trade?
 
-The canonical estimates from the goods-trade gravity literature provide a useful benchmark. Across hundreds of studies, the consensus distance elasticity for goods trade is approximately $-0.9$ to $-1.1$: doubling bilateral distance reduces trade by roughly 50 percent. Sharing a common language increases trade by 30–50 percent. Sharing a colonial tie increases trade by 50–80 percent. These estimates are remarkably stable across time periods, country samples, and commodity categories — which is itself a puzzle, since transport costs as a fraction of goods value have fallen dramatically over the past century. The persistence of the distance effect suggests that distance proxies for informational and institutional barriers, not just shipping costs.
+The canonical estimates from the goods-trade gravity literature provide a useful benchmark. Across hundreds of studies, the consensus distance elasticity for goods trade is approximately $$-0.9$$ to $$-1.1$$: doubling bilateral distance reduces trade by roughly 50 percent. Sharing a common language increases trade by 30–50 percent. Sharing a colonial tie increases trade by 50–80 percent. These estimates are remarkably stable across time periods, country samples, and commodity categories — which is itself a puzzle, since transport costs as a fraction of goods value have fallen dramatically over the past century. The persistence of the distance effect suggests that distance proxies for informational and institutional barriers, not just shipping costs.
 
 ### The CEPII Gravity Dataset
 
@@ -122,9 +122,9 @@ For regional economics, the implication is that any analysis of services trade g
 
 ### The Distance Puzzle
 
-The most counterintuitive finding in the services gravity literature is that **distance elasticities for services trade are at least as large as — and often larger than — those for goods trade**. Kimura and Lee (2006) estimate a distance elasticity of $-1.2$ to $-1.4$ for services, compared to $-0.9$ to $-1.1$ for goods. Head, Mayer, and Ries (2009) find similar results in a meta-analysis of 2,508 gravity estimates. This is puzzling because services, by definition, have no physical weight to ship: the marginal transport cost of sending an email from Bangalore to Boston is zero, and yet the gravity model estimates suggest that services are *more* distance-sensitive than physical commodities.
+The most counterintuitive finding in the services gravity literature is that **distance elasticities for services trade are at least as large as — and often larger than — those for goods trade**. Kimura and Lee (2006) estimate a distance elasticity of $$-1.2$$ to $$-1.4$$ for services, compared to $$-0.9$$ to $$-1.1$$ for goods. Head, Mayer, and Ries (2009) find similar results in a meta-analysis of 2,508 gravity estimates. This is puzzling because services, by definition, have no physical weight to ship: the marginal transport cost of sending an email from Bangalore to Boston is zero, and yet the gravity model estimates suggest that services are *more* distance-sensitive than physical commodities.
 
-The puzzle deepens when the estimates are disaggregated. Kimura and Lee's sample spans 10 service sectors across 19 OECD economies and 51 non-OECD economies, and the distance elasticity varies enormously by sector: financial services and insurance show elasticities of $-1.5$ or larger, while transport services (which involve physical movement) show elasticities closer to goods-trade norms. Head, Mayer, and Ries confirm that the pattern is robust to different estimation methods, country samples, and time periods, ruling out the possibility that it is an artifact of a particular dataset. What distance proxies for in services gravity is not what it proxies for in goods gravity: it captures regulatory similarity (countries with similar legal traditions regulate services similarly), trust and informational networks (which decay with geographic and cultural distance), time-zone overlap (which constrains real-time collaboration), and language compatibility (which matters more for communication-intensive services than for standardized goods). All of these frictions are *correlated* with physical distance but are not caused by it — a distinction that matters enormously for policy, since building a highway reduces physical distance costs but does nothing to harmonize financial regulation. The decomposition also varies by development level: for OECD-only samples, the services distance elasticity is smaller (around $-1.0$ to $-1.2$), while samples that include developing economies — where regulatory heterogeneity and information frictions are more severe — produce larger estimates, sometimes exceeding $-1.5$.
+The puzzle deepens when the estimates are disaggregated. Kimura and Lee's sample spans 10 service sectors across 19 OECD economies and 51 non-OECD economies, and the distance elasticity varies enormously by sector: financial services and insurance show elasticities of $$-1.5$$ or larger, while transport services (which involve physical movement) show elasticities closer to goods-trade norms. Head, Mayer, and Ries confirm that the pattern is robust to different estimation methods, country samples, and time periods, ruling out the possibility that it is an artifact of a particular dataset. What distance proxies for in services gravity is not what it proxies for in goods gravity: it captures regulatory similarity (countries with similar legal traditions regulate services similarly), trust and informational networks (which decay with geographic and cultural distance), time-zone overlap (which constrains real-time collaboration), and language compatibility (which matters more for communication-intensive services than for standardized goods). All of these frictions are *correlated* with physical distance but are not caused by it — a distinction that matters enormously for policy, since building a highway reduces physical distance costs but does nothing to harmonize financial regulation. The decomposition also varies by development level: for OECD-only samples, the services distance elasticity is smaller (around $$-1.0$$ to $$-1.2$$), while samples that include developing economies — where regulatory heterogeneity and information frictions are more severe — produce larger estimates, sometimes exceeding $$-1.5$$.
 
 The resolution lies in the nature of the trade costs that distance proxies for. For goods, distance primarily captures transport costs — shipping, insurance, time in transit. These costs have fallen dramatically since containerization, which is why the goods distance elasticity has been roughly stable despite falling freight rates (the "distance puzzle" in the goods literature). For services, distance captures **informational and institutional barriers**: time-zone differences that reduce overlap in working hours, cultural and linguistic distance that complicates communication, differences in legal systems that increase contracting costs, and — most importantly — the regulatory barriers that fragment service markets across jurisdictions.
 
@@ -204,9 +204,9 @@ $$
 \text{Trade}_{ij}^{goods} = \exp(\alpha_i + \gamma_j + \beta_1 \ln d_{ij} + \beta_2 \text{contig}_{ij} + \beta_3 \text{lang}_{ij} + \beta_4 \text{colony}_{ij}) \cdot \eta_{ij}
 $$
 
-Report the distance elasticity $\hat{\beta}_1$, which should fall in the $-0.9$ to $-1.1$ range.
+Report the distance elasticity $$\hat{\beta}_1$$, which should fall in the $$-0.9$$ to $$-1.1$$ range.
 
-2. **Services baseline.** Estimate the same specification for bilateral services trade. Report $\hat{\beta}_1$ for services and compare with goods. The services distance elasticity is typically $-1.2$ to $-1.5$ across the literature — larger in absolute value than goods.
+2. **Services baseline.** Estimate the same specification for bilateral services trade. Report $$\hat{\beta}_1$$ for services and compare with goods. The services distance elasticity is typically $$-1.2$$ to $$-1.5$$ across the literature — larger in absolute value than goods.
 
 3. **STRI-augmented.** Add the importer's sector-average STRI score to the services gravity specification:
 
@@ -214,18 +214,18 @@ $$
 \text{Trade}_{ij}^{services} = \exp(\alpha_i + \gamma_j + \beta_1 \ln d_{ij} + \beta_2 \text{contig}_{ij} + \beta_3 \text{lang}_{ij} + \beta_4 \text{colony}_{ij} + \beta_5 \text{STRI}_j) \cdot \eta_{ij}
 $$
 
-The coefficient $\hat{\beta}_5$ measures the trade-reducing effect of regulatory barriers, and the distance elasticity should fall (in absolute value) when STRI is included — confirming that regulatory heterogeneity is part of what the distance variable captures.
+The coefficient $$\hat{\beta}_5$$ measures the trade-reducing effect of regulatory barriers, and the distance elasticity should fall (in absolute value) when STRI is included — confirming that regulatory heterogeneity is part of what the distance variable captures.
 
 **Typical findings.**
 
 | | Goods | Services (baseline) | Services (STRI-augmented) |
 |---|---|---|---|
-| Distance elasticity | $-0.95$ | $-1.35$ | $-1.10$ |
+| Distance elasticity | $$-0.95$$ | $$-1.35$$ | $$-1.10$$ |
 | Common language | $0.35$ | $0.55$ | $0.48$ |
 | Colonial tie | $0.62$ | $0.78$ | $0.70$ |
-| STRI | — | — | $-1.45$ |
+| STRI | — | — | $$-1.45$$ |
 
-The STRI coefficient implies that a one-standard-deviation increase in regulatory restrictiveness reduces services imports by roughly 20 percent. The reduction in the distance elasticity from $-1.35$ to $-1.10$ when STRI is included confirms that roughly one-quarter of the "distance effect" in services gravity is actually regulatory heterogeneity.
+The STRI coefficient implies that a one-standard-deviation increase in regulatory restrictiveness reduces services imports by roughly 20 percent. The reduction in the distance elasticity from $$-1.35$$ to $$-1.10$$ when STRI is included confirms that roughly one-quarter of the "distance effect" in services gravity is actually regulatory heterogeneity.
 
 **Takeaway for students.** The goods gravity model is well-understood and stable. The services gravity model is more sensitive to specification choices — particularly the treatment of zeros (which are more prevalent), the handling of Mode 3 (which is absent from BOP data), and the inclusion of regulatory variables. Always report both goods and services estimates side by side, so the reader can see how the bilateral cost structure differs.
 
