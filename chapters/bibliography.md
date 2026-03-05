@@ -34,6 +34,8 @@ Anderson, James E., and Eric van Wincoop. 2003. "Gravity with Gravitas: A Soluti
 
 Anselin, Luc. 1988. *Spatial Econometrics: Methods and Models.* Dordrecht: Kluwer Academic Publishers. [Ch. 3A]
 
+Anselin, Luc. 1995. "Local Indicators of Spatial Association — LISA." *Geographical Analysis* 27(2): 93--115. [Ch. 3A]
+
 Aronow, Peter M., and Cyrus Samii. 2017. "Estimating Average Causal Effects under General Interference, with Application to a Social Network Experiment." *Annals of Applied Statistics* 11(4): 1912--1947. [Ch. 16]
 
 Arthur, W. Brian. 1989. "Competing Technologies, Increasing Returns, and Lock-In by Historical Events." *Economic Journal* 99(394): 116--131. [Ch. 2]
@@ -241,6 +243,8 @@ Haskel, Jonathan, and Stian Westlake. 2018. *Capitalism Without Capital: The Ris
 Hassink, Robert. 2010. "Regional Resilience: A Promising Concept to Explain Differences in Regional Economic Adaptability?" *Cambridge Journal of Regions, Economy, and Society* 3(1): 45--58. [Ch. 2]
 
 Hausman, Naomi. 2022. "University Innovation and Local Economic Growth." *Review of Economics and Statistics* 104(4): 718--735. [Ch. 4]
+
+Head, Keith, and Thierry Mayer. 2014. "Gravity Equations: Workhorse, Toolkit, and Cookbook." In Gita Gopinath, Elhanan Helpman, and Kenneth Rogoff, eds., *Handbook of International Economics,* vol. 4, 131--195. Amsterdam: Elsevier. [Ch. 3B]
 
 Head, Keith, Thierry Mayer, and John Ries. 2009. "How Remote Is the Offshoring Threat?" *European Economic Review* 53(4): 429--444. [Ch. 3B, Ch. 16]
 
@@ -459,6 +463,8 @@ Storper, Michael, and Anthony J. Venables. 2004. "Buzz: Face-to-Face Contact and
 Suri, Tavneet, and William Jack. 2016. "The Long-Run Poverty and Gender Impacts of Mobile Money." *Science* 354(6317): 1288--1292. [Ch. 13]
 
 Taylor, Peter J. 2004. *World City Network: A Global Urban Analysis.* London: Routledge. [Ch. 16]
+
+Taylor, Peter J., and Ben Derudder. 2016. *World City Network: A Global Urban Analysis.* 2nd ed. London: Routledge. [Ch. 3B, Ch. 16]
 
 Taylor, Peter J., Pengfei Ni, Ben Derudder, Michael Hoyler, Jin Huang, and Frank Witlox, eds. 2011. *Global Urban Analysis: A Survey of Cities in Globalization.* London: Earthscan. [Ch. 4]
 

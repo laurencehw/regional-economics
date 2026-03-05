@@ -112,6 +112,10 @@ Lab 6 (Africa) uses Moran's $$I$$ as the primary analytical tool rather than mer
 
 ## 3A.2 From OLS to Spatial Regression: SAR, SEM, and SDM
 
+{% hint style="warning" %}
+**OLS is biased under spatial dependence.** When the true data-generating process includes a spatial lag of the dependent variable ($$Wy$$), OLS suffers from omitted-variable bias: the spatially lagged outcome is correlated with the regressors, and forcing it into the error term biases coefficient estimates --- often by 20--30 percent or more (Ertur and Koch 2007). Even when dependence is only in the errors, OLS standard errors are too small, inflating t-statistics and producing spurious significance. Always test for spatial autocorrelation before interpreting OLS results on regional data.
+{% endhint %}
+
 ### Why OLS Fails
 
 Consider a standard cross-sectional regression of regional outcomes on covariates:
@@ -181,6 +185,14 @@ $$
 The addition of $$WX\theta$$ — the spatially lagged covariates — allows neighbors' characteristics to affect region $$i$$'s outcome directly, not just through the spatial multiplier. LeSage and Pace (2009) argue that the SDM should be the default specification because it avoids the strong restriction implicit in the SAR (that only the weighted average of neighbors' outcomes matters, not their characteristics) and the strong restriction implicit in the SEM (that there is no substantive outcome-to-outcome spillover).
 
 The SDM is the workhorse model in applied spatial economics. If $$\theta = 0$$, it reduces to the SAR. If $$\theta = -\rho\beta$$, it reduces to the SEM (a restriction known as the "common factor" test). Estimating the unrestricted SDM and testing these restrictions is a principled way to select between the SAR and SEM, rather than choosing a priori.
+
+### Summary: SAR vs SEM vs SDM
+
+| Model | Key Assumption | When to Use | Identification Concern |
+|---|---|---|---|
+| SAR (Spatial Lag) | Neighbors' *outcomes* directly affect focal region | Theory predicts outcome-to-outcome spillovers (trade multipliers, technology diffusion) | $$Wy$$ is endogenous; requires ML or IV estimation |
+| SEM (Spatial Error) | Neighbors share *unobserved shocks*; no direct outcome spillover | Spatial clustering driven by omitted common exposures (weather, policy contagion) | OLS $$\beta$$ consistent but inefficient; standard errors biased downward |
+| SDM (Spatial Durbin) | Both neighbors' *outcomes* and *characteristics* matter | Default when theory does not clearly favor SAR or SEM; nests both as testable restrictions | Over-parameterization risk; common-factor test needed to simplify |
 
 ### Specification Testing: LM Tests and the Anselin Decision Rule
 
@@ -389,6 +401,13 @@ The methods in this section are not substitutes for the parametric models of Sec
 
 No single study should be expected to climb the entire hierarchy. But a book about regional economics should — and the progression across the five labs is designed to take the reader from descriptive evidence to causal identification, building skills incrementally.
 
+| Level | Strategy | What It Establishes | Example Lab |
+|---|---|---|---|
+| 1 | Descriptive spatial association (Moran's $$I$$, hot-spot maps) | Outcomes cluster geographically | Lab 6 (Africa) |
+| 2 | Conditional spatial models (SAR / SEM / SDM) | Clustering persists after controlling for covariates | Lab 1 (Americas) |
+| 3 | Network-based decomposition (MRIO, convergence regressions) | Integration channels drive spatial patterns | Lab 2 (Asia) |
+| 4 | Quasi-experimental designs (spatial RDD, SCM, spatial DiD) | Causal effect of policy or shock, net of confounders | Labs 4 and 5 (Europe, MENA) |
+
 ---
 
 ## 3A.6 Spatial Panels: Combining Space and Time
@@ -450,6 +469,15 @@ Afrobarometer provides standardized public opinion surveys covering governance p
 Shapefiles defining regional boundaries are the connective tissue of spatial analysis — without them, no $$W$$ matrix can be constructed. Key sources include Eurostat GISCO (NUTS boundaries for Europe), the GADM database (global administrative boundaries at multiple levels), Natural Earth (country boundaries and coastlines), and the OECD FUA boundary files (functional urban areas). Boundary data must be version-controlled carefully: NUTS revisions occur every three years, and a mismatch between boundary vintage and economic data vintage produces spurious results — a region that was split between NUTS 2016 and NUTS 2021 will appear as two new entities, not as a continuation.
 
 **Dataset quality gradients.** A recurrent theme across the labs is that data quality varies systematically with income and institutional capacity. European data (Eurostat) is harmonized, spatially granular (NUTS-3), and available annually since the 1990s. African data is sparse, often available only at the country level, with long lags between collection and publication — which is precisely why Lab 6 uses night-lights as an alternative activity measure. MENA data falls in between: WDI coverage is good for macro aggregates but thin for subnational indicators, and conflict disrupts statistical capacity (Syria has no reliable GDP figures after 2010). The analyst must match the method to the data reality, not the other way around. Using spatial RDD in a region where boundary-level data do not exist is an exercise in fantasy.
+
+| Dataset | Coverage | Resolution | Primary Lab Use |
+|---|---|---|---|
+| World Development Indicators (WDI) | 217 economies, annual | Country | Labs 1, 5 — macro growth panels |
+| UN Comtrade | Bilateral goods trade, HS-level | Country pair | Lab 1 — trade-weight matrix $$W$$ |
+| WIOD / TiVA | 43 countries, 56 industries | Country-industry | Lab 2 — value-chain decomposition |
+| Eurostat Regional Accounts | EU members, annual since 1990s | NUTS-2 / NUTS-3 | Lab 4 — spatial RDD on Cohesion Policy |
+| VIIRS Night-Lights | Global, monthly | ~750 m grid | Lab 6 — economic-activity proxy for Africa |
+| ACLED | Geocoded conflict events, ongoing | Event point | Lab 5 — synthetic control for MENA |
 
 ### The Geospatial Data Ecosystem
 

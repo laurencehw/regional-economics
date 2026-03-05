@@ -3,14 +3,14 @@
     "cities": [
       {"name": "Detroit", "lat": 42.33, "lon": -83.05, "label_offset": [-15, 5], "style": "major"},
       {"name": "Chicago", "lat": 41.88, "lon": -87.63, "label_offset": [-15, 5], "style": "major"},
-      {"name": "Houston", "lat": 29.76, "lon": -95.37, "label_offset": [5, -8], "style": "major"},
+      {"name": "Houston", "lat": 29.76, "lon": -95.37, "label_offset": [10, -14], "style": "major"},
       {"name": "Atlanta", "lat": 33.75, "lon": -84.39, "label_offset": [5, 3], "style": "major"},
-      {"name": "Phoenix", "lat": 33.45, "lon": -112.07, "label_offset": [-15, -8], "style": "major"},
+      {"name": "Phoenix", "lat": 33.45, "lon": -112.07, "label_offset": [-20, -12], "style": "major"},
       {"name": "Toronto", "lat": 43.65, "lon": -79.38, "label_offset": [5, 3], "style": "major"},
       {"name": "Mexico City", "lat": 19.43, "lon": -99.13, "label_offset": [5, -8], "style": "major"},
-      {"name": "Monterrey", "lat": 25.67, "lon": -100.31, "label_offset": [5, 3], "style": "minor"},
-      {"name": "Ciudad Juárez", "lat": 31.69, "lon": -106.42, "label_offset": [-15, 5], "style": "minor"},
-      {"name": "San Antonio", "lat": 29.42, "lon": -98.49, "label_offset": [5, 3], "style": "minor"}
+      {"name": "Monterrey", "lat": 25.67, "lon": -100.31, "label_offset": [-28, -12], "style": "minor"},
+      {"name": "Ciudad Juárez", "lat": 31.69, "lon": -106.42, "label_offset": [-30, -14], "style": "minor"},
+      {"name": "San Antonio", "lat": 29.42, "lon": -98.49, "label_offset": [-30, 8], "style": "minor"}
     ],
     "corridors": [
       {"name": "USMCA Auto Corridor", "waypoints": [[-83.05, 42.33], [-86.0, 36.0], [-100.31, 25.67]], "style": "trade"},
@@ -63,10 +63,10 @@
     "cities": [
       {"name": "Shanghai", "lat": 31.23, "lon": 121.47, "label_offset": [5, 3], "style": "major"},
       {"name": "Beijing", "lat": 39.90, "lon": 116.40, "label_offset": [5, 3], "style": "major"},
-      {"name": "Guangzhou", "lat": 23.13, "lon": 113.26, "label_offset": [-15, -8], "style": "major"},
-      {"name": "Chengdu", "lat": 30.57, "lon": 104.07, "label_offset": [-15, 3], "style": "major"},
-      {"name": "Kunming", "lat": 25.04, "lon": 102.68, "label_offset": [-15, 3], "style": "minor"},
-      {"name": "Nanning", "lat": 22.82, "lon": 108.32, "label_offset": [5, -8], "style": "minor"}
+      {"name": "Guangzhou", "lat": 23.13, "lon": 113.26, "label_offset": [10, -14], "style": "major"},
+      {"name": "Chengdu", "lat": 30.57, "lon": 104.07, "label_offset": [-28, 12], "style": "major"},
+      {"name": "Kunming", "lat": 25.04, "lon": 102.68, "label_offset": [-24, -12], "style": "minor"},
+      {"name": "Nanning", "lat": 22.82, "lon": 108.32, "label_offset": [-10, -20], "style": "minor"}
     ],
     "corridors": [
       {"name": "BRI Southern Corridor", "waypoints": [[102.68, 25.04], [108.32, 22.82], [105.85, 21.03], [100.50, 13.76]], "style": "trade"},
@@ -111,13 +111,13 @@
   },
   "ch11": {
     "cities": [
-      {"name": "Riyadh", "lat": 24.71, "lon": 46.68, "label_offset": [5, 3], "style": "major"},
-      {"name": "Dubai/DIFC", "lat": 25.20, "lon": 55.27, "label_offset": [5, 3], "style": "major"},
-      {"name": "Abu Dhabi", "lat": 24.45, "lon": 54.65, "label_offset": [-20, -8], "style": "major"},
-      {"name": "Doha", "lat": 25.29, "lon": 51.53, "label_offset": [-15, 3], "style": "major"},
-      {"name": "NEOM", "lat": 27.95, "lon": 35.30, "label_offset": [-15, 3], "style": "minor"},
-      {"name": "Masdar City", "lat": 24.43, "lon": 54.62, "label_offset": [5, -10], "style": "minor"},
-      {"name": "Kuwait City", "lat": 29.38, "lon": 47.99, "label_offset": [5, 3], "style": "major"}
+      {"name": "Riyadh", "lat": 24.71, "lon": 46.68, "label_offset": [5, 3], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "Dubai/DIFC", "lat": 25.20, "lon": 55.27, "label_offset": [10, 8], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "Abu Dhabi", "lat": 24.45, "lon": 54.65, "label_offset": [-30, -14], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "Doha", "lat": 25.29, "lon": 51.53, "label_offset": [-22, 10], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "NEOM", "lat": 27.95, "lon": 35.30, "label_offset": [-18, 6], "style": "minor", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "Masdar City", "lat": 24.43, "lon": 54.62, "label_offset": [10, -18], "style": "minor", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "Kuwait City", "lat": 29.38, "lon": 47.99, "label_offset": [10, -12], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}}
     ],
     "energy_zones": [
       {"name": "Ghawar Field", "lat": 25.40, "lon": 49.50},
@@ -127,12 +127,12 @@
   },
   "ch12": {
     "cities": [
-      {"name": "Damascus", "lat": 33.51, "lon": 36.29, "label_offset": [5, 3], "style": "major"},
+      {"name": "Damascus", "lat": 33.51, "lon": 36.29, "label_offset": [12, -16], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
       {"name": "Sanaa", "lat": 15.37, "lon": 44.19, "label_offset": [5, 3], "style": "major"},
       {"name": "Tripoli", "lat": 32.90, "lon": 13.18, "label_offset": [5, 3], "style": "major"},
-      {"name": "Baghdad", "lat": 33.31, "lon": 44.37, "label_offset": [5, -8], "style": "major"},
-      {"name": "Amman", "lat": 31.95, "lon": 35.93, "label_offset": [-15, 3], "style": "minor"},
-      {"name": "Beirut", "lat": 33.89, "lon": 35.50, "label_offset": [-15, 5], "style": "minor"}
+      {"name": "Baghdad", "lat": 33.31, "lon": 44.37, "label_offset": [5, -8], "style": "major", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "Amman", "lat": 31.95, "lon": 35.93, "label_offset": [-28, -16], "style": "minor", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}},
+      {"name": "Beirut", "lat": 33.89, "lon": 35.50, "label_offset": [-32, 10], "style": "minor", "bbox": {"facecolor": "white", "alpha": 0.7, "edgecolor": "none", "pad": 1}}
     ],
     "refugee_flows": [
       {"label": "Syrian refugees", "start": [36.29, 33.51], "end": [35.93, 31.95], "color": "#e41a1c"},

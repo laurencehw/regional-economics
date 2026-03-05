@@ -95,6 +95,7 @@ def plot_provincial_divergence(output_dir: Path, seed: int = 42) -> dict:
         ax.text(yr, coastal[i] + 1500, f"{ratio:.1f}×", fontsize=5.5,
                 ha="center", color="#808080")
 
+    ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
     ax.set_xlabel("Year", fontsize=8)
     ax.set_ylabel("GDP per capita (CNY)", fontsize=8)
     ax.set_title("China Provincial Divergence: Coastal vs. Inland",
@@ -103,7 +104,7 @@ def plot_provincial_divergence(output_dir: Path, seed: int = 42) -> dict:
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
 
-    add_figure_source(fig, "NBS China Statistical Yearbook; calibrated illustration.")
+    add_figure_source(fig, "NBS China Statistical Yearbook. Illustrative; based on patterns in NBS data, not exact reproduction.")
     fig.tight_layout(rect=[0, 0.04, 1, 1])
     paths = save_figure(fig, output_dir, "fig_ch07_thematic_provincial_divergence")
     plt.close(fig)

@@ -88,6 +88,13 @@ Central place theory has had a complicated reception. Its predictions are most a
 
 ### The Classical Legacy
 
+| Theorist | Key Concept | Scale | Modern Relevance |
+|---|---|---|---|
+| Von Thünen (1826) | Land-rent gradient; bid-rent curves | Farm-to-city | Urban land-price models; monocentric city theory (Alonso-Mills-Muth) |
+| Weber (1909) | Transport-cost minimization; material index | Plant/firm | Supply-chain location decisions; weight-losing industries |
+| Christaller (1933) | Central place hierarchy; threshold and range | Settlement system | Retail catchment analysis; service-center planning |
+| Lösch (1940) | Market-area equilibrium; hexagonal tessellation | Regional system | General-equilibrium location theory; spatial competition models |
+
 These three frameworks — Von Thünen's land rent gradient, Weber's transport-cost triangles, Christaller and Lösch's central place hierarchies — define the classical tradition's characteristic mode: location as cost minimization under fixed geography. Each abstracts from scale economies, general equilibrium feedback, and the endogeneity of market formation. They are partial equilibrium models in which geography is a parameter, not an outcome.
 
 Their analytical legacy is permanent. Any serious empirical work on land markets, urban structure, or retail geography still draws on this vocabulary. But the classical tradition was fundamentally unable to explain the biggest regularities of modern spatial economics: why a few locations account for a wildly disproportionate share of economic activity; why regions with no obvious natural advantages can become global centers; and why spatial patterns are so persistent over time. Answering those questions required a different kind of model — one in which geography is endogenous.
@@ -260,6 +267,10 @@ The OECD's **Functional Urban Area (FUA)** methodology applies a similar logic i
 
 ### The Modifiable Areal Unit Problem
 
+{% hint style="warning" %}
+**The Modifiable Areal Unit Problem (MAUP).** Regression results in spatial economics are sensitive to how regions are defined. The same underlying data can yield different coefficient estimates depending on (1) the *scale* of aggregation (county vs. metro vs. commuting zone) and (2) the *shape* of the boundaries (administrative vs. functional). There is no single "correct" fix; the appropriate response is to choose spatial units that match the economic process being modeled and to report robustness checks at alternative aggregations. Any empirical claim about agglomeration, convergence, or spatial spillovers should be evaluated with MAUP sensitivity in mind.
+{% endhint %}
+
 A technical but crucial reason to care about regional definitions is the **Modifiable Areal Unit Problem (MAUP)**, identified by Openshaw (1984) and still one of the most persistent challenges in spatial empirical work. The MAUP has two components:
 
 **The scale effect**: the same underlying spatial pattern produces different coefficients when data are aggregated at different scales. Regressing wages on density at the county level typically yields different estimates than regressing at the metropolitan level or the commuting-zone level, because the aggregation process averages over heterogeneous within-unit variation.
@@ -365,6 +376,13 @@ The OMB definitions serve administrative purposes — they determine which commu
 The OECD's FUA methodology was developed precisely to enable international comparison that sidesteps differences in national administrative structures. The methodology, described in Dijkstra and Poelman (2012), defines a dense urban core using a 1,500 inhabitants per square kilometer threshold applied to 1-km² population grid cells, then adds surrounding municipalities where at least 15 percent of the working population commutes to the core. The result is 1,891 FUAs across 35 OECD countries. Crucially, FUAs are defined using the same algorithmic procedure everywhere, making the London FUA and the Seoul FUA genuinely comparable in a way that Greater London Authority and Seoul Metropolitan Area are not.
 
 Both the OMB and OECD approaches involve trade-offs. Administrative definitions have the advantage of long time series, legal recognition, and operational simplicity. Functional definitions are more theoretically coherent but face practical challenges when administrative data (tax records, employment surveys, census) are not collected at the fine spatial resolution needed to implement them precisely. The measurement institution shapes what we can know about the economy.
+
+| Definition | Agency | Typical Scale | Key Use |
+|---|---|---|---|
+| Metropolitan Statistical Area (MSA) | US OMB | County-based; 50k+ urban core; 25% commuting threshold | Federal grants, BLS/BEA reporting, CPS/ACS geography |
+| Functional Urban Area (FUA) | OECD | 1 km² grid cells; 1,500 pop/km² core; 15% commuting threshold | Cross-country urban comparison across 35 OECD members |
+| NUTS (Nomenclature of Territorial Units) | Eurostat | Three nested levels (NUTS-1/2/3) by population bands | EU Cohesion Policy eligibility, Eurostat regional accounts |
+| Commuting Zone (CZ) | USDA ERS / Tolbert-Sizer | County clusters grouped by commuting flows; covers all US territory | Labor-market analysis; preferred unit in agglomeration research |
 
 ---
 

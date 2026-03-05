@@ -15,14 +15,14 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from figure_utils import (
-    FIGSIZE_CONCEPT, add_figure_source, save_figure, save_summary,
+    FIGSIZE_CONCEPT, FIGSIZE_WIDE, add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir,
 )
 
 
 def plot_gravity_decay(output_dir: Path, seed: int = 42) -> dict:
     """Distance-decay curve with annotated trade zones."""
-    fig, ax = plt.subplots(figsize=FIGSIZE_CONCEPT)
+    fig, ax = plt.subplots(figsize=FIGSIZE_WIDE)
 
     # Gravity model: Trade_ij = G * (GDP_i * GDP_j) / distance^beta
     # Normalize: flow = A / d^beta
@@ -50,7 +50,7 @@ def plot_gravity_decay(output_dir: Path, seed: int = 42) -> dict:
     prev_d = 100
     for zone_d, label, color in zones:
         ax.axvspan(prev_d, zone_d, alpha=0.2, color=color)
-        ax.text((prev_d + zone_d) / 2, 0.85, label, fontsize=6,
+        ax.text((prev_d + zone_d) / 2, 0.85, label, fontsize=7,
                 ha="center", va="top", color="#555555",
                 transform=ax.get_xaxis_transform())
         prev_d = zone_d
@@ -71,7 +71,7 @@ def plot_gravity_decay(output_dir: Path, seed: int = 42) -> dict:
     for dist, city_pair in [(900, "NY–Chicago"), (5500, "NY–London"),
                             (13000, "NY–Tokyo")]:
         ax.axvline(dist, color="#cccccc", linestyle=":", linewidth=0.5)
-        ax.text(dist, 1e-4 * 2, city_pair, fontsize=5, rotation=90,
+        ax.text(dist, 1e-4 * 2, city_pair, fontsize=6, rotation=45,
                 va="bottom", ha="right", color="#808080")
 
     add_figure_source(fig, "Tinbergen (1962); Head & Mayer (2014).")

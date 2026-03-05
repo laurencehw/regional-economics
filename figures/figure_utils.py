@@ -27,19 +27,19 @@ FIGSIZE_WIDE = (8, 5)
 
 # Per-region color palette (matches generate_regional_dashboard.py)
 REGION_COLORS = {
-    "americas":   "#1b9e77",
-    "east_asia":  "#d95f02",
-    "south_asia": "#7570b3",
-    "europe":     "#e7298a",
-    "mena":       "#66a61e",
-    "africa":     "#e6ab02",
+    "americas":   "#5aad8a",
+    "east_asia":  "#d4885a",
+    "south_asia": "#8a83b8",
+    "europe":     "#c76da3",
+    "mena":       "#8fbc8f",
+    "africa":     "#d4b44a",
     "global":     "#666666",
 }
 
 # Qualitative palette for multi-series charts
 QUAL_PALETTE = [
-    "#e41a1c", "#377eb8", "#4daf4a", "#984ea3",
-    "#ff7f00", "#a65628", "#f781bf", "#999999",
+    "#c44e52", "#6a9bc3", "#7dab6e", "#8c7bba",
+    "#dd8452", "#937860", "#da9fc4", "#a0a0a0",
 ]
 
 # Neutral tones for map backgrounds
@@ -268,10 +268,15 @@ def annotate_cities(ax, cities: List[Dict], transform=None):
         fontsize = 7 if style == "major" else 6
 
         ax.scatter(x, y, s=size, c=color, marker=marker, zorder=5)
-        ax.annotate(
-            city["name"], (x, y), xytext=(dx, dy),
+        ann_kwargs = dict(
             textcoords="offset points", fontsize=fontsize,
             ha="left", va="bottom", zorder=6,
+        )
+        if city.get("bbox"):
+            ann_kwargs["bbox"] = city["bbox"]
+        ax.annotate(
+            city["name"], (x, y), xytext=(dx, dy),
+            **ann_kwargs,
         )
 
 
@@ -296,8 +301,9 @@ def annotate_corridors(ax, corridors: List[Dict], transform=None):
         ax.annotate(
             corridor["name"],
             (pts[mid, 0], pts[mid, 1]),
-            fontsize=5, color=color, ha="center", va="bottom",
+            fontsize=6.5, color=color, ha="center", va="bottom",
             fontstyle="italic", zorder=6,
+            bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1),
         )
 
 
@@ -321,15 +327,16 @@ def annotate_arrows(ax, arrows: List[Dict], transform=None):
         )
         mx, my = (x0 + x1) / 2, (y0 + y1) / 2
         if "label" in arrow:
-            ax.text(mx, my, arrow["label"], fontsize=5, color=color,
-                    ha="center", va="bottom", fontstyle="italic", zorder=6)
+            ax.text(mx, my, arrow["label"], fontsize=6.5, color=color,
+                    ha="center", va="bottom", fontstyle="italic", zorder=6,
+                    bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1))
 
 
 # ------------------------------------------------------------------ #
 #  Source note helper
 # ------------------------------------------------------------------ #
 
-def add_source_note(ax, text: str, fontsize: float = 6):
+def add_source_note(ax, text: str, fontsize: float = 7):
     """Place a source attribution note at the bottom of a figure."""
     ax.annotate(
         f"Source: {text}",
@@ -338,7 +345,7 @@ def add_source_note(ax, text: str, fontsize: float = 6):
     )
 
 
-def add_figure_source(fig, text: str, fontsize: float = 6):
+def add_figure_source(fig, text: str, fontsize: float = 7):
     """Place source note at figure bottom (outside axes)."""
     fig.text(0.02, 0.01, f"Source: {text}",
              fontsize=fontsize, color="#808080", ha="left", va="bottom")

@@ -92,7 +92,7 @@ def plot_it_concentration(output_dir: Path, seed: int = 42) -> dict:
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
 
-    add_figure_source(fig, "NASSCOM; RBI state GDP data; calibrated illustration.")
+    add_figure_source(fig, "NASSCOM; RBI state GDP data. Illustrative; based on patterns in NASSCOM and RBI data, not exact reproduction.")
     fig.tight_layout(rect=[0, 0.04, 1, 1])
     paths = save_figure(fig, output_dir, "fig_ch08_thematic_it_concentration")
     plt.close(fig)

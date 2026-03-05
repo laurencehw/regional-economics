@@ -28,15 +28,15 @@ from figure_utils import (
 
 def plot_von_thunen(output_dir: Path, seed: int = 42) -> dict:
     """Concentric land-use rings (left) + bid-rent curves (right)."""
-    fig, (ax_map, ax_rent) = plt.subplots(1, 2, figsize=(FIGSIZE_CONCEPT[0], 4))
+    fig, (ax_map, ax_rent) = plt.subplots(1, 2, figsize=(8, 4))
 
     # Ring parameters: (label, inner_r, outer_r, color)
     rings = [
-        ("Dairy / Market\ngardening", 0.0, 1.0, "#2ca02c"),
-        ("Timber &\nfirewood",       1.0, 1.8, "#8c564b"),
-        ("Intensive\narable",        1.8, 2.8, "#ff7f0e"),
-        ("Extensive\narable",        2.8, 3.8, "#d62728"),
-        ("Ranching /\npasture",      3.8, 5.0, "#9467bd"),
+        ("Dairy / Market\ngardening", 0.0, 1.0, "#7dab6e"),
+        ("Timber &\nfirewood",       1.0, 1.8, "#8c7bba"),
+        ("Intensive\narable",        1.8, 2.8, "#dd8452"),
+        ("Extensive\narable",        2.8, 3.8, "#c44e52"),
+        ("Ranching /\npasture",      3.8, 5.0, "#d4b44a"),
     ]
 
     # Left panel: concentric rings
@@ -45,12 +45,13 @@ def plot_von_thunen(output_dir: Path, seed: int = 42) -> dict:
         ax_map.add_patch(circle)
     # City marker
     ax_map.plot(0, 0, "ko", markersize=8, zorder=5)
-    ax_map.text(0, 0.3, "City", ha="center", va="bottom", fontsize=7,
-                fontweight="bold")
+    ax_map.text(0, 0.55, "City", ha="center", va="bottom", fontsize=7,
+                fontweight="bold",
+                bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=1))
     # Labels on rings
     label_radii = [0.5, 1.4, 2.3, 3.3, 4.4]
     for (label, _, _, _), r in zip(rings, label_radii):
-        ax_map.text(0, -r, label, ha="center", va="center", fontsize=5.5,
+        ax_map.text(0, -r, label, ha="center", va="center", fontsize=7,
                     fontweight="bold")
 
     ax_map.set_xlim(-5.5, 5.5)
@@ -62,11 +63,11 @@ def plot_von_thunen(output_dir: Path, seed: int = 42) -> dict:
     # Right panel: bid-rent curves
     d = np.linspace(0, 5.5, 200)
     curves = [
-        ("Dairy",    10.0, 2.2, "#2ca02c"),
-        ("Timber",    6.0, 1.0, "#8c564b"),
-        ("Intensive", 5.0, 0.7, "#ff7f0e"),
-        ("Extensive", 3.5, 0.4, "#d62728"),
-        ("Pasture",   2.0, 0.2, "#9467bd"),
+        ("Dairy",    10.0, 2.2, "#7dab6e"),
+        ("Timber",    6.0, 1.0, "#8c7bba"),
+        ("Intensive", 5.0, 0.7, "#dd8452"),
+        ("Extensive", 3.5, 0.4, "#c44e52"),
+        ("Pasture",   2.0, 0.2, "#d4b44a"),
     ]
     for label, intercept, slope, color in curves:
         rent = np.maximum(intercept - slope * d, 0)
@@ -156,7 +157,7 @@ def plot_core_periphery(output_dir: Path, seed: int = 42) -> dict:
     ax.set_ylim(-0.05, 1.15)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
-    ax.legend(fontsize=6, loc="center left", frameon=False)
+    ax.legend(fontsize=6, loc="upper left", frameon=False)
 
     add_figure_source(fig, "Krugman (1991); Fujita, Krugman & Venables (1999).")
     fig.tight_layout(rect=[0, 0.03, 1, 1])
