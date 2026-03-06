@@ -63,7 +63,7 @@ The five curated course pathways (Spatial Inequality, Trade/GVCs, Institutions, 
 - ~~AI-ism phrases.~~ Redundant callout text has been deduplicated (Ch. 1, Ch. 15).
 - **Remaining:** Ch. 9, 10, 11 openings could still benefit from stronger empirical hooks. A full AI-ism audit across all chapters would be worthwhile.
 
-### 5. ~~Code Bugs~~ -- RESOLVED
+### 5. ~~Code Bugs~~ -- LARGELY RESOLVED
 CI test failures and review-identified bugs have been fixed. All tests pass.
 - **Remaining minor items:** Verify lab4/lab5 naming confusion is fully cleaned up; confirm duplicate adjacency entries in the VIIRS Africa script have been removed.
 

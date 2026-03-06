@@ -95,37 +95,24 @@ class TestConcentrationIndices:
 
     def test_location_quotient_specialized(self):
         """A region with double the national IT share should have LQ = 2.0."""
+        # 2-region example with non-integer LQs.
         # Region 0: IT/GDP = 20/100 = 0.20
         # Region 1: IT/GDP = 10/100 = 0.10
-        # National: 30/200 = 0.15
+        # National: (20+10)/(100+100) = 30/200 = 0.15
         # LQ_0 = 0.20/0.15 = 4/3, LQ_1 = 0.10/0.15 = 2/3
-        # For a cleaner test: make national average = 0.1, one region = 0.2
-        it_va = np.array([20.0, 10.0, 10.0])
-        total_gdp = np.array([100.0, 100.0, 100.0])
-        # national share = 40/300 = 2/15
-        # region 0 share = 20/100 = 1/5 -> LQ = (1/5)/(2/15) = 15/10 = 1.5
-        # Instead use a simpler setup: one region double, others zero
-        it_va2 = np.array([20.0, 10.0])
-        total_gdp2 = np.array([100.0, 100.0])
-        # national = 30/200 = 0.15
-        # region 0 = 0.20 -> LQ = 0.20/0.15 = 4/3
-        # region 1 = 0.10 -> LQ = 0.10/0.15 = 2/3
-        lq = compute_location_quotients(it_va2, total_gdp2)
+        it_va = np.array([20.0, 10.0])
+        total_gdp = np.array([100.0, 100.0])
+        lq = compute_location_quotients(it_va, total_gdp)
         assert lq[0] == pytest.approx(4.0 / 3.0, abs=1e-10)
         assert lq[1] == pytest.approx(2.0 / 3.0, abs=1e-10)
 
-        # More directly: region with exactly double the national average
-        # national share = (2+1)/(10+10) = 3/20 = 0.15
-        # region 0 share = 2/10 = 0.20; not exactly 2x
-        # Let's construct it explicitly:
-        # national = (a+b)/(c+d); region0 = a/c = 2 * national
-        # a/c = 2*(a+b)/(c+d) => if c=d: a/c = 2*(a+b)/(2c) = (a+b)/c
-        # => a = a+b => b=0
-        it_va3 = np.array([50.0, 0.0])
-        total_gdp3 = np.array([100.0, 100.0])
-        lq3 = compute_location_quotients(it_va3, total_gdp3)
-        assert lq3[0] == pytest.approx(2.0, abs=1e-10)
-        assert lq3[1] == pytest.approx(0.0, abs=1e-10)
+        # Region with exactly double the national average.
+        # With equal GDP and b=0: region 0 share = national * 2.
+        it_va2 = np.array([50.0, 0.0])
+        total_gdp2 = np.array([100.0, 100.0])
+        lq2 = compute_location_quotients(it_va2, total_gdp2)
+        assert lq2[0] == pytest.approx(2.0, abs=1e-10)
+        assert lq2[1] == pytest.approx(0.0, abs=1e-10)
 
 
 # ===================================================================
@@ -290,7 +277,7 @@ class TestMoransI:
         w = self._grid_weight_matrix(n)
         # Average over several draws to reduce variance
         i_values = []
-        for seed in range(100):
+        for _ in range(100):
             y = rng.normal(0, 1, size=n)
             i_val, _ = morans_i(y, w)
             i_values.append(i_val)
@@ -392,8 +379,8 @@ class TestSAR:
     def _row_standardize(w: np.ndarray) -> np.ndarray:
         row_sums = w.sum(axis=1, keepdims=True)
         with np.errstate(divide="ignore", invalid="ignore"):
-            out = np.divide(w, row_sums, where=row_sums > 0)
-        out[np.isnan(out)] = 0.0
+            out = np.zeros_like(w, dtype=float)
+            np.divide(w, row_sums, out=out, where=row_sums > 0)
         return out
 
     @staticmethod

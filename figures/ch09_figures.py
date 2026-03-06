@@ -13,6 +13,7 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 
 from figure_utils import (
     FIGSIZE_MAP, FIGSIZE_WIDE, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
@@ -132,7 +133,6 @@ def plot_eu_convergence_bar(output_dir: Path, seed: int = 42) -> dict:
     ax.spines["right"].set_visible(False)
 
     # Legend
-    from matplotlib.patches import Patch
     legend_items = [Patch(facecolor=club_colors[k], label=club_labels[k])
                     for k in ("core", "periphery", "new_member")]
     ax.legend(handles=legend_items, fontsize=6.5, loc="lower right", frameon=False)

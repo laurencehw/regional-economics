@@ -13,6 +13,7 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 
 from figure_utils import (
     FIGSIZE_MAP, FIGSIZE_WIDE, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
@@ -67,7 +68,6 @@ def plot_conflict_zones_map(output_dir: Path, seed: int = 42) -> dict:
     if ann.get("refugee_flows"):
         annotate_arrows(ax, project_arrows(ann["refugee_flows"], crs), fontsize=6.5)
 
-    from matplotlib.patches import Patch
     legend_items = [
         Patch(facecolor="#d62728", alpha=0.65, label="Active conflict zones"),
         Patch(facecolor="#d4e6f1", alpha=0.4, label="Other MENA"),
@@ -120,7 +120,6 @@ def plot_refugee_displacement_bar(output_dir: Path, seed: int = 42) -> dict:
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
 
-    from matplotlib.patches import Patch
     legend_items = [
         Patch(facecolor=QUAL_PALETTE[0], label="Refugees"),
         Patch(facecolor=QUAL_PALETTE[1], label="Internally displaced (IDPs)"),

@@ -178,7 +178,7 @@ def build_specs(year: int, panel: pd.DataFrame) -> List[Dict[str, object]]:
         candidates = [y for y in all_years if y < year]
         midpoint = candidates[len(candidates) // 2] if candidates else all_years[0]
 
-    all_regions = sorted(panel["region"].unique().tolist())
+    all_regions = sorted(panel["region"].dropna().astype(str).unique().tolist())
     exclude_karnataka = [r for r in all_regions if r != "Karnataka"]
 
     return [
