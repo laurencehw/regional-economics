@@ -190,6 +190,9 @@ The friend-shoring debate has focused overwhelmingly on goods supply chains — 
 
 The same logic applies to platform ecosystems. An Indian software development team that collaborates with US clients through GitHub, communicates via Slack, manages projects on Jira, and deploys on AWS is embedded in an American digital services ecosystem in ways that go far beyond any single contractual relationship. Redirecting these workflows to Chinese or domestically developed alternatives would require simultaneous migration across dozens of interdependent tools — a coordination problem that deters switching even when geopolitical incentives favor it. The implication for the fortress-versus-flexibility debate is that digital services integration, once established, is much harder to undo than goods trade integration. The friend-shoring thesis may be implementable for physical supply chains, but the digital services architecture of the global economy is more deeply entangled than the goods supply chains it increasingly supports.
 
+![Figure 16.2: The servicification trend — services share of GDP, 1990–2023](../figures/fig_ch16_chart_services_share_trend.png)
+*Source: Author's calculations based on World Bank WDI (2023).*
+
 ---
 
 ## 16.5 The Discipline's Frontier: Methods for the Next Generation

@@ -154,6 +154,9 @@ The table rewards careful cross-referencing with the chapters from which its cel
 
 The cross-regional comparison reveals a cruel irony: the regions most exposed to climate risk are, on average, the least equipped to adapt. Sub-Saharan Africa, South Asia, and the MENA conflict states face the most severe physical impacts and have the least institutional, financial, and human capital capacity for adaptation. The developed world faces more moderate physical impacts and has greater adaptive capacity. The climate transition is, in this sense, a spatial inequality amplifier — a mechanism that widens the gap between rich and poor regions through a channel (physical geography) that operates independently of the trade, investment, and institutional channels that conventional development economics focuses on.
 
+![Figure 15.2: Stranded fossil-fuel assets — top 10 countries at risk](../figures/fig_ch15_chart_stranded_assets.png)
+*Source: Author's calculations based on Carbon Tracker Initiative (2023) and IEA World Energy Outlook (2023).*
+
 ---
 
 ## 15.4 Green Industrial Policy as Spatial Policy
