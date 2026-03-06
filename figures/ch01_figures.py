@@ -48,11 +48,12 @@ def plot_von_thunen(output_dir: Path, seed: int = 42) -> dict:
     ax_map.text(0, 0.55, "City", ha="center", va="bottom", fontsize=7,
                 fontweight="bold",
                 bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=1))
-    # Labels on rings
-    label_radii = [0.5, 1.4, 2.3, 3.3, 4.4]
-    for (label, _, _, _), r in zip(rings, label_radii):
-        ax_map.text(0, -r, label, ha="center", va="center", fontsize=7,
-                    fontweight="bold")
+    # Labels on rings — alternate left/right to prevent overlap
+    label_positions = [(0, -0.5), (1.5, -1.4), (0, -2.3), (-1.8, -3.3), (0, -4.4)]
+    for (label, _, _, _), (lx, ly) in zip(rings, label_positions):
+        ax_map.text(lx, ly, label, ha="center", va="center", fontsize=6.5,
+                    fontweight="bold",
+                    bbox=dict(facecolor="white", alpha=0.6, edgecolor="none", pad=1))
 
     ax_map.set_xlim(-5.5, 5.5)
     ax_map.set_ylim(-5.5, 5.5)

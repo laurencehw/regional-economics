@@ -6,7 +6,11 @@
 
 Lagos will be home to roughly 24 million people by 2030 (UN World Urbanization Prospects 2022), placing it among the fifteen largest cities on earth. It already generates approximately 30 percent of Nigeria's GDP (NBS Nigeria 2023). Yet Lagos has no steel mill, no globally competitive automobile plant, no semiconductor fab, and no pharmaceutical complex of international significance. Its economy is overwhelmingly services -- banking, telecommunications, logistics, entertainment, and the vast informal sector that employs most of its workforce.
 
-The standard model of structural transformation -- codified by Lewis (1954) -- assumed urbanization and industrialization were the same process. Workers move from fields to factories; factories generate productivity gains through scale and specialization; productivity gains raise wages; higher wages finance the services that characterize a modern economy. Sub-Saharan Africa has broken this sequence. The region urbanizes at approximately 4 percent per year -- faster than any other region in history at a comparable income level -- but manufacturing's share of GDP has remained flat or declined since the 1990s (World Bank 2021).
+The standard model of structural transformation -- codified by Lewis (1954) -- assumed urbanization and industrialization were the same process. Workers move from fields to factories; factories generate productivity gains through scale and specialization; productivity gains raise wages; higher wages finance the services that characterize a modern economy. Sub-Saharan Africa has broken this sequence. The region urbanizes at approximately 4 percent per year (UN WUP 2022) -- faster than any other region in history at a comparable income level -- but manufacturing's share of GDP has remained flat or declined since the 1990s (World Bank 2021).
+
+{% hint style="info" %}
+**The Lewis Model of Structural Transformation.** W. Arthur Lewis (1954) formalized the two-sector model in which surplus labor in a low-productivity agricultural sector migrates to a high-productivity industrial sector. The key mechanism is that the industrial sector can absorb labor at a constant wage (set by the agricultural subsistence level) while generating profits that are reinvested in further industrial expansion. The model predicts that urbanization and industrialization proceed together --- a prediction that held for Europe, East Asia, and the Americas but has broken down in Sub-Saharan Africa, where urbanization proceeds without the industrial absorption that Lewis assumed.
+{% endhint %}
 
 This chapter argues that the puzzle has an institutional resolution. Urbanization raises productivity only where municipal service capacity and trade-corridor connectivity convert density into lower transaction costs. Where institutional capacity is weak, density scales congestion and informality without generating agglomeration gains. The same process -- rural-urban migration -- produces Silicon Valley in one institutional environment and Lagos's Oshodi Market in another.
 
@@ -54,6 +58,10 @@ African urbanization has no equivalent engine. Without manufacturing employment 
 
 ### The Informal Economy as Urban Equilibrium
 
+{% hint style="info" %}
+**The Informal Economy.** The informal economy comprises all economic activities that operate outside the regulatory framework of the state --- unregistered businesses, untaxed transactions, uncontracted labor. In the African urban context, informality is not a marginal residual but the dominant mode of economic organization, encompassing street vending, artisanal manufacturing, transport services, construction labor, and sophisticated cross-border trading networks. The ILO defines informal employment as work that is not covered by labor legislation, social protection, or income taxation.
+{% endhint %}
+
 The informal economy in African cities is not a transitional phenomenon that will disappear as development proceeds. It is a structural equilibrium — the form that economic activity takes when formal institutions are absent or inaccessible. Chapter 5 documented this logic for Latin America; it applies with even greater force in Africa, where informality rates reach 80–90 percent of non-agricultural employment in many countries (ILO 2023).
 
 The scale of Africa's informality challenge is inseparable from its demographics. The continent's median age is approximately 19 (UN Population Division 2022) — the youngest of any region on earth — and the urbanization pressure is accordingly not merely a structural-transformation problem but a demographic absorption problem: cities must integrate the world's fastest-growing youth cohort at the same time that rural push factors are accelerating arrival rates. The ILO estimates that Sub-Saharan Africa needs to create roughly 12 million new formal-sector jobs per year (ILO 2023) to absorb labor-market entrants; no African economy is remotely approaching that target. The arithmetic is relentless: with formal-sector job creation running at perhaps 3 million per year continent-wide, the remaining 9 million are absorbed entirely by the informal economy. This is why informality rates are not declining even as urbanization accelerates and GDP per capita inches upward — the denominator (new workers) is growing faster than the numerator (formal jobs). The youth bulge will peak around 2050, meaning that the absorption pressure will intensify for another quarter-century before demographics begin to ease.
@@ -63,6 +71,10 @@ The urban informal economy in Africa encompasses an extraordinary range of activ
 This institutional framework is not chaos — it is an adaptation to an environment where formal institutions fail. Contract enforcement in Nigerian courts can take seven years; Alaba's internal dispute resolution takes days. Bank loans require collateral and documentation that informal businesses do not possess; community credit associations lend on the basis of social capital and reputation. Business registration costs time and money and exposes the registrant to extractive taxation; informality preserves autonomy at the cost of growth constraints (informal firms cannot access formal supply chains, formal credit, or government procurement).
 
 The spatial consequence is a dual urban economy that mirrors the dual national economy of Chapter 5: a formal sector (banking, telecommunications, government, large-scale manufacturing) concentrated in specific districts with adequate infrastructure and institutional support, and an informal sector (the rest) distributed throughout the metropolitan area in patterns that reflect social networks, transport routes, and market access rather than zoning or planning.
+
+{% hint style="warning" %}
+**Distress Urbanization vs. Opportunity Urbanization.** Not all rural-urban migration reflects the pull of higher urban wages. In the Sahel and other climate-stressed regions, migration is increasingly driven by the collapse of rural livelihoods --- drought, desertification, conflict --- rather than by urban opportunity. This "distress urbanization" produces different spatial outcomes from opportunity-driven migration: arriving populations are asset-poor, skill-poor, and enter cities at the lowest tier of the informal economy, generating population concentration without productive agglomeration.
+{% endhint %}
 
 ### Climate Migration and the Sahel Urban Push
 
@@ -130,6 +142,10 @@ Lagos succeeds *despite* its institutions, not because of them. The city's econo
 | Binding constraint | Small domestic market; regional integration still shallow | Electricity, port congestion (Apapa), land-title registration (100+ days) |
 
 The comparison confirms the chapter's thesis: density is a necessary but not sufficient condition for agglomeration economies. The institutional environment determines whether density is converted into productivity or into congestion.
+
+{% hint style="success" %}
+**Key Finding: Institutional Capacity Determines Agglomeration.** The Nairobi-Lagos comparison confirms that population density alone does not generate agglomeration economies. Nairobi's agglomeration wage premium (~10--15%) resembles a European secondary city, while Lagos's (<5%) resembles a small African town --- despite Lagos being three times larger. The difference is institutional: reliable electricity, functional transport, and predictable contract enforcement convert density into productivity. Without these preconditions, density scales congestion rather than output.
+{% endhint %}
 
 ### The Digital Services Frontier: Beyond "Low-Productivity Services"
 
@@ -237,7 +253,7 @@ The spatial weight matrix for Lab 6 deserves particular attention because Africa
 
 ## 13.5 The Corridor Dimension
 
-Cities do not exist in isolation. They are nodes in transport networks, and their economic function depends on their connectivity to other nodes — ports, markets, resource sites, and other cities. In Africa, where overland transport costs are the highest in the world (approximately $0.05–0.10 per ton-kilometer compared to $0.01–0.03 in Asia), the location of a city relative to a trade corridor is a primary determinant of its economic viability.
+Cities do not exist in isolation. They are nodes in transport networks, and their economic function depends on their connectivity to other nodes — ports, markets, resource sites, and other cities. In Africa, where overland transport costs are the highest in the world (approximately $0.05–0.10 per ton-kilometer compared to $0.01–0.03 in Asia) (World Bank 2024), the location of a city relative to a trade corridor is a primary determinant of its economic viability.
 
 The "functional corridor" concept — developed by the World Bank's Africa Transport team and by TradeMark Africa — holds that the corridor, not the country, is the natural unit of economic integration in Africa. The Northern Corridor (Mombasa–Kampala–Kigali), the Central Corridor (Dar es Salaam–Dodoma–Kigali), the Abidjan-Lagos Corridor, and the North-South Corridor (Durban–Lusaka–Dar es Salaam) are economic arteries along which trade, investment, and urbanization concentrate. Cities on these corridors — Nairobi, Kampala, Arusha, Lusaka — are integrated into regional and global supply chains. Cities off the corridors — inland towns in the DRC, the Sahel, or Madagascar — are effectively isolated, with transport costs that make manufactured exports uncompetitive and imported inputs unaffordable.
 
@@ -277,7 +293,7 @@ Nigeria's 2014 GDP rebasing is the canonical illustration of how official econom
 
 ## Institutional Spotlight: The Northern Corridor and the Digital Customs Revolution
 
-The Northern Corridor — stretching 1,700 kilometers from the port of Mombasa, Kenya, through Nairobi, across the Ugandan border at Malaba, through Kampala, and onward to Kigali, Rwanda, and Bujumbura, Burundi — is the lifeline of East African trade. It carries roughly 60 percent of the region's imports and exports.
+The Northern Corridor — stretching 1,700 kilometers from the port of Mombasa, Kenya, through Nairobi, across the Ugandan border at Malaba, through Kampala, and onward to Kigali, Rwanda, and Bujumbura, Burundi — is the lifeline of East African trade. It carries roughly 60 percent of the region's imports and exports (NCTTCA 2023).
 
 In 2010, moving a standard container from Mombasa to Kigali took an average of 22 days. Customs clearance at the Kenya-Uganda border (Malaba) alone required 3–4 days, with documentation processed manually, fees collected in cash, and physical inspections conducted on every consignment. The effective trade cost — including bribes, detention fees, and spoilage of perishable goods — exceeded the freight cost itself.
 

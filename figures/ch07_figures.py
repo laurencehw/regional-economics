@@ -82,18 +82,18 @@ def plot_provincial_divergence(output_dir: Path, seed: int = 42) -> dict:
     inland = [v + rng.normal(0, 200) for v in inland]
 
     fig, ax = plt.subplots(figsize=FIGSIZE_THEMATIC)
-    ax.plot(years, coastal, "o-", color="#e41a1c", linewidth=2, markersize=5,
+    ax.plot(years, coastal, "o-", color="#c44e52", linewidth=2, markersize=5,
             label="Coastal provinces")
-    ax.plot(years, inland, "s-", color="#377eb8", linewidth=2, markersize=5,
+    ax.plot(years, inland, "s-", color="#6a9bc3", linewidth=2, markersize=5,
             label="Inland provinces")
 
-    ax.fill_between(years, coastal, inland, alpha=0.08, color="#808080")
+    ax.fill_between(years, coastal, inland, alpha=0.15, color="#808080")
 
-    # Ratio annotation
+    # Ratio annotation — offset dynamically above coastal line
     for i, yr in enumerate(years):
         ratio = coastal[i] / inland[i]
-        ax.text(yr, coastal[i] + 1500, f"{ratio:.1f}×", fontsize=5.5,
-                ha="center", color="#808080")
+        ax.text(yr, coastal[i] + 2500, f"{ratio:.1f}×", fontsize=7,
+                ha="center", color="#555555", fontweight="bold")
 
     ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
     ax.set_xlabel("Year", fontsize=8)

@@ -41,16 +41,16 @@ def plot_gravity_decay(output_dir: Path, seed: int = 42) -> dict:
         flow_norm = flow / flow[0]  # normalize to 1 at minimum distance
         ax.plot(d, flow_norm, color=color, linewidth=1.8, label=label)
 
-    # Annotated distance zones
+    # Annotated distance zones — stagger y-positions to avoid overlap
     zones = [
-        (500,   "Border\ntrade",   "#ffeda0"),
-        (2000,  "Regional\n(EU, NAFTA)", "#d4e6f1"),
-        (8000,  "Inter-\ncontinental", "#f0f0f0"),
+        (500,   "Border\ntrade",   "#ffeda0", 0.92),
+        (2000,  "Regional\n(EU, NAFTA)", "#d4e6f1", 0.85),
+        (8000,  "Inter-\ncontinental", "#f0f0f0", 0.92),
     ]
     prev_d = 100
-    for zone_d, label, color in zones:
+    for zone_d, label, color, y_pos in zones:
         ax.axvspan(prev_d, zone_d, alpha=0.2, color=color)
-        ax.text((prev_d + zone_d) / 2, 0.85, label, fontsize=7,
+        ax.text((prev_d + zone_d) / 2, y_pos, label, fontsize=7,
                 ha="center", va="top", color="#555555",
                 transform=ax.get_xaxis_transform())
         prev_d = zone_d
@@ -63,7 +63,7 @@ def plot_gravity_decay(output_dir: Path, seed: int = 42) -> dict:
     ax.set_yscale("log")
     ax.set_xlim(100, 20000)
     ax.set_ylim(1e-4, 1.2)
-    ax.legend(fontsize=6, loc="upper right", frameon=False)
+    ax.legend(fontsize=6.5, loc="center right", frameon=False)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
 
@@ -71,8 +71,9 @@ def plot_gravity_decay(output_dir: Path, seed: int = 42) -> dict:
     for dist, city_pair in [(900, "NY–Chicago"), (5500, "NY–London"),
                             (13000, "NY–Tokyo")]:
         ax.axvline(dist, color="#cccccc", linestyle=":", linewidth=0.5)
-        ax.text(dist, 1e-4 * 2, city_pair, fontsize=6, rotation=45,
-                va="bottom", ha="right", color="#808080")
+        ax.text(dist, 1e-4 * 2, city_pair, fontsize=6.5, rotation=45,
+                va="bottom", ha="right", color="#808080",
+                bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=0.5))
 
     add_figure_source(fig, "Tinbergen (1962); Head & Mayer (2014).")
     fig.tight_layout(rect=[0, 0.04, 1, 1])
