@@ -150,6 +150,9 @@ Smaller countries face a dilemma: they need the hegemons' capital, technology, a
 
 The hegemon analysis above is incomplete without North Africa's two largest economies. Morocco has developed automotive value chains — anchored by Renault-Nissan's Tangier plant and Stellantis's Kenitra facility — that produce approximately 535,000 vehicles in 2023 (OICA 2024), with capacity targets approaching 700,000, making it Africa's largest automobile manufacturer and a potential anchor for continental automotive supply chains under AfCFTA rules of origin. Egypt's manufacturing base in textiles, petrochemicals, and construction materials, combined with its Suez Canal logistics position, gives it a natural hub role linking African, Asian, and European trade. Neither country fits the Sub-Saharan hegemon typology: Morocco's industrial integration runs north to Europe, not south into ECOWAS; Egypt's trade orientation is Mediterranean and Gulf-facing. But the AfCFTA's transformative potential lies precisely in creating manufacturing linkages between North and Sub-Saharan Africa — the intra-African trade in manufactured goods that Section 14.1 identifies as 60 percent below gravity-model predictions. If Moroccan automotive components or Egyptian building materials flow south under AfCFTA preferences, the agreement will have achieved something no existing REC has delivered: productive integration across the Saharan divide.
 
+![Figure 14.2: Intra-regional trade shares — Africa in comparative perspective](../figures/fig_ch14_chart_intra_africa_trade.png)
+*Source: Author's calculations based on UNCTAD (2023) and WTO Regional Trade Agreements database.*
+
 ---
 
 ## 14.4 Functional Corridors: The Unit That Works

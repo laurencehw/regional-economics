@@ -175,6 +175,9 @@ The spatial consequences in Africa are predictable from the institutional framew
 
 The policy implication is not that digital government is bad — the Rwandan evidence clearly shows its potential — but that its deployment must be paired with the analog investments that make digital access meaningful: charging stations, community service centers, digital literacy training, and vernacular-language interfaces. The spatial digital divide will otherwise reproduce, and in some cases widen, the institutional gradients that determine which African cities generate productive urbanization and which do not.
 
+![Figure 13.2: Urbanization without industrialization — SSA vs. Asian comparators](../figures/fig_ch13_chart_urbanization_scatter.png)
+*Source: Author's calculations based on World Bank WDI (2023) and UN World Urbanization Prospects (2022).*
+
 ---
 
 ## 13.3 Night-Lights as Measurement Innovation

@@ -118,6 +118,9 @@ The economic cost of this human capital destruction can be estimated, at least i
 
 The long-run spatial consequences of education disruption are severe. Human capital is the foundation of the agglomeration economies described in Chapter 1: knowledge spillovers, labor market pooling, and innovation all depend on a workforce with adequate education and skills. A generation of children who miss five, eight, or twelve years of schooling — the "lost generation" — will lack the human capital needed to participate in the knowledge economy, even if peace is restored and physical infrastructure is rebuilt. The spatial implication is that conflict-affected regions will be trapped in low-skill, low-productivity equilibria for decades after the fighting ends, because the human capital destruction is slower to reverse than the physical destruction.
 
+![Figure 12.2: MENA displacement crisis — refugees and IDPs by country](../figures/fig_ch12_chart_refugee_displacement.png)
+*Source: Author's calculations based on UNHCR Global Trends (2023) and IDMC GRID (2023).*
+
 ---
 
 ## 12.4 The Climate-Conflict Nexus

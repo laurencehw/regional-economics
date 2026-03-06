@@ -15,7 +15,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from figure_utils import (
-    FIGSIZE_MAP, LAND_COLOR, WATER_COLOR, BORDER_COLOR, REGION_COLORS,
+    FIGSIZE_MAP, FIGSIZE_WIDE, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
+    REGION_COLORS, QUAL_PALETTE,
     add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
     annotate_cities, annotate_corridors, project_cities, project_corridors,
@@ -69,6 +70,42 @@ def plot_afcfta_corridors_map(output_dir: Path, seed: int = 42) -> dict:
     return {"figure": "fig_ch14_map_afcfta_corridors", "type": "map", **paths}
 
 
+# ------------------------------------------------------------------ #
+#  Figure: Intra-regional trade shares by trading bloc
+# ------------------------------------------------------------------ #
+
+def plot_intra_africa_trade_bar(output_dir: Path, seed: int = 42) -> dict:
+    """Bar chart of intra-regional trade shares for major blocs."""
+    blocs = ["EU", "NAFTA/USMCA", "ASEAN", "Mercosur", "AfCFTA"]
+    shares = [60, 40, 25, 15, 15]
+
+    fig, ax = plt.subplots(figsize=FIGSIZE_WIDE)
+    colors = QUAL_PALETTE[:len(blocs)]
+    x_pos = np.arange(len(blocs))
+    bars = ax.bar(x_pos, shares, color=colors, edgecolor="white", linewidth=0.5,
+                  width=0.6)
+
+    ax.set_xticks(x_pos)
+    ax.set_xticklabels(blocs, fontsize=8)
+    ax.set_ylabel("Intra-regional trade share (%)", fontsize=8)
+    ax.set_title("Intra-Regional Trade Shares: Africa in Comparative Perspective",
+                 fontsize=9, fontweight="bold")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.set_ylim(0, 75)
+
+    # Value labels on bars
+    for bar, val in zip(bars, shares):
+        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1.5,
+                f"{val}%", ha="center", va="bottom", fontsize=7.5, fontweight="bold")
+
+    add_figure_source(fig, "UNCTAD (2023); AfCFTA Secretariat; WTO Regional Trade Agreements database.")
+    fig.tight_layout(rect=[0, 0.04, 1, 1])
+    paths = save_figure(fig, output_dir, "fig_ch14_chart_intra_africa_trade")
+    plt.close(fig)
+    return {"figure": "fig_ch14_chart_intra_africa_trade", "type": "bar", **paths}
+
+
 def _placeholder(output_dir, stem):
     fig, ax = plt.subplots(figsize=FIGSIZE_MAP)
     ax.set_facecolor(WATER_COLOR)
@@ -88,7 +125,8 @@ def main():
     args = parser.parse_args()
     output_dir = get_output_dir(args)
 
-    summaries = [plot_afcfta_corridors_map(output_dir, args.seed)]
+    summaries = [plot_afcfta_corridors_map(output_dir, args.seed),
+                  plot_intra_africa_trade_bar(output_dir, args.seed)]
     combined = {"chapter": 14, "figures": summaries, "smoke_test": args.run_smoke_test}
     save_summary(output_dir, "ch14_figures", combined)
     print("Chapter 14 figures complete.")
