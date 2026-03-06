@@ -86,6 +86,10 @@ Regions that were bypassed by ISI — the Brazilian Northeast, southern Mexico, 
 
 ### Premature Deindustrialization and the Services Transition
 
+{% hint style="warning" %}
+**Premature Deindustrialization.** Rodrik (2016) documented that many developing countries are deindustrializing at income levels far below those at which today's rich countries began their own manufacturing decline. In Latin America, manufacturing's share of GDP peaked at 20--25% in the 1980s, compared to 35--40% in the East Asian economies at comparable income levels. The workers displaced from manufacturing often move into low-productivity informal services rather than the high-productivity services that characterize rich-country post-industrial economies.
+{% endhint %}
+
 The conventional growth-economics story assumes that countries (and regions) transition smoothly from agriculture to manufacturing to services, with each stage generating productivity gains that sustain income growth. Latin America's premature deindustrialization disrupts this narrative because the services sector that absorbs deindustrialized workers in LAC is not the high-productivity services sector of the rich-country model. It is overwhelmingly low-productivity informal services: retail, personal services, transport, and food preparation.
 
 Diao, McMillan, and Rodrik (2019) quantified this for Africa (see Chapter 13) but the LAC patterns are similar. In Brazil, the reallocation of labor from manufacturing to services between 1995 and 2019 was *growth-reducing* on net: workers moved from higher-productivity manufacturing to lower-productivity services, and the structural change component of growth was negative. The only exceptions were regions where the services transition was into formal, knowledge-intensive activities — São Paulo (financial services, IT), Santiago (financial services, mining engineering), Bogotá (business services, digital platforms).
@@ -131,6 +135,10 @@ By contrast, La Guajira — where a single coal mine (Cerrejón) generates most 
 The sub-national resource curse has a specific spatial signature that the tools of Chapter 3-A can detect. If resource booms strengthen institutions in some regions (through fiscal revenue, investment in education, regulatory capacity) and weaken them in others (through rent capture, corruption, migration of skilled workers to the boom zone), then the spatial autocorrelation of institutional quality should increase during commodity booms. This is testable: compute Moran's $$I$$ on a sub-national institutional quality index (formal employment share, fiscal capacity) at different points in the commodity cycle and check whether clustering increases during booms.
 
 ### The Institutional Channel: Why Resource Revenue Doesn't Build Institutions
+
+{% hint style="info" %}
+**The Sub-National Resource Curse.** The resource curse operates differently at the regional level than at the national level. Nationally, the mechanism is macroeconomic (Dutch Disease, exchange rate appreciation). Sub-nationally, the mechanism is institutional: resource rents sever the fiscal bargain between state and citizens, reducing accountability and weakening bureaucratic capacity. Regions with pre-existing institutional quality (e.g., Medellín) can absorb resource revenue productively; regions without it (e.g., La Guajira) experience the curse in its most acute form.
+{% endhint %}
 
 The standard resource-curse story emphasizes macroeconomic channels: Dutch Disease, commodity price volatility, and the "government spending effect" (resource revenue finances public consumption rather than investment). But at the sub-national level, the most damaging channel is institutional: resource rents weaken the fiscal bargain between the state and citizens.
 

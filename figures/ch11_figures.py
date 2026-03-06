@@ -38,12 +38,12 @@ def plot_mena_energy_map(output_dir: Path, seed: int = 42) -> dict:
 
     def color_fn(iso):
         if iso in gcc_iso:
-            return "#66a61e"
+            return "#7dab6e"
         return "#d4e6f1"
 
     mena["_color"] = mena["iso3"].map(color_fn)
 
-    fig, ax = plt.subplots(figsize=FIGSIZE_MAP)
+    fig, ax = plt.subplots(figsize=(8, 6))  # wider than default for Gulf label density
     try:
         mena_proj = mena.to_crs(PROJECTIONS["mena"])
         ctx_proj = context.to_crs(PROJECTIONS["mena"])
@@ -66,25 +66,27 @@ def plot_mena_energy_map(output_dir: Path, seed: int = 42) -> dict:
     if ann.get("cities"):
         annotate_cities(ax, project_cities(ann["cities"], crs))
 
-    # Energy field markers (project to map CRS)
+    # Energy field markers (project to map CRS) — alternate offsets to reduce overlap
     energy_zones = ann.get("energy_zones", [])
     if energy_zones:
         proj_zones = project_cities(energy_zones, crs)  # same lon/lat structure
-        for field in proj_zones:
-            ax.plot(field["lon"], field["lat"], "^", color="#d62728",
-                    markersize=8, zorder=5, alpha=0.8)
+        offset_cycle = [(5, 5), (-5, 8), (5, -8), (-5, -5), (8, 3), (-8, 3)]
+        for idx, field in enumerate(proj_zones):
+            ax.plot(field["lon"], field["lat"], "^", color="#c44e52",
+                    markersize=7, zorder=5, alpha=0.8)
+            dx, dy = offset_cycle[idx % len(offset_cycle)]
             ax.annotate(field["name"], (field["lon"], field["lat"]),
                         fontsize=6, ha="left", va="bottom",
-                        xytext=(3, 3), textcoords="offset points",
-                        color="#d62728",
-                        bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=1))
+                        xytext=(dx, dy), textcoords="offset points",
+                        color="#c44e52",
+                        bbox=dict(facecolor="white", alpha=0.85, edgecolor="none", pad=1))
 
     from matplotlib.patches import Patch
     from matplotlib.lines import Line2D
     legend_items = [
-        Patch(facecolor="#66a61e", alpha=0.6, label="GCC states"),
+        Patch(facecolor="#7dab6e", alpha=0.6, label="GCC states"),
         Patch(facecolor="#d4e6f1", alpha=0.6, label="Other MENA"),
-        Line2D([0], [0], marker="^", color="#d62728", linestyle="",
+        Line2D([0], [0], marker="^", color="#c44e52", linestyle="",
                markersize=6, label="Major oil/gas fields"),
     ]
     ax.legend(handles=legend_items, fontsize=5.5, loc="lower left", frameon=False)

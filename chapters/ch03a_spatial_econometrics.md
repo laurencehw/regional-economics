@@ -211,6 +211,10 @@ This sequence provides a disciplined approach to model selection that avoids dat
 
 ## 3A.3 Impact Decomposition: Direct, Indirect, and Total Effects
 
+{% hint style="warning" %}
+**Do Not Interpret Spatial Model Coefficients Like OLS.** In a SAR model, the coefficient $$\beta_k$$ is *not* the marginal effect of $$x_k$$ on $$y$$. Because of the spatial feedback loop ($$y$$ depends on $$Wy$$, which depends on $$y$$), a change in $$x_k$$ in region $$i$$ affects region $$i$$ directly *and* all other regions indirectly through the spatial multiplier $$(I - \rho W)^{-1}$$. Always report direct, indirect, and total effects (LeSage and Pace 2009) rather than raw coefficients.
+{% endhint %}
+
 ### The Interpretation Problem
 
 In a standard OLS regression, the coefficient $$\beta_k$$ on covariate $$x_k$$ has a simple interpretation: a one-unit increase in $$x_{ki}$$ is associated with a $$\beta_k$$-unit change in $$y_i$$, holding other covariates constant. In a SAR or SDM, this interpretation is wrong.

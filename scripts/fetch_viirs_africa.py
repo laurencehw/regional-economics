@@ -194,7 +194,6 @@ def synthetic_adjacency(africa_iso3: List[str]) -> pd.DataFrame:
         ("DZA", "ESH",   42), ("EGY", "LBY", 1115), ("EGY", "SDN", 1276),
         ("LBY", "TUN",  461), ("LBY", "SDN",  382), ("LBY", "TCD", 1055),
         ("LBY", "NER",  354), ("MAR", "ESH",  443), ("MAR", "MRT",   47),
-        ("TUN", "LBY",  461),
         # West Africa
         ("BEN", "BFA",  306), ("BEN", "NER", 277), ("BEN", "NGA", 773),
         ("BEN", "TGO",  651), ("BFA", "GHA",  549), ("BFA", "CIV", 545),
@@ -206,8 +205,7 @@ def synthetic_adjacency(africa_iso3: List[str]) -> pd.DataFrame:
         ("LBR", "SLE",  306), ("MRT", "MLI",  2237), ("MRT", "SEN",  742),
         ("MRT", "ESH",  1564), ("MLI", "NER", 838), ("MLI", "SEN",  419),
         ("NER", "NGA",  1497), ("NER", "TCD", 1175), ("NGA", "CMR", 1975),
-        ("SEN", "GNB",  338), ("SEN", "MLI", 419), ("SLE", "GIN", 794),
-        ("TGO", "GHA",  877),
+        ("SEN", "GNB",  338),
         # Central Africa
         ("CAF", "CMR",  901), ("CAF", "TCD", 1556), ("CAF", "COD", 1577),
         ("CAF", "COG",  467), ("CAF", "SDN",  174), ("CAF", "SSD",  990),
@@ -222,7 +220,7 @@ def synthetic_adjacency(africa_iso3: List[str]) -> pd.DataFrame:
         ("ERI", "SDN",  605), ("ETH", "KEN",  861), ("ETH", "SOM", 1600),
         ("ETH", "SDN", 1606), ("ETH", "SSD",  883), ("KEN", "SOM",  682),
         ("KEN", "SSD",  232), ("KEN", "TZA",  775), ("KEN", "UGA",  814),
-        ("RWA", "TZA",  222), ("RWA", "UGA",  172), ("SOM", "ETH", 1600),
+        ("RWA", "TZA",  222), ("RWA", "UGA",  172),
         ("SDN", "SSD", 2158), ("SDN", "TCD", 1403), ("SSD", "UGA",  475),
         ("TZA", "MOZ",  840), ("TZA", "UGA",  396),
         ("TZA", "ZMB",  338),

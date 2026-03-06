@@ -56,6 +56,7 @@ def plot_north_america_map(output_dir: Path, seed: int = 42) -> dict:
 
     # Shade Rust Belt / Sun Belt regions from annotations
     ann = load_annotations("ch04")
+    crs = PROJECTIONS["americas"]
     if ann.get("regions"):
         try:
             from figure_utils import get_admin1_boundaries
@@ -84,7 +85,6 @@ def plot_north_america_map(output_dir: Path, seed: int = 42) -> dict:
         except Exception:
             pass  # graceful fallback if admin-1 data unavailable
 
-    crs = PROJECTIONS["americas"]
     if ann.get("cities"):
         annotate_cities(ax, project_cities(ann["cities"], crs))
     if ann.get("corridors"):
@@ -113,14 +113,15 @@ def plot_manufacturing_shift(output_dir: Path, seed: int = 42) -> dict:
     sun_belt += rng.normal(0, 0.2, len(years))
 
     fig, ax = plt.subplots(figsize=FIGSIZE_THEMATIC)
-    ax.plot(years, rust_belt, "o-", color="#d62728", linewidth=1.8,
+    ax.plot(years, rust_belt, "o-", color="#c44e52", linewidth=1.8,
             markersize=4, label="Rust Belt")
-    ax.plot(years, sun_belt, "s-", color="#ff7f0e", linewidth=1.8,
+    ax.plot(years, sun_belt, "s-", color="#dd8452", linewidth=1.8,
             markersize=4, label="Sun Belt")
 
     ax.fill_between(years, rust_belt, sun_belt, alpha=0.08, color="#808080")
     ax.axvline(1994, color="#808080", linestyle=":", linewidth=0.8, alpha=0.6)
-    ax.text(1994.5, 26, "NAFTA\n(1994)", fontsize=6, color="#808080")
+    ax.text(1995.5, 29, "NAFTA\n(1994)", fontsize=6.5, color="#808080",
+            va="bottom")
 
     ax.set_xlabel("Year", fontsize=8)
     ax.set_ylabel("Manufacturing employment share (%)", fontsize=8)

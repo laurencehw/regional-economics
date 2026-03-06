@@ -1,4 +1,4 @@
-"""Fetch ACLED country-year event counts for Lab 4 using OAuth credentials.
+"""Fetch ACLED country-year event counts for Lab 5 using OAuth credentials.
 
 This path is resilient when account permissions expose counts but restrict row-level data.
 Credentials must be provided via environment variables:
@@ -37,7 +37,7 @@ COUNTRY_TO_ISO3 = {
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Fetch ACLED country-year event counts for Lab 4")
+    parser = argparse.ArgumentParser(description="Fetch ACLED country-year event counts for Lab 5")
     parser.add_argument(
         "--countries",
         default="Egypt,Iraq,Jordan,Lebanon,Libya,Morocco,Saudi Arabia,Syria,Tunisia,Yemen",
@@ -50,12 +50,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--password-env", default="ACLED_PASSWORD")
     parser.add_argument(
         "--output-csv",
-        default="data/processed/lab4/acled_lab4_country_year_counts_2018_2025_2026-02-23.csv",
+        default="data/processed/lab5/acled_lab5_country_year_counts_2018_2025_2026-02-23.csv",
         help="Output CSV path",
     )
     parser.add_argument(
         "--metadata-json",
-        default="data/raw/metadata/acled_lab4_country_year_counts_2018_2025_2026-02-23.json",
+        default="data/raw/metadata/acled_lab5_country_year_counts_2018_2025_2026-02-23.json",
         help="Metadata JSON path",
     )
     return parser.parse_args()

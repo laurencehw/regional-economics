@@ -54,7 +54,11 @@ Now add multiple crops, each with different values, labor requirements, and tran
 
 *Source: Von Thünen (1826); stylized illustration.*
 
-What Von Thünen gave regional economics was not a specific prediction about agricultural rings — most of those have long since been disrupted by railroads, refrigeration, and global commodity markets. He gave it a conceptual architecture: **land rent is the capitalized value of location**, and location's value is determined by proximity to markets and the costs of overcoming distance. Every model of urban form built since — the monocentric city model, hedonic housing price regressions, commercial property valuation — is an elaboration of this architecture.
+{% hint style="info" %}
+**Von Thünen's Core Insight.** Land rent is the capitalized value of location, and location's value is determined by proximity to markets and the costs of overcoming distance. Every model of urban form built since --- the monocentric city model, hedonic housing price regressions, commercial property valuation --- is an elaboration of this architecture.
+{% endhint %}
+
+What Von Thünen gave regional economics was not a specific prediction about agricultural rings — most of those have long since been disrupted by railroads, refrigeration, and global commodity markets. He gave it a conceptual architecture that has proved remarkably durable.
 
 The framework still appears in contemporary urban economics almost intact. Alonso (1964) and Mills (1967) translated Von Thünen's agricultural rings into an urban model: households trade off housing space (cheaper at the periphery) against commuting costs (higher at the periphery), and the equilibrium bid-rent gradient generates the systematic pattern of density and land prices observed in virtually every major city. The same logic — proximity to the center commands a premium — explains why a square meter in Midtown Manhattan costs one hundred times more than a square meter in rural upstate New York. Distance from a market is not merely a fact of geography; it is a mechanism of economic allocation.
 
@@ -159,6 +163,10 @@ $$
 
 where $$\tau_S$$ is the **sustain point** (above which agglomeration cannot be maintained) and $$\tau_B$$ is the **break point** (below which the symmetric equilibrium is unstable). In the range $$\tau_B < \tau < \tau_S$$, both the symmetric equilibrium and the agglomerated equilibrium are locally stable. Which one the economy reaches depends on initial conditions and history.
 
+{% hint style="success" %}
+**Multiple Equilibria and History Dependence.** The NEG core--periphery model's deepest result is that two regions with identical fundamentals can end up in radically different spatial configurations depending on initial conditions. This means history is not incidental --- it is structural. Policy interventions can potentially shift an economy from one equilibrium to another, but only if they are large enough to push the system past its break point.
+{% endhint %}
+
 This **multiple equilibria** property is the model's deepest result. Two regions with identical fundamentals — same technology, same preferences, same factor endowments — can end up in radically different spatial configurations simply because of where they started. History is not incidental; it is structural. The North of England became an industrial heartland in the nineteenth century because it had coal and reached the manufacturing equilibrium first. Its deindustrialization in the late twentieth century reflects not a change in fundamentals (the coal was still there, largely) but a shift in transport costs, technology, and the configuration of global value chains that made the previously stable agglomerated equilibrium unsustainable.
 
 ### The Bifurcation Diagram and the "Bell-Shaped" Regional Inequality
@@ -189,7 +197,11 @@ In a celebrated passage in *Principles of Economics* (1890), Alfred Marshall des
 
 > "When an industry has thus chosen a locality for itself, it is likely to stay there long; so great are the advantages which people following the same skilled trade get from near neighbourhood to one another. The mysteries of the trade become no mysteries; but are as it were in the air, children learn many of them unconsciously."
 
-This "something in the air" observation haunted regional economists for a century. It was clearly real — Silicon Valley exists, as does the City of London, as does the fashion cluster around Milan's Corso Vittorio Emanuele — but it was not a mechanism. Duranton and Puga (2004) provided the mechanism, organizing Marshall's intuition into three distinct micro-foundations: **sharing**, **matching**, and **learning**. These three mechanisms are now the standard framework for analyzing agglomeration economies, and understanding them is prerequisite to evaluating any policy that tries to create, preserve, or transplant a cluster.
+{% hint style="info" %}
+**The Marshallian Trinity.** Marshall (1890) observed that clustered industries benefit from "something in the air" --- but this was not a mechanism. Duranton and Puga (2004) formalized Marshall's intuition into three distinct micro-foundations: **sharing** (fixed costs, intermediate inputs, labor-market risk), **matching** (better worker-firm matches through thicker markets), and **learning** (knowledge spillovers through proximity). These three mechanisms are now the standard framework for analyzing agglomeration economies.
+{% endhint %}
+
+This "something in the air" observation haunted regional economists for a century. It was clearly real — Silicon Valley exists, as does the City of London, as does the fashion cluster around Milan's Corso Vittorio Emanuele — but it was not a mechanism. Duranton and Puga (2004) provided the mechanism, and understanding their formalization is prerequisite to evaluating any policy that tries to create, preserve, or transplant a cluster.
 
 ### Sharing
 

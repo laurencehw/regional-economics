@@ -40,37 +40,37 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build Lab 5 MENA estimation-ready panel")
     parser.add_argument(
         "--acled-events-csv",
-        default="data/external/acled/acled_lab4_mena_2018_2025_2026-02-23.csv",
+        default="data/external/acled/acled_lab5_mena_2018_2025_2026-02-23.csv",
         help="ACLED event-level CSV path",
     )
     parser.add_argument(
         "--acled-counts-csv",
-        default="data/processed/lab5/acled_lab4_country_year_counts_2018_2025_2026-02-23.csv",
+        default="data/processed/lab5/acled_lab5_country_year_counts_2018_2025_2026-02-23.csv",
         help="Optional ACLED country-year counts CSV path (used if present)",
     )
     parser.add_argument(
         "--wdi-outcome-csv",
-        default="data/raw/wdi/wdi_lab4_mena_outcome_long_2000_2024_2026-02-23.csv",
+        default="data/raw/wdi/wdi_lab5_mena_outcome_long_2000_2024_2026-02-23.csv",
         help="WDI long-format outcome CSV path",
     )
     parser.add_argument(
         "--unhcr-mapped-csv",
-        default="data/processed/lab5/unhcr_lab4_controls_mena_2000_2024_2026-02-23.csv",
+        default="data/processed/lab5/unhcr_lab5_controls_mena_2000_2024_2026-02-23.csv",
         help="UNHCR mapped control CSV path",
     )
     parser.add_argument(
         "--acled-country-year-csv",
-        default="data/processed/lab5/acled_lab4_country_year_2018_2025_2026-02-23.csv",
+        default="data/processed/lab5/acled_lab5_country_year_2018_2025_2026-02-23.csv",
         help="Output path for ACLED country-year aggregates",
     )
     parser.add_argument(
         "--panel-output-csv",
-        default="data/processed/lab5/lab4_mena_estimation_panel_2000_2024_2026-02-23.csv",
+        default="data/processed/lab5/lab5_mena_estimation_panel_2000_2024_2026-02-23.csv",
         help="Output path for estimation-ready panel",
     )
     parser.add_argument(
         "--metadata-json",
-        default="data/raw/metadata/lab4_mena_panel_build_2026-02-23.json",
+        default="data/raw/metadata/lab5_mena_panel_build_2026-02-23.json",
         help="Build metadata JSON path",
     )
     return parser.parse_args()
@@ -207,8 +207,9 @@ def build_panel(unhcr_mapped_csv: Path, wdi_outcome_csv: Path, acled_country_yea
         "idps",
         "total_displaced",
         "acled_period_flag",
-        "source_note",
     ]
+    if "source_note" in panel.columns:
+        cols.append("source_note")
     return panel[cols].sort_values(["iso3", "year"]).reset_index(drop=True)
 
 

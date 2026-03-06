@@ -53,7 +53,7 @@ def plot_conflict_zones_map(output_dir: Path, seed: int = 42) -> dict:
     ctx_proj.plot(ax=ax, color=LAND_COLOR, edgecolor=BORDER_COLOR, linewidth=0.3)
     for cv in mena_proj["_color"].unique():
         subset = mena_proj[mena_proj["_color"] == cv]
-        alpha = 0.5 if cv == "#d62728" else 0.4
+        alpha = 0.65 if cv == "#d62728" else 0.4
         subset.plot(ax=ax, color=cv, edgecolor=BORDER_COLOR,
                     linewidth=0.5, alpha=alpha)
 
@@ -64,11 +64,11 @@ def plot_conflict_zones_map(output_dir: Path, seed: int = 42) -> dict:
     if ann.get("cities"):
         annotate_cities(ax, project_cities(ann["cities"], crs))
     if ann.get("refugee_flows"):
-        annotate_arrows(ax, project_arrows(ann["refugee_flows"], crs), fontsize=8)
+        annotate_arrows(ax, project_arrows(ann["refugee_flows"], crs), fontsize=6.5)
 
     from matplotlib.patches import Patch
     legend_items = [
-        Patch(facecolor="#d62728", alpha=0.5, label="Active conflict zones"),
+        Patch(facecolor="#d62728", alpha=0.65, label="Active conflict zones"),
         Patch(facecolor="#d4e6f1", alpha=0.4, label="Other MENA"),
     ]
     ax.legend(handles=legend_items, fontsize=5.5, loc="lower left", frameon=False)
