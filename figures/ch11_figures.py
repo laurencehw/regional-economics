@@ -86,7 +86,7 @@ def plot_mena_energy_map(output_dir: Path, seed: int = 42) -> dict:
     legend_items = [
         Patch(facecolor="#7dab6e", alpha=0.6, label="GCC states"),
         Patch(facecolor="#d4e6f1", alpha=0.6, label="Other MENA"),
-        Line2D([0], [0], marker="^", color="#d62728", linestyle="",
+        Line2D([0], [0], marker="^", color="#c44e52", linestyle="",
                markersize=6, label="Major oil/gas fields"),
     ]
     ax.legend(handles=legend_items, fontsize=5.5, loc="lower left", frameon=False)
