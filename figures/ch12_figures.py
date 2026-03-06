@@ -13,9 +13,11 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 
 from figure_utils import (
-    FIGSIZE_MAP, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
+    FIGSIZE_MAP, FIGSIZE_WIDE, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
+    QUAL_PALETTE,
     add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
     annotate_cities, annotate_arrows, project_cities, project_arrows,
@@ -66,7 +68,6 @@ def plot_conflict_zones_map(output_dir: Path, seed: int = 42) -> dict:
     if ann.get("refugee_flows"):
         annotate_arrows(ax, project_arrows(ann["refugee_flows"], crs), fontsize=6.5)
 
-    from matplotlib.patches import Patch
     legend_items = [
         Patch(facecolor="#d62728", alpha=0.65, label="Active conflict zones"),
         Patch(facecolor="#d4e6f1", alpha=0.4, label="Other MENA"),
@@ -78,6 +79,58 @@ def plot_conflict_zones_map(output_dir: Path, seed: int = 42) -> dict:
     paths = save_figure(fig, output_dir, "fig_ch12_map_conflict_zones")
     plt.close(fig)
     return {"figure": "fig_ch12_map_conflict_zones", "type": "map", **paths}
+
+
+# ------------------------------------------------------------------ #
+#  Figure: Refugee and IDP displacement — top 10 MENA populations
+# ------------------------------------------------------------------ #
+
+def plot_refugee_displacement_bar(output_dir: Path, seed: int = 42) -> dict:
+    """Horizontal bar chart of top 10 MENA displacement populations."""
+    data = [
+        ("Syria (refugees)",       6.8),
+        ("Yemen (IDPs)",           4.5),
+        ("Syria (IDPs)",           6.9),
+        ("Iraq (IDPs)",            1.2),
+        ("Libya (IDPs)",           0.8),
+        ("Palestine (refugees)",   5.9),
+        ("Sudan (IDPs)",           3.8),
+        ("Iraq (refugees)",        0.3),
+        ("Yemen (refugees)",       0.1),
+        ("Libya (refugees)",       0.1),
+    ]
+    # Sort by magnitude
+    data.sort(key=lambda x: x[1])
+
+    names = [d[0] for d in data]
+    values = [d[1] for d in data]
+
+    # Color by type
+    colors = [QUAL_PALETTE[0] if "refugee" in n.lower() else QUAL_PALETTE[1]
+              for n in names]
+
+    fig, ax = plt.subplots(figsize=FIGSIZE_WIDE)
+    y_pos = np.arange(len(names))
+    ax.barh(y_pos, values, color=colors, edgecolor="white", linewidth=0.5)
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(names, fontsize=7)
+    ax.set_xlabel("Displaced population (millions)", fontsize=8)
+    ax.set_title("MENA Displacement Crisis: Refugees and IDPs by Country",
+                 fontsize=9, fontweight="bold")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+
+    legend_items = [
+        Patch(facecolor=QUAL_PALETTE[0], label="Refugees"),
+        Patch(facecolor=QUAL_PALETTE[1], label="Internally displaced (IDPs)"),
+    ]
+    ax.legend(handles=legend_items, fontsize=6.5, loc="lower right", frameon=False)
+
+    add_figure_source(fig, "UNHCR Global Trends (2023); IDMC GRID (2023).")
+    fig.tight_layout(rect=[0, 0.04, 1, 1])
+    paths = save_figure(fig, output_dir, "fig_ch12_chart_refugee_displacement")
+    plt.close(fig)
+    return {"figure": "fig_ch12_chart_refugee_displacement", "type": "bar", **paths}
 
 
 def _placeholder(output_dir, stem):
@@ -99,7 +152,8 @@ def main():
     args = parser.parse_args()
     output_dir = get_output_dir(args)
 
-    summaries = [plot_conflict_zones_map(output_dir, args.seed)]
+    summaries = [plot_conflict_zones_map(output_dir, args.seed),
+                  plot_refugee_displacement_bar(output_dir, args.seed)]
     combined = {"chapter": 12, "figures": summaries, "smoke_test": args.run_smoke_test}
     save_summary(output_dir, "ch12_figures", combined)
     print("Chapter 12 figures complete.")

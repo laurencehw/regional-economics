@@ -184,6 +184,9 @@ The spatial economics literature has engaged seriously with this diagnosis. McCa
 
 The UK government's post-Brexit "Levelling Up" agenda, which promised to direct public investment toward the north and midlands, was an explicit acknowledgment that spatial inequality had become a political crisis. The 2022 Levelling Up White Paper proposed twelve "missions" — from improving educational attainment to expanding broadband to dispersing R&D spending — but the program's implementation has been uneven, its funding modest relative to the scale of the challenge, and the fundamental structural centralisation of the UK state has not been reformed. The comparison to Chapter 4's analysis of the US Rust Belt is instructive: both the UK and the US have confronted the political consequences of spatially concentrated deindustrialization, and both have responded with place-based initiatives (Levelling Up, Opportunity Zones) that operate at a scale far smaller than the structural forces they are designed to counteract.
 
+![Figure 10.2: Youth unemployment — Europe's North-South divergence, 2008 vs 2023](../figures/fig_ch10_chart_youth_unemployment.png)
+*Source: Author's calculations based on Eurostat Labour Force Survey (2008, 2023). Age 15–24.*
+
 ---
 
 ## Data in Depth: The Geography of Discontent — Mapping Leave Vote Shares Against Economic Indicators

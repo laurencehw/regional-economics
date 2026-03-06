@@ -128,42 +128,42 @@ def test_ch08_figures_smoke(tmp_path, run_cmd):
 
 def test_ch09_figures_smoke(tmp_path, run_cmd):
     summary, pngs = _run_figure_script(tmp_path, run_cmd, "ch09")
-    assert len(summary["figures"]) == 1
+    assert len(summary["figures"]) == 2
 
 
 def test_ch10_figures_smoke(tmp_path, run_cmd):
     summary, pngs = _run_figure_script(tmp_path, run_cmd, "ch10")
-    assert len(summary["figures"]) == 1
+    assert len(summary["figures"]) == 2
 
 
 def test_ch11_figures_smoke(tmp_path, run_cmd):
     summary, pngs = _run_figure_script(tmp_path, run_cmd, "ch11")
-    assert len(summary["figures"]) == 1
+    assert len(summary["figures"]) == 2
 
 
 def test_ch12_figures_smoke(tmp_path, run_cmd):
     summary, pngs = _run_figure_script(tmp_path, run_cmd, "ch12")
-    assert len(summary["figures"]) == 1
+    assert len(summary["figures"]) == 2
 
 
 def test_ch13_figures_smoke(tmp_path, run_cmd):
     summary, pngs = _run_figure_script(tmp_path, run_cmd, "ch13")
-    assert len(summary["figures"]) == 1
+    assert len(summary["figures"]) == 2
 
 
 def test_ch14_figures_smoke(tmp_path, run_cmd):
     summary, pngs = _run_figure_script(tmp_path, run_cmd, "ch14")
-    assert len(summary["figures"]) == 1
+    assert len(summary["figures"]) == 2
 
 
 def test_ch15_figures_smoke(tmp_path, run_cmd):
     summary, pngs = _run_figure_script(tmp_path, run_cmd, "ch15")
-    assert len(summary["figures"]) == 1
+    assert len(summary["figures"]) == 2
 
 
 def test_ch16_figures_smoke(tmp_path, run_cmd):
     summary, pngs = _run_figure_script(tmp_path, run_cmd, "ch16")
-    assert len(summary["figures"]) == 1
+    assert len(summary["figures"]) == 2
 
 
 # ------------------------------------------------------------------ #
