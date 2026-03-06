@@ -15,7 +15,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from figure_utils import (
-    FIGSIZE_MAP, LAND_COLOR, WATER_COLOR, BORDER_COLOR, REGION_COLORS,
+    FIGSIZE_MAP, FIGSIZE_WIDE, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
+    REGION_COLORS, QUAL_PALETTE,
     add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
     annotate_cities, project_cities,
@@ -95,6 +96,49 @@ def plot_north_south_map(output_dir: Path, seed: int = 42) -> dict:
     return {"figure": "fig_ch10_map_north_south", "type": "map", **paths}
 
 
+# ------------------------------------------------------------------ #
+#  Figure: Youth unemployment — North vs South, 2008 vs 2023
+# ------------------------------------------------------------------ #
+
+def plot_youth_unemployment_bar(output_dir: Path, seed: int = 42) -> dict:
+    """Grouped bar chart: youth unemployment rates 2008 vs 2023 for 8 EU countries."""
+    countries = ["Germany", "Netherlands", "France", "Ireland",
+                 "Spain", "Greece", "Italy", "Portugal"]
+    rates_2008 = [10.4, 5.3, 18.6, 12.7, 24.5, 21.9, 21.2, 16.7]
+    rates_2023 = [5.8, 8.2, 17.2, 10.0, 28.4, 26.1, 22.7, 20.2]
+
+    x = np.arange(len(countries))
+    width = 0.35
+
+    fig, ax = plt.subplots(figsize=FIGSIZE_WIDE)
+    ax.bar(x - width / 2, rates_2008, width, label="2008",
+           color=QUAL_PALETTE[1], edgecolor="white", linewidth=0.5)
+    ax.bar(x + width / 2, rates_2023, width, label="2023",
+           color=QUAL_PALETTE[0], edgecolor="white", linewidth=0.5)
+
+    ax.set_xticks(x)
+    ax.set_xticklabels(countries, fontsize=7, rotation=25, ha="right")
+    ax.set_ylabel("Youth unemployment rate (%, age 15–24)", fontsize=8)
+    ax.set_title("Youth Unemployment: Europe's North-South Divergence",
+                 fontsize=9, fontweight="bold")
+    ax.legend(fontsize=7, frameon=False)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+
+    # Divider between North and South groups
+    ax.axvline(3.5, color="#808080", linestyle=":", linewidth=0.8, alpha=0.5)
+    ax.text(1.5, max(rates_2023) + 2, "North / Core", fontsize=6.5,
+            color="#808080", ha="center")
+    ax.text(5.5, max(rates_2023) + 2, "South / Periphery", fontsize=6.5,
+            color="#808080", ha="center")
+
+    add_figure_source(fig, "Eurostat Labour Force Survey (2008, 2023). Age 15\u201324.")
+    fig.tight_layout(rect=[0, 0.04, 1, 1])
+    paths = save_figure(fig, output_dir, "fig_ch10_chart_youth_unemployment")
+    plt.close(fig)
+    return {"figure": "fig_ch10_chart_youth_unemployment", "type": "bar", **paths}
+
+
 def _placeholder(output_dir, stem):
     fig, ax = plt.subplots(figsize=FIGSIZE_MAP)
     ax.set_facecolor(WATER_COLOR)
@@ -114,7 +158,8 @@ def main():
     args = parser.parse_args()
     output_dir = get_output_dir(args)
 
-    summaries = [plot_north_south_map(output_dir, args.seed)]
+    summaries = [plot_north_south_map(output_dir, args.seed),
+                  plot_youth_unemployment_bar(output_dir, args.seed)]
     combined = {"chapter": 10, "figures": summaries, "smoke_test": args.run_smoke_test}
     save_summary(output_dir, "ch10_figures", combined)
     print("Chapter 10 figures complete.")

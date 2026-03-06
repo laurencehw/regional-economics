@@ -15,7 +15,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from figure_utils import (
-    FIGSIZE_MAP, LAND_COLOR, WATER_COLOR, BORDER_COLOR, REGION_COLORS,
+    FIGSIZE_MAP, FIGSIZE_WIDE, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
+    REGION_COLORS, QUAL_PALETTE,
     add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
     annotate_cities, project_cities,
@@ -98,6 +99,62 @@ def plot_mena_energy_map(output_dir: Path, seed: int = 42) -> dict:
     return {"figure": "fig_ch11_map_mena_energy", "type": "map", **paths}
 
 
+# ------------------------------------------------------------------ #
+#  Figure: GCC diversification scatter — oil rents vs non-oil GDP
+# ------------------------------------------------------------------ #
+
+def plot_gdp_diversification_scatter(output_dir: Path, seed: int = 42) -> dict:
+    """Scatter plot of GCC states: oil rents vs non-oil GDP share."""
+    # Data: (country, oil_rents_%_gdp, non_oil_gdp_share_%, population_millions)
+    gcc_data = [
+        ("Saudi Arabia", 23.0, 57.0, 36.0),
+        ("UAE",           8.0, 74.0, 10.0),
+        ("Qatar",        15.0, 60.0,  2.9),
+        ("Kuwait",       42.0, 40.0,  4.3),
+        ("Oman",         27.0, 54.0,  4.6),
+        ("Bahrain",      10.0, 78.0,  1.5),
+    ]
+
+    names = [d[0] for d in gcc_data]
+    oil_rents = [d[1] for d in gcc_data]
+    non_oil = [d[2] for d in gcc_data]
+    pop = [d[3] for d in gcc_data]
+
+    fig, ax = plt.subplots(figsize=FIGSIZE_WIDE)
+    scatter = ax.scatter(oil_rents, non_oil,
+                         s=[p * 25 for p in pop],
+                         c=QUAL_PALETTE[:len(names)],
+                         alpha=0.75, edgecolors="white", linewidths=0.8,
+                         zorder=3)
+
+    for i, name in enumerate(names):
+        ax.annotate(name, (oil_rents[i], non_oil[i]),
+                    fontsize=7, ha="left", va="bottom",
+                    xytext=(6, 4), textcoords="offset points")
+
+    ax.set_xlabel("Oil rents (% of GDP)", fontsize=8)
+    ax.set_ylabel("Non-oil GDP share (%)", fontsize=8)
+    ax.set_title("GCC Diversification Progress: Oil Dependence vs. Non-Oil Economy",
+                 fontsize=9, fontweight="bold")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.set_xlim(0, 50)
+    ax.set_ylim(30, 90)
+
+    # Size legend
+    for sz_val, sz_label in [(5, "5M"), (20, "20M"), (35, "35M")]:
+        ax.scatter([], [], s=sz_val * 25, c="#808080", alpha=0.4,
+                   edgecolors="white", label=f"Pop. {sz_label}")
+    ax.legend(fontsize=6.5, loc="upper right", frameon=False, title="Population",
+              title_fontsize=7)
+
+    add_figure_source(fig, "World Bank WDI (2023); national statistical offices. Bubble size = population.")
+    fig.tight_layout(rect=[0, 0.04, 1, 1])
+    paths = save_figure(fig, output_dir, "fig_ch11_chart_gdp_diversification")
+    plt.close(fig)
+    return {"figure": "fig_ch11_chart_gdp_diversification", "type": "scatter", **paths}
+
+
 def _placeholder(output_dir, stem):
     fig, ax = plt.subplots(figsize=FIGSIZE_MAP)
     ax.set_facecolor(WATER_COLOR)
@@ -117,7 +174,8 @@ def main():
     args = parser.parse_args()
     output_dir = get_output_dir(args)
 
-    summaries = [plot_mena_energy_map(output_dir, args.seed)]
+    summaries = [plot_mena_energy_map(output_dir, args.seed),
+                  plot_gdp_diversification_scatter(output_dir, args.seed)]
     combined = {"chapter": 11, "figures": summaries, "smoke_test": args.run_smoke_test}
     save_summary(output_dir, "ch11_figures", combined)
     print("Chapter 11 figures complete.")

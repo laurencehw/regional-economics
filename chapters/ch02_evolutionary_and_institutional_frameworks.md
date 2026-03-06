@@ -72,6 +72,27 @@ The second mechanism is **cultural legitimacy**. Informal institutions — norms
 
 The empirical record of institutional persistence is deep and geographically broad. Putnam (1993) showed that the density of civic associations in late-nineteenth-century Italian regions predicted regional government performance a century later — tracing the institutional divergence between northern communes and the hierarchical Mezzogiorno back to medieval political structures. Becker and Woessmann (2009) documented persistent human-capital effects of the Protestant Reformation in Prussian regions. Redding and Sturm (2008) exploited Germany's division and reunification to show that market-access shocks create spatial economic patterns that persist long after the shock is removed. These cases — and the Latin American institutional legacies examined in Chapter 5 — confirm that path dependence operates through distributional conflict, cultural legitimacy, and coordination failure simultaneously.
 
+#### Worked Example: Tracing Path Dependence in Two Coal Regions
+
+The Ruhr Valley (Germany) and the Donbas (Ukraine) provide an instructive paired comparison for understanding how path dependence operates through the three mechanisms identified above — distributional conflict, cultural legitimacy, and coordination failure — and how institutional environments determine whether a window of opportunity is successfully exploited.
+
+Both regions entered the postwar era as massive coal-and-steel complexes at the heart of their respective national economies. Both employed hundreds of thousands of workers in vertically integrated heavy industry. Both faced the same structural challenge from the 1960s onward: declining demand for coal, rising competition from lower-cost producers, and the secular shift of advanced economies toward services and knowledge-intensive manufacturing. The divergence in their trajectories is almost entirely institutional.
+
+| Dimension | Ruhr (Germany) | Donbas (Ukraine) |
+|---|---|---|
+| **1960s baseline** | ~600,000 coal/steel workers; region produces ~65% of West German steel output; Krupp, Thyssen, Mannesmann dominate | ~350 mines; ~1 million coal/steel workers; region produces ~30% of Soviet steel; centrally planned mono-industrial complex |
+| **Institutional environment** | Federal democratic system; independent judiciary; corporatist labor relations (IG Metall, works councils); Länder fiscal autonomy; Sparkassen regional banking | Soviet command economy; no independent judiciary or property rights; Party-directed labor allocation; no subnational fiscal autonomy; no private capital |
+| **1980s-90s transition** | Aggressive *Strukturwandel*: state-coordinated mine closures with generous social plans; founding of five new universities (Ruhr-Universität Bochum 1962, TU Dortmund 1968, Universität Duisburg-Essen, etc.); IBA Emscher Park (1989-1999) converts industrial brownfields to cultural/ecological infrastructure; Technologiepark Dortmund seeds IT sector; logistics hubs exploit central location | Post-1991 Soviet collapse: mines privatized through opaque voucher schemes; oligarchic capture (Akhmetov, Pinchuk groups control steel/coal assets); institutional vacuum — no functioning property rights regime, no independent courts, no social safety net for displaced workers; miners' strikes (1993, 1996) suppressed or co-opted |
+| **Political economy of adjustment** | Distributional conflict *managed*: IG Metall negotiated phased closures; federal/Land co-financing of retraining and early retirement; coal subsidies declined gradually (RAG Stiftung endowment model from 2007); new university graduates created constituency for post-industrial economy | Distributional conflict *entrenched*: oligarchs captured rents from underpriced assets; workers dependent on mine-owners for housing, heating, wages; no independent civic organizations to mobilize alternative coalitions; regional political machines aligned with extractive interests |
+| **Cultural legitimacy** | Industrial heritage reframed: Zollverein Coal Mine becomes UNESCO World Heritage Site (2001); "industrial culture" narrative legitimizes transition; civic associations and Bürgerinitiativen provide horizontal trust networks | Soviet industrial identity persists: coal mining retains cultural prestige as "heroic labor"; no alternative narrative of regional identity emerges; vertical patron-client relationships dominate civic life; low interpersonal trust outside kinship networks |
+| **2020s outcome** | GDP per capita ~€38,000 (below German average but above EU median); diversified economy: logistics, IT, health services, higher education, cultural tourism; last hard-coal mine closed 2018; population stable | Conflict zone from 2014; GDP per capita (pre-conflict) ~€2,500; economy remains coal/steel dependent where operational; massive population displacement; institutional capacity destroyed by war; pre-conflict trajectory was continued mono-industrial decline |
+
+**Interpretation through the three mechanisms.** The Ruhr case illustrates path dependence that was *redirected* through coordinated institutional intervention at a critical juncture. The distributional conflict between coal incumbents and reform coalitions was managed through corporatist bargaining — the same institutional infrastructure that had organized industrial relations during the growth period was repurposed to manage decline. Cultural legitimacy was actively reconstructed: the industrial heritage narrative allowed the region to honor its coal past while embracing a post-coal future. Coordination failure was overcome through state investment in universities and technology parks that created new focal points for economic activity, breaking the coordination equilibrium in which all actors remained locked into the declining sector because no single actor could profitably exit alone.
+
+The Donbas case illustrates path dependence that was *reinforced* by institutional failure. The post-Soviet critical juncture — potentially a window of opportunity comparable to the Ruhr's 1960s-1980s transition period — was captured by distributional incumbents (oligarchs) who had both the incentive and the capacity to maintain extractive arrangements. No corporatist bargaining infrastructure existed to manage the distributional conflict of transition. No civic associational culture existed to generate the horizontal trust needed for collective action by workers or small businesses. No independent judiciary existed to enforce property rights that might have attracted diversifying investment. The coordination failure was total: in the absence of credible institutional commitments, no rational investor would sink capital into non-extractive activities, and no worker would invest in retraining for industries that did not exist. The path-dependent equilibrium held until it was shattered not by institutional reform but by armed conflict — the most destructive possible form of institutional discontinuity.
+
+The comparison underscores the chapter's central argument: path dependence is not deterministic. The same structural challenge (coal decline) produced radically different outcomes because the institutional environments differed in their capacity to manage distributional conflict, reconstruct cultural legitimacy, and overcome coordination failure. The Ruhr's advantages were not geographic or resource-based — they were institutional: a functioning democratic state, corporatist bargaining, fiscal federalism, and the political will to invest in long-horizon institutional transformation.
+
 ### Windows of Opportunity: When Path Dependence Breaks
 
 Path dependence is strong but not absolute. Three mechanisms can open "windows of opportunity" for institutional change: **technological discontinuities** that render existing institutions obsolete (the coal-to-electricity transition); **exogenous political shocks** that break distributional lock-in (the East Asian land reforms analyzed in Chapter 6); and **institutional reform crises** where the costs of existing arrangements become politically unsustainable (the Asian financial crisis, EU accession conditionality). The key insight is that windows are rare and time-limited — institutions are most malleable immediately after a shock, before new incumbent interests consolidate. Chapter 6 develops this framework in detail through the lens of East Asia's semiconductor industry, where successive technological paradigm shifts created windows that institutionally prepared regions (Korea, Taiwan) seized while others could not.
@@ -113,6 +134,110 @@ The product space framework emphasizes capability distance between products. The
 **Unrelated variety**: a regional economy that is diversified across industries with entirely different knowledge bases. A region with textile manufacturing, financial services, and food processing has unrelated variety — the sectors are technologically distant. Diversification provides portfolio risk reduction (a shock to textiles doesn't hurt banking) but limited dynamic spillovers.
 
 Frenken et al.'s empirical finding, using Dutch regional data, is that related variety drives employment growth while unrelated variety provides stability (reducing unemployment volatility). This distinction has become foundational in evolutionary economic geography: the relatedness of a region's industrial mix, not its specialization or diversity per se, predicts its growth and adaptation trajectory.
+
+#### Worked Example: Computing Related Variety from Regional Employment Data
+
+To make the related variety concept concrete, consider a hypothetical NUTS-2 region — call it "Zuid-Brabant" — for which we have employment data classified by 4-digit SBI (Standaard Bedrijfsindeling) industry codes, nested within 2-digit sectors. The region has total employment of 100,000 workers distributed across six 2-digit sectors and fifteen 4-digit subsectors, as shown in the table below.
+
+| 2-digit sector ($$S_g$$) | 4-digit subsector ($$s_i$$) | Employment | Share of total ($$p_i$$) |
+|---|---|---|---|
+| **28 — Machinery** | 2811 Engines & turbines | 8,000 | 0.080 |
+| | 2822 Lifting equipment | 5,000 | 0.050 |
+| | 2899 Other special-purpose machinery | 7,000 | 0.070 |
+| **29 — Motor vehicles** | 2910 Motor vehicle manufacturing | 12,000 | 0.120 |
+| | 2932 Parts & accessories | 8,000 | 0.080 |
+| **30 — Other transport equip.** | 3011 Shipbuilding | 3,000 | 0.030 |
+| | 3030 Aerospace manufacturing | 5,000 | 0.050 |
+| **62 — IT services** | 6201 Computer programming | 10,000 | 0.100 |
+| | 6202 IT consultancy | 7,000 | 0.070 |
+| | 6209 Other IT services | 3,000 | 0.030 |
+| **72 — Scientific R&D** | 7211 Biotech R&D | 6,000 | 0.060 |
+| | 7219 Other natural science R&D | 4,000 | 0.040 |
+| **46 — Wholesale trade** | 4651 Wholesale of computers | 8,000 | 0.080 |
+| | 4669 Wholesale of other machinery | 9,000 | 0.090 |
+| | 4690 Non-specialized wholesale | 5,000 | 0.050 |
+| **Total** | | **100,000** | **1.000** |
+
+**Step 1: Compute total entropy (H).** Total entropy measures the overall diversity of the region's industrial mix across all 4-digit subsectors. Using Shannon entropy:
+
+$$H = \sum_{i=1}^{15} p_i \ln\left(\frac{1}{p_i}\right)$$
+
+Plugging in each subsector's employment share:
+
+$$H = 0.08 \ln(12.5) + 0.05 \ln(20) + 0.07 \ln(14.29) + 0.12 \ln(8.33) + 0.08 \ln(12.5)$$
+$$\quad + 0.03 \ln(33.33) + 0.05 \ln(20) + 0.10 \ln(10) + 0.07 \ln(14.29) + 0.03 \ln(33.33)$$
+$$\quad + 0.06 \ln(16.67) + 0.04 \ln(25) + 0.08 \ln(12.5) + 0.09 \ln(11.11) + 0.05 \ln(20)$$
+
+Computing term by term and summing:
+
+$$H \approx 2.636$$
+
+For reference, maximum entropy with 15 equally sized subsectors would be $$\ln(15) \approx 2.708$$, so this region is close to maximum diversity — the employment distribution is fairly even across subsectors.
+
+**Step 2: Compute between-group entropy H_b (unrelated variety).** Between-group entropy measures the diversity of employment across the six 2-digit sectors, treating each sector as a single unit. First, compute each sector's aggregate employment share ($$P_g$$):
+
+| 2-digit sector | Aggregate share ($$P_g$$) |
+|---|---|
+| 28 — Machinery | 0.200 |
+| 29 — Motor vehicles | 0.200 |
+| 30 — Other transport equip. | 0.080 |
+| 62 — IT services | 0.200 |
+| 72 — Scientific R&D | 0.100 |
+| 46 — Wholesale trade | 0.220 |
+
+$$H_b = \sum_{g=1}^{6} P_g \ln\left(\frac{1}{P_g}\right)$$
+
+$$H_b = 0.20 \ln(5) + 0.20 \ln(5) + 0.08 \ln(12.5) + 0.20 \ln(5) + 0.10 \ln(10) + 0.22 \ln(4.55)$$
+
+$$H_b \approx 0.322 + 0.322 + 0.202 + 0.322 + 0.230 + 0.333 = 1.731$$
+
+This is the **unrelated variety** of the region. It captures the extent to which the region's employment is spread across technologically distinct macro-sectors. The maximum possible value with six sectors would be $$\ln(6) \approx 1.792$$, so unrelated variety is high — the region is not dominated by any single macro-sector.
+
+**Step 3: Compute within-group entropy H_w (related variety).** Within-group entropy measures the diversity of 4-digit subsectors *within* each 2-digit sector, then aggregates across sectors weighted by each sector's employment share. For each sector $$g$$, define the conditional shares $$p_{i|g} = p_i / P_g$$ and compute the within-sector entropy:
+
+$$H_g = \sum_{i \in S_g} \frac{p_i}{P_g} \ln\left(\frac{P_g}{p_i}\right)$$
+
+For **sector 28 (Machinery)**, $$P_g = 0.20$$:
+- Conditional shares: 0.08/0.20 = 0.40, 0.05/0.20 = 0.25, 0.07/0.20 = 0.35
+- $$H_{28} = 0.40 \ln(2.5) + 0.25 \ln(4) + 0.35 \ln(2.857) \approx 0.366 + 0.347 + 0.367 = 1.080$$
+
+For **sector 29 (Motor vehicles)**, $$P_g = 0.20$$:
+- Conditional shares: 0.12/0.20 = 0.60, 0.08/0.20 = 0.40
+- $$H_{29} = 0.60 \ln(1.667) + 0.40 \ln(2.5) \approx 0.307 + 0.366 = 0.673$$
+
+For **sector 30 (Other transport)**, $$P_g = 0.08$$:
+- Conditional shares: 0.03/0.08 = 0.375, 0.05/0.08 = 0.625
+- $$H_{30} = 0.375 \ln(2.667) + 0.625 \ln(1.6) \approx 0.368 + 0.294 = 0.662$$
+
+For **sector 62 (IT services)**, $$P_g = 0.20$$:
+- Conditional shares: 0.10/0.20 = 0.50, 0.07/0.20 = 0.35, 0.03/0.20 = 0.15
+- $$H_{62} = 0.50 \ln(2) + 0.35 \ln(2.857) + 0.15 \ln(6.667) \approx 0.347 + 0.367 + 0.285 = 0.999$$
+
+For **sector 72 (Scientific R&D)**, $$P_g = 0.10$$:
+- Conditional shares: 0.06/0.10 = 0.60, 0.04/0.10 = 0.40
+- $$H_{72} = 0.60 \ln(1.667) + 0.40 \ln(2.5) \approx 0.307 + 0.366 = 0.673$$
+
+For **sector 46 (Wholesale trade)**, $$P_g = 0.22$$:
+- Conditional shares: 0.08/0.22 = 0.364, 0.09/0.22 = 0.409, 0.05/0.22 = 0.227
+- $$H_{46} = 0.364 \ln(2.75) + 0.409 \ln(2.444) + 0.227 \ln(4.4) \approx 0.368 + 0.366 + 0.337 = 1.071$$
+
+Now compute the weighted sum:
+
+$$H_w = \sum_{g=1}^{6} P_g \cdot H_g = 0.20(1.080) + 0.20(0.673) + 0.08(0.662) + 0.20(0.999) + 0.10(0.673) + 0.22(1.071)$$
+
+$$H_w \approx 0.216 + 0.135 + 0.053 + 0.200 + 0.067 + 0.236 = 0.907$$
+
+**Step 4: Verify the decomposition.** A key property of the entropy decomposition is that total entropy equals the sum of between-group and within-group entropy:
+
+$$H = H_b + H_w = 1.731 + 0.907 = 2.638$$
+
+This matches our directly computed $$H \approx 2.636$$ (the small discrepancy is rounding error), confirming the decomposition.
+
+**Interpretation.** In the Frenken et al. framework, $$H_w = 0.907$$ is the region's **related variety** — the degree to which employment is diversified across technologically related subsectors within the same 2-digit sector. A region with high related variety is expected to generate more knowledge spillovers between firms because workers, engineers, and managers in closely related subsectors share tacit knowledge, technical vocabulary, and problem-solving heuristics. When machinists move between engine manufacturing and lifting equipment, when IT programmers rotate between consulting and software development, they carry knowledge across firm and subsector boundaries. These Jacobian externalities — cross-industry knowledge recombination — are the mechanism through which related variety drives employment growth.
+
+The region's **unrelated variety** ($$H_b = 1.731$$) captures the extent of diversification across technologically distant sectors. This provides portfolio insurance: a demand shock to motor vehicles does not directly affect IT services or wholesale trade. Unrelated variety does not generate knowledge spillovers — there is little that a shipbuilder can learn from a wholesale trader — but it stabilizes regional employment against sector-specific shocks.
+
+For Zuid-Brabant, the ratio $$H_w / H \approx 0.34$$ indicates that about one-third of the region's total industrial diversity comes from within-sector variety (related variety) and two-thirds from between-sector variety (unrelated variety). Compared to Frenken et al.'s Dutch regional averages, this region has moderately high related variety — consistent with its concentration of manufacturing subsectors that share metalworking, engineering, and precision-machining capabilities. The policy implication is that Zuid-Brabant's industrial mix is well positioned for knowledge-driven growth: the related variety within its machinery, vehicles, and IT clusters provides the recombinant potential for innovation. The risk, as discussed below in the relatedness trap, is that this potential is only realized if the related subsectors are on an ascending rather than declining technological trajectory.
 
 Neffke, Henning, and Boschma (2011) pushed the analysis further using Swedish plant-level data. They tracked industry entries into and exits from 81 Swedish functional regions from 1969 to 2002 and asked whether industries that entered or survived were systematically related to the industries already present. The answer is yes, and strongly so: industries that are relatedly diversified relative to a region's existing portfolio are much more likely to establish successfully, and plants in related industries are more likely to survive. The relatedness gradient is not just a statistical regularity at the country level — it operates at the plant level in regional economies, governing which new activities can be seeded from existing capability stocks.
 
@@ -201,6 +326,79 @@ $$
 where $$\Delta RV_{rt}$$ is the change in related variety in region $$r$$ between periods $$t-1$$ and $$t$$, $$IQ_{r,t-1}$$ is lagged institutional quality, $$\ln Y_{r,t-1}$$ is lagged GDP per capita, $$\mu_r$$ is a region fixed effect, and $$\gamma_t$$ is a period fixed effect. Consistent estimates of $$\alpha > 0$$ would provide evidence that institutional quality facilitates capability recombination — the mechanism through which institutional thickness converts agglomeration into structural upgrading.
 
 **Caveat.** Institutional quality is potentially endogenous to economic outcomes: wealthier regions may invest more in institutional quality, rather than causality running from institutions to income. Instruments used in the cross-regional literature include deep historical variables (Romanization, medieval university presence, Protestant Reformation exposure) and geological features that predicted historical settlement patterns. The QoG dataset's within-country cross-regional variation is also useful here: historical and cultural instruments that work at the country level may not vary much within countries, requiring creative within-country instruments.
+
+#### Worked Example: Constructing an Institutional-Thickness Index
+
+To illustrate how a regional institutional-thickness index is constructed in practice, consider five European NUTS-2 regions that span the institutional quality spectrum. For each region, we collect data on four indicator dimensions — each scored on a 0-10 scale, where 10 represents the highest institutional quality observed in the European sample.
+
+**Indicator dimensions:**
+
+1. **Government effectiveness (GOV):** Composite of QoG survey scores for impartiality and quality of public services, administrative efficiency (average days to resolve commercial disputes, time to register property), and absence of corruption. High scores reflect responsive, competent, impartial public administration.
+2. **Business association density (BIZ):** Number of active industry associations, chambers of commerce, employer organizations, and cluster initiatives per 100,000 economically active persons. High scores indicate a dense organizational landscape that facilitates coordination among firms on pre-competitive challenges.
+3. **University-industry links (UNI):** Composite of co-patenting rates between university and industry applicants, share of university R&D funded by the private sector, and number of technology transfer offices per research university. High scores indicate that the regional knowledge infrastructure is effectively connected to the productive economy.
+4. **Trust and social capital (SOC):** Survey-based measures of generalized interpersonal trust ("Would you say that most people can be trusted?"), participation in voluntary associations, and voter turnout in regional elections. High scores indicate a civic culture conducive to cooperative problem-solving and low transaction costs.
+
+| Region | GOV | BIZ | UNI | SOC |
+|---|---|---|---|---|
+| Baden-Württemberg (DE) | 8.9 | 9.2 | 9.0 | 8.1 |
+| Lombardy (IT) | 7.4 | 8.5 | 7.8 | 6.3 |
+| Andalusia (ES) | 5.1 | 4.8 | 4.5 | 5.6 |
+| Lubuskie (PL) | 4.6 | 3.2 | 3.1 | 4.4 |
+| Northern Greece (EL) | 3.8 | 3.5 | 3.9 | 3.7 |
+
+The scores reflect plausible patterns documented in the QoG Regional Dataset and related literatures. Baden-Württemberg scores consistently high across all dimensions: its Mittelstand firms are embedded in dense business associations and Fraunhofer/Steinbeis technology transfer networks; its Sparkassen banking system and works council structures generate high organizational trust; its Land government is administratively efficient. Lombardy scores high on business association density (the Italian industrial district tradition of Emilia-Romagna extends partially into Lombardy) and university-industry links (Politecnico di Milano, Bocconi) but lower on government effectiveness and social capital — reflecting the north-south Italian institutional gradient. Andalusia and Lubuskie occupy the middle-to-lower range, with Andalusia scoring somewhat higher on social capital (Mediterranean associational life) but lower on business density than its GDP might suggest. Northern Greece scores lowest on most dimensions, consistent with its position at the bottom of the QoG European regional rankings.
+
+**Simplified principal component analysis.** To reduce these four indicators to a single composite index, we compute the first principal component (PC1). PCA identifies the linear combination of the original variables that captures the maximum variance in the data. With only five observations, this exercise is illustrative rather than statistically rigorous — in practice, PCA would be performed on hundreds of NUTS-2 regions.
+
+*Step 1: Standardize the data.* Subtract the column mean and divide by the column standard deviation so that each indicator has mean zero and unit variance. The means and standard deviations for our five regions are:
+
+| Indicator | Mean | Std. Dev. |
+|---|---|---|
+| GOV | 5.96 | 2.07 |
+| BIZ | 5.84 | 2.72 |
+| UNI | 5.66 | 2.55 |
+| SOC | 5.62 | 1.75 |
+
+The standardized values (z-scores) are:
+
+| Region | GOV_z | BIZ_z | UNI_z | SOC_z |
+|---|---|---|---|---|
+| Baden-Württemberg | 1.42 | 1.24 | 1.31 | 1.42 |
+| Lombardy | 0.70 | 0.98 | 0.84 | 0.39 |
+| Andalusia | -0.41 | -0.38 | -0.45 | -0.01 |
+| Lubuskie | -0.66 | -0.97 | -1.00 | -0.70 |
+| Northern Greece | -1.04 | -0.86 | -0.69 | -1.10 |
+
+*Step 2: Compute the correlation matrix and extract PC1.* The four indicators are strongly positively correlated — regions that score high on one dimension tend to score high on all four. The first principal component captures approximately 89% of the total variance, indicating that a single latent dimension ("institutional thickness") accounts for the bulk of cross-regional variation.
+
+The PC1 loadings — the weights that define the linear combination — are:
+
+| Indicator | PC1 loading |
+|---|---|
+| GOV | 0.51 |
+| BIZ | 0.51 |
+| UNI | 0.50 |
+| SOC | 0.48 |
+
+The loadings are nearly equal, which means that all four dimensions contribute roughly equally to the composite index. This is substantively meaningful: institutional thickness is not driven by any single dimension but reflects the co-presence of capable government, dense business networks, active university-industry collaboration, and a trusting civic culture. The four dimensions reinforce each other — an instance of the institutional complementarities that Hall and Soskice (2001) emphasize at the national level, operating here at the regional scale.
+
+*Step 3: Compute the composite index.* The institutional-thickness index for each region is the weighted sum of its standardized scores, using the PC1 loadings as weights:
+
+$$ITI_r = 0.51 \cdot GOV\_z_r + 0.51 \cdot BIZ\_z_r + 0.50 \cdot UNI\_z_r + 0.48 \cdot SOC\_z_r$$
+
+| Region | ITI score | Rank |
+|---|---|---|
+| Baden-Württemberg | 2.72 | 1 |
+| Lombardy | 1.04 | 2 |
+| Andalusia | -0.43 | 3 |
+| Lubuskie | -1.17 | 4 |
+| Northern Greece | -1.57 | 5 |
+
+**Interpretation.** The ranking aligns with the expected institutional quality gradient in Europe. Baden-Württemberg, with its Mittelstand ecosystem, Fraunhofer technology transfer, and deep civic traditions, scores highest by a wide margin. Lombardy ranks second — strong on business networks and university-industry links but held back by lower government effectiveness and social capital relative to the northern European benchmark. Andalusia occupies the middle, reflecting Spain's intermediate position in the European institutional landscape and the region's weaker business association density relative to Catalonia or the Basque Country. Lubuskie, a peripheral Polish region, scores low across all dimensions — reflecting the ongoing institutional catch-up of post-socialist regions, where formal democratic institutions were established rapidly after 1989 but the dense organizational networks and civic trust that constitute institutional thickness accumulate much more slowly. Northern Greece scores lowest, consistent with the well-documented institutional deficits of the Greek public sector and the region's distance from the Athenian economic core.
+
+The gap between Baden-Württemberg (ITI = 2.72) and Northern Greece (ITI = -1.57) — a span of 4.29 standard-deviation units — is striking. It quantifies in a single number the institutional distance that separates Europe's most institutionally thick regions from its thinnest. Recall from the panel regression framework above that institutional quality predicts changes in related variety: a region with Baden-Württemberg's institutional thickness has the governance capacity, business coordination infrastructure, university-industry channels, and civic trust to support continuous capability recombination. A region with Northern Greece's institutional thinness faces high transaction costs for every form of economic coordination — from starting a business to enforcing a contract to collaborating on pre-competitive R&D.
+
+**The endogeneity caveat.** The composite index is a descriptive tool, not a causal estimate. The strong correlation between institutional thickness and GDP per capita (r = 0.6 to 0.7 across European NUTS-2 regions) does not establish the direction of causation. Baden-Württemberg may have high institutional thickness because it is wealthy — a large tax base funds competent government, prosperous firms sustain dense business associations, and wealthy citizens invest in civic life. Alternatively, institutional thickness may cause prosperity — or, most likely, the relationship is bidirectional, with virtuous cycles in high-thickness regions and vicious cycles in low-thickness ones. Identifying the causal effect requires the instrumental variable strategies described in the Caveat above: deep historical variables that predict current institutional quality but do not directly affect current economic outcomes except through the institutional channel. The index tells us *where* regions stand on the institutional quality spectrum; it does not, by itself, tell us *why* they stand there or *what would happen* if institutional quality were exogenously improved.
 
 ---
 
