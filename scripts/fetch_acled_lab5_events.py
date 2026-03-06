@@ -1,4 +1,4 @@
-"""Fetch ACLED event records for Lab 4 using OAuth credentials from environment variables.
+"""Fetch ACLED event records for Lab 5 using OAuth credentials from environment variables.
 
 Credentials are never read from CLI args; set them in the shell environment:
 - ACLED_USERNAME
@@ -40,7 +40,7 @@ DEFAULT_FIELDS = ",".join(
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Fetch ACLED records for Lab 4 MENA intake")
+    parser = argparse.ArgumentParser(description="Fetch ACLED records for Lab 5 MENA intake")
     parser.add_argument(
         "--countries",
         default="Egypt",
@@ -67,12 +67,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output-csv",
-        default="data/raw/acled/acled_lab4_events_sample_2026-02-23.csv",
+        default="data/raw/acled/acled_lab5_events_sample_2026-02-23.csv",
         help="Output CSV path",
     )
     parser.add_argument(
         "--metadata-json",
-        default="data/raw/metadata/acled_lab4_pull_sample_2026-02-23.json",
+        default="data/raw/metadata/acled_lab5_pull_sample_2026-02-23.json",
         help="Metadata JSON path",
     )
     return parser.parse_args()

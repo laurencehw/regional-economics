@@ -33,7 +33,7 @@ def parse_args() -> argparse.Namespace:
         help="Estimation-ready panel CSV path",
     )
     parser.add_argument("--treated-iso3", default="SYR")
-    parser.add_argument("--intervention-year", type=int, default=2022)
+    parser.add_argument("--intervention-year", type=int, default=2018)
     parser.add_argument("--outcome-col", default="outcome_main")
     parser.add_argument("--unit-col", default="iso3")
     parser.add_argument("--time-col", default="year")
