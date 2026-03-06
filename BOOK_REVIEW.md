@@ -103,7 +103,7 @@ While no clear factual errors were identified, several claims warrant careful ve
 ## Summary Scorecard
 
 | Dimension | Score | Notes |
-|-----------|:-----:|-------|
+|-----------|----:|-------|
 | Intellectual ambition and scope | 9/10 | Remarkable breadth with analytical depth |
 | Writing quality | 8/10 | Strong overall; 6 chapter openings need rework |
 | Theoretical framework | 9/10 | Excellent NEG + institutions integration |
