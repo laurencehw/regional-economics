@@ -30,7 +30,7 @@ The seven labs are the book's most distinctive feature:
 - **Dual-mode architecture:** Every lab runs with synthetic data (known true parameters) and with real data when available. This eliminates the "I can't get the data" barrier.
 - **Calibrated DGPs:** Students verify estimator performance on known parameters before trusting real results.
 - **Methodological range:** SAR (Lab 1), beta-convergence (Lab 2), concentration indices (Lab 3), RDD (Lab 4), synthetic control (Lab 5), Moran's I (Lab 6), and PPML gravity (Lab 7).
-- **Clean code:** All 97 tests pass. Consistent directory structure across all labs.
+- **Clean code:** All tests pass. Consistent directory structure across all labs.
 
 ### 4. Scope and Balance
 Every major world region except Oceania and Central Asia is covered. The treatment is analytically balanced -- no region is merely a case study for Western theory. The MENA conflict economics chapter (Ch. 12) and the urbanization-without-industrialization chapter (Ch. 13) fill genuine gaps in the textbook literature.

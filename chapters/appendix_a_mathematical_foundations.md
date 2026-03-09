@@ -273,10 +273,10 @@ $$\sigma$$-convergence occurs if $$\sigma_t^2$$ is declining. Note that $$\beta$
 
 ### Sharp RDD
 
-The spatial regression discontinuity design exploits a geographic boundary that determines treatment assignment. Let $$r_i$$ denote the running variable (distance to the boundary), with treatment $$D_i = \mathbf{1}(r_i \geq 0)$$. The sharp RDD estimator identifies the local average treatment effect at the boundary:
+The spatial regression discontinuity design exploits a geographic boundary that determines treatment assignment. Let $$r_i$$ denote the running variable (distance to the boundary), with treatment $$D_i = \mathbf{1}(r_i < 0)$$ (this matches the sign convention used in Lab 4, where units with negative forcing values are treated). The sharp RDD estimator identifies the local average treatment effect at the boundary (treated side just to the left of the cutoff minus control side just to the right):
 
 $$
-\tau_{\text{RDD}} = \lim_{r \downarrow 0} E[Y_i | r_i = r] - \lim_{r \uparrow 0} E[Y_i | r_i = r]
+\tau_{\text{RDD}} = \lim_{r \uparrow 0} E[Y_i \mid r_i = r] - \lim_{r \downarrow 0} E[Y_i \mid r_i = r]
 $$
 
 ### Local Linear Estimation
@@ -290,11 +290,11 @@ $$
 Observations are weighted by a kernel function $$K(r_i / h)$$. Common kernels include:
 
 - **Triangular:** $$K(u) = (1 - |u|) \cdot \mathbf{1}(|u| \leq 1)$$ — gives most weight to observations near the cutoff (preferred for RDD; Imbens and Kalyanaraman 2012)
-- **Uniform:** $$K(u) = \frac{1}{2} \cdot \mathbf{1}(|u| \leq 1)$$ — equal weight within the bandwidth
+- **Uniform:** $$K(u) = \mathbf{1}(|u| \leq 1)$$ — equal weight within the bandwidth
 
 ### Bandwidth Selection
 
-The bandwidth $$h$$ trades off bias (smaller $$h$$ reduces bias from nonlinearity) against variance (smaller $$h$$ uses fewer observations). The Imbens-Kalyanaraman (2012) optimal bandwidth minimizes asymptotic mean squared error. Lab 4 implements both the IK bandwidth and a sensitivity analysis across $$h \in \{0.5 h^*, h^*, 1.5 h^*, 2 h^*\}$$.
+The bandwidth $$h$$ trades off bias (smaller $$h$$ reduces bias from nonlinearity) against variance (smaller $$h$$ uses fewer observations). The Imbens-Kalyanaraman (2012) optimal bandwidth is a widely used data-driven choice that minimizes asymptotic mean squared error and serves as a benchmark in the literature. In the current Lab 4 scaffold, however, the bandwidth is selected using a simple rule-of-thumb based on a fixed fraction of the running variable's range; implementing the IK bandwidth and a sensitivity analysis across alternative values of $$h$$ is left as an extension.
 
 ### Inference
 
