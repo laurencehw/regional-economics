@@ -77,8 +77,8 @@ def build_weight_matrix(
 def row_standardize(mat: np.ndarray) -> np.ndarray:
     row_sums = mat.sum(axis=1, keepdims=True)
     with np.errstate(divide="ignore", invalid="ignore"):
-        standardized = np.divide(mat, row_sums, where=row_sums > 0)
-    standardized[np.isnan(standardized)] = 0.0
+        standardized = np.zeros_like(mat, dtype=float)
+        np.divide(mat, row_sums, out=standardized, where=row_sums > 0)
     return standardized
 
 

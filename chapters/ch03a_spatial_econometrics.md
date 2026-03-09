@@ -106,7 +106,7 @@ Under the null hypothesis of no spatial autocorrelation, $$I$$ has an expected v
 
 Moran's $$I$$ is the spatial analog of the Durbin-Watson statistic in time series: a first-pass check that tells you whether spatial dependence is worth modeling. A large, significant $$I$$ on OLS residuals says "something spatial is going on" — it does not say whether the dependence is in the dependent variable (SAR), the errors (SEM), or both (SDM). The LM tests in Section 3A.2 provide that discrimination.
 
-Lab 6 (Africa) uses Moran's $$I$$ as the primary analytical tool rather than merely a diagnostic. The two-step procedure — computing $$I$$ on raw night-lights, then on governance-residualized night-lights — directly tests whether spatial autocorrelation in economic activity is partly explained by the spatial pattern of institutional quality. The decline in $$I$$ after residualization measures how much of the spatial clustering is "institutional" versus "geographic."
+Lab 6 (Africa) uses Moran's $$I$$ as the primary analytical tool rather than merely a diagnostic. The two-step procedure — computing $$I$$ on raw night-lights, then on governance-residualized night-lights — directly tests whether spatial autocorrelation in economic activity is partly explained by the spatial pattern of institutional quality. The decline in $$I$$ after residualization measures how much of the spatial clustering is "institutional" versus "geographic." (Lab 6 applies Moran's $$I$$ to governance-residualized night-lights data, providing a direct empirical test of the institutional persistence claims in Chapter 2.)
 
 ---
 

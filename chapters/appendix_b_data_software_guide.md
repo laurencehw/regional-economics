@@ -107,7 +107,7 @@ pip install -r requirements.txt
 python -m pytest tests/ -v
 ```
 
-All 25 tests should pass.
+All 107 tests should pass.
 
 ### Google Colab (Zero-Install)
 
@@ -144,22 +144,22 @@ install.packages(c("spdep", "spatialreg", "sf", "fixest", "gravity"))
 | **Software** | Python (numpy, pandas, scipy) |
 | **Data (Minimum)** | Synthetic 34-economy panel (built-in) |
 | **Data (Extended)** | WDI, BTS border crossing, LPI |
-| **Key scripts** | `labs/lab1_americas/code/sar_scaffold.py` |
+| **Key scripts** | `labs/lab1_americas/code/lab1_americas_sar_scaffold.py` |
 | **Colab notebook** | `labs/lab1_americas/Lab1_Americas_SAR.ipynb` |
 | **Key outputs** | SAR coefficients, spatial weight matrix, rho estimate, robustness table |
 
-### Lab 2: East Asia — Multi-Regional Input-Output
+### Lab 2: East Asia — Beta-Convergence and DVA Participation
 
 | Specification | Value |
 |---|---|
 | **Estimated time** | Minimum: 3–4 hrs; Extended: 8–10 hrs |
 | **Difficulty** | Advanced |
-| **Prerequisites** | Ch. 3-B (TiVA, GVCs), Ch. 6 |
+| **Prerequisites** | Ch. 3-A (convergence), Ch. 3-B (TiVA, GVCs), Ch. 6 |
 | **Software** | Python (numpy, pandas) |
-| **Data (Minimum)** | Synthetic MRIO tables (built-in) |
+| **Data (Minimum)** | Synthetic 12-economy East Asian panel (built-in) |
 | **Data (Extended)** | WIOD or OECD TiVA |
-| **Key scripts** | `labs/lab2_east_asia/code/mrio_scaffold.py` |
-| **Key outputs** | Domestic VA shares, forward/backward linkages, servicification ratios |
+| **Key scripts** | `labs/lab2_asia/code/lab2_asia_convergence_scaffold.py` |
+| **Key outputs** | Beta-convergence estimates, half-life calculations, DVA participation shares, sigma-convergence trends |
 
 ### Lab 3: South Asia — IT Services Concentration
 
@@ -184,7 +184,7 @@ install.packages(c("spdep", "spatialreg", "sf", "fixest", "gravity"))
 | **Software** | Python (numpy, pandas, scipy); R `rdrobust` for extended version |
 | **Data (Minimum)** | Synthetic NUTS-2 panel (built-in) |
 | **Data (Extended)** | Eurostat NUTS-2 regional GDP, EU Cohesion Fund allocations |
-| **Key scripts** | `labs/lab4_europe/code/rdd_scaffold.py` |
+| **Key scripts** | `labs/lab4_europe/code/lab4_europe_rdd_scaffold.py` |
 | **Key outputs** | RDD estimates, bandwidth sensitivity, kernel comparison, temporal dynamics |
 
 ### Lab 5: MENA — Synthetic Control Method
@@ -197,7 +197,7 @@ install.packages(c("spdep", "spatialreg", "sf", "fixest", "gravity"))
 | **Software** | Python (numpy, pandas, scipy) |
 | **Data (Minimum)** | Synthetic 15-country MENA panel (built-in) |
 | **Data (Extended)** | WDI, ACLED, UNHCR refugee statistics |
-| **Key scripts** | `labs/lab5_mena/code/scm_scaffold.py` |
+| **Key scripts** | `labs/lab5_mena/code/conflict_event_study.py`, `scm_gap_plotter.py`, `donor_weight_visualizer.py` |
 | **Key outputs** | Synthetic control weights, counterfactual GDP trajectory, placebo tests, gap plot |
 
 ### Lab 6: Africa — Night-Lights and Moran's I

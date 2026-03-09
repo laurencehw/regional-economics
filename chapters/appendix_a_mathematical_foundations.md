@@ -255,6 +255,8 @@ $$
 t_{1/2} = \frac{\ln 2}{b}
 $$
 
+**Simplified form.** When the time period $$T = 1$$ (annual data), the convergence speed reduces to $$b \approx |\hat{\beta}|$$ (for small $$|\hat{\beta}|$$), and the half-life simplifies to $$t_{1/2} \approx \ln 2 / |\hat{\beta}|$$. This is the formula used in Lab 2's scaffold. For multi-year intervals ($$T > 1$$), the general formula above must be used to avoid overstating the convergence speed.
+
 ### $$\sigma$$-Convergence
 
 $$\sigma$$-convergence tests whether the cross-sectional dispersion of income levels is declining over time:
@@ -267,7 +269,78 @@ $$\sigma$$-convergence occurs if $$\sigma_t^2$$ is declining. Note that $$\beta$
 
 ---
 
-## A.7 Spatial Autocorrelation: Moran's I
+## A.7 Regression Discontinuity Design (RDD)
+
+### Sharp RDD
+
+The spatial regression discontinuity design exploits a geographic boundary that determines treatment assignment. Let $$r_i$$ denote the running variable (distance to the boundary), with treatment $$D_i = \mathbf{1}(r_i < 0)$$ (this matches the sign convention used in Lab 4, where units with negative forcing values are treated). The sharp RDD estimator identifies the local average treatment effect at the boundary (treated side just to the left of the cutoff minus control side just to the right):
+
+$$
+\tau_{\text{RDD}} = \lim_{r \uparrow 0} E[Y_i \mid r_i = r] - \lim_{r \downarrow 0} E[Y_i \mid r_i = r]
+$$
+
+### Local Linear Estimation
+
+In practice, $$\tau_{\text{RDD}}$$ is estimated by fitting separate local linear regressions on each side of the cutoff within a bandwidth $$h$$:
+
+$$
+Y_i = \alpha + \tau D_i + \beta_1 r_i + \beta_2 D_i \cdot r_i + \varepsilon_i, \quad |r_i| \leq h
+$$
+
+Observations are weighted by a kernel function $$K(r_i / h)$$. Common kernels include:
+
+- **Triangular:** $$K(u) = (1 - |u|) \cdot \mathbf{1}(|u| \leq 1)$$ — gives most weight to observations near the cutoff (preferred for RDD; Imbens and Kalyanaraman 2012)
+- **Uniform:** $$K(u) = \mathbf{1}(|u| \leq 1)$$ — equal weight within the bandwidth
+
+### Bandwidth Selection
+
+The bandwidth $$h$$ trades off bias (smaller $$h$$ reduces bias from nonlinearity) against variance (smaller $$h$$ uses fewer observations). The Imbens-Kalyanaraman (2012) optimal bandwidth is a widely used data-driven choice that minimizes asymptotic mean squared error and serves as a benchmark in the literature. In the current Lab 4 scaffold, however, the bandwidth is selected using a simple rule-of-thumb based on a fixed fraction of the running variable's range; implementing the IK bandwidth and a sensitivity analysis across alternative values of $$h$$ is left as an extension.
+
+### Inference
+
+Standard errors are computed using the HC1 heteroskedasticity-consistent estimator:
+
+$$
+\hat{V}_{\text{HC1}} = \frac{n}{n-k} (\mathbf{X}' \mathbf{K} \mathbf{X})^{-1} \mathbf{X}' \mathbf{K} \hat{\boldsymbol{e}} \hat{\boldsymbol{e}}' \mathbf{K} \mathbf{X} (\mathbf{X}' \mathbf{K} \mathbf{X})^{-1}
+$$
+
+where $$\mathbf{K}$$ is the diagonal kernel weight matrix and $$\hat{\boldsymbol{e}}$$ is the vector of residuals.
+
+---
+
+## A.8 Synthetic Control Method (SCM)
+
+### Setup
+
+The synthetic control method (Abadie and Gardeazabal 2003; Abadie, Diamond, and Hainmueller 2010, 2015) estimates the causal effect of an event on a treated unit by constructing a counterfactual from a weighted combination of untreated "donor" units. Let $$Y_{1t}$$ denote the outcome for the treated unit and $$Y_{0t} = (Y_{2t}, \ldots, Y_{J+1,t})'$$ the outcomes for $$J$$ donor units.
+
+### Optimization
+
+The synthetic control weights $$\mathbf{w} = (w_2, \ldots, w_{J+1})'$$ are chosen to minimize the pre-treatment prediction error:
+
+$$
+\mathbf{w}^* = \arg\min_{\mathbf{w}} \| \mathbf{X}_1 - \mathbf{X}_0 \mathbf{w} \|_{\mathbf{V}}^2 \quad \text{s.t. } w_j \geq 0, \; \sum_{j=2}^{J+1} w_j = 1
+$$
+
+where $$\mathbf{X}_1$$ is a vector of pre-treatment characteristics for the treated unit, $$\mathbf{X}_0$$ is the corresponding matrix for donor units, and $$\mathbf{V}$$ is a positive definite weighting matrix (typically diagonal, with entries reflecting the predictive power of each covariate).
+
+### Treatment Effect
+
+The estimated treatment effect at time $$t$$ (post-intervention) is:
+
+$$
+\hat{\tau}_t = Y_{1t} - \sum_{j=2}^{J+1} w_j^* Y_{jt}
+$$
+
+The "gap plot" — $$\hat{\tau}_t$$ over time — is the primary visual output of the SCM (Lab 5).
+
+### Inference via Placebo Tests
+
+Because the SCM typically has $$J$$ small, conventional inference is infeasible. Instead, "in-space" placebo tests iteratively apply the SCM procedure to each donor unit as if it were treated, producing a distribution of placebo gaps. The treated unit's gap is compared to this distribution. If the treated unit's post-treatment gap is extreme relative to the placebo distribution, the effect is considered significant. A common criterion is that the treated unit's post/pre RMSPE ratio falls in the top $$\alpha$$ fraction of placebo ratios.
+
+---
+
+## A.9 Spatial Autocorrelation: Moran's I
 
 ### Definition
 
@@ -292,7 +365,7 @@ This is the approach used in Lab 6.
 
 ---
 
-## A.8 Notation Index
+## A.10 Notation Index
 
 | Symbol | Meaning | Chapter(s) |
 |---|---|---|
@@ -309,5 +382,9 @@ This is the approach used in Lab 6.
 | $$n$$ | Number of spatial units | Throughout |
 | $$k$$ | Number of regressors | Throughout |
 | $$T$$ | Time period length | 3-A (convergence) |
+| $$h$$ | RDD bandwidth | A.7, Lab 4 |
+| $$K(\cdot)$$ | Kernel function | A.7, Lab 4 |
+| $$\mathbf{w}$$ | SCM donor weights | A.8, Lab 5 |
+| $$\mathbf{V}$$ | SCM covariate weighting matrix | A.8, Lab 5 |
 
 **Note on overloaded symbols.** Several symbols serve double duty across chapters — a common and unavoidable feature of interdisciplinary work. $$\sigma$$ denotes the elasticity of substitution in the trade/gravity context (Chapters 1, 3-B) and cross-sectional standard deviation in the convergence context (Chapter 3-A). $$\tau$$ denotes iceberg trade costs in Chapters 1 and 3-B and has no conflicting usage. $$\lambda$$ denotes the SEM spatial error parameter in Chapter 3-A and the manufacturing expenditure share in Chapter 1's core-periphery model. Context disambiguates in all cases.

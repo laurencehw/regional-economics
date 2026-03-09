@@ -98,9 +98,29 @@
 
 **Varieties of Capitalism (VoC).** The Hall and Soskice (2001) framework distinguishing Liberal Market Economies (LMEs) from Coordinated Market Economies (CMEs) based on their institutional arrangements for corporate governance, labor relations, education, and inter-firm coordination. Ch. 2, Ch. 9.
 
+**Consumption city.** An urban area whose economic base is primarily services, retail, and informal employment rather than manufacturing or tradeable production. Used in Chapter 13 to describe the dominant form of Sub-Saharan African urbanization, where density generates congestion and informality without the agglomeration gains predicted by models that assume manufacturing-led growth. Ch. 13.
+
+**Dutch disease.** The phenomenon whereby a natural resource boom (oil, gas, minerals) raises the real exchange rate, making non-resource tradeable sectors (manufacturing, agriculture) less competitive. Named after the Netherlands' experience following North Sea gas discoveries. A key mechanism in the resource curse. Ch. 5, Ch. 11.
+
+**Premature deindustrialization.** The decline of manufacturing's share of GDP and employment at income levels well below those at which advanced economies deindustrialized. Rodrik (2016) documented this pattern across developing countries, suggesting that the traditional manufacturing-led growth path may be closing for late industrializers. Ch. 5, Ch. 13.
+
+**Telemigration.** Baldwin's (2019) term for the remote provision of services across borders by workers who remain in their home country — a form of Mode 1 services trade that replicates some features of labor migration without physical movement. The spatial implications are potentially transformative: if services tasks can be performed remotely at scale, the geographic distribution of services employment could shift dramatically toward lower-cost locations. Ch. 16.
+
 ---
 
 ## Econometric Methods
+
+**Half-life of convergence.** The number of years required for a region to close half of its initial income gap with the steady-state level. Computed as $$t_{1/2} = \ln 2 / b$$, where $$b$$ is the implied convergence speed from a $$\beta$$-convergence regression. Ch. 3-A, Lab 2, Appendix A.
+
+**Herfindahl-Hirschman Index (HHI).** A concentration measure computed as the sum of squared market (or employment) shares: $$\text{HHI} = \sum_i s_i^2$$. Ranges from $$1/n$$ (perfect equality) to 1 (complete concentration). Used in Lab 3 to measure IT services concentration across Indian states. Ch. 3-A, Lab 3.
+
+**IRLS (Iteratively Reweighted Least Squares).** The numerical algorithm used to estimate PPML gravity models. At each iteration, observations are reweighted by the ratio of observed to predicted values, and OLS is re-estimated on the reweighted data until convergence. Lab 7, Appendix A.
+
+**Kernel function.** A weighting function used in local regression and RDD estimation to give more weight to observations near a target point. Common kernels include triangular (linear decay) and uniform (equal weight within bandwidth). Lab 4, Appendix A.
+
+**Location Quotient (LQ).** The ratio of a region's share of employment (or output) in an industry to the national share. LQ > 1 indicates regional specialization; LQ < 1 indicates under-representation. Used in Lab 3 to measure IT services specialization across Indian states. Ch. 3-A, Lab 3.
+
+**Night-lights data.** Satellite-measured radiance data (typically from the VIIRS instrument) used as a proxy for economic activity, especially in contexts where official statistics are unreliable or unavailable. Henderson, Storeygard, and Weil (2012) validated the approach. Ch. 13, Lab 6.
 
 **Bartik instrument.** A shift-share instrument that predicts local employment growth by interacting the local industry composition (shares) with national industry growth rates (shifts). Used to address endogeneity in spatial economic analysis. Ch. 3-A, Lab 1.
 

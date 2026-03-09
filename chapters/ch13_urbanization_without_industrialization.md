@@ -1,5 +1,9 @@
 # Chapter 13: Urbanization Without Industrialization — Density, Service Capacity, and the African Urban Transition
 
+![Figure 13.1: Sub-Saharan Africa — primate cities and urbanization corridors](../figures/fig_ch13_map_ssa_urbanization.png)
+
+*Source: Natural Earth; UN World Urbanization Prospects.*
+
 ---
 
 ## Introduction: The Cities That Industry Forgot
@@ -13,10 +17,6 @@ The standard model of structural transformation -- codified by Lewis (1954) -- a
 {% endhint %}
 
 This chapter argues that the puzzle has an institutional resolution. Urbanization raises productivity only where municipal service capacity and trade-corridor connectivity convert density into lower transaction costs. Where institutional capacity is weak, density scales congestion and informality without generating agglomeration gains. The same process -- rural-urban migration -- produces Silicon Valley in one institutional environment and Lagos's Oshodi Market in another.
-
-![Figure 13.1: Sub-Saharan Africa — primate cities and urbanization corridors](../figures/fig_ch13_map_ssa_urbanization.png)
-
-*Source: Natural Earth; UN World Urbanization Prospects.*
 
 ---
 
@@ -324,7 +324,7 @@ Lab 6's Moran's $$I$$ analysis offers a spatial diagnostic: if governance qualit
 
 The spatial tools of this book — particularly Lab 6's Moran's $$I$$ analysis with governance residualization — offer a framework for monitoring the outcome. If governance-residualized Moran's $$I$$ declines over time (governance becomes a weaker predictor of spatial clustering), it may indicate that institutional reform is succeeding — economic activity is becoming less dependent on governance quality and more determined by market forces and geographic fundamentals. If it increases (governance becomes a stronger predictor), institutional inequality is deepening, and the urban transition is producing winners and losers along governance lines.
 
-The policy stakes could not be higher. By 2050, one in four humans will live in Africa, and the majority will live in cities. Whether those cities look like Nairobi (productive, connected, institutionally capable) or like Kinshasa (congested, disconnected, institutionally weak) will determine not just Africa's economic trajectory but the global economy's center of gravity. Productive African urbanization would add hundreds of millions of consumers and workers to the global economy. Unproductive urbanization would create a humanitarian crisis of unprecedented scale — billions of urban residents trapped in congested cities without the infrastructure, governance, or economic opportunity to build decent lives.
+The policy stakes could not be higher. By 2050, one in four humans will live in Africa, and the majority will live in cities. Whether those cities look like Nairobi (productive, connected, institutionally capable) or like Kinshasa (congested, disconnected, institutionally weak) will determine not just Africa's economic trajectory but the global economy's center of gravity. Productive African urbanization would add hundreds of millions of consumers and workers to the global economy. Unproductive urbanization would create a humanitarian crisis of unprecedented scale — hundreds of millions of urban residents trapped in congested cities without the infrastructure, governance, or economic opportunity to build decent lives.
 
 The next chapter examines the continental-scale institutional response to this challenge: the African Continental Free Trade Area and the functional-corridor model of regional integration. If Chapter 13 asks why some African cities are productive and others are not, Chapter 14 asks whether continental-scale institutional reform can raise the floor — connecting the productive cities to each other and giving the unproductive ones a path to institutional upgrading.
 

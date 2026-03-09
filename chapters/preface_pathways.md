@@ -165,3 +165,9 @@ This book analyzes spatial economics at the regional and global scale — how re
 **Lab flexibility.** Each lab has a Minimum Viable Version (2–3 hours, guided replication) and an Extended Version (6–10 hours, independent analysis). Courses with a quantitative focus should assign 4–5 labs; courses with a reading-and-discussion focus might assign 1–2 labs as optional extensions.
 
 **Assessment ideas.** Each chapter ends with 6 discussion questions that can serve as essay prompts. The labs produce replicable outputs (model summaries, datasets, visualizations) that can be submitted as empirical assignments. A capstone option: students choose a region not covered in their pathway and produce a "Regional Diagnostic" modeled on the book's template.
+
+---
+
+## A Note on Data Vintage
+
+The empirical claims throughout this book draw primarily on data available through mid-2024: World Development Indicators, Eurostat NUTS-2 regional statistics, NBS China provincial accounts, NASSCOM reports, WTO services trade statistics, and OECD TiVA tables. Economic statistics are revised, rebased, and updated continuously. Readers should treat specific numerical claims (GDP levels, trade shares, employment counts) as illustrative of magnitudes and trends rather than as definitive point estimates. Where possible, inline citations identify the source and vintage of each statistic so that instructors and students can verify and update figures using the latest available data. The Applied Labs are designed to work with both the built-in synthetic datasets and with updated real data, allowing the empirical exercises to remain current as new data releases become available.
