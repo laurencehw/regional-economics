@@ -24,6 +24,7 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 sys.path.insert(0, str(REPO_ROOT / "labs" / "lab2_asia" / "code"))
 sys.path.insert(0, str(REPO_ROOT / "labs" / "lab6_africa" / "code"))
 sys.path.insert(0, str(REPO_ROOT / "labs" / "lab1_americas" / "code"))
+sys.path.insert(0, str(REPO_ROOT / "labs" / "lab4_europe" / "code"))
 
 from lab3_concentration_scaffold import (
     compute_gini,
@@ -35,6 +36,12 @@ from run_lab5_scm_baseline import solve_scm_weights
 from lab2_asia_convergence_scaffold import estimate_convergence
 from lab6_africa_moran_scaffold import morans_i, permutation_p_value
 from lab1_americas_sar_scaffold import estimate_sar_manual
+from lab4_europe_rdd_scaffold import (
+    estimate_rdd,
+    triangular_kernel,
+    uniform_kernel,
+    select_bandwidth,
+)
 
 
 # ===================================================================
@@ -258,8 +265,9 @@ class TestMoransI:
             if i < n - 1:
                 w[i, i + 1] = 1.0
         row_sums = w.sum(axis=1, keepdims=True)
-        w = np.divide(w, row_sums, where=row_sums > 0)
-        return w
+        out = np.zeros_like(w, dtype=float)
+        np.divide(w, row_sums, out=out, where=row_sums > 0)
+        return out
 
     def test_morans_i_positive_autocorrelation(self):
         """Spatially clustered data should produce I > E[I]."""
@@ -438,3 +446,124 @@ class TestSAR:
 
         result = estimate_sar_manual(y, x, w, x_names=["x1", "x2"])
         assert result["sigma2"] > 0.0
+
+
+# ===================================================================
+# 7. TestRDD
+# ===================================================================
+
+
+class TestRDD:
+    """Tests for Lab 4's RDD estimator and kernel functions."""
+
+    def test_triangular_kernel_at_center(self):
+        """Weight at the cutoff (x=0) should be 1.0."""
+        x = np.array([0.0])
+        w = triangular_kernel(x, bandwidth=5.0)
+        assert w[0] == pytest.approx(1.0, abs=1e-10)
+
+    def test_triangular_kernel_at_boundary(self):
+        """Weight at |x|=bandwidth should be 0.0."""
+        x = np.array([5.0, -5.0])
+        w = triangular_kernel(x, bandwidth=5.0)
+        np.testing.assert_allclose(w, 0.0, atol=1e-10)
+
+    def test_triangular_kernel_outside_bandwidth(self):
+        """Observations outside the bandwidth should get weight 0."""
+        x = np.array([6.0, -7.0, 100.0])
+        w = triangular_kernel(x, bandwidth=5.0)
+        np.testing.assert_allclose(w, 0.0, atol=1e-10)
+
+    def test_triangular_kernel_symmetry(self):
+        """Kernel should be symmetric: K(x) = K(-x)."""
+        x = np.array([1.0, 2.0, 3.0])
+        bw = 5.0
+        w_pos = triangular_kernel(x, bw)
+        w_neg = triangular_kernel(-x, bw)
+        np.testing.assert_allclose(w_pos, w_neg, atol=1e-10)
+
+    def test_uniform_kernel_inside(self):
+        """All observations inside bandwidth should get weight 1.0."""
+        x = np.array([0.0, 1.0, -2.0, 4.9])
+        w = uniform_kernel(x, bandwidth=5.0)
+        np.testing.assert_allclose(w, 1.0, atol=1e-10)
+
+    def test_uniform_kernel_outside(self):
+        """Observations outside bandwidth should get weight 0.0."""
+        x = np.array([5.1, -6.0, 100.0])
+        w = uniform_kernel(x, bandwidth=5.0)
+        np.testing.assert_allclose(w, 0.0, atol=1e-10)
+
+    def test_select_bandwidth_positive(self):
+        """Selected bandwidth should be positive."""
+        forcing = np.linspace(-10, 10, 100)
+        bw = select_bandwidth(forcing, frac=0.5)
+        assert bw > 0
+        assert bw == pytest.approx(10.0, abs=1e-10)  # 0.5 * 20 = 10
+
+    def test_rdd_recovers_known_tau(self):
+        """RDD should recover a known treatment effect from synthetic data.
+
+        DGP: y = 3.0 + 2.0*D + 0.5*X + noise, so true tau = 2.0.
+        """
+        rng = np.random.default_rng(42)
+        n = 200
+        true_tau = 2.0
+        forcing = np.concatenate([
+            rng.uniform(-10, -0.1, size=n // 2),
+            rng.uniform(0.1, 10, size=n // 2),
+        ])
+        treatment = (forcing < 0).astype(float)
+        noise = rng.normal(0, 0.3, size=n)
+        outcome = 3.0 + true_tau * treatment + 0.5 * forcing + noise
+
+        bw = select_bandwidth(forcing, frac=0.5)
+        weights = triangular_kernel(forcing, bw)
+        result = estimate_rdd(outcome, forcing, treatment, weights)
+
+        assert result["tau"] == pytest.approx(true_tau, abs=0.5)
+        assert result["se_tau"] > 0
+        assert result["p_value"] < 0.05
+        assert result["n_obs"] > 10
+
+    def test_rdd_no_effect(self):
+        """When true tau=0, estimate should be near zero and not significant."""
+        rng = np.random.default_rng(42)
+        n = 200
+        forcing = np.concatenate([
+            rng.uniform(-10, -0.1, size=n // 2),
+            rng.uniform(0.1, 10, size=n // 2),
+        ])
+        treatment = (forcing < 0).astype(float)
+        noise = rng.normal(0, 1.0, size=n)
+        outcome = 3.0 + 0.5 * forcing + noise  # no treatment effect
+
+        bw = select_bandwidth(forcing, frac=0.5)
+        weights = triangular_kernel(forcing, bw)
+        result = estimate_rdd(outcome, forcing, treatment, weights)
+
+        assert abs(result["tau"]) < 1.0
+        assert result["p_value"] > 0.05
+
+    def test_rdd_uniform_vs_triangular(self):
+        """Both kernels should recover similar tau from the same data."""
+        rng = np.random.default_rng(42)
+        n = 200
+        true_tau = 1.5
+        forcing = np.concatenate([
+            rng.uniform(-10, -0.1, size=n // 2),
+            rng.uniform(0.1, 10, size=n // 2),
+        ])
+        treatment = (forcing < 0).astype(float)
+        outcome = 3.0 + true_tau * treatment + 0.5 * forcing + rng.normal(0, 0.3, size=n)
+
+        bw = select_bandwidth(forcing, frac=0.5)
+        w_tri = triangular_kernel(forcing, bw)
+        w_uni = uniform_kernel(forcing, bw)
+
+        r_tri = estimate_rdd(outcome, forcing, treatment, w_tri)
+        r_uni = estimate_rdd(outcome, forcing, treatment, w_uni)
+
+        # Both should be close to true tau
+        assert r_tri["tau"] == pytest.approx(true_tau, abs=0.5)
+        assert r_uni["tau"] == pytest.approx(true_tau, abs=0.5)

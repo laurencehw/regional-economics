@@ -6,6 +6,8 @@ Abadie, Alberto, and Javier Gardeazabal. 2003. "The Economic Costs of Conflict: 
 
 Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2010. "Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program." *Journal of the American Statistical Association* 105(490): 493--505. [Ch. 12]
 
+Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2015. "Comparative Politics and the Synthetic Control Method." *American Journal of Political Science* 59(2): 495--510. [Ch. 12, Lab 5, Appendix A]
+
 Acemoglu, Daron, and James A. Robinson. 2012. *Why Nations Fail: The Origins of Power, Prosperity, and Poverty.* New York: Crown Business. [Ch. 2]
 
 Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2001. "The Colonial Origins of Comparative Development: An Empirical Investigation." *American Economic Review* 91(5): 1369--1401. [Ch. 2]
@@ -445,6 +447,8 @@ Ross, Michael L. 2012. *The Oil Curse: How Petroleum Wealth Shapes the Developme
 Sachs, Jeffrey D., and Andrew M. Warner. 1995. "Natural Resource Abundance and Economic Growth." NBER Working Paper 5398. [Ch. 5]
 
 Santos Silva, J.M.C., and Silvana Tenreyro. 2006. "The Log of Gravity." *Review of Economics and Statistics* 88(4): 641--658. [Ch. 3B]
+
+Santos Silva, J.M.C., and Silvana Tenreyro. 2011. "Further Simulation Evidence on the Performance of the Poisson Pseudo-Maximum Likelihood Estimator." *Economics Letters* 112(2): 220--222. [Ch. 3B, Lab 7]
 
 Sassoon, Joseph. 2009. *Saddam Hussein's Ba'th Party: Inside an Authoritarian Regime.* Cambridge: Cambridge University Press. [Ch. 12]
 

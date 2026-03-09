@@ -40,6 +40,8 @@ where $$Y_i$$ and $$Y_j$$ are GDPs, $$d_{ij}$$ is bilateral distance (a proxy fo
 
 For decades, the gravity model's theoretical foundations were uncertain: it "worked" empirically but lacked a clean derivation from trade theory. Anderson and van Wincoop (2003) resolved this by deriving the gravity equation from a general-equilibrium trade model with CES preferences and iceberg trade costs. Their key contribution was the concept of **multilateral resistance** — the idea that bilateral trade between $$i$$ and $$j$$ depends not only on the bilateral trade cost between them but also on how costly it is for each of them to trade with *all other partners*. A country that faces high trade costs with everyone will trade relatively more with any given partner, compared to a country with many low-cost alternatives.
 
+The derivation proceeds from CES preferences. Each country's demand for imports from country $i$ is a CES share of expenditure, proportional to $(p_i \tau_{ij} / P_j)^{1-\sigma}$. Summing across destinations and imposing market clearing yields the structural gravity equation with multilateral resistance terms $P_j$ and $\Pi_i$ as the solution to a system of $2n$ nonlinear equations. Anderson and van Wincoop (2003) showed that solving this system is essential for correctly interpreting bilateral trade cost estimates — ignoring multilateral resistance biases border-effect estimates upward (as in McCallum's original 22x finding). Appendix A provides the full estimating equation.
+
 The structural gravity equation is:
 
 $$

@@ -252,7 +252,7 @@ Chile has moved furthest, with CORFO-supported investments in lithium carbonate 
 
 Argentina and Bolivia are further behind. Argentina's decentralized model has attracted extraction but no processing — foreign firms export lithium carbonate for processing in China and South Korea. Bolivia's nationalized model has produced a pilot plant that has not reached commercial production. In neither case is the green commodity creating the institutional capacity that would enable upgrading.
 
-The spatial implication is that the green commodity frontier, absent institutional upgrading, will reproduce the resource-curse geography: extraction in peripheral regions, processing and manufacturing in existing industrial centers (East Asia, North America, Europe), and a terms-of-trade relationship that transfers value from commodity producers to manufacturers. The lithium triangle may be the new copper belt — a source of raw materials for someone else's industrial revolution.
+The geographic consequence is that the green commodity frontier, absent institutional upgrading, will reproduce the resource-curse geography: extraction in peripheral regions, processing and manufacturing in existing industrial centers (East Asia, North America, Europe), and a terms-of-trade relationship that transfers value from commodity producers to manufacturers. The lithium triangle may be the new copper belt — a source of raw materials for someone else's industrial revolution.
 
 ---
 
