@@ -61,8 +61,48 @@ def fix_image_paths(text: str) -> str:
     return text.replace("../figures/", "figures/")
 
 
-def fix_gitbook_math(text: str) -> str:
-    """Handle GitBook-style math that may confuse Pandoc/LaTeX."""
+def fix_inline_math(text: str) -> str:
+    """Convert GitBook inline $$...$$ to Pandoc inline $...$ math.
+
+    GitBook uses $$ for both display and inline math. Pandoc treats $$
+    as display math. We convert inline uses ($$...$$ within a line of
+    prose, not on their own line) to single-dollar $...$ delimiters.
+    """
+    lines = text.split("\n")
+    result = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+        # Skip lines that are display math openers/closers (just "$$" alone)
+        if stripped == "$$":
+            result.append(line)
+            i += 1
+            continue
+        # Skip raw LaTeX blocks
+        if stripped.startswith("```"):
+            result.append(line)
+            i += 1
+            continue
+        # For lines with content: convert inline $$...$$ to $...$
+        # Match $$...$$ that appears within prose (not standalone)
+        if "$$" in line and stripped != "$$":
+            # Replace pairs of $$ with $ for inline math
+            # But only if the line has text around the math
+            line = re.sub(r'\$\$([^$]+?)\$\$', r'$\1$', line)
+        result.append(line)
+        i += 1
+    return "\n".join(result)
+
+
+def strip_manual_section_numbers(text: str) -> str:
+    """Strip manual 3A.X / 3B.X prefixes from section headings in Ch 3-A/3-B.
+
+    These clash with Pandoc's --number-sections, producing double numbers
+    like '3.2 3A.1 The Spatial Weight Matrix'.
+    """
+    # Match ## 3A.1, ## 3A.2, ..., ## 3B.1, ## 3B.2, etc.
+    text = re.sub(r'^(##\s+)3[AB]\.\d+\s+', r'\1', text, flags=re.MULTILINE)
     return text
 
 
@@ -123,6 +163,8 @@ def preprocess(src: Path, is_preface: bool = False) -> str:
     raw = src.read_text(encoding="utf-8")
     raw = fix_image_paths(raw)
     raw = fix_text_underscores(raw)
+    raw = fix_inline_math(raw)
+    raw = strip_manual_section_numbers(raw)
     raw = convert_hint_boxes(raw)
     if is_preface:
         raw = fix_preface_numbering(raw)
