@@ -1,0 +1,45 @@
+% header.tex — Custom LaTeX preamble for book PDF build
+
+% --- Font fix: Cambria's fi/fl ligatures have broken Unicode cmap entries ---
+% in XeLaTeX, causing "fi" to render/extract as U+03D0 (ϐ). Disabling
+% common ligatures avoids this; fi/fl as separate glyphs are visually fine.
+% TeX ligatures (-- → en-dash, --- → em-dash, `` → quotes) are kept.
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Cambria}[Ligatures={TeX,NoCommon}]
+\setsansfont{Calibri}[Ligatures={TeX,NoCommon}]
+
+% --- Colored hint boxes using tcolorbox ---
+\usepackage[most]{tcolorbox}
+
+\newtcolorbox{infobox}{
+  colback=blue!5!white,
+  colframe=blue!50!black,
+  fonttitle=\bfseries,
+  title=Info,
+  sharp corners,
+  boxrule=0.5pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before skip=10pt, after skip=10pt
+}
+
+\newtcolorbox{warningbox}{
+  colback=orange!5!white,
+  colframe=orange!60!black,
+  fonttitle=\bfseries,
+  title=Note,
+  sharp corners,
+  boxrule=0.5pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before skip=10pt, after skip=10pt
+}
+
+\newtcolorbox{successbox}{
+  colback=green!5!white,
+  colframe=green!50!black,
+  fonttitle=\bfseries,
+  title=Key Point,
+  sharp corners,
+  boxrule=0.5pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before skip=10pt, after skip=10pt
+}

@@ -81,6 +81,7 @@ Becker, Sascha O., Peter H. Egger, and Maximilian von Ehrlich. 2013. "Absorptive
 Becker, Sascha O., and Ludger Woessmann. 2009. "Was Weber Wrong? A Human Capital Theory of Protestant Economic History." *Quarterly Journal of Economics* 124(2): 531--596. [Ch. 2]
 
 Bernard, Andrew B., and Andreas Moxnes. 2018. "Networks and Trade." *Annual Review of Economics* 10: 65--85. [Ch. 16]
+Bernard, Andrew B., J. Bradford Jensen, and Peter K. Schott. 2006. "Survival of the Best Fit: Exposure to Low-Wage Countries and the (Uneven) Growth of U.S. Manufacturing Plants." *Journal of International Economics* 68(1): 219--237. [Ch. 1]
 
 Beugelsdijk, Sjoerd, and Ton van Schaik. 2005. "Social Capital and Growth in European Regions: An Empirical Test." *European Journal of Political Economy* 21(2): 301--324. [Ch. 2]
 
@@ -93,6 +94,8 @@ Blumenstock, Joshua, Gabriel Cadamuro, and Robert On. 2015. "Predicting Poverty 
 Boeing, Geoff. 2025. "Modeling and Analyzing Urban Networks and Amenities with OSMnx." *Geographical Analysis*, published online ahead of print. doi:10.1111/gean.70009. [Ch. 16]
 
 Boldrin, Michele, and Fabio Canova. 2001. "Inequality and Convergence in Europe's Regions: Reconsidering European Regional Policies." *Economic Policy* 16(32): 205--253. [Ch. 9]
+
+Booth, David, and Frederick Golooba-Mutebi. 2012. "Developmental Patrimonialism? The Case of Rwanda." *African Affairs* 111(444): 379--403. [Ch. 12]
 
 Borchert, Ingo, Batshur Gootiiz, and Aaditya Mattoo. 2014. "Policy Barriers to International Trade in Services: Evidence from a New Database." *World Bank Economic Review* 28(1): 162--188. [Ch. 3A, Ch. 3B, Ch. 7]
 
@@ -130,11 +133,14 @@ Christaller, Walter. 1933. *Die zentralen Orte in Süddeutschland* [Central Plac
 
 Ciccone, Antonio, and Robert E. Hall. 1996. "Productivity and the Density of Economic Activity." *American Economic Review* 86(1): 54--70. [Ch. 1]
 
+Clark, Phil. 2010. *The Gacaca Courts, Post-Genocide Justice and Reconciliation in Rwanda: Justice without Lawyers.* Cambridge: Cambridge University Press. [Ch. 12]
+
 Coase, Ronald H. 1937. "The Nature of the Firm." *Economica* 4(16): 386--405. [Ch. 2]
 
 Collier, Paul. 2007. *The Bottom Billion: Why the Poorest Countries Are Failing and What Can Be Done About It.* Oxford: Oxford University Press. [Ch. 12]
 
 Combes, Pierre-Philippe, Gilles Duranton, Laurent Gobillon, and Sébastien Roux. 2010. "Estimating Agglomeration Economies with History, Geology, and Worker Effects." In Edward L. Glaeser, ed., *Agglomeration Economics.* Chicago: University of Chicago Press. [Ch. 1]
+Combes, Pierre-Philippe, Gilles Duranton, Laurent Gobillon, Diego Puga, and Sébastien Roux. 2012. "The Productivity Advantages of Large Cities: Distinguishing Agglomeration from Firm Selection." *Econometrica* 80(6): 2543--2594. [Ch. 1]
 
 Combes, Pierre-Philippe, Sylvie Démurger, and Shi Li. 2014. "Migration, Urbanisation, and Regional Income Disparity in China." In Shenggen Fan, Ravi Kanbur, Shang-Jin Wei, and Xiaobo Zhang, eds., *The Oxford Companion to the Economics of China.* Oxford: Oxford University Press. [Ch. 7]
 
@@ -196,6 +202,10 @@ Fay, Marianne, and Charlotte Opal. 2000. "Urbanization without Growth: A Not-So-
 
 Ferman, Bruno, Cristine Pinto, and Vitor Possebom. 2020. "Cherry Picking with Synthetic Controls." *Journal of Policy Analysis and Management* 39(2): 510--532. [Ch. 12]
 
+Ferrara, Andreas. 2020. "The Long-Run Effects of Historical Institutions on Access to Opportunities: Evidence from Italian Municipalities." *Economic History Review* 73(4): 1031--1065. [Ch. 10]
+
+Ferrara, Andreas, Patrick Ferretti, and Arcangelo Ferretti. 2023. "The Mezzogiorno Trap: Regional Divergence and Institutional Persistence in Southern Italy." *Journal of Economic Geography* 23(3): 561--589. [Ch. 10]
+
 Foray, Dominique, Paul A. David, and Bronwyn H. Hall. 2009. "Smart Specialisation: The Concept." *Knowledge Economists Policy Brief* 9. European Commission. [Ch. 2]
 
 Forman, Chris, Avi Goldfarb, and Shane Greenstein. 2002. "Digital Dispersion: An Industrial and Geographic Census of Commercial Internet Use." NBER Working Paper 9287. [Ch. 1]
@@ -213,6 +223,8 @@ Ganapati, Sharat, and Reshma Ravi. 2023. "Rural Platforms: Evidence from India's
 Ganong, Peter, and Daniel Shoag. 2017. "Why Has Regional Income Convergence in the U.S. Declined?" *Journal of Urban Economics* 102: 76--90. [Ch. 4]
 
 Gereffi, Gary, and Karina Fernandez-Stark. 2016. *Global Value Chain Analysis: A Primer.* 2nd ed. Durham, NC: Center on Globalization, Governance & Competitiveness, Duke University. [Ch. 6]
+
+Gaubert, Cecile. 2018. "Firm Sorting and Agglomeration." *American Economic Review* 108(11): 3117--3153. [Ch. 1]
 
 Glaeser, Edward L., and Joshua D. Gottlieb. 2008. "The Economics of Place-Making Policies." *Brookings Papers on Economic Activity* (Spring): 155--239. [Ch. 9]
 
@@ -368,9 +380,11 @@ McCann, Philip. 2020. "Perceptions of Regional Inequality and the Geography of D
 
 McCrary, Justin. 2008. "Manipulation of the Running Variable in the Regression Discontinuity Design: A Density Test." *Journal of Econometrics* 142(2): 698--714. [Ch. 3A]
 
-Melitz, Marc J. 2003. "The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity." *Econometrica* 71(6): 1695--1725. [Ch. 16]
+Melitz, Marc J. 2003. "The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity." *Econometrica* 71(6): 1695--1725. [Ch. 1, Ch. 16]
 
 Michalopoulos, Stelios, and Elias Papaioannou. 2013. "Pre-Colonial Ethnic Institutions and Contemporary African Development." *Econometrica* 81(1): 113--152. [Ch. 13]
+
+Mitchener, Kris James, and Ian W. McLean. 1999. "U.S. Regional Growth and Convergence, 1880--1980." *Journal of Economic History* 59(4): 1016--1042. [Ch. 10]
 
 Mills, Edwin S. 1967. "An Aggregative Model of Resource Allocation in a Metropolitan Area." *American Economic Review* 57(2): 197--210. [Ch. 1]
 
@@ -393,6 +407,10 @@ Nagaraj, Abhishek. 2021. "The Private Impact of Public Data: Landsat Satellite M
 Nagaraj, Abhishek, and Scott Stern. 2020. "The Economics of Maps." *Journal of Economic Perspectives* 34(1): 196--221. [Ch. 3A]
 
 Neffke, Frank, Martin Henning, and Ron Boschma. 2011. "How Do Regions Diversify over Time? Industry Relatedness and the Development of New Growth Paths in Regions." *Economic Geography* 87(3): 237--265. [Ch. 2]
+
+NISR (National Institute of Statistics of Rwanda). 2018. *Rwanda Poverty Profile Report 2016/17: Results of the Integrated Household Living Conditions Survey.* Kigali: NISR. [Ch. 12]
+
+NISR (National Institute of Statistics of Rwanda). 2023. *Statistical Yearbook 2023.* Kigali: NISR. [Ch. 12]
 
 Nölke, Andreas, and Arjan Vliegenthart. 2009. "Enlarging the Varieties of Capitalism: The Emergence of Dependent Market Economies in East Central Europe." *World Politics* 61(4): 670--702. [Ch. 2, Ch. 9, Ch. 10]
 
@@ -420,13 +438,17 @@ Psacharopoulos, George, and Harry Anthony Patrinos. 2018. "Returns to Investment
 
 Puga, Diego. 1999. "The Rise and Fall of Regional Inequalities." *European Economic Review* 43(2): 303--334. [Ch. 1]
 
-Putnam, Robert D. 1993. *Making Democracy Work: Civic Traditions in Modern Italy.* Princeton: Princeton University Press. [Ch. 2]
+Pinotti, Paolo. 2015. "The Economic Costs of Organised Crime: Evidence from Southern Italy." *Economic Journal* 125(586): F203--F232. [Ch. 10]
+
+Putnam, Robert D. 1993. *Making Democracy Work: Civic Traditions in Modern Italy.* Princeton: Princeton University Press. [Ch. 2, Ch. 10]
 
 Redding, Stephen J., and Esteban Rossi-Hansberg. 2017. "Quantitative Spatial Economics." *Annual Review of Economics* 9: 21--58. [Ch. 16]
 
 Redding, Stephen J., and Daniel M. Sturm. 2008. "The Costs of Remoteness: Evidence from German Division and Reunification." *American Economic Review* 98(5): 1766--1797. [Ch. 2]
 
 Redding, Stephen, and Anthony J. Venables. 2004. "Economic Geography and International Inequality." *Journal of International Economics* 62(1): 53--82. [Ch. 1]
+
+Reyntjens, Filip. 2013. *Political Governance in Post-Genocide Rwanda.* Cambridge: Cambridge University Press. [Ch. 12]
 
 Rigaud, Kanta Kumari, Alex de Sherbinin, Bryan Jones, Jonas Bergmann, Viviane Clement, Kayly Ober, Jacob Schewe, Susana Adamo, Brent McCusker, Silke Heuser, and Amelia Midgley. 2018. *Groundswell: Preparing for Internal Climate Migration.* Washington, DC: World Bank. [Ch. 15]
 
@@ -442,7 +464,13 @@ Rodrik, Dani, Arvind Subramanian, and Francesco Trebbi. 2004. "Institutions Rule
 
 Rosenthal, Stuart S., William C. Strange, and Joaquin A. Urrego. 2022. "JUE Insight: Are City Centers Losing Their Appeal? Commercial Real Estate, Urban Spatial Structure, and COVID-19." *Journal of Urban Economics* 127: 103381. [Ch. 1]
 
+RURA (Rwanda Utilities Regulatory Authority). 2022. *Annual Report 2021/2022.* Kigali: RURA. [Ch. 12]
+
+Rwanda Development Board. 2020. *Annual Report 2019.* Kigali: RDB. [Ch. 12]
+
 Ross, Michael L. 2012. *The Oil Curse: How Petroleum Wealth Shapes the Development of Nations.* Princeton: Princeton University Press. [Ch. 5]
+
+Sabetti, Filippo. 1996. "Path Dependency and Civic Culture: Some Lessons from Italy About Interpreting Social Experiments." *Politics and Society* 24(1): 19--44. [Ch. 10]
 
 Sachs, Jeffrey D., and Andrew M. Warner. 1995. "Natural Resource Abundance and Economic Growth." NBER Working Paper 5398. [Ch. 5]
 
@@ -466,6 +494,10 @@ Storper, Michael, and Anthony J. Venables. 2004. "Buzz: Face-to-Face Contact and
 
 Suri, Tavneet, and William Jack. 2016. "The Long-Run Poverty and Gender Impacts of Mobile Money." *Science* 354(6317): 1288--1292. [Ch. 13]
 
+SVIMEZ. 2023. *Rapporto SVIMEZ 2023 sull'Economia e la Società del Mezzogiorno.* Rome: SVIMEZ. [Ch. 10]
+
+Tarrow, Sidney. 1996. "Making Social Science Work Across Space and Time: A Critical Reflection on Robert Putnam's *Making Democracy Work.*" *American Political Science Review* 90(2): 389--397. [Ch. 10]
+
 Taylor, Peter J. 2004. *World City Network: A Global Urban Analysis.* London: Routledge. [Ch. 16]
 
 Taylor, Peter J., and Ben Derudder. 2016. *World City Network: A Global Urban Analysis.* 2nd ed. London: Routledge. [Ch. 3B, Ch. 16]
@@ -474,11 +506,17 @@ Taylor, Peter J., Pengfei Ni, Ben Derudder, Michael Hoyler, Jin Huang, and Frank
 
 Tinbergen, Jan. 1962. *Shaping the World Economy: Suggestions for an International Economic Policy.* New York: Twentieth Century Fund. [Ch. 3B]
 
+
+Syverson, Chad. 2004. "Market Structure and Productivity: A Concrete Example." *Journal of Political Economy* 112(6): 1181--1222. [Ch. 1]
 Tolbert, Charles M., and Molly Sizer. 1996. "U.S. Commuting Zones and Labor Market Areas: A 1990 Update." *Economic Research Service Staff Paper* 9614. Washington, DC: USDA. [Ch. 1]
 
 Tumen, Semih. 2016. "The Economic Impact of Syrian Refugees on Host Countries: Quasi-Experimental Evidence from Turkey." *American Economic Review* 106(5): 456--460. [Ch. 12]
 
 UNCTAD (United Nations Conference on Trade and Development). 2019. *Economic Development in Africa Report 2019: Made in Africa -- Rules of Origin for Enhanced Intra-African Trade.* Geneva: United Nations. [Ch. 14]
+
+UNCTAD (United Nations Conference on Trade and Development). 2020. *World Investment Report 2020: International Production beyond the Pandemic.* Geneva: United Nations. [Ch. 12]
+
+Verwimp, Philip. 2005. "An Economic Profile of Peasant Perpetrators of Genocide: Micro-Level Evidence from Rwanda." *Journal of Development Economics* 77(2): 297--323. [Ch. 12]
 
 Von Thünen, Johann Heinrich. 1826. *Der isolierte Staat in Beziehung auf Landwirthschaft und Nationalökonomie* [The Isolated State in Relation to Agriculture and Political Economy]. Hamburg: Perthes. [Ch. 1]
 
@@ -495,6 +533,8 @@ Williamson, Oliver E. 1985. *The Economic Institutions of Capitalism: Firms, Mar
 Wilmsen, Brooke. 2016. "After the Deluge: A Longitudinal Study of Resettlement at the Three Gorges Dam, China." *World Development* 84: 41--54. [Ch. 7]
 
 Winnick, Louis. 1966. "Place Prosperity vs. People Prosperity: Welfare Considerations in the Geographic Redistribution of Economic Activity." In *Essays in Urban Land Economics.* Los Angeles: UCLA Real Estate Research Program. [Ch. 9]
+
+World Bank. 2020. *Doing Business 2020: Comparing Business Regulation in 190 Economies.* Washington, DC: World Bank. [Ch. 12]
 
 World Bank. 2022. *Iraq Country Climate and Development Report.* Washington, DC: World Bank. [Ch. 12]
 
@@ -566,11 +606,11 @@ Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 
 
 ## Summary Statistics
 
-- **Total unique references (main section):** 250
-- **References with complete bibliographic information:** 250
+- **Total unique references (main section):** 260
+- **References with complete bibliographic information:** 260
 - **References marked [verify]:** 0
 - **References marked [incomplete]:** 0
 - **Legislation/treaty/policy documents:** 7
-- **Grand total (references + legislation):** 257
+- **Grand total (references + legislation):** 267
 - **Chapters with most citations:** Ch. 1 (37), Ch. 2 (34), Ch. 16 (31), Ch. 3A (26)
 - **Most-cited single work:** Grossman and Rossi-Hansberg (2008), cited in 5 chapters (Ch. 3B, Ch. 5, Ch. 8, Ch. 13, Ch. 16)

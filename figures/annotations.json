@@ -201,5 +201,159 @@
       {"name": "São Paulo", "lat": -23.55, "lon": -46.63, "tier": 3},
       {"name": "Nairobi", "lat": -1.29, "lon": 36.82, "tier": 3}
     ]
-  }
+  },
+  "lab_output_figures": [
+    {
+      "stem": "fig_ch03a_moran_scatter",
+      "chapter": "ch03a",
+      "type": "thematic",
+      "title": "Moran Scatter Plot: Spatial Autocorrelation in Regional Output",
+      "description": "Spatially lagged y vs. y with four quadrants (HH, HL, LH, LL) showing positive spatial autocorrelation.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch03a_sar_coefficients",
+      "chapter": "ch03a",
+      "type": "thematic",
+      "title": "SAR Model Estimates: Regional Growth Determinants",
+      "description": "Coefficient plot with 95% confidence intervals for a spatial autoregressive growth regression.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch03b_distance_decay",
+      "chapter": "ch03b",
+      "type": "thematic",
+      "title": "Distance Decay in Bilateral Trade Flows",
+      "description": "Log-log scatter of trade flow vs. distance with fitted gravity line (slope ≈ −1.1).",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch03b_ppml_vs_ols",
+      "chapter": "ch03b",
+      "type": "thematic",
+      "title": "Gravity Estimates: OLS vs. PPML",
+      "description": "Side-by-side coefficient comparison showing how PPML attenuates the distance elasticity relative to OLS.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch05_inverted_u",
+      "chapter": "ch05",
+      "type": "thematic",
+      "title": "Premature Deindustrialization: The Inverted U",
+      "description": "Manufacturing share vs. GDP per capita scatter with quadratic fit illustrating the Rodrik (2016) pattern.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch06_dva_decomposition",
+      "chapter": "ch06",
+      "type": "thematic",
+      "title": "Domestic Value-Added Decomposition: East Asian Electronics",
+      "description": "Stacked bar chart of domestic VA, foreign VA, and double-counted terms for five East Asian economies.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch07_provincial_gini",
+      "chapter": "ch07",
+      "type": "thematic",
+      "title": "China's Interprovincial Inequality, 1990–2023",
+      "description": "Time series of interprovincial Gini coefficient showing rise-then-plateau pattern.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch09_convergence_fan",
+      "chapter": "ch09",
+      "type": "thematic",
+      "title": "EU Cohesion Country Convergence, 1990–2023",
+      "description": "GDP per capita relative to EU average for Ireland, Spain, Portugal, and Greece.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch10_mezzogiorno_gap",
+      "chapter": "ch10",
+      "type": "thematic",
+      "title": "The Persistent Mezzogiorno Gap, 1950–2023",
+      "description": "Mezzogiorno GDP per capita as percentage of Centre-North Italy over seven decades.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch12_scm_gap",
+      "chapter": "ch12",
+      "type": "thematic",
+      "title": "Synthetic Control Estimate: GDP Impact of Conflict",
+      "description": "Actual vs. synthetic GDP trajectory for a conflict-affected country with vertical treatment line.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch13_urbanization_industry",
+      "chapter": "ch13",
+      "type": "thematic",
+      "title": "Urbanization Without Industrialization",
+      "description": "Scatter of urbanization rate vs. manufacturing share for African vs. Asian countries.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch14_intra_regional_trade",
+      "chapter": "ch14",
+      "type": "thematic",
+      "title": "Intra-Regional Trade Shares by Bloc",
+      "description": "Bar chart comparing intra-bloc trade percentages across EU, USMCA, ASEAN, Mercosur, AfCFTA, and SAARC.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch15_stranded_timeline",
+      "chapter": "ch15",
+      "type": "thematic",
+      "title": "Stranded Fossil-Fuel Assets Under Net-Zero by 2050",
+      "description": "Waterfall chart of projected stranded asset values by sector under IEA NZE scenario.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_ch16_services_gravity",
+      "chapter": "ch16",
+      "type": "thematic",
+      "title": "Services Trade: Actual vs. Gravity-Predicted Flows",
+      "description": "Gravity residual plot for services trade with outlier country pairs labeled.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_lab1_sar_results",
+      "chapter": "lab1",
+      "type": "table",
+      "title": "Table: SAR Model Results — Regional Growth Regression",
+      "description": "Clean coefficient table comparing OLS and SAR estimates with standard errors and fit statistics.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_lab2_convergence_scatter",
+      "chapter": "lab2",
+      "type": "thematic",
+      "title": "Beta-Convergence in East Asia, 1990–2020",
+      "description": "Initial GDP per capita vs. subsequent growth rate for 14 East Asian economies with fitted line.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_lab5_placebo",
+      "chapter": "lab5",
+      "type": "thematic",
+      "title": "Placebo Test: Post/Pre RMSPE Ratio Distribution",
+      "description": "Histogram of placebo RMSPE ratios with treated unit (Yemen) marked as vertical line.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_lab6_moran_permutation",
+      "chapter": "lab6",
+      "type": "thematic",
+      "title": "Permutation Test for Moran's I (Nighttime Luminosity)",
+      "description": "Distribution of Moran's I under spatial randomness with observed value and p-value.",
+      "script": "ch_lab_output_figures.py"
+    },
+    {
+      "stem": "fig_lab7_stri_tariff",
+      "chapter": "lab7",
+      "type": "thematic",
+      "title": "Services Trade Restrictiveness: Ad-Valorem Equivalents",
+      "description": "STRI tariff-equivalent bars by sector (financial, telecom, transport, professional) for select countries.",
+      "script": "ch_lab_output_figures.py"
+    }
+  ]
 }

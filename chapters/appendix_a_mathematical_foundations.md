@@ -189,6 +189,63 @@ where:
 - $$P_j$$ is the inward multilateral resistance term (importer's price index)
 - $$\Pi_i$$ is the outward multilateral resistance term
 
+
+### Deriving Multilateral Resistance from CES Demand
+
+The structural gravity equation above is not an ad hoc specification — it emerges from a micro-founded general equilibrium model with CES preferences. This subsection traces that derivation, following Anderson and van Wincoop (2003), to show exactly where the multilateral resistance terms $$P_j$$ and $$\Pi_i$$ come from and why they are essential for consistent estimation.
+
+**CES expenditure shares.** Suppose each destination $$j$$ has a representative consumer with CES preferences over differentiated varieties sourced from all origins $$i = 1, \ldots, N$$. The consumer maximizes utility subject to a budget constraint, yielding expenditure shares of the standard CES form:
+
+$$
+\frac{X_{ij}}{E_j} = \left( \frac{p_i \tau_{ij}}{P_j} \right)^{1-\sigma}
+$$
+
+where $$p_i$$ is the factory-gate price of origin $$i$$'s variety, $$\tau_{ij} \geq 1$$ is the iceberg trade cost, $$\sigma > 1$$ is the elasticity of substitution across varieties, and $$P_j$$ is the CES price index for destination $$j$$. The delivered price that consumers in $$j$$ face for goods from $$i$$ is $$p_{ij} = p_i \tau_{ij}$$: the factory-gate price scaled up by the trade cost. The share of $$j$$'s expenditure allocated to origin $$i$$ depends on how cheap $$i$$'s delivered price is relative to the aggregate price index $$P_j$$.
+
+**The CES price index.** The ideal price index dual to the CES utility function aggregates delivered prices across all origins:
+
+$$
+P_j = \left[ \sum_{i=1}^{N} (p_i \tau_{ij})^{1-\sigma} \right]^{1/(1-\sigma)}
+$$
+
+This is the inward multilateral resistance term. It captures the full set of supply options available to destination $$j$$: a country that can source goods cheaply from many origins will have a low $$P_j$$, making any given bilateral trade cost relatively more burdensome at the margin.
+
+**Market clearing and outward resistance.** Total bilateral trade from $$i$$ to $$j$$ is $$X_{ij} = (p_i \tau_{ij} / P_j)^{1-\sigma} E_j$$. Market clearing requires that origin $$i$$'s total sales equal its total output:
+
+$$
+Y_i = \sum_{j=1}^{N} X_{ij} = \sum_{j=1}^{N} \left( \frac{p_i \tau_{ij}}{P_j} \right)^{1-\sigma} E_j
+$$
+
+Rearranging to solve for $$p_i^{1-\sigma}$$:
+
+$$
+p_i^{1-\sigma} = \frac{Y_i}{\sum_{j=1}^{N} (\tau_{ij} / P_j)^{1-\sigma} E_j}
+$$
+
+Define the outward multilateral resistance term $$\Pi_i$$ implicitly by:
+
+$$
+\Pi_i^{1-\sigma} = \sum_{j=1}^{N} \left( \frac{\tau_{ij}}{P_j} \right)^{1-\sigma} \frac{E_j}{Y^W}
+$$
+
+so that $$p_i^{1-\sigma} = Y_i / (Y^W \Pi_i^{1-\sigma})$$. Substituting this and the definition of $$P_j$$ back into the expenditure share equation yields the structural gravity equation:
+
+$$
+X_{ij} = \frac{Y_i E_j}{Y^W} \left( \frac{\tau_{ij}}{P_j \Pi_i} \right)^{1-\sigma}
+$$
+
+**The system of multilateral resistances.** The key insight is that $$P_j$$ and $$\Pi_i$$ are jointly determined by the full matrix of bilateral trade costs. Substituting the expression for $$p_i^{1-\sigma}$$ into the CES price index gives:
+
+$$
+P_j^{1-\sigma} = \sum_{i=1}^{N} \left( \frac{\tau_{ij}}{\Pi_i} \right)^{1-\sigma} \frac{Y_i}{Y^W}
+$$
+
+Together with the definition of $$\Pi_i^{1-\sigma}$$ above, these form a system of $$2N$$ nonlinear equations in $$2N$$ unknowns (the $$N$$ values of $$P_j$$ and $$N$$ values of $$\Pi_i$$), given the observables $$Y_i$$, $$E_j$$, and $$\tau_{ij}$$. The system can be solved numerically (Anderson and van Wincoop 2003) or, as is standard in applied work, circumvented entirely through the use of fixed effects.
+
+**Why this matters: the "gold medal mistake."** Baldwin and Taglioni (2006) coined the term "gold medal mistake" for gravity regressions that omit multilateral resistance terms. Because $$P_j$$ and $$\Pi_i$$ depend on the full trade cost matrix, omitting them induces omitted variable bias: the bilateral trade cost proxies (distance, borders, language) are correlated with each country's overall remoteness from world markets. In practice, a country that is far from all trading partners has high multilateral resistance, which partially offsets the effect of any specific bilateral cost. Ignoring this effect overstates the impact of bilateral barriers. The bias is not merely theoretical — Baldwin and Taglioni showed it materially distorts estimates of the trade effects of currency unions, border effects, and regional agreements.
+
+**Connection to fixed effects estimation.** The structural gravity equation makes clear that $$P_j$$ and $$\Pi_i$$ are destination-specific and origin-specific terms, respectively. In a cross-sectional gravity regression, exporter fixed effects $$\alpha_i$$ absorb $$Y_i / (\Pi_i^{1-\sigma} Y^W)$$ and importer fixed effects $$\gamma_j$$ absorb $$E_j / P_j^{1-\sigma}$$. This means that PPML estimation with a full set of exporter and importer fixed effects consistently estimates the bilateral trade cost parameters $$\boldsymbol{\delta}$$ without requiring the researcher to solve the nonlinear multilateral resistance system — the fixed effects do the work. In a panel setting, time-varying origin-year and destination-year fixed effects perform the same role, accommodating changes in multilateral resistance over time. This is the approach implemented in Lab 7's `ppml_estimator.py`.
+
 ### Estimation via PPML
 
 Taking the structural gravity equation to data:
