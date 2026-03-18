@@ -488,27 +488,27 @@ The quantitative claims and statistics cited in this chapter draw on the followi
 - **ACET (2021)** — African Center for Economic Transformation, *African Transformation Report 2021: Integrating to Transform*, on regional integration and structural transformation
 - **AfCFTA Secretariat (2023)** — Official data on African Continental Free Trade Area tariff schedules, rules of origin, services protocols, and implementation progress
 - **Anderson and Van Wincoop (2003)** — Academic research on gravity model estimation of trade costs and border effects
+- **Brandi, Kamin, and Thiele (2025)** — *Review of World Economics* special issue on Africa's regional and global integration
+- **Brookings (2026)** — *Foresight Africa 2026*, Chapter 6 on trade, regional integration, and AfCFTA implementation status
+- **Byiers (2025)** — ECDPM field research on Kasumbalesa border crossing and Lobito/North-South corridor governance challenges
 - **Byiers, Apiko, and Karkare (2023)** — ECDPM research on AfCFTA industrialization, political economy dynamics, and the gap between policy supply and policy demand
 - **Byiers and Jaïdi (2024)** — ECDPM research on fostering investment and inclusivity in Africa's AfCFTA, with analysis of private sector engagement and ROO utilization rates
 - **Byiers et al. (2024)** — ECDPM Discussion Paper 376 on AfCFTA-regional economic community relations and seven modes of interaction
+- **De Melo and Solleder (2025)** — Econometric analysis of AfCFTA's potential to develop regional value chains using EORA MRIO data (1995–2022)
 - **ECOWAS Commission (2020)** — Economic Community of West African States data on regional trade, integration benchmarks, and cross-border governance
 - **Fafchamps (2004)** — Academic research on market institutions, trader networks, and informal exchange in African economies
 - **Freightos (2023)** — Global freight rate data and shipping cost comparisons for African and international trade routes
 - **Homewood et al. (2009)** — Academic research on pastoralist economies, cross-border livestock trade, and informal economic networks in East Africa
 - **Kaplinsky and Morris (2019)** — Academic research on trade and industrialization in Africa, SME development, and the inseparability of trade and industrial policy
 - **Karkare and Medinilla (2023)** — ECDPM Discussion Paper 359 on green industrialization, critical raw materials, and the African battery value chain
+- **Karkare et al. (2025)** — ODI/ECDPM analysis of continental textiles and apparel value chain challenges and opportunities under the AfCFTA
 - **KAZA Secretariat (2015)** — Kavango-Zambezi Transfrontier Conservation Area data on cross-border conservation, tourism corridors, and community economic impacts
 - **Krishnan (2023)** — Manchester GDI research on regional value chains in Southern African apparel, public and private governance interactions
+- **Lebdioui (2024)** — *Survival of the Greenest*, on green industrialization constraints and the "green ladder" problem for developing economies
+- **Lebdioui and Riofrancos (2025)** — TIDE Working Paper 92 on critical minerals and resource nationalism 2.0
 - **Medinilla and Byiers (2023)** — ECDPM research on the political economy of green industrialization in Africa and multilayered framework analysis
 - **Medinilla, Dekeyser, and Karkare (2025)** — ECDPM on green industrialization in an age of disruption, Africa-Europe cooperation
 - **MPDC (2023)** — Maputo Port Development Company data on port throughput, corridor logistics, and southern African trade infrastructure
-- **Brandi, Kamin, and Thiele (2025)** — *Review of World Economics* special issue on Africa's regional and global integration
-- **Brookings (2026)** — *Foresight Africa 2026*, Chapter 6 on trade, regional integration, and AfCFTA implementation status
-- **Byiers (2025)** — ECDPM field research on Kasumbalesa border crossing and Lobito/North-South corridor governance challenges
-- **De Melo and Solleder (2025)** — Econometric analysis of AfCFTA's potential to develop regional value chains using EORA MRIO data (1995–2022)
-- **Karkare et al. (2025)** — ODI/ECDPM analysis of continental textiles and apparel value chain challenges and opportunities under the AfCFTA
-- **Lebdioui (2024)** — *Survival of the Greenest*, on green industrialization constraints and the "green ladder" problem for developing economies
-- **Lebdioui and Riofrancos (2025)** — TIDE Working Paper 92 on critical minerals and resource nationalism 2.0
 - **Naumann (2024)** — tralac research on AfCFTA rules of origin negotiations, product-level criteria, and outstanding tariff lines
 - **OICA (2024)** — International Organization of Motor Vehicle Manufacturers data on automotive production and assembly in African markets
 - **Te Velde (2023, 2024)** — ODI/SET programme research on economic transformation, regional value chains, and Africa's industrial development trajectory
