@@ -14,6 +14,8 @@ Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2001. "The Colonial Origi
 
 Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2002. "Reversal of Fortune: Geography and Institutions in the Making of the Modern World Income Distribution." *Quarterly Journal of Economics* 117(4): 1231--1294. [Ch. 2]
 
+ACET (African Center for Economic Transformation). 2021. *African Transformation Report 2021: Integrating to Transform.* Accra: ACET. [Ch. 14]
+
 Acosta, Pablo A., Emmanuel K.K. Lartey, and Federico S. Mandelman. 2009. "Remittances and the Dutch Disease." *Journal of International Economics* 79(1): 102--116. [Ch. 5]
 
 Agrawal, Ajay, Avi Goldfarb, and Florenta Teodoridis. 2016. "Does Knowledge Accumulation Increase the Returns to Collaboration?" *American Economic Journal: Applied Economics* 8(4): 100--128. [Ch. 1]
@@ -21,6 +23,8 @@ Agrawal, Ajay, Avi Goldfarb, and Florenta Teodoridis. 2016. "Does Knowledge Accu
 Akamatsu, Kaname. 1962. "A Historical Pattern of Economic Growth in Developing Countries." *The Developing Economies* 1(s1): 3--25. [Ch. 6]
 
 Aker, Jenny C. 2010. "Information from Markets Near and Far: Mobile Phones and Agricultural Markets in Niger." *American Economic Journal: Applied Economics* 2(3): 46--59. [Ch. 14]
+
+Apiko, Philomena, Sean Woolfrey, and Bruce Byiers. 2020. "The Promise of the African Continental Free Trade Area (AfCFTA)." In Weyner Zondi, ed., *Political Economy Dynamics of Regional Organizations in Africa.* Cham: Palgrave Macmillan. [Ch. 14]
 
 Allen, Treb, and Costas Arkolakis. 2014. "Trade and the Topography of the Spatial Economy." *Quarterly Journal of Economics* 129(3): 1085--1140. [Ch. 16]
 
@@ -98,6 +102,14 @@ Boldrin, Michele, and Fabio Canova. 2001. "Inequality and Convergence in Europe'
 Booth, David, and Frederick Golooba-Mutebi. 2012. "Developmental Patrimonialism? The Case of Rwanda." *African Affairs* 111(444): 379--403. [Ch. 12]
 
 Borchert, Ingo, Batshur Gootiiz, and Aaditya Mattoo. 2014. "Policy Barriers to International Trade in Services: Evidence from a New Database." *World Bank Economic Review* 28(1): 162--188. [Ch. 3A, Ch. 3B, Ch. 7]
+
+Byiers, Bruce. 2023. "Nigeria and the AfCFTA as a Two-Level Game." *The World Economy* 46(6): 1653--1672. [Ch. 14]
+
+Byiers, Bruce, Philomena Apiko, and Poorva Karkare. 2023. "The AfCFTA and Industrialisation: From Policy to Practice." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Byiers, Bruce, and Larabi Jaïdi. 2024. "Fostering Investment and Inclusivity in Africa's Continental Free Trade Area." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Byiers, Bruce, Poorva Karkare, and Isabell Wutz. 2024. "How AfCFTA-Regional Relations Can Support Continental Trade." ECDPM Discussion Paper 376. Maastricht: ECDPM. [Ch. 14]
 
 Boschma, Ron. 2011. "Regional Branching and Regional Innovation Policy." In Philip Cooke et al., eds., *Handbook of Regional Innovation and Growth.* Cheltenham: Edward Elgar. [Ch. 2]
 
@@ -306,6 +318,12 @@ Jean, Neal, Marshall Burke, Michael Xie, W. Matthew Davis, David B. Lobell, and 
 
 Kaplinsky, Raphael. 2000. "Globalisation and Unequalisation: What Can Be Learned from Value Chain Analysis?" *Journal of Development Studies* 37(2): 117--146. [Ch. 6]
 
+Kaplinsky, Raphael, and Mike Morris. 2019. "Trade and Industrialisation in Africa: SMEs, Manufacturing and Cluster Dynamics." *Journal of African Trade* 6(1--2): 47--59. [Ch. 14]
+
+Karkare, Poorva, and Alfonso Medinilla. 2023. "Green Industrialisation: Leveraging Critical Raw Materials for an African Battery Value Chain." ECDPM Discussion Paper 359. Maastricht: ECDPM. [Ch. 14]
+
+Krishnan, Aarti. 2023. "Understanding Regional Value Chains Through the Interaction of Public and Private Governance: Insights from Southern Africa's Apparel Sector." University of Manchester, Global Development Institute Working Paper. [Ch. 14]
+
 Kapoor, Mudit, Harry H. Kelejian, and Ingmar R. Prucha. 2007. "Panel Data Models with Spatially Correlated Error Components." *Journal of Econometrics* 140(1): 97--130. [Ch. 3A]
 
 Kaul, Ashok, Stefan Klößner, Gregor Pfeifer, and Manuel Schieler. 2022. "Standard Synthetic Control Methods: The Case of Using All Preintervention Outcomes Together with Covariates." *Journal of Business & Economic Statistics* 40(3): 1362--1376. [Ch. 12]
@@ -382,6 +400,8 @@ McCrary, Justin. 2008. "Manipulation of the Running Variable in the Regression D
 
 Melitz, Marc J. 2003. "The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity." *Econometrica* 71(6): 1695--1725. [Ch. 1, Ch. 16]
 
+Medinilla, Alfonso, and Bruce Byiers. 2023. "The Political Economy of Green Industrialisation in Africa." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
 Michalopoulos, Stelios, and Elias Papaioannou. 2013. "Pre-Colonial Ethnic Institutions and Contemporary African Development." *Econometrica* 81(1): 113--152. [Ch. 13]
 
 Mitchener, Kris James, and Ian W. McLean. 1999. "U.S. Regional Growth and Convergence, 1880--1980." *Journal of Economic History* 59(4): 1016--1042. [Ch. 10]
@@ -403,6 +423,8 @@ Mundell, Robert A. 1961. "A Theory of Optimum Currency Areas." *American Economi
 Naidu, Suresh. 2010. "Recruitment Restrictions and Labor Markets: Evidence from the Postbellum U.S. South." *Journal of Labor Economics* 28(2): 413--445. [Ch. 2]
 
 Nagaraj, Abhishek. 2021. "The Private Impact of Public Data: Landsat Satellite Maps and Gold Exploration." Working paper. [Ch. 3A, Ch. 16]
+
+Naumann, Eckart. 2024. "The New Rules of Origin in the African Continental Free Trade Area (AfCFTA): What Has Been Agreed, What Remains Outstanding." tralac Working Paper. Stellenbosch: Trade Law Centre. [Ch. 14]
 
 Nagaraj, Abhishek, and Scott Stern. 2020. "The Economics of Maps." *Journal of Economic Perspectives* 34(1): 196--221. [Ch. 3A]
 
@@ -499,6 +521,10 @@ SVIMEZ. 2023. *Rapporto SVIMEZ 2023 sull'Economia e la Società del Mezzogiorno.
 Tarrow, Sidney. 1996. "Making Social Science Work Across Space and Time: A Critical Reflection on Robert Putnam's *Making Democracy Work.*" *American Political Science Review* 90(2): 389--397. [Ch. 10]
 
 Taylor, Peter J. 2004. *World City Network: A Global Urban Analysis.* London: Routledge. [Ch. 16]
+
+Te Velde, Dirk Willem. 2024. "The Future of Economic Transformation in Africa." ODI/SET Programme Working Paper. London: Overseas Development Institute. [Ch. 14]
+
+tralac (Trade Law Centre). 2024. "Where Does the AfCFTA Stand at the Beginning of 2024?" tralac Blog. Stellenbosch: Trade Law Centre. [Ch. 14]
 
 Taylor, Peter J., and Ben Derudder. 2016. *World City Network: A Global Urban Analysis.* 2nd ed. London: Routledge. [Ch. 3B, Ch. 16]
 
