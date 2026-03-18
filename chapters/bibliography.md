@@ -105,6 +105,8 @@ Borchert, Ingo, Batshur Gootiiz, and Aaditya Mattoo. 2014. "Policy Barriers to I
 
 Byiers, Bruce. 2023. "Nigeria and the AfCFTA as a Two-Level Game." *The World Economy* 46(6): 1653--1672. [Ch. 14]
 
+Byiers, Bruce. 2025. "Trade at the Crossroads of Corridors: Kasumbalesa Border and the Lobito and North-South Corridors." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
 Byiers, Bruce, Philomena Apiko, and Poorva Karkare. 2023. "The AfCFTA and Industrialisation: From Policy to Practice." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
 
 Byiers, Bruce, and Larabi Jaïdi. 2024. "Fostering Investment and Inclusivity in Africa's Continental Free Trade Area." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
@@ -118,6 +120,8 @@ Bound, John, Breno Braga, Gaurav Khanna, and Sarah Turner. 2021. "The Globalizat
 Brautigam, Deborah. 2020. "A Critical Look at Chinese 'Debt-Trap Diplomacy': The Rise of a Meme." *Area Development and Policy* 5(1): 1--14. [Ch. 7]
 
 Brandi, Clara, Katrin Kamin, and Rainer Thiele. 2025. "Africa's Regional and Global Integration: Introduction to the Special Issue." *Review of World Economics* 161: 1--5. [Ch. 14]
+
+Brookings Institution. 2026. *Foresight Africa 2026.* Washington, DC: Brookings Institution. [Ch. 14]
 
 Bresser-Pereira, Luiz Carlos. 2008. "The Dutch Disease and Its Neutralization: A Ricardian Approach." *Revista de Economia Política* 28(1): 47--71. [Ch. 5]
 
@@ -411,6 +415,8 @@ McCrary, Justin. 2008. "Manipulation of the Running Variable in the Regression D
 Melitz, Marc J. 2003. "The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity." *Econometrica* 71(6): 1695--1725. [Ch. 1, Ch. 16]
 
 Medinilla, Alfonso, and Bruce Byiers. 2023. "The Political Economy of Green Industrialisation in Africa." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Medinilla, Alfonso, Koen Dekeyser, and Poorva Karkare. 2025. "Green Industrialisation in an Age of Disruption: Africa, Europe and the Global Economy." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
 
 Michalopoulos, Stelios, and Elias Papaioannou. 2013. "Pre-Colonial Ethnic Institutions and Contemporary African Development." *Econometrica* 81(1): 113--152. [Ch. 13]
 
