@@ -117,6 +117,8 @@ Bound, John, Breno Braga, Gaurav Khanna, and Sarah Turner. 2021. "The Globalizat
 
 Brautigam, Deborah. 2020. "A Critical Look at Chinese 'Debt-Trap Diplomacy': The Rise of a Meme." *Area Development and Policy* 5(1): 1--14. [Ch. 7]
 
+Brandi, Clara, Katrin Kamin, and Rainer Thiele. 2025. "Africa's Regional and Global Integration: Introduction to the Special Issue." *Review of World Economics* 161: 1--5. [Ch. 14]
+
 Bresser-Pereira, Luiz Carlos. 2008. "The Dutch Disease and Its Neutralization: A Ricardian Approach." *Revista de Economia Política* 28(1): 47--71. [Ch. 5]
 
 Brussevich, Mariya, Era Dabla-Norris, and Salma Khalid. 2022. "Who Does Remote Work? Sorting across Industries and Regions." *IMF Working Paper* 2022/089. [Ch. 4]
@@ -167,6 +169,8 @@ Correia, Sergio, Paulo Guimarães, and Thomas Zylkin. 2020. "Fast Poisson Estima
 Cruz, José-Luis, and Esteban Rossi-Hansberg. 2024. "The Economic Geography of Global Warming." *Review of Economic Studies* 91(1): 466--497. [Ch. 15]
 
 David, Paul A. 1985. "Clio and the Economics of QWERTY." *American Economic Review* 75(2): 332--337. [Ch. 2]
+
+De Melo, Jaime, and Jean-Marc Solleder. 2025. "How Can the African Continental Free Trade Area (AfCFTA) Help Develop Regional Value Chains Across Africa? An Exploration." *Review of World Economics* 161: 121--149. [Ch. 14]
 
 de Soto, Hernando. 1989. *The Other Path: The Invisible Revolution in the Third World.* New York: Harper & Row. [Ch. 2]
 
@@ -322,7 +326,13 @@ Kaplinsky, Raphael, and Mike Morris. 2019. "Trade and Industrialisation in Afric
 
 Karkare, Poorva, and Alfonso Medinilla. 2023. "Green Industrialisation: Leveraging Critical Raw Materials for an African Battery Value Chain." ECDPM Discussion Paper 359. Maastricht: ECDPM. [Ch. 14]
 
+Karkare, Poorva, Bruce Byiers, Amanda Bisong, Faizel Ismail, and Prachi Agarwal. 2025. "AfCFTA Implementation Challenges: Towards an African Continental Textiles and Apparel Value Chain." ODI Global Report. London: Overseas Development Institute. [Ch. 14]
+
 Krishnan, Aarti. 2023. "Understanding Regional Value Chains Through the Interaction of Public and Private Governance: Insights from Southern Africa's Apparel Sector." University of Manchester, Global Development Institute Working Paper. [Ch. 14]
+
+Lebdioui, Amir. 2024. *Survival of the Greenest: Economic Transformation in a Climate-Conscious World.* Cambridge: Cambridge University Press. [Ch. 14]
+
+Lebdioui, Amir, and Thea Riofrancos. 2025. "Critical Minerals and Resource Nationalism 2.0: Why the Policy Is More Critical than the Mineral." TIDE Working Paper 92. Oxford: TIDE Centre, University of Oxford. [Ch. 14]
 
 Kapoor, Mudit, Harry H. Kelejian, and Ingmar R. Prucha. 2007. "Panel Data Models with Spatially Correlated Error Components." *Journal of Econometrics* 140(1): 97--130. [Ch. 3A]
 
@@ -526,6 +536,8 @@ Te Velde, Dirk Willem. 2024. "The Future of Economic Transformation in Africa." 
 
 tralac (Trade Law Centre). 2024. "Where Does the AfCFTA Stand at the Beginning of 2024?" tralac Blog. Stellenbosch: Trade Law Centre. [Ch. 14]
 
+tralac (Trade Law Centre). 2025. *Annual Conference Report 2025.* Stellenbosch: Trade Law Centre. [Ch. 14]
+
 Taylor, Peter J., and Ben Derudder. 2016. *World City Network: A Global Urban Analysis.* 2nd ed. London: Routledge. [Ch. 3B, Ch. 16]
 
 Taylor, Peter J., Pengfei Ni, Ben Derudder, Michael Hoyler, Jin Huang, and Frank Witlox, eds. 2011. *Global Urban Analysis: A Survey of Cities in Globalization.* London: Earthscan. [Ch. 4]
@@ -541,6 +553,10 @@ Tumen, Semih. 2016. "The Economic Impact of Syrian Refugees on Host Countries: Q
 UNCTAD (United Nations Conference on Trade and Development). 2019. *Economic Development in Africa Report 2019: Made in Africa -- Rules of Origin for Enhanced Intra-African Trade.* Geneva: United Nations. [Ch. 14]
 
 UNCTAD (United Nations Conference on Trade and Development). 2020. *World Investment Report 2020: International Production beyond the Pandemic.* Geneva: United Nations. [Ch. 12]
+
+UNECA (United Nations Economic Commission for Africa). 2025. *Economic Report on Africa 2025: Advancing the Implementation of the Agreement Establishing the African Continental Free Trade Area (AfCFTA).* Addis Ababa: United Nations. [Ch. 14]
+
+UNECA (United Nations Economic Commission for Africa), AUC (African Union Commission), and AfDB (African Development Bank). 2025. *Assessing Regional Integration in Africa XI: Delivering on the African Economic Community -- Towards an African Continental Customs Union and African Continental Common Market.* Addis Ababa: United Nations. [Ch. 14]
 
 Verwimp, Philip. 2005. "An Economic Profile of Peasant Perpetrators of Genocide: Micro-Level Evidence from Rwanda." *Journal of Development Economics* 77(2): 297--323. [Ch. 12]
 
