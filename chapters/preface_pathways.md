@@ -168,6 +168,12 @@ This book analyzes spatial economics at the regional and global scale — how re
 
 ---
 
+## A Note on Regional Scope
+
+This book covers six world regions — the Americas, East Asia, South Asia, Europe, the Middle East and North Africa, and Sub-Saharan Africa — through dedicated chapters and applied labs. Two regions receive limited treatment: Oceania (Australia, New Zealand, and the Pacific Islands, which appear in Chapter 15's discussion of climate-vulnerable Small Island Developing States) and Central Asia (the post-Soviet economies of Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, and Turkmenistan). Both regions present distinctive spatial dynamics — Australia's extreme geographic concentration in a handful of coastal cities, Central Asia's resource-dependent landlocked economies — that warrant dedicated analysis but exceed the scope of a single volume. Instructors with expertise in these regions may wish to assign supplementary readings alongside the frameworks developed here.
+
+---
+
 ## A Note on Data Vintage
 
 The empirical claims throughout this book draw primarily on data available through mid-2024: World Development Indicators, Eurostat NUTS-2 regional statistics, NBS China provincial accounts, NASSCOM reports, WTO services trade statistics, and OECD TiVA tables. Economic statistics are revised, rebased, and updated continuously. Readers should treat specific numerical claims (GDP levels, trade shares, employment counts) as illustrative of magnitudes and trends rather than as definitive point estimates. Where possible, inline citations identify the source and vintage of each statistic so that instructors and students can verify and update figures using the latest available data. The Applied Labs are designed to work with both the built-in synthetic datasets and with updated real data, allowing the empirical exercises to remain current as new data releases become available.

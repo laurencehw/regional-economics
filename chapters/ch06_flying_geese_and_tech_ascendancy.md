@@ -72,7 +72,7 @@ The OECD Trade in Value Added (TiVA) database and the World Input-Output Databas
 
 These aggregate figures mask significant intra-sector variation. A Korean fab producing DRAM has very high domestic value-added because the wafers, process chemicals, and much of the capital equipment are now produced domestically. A Malaysian electronics assembly plant has very low domestic value-added because it is essentially a labor-service operation on imported parts. The within-country, within-sector variation is what Lab 2 is designed to exploit. Figure 6.3 decomposes DVA shares for key East Asian economies, showing the progression from assembly-dominated to design-intensive export profiles.
 
-![Figure 6.3: DVA decomposition — domestic value-added shares in East Asian electronics exports](../figures/fig_ch06_dva_decomposition.png)
+![Figure 6.2: DVA decomposition — domestic value-added shares in East Asian electronics exports](../figures/fig_ch06_dva_decomposition.png)
 
 *Source: Author's calculations based on OECD TiVA and WIOD data.*
 
@@ -80,7 +80,7 @@ These aggregate figures mask significant intra-sector variation. A Korean fab pr
 
 ## 6.2 Windows of Opportunity: Seizing Technological Transitions
 
-![Figure 6.2: Domestic value added in exports — East Asian economies, 2000–2020](../figures/fig_ch06_thematic_dva_trajectory.png)
+![Figure 6.3: Domestic value added in exports — East Asian economies, 2000–2020](../figures/fig_ch06_thematic_dva_trajectory.png)
 
 *Source: OECD TiVA database. Illustrative; based on patterns in OECD TiVA data, not exact reproduction.*
 

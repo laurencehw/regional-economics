@@ -154,13 +154,13 @@ The table rewards careful cross-referencing with the chapters from which its cel
 
 Figure 15.3 presents the stranded-asset timeline, showing the projected phaseout dates for fossil-fuel reserves under alternative IEA scenarios and the corresponding window of economic viability for extraction-dependent regions.
 
-![Figure 15.3: Stranded asset timeline — projected fossil-fuel phaseout under IEA scenarios](../figures/fig_ch15_stranded_timeline.png)
+![Figure 15.2: Stranded asset timeline — projected fossil-fuel phaseout under IEA scenarios](../figures/fig_ch15_stranded_timeline.png)
 
 *Source: Author's calculations based on IEA World Energy Outlook (2023) and Carbon Tracker Initiative data.*
 
 The cross-regional comparison reveals a cruel irony: the regions most exposed to climate risk are, on average, the least equipped to adapt. Sub-Saharan Africa, South Asia, and the MENA conflict states face the most severe physical impacts and have the least institutional, financial, and human capital capacity for adaptation. The developed world faces more moderate physical impacts and has greater adaptive capacity. The climate transition is, in this sense, a spatial inequality amplifier — a mechanism that widens the gap between rich and poor regions through a channel (physical geography) that operates independently of the trade, investment, and institutional channels that conventional development economics focuses on.
 
-![Figure 15.2: Stranded fossil-fuel assets — top 10 countries at risk](../figures/fig_ch15_chart_stranded_assets.png)
+![Figure 15.3: Stranded fossil-fuel assets — top 10 countries at risk](../figures/fig_ch15_chart_stranded_assets.png)
 *Source: Author's calculations based on Carbon Tracker Initiative (2023) and IEA World Energy Outlook (2023).*
 
 ---
