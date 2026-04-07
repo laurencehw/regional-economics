@@ -244,7 +244,11 @@ Ganong, Peter, and Daniel Shoag. 2017. "Why Has Regional Income Convergence in t
 
 Gereffi, Gary, and Karina Fernandez-Stark. 2016. *Global Value Chain Analysis: A Primer.* 2nd ed. Durham, NC: Center on Globalization, Governance & Competitiveness, Duke University. [Ch. 6]
 
+Gartner. 2024. "Gartner Predicts Chatbots Will Become a Primary Customer Service Channel Within Five Years." Gartner Press Release, January 2024. [Ch. 16]
+
 Gaubert, Cecile. 2018. "Firm Sorting and Agglomeration." *American Economic Review* 108(11): 3117--3153. [Ch. 1]
+
+GitHub. 2024. "GitHub Copilot Surpasses 1.8 Million Paid Subscribers." GitHub Blog, February 2024. [Ch. 16]
 
 Glaeser, Edward L., and Joshua D. Gottlieb. 2008. "The Economics of Place-Making Policies." *Brookings Papers on Economic Activity* (Spring): 155--239. [Ch. 9]
 
@@ -617,48 +621,3 @@ Inflation Reduction Act (IRA). 2022. Public Law 117--169. United States. [Ch. 4,
 Santiago Principles (Generally Accepted Principles and Practices for Sovereign Wealth Funds). 2008. International Working Group of Sovereign Wealth Funds. [Ch. 11]
 
 Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 9]
-
----
-
-## Consistency Notes and Flags
-
-1. **Rodrik (2019) in Ch. 5 and Ch. 13:** Both chapters cite "Diao, McMillan, and Rodrik (2019)" — the Palgrave Handbook chapter on structural change. No separate solo Rodrik (2019) entry needed.
-
-2. **Henderson (1993) in Ch. 1:** This is Rebecca Henderson, co-author of Jaffe, Trajtenberg, and Henderson (1993) -- not J. Vernon Henderson. Listed under Jaffe, Trajtenberg, and Henderson.
-
-3. **McCann (2016, 2020):** Two separate works by Philip McCann cited in Ch. 10. Both entries provided.
-
-4. **Becker et al. (2010) vs. Becker et al. (2013):** Two different papers by Becker, Egger, and von Ehrlich. The 2010 paper is cited in Ch. 3A; the 2013 paper in Ch. 9. Both entries provided.
-
-5. **LeSage and Pace (2009) vs. (2014):** Two different works. The 2009 entry is the textbook; the 2014 entry is the journal article on "The Biggest Myth in Spatial Econometrics."
-
-6. **Combes et al. (2010):** Cited multiple times in Ch. 1 -- all refer to the same chapter in the *Agglomeration Economics* volume.
-
-7. **Grossman and Rossi-Hansberg (2008):** Cited across five chapters (3B, 5, 8, 13, 16) -- all refer to the same "Trading Tasks" paper.
-
-8. **Desmet and Rossi-Hansberg (2015):** Cited in both Ch. 15 and Ch. 16 -- same paper on spatial economic impact of global warming.
-
-9. **Anderson and van Wincoop (2003):** Cited in both Ch. 3B and Ch. 4 -- same "Gravity with Gravitas" paper.
-
-10. **Iammarino, Rodríguez-Pose, and Storper (2019):** Cited in Ch. 9 without parenthetical year in some instances; included as a full reference.
-
-11. **Luca, Nagaraj, and Subramani (2022):** Ch. 3A originally cited as "Nagaraj, Stern, and Scott Morton (2022)" — corrected to Luca, Nagaraj, and Subramani per NBER WP 30810. Chapter text updated.
-
-12. **Chen et al. (2019):** In Ch. 6, cited as "Wei Chen and colleagues (2019)"; in Ch. 7, cited as "Chen et al. (2019)." Same paper -- the *Brookings Papers* forensic examination of China's national accounts.
-
-13. **Boschma (2011):** Confirmed cited in Ch. 2 text (regional branching discussion). Not an orphan reference.
-
-14. **Acemoglu, Johnson, and Robinson (2001) vs. (2002):** Two separate papers. The 2001 paper is "Colonial Origins" (*AER*); the 2002 paper is "Reversal of Fortune" (*QJE*). Both entries provided.
-
----
-
-## Summary Statistics
-
-- **Total unique references (main section):** 260
-- **References with complete bibliographic information:** 260
-- **References marked [verify]:** 0
-- **References marked [incomplete]:** 0
-- **Legislation/treaty/policy documents:** 7
-- **Grand total (references + legislation):** 267
-- **Chapters with most citations:** Ch. 1 (37), Ch. 2 (34), Ch. 16 (31), Ch. 3A (26)
-- **Most-cited single work:** Grossman and Rossi-Hansberg (2008), cited in 5 chapters (Ch. 3B, Ch. 5, Ch. 8, Ch. 13, Ch. 16)

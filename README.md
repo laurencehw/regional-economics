@@ -10,7 +10,7 @@
 
 This book provides a unified treatment of regional economics across six world regions, combining new economic geography, institutional analysis, and modern spatial econometric methods. Each regional section pairs analytical chapters with a hands-on applied lab that uses real data to replicate or extend key empirical findings.
 
-**Read online:** [GitBook edition](https://lwilsesamson.gitbook.io/regional-economics) *(coming soon)*
+**Read online:** [GitBook edition](https://lwilsesamson.gitbook.io/regional-economics)
 
 ---
 

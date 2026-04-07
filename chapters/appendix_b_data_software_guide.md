@@ -107,7 +107,7 @@ pip install -r requirements.txt
 python -m pytest tests/ -v
 ```
 
-All 107 tests should pass.
+All tests should pass.
 
 ### Google Colab (Zero-Install)
 
