@@ -14,6 +14,8 @@ Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2001. "The Colonial Origi
 
 Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2002. "Reversal of Fortune: Geography and Institutions in the Making of the Modern World Income Distribution." *Quarterly Journal of Economics* 117(4): 1231--1294. [Ch. 2]
 
+ACET (African Center for Economic Transformation). 2021. *African Transformation Report 2021: Integrating to Transform.* Accra: ACET. [Ch. 14]
+
 Acosta, Pablo A., Emmanuel K.K. Lartey, and Federico S. Mandelman. 2009. "Remittances and the Dutch Disease." *Journal of International Economics* 79(1): 102--116. [Ch. 5]
 
 Agrawal, Ajay, Avi Goldfarb, and Florenta Teodoridis. 2016. "Does Knowledge Accumulation Increase the Returns to Collaboration?" *American Economic Journal: Applied Economics* 8(4): 100--128. [Ch. 1]
@@ -21,6 +23,8 @@ Agrawal, Ajay, Avi Goldfarb, and Florenta Teodoridis. 2016. "Does Knowledge Accu
 Akamatsu, Kaname. 1962. "A Historical Pattern of Economic Growth in Developing Countries." *The Developing Economies* 1(s1): 3--25. [Ch. 6]
 
 Aker, Jenny C. 2010. "Information from Markets Near and Far: Mobile Phones and Agricultural Markets in Niger." *American Economic Journal: Applied Economics* 2(3): 46--59. [Ch. 14]
+
+Apiko, Philomena, Sean Woolfrey, and Bruce Byiers. 2020. "The Promise of the African Continental Free Trade Area (AfCFTA)." In Weyner Zondi, ed., *Political Economy Dynamics of Regional Organizations in Africa.* Cham: Palgrave Macmillan. [Ch. 14]
 
 Allen, Treb, and Costas Arkolakis. 2014. "Trade and the Topography of the Spatial Economy." *Quarterly Journal of Economics* 129(3): 1085--1140. [Ch. 16]
 
@@ -103,15 +107,29 @@ Boschma, Ron. 2011. "Regional Branching and Regional Innovation Policy." In Phil
 
 Bound, John, Breno Braga, Gaurav Khanna, and Sarah Turner. 2021. "The Globalization of Postsecondary Education: The Role of International Students in the US Higher Education System." *Journal of Economic Perspectives* 35(1): 163--184. [Ch. 4]
 
+Brandi, Clara, Katrin Kamin, and Rainer Thiele. 2025. "Africa's Regional and Global Integration: Introduction to the Special Issue." *Review of World Economics* 161: 1--5. [Ch. 14]
+
 Brautigam, Deborah. 2020. "A Critical Look at Chinese 'Debt-Trap Diplomacy': The Rise of a Meme." *Area Development and Policy* 5(1): 1--14. [Ch. 7]
 
 Bresser-Pereira, Luiz Carlos. 2008. "The Dutch Disease and Its Neutralization: A Ricardian Approach." *Revista de Economia Política* 28(1): 47--71. [Ch. 5]
+
+Brookings Institution. 2026. *Foresight Africa 2026.* Washington, DC: Brookings Institution. [Ch. 14]
 
 Brussevich, Mariya, Era Dabla-Norris, and Salma Khalid. 2022. "Who Does Remote Work? Sorting across Industries and Regions." *IMF Working Paper* 2022/089. [Ch. 4]
 
 Burke, Marshall, Solomon M. Hsiang, and Edward Miguel. 2015. "Global Non-Linear Effect of Temperature on Economic Production." *Nature* 527(7577): 235--239. [Ch. 12, Ch. 15]
 
 Butts, Kyle. 2021. "Difference-in-Differences Estimation with Spatial Spillovers." Working paper. [Ch. 16]
+
+Byiers, Bruce. 2023. "Nigeria and the AfCFTA as a Two-Level Game." *The World Economy* 46(6): 1653--1672. [Ch. 14]
+
+Byiers, Bruce. 2025. "Trade at the Crossroads of Corridors: Kasumbalesa Border and the Lobito and North-South Corridors." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Byiers, Bruce, Philomena Apiko, and Poorva Karkare. 2023. "The AfCFTA and Industrialisation: From Policy to Practice." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Byiers, Bruce, and Larabi Jaïdi. 2024. "Fostering Investment and Inclusivity in Africa's Continental Free Trade Area." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Byiers, Bruce, Poorva Karkare, and Isabell Wutz. 2024. "How AfCFTA-Regional Relations Can Support Continental Trade." ECDPM Discussion Paper 376. Maastricht: ECDPM. [Ch. 14]
 
 Cairncross, Frances. 1997. *The Death of Distance: How the Communications Revolution Will Change Our Lives.* Boston: Harvard Business School Press. [Ch. 1]
 
@@ -155,6 +173,8 @@ Correia, Sergio, Paulo Guimarães, and Thomas Zylkin. 2020. "Fast Poisson Estima
 Cruz, José-Luis, and Esteban Rossi-Hansberg. 2024. "The Economic Geography of Global Warming." *Review of Economic Studies* 91(1): 466--497. [Ch. 15]
 
 David, Paul A. 1985. "Clio and the Economics of QWERTY." *American Economic Review* 75(2): 332--337. [Ch. 2]
+
+De Melo, Jaime, and Jean-Marc Solleder. 2025. "How Can the African Continental Free Trade Area (AfCFTA) Help Develop Regional Value Chains Across Africa? An Exploration." *Review of World Economics* 161: 121--149. [Ch. 14]
 
 de Soto, Hernando. 1989. *The Other Path: The Invisible Revolution in the Third World.* New York: Harper & Row. [Ch. 2]
 
@@ -308,9 +328,21 @@ Jaffe, Adam B., Manuel Trajtenberg, and Rebecca Henderson. 1993. "Geographic Loc
 
 Jean, Neal, Marshall Burke, Michael Xie, W. Matthew Davis, David B. Lobell, and Stefano Ermon. 2016. "Combining Satellite Imagery and Machine Learning to Predict Poverty." *Science* 353(6301): 790--794. [Ch. 16]
 
+Kapoor, Mudit, Harry H. Kelejian, and Ingmar R. Prucha. 2007. "Panel Data Models with Spatially Correlated Error Components." *Journal of Econometrics* 140(1): 97--130. [Ch. 3A]
+
 Kaplinsky, Raphael. 2000. "Globalisation and Unequalisation: What Can Be Learned from Value Chain Analysis?" *Journal of Development Studies* 37(2): 117--146. [Ch. 6]
 
-Kapoor, Mudit, Harry H. Kelejian, and Ingmar R. Prucha. 2007. "Panel Data Models with Spatially Correlated Error Components." *Journal of Econometrics* 140(1): 97--130. [Ch. 3A]
+Kaplinsky, Raphael, and Mike Morris. 2019. "Trade and Industrialisation in Africa: SMEs, Manufacturing and Cluster Dynamics." *Journal of African Trade* 6(1--2): 47--59. [Ch. 14]
+
+Karkare, Poorva, and Alfonso Medinilla. 2023. "Green Industrialisation: Leveraging Critical Raw Materials for an African Battery Value Chain." ECDPM Discussion Paper 359. Maastricht: ECDPM. [Ch. 14]
+
+Karkare, Poorva, Bruce Byiers, Amanda Bisong, Faizel Ismail, and Prachi Agarwal. 2025. "AfCFTA Implementation Challenges: Towards an African Continental Textiles and Apparel Value Chain." ODI Global Report. London: Overseas Development Institute. [Ch. 14]
+
+Krishnan, Aarti. 2023. "Understanding Regional Value Chains Through the Interaction of Public and Private Governance: Insights from Southern Africa's Apparel Sector." University of Manchester, Global Development Institute Working Paper. [Ch. 14]
+
+Lebdioui, Amir. 2024. *Survival of the Greenest: Economic Transformation in a Climate-Conscious World.* Cambridge: Cambridge University Press. [Ch. 14]
+
+Lebdioui, Amir, and Thea Riofrancos. 2025. "Critical Minerals and Resource Nationalism 2.0: Why the Policy Is More Critical than the Mineral." TIDE Working Paper 92. Oxford: TIDE Centre, University of Oxford. [Ch. 14]
 
 Kaul, Ashok, Stefan Klößner, Gregor Pfeifer, and Manuel Schieler. 2022. "Standard Synthetic Control Methods: The Case of Using All Preintervention Outcomes Together with Covariates." *Journal of Business & Economic Statistics* 40(3): 1362--1376. [Ch. 12]
 
@@ -384,6 +416,10 @@ McCann, Philip. 2020. "Perceptions of Regional Inequality and the Geography of D
 
 McCrary, Justin. 2008. "Manipulation of the Running Variable in the Regression Discontinuity Design: A Density Test." *Journal of Econometrics* 142(2): 698--714. [Ch. 3A]
 
+Medinilla, Alfonso, and Bruce Byiers. 2023. "The Political Economy of Green Industrialisation in Africa." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Medinilla, Alfonso, Koen Dekeyser, and Poorva Karkare. 2025. "Green Industrialisation in an Age of Disruption: Africa, Europe and the Global Economy." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
 Melitz, Marc J. 2003. "The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity." *Econometrica* 71(6): 1695--1725. [Ch. 1, Ch. 16]
 
 Michalopoulos, Stelios, and Elias Papaioannou. 2013. "Pre-Colonial Ethnic Institutions and Contemporary African Development." *Econometrica* 81(1): 113--152. [Ch. 13]
@@ -409,6 +445,8 @@ Naidu, Suresh. 2010. "Recruitment Restrictions and Labor Markets: Evidence from 
 Nagaraj, Abhishek. 2021. "The Private Impact of Public Data: Landsat Satellite Maps and Gold Exploration." Working paper. [Ch. 3A, Ch. 16]
 
 Nagaraj, Abhishek, and Scott Stern. 2020. "The Economics of Maps." *Journal of Economic Perspectives* 34(1): 196--221. [Ch. 3A]
+
+Naumann, Eckart. 2024. "The New Rules of Origin in the African Continental Free Trade Area (AfCFTA): What Has Been Agreed, What Remains Outstanding." tralac Working Paper. Stellenbosch: Trade Law Centre. [Ch. 14]
 
 Neffke, Frank, Martin Henning, and Ron Boschma. 2011. "How Do Regions Diversify over Time? Industry Relatedness and the Development of New Growth Paths in Regions." *Economic Geography* 87(3): 237--265. [Ch. 2]
 
@@ -500,6 +538,8 @@ Suri, Tavneet, and William Jack. 2016. "The Long-Run Poverty and Gender Impacts 
 
 SVIMEZ. 2023. *Rapporto SVIMEZ 2023 sull'Economia e la Società del Mezzogiorno.* Rome: SVIMEZ. [Ch. 10]
 
+Syverson, Chad. 2004. "Market Structure and Productivity: A Concrete Example." *Journal of Political Economy* 112(6): 1181--1222. [Ch. 1]
+
 Tarrow, Sidney. 1996. "Making Social Science Work Across Space and Time: A Critical Reflection on Robert Putnam's *Making Democracy Work.*" *American Political Science Review* 90(2): 389--397. [Ch. 10]
 
 Taylor, Peter J. 2004. *World City Network: A Global Urban Analysis.* London: Routledge. [Ch. 16]
@@ -508,11 +548,13 @@ Taylor, Peter J., and Ben Derudder. 2016. *World City Network: A Global Urban An
 
 Taylor, Peter J., Pengfei Ni, Ben Derudder, Michael Hoyler, Jin Huang, and Frank Witlox, eds. 2011. *Global Urban Analysis: A Survey of Cities in Globalization.* London: Earthscan. [Ch. 4]
 
+Te Velde, Dirk Willem. 2024. "The Future of Economic Transformation in Africa." ODI/SET Programme Working Paper. London: Overseas Development Institute. [Ch. 14]
+
 Tinbergen, Jan. 1962. *Shaping the World Economy: Suggestions for an International Economic Policy.* New York: Twentieth Century Fund. [Ch. 3B]
 
+tralac (Trade Law Centre). 2024. "Where Does the AfCFTA Stand at the Beginning of 2024?" tralac Blog. Stellenbosch: Trade Law Centre. [Ch. 14]
 
-Syverson, Chad. 2004. "Market Structure and Productivity: A Concrete Example." *Journal of Political Economy* 112(6): 1181--1222. [Ch. 1]
-Thomson Reuters. 2024. "2024 Generative AI in Professional Services Report." Thomson Reuters Institute, March 2024. [Ch. 16]
+tralac (Trade Law Centre). 2025. *Annual Conference Report 2025.* Stellenbosch: Trade Law Centre. [Ch. 14]
 
 Tolbert, Charles M., and Molly Sizer. 1996. "U.S. Commuting Zones and Labor Market Areas: A 1990 Update." *Economic Research Service Staff Paper* 9614. Washington, DC: USDA. [Ch. 1]
 
@@ -521,6 +563,10 @@ Tumen, Semih. 2016. "The Economic Impact of Syrian Refugees on Host Countries: Q
 UNCTAD (United Nations Conference on Trade and Development). 2019. *Economic Development in Africa Report 2019: Made in Africa -- Rules of Origin for Enhanced Intra-African Trade.* Geneva: United Nations. [Ch. 14]
 
 UNCTAD (United Nations Conference on Trade and Development). 2020. *World Investment Report 2020: International Production beyond the Pandemic.* Geneva: United Nations. [Ch. 12]
+
+UNECA (United Nations Economic Commission for Africa). 2025. *Economic Report on Africa 2025: Advancing the Implementation of the Agreement Establishing the African Continental Free Trade Area (AfCFTA).* Addis Ababa: United Nations. [Ch. 14]
+
+UNECA (United Nations Economic Commission for Africa), AUC (African Union Commission), and AfDB (African Development Bank). 2025. *Assessing Regional Integration in Africa XI: Delivering on the African Economic Community -- Towards an African Continental Customs Union and African Continental Common Market.* Addis Ababa: United Nations. [Ch. 14]
 
 Verwimp, Philip. 2005. "An Economic Profile of Peasant Perpetrators of Genocide: Micro-Level Evidence from Rwanda." *Journal of Development Economics* 77(2): 297--323. [Ch. 12]
 
