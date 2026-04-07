@@ -42,6 +42,8 @@ For decades, the gravity model's theoretical foundations were uncertain: it "wor
 
 The derivation proceeds from CES preferences. Each country's demand for imports from country $i$ is a CES share of expenditure, proportional to $(p_i \tau_{ij} / P_j)^{1-\sigma}$. Summing across destinations and imposing market clearing yields the structural gravity equation with multilateral resistance terms $P_j$ and $\Pi_i$ as the solution to a system of $2n$ nonlinear equations. Anderson and van Wincoop (2003) showed that solving this system is essential for correctly interpreting bilateral trade cost estimates — ignoring multilateral resistance biases border-effect estimates upward (as in McCallum's original 22x finding). Appendix A provides the full estimating equation.
 
+*Notation note:* This chapter uses $$P_j$$ for the importer's inward multilateral resistance and $$\Pi_i$$ for the exporter's outward multilateral resistance. Some readers will note that Anderson and van Wincoop (2003) associate $$i$$ with the exporter and $$j$$ with the importer using the reverse subscript convention. The notation here is internally consistent throughout this book and follows the convention in Head and Mayer (2014); readers consulting the original Anderson-van Wincoop paper should transpose the subscripts.
+
 The structural gravity equation is:
 
 $$

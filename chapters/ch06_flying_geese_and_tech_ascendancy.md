@@ -70,9 +70,9 @@ The OECD Trade in Value Added (TiVA) database and the World Input-Output Databas
 - ASEAN-4: 25–40 percent, reflecting predominantly assembly operations where the vast majority of value is in imported components;
 - China: nearly 50–60 percent and rising (OECD TiVA 2023), reflecting the rapid build-out of domestic component supply chains over the 2000–2020 period.
 
-These aggregate figures mask significant intra-sector variation. A Korean fab producing DRAM has very high domestic value-added because the wafers, process chemicals, and much of the capital equipment are now produced domestically. A Malaysian electronics assembly plant has very low domestic value-added because it is essentially a labor-service operation on imported parts. The within-country, within-sector variation is what Lab 2 is designed to exploit. Figure 6.3 decomposes DVA shares for key East Asian economies, showing the progression from assembly-dominated to design-intensive export profiles.
+These aggregate figures mask significant intra-sector variation. A Korean fab producing DRAM has very high domestic value-added because the wafers, process chemicals, and much of the capital equipment are now produced domestically. A Malaysian electronics assembly plant has very low domestic value-added because it is essentially a labor-service operation on imported parts. The within-country, within-sector variation is what Lab 2 is designed to exploit. Figure 6.2 decomposes DVA shares for key East Asian economies, showing the progression from assembly-dominated to design-intensive export profiles.
 
-![Figure 6.3: DVA decomposition — domestic value-added shares in East Asian electronics exports](../figures/fig_ch06_dva_decomposition.png)
+![Figure 6.2: DVA decomposition — domestic value-added shares in East Asian electronics exports](../figures/fig_ch06_dva_decomposition.png)
 
 *Source: Author's calculations based on OECD TiVA and WIOD data.*
 
@@ -80,7 +80,7 @@ These aggregate figures mask significant intra-sector variation. A Korean fab pr
 
 ## 6.2 Windows of Opportunity: Seizing Technological Transitions
 
-![Figure 6.2: Domestic value added in exports — East Asian economies, 2000–2020](../figures/fig_ch06_thematic_dva_trajectory.png)
+![Figure 6.3: Domestic value added in exports — East Asian economies, 2000–2020](../figures/fig_ch06_thematic_dva_trajectory.png)
 
 *Source: OECD TiVA database. Illustrative; based on patterns in OECD TiVA data, not exact reproduction.*
 

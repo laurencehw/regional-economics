@@ -224,7 +224,11 @@ Ganong, Peter, and Daniel Shoag. 2017. "Why Has Regional Income Convergence in t
 
 Gereffi, Gary, and Karina Fernandez-Stark. 2016. *Global Value Chain Analysis: A Primer.* 2nd ed. Durham, NC: Center on Globalization, Governance & Competitiveness, Duke University. [Ch. 6]
 
+Gartner. 2024. "Gartner Predicts Chatbots Will Become a Primary Customer Service Channel Within Five Years." Gartner Press Release, January 2024. [Ch. 16]
+
 Gaubert, Cecile. 2018. "Firm Sorting and Agglomeration." *American Economic Review* 108(11): 3117--3153. [Ch. 1]
+
+GitHub. 2024. "GitHub Copilot Surpasses 1.8 Million Paid Subscribers." GitHub Blog, February 2024. [Ch. 16]
 
 Glaeser, Edward L., and Joshua D. Gottlieb. 2008. "The Economics of Place-Making Policies." *Brookings Papers on Economic Activity* (Spring): 155--239. [Ch. 9]
 
@@ -508,6 +512,8 @@ Tinbergen, Jan. 1962. *Shaping the World Economy: Suggestions for an Internation
 
 
 Syverson, Chad. 2004. "Market Structure and Productivity: A Concrete Example." *Journal of Political Economy* 112(6): 1181--1222. [Ch. 1]
+Thomson Reuters. 2024. "2024 Generative AI in Professional Services Report." Thomson Reuters Institute, March 2024. [Ch. 16]
+
 Tolbert, Charles M., and Molly Sizer. 1996. "U.S. Commuting Zones and Labor Market Areas: A 1990 Update." *Economic Research Service Staff Paper* 9614. Washington, DC: USDA. [Ch. 1]
 
 Tumen, Semih. 2016. "The Economic Impact of Syrian Refugees on Host Countries: Quasi-Experimental Evidence from Turkey." *American Economic Review* 106(5): 456--460. [Ch. 12]
