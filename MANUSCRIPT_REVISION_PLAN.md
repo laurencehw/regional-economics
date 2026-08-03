@@ -166,10 +166,10 @@ The manuscript is ready for external review when:
 
 ### P1. Evidence Presentation
 
-- [ ] Label each empirical item as published evidence, author calculation, lab output, synthetic illustration, preliminary result, or hypothesis.
-- [ ] Add uncertainty and sample/specification notes to all author calculations.
+- [~] Label each empirical item as published evidence, author calculation, lab output, synthetic illustration, preliminary result, or hypothesis. Ch. 6/8/11 figure notes and Lab 2 evidence status now distinguish illustration vs author calculation.
+- [~] Add uncertainty and sample/specification notes to all author calculations. Started on Ch. 6/8/11 figures and Lab 2 share specs.
 - [ ] Add evidence-strength tables where competing findings are central.
-- [ ] Ensure calibrated figures cannot be mistaken for reproduced data.
+- [~] Ensure calibrated figures cannot be mistaken for reproduced data. Explicit “illustrative / not exact reproduction” notes on Ch. 6 and 8 charts.
 
 ### P2. Regional Balance
 
@@ -182,7 +182,7 @@ The manuscript is ready for external review when:
 
 ### P3. Prose and Structure
 
-- [ ] Cut repeated framing and chapter conclusions by approximately 15–20%.
+- [~] Cut repeated framing and chapter conclusions by approximately 15–20%. Trimmed Ch. 6 and Ch. 11 conclusions; other chapters pending.
 - [ ] Reduce repeated use of “institutional thickness,” “binding constraint,” “spatial implication,” and formulaic transitions.
 - [ ] Separate theory, evidence, illustration, and speculation visually.
 - [ ] Break long paragraphs and sentences where argument structure is obscured.
@@ -195,7 +195,7 @@ The manuscript is ready for external review when:
 - [ ] Add a Gulf inset to the Chapter 11 map.
 - [ ] Split Chapter 16's wide services-regime table.
 - [ ] Use a muted, accessible, color-blind-safe palette.
-- [ ] Add source, vintage, method, and uncertainty notes to every figure.
+- [~] Add source, vintage, method, and uncertainty notes to every figure. Completed for Ch. 6, 8, and 11; remaining chapters pending.
 - [ ] Distribute figures through chapters rather than front-loading them.
 
 ### P5. Glossary, Index, and Cross-References
@@ -253,4 +253,5 @@ The manuscript is ready for external review when:
 | 2026-08-03 | F2 | Added citation auditor; filled 17 missing scholarly bibliography entries (Albouy, Baldwin–Taglioni, Cameron–Miller, Tabuchi, Viner, etc.); glossary Amin year aligned to 1994 | `data/processed/citation_audit.md` |
 | 2026-08-03 | F1 / A1 / A2 | Seeded `CLAIM_LEDGER.md`; DVA imperfect-indicator language; Evidence-and-alternatives boxes (science parks, Syria); AfCFTA ROO dating to cutoff | Text review |
 | 2026-08-03 | A1 / A2 | Evidence boxes for Ruhr–Donbas, Pittsburgh–Detroit, LAC deindustrialization, Gulf diversification, African urbanization; policy dating in Ch. 4/7/11/16 | Text review |
+| 2026-08-03 | F1 / P2 | Deepened Ch. 6/8/11 claim ledger; figure vintage/method notes; trimmed Ch. 6 and 11 conclusions; qualified NASSCOM/NEOM/DVA figure labels | Text review |
 

@@ -2,13 +2,13 @@
 
 ![Figure 8.1: India — IT-BPO clusters and special economic zones](../figures/fig_ch08_map_india_it.png)
 
-*Source: Natural Earth; NASSCOM; Indian SEZ Board.*
+*Source: Natural Earth; NASSCOM; Indian SEZ Board. Cluster locations schematic; NASSCOM geography as reported through 2024 (July 1, 2026 cutoff).*
 
 ---
 
 ## Introduction: The Services Paradox
 
-In 2023, India exported $200 billion in information technology and business process outsourcing services (NASSCOM 2024) — more than the combined merchandise exports of Bangladesh, Sri Lanka, Nepal, and Pakistan. These exports were produced overwhelmingly in five metropolitan areas: Bangalore, Hyderabad, Pune, Chennai, and the National Capital Region around Delhi. Together, these five clusters account for nearly 80 percent of India's IT-BPO export revenue (NASSCOM 2024), serving clients in North America, Europe, and increasingly the Middle East and Southeast Asia.
+In FY2023/24, India exported about $200 billion in information technology and business process outsourcing services (NASSCOM 2024; industry association estimate, not a BoP residual). That total exceeds the combined merchandise exports of Bangladesh, Sri Lanka, Nepal, and Pakistan in the same broad window. These exports were produced overwhelmingly in five metropolitan areas: Bangalore, Hyderabad, Pune, Chennai, and the National Capital Region around Delhi. Together, these five clusters account for nearly 80 percent of India's IT-BPO export revenue (NASSCOM 2024), serving clients in North America, Europe, and increasingly the Middle East and Southeast Asia.
 
 {% hint style="info" %}
 **Services-Led Development.** India's IT-BPO sector represents the most prominent case of a large developing country bypassing the canonical manufacturing-led growth path. The spatial implications differ fundamentally from the East Asian model: services-led growth concentrates gains in a thin stratum of university-educated, English-proficient workers in a handful of metropolitan nodes, producing far weaker backward linkages than manufacturing clusters.
@@ -28,7 +28,7 @@ The chapter proceeds in six sections. Section 8.1 examines the spatial economics
 
 ![Figure 8.2: IT-BPO concentration by Indian state — location quotients](../figures/fig_ch08_thematic_it_concentration.png)
 
-*Source: NASSCOM; RBI state GDP data. Illustrative; based on patterns in NASSCOM and RBI data, not exact reproduction.*
+*Source: NASSCOM; RBI state GDP data. Illustrative location quotients calibrated to published patterns, not exact cell reproduction; vintages as cited in NASSCOM/RBI releases through 2024.*
 
 ### Bangalore: First Mover and Agglomeration Anchor
 

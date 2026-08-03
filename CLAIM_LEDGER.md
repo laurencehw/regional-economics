@@ -27,9 +27,20 @@ Manuscript information cutoff: **July 1, 2026** (see preface).
 | F1-11-02 | 11 | Gulf SWF AUM (ADIA/KIA/QIA/PIF aggregate >$3T) | SWF Institute 2024 | 2024 vintage; cutoff July 1, 2026 | GCC | qualified | AUM estimates vary by source and valuation date |
 | F1-16-01 | 16 | Global digital services trade $3.8T in 2022 | WTO 2023 | 2022 | global | verified | Growth-rate comparisons are approximate |
 
+| F1-06-02 | 6 | TSMC >90% of most advanced logic (<7nm) | SIA 2023 | 2023 industry estimate | global advanced nodes | qualified | Share refers to leading-edge logic, not all semiconductors |
+| F1-06-03 | 6 | Leading-edge fab cost $15–20B | SIA 2023 | 2023 | global | qualified | Order-of-magnitude; node- and location-specific |
+| F1-06-04 | 6 | Hsinchu park revenues >$30B (2000), >$70B (2010) | HSIPA 2001; HSIPA 2011 | 2000/2010 | Taiwan | verified | Historical park administration figures |
+| F1-06-05 | 6 | Electronics DVA share bands (JP/KR/TW/ASEAN/CN) | OECD TiVA 2023 (illustrative) | TiVA vintage | East Asia | qualified | Aggregate bands; not Lab 2 `_T`/OECD panel |
+| F1-08-02 | 8 | India IT-BPO exports ~$200B; five clusters ~80% | NASSCOM 2024 | FY2023/24 industry estimate | India | qualified | Association estimate, not BoP residual; cutoff July 1, 2026 |
+| F1-08-03 | 8 | eSanjeevani >120M consultations 2020–2024 | MoHFW 2024 | 2020–2024 | India | verified | |
+| F1-08-04 | 8 | ~70% of doctors in urban areas (~35% of population) | WHO India 2022 | 2022 | India | verified | |
+| F1-11-03 | 11 | NEOM planned cost ~$500B; area 26,500 km² | PIF 2021; PIF 2024 | announcements | Saudi Arabia | qualified | Planned/announced, not realized spend |
+| F1-11-04 | 11 | Saudi VAT introduced 2018 at 5%; raised to 15% in 2020 | Saudi MoF 2024; IMF | 2018/2020 | Saudi Arabia | verified | |
+| F1-11-05 | 11 | KAEC population ~10,000 in 2023 vs 2M plan | Emaar Economic City 2023 | 2023 | Saudi Arabia | verified | |
+
 ## Extraction backlog (needs-source pass)
 
-Priority chapters for the next quantitative sweep: Ch. 4 (IRA/CHIPS plant announcements), Ch. 6 (foundry cost and market-share figures), Ch. 8 (NASSCOM export totals), Ch. 11 (SWF AUM), Ch. 14 (corridor transit-time claims), Ch. 16 (platform/AI subscriber counts).
+Next quantitative sweep: Ch. 4 (IRA/CHIPS plant announcements beyond CRS totals), Ch. 14 (corridor transit-time claims), Ch. 16 (platform/AI subscriber counts), Ch. 9/10 EU fiscal magnitudes.
 
 ## How to extend
 

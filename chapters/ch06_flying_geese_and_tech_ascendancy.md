@@ -2,7 +2,7 @@
 
 ![Figure 6.1: East Asia & ASEAN — technology corridors and special economic zones](../figures/fig_ch06_map_east_asia.png)
 
-*Source: Natural Earth; ASEAN Secretariat; national SEZ databases.*
+*Source: Natural Earth; ASEAN Secretariat; national SEZ databases. Map geometry vintage: Natural Earth (downloaded for manuscript figures); SEZ locations schematic as of July 1, 2026 cutoff.*
 
 ---
 
@@ -74,7 +74,7 @@ These aggregate figures mask significant intra-sector variation. A Korean fab pr
 
 ![Figure 6.2: DVA decomposition — domestic value-added shares in East Asian electronics exports](../figures/fig_ch06_dva_decomposition.png)
 
-*Source: Author's calculations based on OECD TiVA and WIOD data.*
+*Source: Author calculation / calibrated illustration from OECD TiVA and WIOD patterns. Not a committed Lab 2 share-mode estimate; electronics vs total-activity scope and counterpart area differ across extracts (see Lab 2 README).*
 
 ---
 
@@ -82,7 +82,7 @@ These aggregate figures mask significant intra-sector variation. A Korean fab pr
 
 ![Figure 6.3: Domestic value added in exports — East Asian economies, 2000–2020](../figures/fig_ch06_thematic_dva_trajectory.png)
 
-*Source: OECD TiVA database. Illustrative; based on patterns in OECD TiVA data, not exact reproduction.*
+*Source: OECD TiVA (illustrative). Pattern-based calibration, not exact cell reproduction; vintage per TiVA release cited in text.*
 
 ### The Concept
 
@@ -284,7 +284,7 @@ Lab 2 provides empirical tools for analyzing the upgrading dynamics described in
 
 ![Figure 6.4: Lab 2 convergence scatter — initial DVA share vs. subsequent DVA growth](../figures/fig_lab2_convergence_scatter.png)
 
-*Source: Lab 2 output; author's calculations based on OECD TiVA data.*
+*Source: Lab 2 pipeline / author calculation from OECD TiVA. Synthetic or level-mode diagnostics are labeled in lab outputs; share-mode real-data specs live under `labs/lab2_asia/output/real_asia/specs_share/` and are imprecise (see Chapter 7 evidence status).*
 
 The interaction specification estimated in Lab 2 tests whether economies with higher coordination intensity gain more domestic value-added when they are more network-central. The coordination intensity proxy — public R&D share in electronics and ICT, or directed-credit intensity from policy-bank balance sheets — is imperfectly measured and subject to significant cross-country comparability issues. The open questions identified in the spec (subnational policy-intensity measures, MRIO concordance across versions) are genuine constraints on the precision of the estimates. Lab 2 is designed to be explicit about these constraints, providing sensitivity analyses across different proxy choices and MRIO vintages.
 
@@ -362,13 +362,9 @@ The current CHIPS Act architecture is, in effect, an attempt to replicate the ou
 
 ## Conclusion: Geese Need Institutional Wing-Beats
 
-The flying-geese model remains a useful first approximation of East Asian industrialization — it captures the broad temporal pattern of sequential development and the mechanism by which rising wages in leading economies create opportunities for followers. But the chapter's evidence establishes that the framework systematically understates the role of institutions in determining who upgrades and who remains in assembly. The economies that seized windows of opportunity in semiconductor fabrication — Korea, Taiwan, and, to a lesser degree, Japan's cluster of specialty materials and equipment suppliers — did so not because market forces selected them but because institutional coordination converted state resources, human capital investment, and public R&D into competitive capability at precisely the moments when technological transitions created entry points.
+The flying-geese model remains a useful first approximation of sequential East Asian industrialization, but it understates institutions: Korea and Taiwan seized semiconductor windows through directed credit, public R&D, and park governance, not through wage-driven relocation alone. DVA shares help track upgrading only when paired with productivity, occupations, ownership, and supplier depth.
 
-The weaponized interdependence shock is the largest disruption to East Asian economic geography since the Plaza Accord. It is restructuring the spatial economics of semiconductor production in real time, forcing choices about fab location that will have multi-decade consequences and that are being made partly on national security grounds rather than purely economic ones. Whether the current subsidy race produces genuinely distributed production capability or merely expensive monument fabs that underperform TSMC's Taiwan operations is among the most important questions in the economics of industrial policy.
-
-The demographic transition adds a long-run structural dimension: Baumol's cost disease is already generating a regional fiscal squeeze in Japan that limits the resources available for the public goods — research infrastructure, workforce training, urban services — that support tradable-sector productivity. South Korea is on a trajectory that will replicate Japan's demographic pressure within a decade. Managing the spatial consequences of aging while maintaining technological leadership in a newly adversarial geopolitical environment is the compound challenge facing the region's policymakers.
-
-Chapter 7 takes the analysis inside China: the country's internal divergence between coastal mega-regions and interior provinces, the institutional distortions that generate and perpetuate that divergence, and the ASEAN economic geography that China's Belt and Road Initiative is reshaping. The tools developed here — domestic value-added decomposition, network centrality, the developmental state framework — travel directly into Chapter 7's analysis of how institutions shape the spatial economics of the world's largest developing economy.
+US export controls and the subsidy race are restructuring fab geography in real time; whether new plants become productive capacity or underperforming monuments is an open empirical question. Aging in Japan and Korea will tighten the fiscal base for the public goods that support tradable-sector productivity. Chapter 7 takes these tools inside China's coastal–interior divergence and ASEAN's BRI-linked geography.
 
 ---
 
