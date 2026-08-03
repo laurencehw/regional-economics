@@ -101,16 +101,24 @@ where $$\omega_1, \ldots, \omega_n$$ are the eigenvalues of $$\mathbf{W}$$. Sinc
 
 ### Direct, Indirect, and Total Effects
 
-A key feature of the SAR model is that the marginal effect of a change in $$x_{jk}$$ (the $$k$$-th regressor in unit $$j$$) on $$y_i$$ depends on the spatial relationship between $$i$$ and $$j$$. The matrix of partial effects is:
+A key feature of the SAR model is that the marginal effect of regressor $$k$$ in unit $$j$$ on outcome $$i$$ depends on the spatial relationship between $$i$$ and $$j$$. Let $$\mathbf{x}_k$$ be the $$n\times1$$ vector containing regressor $$k$$ and let $$\mathbf e_j$$ be the $$j$$-th unit vector. The full $$n\times n$$ partial-effects matrix is:
 
 $$
-\frac{\partial \mathbf{y}}{\partial x_{jk}} = (\mathbf{I}_n - \rho \mathbf{W})^{-1} \beta_k
+\frac{\partial E[\mathbf{y}\mid\mathbf X]}{\partial \mathbf{x}_k'} =
+(\mathbf{I}_n - \rho \mathbf{W})^{-1}\beta_k.
+$$
+
+The effect of changing the single scalar $$x_{jk}$$ is the $$j$$-th column:
+
+$$
+\frac{\partial E[\mathbf y\mid\mathbf X]}{\partial x_{jk}} =
+(\mathbf I_n-\rho\mathbf W)^{-1}\beta_k\mathbf e_j.
 $$
 
 LeSage and Pace (2009) decompose this into:
 
 - **Direct effect:** The average diagonal element of $$(\mathbf{I}_n - \rho \mathbf{W})^{-1} \beta_k$$ — the effect of a change in $$x_{ik}$$ on $$y_i$$ (includes feedback through the spatial multiplier).
-- **Indirect effect (spillover):** The average off-diagonal row sum — the effect of a change in $$x_{jk}$$ (for $$j \neq i$$) on $$y_i$$.
+- **Indirect effect (spillover):** The average row sum of the off-diagonal elements — the cumulative effect on other units' outcomes associated with a unit-level change, averaged across units. Equivalently, one may average off-diagonal column sums; the two averages coincide even though individual row and column effects need not.
 - **Total effect:** Direct + Indirect.
 
 ---
@@ -159,11 +167,14 @@ The SDM includes both a spatial lag of the dependent variable ($$\rho \mathbf{W}
 
 ### Direct and Indirect Effects
 
-The partial effects matrix for the SDM is:
+For regressor vector $$\mathbf x_k$$, the SDM partial-effects matrix is:
 
 $$
-\frac{\partial \mathbf{y}}{\partial x_{jk}} = (\mathbf{I}_n - \rho \mathbf{W})^{-1} (\mathbf{I}_n \beta_k + \mathbf{W} \theta_k)
+\frac{\partial E[\mathbf y\mid\mathbf X]}{\partial \mathbf{x}_k'} =
+(\mathbf{I}_n - \rho \mathbf{W})^{-1} (\mathbf{I}_n \beta_k + \mathbf{W} \theta_k).
 $$
+
+For a change in the single observation $$x_{jk}$$, postmultiply this matrix by $$\mathbf e_j$$.
 
 The decomposition into direct, indirect, and total effects follows the same logic as the SAR, but the indirect effects now include both the spatial lag channel ($$\rho$$) and the spatially lagged regressor channel ($$\theta_k$$).
 
@@ -312,7 +323,17 @@ $$
 t_{1/2} = \frac{\ln 2}{b}
 $$
 
-**Simplified form.** When the time period $$T = 1$$ (annual data), the convergence speed reduces to $$b \approx |\hat{\beta}|$$ (for small $$|\hat{\beta}|$$), and the half-life simplifies to $$t_{1/2} \approx \ln 2 / |\hat{\beta}|$$. This is the formula used in Lab 2's scaffold. For multi-year intervals ($$T > 1$$), the general formula above must be used to avoid overstating the convergence speed.
+**Units matter.** The formula above assumes the dependent variable is average log growth in decimal units. For annual data and small decimal-valued $$|\hat\beta|$$, $$b\approx|\hat\beta|$$ and $$t_{1/2}\approx\ln(2)/|\hat\beta|$$.
+
+Lab 2 instead expresses annual growth in **percentage points**. If its estimated coefficient is $$\hat\beta_{pct}$$, the corresponding discrete annual adjustment coefficient is $$\hat\beta_{pct}/100$$, so:
+
+$$
+b=-\ln\left(1+\frac{\hat\beta_{pct}}{100}\right),
+\qquad
+t_{1/2}=\frac{\ln 2}{b}.
+$$
+
+This monotone-convergence interpretation requires $$-100<\hat\beta_{pct}<0$$. A coefficient at or below $$-100$$ implies an unstable or oscillatory discrete adjustment process rather than a conventional positive half-life. Applying $$\ln(2)/|\hat\beta_{pct}|$$ directly to a percentage-point coefficient understates the half-life by approximately a factor of 100.
 
 ### $$\sigma$$-Convergence
 
@@ -358,10 +379,14 @@ The bandwidth $$h$$ trades off bias (smaller $$h$$ reduces bias from nonlinearit
 Standard errors are computed using the HC1 heteroskedasticity-consistent estimator:
 
 $$
-\hat{V}_{\text{HC1}} = \frac{n}{n-k} (\mathbf{X}' \mathbf{K} \mathbf{X})^{-1} \mathbf{X}' \mathbf{K} \hat{\boldsymbol{e}} \hat{\boldsymbol{e}}' \mathbf{K} \mathbf{X} (\mathbf{X}' \mathbf{K} \mathbf{X})^{-1}
+\hat{V}_{\text{HC1}} =
+\frac{n}{n-k}
+(\mathbf{X}'\mathbf{K}\mathbf{X})^{-1}
+\mathbf{X}'\mathbf{K}\operatorname{diag}(\hat e_1^2,\ldots,\hat e_n^2)\mathbf{K}\mathbf{X}
+(\mathbf{X}'\mathbf{K}\mathbf{X})^{-1}
 $$
 
-where $$\mathbf{K}$$ is the diagonal kernel weight matrix and $$\hat{\boldsymbol{e}}$$ is the vector of residuals.
+where $$\mathbf{K}$$ is the diagonal kernel weight matrix and $$k$$ is the number of estimated coefficients. The diagonal squared-residual matrix is essential: the outer product $$\hat{\mathbf e}\hat{\mathbf e}'$$ would introduce cross-observation residual products and is not the HC1 meat matrix.
 
 ---
 
@@ -416,7 +441,17 @@ Under the null hypothesis of no spatial autocorrelation, $$E[I] = -1/(n-1) \appr
 1. Randomly permuting $$\mathbf{y}$$ across locations (while holding $$\mathbf{W}$$ fixed)
 2. Computing $$I$$ for each permutation
 3. Repeating $$B$$ times (typically $$B = 999$$)
-4. Computing the pseudo-p-value as the fraction of permuted $$I$$ values that exceed the observed $$I$$
+4. Declaring the alternative and computing a finite-sample-corrected pseudo-p-value
+
+For the one-sided clustering alternative, the usual Monte Carlo p-value is:
+
+$$
+p_{\text{upper}} =
+\frac{1+\sum_{b=1}^{B}\mathbf 1\!\left(I^{(b)}\ge I^{obs}\right)}
+{B+1}.
+$$
+
+For a two-sided test, extremeness should be defined around the permutation-null center—for example, by comparing $$|I^{(b)}-E_\pi[I]|$$ with $$|I^{obs}-E_\pi[I]|$$—and the same $$+1$$ correction should be used. The tail convention and number of permutations must be reported.
 
 This is the approach used in Lab 6.
 

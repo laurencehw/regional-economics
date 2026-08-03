@@ -7,6 +7,9 @@ city/corridor annotation, source notes, and a reusable plotnine base theme.
 from __future__ import annotations
 
 import json
+import os
+import tempfile
+import urllib.request
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -78,7 +81,12 @@ NE_DATASETS = {
     "admin_0_countries_110m": f"{NE_BASE_URL}/110m_cultural/ne_110m_admin_0_countries.zip",
 }
 
-GEODATA_DIR = Path(__file__).resolve().parent.parent / "data" / "geodata"
+GEODATA_DIR = Path(
+    os.environ.get(
+        "REGIONAL_ECONOMICS_GEODATA_DIR",
+        Path(tempfile.gettempdir()) / "regional-economics" / "geodata",
+    )
+)
 
 
 def load_boundaries(dataset: str = "admin_0_countries", cache_dir: Path | None = None):
@@ -94,18 +102,32 @@ def load_boundaries(dataset: str = "admin_0_countries", cache_dir: Path | None =
     import geopandas as gpd
 
     url = NE_DATASETS[dataset]
-    dest = (cache_dir or GEODATA_DIR) / dataset
+    dest = Path(cache_dir or GEODATA_DIR) / dataset
     dest.mkdir(parents=True, exist_ok=True)
+    archive = dest / f"{dataset}.zip"
 
-    shapefile = list(dest.glob("*.shp"))
-    if shapefile:
-        return gpd.read_file(shapefile[0])
+    if archive.exists():
+        try:
+            return gpd.read_file(f"zip://{archive.resolve()}")
+        except Exception:
+            archive.unlink(missing_ok=True)
 
-    # Download from URL (geopandas handles zip)
-    gdf = gpd.read_file(url)
-    # Cache locally
-    gdf.to_file(dest / f"{dataset}.shp")
-    return gdf
+    # Cache the source archive atomically. A shapefile consists of several
+    # sidecar files; writing those directly into a synced workspace can expose
+    # readers to a partially written DBF/SHX set.
+    with tempfile.NamedTemporaryFile(
+        dir=dest, prefix=f"{dataset}-", suffix=".zip.part", delete=False
+    ) as tmp:
+        tmp_path = Path(tmp.name)
+
+    try:
+        urllib.request.urlretrieve(url, tmp_path)
+        os.replace(tmp_path, archive)
+        return gpd.read_file(f"zip://{archive.resolve()}")
+    except Exception:
+        tmp_path.unlink(missing_ok=True)
+        archive.unlink(missing_ok=True)
+        raise
 
 
 def get_country_boundaries(iso3_list: List[str] | None = None,

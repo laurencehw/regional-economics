@@ -1,10 +1,13 @@
-"""Lab 4 scaffold for sharp RDD estimation of EU Cohesion Fund effects.
+"""Lab 4 scaffold for eligibility-threshold RDD of EU Cohesion Fund effects.
 
-This script supports two modes:
+This is an income/eligibility-threshold design, not a geographic boundary RDD.
+The forcing variable is GDP per capita relative to the Cohesion eligibility
+cutoff; treatment is eligibility (sharp) or should be instrumented for transfer
+intensity in a fuzzy design.
+
+Modes:
 1. Smoke-test mode with synthetic data (known treatment effect).
 2. Real-data mode using a mapped panel CSV.
-
-Outputs are written to the selected output directory.
 """
 
 from __future__ import annotations
@@ -225,6 +228,12 @@ def main() -> None:
 
     summary = {
         "method": "Sharp_RDD_Local_Linear",
+        "design": "eligibility_threshold_RDD",
+        "note": (
+            "Forcing variable is income relative to the eligibility cutoff; "
+            "this is not a geographic boundary RDD. Fuzzy RDD is required when "
+            "eligibility is used as an instrument for realized transfers."
+        ),
         "year": int(args.year),
         "outcome": args.outcome_col,
         "forcing": args.forcing_col,
@@ -237,6 +246,7 @@ def main() -> None:
         "kernel": args.kernel,
         "n_obs": result["n_obs"],
         "n_effective": result["n_effective"],
+        "mode": "synthetic_smoke_test" if args.run_smoke_test else "real_data",
     }
 
     xsec.to_csv(output_dir / "rdd_sample.csv", index=False)

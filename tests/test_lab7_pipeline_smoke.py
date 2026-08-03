@@ -23,11 +23,14 @@ def test_gravity_services_smoke(tmp_path, run_cmd):
     assert summary["method"] == "PPML_Gravity_Comparison"
     assert summary["n_pairs"] > 50, f"Expected >50 pairs, got {summary['n_pairs']}"
 
-    # Services model should exist and converge
+    # Services model should exist and converge under structural FE
     svc = summary["services_model"]
-    assert svc["method"] == "PPML_Gravity"
+    assert svc["method"] == "Structural_PPML_Gravity"
+    assert svc["structural_fe"] is True
     assert svc["converged"] is True, "Services PPML did not converge"
     assert svc["n_obs"] > 0
+    assert "n_zeros" in svc
+    assert summary["services_converged"] is True
 
     # Distance elasticity should be negative (farther = less trade)
     dist_comp = summary["distance_comparison"]
@@ -71,6 +74,8 @@ def test_stri_tariff_equivalent_smoke(tmp_path, run_cmd):
 
     assert summary["method"] == "STRI_Tariff_Equivalent"
     assert summary["n_pairs"] > 30
+    assert "exporter FE" in summary["identification"]
+    assert summary["converged"] is True
 
     # STRI coefficient should be negative (higher barriers = less trade)
     assert summary["stri_coefficient"] < 0, (

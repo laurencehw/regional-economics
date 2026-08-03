@@ -16,7 +16,7 @@ The standard model of structural transformation -- codified by Lewis (1954) -- a
 **The Lewis Model of Structural Transformation.** W. Arthur Lewis (1954) formalized the two-sector model in which surplus labor in a low-productivity agricultural sector migrates to a high-productivity industrial sector. The key mechanism is that the industrial sector can absorb labor at a constant wage (set by the agricultural subsistence level) while generating profits that are reinvested in further industrial expansion. The model predicts that urbanization and industrialization proceed together --- a prediction that held for Europe, East Asia, and the Americas but has broken down in Sub-Saharan Africa, where urbanization proceeds without the industrial absorption that Lewis assumed.
 {% endhint %}
 
-This chapter argues that the puzzle has an institutional resolution. Urbanization raises productivity only where municipal service capacity and trade-corridor connectivity convert density into lower transaction costs. Where institutional capacity is weak, density scales congestion and informality without generating agglomeration gains. The same process -- rural-urban migration -- produces Silicon Valley in one institutional environment and Lagos's Oshodi Market in another.
+This chapter argues that institutions are central to the puzzle, but not the only cause. Urbanization raises productivity where municipal service capacity and trade-corridor connectivity convert density into lower transaction costs. Weak institutions amplify congestion and informality, yet demography, resource rents, climate and conflict push factors, and premature deindustrialization also shape African city growth. The same migration process can produce high-productivity agglomeration in one setting and low-productivity density in another because those forces interact.
 
 ---
 
@@ -118,7 +118,7 @@ The "weak property rights" that distort African urban land markets have a specif
 
 - **Crime and insecurity.** Dense, poorly governed urban areas produce higher crime rates, which in turn raise the cost of doing business (security expenditure, insurance, theft losses) and reduce the willingness of formal firms to locate in the city. Johannesburg's inner-city decline in the 1990s and 2000s — driven by crime that drove formal businesses and middle-class residents to the suburbs — is a case study in how insecurity can reverse agglomeration.
 
-The balance between agglomeration benefits and congestion costs determines whether urbanization is growth-enhancing or growth-neutral. The institutional framework of this chapter predicts that the balance tips toward agglomeration only when municipal service capacity exceeds a threshold. Lab 6's Moran's $$I$$ analysis provides a spatial test: if economic activity (night-lights) clusters more strongly in regions with better governance (higher Afrobarometer scores), the agglomeration-congestion balance favors the institutionally strong regions.
+The balance between agglomeration benefits and congestion costs determines whether urbanization is growth-enhancing or growth-neutral. The institutional framework of this chapter predicts that the balance is more favorable where municipal service capacity is stronger. Lab 6's Moran's $$I$$ analysis can establish whether night-lights are spatially clustered, but Moran's $$I$$ alone cannot test a governance threshold or distinguish agglomeration benefits from congestion costs. Those claims require spatially aligned city-level governance and productivity measures plus a design that addresses sorting, reverse causality, and omitted infrastructure.
 
 ### Case Study: Nairobi vs. Lagos
 
@@ -226,21 +226,21 @@ For this chapter, the nowcasting framing is important because it elevates Lab 6 
 
 ### The Two-Step Procedure
 
-Lab 6's analytical design tests a specific hypothesis: the spatial clustering of economic activity in Sub-Saharan Africa is partly explained by the spatial pattern of governance quality. The procedure is:
+Lab 6's two-step design describes how measured spatial association changes after conditioning on governance. It is a sensitivity analysis, not a causal decomposition. The procedure is:
 
 **Step 1: Raw Moran's $$I$$.** Compute the global Moran's $$I$$ on night-lights radiance using an adjacency-based spatial weight matrix (countries that share a border are neighbors, with optional border-length weighting). A positive, significant $$I$$ indicates that economic activity clusters spatially — bright countries tend to be near bright countries.
 
-**Step 2: Governance-residualized Moran's $$I$$.** Regress night-lights radiance on Afrobarometer's trust-in-local-government score (or an alternative governance measure). Compute Moran's $$I$$ on the residuals. If $$I_\text{residual} < I_\text{raw}$$, then governance quality explains some of the spatial clustering — the "institutional geography" is doing real work.
+**Step 2: Governance-conditioned Moran's $$I$$.** Regress night-lights radiance on Afrobarometer's trust-in-local-government score and prespecified controls, then compute Moran's $$I$$ on the residuals. If $$I_\text{residual}<I_\text{raw}$$, the residualized outcome has less measured spatial association under the chosen model and weight matrix.
 
-The magnitude of the decline — $$\Delta I = I_\text{raw} - I_\text{residual}$$ — measures the share of spatial autocorrelation that is attributable to governance. If $$\Delta I$$ is large (say, 30–50 percent of $$I_\text{raw}$$), institutional geography is a major determinant of economic geography. If $$\Delta I$$ is small (less than 10 percent), the spatial pattern is driven by physical geography — coastlines, rivers, resource deposits — rather than institutions.
+The difference $$\Delta I=I_\text{raw}-I_\text{residual}$$ is not a share of autocorrelation attributable to governance: Moran's $$I$$ is not additively decomposable, and residualization does not identify causality. Its magnitude depends on functional form, controls, scale, measurement error, and $$W$$. A decline is compatible with governance covarying with the spatial pattern, but also with governance proxying country income, infrastructure, colonial history, or other omitted spatial processes. A small decline likewise does not imply that physical geography is the remaining cause.
 
 ### Connecting to the Chapter's Thesis
 
-The two-step result directly tests this chapter's core argument. If urbanization-without-industrialization is an institutional phenomenon — if density is productive only where governance capacity is adequate — then we would expect:
+The two-step result supplies descriptive evidence relevant to, but does not directly test, the chapter's institutional argument. The prespecified expectations are:
 
 1. **Positive raw Moran's $$I$$**: economic activity clusters geographically (confirmed on synthetic data in Lab 6; to be validated on real data).
 
-2. **Significant governance-residualization effect**: the clustering is partly explained by the spatial distribution of governance quality.
+2. **Sensitivity to governance conditioning**: the residual spatial pattern may differ after adding governance and clearly specified confounders.
 
 Figure 13.4 shows the Moran permutation histogram from Lab 6, comparing the observed Moran's $$I$$ statistic against the distribution under spatial randomness — the basis for establishing that spatial clustering of economic activity is statistically significant rather than an artifact of geography.
 
@@ -248,7 +248,7 @@ Figure 13.4 shows the Moran permutation histogram from Lab 6, comparing the obse
 
 *Source: Lab 6 output; author's calculations.*
 
-3. **Heterogeneity by urbanization level**: the governance effect should be stronger in more urbanized countries (where the agglomeration-congestion tradeoff is operative) than in rural countries (where the tradeoff is less relevant).
+3. **Heterogeneity by urbanization level**: a separate regression can test whether the conditional governance association differs with urbanization. Comparing Moran statistics across small subsamples is not, by itself, a test of that interaction.
 
 These predictions are testable with the existing Lab 6 scaffold once real VIIRS and Afrobarometer data are acquired. The robustness runner (`run_real_africa_specs.py`, planned) will extend the analysis to test sensitivity to alternative weight matrices (border-length vs. binary, k-nearest-neighbor), alternative governance measures (service delivery quality, corruption perceptions, tax compliance), and alternative night-lights preprocessing (with and without gas-flare masking, with and without saturation correction).
 
@@ -280,7 +280,7 @@ Lab 6's spatial analysis can test the corridor hypothesis directly. If economic 
 
 **Setting.** Compute the relationship between night-lights intensity (log average radiance) and governance quality (Afrobarometer trust-in-local-government, aggregated to national level) for 30+ Sub-Saharan African countries.
 
-**Protocol.** (1) Scatter plot of log night-lights vs. governance score, with population-weighted regression line. (2) Compute Moran's $$I$$ on raw night-lights using adjacency $$W$$. (3) Residualize night-lights on governance and compute Moran's $$I$$ on residuals. (4) Report $$\Delta I$$ and interpret.
+**Protocol.** (1) Plot log night-lights against governance, clearly marking the mismatch between national governance and subnational lights where applicable. (2) Compute Moran's $$I$$ on raw night-lights using prespecified alternative weight matrices. (3) Residualize night-lights on governance and prespecified confounders, then compute residual Moran's $$I$$. (4) Report both statistics and permutation uncertainty as a model-sensitivity comparison; do not convert $$\Delta I$$ into a causal or percentage attribution.
 
 **Expected findings.** The scatter plot should show a positive relationship (better governance → more night-lights), but with substantial dispersion reflecting the role of geography, resources, and other factors. $$I_\text{raw}$$ should be positive and significant (geographic clustering of economic activity). $$I_\text{residual}$$ should be smaller (governance explains some clustering), with a $$\Delta I$$ of 15–35 percent providing evidence for the institutional-geography thesis.
 

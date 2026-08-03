@@ -1,10 +1,12 @@
 """Simplified DVA decomposition using TiVA pre-computed indicators.
 
-DVA_share = dva_value / (dva_value + fnl_value)
-Ranks economies, computes trends, identifies upgraders/downgraders.
+Preferred definition:
+    dva_share = EXGR_DVA / EXGR
 
-Smoke-test mode generates a calibrated synthetic cross section.
-Real mode reads existing DVA and FNL CSVs from data/raw/tiva/.
+Legacy fallback used only in synthetic smoke tests when EXGR is absent:
+    dva_share = dva_value / (dva_value + fnl_value)
+
+Ranks economies, computes trends, identifies upgraders/downgraders.
 """
 
 from __future__ import annotations
@@ -87,14 +89,22 @@ def load_from_raw_tiva(dva_path: str, fnl_path: str) -> pd.DataFrame:
 def compute_decomposition(df: pd.DataFrame) -> pd.DataFrame:
     """Compute DVA share, rankings, and trends."""
     df = df.copy()
-    total = df["dva_value"] + df["fnl_value"]
-    df["dva_share"] = np.where(total > 0, df["dva_value"] / total, np.nan)
+    if "exgr_value" in df.columns and df["exgr_value"].notna().any():
+        exgr_safe = df["exgr_value"].replace(0, np.nan)
+        df["dva_share"] = df["dva_value"] / exgr_safe
+        df["share_denominator"] = "EXGR"
+    else:
+        total = df["dva_value"] + df["fnl_value"]
+        df["dva_share"] = np.where(total > 0, df["dva_value"] / total, np.nan)
+        df["share_denominator"] = "dva_plus_fnl_fallback"
     df["fva_share"] = 1.0 - df["dva_share"]
-    df["dva_share"] = df["dva_share"].clip(0, 1)
-    df["fva_share"] = df["fva_share"].clip(0, 1)
+    invalid = (df["dva_share"] < 0) | (df["dva_share"] > 1)
+    df.loc[invalid, ["dva_share", "fva_share"]] = np.nan
 
     # Rank within each year
-    df["rank_in_year"] = df.groupby("year")["dva_share"].rank(ascending=False, method="min").astype(int)
+    df["rank_in_year"] = (
+        df.groupby("year")["dva_share"].rank(ascending=False, method="min")
+    )
     return df
 
 

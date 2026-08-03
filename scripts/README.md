@@ -9,6 +9,7 @@ Current scripts:
 - `fetch_oecd_tiva_mainlv_extract.py`: pulls constrained OECD TiVA MainLV extracts (small, query-limited).
 - `build_lab2_wiod_tiva_concordance.py`: builds WIOD-country and TiVA-code concordance templates for Lab 2.
 - `compare_lab2_tiva_measures.py`: compares two TiVA extracts (same scope keys) and writes overlap diagnostics.
+- `audit_citations.py`: heuristic bidirectional citation audit (chapters ↔ `bibliography.md`).
 - `fetch_eurostat_nuts2_lab4.py`: pulls Eurostat NUTS-2 GDP panel and NUTS geometry bundle.
 - `fetch_acled_lab5_events.py`: pulls ACLED event records via OAuth using env-var credentials.
 - `fetch_unhcr_lab5_controls.py`: pulls UNHCR origin-based displacement controls and maps Lab 5 country-year panel fields.
@@ -24,6 +25,8 @@ Typical usage:
 - `python scripts/fetch_wiod_release2016.py --file-ids 199097,199099,199101,199104,199337 --output-dir data/external/wiod/2016_release --manifest-out data/raw/metadata/wiod_2016_pull_manifest_full_wiots_2026-02-22.json --skip-existing`
 - `python scripts/fetch_oecd_tiva_mainlv_extract.py --measure EXGR_DVA --ref-areas CHN,JPN,KOR,IND,IDN,VNM,THA,MYS,PHL,SGP --counterpart-area OECD --output-csv data/raw/tiva/tiva_mainlv_asia_oecd_exgr_dva_2000_2023_2026-02-22.csv`
 - `python scripts/fetch_oecd_tiva_mainlv_extract.py --measure EXGR_FNL --ref-areas CHN,JPN,KOR,IND,IDN,VNM,THA,MYS,PHL,SGP --counterpart-area OECD --output-csv data/raw/tiva/tiva_mainlv_asia_oecd_exgr_fnl_2000_2023_2026-02-23.csv --metadata-json data/raw/metadata/tiva_mainlv_asia_oecd_exgr_fnl_2000_2023_2026-02-23.json`
+- `python scripts/fetch_oecd_tiva_mainlv_extract.py --measure EXGR --ref-areas CHN,JPN,KOR,IND,IDN,VNM,THA,MYS,PHL,SGP --counterpart-area OECD --output-csv data/raw/tiva/tiva_mainlv_asia_oecd_exgr_2000_2023_2026-08-03.csv --metadata-json data/raw/metadata/tiva_mainlv_asia_oecd_exgr_2000_2023_2026-08-03.json`
+- `python scripts/audit_citations.py`
 - `python scripts/build_lab2_wiod_tiva_concordance.py --date-stamp 2026-02-22`
 - `python scripts/compare_lab2_tiva_measures.py --base-csv data/raw/tiva/tiva_mainlv_asia_oecd_exgr_dva_2000_2023_2026-02-22.csv --alt-csv data/raw/tiva/tiva_mainlv_asia_oecd_exgr_fnl_2000_2023_2026-02-23.csv --output-csv data/processed/lab2/tiva_measure_comparison_exgr_dva_vs_exgr_fnl_2026-02-23.csv --summary-json data/processed/lab2/tiva_measure_comparison_summary_exgr_dva_vs_exgr_fnl_2026-02-23.json`
 - `python scripts/fetch_eurostat_nuts2_lab4.py --output-csv data/raw/eurostat/nama_10r_2gdp_nuts2_mio_eur_2000_2024_2026-02-22.csv --geometry-zip data/raw/eurostat/ref-nuts-2024-20m.geojson.zip --metadata-json data/raw/metadata/eurostat_nuts2_pull_2026-02-22.json`

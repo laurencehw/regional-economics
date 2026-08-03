@@ -26,10 +26,17 @@
     2021,
     2022
   ],
+  "denominator": "EXGR",
+  "dva_share_definition": "EXGR_DVA / EXGR",
+  "exgr_provided": true,
   "missing_fnl_share": 0.0,
+  "missing_exgr_share": 0.0,
+  "missing_dva_share": 0.0,
   "missing_dva_growth_share": 0.043478260869565216,
-  "dva_ratio_range": [
-    0.8371166676669511,
-    2.805182871169488
-  ]
+  "valid_dva_share_rows": 230,
+  "dva_share_range": [
+    0.5078742467104005,
+    0.932650287570896
+  ],
+  "dva_ratio_note": "dva_ratio = EXGR_DVA / EXGR_FNL is retained for diagnostics only; it is not a domestic-content share."
 }

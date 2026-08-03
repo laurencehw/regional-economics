@@ -104,7 +104,7 @@
 
 ## Institutional Economics
 
-**Institutional thickness.** The density and quality of organizations, norms, and inter-organizational relationships in a region. Amin and Thrift (1995). High institutional thickness supports economic coordination, knowledge transfer, and collective action. Ch. 2.
+**Institutional thickness.** The density and quality of organizations, norms, and inter-organizational relationships in a region. Amin and Thrift (1994). High institutional thickness supports economic coordination, knowledge transfer, and collective action. Ch. 2.
 
 **Inclusive institutions.** Political and economic institutions that distribute power broadly, provide secure property rights, enforce the rule of law, and permit creative destruction. Acemoglu and Robinson (2012) argued that inclusive institutions are essential for sustained economic growth because they incentivize investment, innovation, and broad-based participation in economic life. The concept provides a counterpoint to geography-based explanations of development. Ch. 2, Ch. 13.
 

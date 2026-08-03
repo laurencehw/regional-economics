@@ -31,7 +31,7 @@ from lab3_concentration_scaffold import (
     compute_herfindahl,
     compute_location_quotients,
 )
-from ppml_estimator import ppml_estimate
+from ppml_estimator import build_fixed_effects, ppml_estimate
 from run_lab5_scm_baseline import solve_scm_weights
 from lab2_asia_convergence_scaffold import estimate_convergence
 from lab6_africa_moran_scaffold import morans_i, permutation_p_value
@@ -181,6 +181,29 @@ class TestPPMLEstimator:
         y, x, _ = well_conditioned_data
         result = ppml_estimate(y, x, x_names=["const", "x1"])
         assert 0.0 <= result["pseudo_r2"] <= 1.0
+
+    def test_ppml_clustered_se_and_zero_diagnostics(self, well_conditioned_data):
+        """Clustered SEs and zero-share diagnostics should be reported."""
+        y, x, _ = well_conditioned_data
+        # Force some zeros for diagnostics
+        y = y.copy()
+        y[:10] = 0.0
+        cluster = np.repeat(np.arange(20), len(y) // 20)
+        assert len(cluster) == len(y)
+        result = ppml_estimate(y, x, x_names=["const", "x1"], cluster=cluster)
+        assert result["se_type"] == "cluster"
+        assert result["n_clusters"] == 20
+        assert result["n_zeros"] >= 10
+        assert 0.0 < result["zero_share"] < 1.0
+        for se in result["se"]:
+            assert se > 0.0
+
+    def test_build_fixed_effects_drop_first(self):
+        labels = np.array(["A", "A", "B", "C", "B"])
+        dummies, names = build_fixed_effects(labels, "fe", drop_first=True)
+        assert dummies.shape == (5, 2)
+        assert names == ["fe_B", "fe_C"]
+        assert dummies[:, 0].tolist() == [0.0, 0.0, 1.0, 0.0, 1.0]
 
 
 # ===================================================================
@@ -341,16 +364,27 @@ class TestConvergence:
         assert result["p_value"] < 0.05
 
     def test_convergence_half_life(self):
-        """Verify half-life formula: half_life = ln(2) / |beta|."""
+        """Half-life must account for percentage-point scaling."""
         rng = np.random.default_rng(42)
         n = 200
-        true_beta = -0.10
+        true_beta = -3.0
         log_lag = rng.uniform(8, 14, size=n)
-        growth = 2.0 + true_beta * log_lag + rng.normal(0, 0.2, size=n)
+        growth = 36.0 + true_beta * log_lag + rng.normal(0, 0.2, size=n)
         result = estimate_convergence(growth, log_lag)
-        # Check that the reported half-life is consistent with the formula
-        expected_hl = np.log(2) / abs(result["beta"])
+
+        expected_speed = -np.log1p(result["beta"] / 100.0)
+        expected_hl = np.log(2) / expected_speed
+        assert result["convergence_speed"] == pytest.approx(expected_speed, rel=1e-8)
         assert result["half_life_years"] == pytest.approx(expected_hl, rel=1e-8)
+
+    def test_convergence_half_life_rejects_unstable_beta(self):
+        """A coefficient at or below -100% has no monotone half-life."""
+        log_lag = np.arange(1.0, 6.0)
+        growth = 10.0 - 110.0 * log_lag
+        result = estimate_convergence(growth, log_lag)
+
+        assert np.isnan(result["convergence_speed"])
+        assert np.isnan(result["half_life_years"])
 
     def test_convergence_robust_se(self):
         """Standard error must be positive and smaller than |beta| for strong signal."""

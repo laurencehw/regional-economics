@@ -28,7 +28,7 @@ Intra-African trade — the share of total African exports destined for other Af
 
 The standard explanation is that African countries produce similar primary commodities (oil, minerals, agricultural raw materials) for which the natural trading partners are industrial economies in Europe, North America, and Asia, not other primary producers. There is truth in this: Nigeria, Angola, and Equatorial Guinea all export crude oil; Ghana, Côte d'Ivoire, and Cameroon all export cocoa; Zambia, the DRC, and South Africa all export copper and other base metals. The gravity model predicts that trade is proportional to the product of GDPs and inversely proportional to distance and trade costs — and when GDPs are small and trade costs are high, the predicted bilateral trade volumes between African neighbors are correspondingly small.
 
-But this explanation is incomplete. It does not account for the potential trade in manufactured goods and processed agricultural products that *would* flow between African countries if the trade costs were lower. The UN Economic Commission for Africa (UNECA) estimates that intra-African trade in manufactured goods is 60 percent below the level predicted by a gravity model that controls for income, distance, and product composition. The gap is the border effect — the additional cost of crossing an African border beyond what distance and income would predict — and it is the largest border effect for any continental grouping.
+But this explanation is incomplete. It does not account for the potential trade in manufactured goods and processed agricultural products that *would* flow between African countries if trade costs were lower. Gravity residuals can quantify missing bilateral trade conditional on an explicit benchmark, but that gap should not automatically be called a border effect. In gravity research, a border effect normally compares international trade with domestic trade after controlling for internal and bilateral trade costs. A regression containing only international country pairs cannot identify that domestic-versus-international discontinuity.
 
 ### Decomposing the Border Effect
 
@@ -62,9 +62,9 @@ $$
 
 where $$Y_i$$ and $$Y_j$$ are GDPs, $$Y_W$$ is world GDP, $$t_{ij}$$ is the bilateral trade cost, $$P_i$$ and $$P_j$$ are multilateral resistance terms (each country's average trade cost with all partners), and $$\sigma$$ is the elasticity of substitution.
 
-The border effect is the estimated coefficient on a dummy variable for whether $$i$$ and $$j$$ share a land border, controlling for distance, GDP, and multilateral resistance. For African country pairs, the border coefficient implies trade costs equivalent to a tariff of 40–80 percent — far above the actual tariff rates, which average 5–15 percent. The difference between the implied tariff-equivalent border cost and the actual tariff is the institutional border effect: the cost of customs delays, NTBs, informal payments, and regulatory uncertainty.
+Three coefficients are easily confused. A **contiguity** dummy identifies how much more or less two countries with a shared land border trade than otherwise comparable international pairs; it commonly predicts *more* trade because adjacent markets are close. An **international-border** indicator requires domestic flows and compares cross-border with within-country trade. A **corridor** indicator compares connected international pairs with other international pairs but is potentially endogenous because corridors are built where trade is already valuable. None of these coefficients, by itself, isolates customs delays or informal payments from every other bilateral friction.
 
-The Data in Depth box at the end of this chapter extends this analysis by introducing corridor-specific fixed effects. The key finding is that country pairs connected by a functional trade corridor (the Northern Corridor, the Trans-Kalahari, the Maputo Development Corridor) have significantly lower border effects than non-corridor pairs at comparable distances — and the difference measures what this chapter calls the "corridor-governance dividend."
+The Data in Depth box separates these estimands. Its cross-sectional specification estimates a descriptive corridor trade premium among international pairs. Its preferred panel extension uses reform timing and country-time plus pair fixed effects to ask whether trade changes after corridor governance reforms. A domestic-versus-international border estimate is presented only when compatible internal-trade data are available.
 
 ### The Cost Anatomy: What the Container Actually Pays
 
@@ -122,9 +122,9 @@ The STR's potential impact is particularly significant for women traders, who ar
 
 Three countries dominate their sub-regional economies in a manner that shapes the political economy of continental integration: South Africa in SADC, Nigeria in ECOWAS, and Kenya in the EAC. Each functions as a regional hegemon — a disproportionately large economy whose firms, banks, and institutions structure economic activity across neighboring countries. The hegemon's relationship with its neighbors is not symmetric partnership but hub-spoke dominance: trade flows, investment, and institutional standards radiate outward from the hegemon, and the neighbors' economies are structured in relation to the hegemon rather than in relation to each other.
 
-**South Africa and SADC.** South Africa's GDP (around $380 billion in 2023) (World Bank 2024) exceeds the combined GDP of all other SADC members. Its firms dominate regional markets in retail (Shoprite operates over 2,900 stores across close to 11 African countries (having exited Nigeria and Kenya), with the majority in SADC), banking (Standard Bank and FirstRand are the largest banks in multiple SADC countries), mining (Anglo American, Gold Fields, Impala Platinum), telecommunications (MTN, Vodacom), and media. The Southern African Customs Union (SACU) — the world's oldest customs union, established in 1910 — integrates Botswana, Lesotho, Namibia, Eswatini, and South Africa into a single customs territory, but the terms of integration overwhelmingly favor South Africa: the common external tariff is set by South Africa's industrial policy, the revenue-sharing formula distributes customs receipts based on a methodology that South African Treasury administers, and the smaller members' industrial development is constrained by competitive pressure from South African firms that have scale advantages, superior logistics, and preferential access to South African capital markets.
+**South Africa and SADC.** South Africa is SADC's largest economy, but it did not exceed the combined GDP of the other fifteen members: SADC's statistical bulletin assigns it 47.2 percent of regional GDP in 2023. Its firms have substantial regional positions in retail, banking, mining, and telecommunications. The Southern African Customs Union (SACU)—established in 1910—integrates Botswana, Lesotho, Namibia, Eswatini, and South Africa into a single customs territory. Its political economy is asymmetric, but the revenue formula does not simply favor South Africa: the customs component is allocated by intra-SACU imports and the development component favors lower-income members, giving the four smaller members proportionately high receipts (SACU 2024). Their industrial policy space can still be constrained by the common tariff and competition from larger South African firms.
 
-**Nigeria and ECOWAS.** Nigeria's economy ($360–390 billion in 2023 at post-float exchange rates; the naira's sharp depreciation in 2023–2025 reduced the dollar-denominated figure substantially, though the economy remains the largest in Africa by any measure) dominates West Africa by sheer size, but its institutional spillovers are more chaotic than South Africa's. Nigerian firms — particularly in petroleum, telecommunications (MTN Nigeria, Globacom), and banking (Access Bank, Zenith Bank, UBA) — are expanding across ECOWAS members. But Nigeria's economic dominance is tempered by its institutional weaknesses: the naira's chronic instability (multiple devaluations and a dual exchange rate), regulatory unpredictability (sudden import bans, foreign exchange restrictions), and infrastructure deficits (the Lagos-Abidjan corridor remains one of the most congested and poorly maintained trade routes in West Africa despite connecting the region's two largest economies). Nigeria's informal border trade with Niger, Cameroon, and Benin is enormous — smuggling of petroleum products, rice, and used vehicles across Nigeria's borders is estimated to exceed $10 billion annually (ECOWAS Commission 2020) — but this informal integration coexists with formal trade barriers that Nigeria periodically raises (as with the unilateral border closure of August 2019–December 2020, which disrupted trade across the entire region).
+**Nigeria and ECOWAS.** Nigeria dominates West Africa by population and remains one of the subregion's largest economies, but exchange-rate changes and GDP rebasing make claims about its continental rank sensitive to year, currency conversion, and metric. Nigerian firms—particularly in petroleum, telecommunications, and banking—operate across ECOWAS. Nigeria's influence is tempered by exchange-rate instability, regulatory unpredictability, and infrastructure deficits. Large informal flows across borders with Niger, Cameroon, and Benin coexist with formal barriers, as illustrated by Nigeria's unilateral land-border closure from August 2019 into 2020.
 
 **Kenya and the EAC.** Kenya's economy (about $110 billion) is smaller than South Africa's or Nigeria's, but its institutional influence within the EAC is disproportionate. Kenyan banks (Equity Bank, KCB Group, Cooperative Bank) are the dominant financial institutions in Uganda, Rwanda, and South Sudan. Kenyan agricultural firms and processors (Del Monte, Bidco, Brookside Dairy) are the largest in the region. Nairobi's role as the regional technology hub — hosting the offices of Google, Microsoft, IBM, and dozens of international organizations — gives Kenya an information and services advantage that no EAC partner can match. The Northern Corridor (Mombasa-Nairobi-Kampala-Kigali) is Kenya's economic artery and, simultaneously, the lifeline for landlocked Uganda, Rwanda, and Burundi, creating a dependency relationship in which the landlocked countries' trade costs are substantially determined by Kenya's port efficiency, customs administration, and road quality.
 
@@ -263,7 +263,7 @@ Mutual Recognition Arrangements (MRAs) — the PTSS instrument for professional 
 
 ### Extending the Two-Step Procedure
 
-Chapter 13 introduced Lab 6's two-step Moran's $$I$$ procedure: (1) compute global Moran's $$I$$ on raw night-lights radiance to measure spatial clustering of economic activity, then (2) residualize night-lights on governance quality and re-compute Moran's $$I$$ to measure the institutional contribution to clustering. The decline $$\Delta I = I_\text{raw} - I_\text{residual}$$ measures the share of spatial autocorrelation attributable to governance.
+Chapter 13 introduced Lab 6's two-step Moran's $$I$$ sensitivity exercise: (1) compute global Moran's $$I$$ on raw night-lights radiance, then (2) condition night-lights on governance and prespecified controls and recompute $$I$$ on the residuals. The difference $$\Delta I=I_\text{raw}-I_\text{residual}$$ describes a change in measured spatial association; it is not an additive or causal “institutional contribution.”
 
 This chapter proposes a corridor extension. The hypothesis is that governance quality matters more for economic clustering *along corridors* than *away from them*. The logic is that corridors are the channels through which spatial spillovers actually operate in Africa — the trade route through which one country's economic activity stimulates demand for another country's exports. If governance quality at the border determines how efficiently the corridor transmits spillovers, then governance should have a stronger effect on clustering in corridor-adjacent regions than in regions distant from any corridor.
 
@@ -273,9 +273,9 @@ The extended analysis would proceed in three steps:
 
 **Step 1: Raw Moran's $$I$$.** As in Chapter 13 — compute global $$I$$ on night-lights radiance. This establishes the baseline: economic activity clusters spatially.
 
-**Step 2: Governance-residualized Moran's $$I$$.** As in Chapter 13 — residualize on governance quality and recompute. The decline measures the governance contribution.
+**Step 2: Governance-conditioned Moran's $$I$$.** As in Chapter 13, condition on governance and prespecified confounders and recompute residual Moran's $$I$$. Interpret the change as model sensitivity, not causal attribution.
 
-**Step 3: Corridor-conditional analysis.** Split the sample into corridor-adjacent and non-corridor observations. Compute $$\Delta I$$ for each subsample. If $$\Delta I_\text{corridor} > \Delta I_\text{non-corridor}$$, governance explains more clustering along corridors than away from them — supporting the functional-corridor thesis.
+**Step 3: Corridor heterogeneity.** Estimate a prespecified interaction between governance and corridor proximity in a regression that accounts for spatial dependence. Separate Moran statistics for small corridor and non-corridor subsamples can be reported descriptively, but comparing their $$\Delta I$$ values does not test whether governance causes stronger clustering along corridors.
 
 An alternative specification avoids splitting the sample by including a triple interaction in a spatial regression framework: night-lights intensity as a function of governance quality, corridor proximity, and their interaction — all mediated by the spatial weight matrix. This is computationally more demanding but statistically more efficient and avoids the loss of power from sample splitting.
 
@@ -289,35 +289,39 @@ The corridor analysis faces an endogeneity challenge: corridors connect places t
 
 ---
 
-## Data in Depth: Estimating the Corridor-Governance Dividend with Gravity Models
+## Data in Depth: Estimating Corridor Trade Effects with Gravity Models
 
-**Setting.** Estimate the border effect in intra-African bilateral trade using a structural gravity model, and test whether corridor-connected country pairs have lower border effects than non-corridor pairs.
+**Setting.** Distinguish three estimands: the international-pair contiguity association, the descriptive trade premium for corridor-connected pairs, and the change in trade following a dated corridor-governance reform. Estimate a domestic-versus-international border effect only if compatible internal-trade flows are added.
 
-**Datasets.** (1) UN Comtrade bilateral trade flows for all African country pairs (latest available year). (2) WDI GDP for income controls. (3) CEPII distance data (geodesic distance between capital cities) for the distance control. (4) LPI customs sub-scores for trade facilitation quality. (5) UNCTAD Trade Facilitation indicators for digital customs and single-window implementation. (6) A corridor-connection indicator: binary variable equal to 1 if the country pair is connected by a major trade corridor (Northern, Central, Trans-Kalahari, Maputo, Abidjan-Lagos, North-South).
+**Datasets.** (1) A panel of UN Comtrade bilateral trade flows for African country pairs. (2) CEPII bilateral distance and contiguity. (3) Dated corridor membership and reform milestones defined before examining outcomes. (4) LPI and UNCTAD trade-facilitation measures used as mechanisms, not automatic instruments. (5) Internal trade constructed consistently from production and international shipments if the optional border-effect exercise is attempted.
 
 **Protocol.**
 
-Step 1: Estimate the baseline gravity model with PPML (Poisson Pseudo-Maximum Likelihood, which handles zero trade flows — a significant issue for African bilateral pairs, many of which report zero trade):
+Step 1: Estimate a descriptive cross-sectional PPML specification among international pairs:
 
 $$
-X_{ij} = \exp\left[\beta_1 \ln Y_i + \beta_2 \ln Y_j + \beta_3 \ln d_{ij} + \beta_4 \text{Border}_{ij} + \gamma_i + \gamma_j\right] + \epsilon_{ij}
+E[X_{ij}\mid Z_{ij}] =
+\exp\left[\alpha_i+\gamma_j+\beta_1\ln d_{ij}
++\beta_2\text{Contig}_{ij}+\beta_3\text{Corridor}_{ij}\right].
 $$
 
-where $$\gamma_i$$ and $$\gamma_j$$ are exporter and importer fixed effects (capturing multilateral resistance). The coefficient $$\beta_4$$ on the border dummy measures the average border effect in intra-African trade. Its tariff-equivalent is $$[\exp(-\beta_4 / (\sigma - 1)) - 1] \times 100\%$$, where $$\sigma$$ is calibrated from the trade literature (typically 4–8 for African trade).
+Exporter and importer fixed effects absorb exporter GDP, importer expenditure, and multilateral resistance, so separate $$\ln Y_i$$ and $$\ln Y_j$$ regressors must not be included. Here $$\beta_2$$ is an adjacency association and $$\beta_3$$ is a descriptive corridor premium—not a border penalty or a causal governance dividend.
 
-Step 2: Add the corridor-connection indicator and its interaction with the border dummy:
+Step 2: Use panel variation around dated reforms:
 
 $$
-X_{ij} = \exp\left[\dots + \beta_4 \text{Border}_{ij} + \beta_5 \text{Corridor}_{ij} + \beta_6 (\text{Border}_{ij} \times \text{Corridor}_{ij})\right] + \epsilon_{ij}
+E[X_{ijt}\mid Z_{ijt}] =
+\exp\left[\alpha_{ij}+\delta_{it}+\gamma_{jt}
++\theta(\text{Corridor}_{ij}\times\text{PostReform}_{rt})\right].
 $$
 
-If $$\beta_6 > 0$$ (a positive interaction), corridor-connected pairs have a lower border effect than non-corridor pairs. The magnitude of $$\beta_6$$ relative to $$\beta_4$$ measures the corridor-governance dividend: the share of the border effect eliminated by corridor-level institutional reform.
+Pair fixed effects absorb time-invariant distance, contiguity, corridor placement, language, and persistent bilateral selection. Exporter-time and importer-time effects absorb country-specific shocks and time-varying multilateral resistance. The coefficient $$\theta$$ estimates a differential post-reform change under a parallel-trends assumption; event-study coefficients should assess pre-trends and dynamic effects. With staggered reforms or heterogeneous timing effects, students must use an estimator appropriate to that design rather than a naive two-way fixed-effects average.
 
-Step 3: Replace the binary corridor indicator with the continuous `corridor_governance_index_rt` to test whether *governance quality* within the corridor drives the dividend, not merely the existence of the corridor infrastructure.
+Step 3: If internal trade is available, add domestic observations and estimate an international-border indicator with theoretically consistent internal distance. Only this specification supports a conventional border-effect interpretation or a tariff-equivalent calculation, conditional on the assumed trade elasticity.
 
-**Expected findings.** The baseline border effect ($$\beta_4$$) should be large and negative (implying tariff-equivalent costs of 40–80 percent). The corridor interaction ($$\beta_6$$) should be positive and significant, reducing the effective border cost for corridor-connected pairs by 20–40 percent. The governance-quality specification should show that the corridor dividend is concentrated in well-governed corridors (Northern, Maputo) and absent or small in poorly governed corridors (Abidjan-Lagos), confirming the institutional thesis.
+**Reporting rule.** Do not prescribe expected coefficient signs, significance, or 20–40 percent effects. Report the estimand, fixed effects, sample, reform coding, uncertainty, pre-trend evidence, zero-flow treatment, and sensitivity to mirror-statistics quality. Corridor selection and concurrent infrastructure investment remain threats even when the panel design is used.
 
-**Student exercise.** Using UN Comtrade data (accessible through the `comtradeapicall` R package or the Comtrade API), replicate the gravity model for a specific REC (ECOWAS, EAC, or SADC) rather than the full continent. Does the within-REC border effect differ from the cross-REC border effect? If so, what does this tell you about whether RECs have succeeded in reducing institutional barriers among their members?
+**Student exercise.** Using UN Comtrade data, compare the within-REC trade premium with cross-REC trade after clearly specifying fixed effects and the comparison group. Explain why that coefficient is not a domestic border effect and identify the additional data required to estimate one.
 
 ---
 

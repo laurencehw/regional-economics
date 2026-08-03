@@ -21,7 +21,7 @@ from typing import Dict, List, Tuple
 import numpy as np
 import pandas as pd
 
-from ppml_estimator import ppml_estimate
+from ppml_estimator import build_fixed_effects, ppml_estimate
 
 
 def parse_args() -> argparse.Namespace:
@@ -36,6 +36,19 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default="log_dist,contig,comlang_ethno,colony",
         help="Comma-separated gravity regressors",
+    )
+    parser.add_argument(
+        "--structural-fe",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Include exporter and importer fixed effects (structural gravity)",
+    )
+    parser.add_argument(
+        "--cluster-by",
+        type=str,
+        default="exporter",
+        choices=["none", "exporter", "importer", "pair"],
+        help="Cluster dimension for sandwich SEs",
     )
     parser.add_argument("--max-iter", type=int, default=200, help="PPML max iterations")
     parser.add_argument("--tol", type=float, default=1e-8, help="PPML convergence tolerance")
@@ -119,13 +132,31 @@ def synthetic_inputs() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
             })
     gravity_df = pd.DataFrame(gravity_rows)
 
+    # Explicit multilateral-resistance terms so structural FE is the correct model
+    exporter_fe = {c: float(rng.normal(0.0, 0.6)) for c in countries}
+    importer_fe = {c: float(rng.normal(0.0, 0.6)) for c in countries}
+
     # Synthetic trade (generated from gravity model with known parameters)
     trade_rows = []
     for _, row in gravity_df.iterrows():
         log_dist = np.log(max(row["dist"], 1))
         # True DGP: services more distance-sensitive than goods
-        services_eta = 8.0 - 0.9 * log_dist + 0.5 * row["contig"] + 0.4 * row["comlang_ethno"]
-        goods_eta = 9.0 - 0.65 * log_dist + 0.8 * row["contig"] + 0.2 * row["comlang_ethno"]
+        services_eta = (
+            7.5
+            + exporter_fe[row["iso_o"]]
+            + importer_fe[row["iso_d"]]
+            - 1.1 * log_dist
+            + 0.55 * row["contig"]
+            + 0.45 * row["comlang_ethno"]
+        )
+        goods_eta = (
+            8.5
+            + exporter_fe[row["iso_o"]]
+            + importer_fe[row["iso_d"]]
+            - 0.70 * log_dist
+            + 0.80 * row["contig"]
+            + 0.20 * row["comlang_ethno"]
+        )
 
         services_trade = max(0, rng.poisson(np.exp(np.clip(services_eta, 0, 12))))
         goods_trade = max(0, rng.poisson(np.exp(np.clip(goods_eta, 0, 12))))
@@ -195,26 +226,66 @@ def main() -> None:
 
     merged = merged.dropna(subset=["services_trade", "log_dist"]).copy()
 
-    # --- Estimate services gravity ---
+    # --- Design matrix ---
     available_vars = [v for v in gravity_vars if v in merged.columns]
-    x_names = ["intercept"] + available_vars
-    x = np.column_stack([
-        np.ones(len(merged)),
-        merged[available_vars].to_numpy(dtype=float),
-    ])
+    blocks = []
+    x_names: List[str] = []
+    if args.structural_fe:
+        # Multilateral resistance absorbed by exporter/importer FE; no intercept.
+        exp_fe, exp_names = build_fixed_effects(
+            merged["exporter"].to_numpy(), "exporter", drop_first=True
+        )
+        imp_fe, imp_names = build_fixed_effects(
+            merged["importer"].to_numpy(), "importer", drop_first=True
+        )
+        if available_vars:
+            blocks.append(merged[available_vars].to_numpy(dtype=float))
+            x_names.extend(available_vars)
+        if exp_fe.shape[1]:
+            blocks.append(exp_fe)
+            x_names.extend(exp_names)
+        if imp_fe.shape[1]:
+            blocks.append(imp_fe)
+            x_names.extend(imp_names)
+        method_name = "Structural_PPML_Gravity"
+    else:
+        blocks.append(np.ones((len(merged), 1)))
+        x_names.append("intercept")
+        if available_vars:
+            blocks.append(merged[available_vars].to_numpy(dtype=float))
+            x_names.extend(available_vars)
+        method_name = "PPML_Gravity"
 
+    x = np.column_stack(blocks) if blocks else np.ones((len(merged), 1))
+
+    if args.cluster_by == "none":
+        cluster = None
+    elif args.cluster_by == "pair":
+        cluster = (
+            merged["exporter"].astype(str) + "_" + merged["importer"].astype(str)
+        ).to_numpy()
+    else:
+        cluster = merged[args.cluster_by].to_numpy()
+
+    # --- Estimate services gravity ---
     services_y = merged["services_trade"].to_numpy(dtype=float)
-    services_result = ppml_estimate(services_y, x, x_names, args.max_iter, args.tol)
+    services_result = ppml_estimate(
+        services_y, x, x_names, args.max_iter, args.tol, cluster=cluster
+    )
     services_result["dependent_var"] = "services_trade"
-    services_result["method"] = "PPML_Gravity"
+    services_result["method"] = method_name
+    services_result["structural_fe"] = bool(args.structural_fe)
 
     # --- Estimate goods gravity (if available) ---
     goods_result = None
     if "goods_trade" in merged.columns:
         goods_y = merged["goods_trade"].to_numpy(dtype=float)
-        goods_result = ppml_estimate(goods_y, x, x_names, args.max_iter, args.tol)
+        goods_result = ppml_estimate(
+            goods_y, x, x_names, args.max_iter, args.tol, cluster=cluster
+        )
         goods_result["dependent_var"] = "goods_trade"
-        goods_result["method"] = "PPML_Gravity"
+        goods_result["method"] = method_name
+        goods_result["structural_fe"] = bool(args.structural_fe)
 
     # --- Compare distance elasticities ---
     dist_idx = x_names.index("log_dist") if "log_dist" in x_names else None
@@ -233,13 +304,21 @@ def main() -> None:
     # --- Build summary ---
     summary: Dict[str, object] = {
         "method": "PPML_Gravity_Comparison",
+        "estimator": method_name,
+        "structural_fe": bool(args.structural_fe),
+        "cluster_by": args.cluster_by,
         "year": int(args.year),
         "n_pairs": int(len(merged)),
+        "n_zeros_services": int(services_result["n_zeros"]),
+        "zero_share_services": float(services_result["zero_share"]),
+        "services_converged": bool(services_result["converged"]),
         "services_model": services_result,
         "distance_comparison": comparison,
+        "mode": "synthetic_smoke_test" if args.run_smoke_test else "real_data",
     }
     if goods_result:
         summary["goods_model"] = goods_result
+        summary["goods_converged"] = bool(goods_result["converged"])
 
     # --- Write outputs ---
     merged.to_csv(output_dir / "gravity_dataset.csv", index=False)

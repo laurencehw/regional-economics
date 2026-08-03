@@ -29,13 +29,18 @@ How much of a region's GDP growth is explained by neighbor growth transmitted th
 - `code/`: scripts
 - `output/`: tables, figures, and model results
 
+## Evidence Labels
+- `--run-smoke-test` outputs are **synthetic demonstrations**.
+- `output/real_americas_*` runs are **author calculations** from mapped WDI/Comtrade/LPI inputs; distinguish them from published findings in Chapter 4.
+
 ## Build Checklist
-1. Harmonize source IDs and map raw fields into canonical variables.
-2. Construct and row-standardize bilateral trade matrix W.
-3. Build cross-section by selected year.
-4. Estimate SAR and compare to non-spatial baseline.
-5. Run robustness checks on alternative W definitions and friction variables.
-6. Export reproducible outputs and interpretation notes.
+1. [x] Harmonize source IDs and map raw fields into canonical variables.
+2. [x] Construct and row-standardize bilateral trade matrix W.
+3. [x] Build cross-section by selected year.
+4. [x] Estimate SAR and compare to non-spatial baseline.
+5. [x] Run robustness checks on alternative W definitions and friction/LPI variables.
+6. [x] Institution-interaction specs for conditional spillovers.
+7. [~] Broaden border-friction coverage beyond USA/CAN/MEX native BTS measures.
 
 ## Minimum Deliverables
 - Baseline model summary (`output/model_summary.json`).

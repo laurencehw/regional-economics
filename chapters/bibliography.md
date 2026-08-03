@@ -2,11 +2,11 @@
 
 ## References
 
-Abadie, Alberto, and Javier Gardeazabal. 2003. "The Economic Costs of Conflict: A Case Study of the Basque Country." *American Economic Review* 93(1): 113--132. [Ch. 12]
-
 Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2010. "Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program." *Journal of the American Statistical Association* 105(490): 493--505. [Ch. 12]
 
 Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2015. "Comparative Politics and the Synthetic Control Method." *American Journal of Political Science* 59(2): 495--510. [Ch. 12, Lab 5, Appendix A]
+
+Abadie, Alberto, and Javier Gardeazabal. 2003. "The Economic Costs of Conflict: A Case Study of the Basque Country." *American Economic Review* 93(1): 113--132. [Ch. 12]
 
 Acemoglu, Daron, and James A. Robinson. 2012. *Why Nations Fail: The Origins of Power, Prosperity, and Poverty.* New York: Crown Business. [Ch. 2]
 
@@ -21,6 +21,10 @@ Agrawal, Ajay, Avi Goldfarb, and Florenta Teodoridis. 2016. "Does Knowledge Accu
 Akamatsu, Kaname. 1962. "A Historical Pattern of Economic Growth in Developing Countries." *The Developing Economies* 1(s1): 3--25. [Ch. 6]
 
 Aker, Jenny C. 2010. "Information from Markets Near and Far: Mobile Phones and Agricultural Markets in Niger." *American Economic Journal: Applied Economics* 2(3): 46--59. [Ch. 14]
+
+Al Jazeera. 2011. "The Tragic Life of a Street Vendor." January 20. [Ch. 12]
+
+Albouy, David Y. 2012. "The Colonial Origins of Comparative Development: An Empirical Investigation: Comment." *American Economic Review* 102(6): 3059--3076. [Ch. 2]
 
 Allen, Treb, and Costas Arkolakis. 2014. "Trade and the Topography of the Spatial Economy." *Quarterly Journal of Economics* 129(3): 1085--1140. [Ch. 16]
 
@@ -42,6 +46,8 @@ Aronow, Peter M., and Cyrus Samii. 2017. "Estimating Average Causal Effects unde
 
 Arthur, W. Brian. 1989. "Competing Technologies, Increasing Returns, and Lock-In by Historical Events." *Economic Journal* 99(394): 116--131. [Ch. 2]
 
+Assaad, Ragui. 2014. "Making Sense of Arab Labor Markets: The Enduring Legacy of Dualism." *IZA Journal of Labor & Development* 3(1): 1--25. [Ch. 12]
+
 Athey, Susan, and Guido W. Imbens. 2016. "Recursive Partitioning for Heterogeneous Causal Effects." *Proceedings of the National Academy of Sciences* 113(27): 7353--7360. [Ch. 16]
 
 Au, Chun-Chung, and J. Vernon Henderson. 2006. "Are Chinese Cities Too Small?" *Review of Economic Studies* 73(3): 549--576. [Ch. 7]
@@ -54,11 +60,17 @@ Autor, David H. 2019. "Work of the Past, Work of the Future." *AEA Papers and Pr
 
 Autor, David H., David Dorn, and Gordon H. Hanson. 2013. "The China Syndrome: Local Labor Market Effects of Import Competition in the United States." *American Economic Review* 103(6): 2121--2168. [Ch. 16]
 
+Autor, David H., Frank Levy, and Richard J. Murnane. 2003. "The Skill Content of Recent Technological Change: An Empirical Exploration." *Quarterly Journal of Economics* 118(4): 1279--1333. [Ch. 3B]
+
 Baade, Robert A., and Victor A. Matheson. 2004. "The Quest for the Cup: Assessing the Economic Impact of the World Cup." *Regional Studies* 38(4): 343--354. [Ch. 11]
+
+Baldwin, Richard, and Daria Taglioni. 2006. "Gravity for Dummies and Dummies for Gravity Equations." NBER Working Paper 12516. [Appendix A]
 
 Baldwin, Richard. 2019. *The Globotics Upheaval: Globalization, Robotics, and the Future of Work.* New York: Oxford University Press. [Ch. 16]
 
 Balland, Pierre-Alexandre, and David Rigby. 2017. "The Geography of Complex Knowledge." *Economic Geography* 93(1): 1--23. [Ch. 2]
+
+Barca, Fabrizio. 2009. *An Agenda for a Reformed Cohesion Policy: A Place-Based Approach to Meeting European Union Challenges and Expectations.* Independent report prepared at the request of Danuta Hübner, Commissioner for Regional Policy. Brussels: European Commission. [Ch. 9]
 
 Barro, Robert J., and Xavier Sala-i-Martin. 1992. "Convergence." *Journal of Political Economy* 100(2): 223--251. [Ch. 3A]
 
@@ -68,26 +80,30 @@ Baum-Snow, Nathaniel, and Ronni Pavan. 2012. "Understanding the City Size Wage G
 
 Baumol, William J. 1967. "Macroeconomics of Unbalanced Growth: The Anatomy of Urban Crisis." *American Economic Review* 57(3): 415--426. [Ch. 6]
 
+Bayoumi, Tamim, and Paul R. Masson. 1995. "Fiscal Flows in the United States and Canada: Lessons for Monetary Union in Europe." *European Economic Review* 39(2): 253--274. [Ch. 10]
+
 BCG (Boston Consulting Group) and SIA (Semiconductor Industry Association). 2021. *Strengthening the Global Semiconductor Supply Chain in an Uncertain Era.* [Ch. 16]
 
 Beaudry, Catherine, and Andrea Schiffauerova. 2009. "Who's Right, Marshall or Jacobs? The Localization versus Urbanization Debate." *Research Policy* 38(2): 318--337. [Ch. 6]
 
 Beblawi, Hazem, and Giacomo Luciani, eds. 1987. *The Rentier State.* London: Croom Helm. [Ch. 11]
 
+Becker, Sascha O., and Ludger Woessmann. 2009. "Was Weber Wrong? A Human Capital Theory of Protestant Economic History." *Quarterly Journal of Economics* 124(2): 531--596. [Ch. 2]
+
 Becker, Sascha O., Peter H. Egger, and Maximilian von Ehrlich. 2010. "Going NUTS: The Effect of EU Structural Funds on Regional Performance." *Journal of Public Economics* 94(9--10): 578--590. [Ch. 3A]
 
 Becker, Sascha O., Peter H. Egger, and Maximilian von Ehrlich. 2013. "Absorptive Capacity and the Growth and Investment Effects of Regional Transfers: A Regression Discontinuity Design with Heterogeneous Treatment Effects." *American Economic Journal: Economic Policy* 5(4): 29--77. [Ch. 9]
 
-Becker, Sascha O., and Ludger Woessmann. 2009. "Was Weber Wrong? A Human Capital Theory of Protestant Economic History." *Quarterly Journal of Economics* 124(2): 531--596. [Ch. 2]
-
 Bernard, Andrew B., and Andreas Moxnes. 2018. "Networks and Trade." *Annual Review of Economics* 10: 65--85. [Ch. 16]
 Bernard, Andrew B., J. Bradford Jensen, and Peter K. Schott. 2006. "Survival of the Best Fit: Exposure to Low-Wage Countries and the (Uneven) Growth of U.S. Manufacturing Plants." *Journal of International Economics* 68(1): 219--237. [Ch. 1]
 
-Beugelsdijk, Sjoerd, and Ton van Schaik. 2005. "Social Capital and Growth in European Regions: An Empirical Test." *European Journal of Political Economy* 21(2): 301--324. [Ch. 2]
-
 Betts, Alexander, and Paul Collier. 2017. *Refuge: Rethinking Refugee Policy in a Changing World.* New York: Oxford University Press. [Ch. 12]
 
+Beugelsdijk, Sjoerd, and Ton van Schaik. 2005. "Social Capital and Growth in European Regions: An Empirical Test." *European Journal of Political Economy* 21(2): 301--324. [Ch. 2]
+
 Bhagwati, Jagdish. 2008. *Termites in the Trading System: How Preferential Agreements Undermine Free Trade.* New York: Oxford University Press. [Ch. 16]
+
+Blinder, Alan S. 2009. "How Many US Jobs Might Be Offshorable?" *World Economics* 10(2): 41--78. [Ch. 3B]
 
 Blumenstock, Joshua, Gabriel Cadamuro, and Robert On. 2015. "Predicting Poverty and Wealth from Mobile Phone Metadata." *Science* 350(6264): 1073--1076. [Ch. 16]
 
@@ -117,6 +133,8 @@ Cairncross, Frances. 1997. *The Death of Distance: How the Communications Revolu
 
 Caliendo, Lorenzo, Maximiliano Dvorkin, and Fernando Parro. 2019. "Trade and Labor Market Dynamics: General Equilibrium Analysis of the China Trade Shock." *Econometrica* 87(3): 741--835. [Ch. 16]
 
+Cameron, A. Colin, and Douglas L. Miller. 2015. "A Practitioner's Guide to Cluster-Robust Inference." *Journal of Human Resources* 50(2): 317--372. [Appendix C, Ch. 3B]
+
 Cameron, A. Colin, Jonah B. Gelbach, and Douglas L. Miller. 2011. "Robust Inference with Multiway Clustering." *Journal of Business & Economic Statistics* 29(2): 238--249. [Ch. 3B]
 
 Carbon Tracker. 2022. *Unburnable Carbon: Are the World's Financial Markets Carrying a Carbon Bubble?* London: Carbon Tracker Initiative. [Ch. 15]
@@ -125,9 +143,13 @@ Casaburi, Lorenzo, and Ugo Troiano. 2016. "Ghost-House Busters: The Electoral Re
 
 Chaney, Thomas. 2014. "The Network Structure of International Trade." *American Economic Review* 104(11): 3600--3634. [Ch. 16]
 
+Chang, Ha-Joon. 1998. "Korea: The Misunderstood Crisis." *World Development* 26(8): 1555--1561. [Ch. 6]
+
 Charron, Nicholas, Lewis Dijkstra, and Victor Lapuente. 2014. "Regional Governance Matters: Quality of Government within European Union Member States." *Regional Studies* 48(1): 68--90. [Ch. 2]
 
 Chen, Wei, Xilu Chen, Chang-Tai Hsieh, and Zheng Song. 2019. "A Forensic Examination of China's National Accounts." *Brookings Papers on Economic Activity* (Spring): 77--141. [Ch. 6, Ch. 7]
+
+CHIPS and Science Act. 2022. Public Law 117--167. United States. [Ch. 4, Ch. 6]
 
 Christaller, Walter. 1933. *Die zentralen Orte in Süddeutschland* [Central Places in Southern Germany]. Jena: Gustav Fischer Verlag. [Ch. 1]
 
@@ -135,9 +157,15 @@ Ciccone, Antonio, and Robert E. Hall. 1996. "Productivity and the Density of Eco
 
 Clark, Phil. 2010. *The Gacaca Courts, Post-Genocide Justice and Reconciliation in Rwanda: Justice without Lawyers.* Cambridge: Cambridge University Press. [Ch. 12]
 
+Clement, Viviane, Kanta Kumari Rigaud, Alex de Sherbinin, Bryan Jones, Susana Adamo, Jacob Schewe, Nadege Sadiq, and Elham Shabahat. 2021. *Groundswell Part 2: Acting on Internal Climate Migration.* Washington, DC: World Bank. [Ch. 15]
+
 Coase, Ronald H. 1937. "The Nature of the Firm." *Economica* 4(16): 386--405. [Ch. 2]
 
+Collier, Paul, V.L. Elliott, Håvard Hegre, Anke Hoeffler, Marta Reynal-Querol, and Nicholas Sambanis. 2003. *Breaking the Conflict Trap: Civil War and Development Policy.* Washington, DC: World Bank and Oxford University Press. [Ch. 12]
+
 Collier, Paul. 2007. *The Bottom Billion: Why the Poorest Countries Are Failing and What Can Be Done About It.* Oxford: Oxford University Press. [Ch. 12]
+
+Combes, Pierre-Philippe, Gilles Duranton, and Laurent Gobillon. 2008. "Spatial Wage Disparities: Sorting Matters!" *Journal of Urban Economics* 63(2): 723--742. [Appendix C, Ch. 1]
 
 Combes, Pierre-Philippe, Gilles Duranton, Laurent Gobillon, and Sébastien Roux. 2010. "Estimating Agglomeration Economies with History, Geology, and Worker Effects." In Edward L. Glaeser, ed., *Agglomeration Economics.* Chicago: University of Chicago Press. [Ch. 1]
 Combes, Pierre-Philippe, Gilles Duranton, Laurent Gobillon, Diego Puga, and Sébastien Roux. 2012. "The Productivity Advantages of Large Cities: Distinguishing Agglomeration from Firm Selection." *Econometrica* 80(6): 2543--2594. [Ch. 1]
@@ -155,10 +183,6 @@ Correia, Sergio, Paulo Guimarães, and Thomas Zylkin. 2020. "Fast Poisson Estima
 Cruz, José-Luis, and Esteban Rossi-Hansberg. 2024. "The Economic Geography of Global Warming." *Review of Economic Studies* 91(1): 466--497. [Ch. 15]
 
 David, Paul A. 1985. "Clio and the Economics of QWERTY." *American Economic Review* 75(2): 332--337. [Ch. 2]
-
-de Soto, Hernando. 1989. *The Other Path: The Invisible Revolution in the Third World.* New York: Harper & Row. [Ch. 2]
-
-de Soto, Hernando. 2000. *The Mystery of Capital: Why Capitalism Triumphs in the West and Fails Everywhere Else.* New York: Basic Books. [Ch. 5]
 
 Del Carpio, Ximena V., and Mathis Wagner. 2015. "The Impact of Syrians Refugees on the Turkish Labor Market." *World Bank Policy Research Working Paper* 7402. [Ch. 12]
 
@@ -184,6 +208,8 @@ Dixit, Avinash K., and Joseph E. Stiglitz. 1977. "Monopolistic Competition and O
 
 Duranton, Gilles, and Diego Puga. 2001. "Nursery Cities: Urban Diversity, Process Innovation, and the Life Cycle of Products." *American Economic Review* 91(5): 1454--1477. [Ch. 1]
 
+de Soto, Hernando. 2000. *The Mystery of Capital: Why Capitalism Triumphs in the West and Fails Everywhere Else.* New York: Basic Books. [Ch. 2, Ch. 5]
+
 Duranton, Gilles, and Diego Puga. 2004. "Micro-Foundations of Urban Agglomeration Economies." In J. Vernon Henderson and Jacques-François Thisse, eds., *Handbook of Regional and Urban Economics,* vol. 4, 2063--2117. Amsterdam: Elsevier. [Ch. 1]
 
 ECLAC (Economic Commission for Latin America and the Caribbean) and FAO (Food and Agriculture Organization). 2020. *Food Systems and COVID-19 in Latin America and the Caribbean: Impact and Risks Regarding Food Security.* Bulletin No. 1. Santiago: ECLAC. [Ch. 5]
@@ -191,6 +217,12 @@ ECLAC (Economic Commission for Latin America and the Caribbean) and FAO (Food an
 Engerman, Stanley L., and Kenneth L. Sokoloff. 2000. "Institutions, Factor Endowments, and Paths of Development in the New World." *Journal of Economic Perspectives* 14(3): 217--232. [Ch. 2]
 
 Ertur, Cem, and Wilfried Koch. 2007. "Growth, Technological Interdependence, and Spatial Externalities: Theory and Evidence." *Journal of Applied Econometrics* 22(6): 1033--1062. [Ch. 3A]
+
+EU Chips Act. 2023. Regulation (EU) 2023/1781. European Union. [Ch. 6]
+
+European Commission. 2020. *EU SURE Social Bond Framework.* Brussels: European Commission. [Ch. 10]
+
+Eustat. 2025. "R&D Indicators in the Basque Country, 2011–2024." Basque Statistics Office. [Ch. 9]
 
 Faber, Benjamin, and Cecile Gaubert. 2019. "Tourism and Economic Development: Evidence from Mexico's Coastline." *American Economic Review* 109(6): 2245--2293. [Ch. 5]
 
@@ -202,11 +234,15 @@ Fay, Marianne, and Charlotte Opal. 2000. "Urbanization without Growth: A Not-So-
 
 Ferman, Bruno, Cristine Pinto, and Vitor Possebom. 2020. "Cherry Picking with Synthetic Controls." *Journal of Policy Analysis and Management* 39(2): 510--532. [Ch. 12]
 
-Ferrara, Andreas. 2020. "The Long-Run Effects of Historical Institutions on Access to Opportunities: Evidence from Italian Municipalities." *Economic History Review* 73(4): 1031--1065. [Ch. 10]
-
 Ferrara, Andreas, Patrick Ferretti, and Arcangelo Ferretti. 2023. "The Mezzogiorno Trap: Regional Divergence and Institutional Persistence in Southern Italy." *Journal of Economic Geography* 23(3): 561--589. [Ch. 10]
 
+Ferrara, Andreas. 2020. "The Long-Run Effects of Historical Institutions on Access to Opportunities: Evidence from Italian Municipalities." *Economic History Review* 73(4): 1031--1065. [Ch. 10]
+
+FIRRMA (Foreign Investment Risk Review Modernization Act). 2018. Public Law 115--232, Subtitle A. United States. [Ch. 4]
+
 Foray, Dominique, Paul A. David, and Bronwyn H. Hall. 2009. "Smart Specialisation: The Concept." *Knowledge Economists Policy Brief* 9. European Commission. [Ch. 2]
+
+Foray, Dominique. 2015. *Smart Specialisation: Opportunities and Challenges for Regional Innovation Policy.* London: Routledge. [Ch. 9]
 
 Forman, Chris, Avi Goldfarb, and Shane Greenstein. 2002. "Digital Dispersion: An Industrial and Geographic Census of Commercial Internet Use." NBER Working Paper 9287. [Ch. 1]
 
@@ -222,9 +258,11 @@ Ganapati, Sharat, and Reshma Ravi. 2023. "Rural Platforms: Evidence from India's
 
 Ganong, Peter, and Daniel Shoag. 2017. "Why Has Regional Income Convergence in the U.S. Declined?" *Journal of Urban Economics* 102: 76--90. [Ch. 4]
 
+Gaubert, Cecile. 2018. "Firm Sorting and Agglomeration." *American Economic Review* 108(11): 3117--3153. [Ch. 1]
+
 Gereffi, Gary, and Karina Fernandez-Stark. 2016. *Global Value Chain Analysis: A Primer.* 2nd ed. Durham, NC: Center on Globalization, Governance & Competitiveness, Duke University. [Ch. 6]
 
-Gaubert, Cecile. 2018. "Firm Sorting and Agglomeration." *American Economic Review* 108(11): 3117--3153. [Ch. 1]
+Glaeser, Edward L., and David C. Maré. 2001. "Cities and Skills." *Journal of Labor Economics* 19(2): 316--342. [Ch. 1]
 
 Glaeser, Edward L., and Joshua D. Gottlieb. 2008. "The Economics of Place-Making Policies." *Brookings Papers on Economic Activity* (Spring): 155--239. [Ch. 9]
 
@@ -232,7 +270,7 @@ Glaeser, Edward L., Hedi D. Kallal, José A. Scheinkman, and Andrei Shleifer. 19
 
 Glaeser, Edward L., Jed Kolko, and Albert Saiz. 2001. "Consumer City." *Journal of Economic Geography* 1(1): 27--50. [Ch. 1]
 
-Glaeser, Edward L., and David C. Maré. 2001. "Cities and Skills." *Journal of Labor Economics* 19(2): 316--342. [Ch. 1]
+Glaeser, Edward L., Rafael La Porta, Florencio Lopez-de-Silanes, and Andrei Shleifer. 2004. "Do Institutions Cause Growth?" *Journal of Economic Growth* 9(3): 271--303. [Ch. 2]
 
 Gollin, Douglas, Rémi Jedwab, and Dietrich Vollrath. 2016. "Urbanization with and without Industrialization." *Journal of Economic Growth* 21(1): 35--70. [Ch. 13]
 
@@ -243,6 +281,8 @@ Greif, Avner. 1993. "Contract Enforceability and Economic Institutions in Early 
 Grosfeld, Irena, and Ekaterina Zhuravskaya. 2015. "Cultural vs. Economic Legacies of Empires: Evidence from the Partition of Poland." *Journal of Comparative Economics* 43(1): 55--75. [Ch. 2]
 
 Grossman, Gene M., and Esteban Rossi-Hansberg. 2008. "Trading Tasks: A Simple Theory of Offshoring." *American Economic Review* 98(5): 1978--1997. [Ch. 3B, Ch. 5, Ch. 8, Ch. 13, Ch. 16]
+
+Grubel, Herbert G., and Peter J. Lloyd. 1975. *Intra-Industry Trade: The Theory and Measurement of International Trade in Differentiated Products.* London: Macmillan. [Appendix C]
 
 GSMA. 2022. *State of the Industry Report on Mobile Money 2022.* London: GSM Association. [Ch. 14]
 
@@ -282,9 +322,9 @@ Homewood, Katherine, Patti Kristjanson, and Pippa Chenevix Trench, eds. 2009. *S
 
 Hsiang, Solomon M., Kyle C. Meng, and Mark A. Cane. 2011. "Civil Conflicts Are Associated with the Global Climate." *Nature* 476(7361): 438--441. [Ch. 13]
 
-Hsing, You-tien. 2010. *The Great Urban Transformation: Politics of Land and Property in China.* Oxford: Oxford University Press. [Ch. 7]
-
 Hsieh, Chang-Tai, and Enrico Moretti. 2019. "Housing Constraints and Spatial Misallocation." *American Economic Journal: Macroeconomics* 11(2): 1--39. [Ch. 1]
+
+Hsing, You-tien. 2010. *The Great Urban Transformation: Politics of Land and Property in China.* Oxford: Oxford University Press. [Ch. 7]
 
 Huber, Martin, and Andreas Steinmayr. 2021. "A Framework for Separating Individual-Level Treatment Effects From Spillover Effects." *Journal of Business & Economic Statistics* 39(2): 422--436. [Ch. 16]
 
@@ -294,15 +334,21 @@ IEA (International Energy Agency). 2023. *World Energy Outlook 2023.* Paris: IEA
 
 ILO (International Labour Organization). 2023. *World Employment and Social Outlook: Trends 2023.* Geneva: ILO. [Ch. 16]
 
+Imbens, Guido W., and Karthik Kalyanaraman. 2012. "Optimal Bandwidth Choice for the Regression Discontinuity Estimator." *Review of Economic Studies* 79(3): 933--959. [Ch. 9]
+
 Imbens, Guido W., and Thomas Lemieux. 2008. "Regression Discontinuity Designs: A Guide to Practice." *Journal of Econometrics* 142(2): 615--635. [Ch. 3A]
 
-Imbens, Guido W., and Karthik Kalyanaraman. 2012. "Optimal Bandwidth Choice for the Regression Discontinuity Estimator." *Review of Economic Studies* 79(3): 933--959. [Ch. 9]
+Inflation Reduction Act (IRA). 2022. Public Law 117--169. United States. [Ch. 4, Ch. 15]
+
+International Monetary Fund. 2015. *Tax Policy Reforms in the GCC Countries: Now and How?* Paper presented to the GCC Annual Meeting of Ministers of Finance and Central Bank Governors, Doha. [Ch. 11]
 
 Jacobs, Jane. 1969. *The Economy of Cities.* New York: Random House. [Ch. 1]
 
 Jaffe, Adam B., Manuel Trajtenberg, and Rebecca Henderson. 1993. "Geographic Localization of Knowledge Spillovers as Evidenced by Patent Citations." *Quarterly Journal of Economics* 108(3): 577--598. [Ch. 1]
 
 Jean, Neal, Marshall Burke, Michael Xie, W. Matthew Davis, David B. Lobell, and Stefano Ermon. 2016. "Combining Satellite Imagery and Machine Learning to Predict Poverty." *Science* 353(6301): 790--794. [Ch. 16]
+
+Johnson, Chalmers. 1982. *MITI and the Japanese Miracle: The Growth of Industrial Policy, 1925--1975.* Stanford, CA: Stanford University Press. [Appendix C, Ch. 6]
 
 Kaplinsky, Raphael. 2000. "Globalisation and Unequalisation: What Can Be Learned from Value Chain Analysis?" *Journal of Development Studies* 37(2): 117--146. [Ch. 6]
 
@@ -352,11 +398,13 @@ Lewis, W. Arthur. 1954. "Economic Development with Unlimited Supplies of Labour.
 
 Li, Hongbin, and Li-An Zhou. 2005. "Political Turnover and Economic Performance: The Incentive Role of Personnel Control in China." *Journal of Public Economics* 89(9--10): 1743--1762. [Ch. 7]
 
+Liebowitz, S.J., and Stephen E. Margolis. 1990. "The Fable of the Keys." *Journal of Law and Economics* 33(1): 1--25. [Ch. 2]
+
 Los, Bart, Philip McCann, John Springford, and Mark Thissen. 2017. "The Mismatch between Local Voting and the Local Economic Consequences of Brexit." *Regional Studies* 51(5): 786--799. [Ch. 10]
 
-Lösch, August. 1940. *Die räumliche Ordnung der Wirtschaft* [The Economics of Location]. Jena: Gustav Fischer Verlag. [Ch. 1]
-
 Luca, Michael, Abhishek Nagaraj, and Gauri Subramani. 2022. "Getting on the Map: The Impact of Online Listings on Business Performance." NBER Working Paper 30810. [Ch. 3A]
+
+Lösch, August. 1940. *Die räumliche Ordnung der Wirtschaft* [The Economics of Location]. Jena: Gustav Fischer Verlag. [Ch. 1]
 
 Malerba, Franco, and Richard R. Nelson. 2011. "Learning and Catching Up in Different Sectoral Systems: Evidence from Six Industries." *Industrial and Corporate Change* 20(6): 1645--1675. [Ch. 6]
 
@@ -384,9 +432,9 @@ Melitz, Marc J. 2003. "The Impact of Trade on Intra-Industry Reallocations and A
 
 Michalopoulos, Stelios, and Elias Papaioannou. 2013. "Pre-Colonial Ethnic Institutions and Contemporary African Development." *Econometrica* 81(1): 113--152. [Ch. 13]
 
-Mitchener, Kris James, and Ian W. McLean. 1999. "U.S. Regional Growth and Convergence, 1880--1980." *Journal of Economic History* 59(4): 1016--1042. [Ch. 10]
-
 Mills, Edwin S. 1967. "An Aggregative Model of Resource Allocation in a Metropolitan Area." *American Economic Review* 57(2): 197--210. [Ch. 1]
+
+Mitchener, Kris James, and Ian W. McLean. 1999. "U.S. Regional Growth and Convergence, 1880--1980." *Journal of Economic History* 59(4): 1016--1042. [Ch. 10]
 
 Montinola, Gabriella, Yingyi Qian, and Barry R. Weingast. 1995. "Federalism, Chinese Style: The Political Basis for Economic Success in China." *World Politics* 48(1): 50--81. [Ch. 7]
 
@@ -400,11 +448,13 @@ Moretti, Enrico. 2012. *The New Geography of Jobs.* Boston: Houghton Mifflin Har
 
 Mundell, Robert A. 1961. "A Theory of Optimum Currency Areas." *American Economic Review* 51(4): 657--665. [Ch. 10]
 
-Naidu, Suresh. 2010. "Recruitment Restrictions and Labor Markets: Evidence from the Postbellum U.S. South." *Journal of Labor Economics* 28(2): 413--445. [Ch. 2]
+Nagaraj, Abhishek, and Scott Stern. 2020. "The Economics of Maps." *Journal of Economic Perspectives* 34(1): 196--221. [Ch. 3A]
 
 Nagaraj, Abhishek. 2021. "The Private Impact of Public Data: Landsat Satellite Maps and Gold Exploration." Working paper. [Ch. 3A, Ch. 16]
 
-Nagaraj, Abhishek, and Scott Stern. 2020. "The Economics of Maps." *Journal of Economic Perspectives* 34(1): 196--221. [Ch. 3A]
+Naidu, Suresh. 2010. "Recruitment Restrictions and Labor Markets: Evidence from the Postbellum U.S. South." *Journal of Labor Economics* 28(2): 413--445. [Ch. 2]
+
+National Bureau of Statistics of China. 2021. "Communiqué of the Seventh National Population Census (Nos. 3 and 7)." Beijing. [Ch. 7]
 
 Neffke, Frank, Martin Henning, and Ron Boschma. 2011. "How Do Regions Diversify over Time? Industry Relatedness and the Development of New Growth Paths in Regions." *Economic Geography* 87(3): 237--265. [Ch. 2]
 
@@ -412,9 +462,9 @@ NISR (National Institute of Statistics of Rwanda). 2018. *Rwanda Poverty Profile
 
 NISR (National Institute of Statistics of Rwanda). 2023. *Statistical Yearbook 2023.* Kigali: NISR. [Ch. 12]
 
-Nölke, Andreas, and Arjan Vliegenthart. 2009. "Enlarging the Varieties of Capitalism: The Emergence of Dependent Market Economies in East Central Europe." *World Politics* 61(4): 670--702. [Ch. 2, Ch. 9, Ch. 10]
-
 North, Douglass C. 1990. *Institutions, Institutional Change and Economic Performance.* Cambridge: Cambridge University Press. [Ch. 2]
+
+Nölke, Andreas, and Arjan Vliegenthart. 2009. "Enlarging the Varieties of Capitalism: The Emergence of Dependent Market Economies in East Central Europe." *World Politics* 61(4): 670--702. [Ch. 2, Ch. 9, Ch. 10]
 
 OCHA (United Nations Office for the Coordination of Humanitarian Affairs). 2023. *Humanitarian Needs Overview: Yemen.* New York: OCHA. [Ch. 12]
 
@@ -432,19 +482,21 @@ Pellegrini, Guido, Flavia Terribile, Ornella Tarola, Teo Muccigrosso, and Federi
 
 Perez, Carlota. 2002. *Technological Revolutions and Financial Capital: The Dynamics of Bubbles and Golden Ages.* Cheltenham: Edward Elgar. [Ch. 6]
 
+Pinotti, Paolo. 2015. "The Economic Costs of Organised Crime: Evidence from Southern Italy." *Economic Journal* 125(586): F203--F232. [Ch. 10]
+
 Polanyi, Michael. 1966. *The Tacit Dimension.* Garden City, NY: Doubleday. [Ch. 1]
+
+Porter, Michael E. 1990. *The Competitive Advantage of Nations.* New York: Free Press. [Appendix C, Ch. 2]
 
 Psacharopoulos, George, and Harry Anthony Patrinos. 2018. "Returns to Investment in Education: A Decennial Review of the Global Literature." *Education Economics* 26(5): 445--458. [Ch. 12]
 
 Puga, Diego. 1999. "The Rise and Fall of Regional Inequalities." *European Economic Review* 43(2): 303--334. [Ch. 1]
 
-Pinotti, Paolo. 2015. "The Economic Costs of Organised Crime: Evidence from Southern Italy." *Economic Journal* 125(586): F203--F232. [Ch. 10]
-
 Putnam, Robert D. 1993. *Making Democracy Work: Civic Traditions in Modern Italy.* Princeton: Princeton University Press. [Ch. 2, Ch. 10]
 
-Redding, Stephen J., and Esteban Rossi-Hansberg. 2017. "Quantitative Spatial Economics." *Annual Review of Economics* 9: 21--58. [Ch. 16]
-
 Redding, Stephen J., and Daniel M. Sturm. 2008. "The Costs of Remoteness: Evidence from German Division and Reunification." *American Economic Review* 98(5): 1766--1797. [Ch. 2]
+
+Redding, Stephen J., and Esteban Rossi-Hansberg. 2017. "Quantitative Spatial Economics." *Annual Review of Economics* 9: 21--58. [Ch. 16]
 
 Redding, Stephen, and Anthony J. Venables. 2004. "Economic Geography and International Inequality." *Journal of International Economics* 62(1): 53--82. [Ch. 1]
 
@@ -454,33 +506,39 @@ Rigaud, Kanta Kumari, Alex de Sherbinin, Bryan Jones, Jonas Bergmann, Viviane Cl
 
 Rodell, Matthew, Isabella Velicogna, and James S. Famiglietti. 2009. "Satellite-Based Estimates of Groundwater Depletion in India." *Nature* 460(7258): 999--1002. [Ch. 15]
 
-Rodríguez-Pose, Andrés. 2018. "The Revenge of the Places That Don't Matter (and What to Do about It)." *Cambridge Journal of Regions, Economy, and Society* 11(1): 189--209. [Ch. 10]
-
-Rodríguez-Pose, Andrés, and Ugo Fratesi. 2004. "Between Development and Social Policies: The Impact of European Structural Funds in Objective 1 Regions." *Regional Studies* 38(1): 97--113. [Ch. 9]
+Rodrik, Dani, Arvind Subramanian, and Francesco Trebbi. 2004. "Institutions Rule: The Primacy of Institutions over Geography and Integration in Economic Development." *Journal of Economic Growth* 9(2): 131--165. [Ch. 2]
 
 Rodrik, Dani. 2016. "Premature Deindustrialization." *Journal of Economic Growth* 21(1): 1--33. [Ch. 5]
 
-Rodrik, Dani, Arvind Subramanian, and Francesco Trebbi. 2004. "Institutions Rule: The Primacy of Institutions over Geography and Integration in Economic Development." *Journal of Economic Growth* 9(2): 131--165. [Ch. 2]
+Rodríguez-Pose, Andrés, and Ugo Fratesi. 2004. "Between Development and Social Policies: The Impact of European Structural Funds in Objective 1 Regions." *Regional Studies* 38(1): 97--113. [Ch. 9]
+
+Rodríguez-Pose, Andrés. 2018. "The Revenge of the Places That Don't Matter (and What to Do about It)." *Cambridge Journal of Regions, Economy, and Society* 11(1): 189--209. [Ch. 10]
 
 Rosenthal, Stuart S., William C. Strange, and Joaquin A. Urrego. 2022. "JUE Insight: Are City Centers Losing Their Appeal? Commercial Real Estate, Urban Spatial Structure, and COVID-19." *Journal of Urban Economics* 127: 103381. [Ch. 1]
+
+Ross, Michael L. 2012. *The Oil Curse: How Petroleum Wealth Shapes the Development of Nations.* Princeton: Princeton University Press. [Ch. 5]
 
 RURA (Rwanda Utilities Regulatory Authority). 2022. *Annual Report 2021/2022.* Kigali: RURA. [Ch. 12]
 
 Rwanda Development Board. 2020. *Annual Report 2019.* Kigali: RDB. [Ch. 12]
 
-Ross, Michael L. 2012. *The Oil Curse: How Petroleum Wealth Shapes the Development of Nations.* Princeton: Princeton University Press. [Ch. 5]
-
 Sabetti, Filippo. 1996. "Path Dependency and Civic Culture: Some Lessons from Italy About Interpreting Social Experiments." *Politics and Society* 24(1): 19--44. [Ch. 10]
 
 Sachs, Jeffrey D., and Andrew M. Warner. 1995. "Natural Resource Abundance and Economic Growth." NBER Working Paper 5398. [Ch. 5]
+
+SACU (Southern African Customs Union). 2024. *Understanding the SACU Revenue Sharing Arrangement.* Windhoek: SACU Secretariat. [Ch. 14]
+
+SADC (Southern African Development Community). 2025. *SADC Macroeconomic Statistics Bulletin: Year 2023.* Gaborone: SADC Secretariat. [Ch. 14]
+
+Santiago Principles (Generally Accepted Principles and Practices for Sovereign Wealth Funds). 2008. International Working Group of Sovereign Wealth Funds. [Ch. 11]
 
 Santos Silva, J.M.C., and Silvana Tenreyro. 2006. "The Log of Gravity." *Review of Economics and Statistics* 88(4): 641--658. [Ch. 3B]
 
 Santos Silva, J.M.C., and Silvana Tenreyro. 2011. "Further Simulation Evidence on the Performance of the Poisson Pseudo-Maximum Likelihood Estimator." *Economics Letters* 112(2): 220--222. [Ch. 3B, Lab 7]
 
-Sassoon, Joseph. 2009. *Saddam Hussein's Ba'th Party: Inside an Authoritarian Regime.* Cambridge: Cambridge University Press. [Ch. 12]
-
 Sassen, Saskia. 2001. *The Global City: New York, London, Tokyo.* 2nd ed. Princeton: Princeton University Press. [Ch. 3B, Ch. 4]
+
+Sassoon, Joseph. 2009. *Saddam Hussein's Ba'th Party: Inside an Authoritarian Regime.* Cambridge: Cambridge University Press. [Ch. 12]
 
 Saxenian, AnnaLee. 2006. *The New Argonauts: Regional Advantage in a Global Economy.* Cambridge, MA: Harvard University Press. [Ch. 8]
 
@@ -496,6 +554,13 @@ Suri, Tavneet, and William Jack. 2016. "The Long-Run Poverty and Gender Impacts 
 
 SVIMEZ. 2023. *Rapporto SVIMEZ 2023 sull'Economia e la Società del Mezzogiorno.* Rome: SVIMEZ. [Ch. 10]
 
+Syverson, Chad. 2004. "Market Structure and Productivity: A Concrete Example." *Journal of Political Economy* 112(6): 1181--1222. [Ch. 1]
+Tolbert, Charles M., and Molly Sizer. 1996. "U.S. Commuting Zones and Labor Market Areas: A 1990 Update." *Economic Research Service Staff Paper* 9614. Washington, DC: USDA. [Ch. 1]
+
+Tabuchi, Takatoshi, and Jacques-François Thisse. 2002. "Taste Heterogeneity, Labor Mobility and Economic Geography." *Journal of Development Economics* 69(1): 155--177. [Ch. 1]
+
+Tabuchi, Takatoshi. 1998. "Urban Agglomeration and Dispersion: A Synthesis of Alonso and Krugman." *Journal of Urban Economics* 44(3): 333--351. [Ch. 1]
+
 Tarrow, Sidney. 1996. "Making Social Science Work Across Space and Time: A Critical Reflection on Robert Putnam's *Making Democracy Work.*" *American Political Science Review* 90(2): 389--397. [Ch. 10]
 
 Taylor, Peter J. 2004. *World City Network: A Global Urban Analysis.* London: Routledge. [Ch. 16]
@@ -506,17 +571,23 @@ Taylor, Peter J., Pengfei Ni, Ben Derudder, Michael Hoyler, Jin Huang, and Frank
 
 Tinbergen, Jan. 1962. *Shaping the World Economy: Suggestions for an International Economic Policy.* New York: Twentieth Century Fund. [Ch. 3B]
 
-
-Syverson, Chad. 2004. "Market Structure and Productivity: A Concrete Example." *Journal of Political Economy* 112(6): 1181--1222. [Ch. 1]
-Tolbert, Charles M., and Molly Sizer. 1996. "U.S. Commuting Zones and Labor Market Areas: A 1990 Update." *Economic Research Service Staff Paper* 9614. Washington, DC: USDA. [Ch. 1]
+Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 9]
 
 Tumen, Semih. 2016. "The Economic Impact of Syrian Refugees on Host Countries: Quasi-Experimental Evidence from Turkey." *American Economic Review* 106(5): 456--460. [Ch. 12]
+
+UN-Habitat. 2019. *The Story of Shenzhen: Its Economic, Social and Environmental Transformation.* Nairobi: United Nations Human Settlements Programme. [Ch. 7]
 
 UNCTAD (United Nations Conference on Trade and Development). 2019. *Economic Development in Africa Report 2019: Made in Africa -- Rules of Origin for Enhanced Intra-African Trade.* Geneva: United Nations. [Ch. 14]
 
 UNCTAD (United Nations Conference on Trade and Development). 2020. *World Investment Report 2020: International Production beyond the Pandemic.* Geneva: United Nations. [Ch. 12]
 
+USTR (Office of the United States Trade Representative). 2026. *Report to Congress on the Operation of the United States-Mexico-Canada Agreement with Respect to Trade in Automotive Goods.* Washington, DC. [Ch. 4]
+
+Venables, Anthony J. 1996. "Equilibrium Locations of Vertically Linked Industries." *International Economic Review* 37(2): 341--359. [Ch. 1]
+
 Verwimp, Philip. 2005. "An Economic Profile of Peasant Perpetrators of Genocide: Micro-Level Evidence from Rwanda." *Journal of Development Economics* 77(2): 297--323. [Ch. 12]
+
+Viner, Jacob. 1950. *The Customs Union Issue.* New York: Carnegie Endowment for International Peace. [Appendix C]
 
 Von Thünen, Johann Heinrich. 1826. *Der isolierte Staat in Beziehung auf Landwirthschaft und Nationalökonomie* [The Isolated State in Relation to Agriculture and Political Economy]. Hamburg: Perthes. [Ch. 1]
 
@@ -552,65 +623,10 @@ Zeltzer, Dan, Liran Einav, Joseph Rashba, and Ran D. Balicer. 2023. "The Impact 
 
 Zimbalist, Andrew. 2015. *Circus Maximus: The Economic Gamble behind Hosting the Olympics and the World Cup.* Washington, DC: Brookings Institution Press. [Ch. 11]
 
----
+Counts below are working tallies. Heuristic bidirectional audit artifacts live in `data/processed/citation_audit.md` (run `python scripts/audit_citations.py`). Remaining gaps are mostly agency/corporate parentheticals and date-in-name false positives (e.g., Park (1972) for Penang Science Park), not missing academic core references.
 
-## Legislation, Treaties, and Policy Documents
-
-Barca, Fabrizio. 2009. *An Agenda for a Reformed Cohesion Policy: A Place-Based Approach to Meeting European Union Challenges and Expectations.* Independent report prepared at the request of Danuta Hübner, Commissioner for Regional Policy. Brussels: European Commission. [Ch. 9]
-
-CHIPS and Science Act. 2022. Public Law 117--167. United States. [Ch. 4, Ch. 6]
-
-EU Chips Act. 2023. Regulation (EU) 2023/1781. European Union. [Ch. 6]
-
-FIRRMA (Foreign Investment Risk Review Modernization Act). 2018. Public Law 115--232, Subtitle A. United States. [Ch. 4]
-
-Inflation Reduction Act (IRA). 2022. Public Law 117--169. United States. [Ch. 4, Ch. 15]
-
-Santiago Principles (Generally Accepted Principles and Practices for Sovereign Wealth Funds). 2008. International Working Group of Sovereign Wealth Funds. [Ch. 11]
-
-Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 9]
-
----
-
-## Consistency Notes and Flags
-
-1. **Rodrik (2019) in Ch. 5 and Ch. 13:** Both chapters cite "Diao, McMillan, and Rodrik (2019)" — the Palgrave Handbook chapter on structural change. No separate solo Rodrik (2019) entry needed.
-
-2. **Henderson (1993) in Ch. 1:** This is Rebecca Henderson, co-author of Jaffe, Trajtenberg, and Henderson (1993) -- not J. Vernon Henderson. Listed under Jaffe, Trajtenberg, and Henderson.
-
-3. **McCann (2016, 2020):** Two separate works by Philip McCann cited in Ch. 10. Both entries provided.
-
-4. **Becker et al. (2010) vs. Becker et al. (2013):** Two different papers by Becker, Egger, and von Ehrlich. The 2010 paper is cited in Ch. 3A; the 2013 paper in Ch. 9. Both entries provided.
-
-5. **LeSage and Pace (2009) vs. (2014):** Two different works. The 2009 entry is the textbook; the 2014 entry is the journal article on "The Biggest Myth in Spatial Econometrics."
-
-6. **Combes et al. (2010):** Cited multiple times in Ch. 1 -- all refer to the same chapter in the *Agglomeration Economics* volume.
-
-7. **Grossman and Rossi-Hansberg (2008):** Cited across five chapters (3B, 5, 8, 13, 16) -- all refer to the same "Trading Tasks" paper.
-
-8. **Desmet and Rossi-Hansberg (2015):** Cited in both Ch. 15 and Ch. 16 -- same paper on spatial economic impact of global warming.
-
-9. **Anderson and van Wincoop (2003):** Cited in both Ch. 3B and Ch. 4 -- same "Gravity with Gravitas" paper.
-
-10. **Iammarino, Rodríguez-Pose, and Storper (2019):** Cited in Ch. 9 without parenthetical year in some instances; included as a full reference.
-
-11. **Luca, Nagaraj, and Subramani (2022):** Ch. 3A originally cited as "Nagaraj, Stern, and Scott Morton (2022)" — corrected to Luca, Nagaraj, and Subramani per NBER WP 30810. Chapter text updated.
-
-12. **Chen et al. (2019):** In Ch. 6, cited as "Wei Chen and colleagues (2019)"; in Ch. 7, cited as "Chen et al. (2019)." Same paper -- the *Brookings Papers* forensic examination of China's national accounts.
-
-13. **Boschma (2011):** Confirmed cited in Ch. 2 text (regional branching discussion). Not an orphan reference.
-
-14. **Acemoglu, Johnson, and Robinson (2001) vs. (2002):** Two separate papers. The 2001 paper is "Colonial Origins" (*AER*); the 2002 paper is "Reversal of Fortune" (*QJE*). Both entries provided.
-
----
-
-## Summary Statistics
-
-- **Total unique references (main section):** 260
-- **References with complete bibliographic information:** 260
-- **References marked [verify]:** 0
-- **References marked [incomplete]:** 0
-- **Legislation/treaty/policy documents:** 7
-- **Grand total (references + legislation):** 267
-- **Chapters with most citations:** Ch. 1 (37), Ch. 2 (34), Ch. 16 (31), Ch. 3A (26)
-- **Most-cited single work:** Grossman and Rossi-Hansberg (2008), cited in 5 chapters (Ch. 3B, Ch. 5, Ch. 8, Ch. 13, Ch. 16)
+- **Total unique references (main section):** ~312
+- **Legislation/treaty/policy documents:** 8
+- **Working total (references + legislation):** ~320
+- **Chapters with most citations (provisional):** Ch. 1, Ch. 2, Ch. 16, Ch. 3A
+- **Most-cited single work (provisional):** Grossman and Rossi-Hansberg (2008)

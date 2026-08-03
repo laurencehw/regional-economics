@@ -25,13 +25,18 @@ Mappings and intake requirements are tracked in:
 - code/: scripts or notebooks
 - output/: tables, figures, and model results
 
+## Evidence Labels
+- Smoke-test outputs are **synthetic demonstrations**.
+- `output/scm_baseline/` and `output/scm_robustness/` are **author calculations** from the current MENA panel; ACLED fields remain partly restricted, so conflict intensity is a proxy.
+
 ## Build Checklist
-1. Confirm ACLED licensing/access approval and record metadata in tracker.
-2. Normalize WDI, ACLED, and UNHCR extracts to a country-year panel.
-3. Define donor pool and treatment timing for each intervention case.
-4. Estimate baseline synthetic-control paths and treatment effects.
-5. Run placebo/event-study diagnostics and spatial robustness checks.
-6. Export reproducible outputs and interpretation notes.
+1. [~] Confirm ACLED licensing/access approval and record metadata in tracker.
+2. [x] Normalize WDI, ACLED, and UNHCR extracts to a country-year panel.
+3. [x] Define donor pool and treatment timing for each intervention case.
+4. [x] Estimate baseline synthetic-control paths and treatment effects.
+5. [x] Run placebo/event-study diagnostics and spatial robustness checks.
+6. [x] Export reproducible outputs and interpretation notes.
+7. [ ] Re-run YEM 2015 excluding conflict-affected donors from the pool.
 
 ## Current Gate Status
 - ACLED credential validation pull completed (Egypt 2024 sample; API-reported count 129, row-level fields currently redacted) with metadata logged in `data/raw/metadata/acled_lab4_pull_validation_egypt_2024_2026-02-23.json`.

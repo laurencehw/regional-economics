@@ -6,6 +6,10 @@ This book is designed to be read in multiple ways. The full sequence — from th
 
 Each pathway specifies a set of core chapters (required reading), elective chapters (choose some or all), and applied labs. The dependency diagram below shows which chapters build on which, so instructors can verify that any custom sequence respects the analytical prerequisites.
 
+## Data and Policy Cutoff
+
+The manuscript's general information cutoff is **July 1, 2026**. Every contemporary policy statement should be read as “in force or publicly announced by that date” unless a different date is stated. Quantitative values retain the vintage named in their source; later revisions are not silently substituted. Projections are scenarios, not observations, and should identify their base year, horizon, and assumptions.
+
 ---
 
 ## Dependency Diagram

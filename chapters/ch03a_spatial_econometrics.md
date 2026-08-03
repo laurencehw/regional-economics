@@ -76,7 +76,7 @@ The disadvantage is endogeneity. Trade flows are not exogenous to regional outco
 
 Before a weight matrix enters estimation, it must be normalized. The choice of normalization is itself consequential.
 
-**Row standardization** divides each element $$w_{ij}$$ by the row sum $$\sum_j w_{ij}$$, so that $$Wy_i$$ becomes a weighted average of neighbors' outcomes. This is the dominant convention and the one used throughout this book. Its advantage is interpretability: $$\rho$$ has a natural reading as the elasticity of $$y_i$$ with respect to the average neighbor outcome. Its disadvantage is that it distorts the original economic content of the weights. If $$w_{ij}$$ originally measured bilateral trade in dollars, row standardization converts it to trade shares — and a country that trades primarily with one large partner (Mexico with the US) is treated the same as a country whose trade is diversified across many partners (Germany with the EU), even though the economic meaning of their spatial dependence is quite different.
+**Row standardization** divides each element $$w_{ij}$$ by the row sum $$\sum_j w_{ij}$$, so that $$(W\mathbf{y})_i$$ becomes a weighted average of neighbors' outcomes. This is the dominant convention and the one used throughout this book. It makes the spatial lag easier to describe, but it does not by itself make $$\rho$$ an elasticity. The units and interpretation of $$\rho$$ depend on how $$y$$ is transformed, while equilibrium responses must be computed from the spatial multiplier $$(I-\rho W)^{-1}$$. Row standardization also changes the original economic content of the weights. If $$w_{ij}$$ measured bilateral trade in dollars, normalization converts levels to partner shares and gives every non-isolated row the same total weight. A country that trades primarily with one large partner is therefore put on the same row-sum scale as a country with diversified partners, despite the different level of external exposure.
 
 **Spectral normalization** divides the entire matrix by its largest eigenvalue, ensuring that $$\rho$$ is bounded between $$-1$$ and $1$ without distorting relative magnitudes. This preserves the economic content of the weights but makes $$\rho$$ harder to interpret.
 
@@ -110,7 +110,7 @@ Moran's $$I$$ is the spatial analog of the Durbin-Watson statistic in time serie
 
 *Source: Author's calculations using simulated regional data.*
 
-Lab 6 (Africa) uses Moran's $$I$$ as the primary analytical tool rather than merely a diagnostic. The two-step procedure — computing $$I$$ on raw night-lights, then on governance-residualized night-lights — directly tests whether spatial autocorrelation in economic activity is partly explained by the spatial pattern of institutional quality. The decline in $$I$$ after residualization measures how much of the spatial clustering is "institutional" versus "geographic." (Lab 6 applies Moran's $$I$$ to governance-residualized night-lights data, providing a direct empirical test of the institutional persistence claims in Chapter 2.)
+Lab 6 (Africa) uses Moran's $$I$$ as a primary descriptive tool rather than merely a model diagnostic. It computes $$I$$ first on raw night-lights and then on residuals from a model that conditions on observed governance measures. A change in $$I$$ shows how the residual spatial pattern differs after conditioning; it is not an additive decomposition of clustering and does not identify a causal “institutional share.” Governance may proxy omitted national characteristics, may itself respond to economic activity, and is measured at a coarser scale than the lights. The exercise is therefore a sensitivity analysis motivated by Chapter 2, not a direct causal test of institutional persistence.
 
 ---
 
@@ -176,7 +176,7 @@ The SEM is appropriate when the analyst believes that spatial patterns in the ou
 
 **Estimation.** The SEM is estimated by ML, with the log-likelihood taking a similar form to the SAR but replacing $$\rho$$ with $$\lambda$$ in the Jacobian term. Alternatively, Kelejian and Prucha (1999) proposed a GMM estimator that uses the spatial structure of the residuals to estimate $$\lambda$$ without computing the log-determinant — useful for very large datasets.
 
-**Interpretation.** The SEM's $$\beta$$ coefficients have the same interpretation as OLS coefficients — the marginal effect of $$x_{ki}$$ on $$y_i$$. There are no indirect effects through the error process. The spatial dependence in the SEM is "nuisance" in the sense that it does not change the economic story about how covariates affect outcomes — it only changes the precision with which those effects are estimated. This is why the SEM is sometimes called the "spatial Newey-West" correction, by analogy with heteroskedasticity-and-autocorrelation-consistent standard errors in time series.
+**Interpretation.** The SEM's structural mean is $$E[\mathbf y\mid X]=X\beta$$, so changes in an included covariate do not propagate through an endogenous spatial lag of $$y$$. The coefficients therefore retain the usual conditional-mean interpretation and have no SAR-style indirect effects. But SEM estimation is not merely a spatial HAC or “Newey–West” standard-error correction. Maximum likelihood or feasible GLS uses the modeled covariance structure and can change the point estimates as well as their precision relative to OLS. Calling the dependence a nuisance means it resides in unobserved shocks rather than in the structural outcome equation; it does not mean that only the reported standard errors change.
 
 ### The Spatial Durbin Model (SDM)
 
@@ -309,7 +309,7 @@ Manski's result is that, in a linear-in-means model without exclusion restrictio
 
 This is not an abstract impossibility theorem — it has direct consequences for every spatial regression in this book:
 
-**The SAR identifies $$\rho$$ only if correlated effects are absent or controlled for.** If $$E[\varepsilon_i \varepsilon_j] \neq 0$$ and this correlation is not modeled (as in the SEM component), the ML estimate of $$\rho$$ absorbs the correlated-effects channel and is biased upward. This is why the near-zero $$\rho$$ in Lab 1's unconditional Americas SAR may actually be more credible than a large estimate would be: it suggests that the trade-weighted $$W$$ is not simply proxying for shared macro shocks.
+**The SAR identifies $$\rho$$ only if correlated effects are absent or controlled for.** If $$E[\varepsilon_i \varepsilon_j] \neq 0$$ and this correlation is not modeled, the estimate of $$\rho$$ may absorb correlated shocks. The magnitude of an estimate is not evidence of credibility: a near-zero estimate can reflect a genuinely weak relationship, attenuation, a poorly chosen $$W$$, limited power, or misspecification. Lab 1 must therefore defend its estimate through model diagnostics, alternative weight matrices, controls, and sensitivity analysis rather than through the estimate's size.
 
 **The SDM can separate endogenous and exogenous effects, but only if $$W$$ is exogenous.** When $$W$$ is based on geographic contiguity, exogeneity is defensible (borders were drawn centuries ago and are not determined by current outcomes). When $$W$$ is based on contemporaneous trade flows, exogeneity is suspect — and instrumentation strategies (using historical trade patterns, geographic distance, or colonial linkages) become necessary.
 
@@ -335,11 +335,11 @@ For descriptive analysis, geographic $$W$$ is sufficient. For policy evaluation,
 
 The parametric spatial models of Sections 3A.2–3A.4 are powerful tools for characterizing spatial dependence, but they are, fundamentally, models of correlation structure. A large $$\rho$$ tells you that outcomes co-move across space in a pattern consistent with spillovers, but it does not, by itself, establish that one region's growth *causes* another's. This section introduces three design-based methods that pursue causal identification more directly. Each corresponds to an Applied Lab in the regional chapters.
 
-### Spatial Regression Discontinuity Design (Lab 4: Europe)
+### Threshold RDD with Spatial Interference (Lab 4: Europe)
 
 The most compelling spatial identification strategies exploit discontinuities — sharp changes in treatment at boundaries that are otherwise smooth. The intuition is familiar from the standard RDD literature (Imbens and Lemieux, 2008): if a policy changes discretely at a threshold, units just above and just below the threshold are nearly identical in all respects except the treatment, and the difference in outcomes can be attributed to the policy.
 
-In the spatial version, the "threshold" is typically a geographic boundary. Lab 4 (Europe) exploits the EU Cohesion Policy eligibility boundary: NUTS-2 regions with GDP per capita below 75 percent of the EU average qualify for substantially higher Structural Fund transfers. Regions at 74 percent and 76 percent of the EU average are, in expectation, similar in terms of industrial structure, human capital, geography, and institutional quality. The sharp eligibility cutoff creates a natural experiment.
+Two designs must be distinguished. A **geographic RDD** assigns treatment at a physical boundary and uses signed distance to that boundary as the running variable. Lab 4 instead begins with an **eligibility-threshold RDD**: regional GDP per capita relative to the EU average is the running variable, and the policy rule changes near 75 percent. Numerically adjacent observations need not be geographic neighbors. Moreover, reference-period averaging, transitional categories, co-financing, and variation in transfer intensity mean that actual Cohesion Policy exposure may be fuzzy rather than a deterministic binary treatment. The design must therefore document the applicable programming period and use the eligibility indicator as an instrument for treatment intensity when compliance is incomplete.
 
 The estimation proceeds in several steps:
 
@@ -351,11 +351,9 @@ The estimation proceeds in several steps:
 
 4. **Bandwidth selection.** The estimates are local — they apply only to regions near the threshold. Optimal bandwidth selection (Imbens and Kalyanaraman, 2012) trades off bias (wider bandwidths introduce regions that are less comparable) against variance (narrower bandwidths use fewer observations).
 
-**The spatial dimension.** Unlike a standard RDD — where the running variable is a scalar (test score, income threshold, age) — the spatial RDD has a geographic component. Regions near the threshold are not just numerically close to the cutoff; they are physically close to each other, often sharing borders. This creates both an opportunity and a complication.
+**The spatial dimension.** Geography enters because regional treatments may spill across borders and because nearby regions can share unobserved shocks. Physical adjacency can be used as a prespecified heterogeneity or matched-pair analysis, but restricting the sample to adjacent regions changes the design and does not turn the GDP cutoff into a geographic boundary. The main RDD remains local in the scalar eligibility score.
 
-The opportunity is that the analyst can exploit the geographic dimension directly: compare regions on opposite sides of the eligibility boundary that are also physically adjacent. If two neighboring NUTS-2 regions straddle the 75 percent threshold — one eligible, one ineligible — and they share a labor market, climate, and cultural characteristics, the comparison is especially compelling. Becker, Egger, and von Ehrlich (2010) use this approach to estimate the effect of EU Structural Funds on regional growth, finding positive but modest effects.
-
-The complication is the spatial spillover problem. If Cohesion Fund transfers to a region at 74 percent of the EU average also benefit its neighbor at 76 percent — through increased demand, shared infrastructure, or cross-border labor mobility — then the estimated treatment effect is attenuated, because the "control" group has been partially treated. Lab 4 addresses this in two ways: first, by testing for discontinuities in treatment spillovers at the boundary using a "donut" specification that excludes regions within a bandwidth of the cutoff; and second, by explicitly modeling the spatial lag of treatment intensity as an additional variable.
+If transfers to an eligible region benefit an ineligible geographic neighbor through demand, infrastructure, or labor mobility, the no-interference assumption fails. A donut around the **GDP cutoff** addresses observations unusually close to that scalar cutoff; it does not remove controls located near treated regions in physical space. Spatial contamination must instead be examined using geographic buffer exclusions, exposure mappings based on distance or connectivity, or estimands that explicitly distinguish direct and spillover effects. Including a spatial lag of treatment can be informative, but it requires its own identification argument because treatment and neighboring treatment may be jointly assigned.
 
 ### The Synthetic Control Method (Lab 5: MENA)
 
@@ -397,7 +395,7 @@ If the treated region's policy change affects neighboring (control) regions — 
 
 3. **Ring-based heterogeneity.** Estimate separate treatment effects for regions at different distances from the boundary of the treated area. This reveals the spatial decay of the treatment effect and helps identify the range of spillovers.
 
-These extensions connect directly to Lab 6 (Africa), where the two-step estimation — raw Moran's $$I$$ followed by governance-residualized Moran's $$I$$ — is conceptually similar to a DiD logic: the "treatment" is governance quality, and the question is whether spatial autocorrelation in economic activity persists after conditioning on the institutional environment.
+These extensions should not be conflated with Lab 6's comparison of raw and governance-conditioned Moran's $$I$$. That exercise has no treatment timing, control group, or parallel-trends assumption and is therefore not a difference-in-differences design. It establishes only whether the measured residual spatial association changes after conditioning on governance covariates.
 
 ### A Hierarchy of Evidence
 
@@ -434,7 +432,7 @@ where $$\mu_i$$ are region fixed effects (absorbing all time-invariant heterogen
 
 The inclusion of region fixed effects fundamentally changes the identification. In the cross-sectional SAR, $$\rho$$ is identified from the spatial pattern of outcomes at a point in time: do high-growth regions have high-growth neighbors? In the spatial panel with fixed effects, $$\rho$$ is identified from the *within-region temporal variation* in outcomes and its correlation with contemporaneous neighbor shocks: when a region's neighbors experience an unusually good year, does the focal region also do unusually well, beyond its own trend?
 
-This is a much more demanding test of spatial spillovers, and estimates of $$\rho$$ in spatial panels are typically smaller than in cross sections — often by half or more. The reduction reflects the elimination of correlated effects (shared geography, shared institutions) that inflate $$\rho$$ in cross-sectional specifications. Panel estimates are more credible precisely because they are smaller.
+This is a more demanding source of variation, and estimates of $$\rho$$ in spatial panels may be smaller than cross-sectional estimates when fixed effects remove persistent correlated heterogeneity. They can also differ because measurement error is amplified in within transformations, temporal dynamics are omitted, or the identifying variation answers a different question. Credibility comes from the assumptions, diagnostics, and robustness of the design—not from obtaining a smaller coefficient.
 
 **Estimation.** Spatial panel ML estimation requires computing the log-determinant $$\ln|I_T \otimes (I_n - \rho W)|$$ = $$T \cdot \ln|I_n - \rho W|$$, which is computationally feasible when $$n$$ is moderate. For large $$n$$, GMM approaches (Kapoor, Kelejian, and Prucha, 2007) avoid the determinant computation. Lee and Yu (2010) address the incidental-parameters bias that arises when $$T$$ is small relative to $$n$$ — the spatial equivalent of the Nickell bias in dynamic panel models.
 

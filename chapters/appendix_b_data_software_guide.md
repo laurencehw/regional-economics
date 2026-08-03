@@ -75,6 +75,12 @@ The Applied Labs use Python (primary) with optional R extensions. All labs are d
 
 **Minimum Python version:** 3.10+
 
+**Supported Python environment.** The reproducibility suite is currently tested on Python 3.14.0. `requirements.txt` declares compatible minimum versions; `requirements-lock.txt` records the exact Windows environment used for the published test baseline. Use the lock file when reproducing archived outputs:
+
+```bash
+python -m pip install -r requirements-lock.txt
+```
+
 **Required packages:**
 
 ```
@@ -107,7 +113,7 @@ pip install -r requirements.txt
 python -m pytest tests/ -v
 ```
 
-All 107 tests should pass.
+All tests collected from `tests/` should pass. The exact count can change as coverage is expanded; the release reproducibility report records the count, platform, runtime, and dependency lock for each validated build.
 
 ### Google Colab (Zero-Install)
 

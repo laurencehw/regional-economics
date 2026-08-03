@@ -1,7 +1,8 @@
 """Governance residual comparison: raw vs residualised Moran's I.
 
-Shows how much spatial clustering governance explains by comparing
-raw Moran's I with Moran's I after partialing out governance scores.
+Compares raw Moran's I with Moran's I after residualizing on governance
+scores. The change in I is a sensitivity statistic, not a causal share of
+autocorrelation attributable to governance.
 
 Smoke-test mode generates synthetic comparison data.
 Real mode reads model_summary.json files containing both raw and residual I.
@@ -118,16 +119,29 @@ def main() -> None:
     else:
         comparison = load_comparison(args)
 
-    pct_explained = 100.0 * (1.0 - comparison["residual_i"] / comparison["raw_i"])
+    if abs(comparison["raw_i"]) > 1e-12:
+        pct_change_in_i = 100.0 * (
+            1.0 - comparison["residual_i"] / comparison["raw_i"]
+        )
+    else:
+        pct_change_in_i = float("nan")
 
     summary = {
         "method": "Governance_Residual_Comparison",
+        "interpretation": (
+            "Delta I after residualizing on governance is a sensitivity "
+            "statistic, not a causal attribution of spatial autocorrelation."
+        ),
         "raw_i": comparison["raw_i"],
         "residual_i": comparison["residual_i"],
-        "pct_explained": round(float(pct_explained), 2),
+        "delta_i": round(float(comparison["raw_i"] - comparison["residual_i"]), 4),
+        "pct_change_in_i": round(float(pct_change_in_i), 2),
+        # Legacy key retained for existing smoke tests; do not interpret causally.
+        "pct_explained": round(float(pct_change_in_i), 2),
         "raw_p": comparison["raw_p"],
         "residual_p": comparison["residual_p"],
         "year": comparison["year"],
+        "mode": "synthetic_smoke_test" if args.run_smoke_test else "real_data",
     }
 
     summary_path = out_dir / "governance_comparison_summary.json"

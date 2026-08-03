@@ -8,11 +8,12 @@ Unlike Labs 1–6, which are regionally focused, Lab 7 draws on data from all re
 
 ## Method
 
-**Gravity model of bilateral services trade**, augmented with:
-- OECD STRI scores as the key policy barrier variable
-- Language, colonial ties, and cultural proximity (Melitz & Toubal 2014)
-- Geographic distance (CEPII)
-- PPML estimation to handle the prevalence of zeros in services trade data
+**Structural gravity for bilateral services trade**, estimated by PPML:
+- Exporter and importer fixed effects (multilateral resistance)
+- Bilateral covariates: distance, contiguity, language, colonial ties
+- OECD STRI identified from **sector-disaggregated** importer restrictions with exporter and sector FE (not importer FE)
+- HC1 or clustered sandwich standard errors; zero-share and convergence diagnostics
+- Smoke-test outputs are synthetic demonstrations, not real-data replications
 
 ## Core Exercises
 
@@ -61,11 +62,13 @@ Map the global distribution of AWS, Azure, and Google Cloud data center regions.
 
 ## Status
 
-- [ ] Scaffold gravity model estimation pipeline
+- [x] Scaffold gravity model estimation pipeline (structural PPML with exporter/importer FE)
 - [ ] Acquire WTO BOP services trade data
 - [ ] Acquire OECD STRI panel
-- [ ] Build CEPII gravity variable merge
-- [ ] Implement PPML estimator
-- [ ] TiVA servicification decomposition
-- [ ] Cloud geography mapper
-- [ ] Smoke test
+- [x] Build CEPII gravity variable merge
+- [x] Implement PPML estimator with robust/clustered SEs and zero diagnostics
+- [x] Identified STRI design (sector-disaggregated importer STRI + exporter/sector FE)
+- [x] TiVA servicification decomposition (synthetic scaffold)
+- [x] Cloud geography mapper (synthetic scaffold)
+- [x] Smoke tests for synthetic pipelines
+- [ ] Real-data replication outputs
