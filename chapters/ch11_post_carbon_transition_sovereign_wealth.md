@@ -14,6 +14,10 @@ The question for regional economics is not whether NEOM will succeed -- predicti
 
 This chapter examines the spatial economics of resource dependence and the diversification strategies MENA states have adopted. The Gulf states represent one pole -- economies with the resources to attempt diversification at unmatched scale. Whether sovereign wealth can substitute for organic institutional development is the open question; competing constraints include Dutch Disease and dollar pegs, kafala labor segmentation, political risk, and the difference between free-zone enclaves and broad-based private-sector upgrading. The other pole is grimmer: what becomes of spatial economies when institutions collapse entirely? Chapter 12 turns to fragile and conflict-affected states.
 
+{% hint style="info" %}
+**Evidence and alternatives (Gulf diversification).** Mega-projects and SWF domestic investment are treated as spatial policy instruments under resource dependence, not as proven substitutes for broad-based private-sector upgrading. Competing constraints — Dutch Disease and dollar pegs, kafala labor segmentation, political-risk premia, and enclave free-zone strategies — can generate “diversification on paper” (lower merchandise HHI, higher non-oil GDP shares) without tradable-sector competitiveness. SWF AUM and project announcements below are dated to the July 1, 2026 cutoff unless a different vintage is stated.
+{% endhint %}
+
 ---
 
 ## 11.1 Rentier State Theory and the Spatial Resource Curse

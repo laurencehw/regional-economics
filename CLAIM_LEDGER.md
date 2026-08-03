@@ -21,6 +21,11 @@ Manuscript information cutoff: **July 1, 2026** (see preface).
 | F1-06-01 | 6 | Japan/Korea/Taiwan/ASEAN/China electronics DVA share bands | OECD TiVA 2023 (illustrative bands) | TiVA release vintage | East Asia electronics | qualified | Aggregate bands; Lab 2 `_T`/OECD panel is a different estimand |
 | F1-14-03 | 14 | AfCFTA ROO coverage 92.3% of tariff lines | tralac 2024; Naumann 2024 | as of 2024 (text); cutoff July 1, 2026 | continental | qualified | Re-check if Secretariat publishes a later share |
 | F1-07-04 | 7 | Lab 2 ASEAN/Northeast Asia share-mode β coefficients | `labs/lab2_asia/output/real_asia/specs_share/` | author calculation | 10 Asian economies, `_T`/OECD | qualified | Negative point estimates, not significant; not manuscript findings |
+| F1-04-03 | 4 | CHIPS Act ~$52.7B subsidies + ~$24B tax credits | CRS 2023 | 2022 statute; awards as of July 1, 2026 cutoff | United States | verified | Facility AUM figures are announcements, not realized capex |
+| F1-04-04 | 4 | North American goods trade >$1.5T in 2024 | US Census Bureau 2025 | 2024 | USMCA partners | needs-source | Confirm series definition (goods only; customs basis) |
+| F1-07-05 | 7 | RCEP 15 members; ~30% global GDP; EIF from Jan 2022 | ASEAN Secretariat 2024 | as of July 1, 2026 cutoff | RCEP | qualified | Staggered entry into force by member |
+| F1-11-02 | 11 | Gulf SWF AUM (ADIA/KIA/QIA/PIF aggregate >$3T) | SWF Institute 2024 | 2024 vintage; cutoff July 1, 2026 | GCC | qualified | AUM estimates vary by source and valuation date |
+| F1-16-01 | 16 | Global digital services trade $3.8T in 2022 | WTO 2023 | 2022 | global | verified | Growth-rate comparisons are approximate |
 
 ## Extraction backlog (needs-source pass)
 

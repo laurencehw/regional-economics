@@ -144,8 +144,8 @@ The manuscript is ready for external review when:
 
 - [x] Rewrite monocausal Korea framing to include initial conditions, occupation, aid, security, land reform, and developmental-state policy.
 - [x] Add alternative explanations to Ruhr–Donbas, Pittsburgh–Detroit, science parks, Latin American deindustrialization, Gulf diversification, Syrian conflict, and African urbanization.
-- [~] Distinguish descriptive comparison, correlation, quasi-experimental evidence, structural inference, and interpretation. Started with science-park evidence box and Lab 2 author-calculation labeling.
-- [~] Add an “Evidence and alternatives” summary to each major case. Added for Hsinchu/science parks; remaining major cases still need boxes.
+- [~] Distinguish descriptive comparison, correlation, quasi-experimental evidence, structural inference, and interpretation. Evidence boxes now cover science parks, Ruhr–Donbas, Pittsburgh–Detroit, LAC deindustrialization, Gulf diversification, Syria, and African urbanization.
+- [x] Add an “Evidence and alternatives” summary to each major case listed in A1.
 - [x] Treat DVA as one imperfect upgrading indicator alongside productivity, wages, occupations, ownership, patents, and supplier depth.
 
 **Acceptance criteria:** No central causal conclusion relies solely on descriptive comparison or unqualified cross-sectional evidence.
@@ -154,8 +154,8 @@ The manuscript is ready for external review when:
 
 - [x] Replace bare CMIP6 RCP terminology with SSP–RCP combinations.
 - [x] Add source, scenario, base year, and uncertainty interval to climate projections.
-- [~] Add legal-status dates to trade and digital-regulation comparisons. AfCFTA ROO coverage now dated to late-2024 / July 1, 2026 cutoff; broader US/EU/China/India/RCEP pass remains.
-- [ ] Update the US, EU, China, India, AfCFTA, RCEP, AI-chip, and platform-policy descriptions to the declared cutoff.
+- [~] Add legal-status dates to trade and digital-regulation comparisons. AfCFTA ROO, RCEP EIF/membership, CHIPS awards, Gulf SWF figures, and Ch. 16 digital-regime comparisons now tied to the July 1, 2026 cutoff.
+- [~] Update the US, EU, China, India, AfCFTA, RCEP, AI-chip, and platform-policy descriptions to the declared cutoff. Core dating notes added in Ch. 4, 7, 11, 14, and 16; chapter-by-chapter refresh of every statute citation remains.
 - [x] Remove or clarify “rules of origin for services.”
 
 **Acceptance criteria:** Every forward-looking table and policy statement has an “as of” date.
@@ -252,4 +252,5 @@ The manuscript is ready for external review when:
 | 2026-08-03 | R2 | Fetched TiVA `EXGR`, rebuilt share panel (230/230), ran year-FE subgroup/LOO specs; aligned Ch. 7 estimand and evidence status; significance-gated `convergence_detected` | Lab 2 smoke tests; `specs_share` outputs |
 | 2026-08-03 | F2 | Added citation auditor; filled 17 missing scholarly bibliography entries (Albouy, Baldwin–Taglioni, Cameron–Miller, Tabuchi, Viner, etc.); glossary Amin year aligned to 1994 | `data/processed/citation_audit.md` |
 | 2026-08-03 | F1 / A1 / A2 | Seeded `CLAIM_LEDGER.md`; DVA imperfect-indicator language; Evidence-and-alternatives boxes (science parks, Syria); AfCFTA ROO dating to cutoff | Text review |
+| 2026-08-03 | A1 / A2 | Evidence boxes for Ruhr–Donbas, Pittsburgh–Detroit, LAC deindustrialization, Gulf diversification, African urbanization; policy dating in Ch. 4/7/11/16 | Text review |
 

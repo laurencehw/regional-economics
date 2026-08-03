@@ -18,6 +18,10 @@ The standard model of structural transformation -- codified by Lewis (1954) -- a
 
 This chapter argues that institutions are central to the puzzle, but not the only cause. Urbanization raises productivity where municipal service capacity and trade-corridor connectivity convert density into lower transaction costs. Weak institutions amplify congestion and informality, yet demography, resource rents, climate and conflict push factors, and premature deindustrialization also shape African city growth. The same migration process can produce high-productivity agglomeration in one setting and low-productivity density in another because those forces interact.
 
+{% hint style="info" %}
+**Evidence and alternatives (African urbanization).** “Urbanization without industrialization” (Gollin, Jedwab, and Vollrath 2016) is a descriptive structural pattern. Competing drivers include high fertility and natural increase, climate and conflict displacement, resource-rent urban pull, premature deindustrialization, and thin tradable services. Municipal institutions and corridor connectivity are hypothesized mediators of whether density becomes productive agglomeration; Lab 6’s residual comparisons are sensitivity diagnostics, not causal attribution of governance failure alone.
+{% endhint %}
+
 ---
 
 ## 13.1 The African Urban Transition in Numbers
