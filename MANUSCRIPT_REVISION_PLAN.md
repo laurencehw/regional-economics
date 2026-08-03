@@ -112,7 +112,7 @@ The manuscript is ready for external review when:
 
 ### F1. Claim-Level Fact Audit
 
-- [ ] Build a chapter-by-chapter claim ledger: claim, source, year, unit, geography, transformation, and verification status.
+- [~] Build a chapter-by-chapter claim ledger: claim, source, year, unit, geography, transformation, and verification status. Seed ledger in `CLAIM_LEDGER.md` covers corrected high-risk clusters; quantitative backlog remains for Ch. 4/6/8/11/14/16.
 - [~] Correct or qualify known high-risk claims:
   - [x] USMCA steel/aluminum rules and border-restriction dates.
   - [x] Shenzhen 1979 population baseline and Hong Kong income comparison.
@@ -144,9 +144,9 @@ The manuscript is ready for external review when:
 
 - [x] Rewrite monocausal Korea framing to include initial conditions, occupation, aid, security, land reform, and developmental-state policy.
 - [x] Add alternative explanations to Ruhr–Donbas, Pittsburgh–Detroit, science parks, Latin American deindustrialization, Gulf diversification, Syrian conflict, and African urbanization.
-- [ ] Distinguish descriptive comparison, correlation, quasi-experimental evidence, structural inference, and interpretation.
-- [ ] Add an “Evidence and alternatives” summary to each major case.
-- [ ] Treat DVA as one imperfect upgrading indicator alongside productivity, wages, occupations, ownership, patents, and supplier depth.
+- [~] Distinguish descriptive comparison, correlation, quasi-experimental evidence, structural inference, and interpretation. Started with science-park evidence box and Lab 2 author-calculation labeling.
+- [~] Add an “Evidence and alternatives” summary to each major case. Added for Hsinchu/science parks; remaining major cases still need boxes.
+- [x] Treat DVA as one imperfect upgrading indicator alongside productivity, wages, occupations, ownership, patents, and supplier depth.
 
 **Acceptance criteria:** No central causal conclusion relies solely on descriptive comparison or unqualified cross-sectional evidence.
 
@@ -154,7 +154,7 @@ The manuscript is ready for external review when:
 
 - [x] Replace bare CMIP6 RCP terminology with SSP–RCP combinations.
 - [x] Add source, scenario, base year, and uncertainty interval to climate projections.
-- [ ] Add legal-status dates to trade and digital-regulation comparisons.
+- [~] Add legal-status dates to trade and digital-regulation comparisons. AfCFTA ROO coverage now dated to late-2024 / July 1, 2026 cutoff; broader US/EU/China/India/RCEP pass remains.
 - [ ] Update the US, EU, China, India, AfCFTA, RCEP, AI-chip, and platform-policy descriptions to the declared cutoff.
 - [x] Remove or clarify “rules of origin for services.”
 
@@ -251,4 +251,5 @@ The manuscript is ready for external review when:
 | 2026-08-02 | R2 | Implemented Lab 2 `dva_share = EXGR_DVA/EXGR`, share-mode convergence with optional year FE, templates/tests; softened Ch. 7 Q5 | Lab 2 smoke/unit tests |
 | 2026-08-03 | R2 | Fetched TiVA `EXGR`, rebuilt share panel (230/230), ran year-FE subgroup/LOO specs; aligned Ch. 7 estimand and evidence status; significance-gated `convergence_detected` | Lab 2 smoke tests; `specs_share` outputs |
 | 2026-08-03 | F2 | Added citation auditor; filled 17 missing scholarly bibliography entries (Albouy, Baldwin–Taglioni, Cameron–Miller, Tabuchi, Viner, etc.); glossary Amin year aligned to 1994 | `data/processed/citation_audit.md` |
+| 2026-08-03 | F1 / A1 / A2 | Seeded `CLAIM_LEDGER.md`; DVA imperfect-indicator language; Evidence-and-alternatives boxes (science parks, Syria); AfCFTA ROO dating to cutoff | Text review |
 
