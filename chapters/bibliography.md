@@ -2,6 +2,8 @@
 
 ## References
 
+---
+
 Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2010. "Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program." *Journal of the American Statistical Association* 105(490): 493--505. [Ch. 12]
 
 Abadie, Alberto, Alexis Diamond, and Jens Hainmueller. 2015. "Comparative Politics and the Synthetic Control Method." *American Journal of Political Science* 59(2): 495--510. [Ch. 12, Lab 5, Appendix A]
@@ -13,6 +15,8 @@ Acemoglu, Daron, and James A. Robinson. 2012. *Why Nations Fail: The Origins of 
 Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2001. "The Colonial Origins of Comparative Development: An Empirical Investigation." *American Economic Review* 91(5): 1369--1401. [Ch. 2]
 
 Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2002. "Reversal of Fortune: Geography and Institutions in the Making of the Modern World Income Distribution." *Quarterly Journal of Economics* 117(4): 1231--1294. [Ch. 2]
+
+ACET (African Center for Economic Transformation). 2021. *African Transformation Report 2021: Integrating to Transform.* Accra: ACET. [Ch. 14]
 
 Acosta, Pablo A., Emmanuel K.K. Lartey, and Federico S. Mandelman. 2009. "Remittances and the Dutch Disease." *Journal of International Economics* 79(1): 102--116. [Ch. 5]
 
@@ -41,6 +45,8 @@ Anderson, James E., and Eric van Wincoop. 2003. "Gravity with Gravitas: A Soluti
 Anselin, Luc. 1988. *Spatial Econometrics: Methods and Models.* Dordrecht: Kluwer Academic Publishers. [Ch. 3A]
 
 Anselin, Luc. 1995. "Local Indicators of Spatial Association — LISA." *Geographical Analysis* 27(2): 93--115. [Ch. 3A]
+
+Apiko, Philomena, Sean Woolfrey, and Bruce Byiers. 2020. "The Promise of the African Continental Free Trade Area (AfCFTA)." In Weyner Zondi, ed., *Political Economy Dynamics of Regional Organizations in Africa.* Cham: Palgrave Macmillan. [Ch. 14]
 
 Aronow, Peter M., and Cyrus Samii. 2017. "Estimating Average Causal Effects under General Interference, with Application to a Social Network Experiment." *Annals of Applied Statistics* 11(4): 1912--1947. [Ch. 16]
 
@@ -119,15 +125,29 @@ Boschma, Ron. 2011. "Regional Branching and Regional Innovation Policy." In Phil
 
 Bound, John, Breno Braga, Gaurav Khanna, and Sarah Turner. 2021. "The Globalization of Postsecondary Education: The Role of International Students in the US Higher Education System." *Journal of Economic Perspectives* 35(1): 163--184. [Ch. 4]
 
+Brandi, Clara, Katrin Kamin, and Rainer Thiele. 2025. "Africa's Regional and Global Integration: Introduction to the Special Issue." *Review of World Economics* 161: 1--5. [Ch. 14]
+
 Brautigam, Deborah. 2020. "A Critical Look at Chinese 'Debt-Trap Diplomacy': The Rise of a Meme." *Area Development and Policy* 5(1): 1--14. [Ch. 7]
 
 Bresser-Pereira, Luiz Carlos. 2008. "The Dutch Disease and Its Neutralization: A Ricardian Approach." *Revista de Economia Política* 28(1): 47--71. [Ch. 5]
+
+Brookings Institution. 2026. *Foresight Africa 2026.* Washington, DC: Brookings Institution. [Ch. 14]
 
 Brussevich, Mariya, Era Dabla-Norris, and Salma Khalid. 2022. "Who Does Remote Work? Sorting across Industries and Regions." *IMF Working Paper* 2022/089. [Ch. 4]
 
 Burke, Marshall, Solomon M. Hsiang, and Edward Miguel. 2015. "Global Non-Linear Effect of Temperature on Economic Production." *Nature* 527(7577): 235--239. [Ch. 12, Ch. 15]
 
 Butts, Kyle. 2021. "Difference-in-Differences Estimation with Spatial Spillovers." Working paper. [Ch. 16]
+
+Byiers, Bruce, and Larabi Jaïdi. 2024. "Fostering Investment and Inclusivity in Africa's Continental Free Trade Area." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Byiers, Bruce, Philomena Apiko, and Poorva Karkare. 2023. "The AfCFTA and Industrialisation: From Policy to Practice." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Byiers, Bruce, Poorva Karkare, and Isabell Wutz. 2024. "How AfCFTA-Regional Relations Can Support Continental Trade." ECDPM Discussion Paper 376. Maastricht: ECDPM. [Ch. 14]
+
+Byiers, Bruce. 2023. "Nigeria and the AfCFTA as a Two-Level Game." *The World Economy* 46(6): 1653--1672. [Ch. 14]
+
+Byiers, Bruce. 2025. "Trade at the Crossroads of Corridors: Kasumbalesa Border and the Lobito and North-South Corridors." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
 
 Cairncross, Frances. 1997. *The Death of Distance: How the Communications Revolution Will Change Our Lives.* Boston: Harvard Business School Press. [Ch. 1]
 
@@ -184,6 +204,12 @@ Cruz, José-Luis, and Esteban Rossi-Hansberg. 2024. "The Economic Geography of G
 
 David, Paul A. 1985. "Clio and the Economics of QWERTY." *American Economic Review* 75(2): 332--337. [Ch. 2]
 
+De Melo, Jaime, and Jean-Marc Solleder. 2025. "How Can the African Continental Free Trade Area (AfCFTA) Help Develop Regional Value Chains Across Africa? An Exploration." *Review of World Economics* 161: 121--149. [Ch. 14]
+
+de Soto, Hernando. 1989. *The Other Path: The Invisible Revolution in the Third World.* New York: Harper & Row. [Ch. 2]
+
+de Soto, Hernando. 2000. *The Mystery of Capital: Why Capitalism Triumphs in the West and Fails Everywhere Else.* New York: Basic Books. [Ch. 5]
+
 Del Carpio, Ximena V., and Mathis Wagner. 2015. "The Impact of Syrians Refugees on the Turkish Labor Market." *World Bank Policy Research Working Paper* 7402. [Ch. 12]
 
 Delgado, Michael S., and Raymond J.G.M. Florax. 2015. "Difference-in-Differences Techniques for Spatial Data: Local Autocorrelation and Spatial Interaction." *Economics Letters* 137: 123--126. [Ch. 3A]
@@ -207,8 +233,6 @@ Dingel, Jonathan I., and Brent Neiman. 2020. "How Many Jobs Can Be Done at Home?
 Dixit, Avinash K., and Joseph E. Stiglitz. 1977. "Monopolistic Competition and Optimum Product Diversity." *American Economic Review* 67(3): 297--308. [Ch. 1]
 
 Duranton, Gilles, and Diego Puga. 2001. "Nursery Cities: Urban Diversity, Process Innovation, and the Life Cycle of Products." *American Economic Review* 91(5): 1454--1477. [Ch. 1]
-
-de Soto, Hernando. 2000. *The Mystery of Capital: Why Capitalism Triumphs in the West and Fails Everywhere Else.* New York: Basic Books. [Ch. 2, Ch. 5]
 
 Duranton, Gilles, and Diego Puga. 2004. "Micro-Foundations of Urban Agglomeration Economies." In J. Vernon Henderson and Jacques-François Thisse, eds., *Handbook of Regional and Urban Economics,* vol. 4, 2063--2117. Amsterdam: Elsevier. [Ch. 1]
 
@@ -258,9 +282,13 @@ Ganapati, Sharat, and Reshma Ravi. 2023. "Rural Platforms: Evidence from India's
 
 Ganong, Peter, and Daniel Shoag. 2017. "Why Has Regional Income Convergence in the U.S. Declined?" *Journal of Urban Economics* 102: 76--90. [Ch. 4]
 
+Gartner. 2024. "Gartner Predicts Chatbots Will Become a Primary Customer Service Channel Within Five Years." Gartner Press Release, January 2024. [Ch. 16]
+
 Gaubert, Cecile. 2018. "Firm Sorting and Agglomeration." *American Economic Review* 108(11): 3117--3153. [Ch. 1]
 
 Gereffi, Gary, and Karina Fernandez-Stark. 2016. *Global Value Chain Analysis: A Primer.* 2nd ed. Durham, NC: Center on Globalization, Governance & Competitiveness, Duke University. [Ch. 6]
+
+GitHub. 2024. "GitHub Copilot Surpasses 1.8 Million Paid Subscribers." GitHub Blog, February 2024. [Ch. 16]
 
 Glaeser, Edward L., and David C. Maré. 2001. "Cities and Skills." *Journal of Labor Economics* 19(2): 316--342. [Ch. 1]
 
@@ -350,9 +378,15 @@ Jean, Neal, Marshall Burke, Michael Xie, W. Matthew Davis, David B. Lobell, and 
 
 Johnson, Chalmers. 1982. *MITI and the Japanese Miracle: The Growth of Industrial Policy, 1925--1975.* Stanford, CA: Stanford University Press. [Appendix C, Ch. 6]
 
+Kaplinsky, Raphael, and Mike Morris. 2019. "Trade and Industrialisation in Africa: SMEs, Manufacturing and Cluster Dynamics." *Journal of African Trade* 6(1--2): 47--59. [Ch. 14]
+
 Kaplinsky, Raphael. 2000. "Globalisation and Unequalisation: What Can Be Learned from Value Chain Analysis?" *Journal of Development Studies* 37(2): 117--146. [Ch. 6]
 
 Kapoor, Mudit, Harry H. Kelejian, and Ingmar R. Prucha. 2007. "Panel Data Models with Spatially Correlated Error Components." *Journal of Econometrics* 140(1): 97--130. [Ch. 3A]
+
+Karkare, Poorva, and Alfonso Medinilla. 2023. "Green Industrialisation: Leveraging Critical Raw Materials for an African Battery Value Chain." ECDPM Discussion Paper 359. Maastricht: ECDPM. [Ch. 14]
+
+Karkare, Poorva, Bruce Byiers, Amanda Bisong, Faizel Ismail, and Prachi Agarwal. 2025. "AfCFTA Implementation Challenges: Towards an African Continental Textiles and Apparel Value Chain." ODI Global Report. London: Overseas Development Institute. [Ch. 14]
 
 Kaul, Ashok, Stefan Klößner, Gregor Pfeifer, and Manuel Schieler. 2022. "Standard Synthetic Control Methods: The Case of Using All Preintervention Outcomes Together with Covariates." *Journal of Business & Economic Statistics* 40(3): 1362--1376. [Ch. 12]
 
@@ -374,6 +408,8 @@ Koopman, Robert, Zhi Wang, and Shang-Jin Wei. 2014. "Tracing Value-Added and Dou
 
 Kremer, Michael. 1993. "The O-Ring Theory of Economic Development." *Quarterly Journal of Economics* 108(3): 551--575. [Ch. 1]
 
+Krishnan, Aarti. 2023. "Understanding Regional Value Chains Through the Interaction of Public and Private Governance: Insights from Southern Africa's Apparel Sector." University of Manchester, Global Development Institute Working Paper. [Ch. 14]
+
 Krugman, Paul. 1980. "Scale Economies, Product Differentiation, and the Pattern of Trade." *American Economic Review* 70(5): 950--959. [Ch. 1]
 
 Krugman, Paul. 1991. "Increasing Returns and Economic Geography." *Journal of Political Economy* 99(3): 483--499. [Ch. 1]
@@ -385,6 +421,10 @@ Kuznets, Simon. 1966. *Modern Economic Growth: Rate, Structure, and Spread.* New
 La Porta, Rafael, and Andrei Shleifer. 2014. "Informality and Development." *Journal of Economic Perspectives* 28(3): 109--126. [Ch. 5]
 
 Langbein, Laura, and Stephen Knack. 2010. "The Worldwide Governance Indicators: Six, One, or None?" *Journal of Development Studies* 46(2): 350--370. [Ch. 15]
+
+Lebdioui, Amir, and Thea Riofrancos. 2025. "Critical Minerals and Resource Nationalism 2.0: Why the Policy Is More Critical than the Mineral." TIDE Working Paper 92. Oxford: TIDE Centre, University of Oxford. [Ch. 14]
+
+Lebdioui, Amir. 2024. *Survival of the Greenest: Economic Transformation in a Climate-Conscious World.* Cambridge: Cambridge University Press. [Ch. 14]
 
 Lee, Lung-Fei, and Jihai Yu. 2010. "Estimation of Spatial Autoregressive Panel Data Models with Fixed Effects." *Journal of Econometrics* 154(2): 165--185. [Ch. 3A]
 
@@ -428,6 +468,10 @@ McCann, Philip. 2020. "Perceptions of Regional Inequality and the Geography of D
 
 McCrary, Justin. 2008. "Manipulation of the Running Variable in the Regression Discontinuity Design: A Density Test." *Journal of Econometrics* 142(2): 698--714. [Ch. 3A]
 
+Medinilla, Alfonso, and Bruce Byiers. 2023. "The Political Economy of Green Industrialisation in Africa." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
+Medinilla, Alfonso, Koen Dekeyser, and Poorva Karkare. 2025. "Green Industrialisation in an Age of Disruption: Africa, Europe and the Global Economy." ECDPM Discussion Paper. Maastricht: ECDPM. [Ch. 14]
+
 Melitz, Marc J. 2003. "The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity." *Econometrica* 71(6): 1695--1725. [Ch. 1, Ch. 16]
 
 Michalopoulos, Stelios, and Elias Papaioannou. 2013. "Pre-Colonial Ethnic Institutions and Contemporary African Development." *Econometrica* 81(1): 113--152. [Ch. 13]
@@ -455,6 +499,8 @@ Nagaraj, Abhishek. 2021. "The Private Impact of Public Data: Landsat Satellite M
 Naidu, Suresh. 2010. "Recruitment Restrictions and Labor Markets: Evidence from the Postbellum U.S. South." *Journal of Labor Economics* 28(2): 413--445. [Ch. 2]
 
 National Bureau of Statistics of China. 2021. "Communiqué of the Seventh National Population Census (Nos. 3 and 7)." Beijing. [Ch. 7]
+
+Naumann, Eckart. 2024. "The New Rules of Origin in the African Continental Free Trade Area (AfCFTA): What Has Been Agreed, What Remains Outstanding." tralac Working Paper. Stellenbosch: Trade Law Centre. [Ch. 14]
 
 Neffke, Frank, Martin Henning, and Ron Boschma. 2011. "How Do Regions Diversify over Time? Industry Relatedness and the Development of New Growth Paths in Regions." *Economic Geography* 87(3): 237--265. [Ch. 2]
 
@@ -555,7 +601,6 @@ Suri, Tavneet, and William Jack. 2016. "The Long-Run Poverty and Gender Impacts 
 SVIMEZ. 2023. *Rapporto SVIMEZ 2023 sull'Economia e la Società del Mezzogiorno.* Rome: SVIMEZ. [Ch. 10]
 
 Syverson, Chad. 2004. "Market Structure and Productivity: A Concrete Example." *Journal of Political Economy* 112(6): 1181--1222. [Ch. 1]
-Tolbert, Charles M., and Molly Sizer. 1996. "U.S. Commuting Zones and Labor Market Areas: A 1990 Update." *Economic Research Service Staff Paper* 9614. Washington, DC: USDA. [Ch. 1]
 
 Tabuchi, Takatoshi, and Jacques-François Thisse. 2002. "Taste Heterogeneity, Labor Mobility and Economic Geography." *Journal of Development Economics* 69(1): 155--177. [Ch. 1]
 
@@ -569,7 +614,15 @@ Taylor, Peter J., and Ben Derudder. 2016. *World City Network: A Global Urban An
 
 Taylor, Peter J., Pengfei Ni, Ben Derudder, Michael Hoyler, Jin Huang, and Frank Witlox, eds. 2011. *Global Urban Analysis: A Survey of Cities in Globalization.* London: Earthscan. [Ch. 4]
 
+Te Velde, Dirk Willem. 2024. "The Future of Economic Transformation in Africa." ODI/SET Programme Working Paper. London: Overseas Development Institute. [Ch. 14]
+
 Tinbergen, Jan. 1962. *Shaping the World Economy: Suggestions for an International Economic Policy.* New York: Twentieth Century Fund. [Ch. 3B]
+
+Tolbert, Charles M., and Molly Sizer. 1996. "U.S. Commuting Zones and Labor Market Areas: A 1990 Update." *Economic Research Service Staff Paper* 9614. Washington, DC: USDA. [Ch. 1]
+
+tralac (Trade Law Centre). 2024. "Where Does the AfCFTA Stand at the Beginning of 2024?" tralac Blog. Stellenbosch: Trade Law Centre. [Ch. 14]
+
+tralac (Trade Law Centre). 2025. *Annual Conference Report 2025.* Stellenbosch: Trade Law Centre. [Ch. 14]
 
 Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 9]
 
@@ -580,6 +633,10 @@ UN-Habitat. 2019. *The Story of Shenzhen: Its Economic, Social and Environmental
 UNCTAD (United Nations Conference on Trade and Development). 2019. *Economic Development in Africa Report 2019: Made in Africa -- Rules of Origin for Enhanced Intra-African Trade.* Geneva: United Nations. [Ch. 14]
 
 UNCTAD (United Nations Conference on Trade and Development). 2020. *World Investment Report 2020: International Production beyond the Pandemic.* Geneva: United Nations. [Ch. 12]
+
+UNECA (United Nations Economic Commission for Africa), AUC (African Union Commission), and AfDB (African Development Bank). 2025. *Assessing Regional Integration in Africa XI: Delivering on the African Economic Community -- Towards an African Continental Customs Union and African Continental Common Market.* Addis Ababa: United Nations. [Ch. 14]
+
+UNECA (United Nations Economic Commission for Africa). 2025. *Economic Report on Africa 2025: Advancing the Implementation of the Agreement Establishing the African Continental Free Trade Area (AfCFTA).* Addis Ababa: United Nations. [Ch. 14]
 
 USTR (Office of the United States Trade Representative). 2026. *Report to Congress on the Operation of the United States-Mexico-Canada Agreement with Respect to Trade in Automotive Goods.* Washington, DC. [Ch. 4]
 
@@ -622,6 +679,22 @@ Yang, Dean. 2008. "International Migration, Remittances, and Household Investmen
 Zeltzer, Dan, Liran Einav, Joseph Rashba, and Ran D. Balicer. 2023. "The Impact of Increased Access to Telemedicine." *Journal of the European Economic Association* 21(3): 1020--1062. [Ch. 16]
 
 Zimbalist, Andrew. 2015. *Circus Maximus: The Economic Gamble behind Hosting the Olympics and the World Cup.* Washington, DC: Brookings Institution Press. [Ch. 11]
+
+## Legislation, Treaties, and Policy Documents
+
+Barca, Fabrizio. 2009. *An Agenda for a Reformed Cohesion Policy: A Place-Based Approach to Meeting European Union Challenges and Expectations.* Independent report prepared at the request of Danuta Hübner, Commissioner for Regional Policy. Brussels: European Commission. [Ch. 9]
+
+CHIPS and Science Act. 2022. Public Law 117--167. United States. [Ch. 4, Ch. 6]
+
+EU Chips Act. 2023. Regulation (EU) 2023/1781. European Union. [Ch. 6]
+
+FIRRMA (Foreign Investment Risk Review Modernization Act). 2018. Public Law 115--232, Subtitle A. United States. [Ch. 4]
+
+Inflation Reduction Act (IRA). 2022. Public Law 117--169. United States. [Ch. 4, Ch. 15]
+
+Santiago Principles (Generally Accepted Principles and Practices for Sovereign Wealth Funds). 2008. International Working Group of Sovereign Wealth Funds. [Ch. 11]
+
+Treaty of Rome. 1957. Treaty Establishing the European Economic Community. [Ch. 9]
 
 Counts below are working tallies. Heuristic bidirectional audit artifacts live in `data/processed/citation_audit.md` (run `python scripts/audit_citations.py`). Remaining gaps are mostly agency/corporate parentheticals and date-in-name false positives (e.g., Park (1972) for Penang Science Park), not missing academic core references.
 

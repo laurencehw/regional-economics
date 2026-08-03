@@ -115,6 +115,7 @@ python -m pytest tests/ -v
 
 All tests collected from `tests/` should pass. The exact count can change as coverage is expanded; the release reproducibility report records the count, platform, runtime, and dependency lock for each validated build.
 
+
 ### Google Colab (Zero-Install)
 
 Colab notebooks are provided for Labs 1 and 6. To use them:

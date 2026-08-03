@@ -152,15 +152,15 @@ The concept of adaptive capacity — the institutional, financial, and human cap
 
 The table rewards careful cross-referencing with the chapters from which its cells are drawn. The human capital row captures the difference between Japan's managed demographic decline, where a highly educated but aging workforce adapts through automation and institutional innovation (Chapter 6), and Yemen's compounding collapse, where a generation of children has lost access to schooling during a decade of civil war, permanently degrading the human capital stock available for any future transition (Chapter 12). The fiscal resources row distinguishes between Norway, which converted petroleum wealth into the world's largest sovereign wealth fund ($1.6 trillion) precisely so that the economy could survive the end of oil, and Iraq, which consumed its oil revenues in current expenditure and reconstruction from successive wars, leaving no buffer for the transition. The economic diversification row illuminates why Singapore — a city-state with no natural resources, high physical exposure to sea-level rise, and a $100 billion coastal protection plan — nonetheless ranks among the most adaptive locations on earth: its services-dominated economy has few stranded assets, and its institutional capacity (Chapter 7) allows it to engineer defensive infrastructure at a scale that would overwhelm weaker states.
 
-Figure 15.3 presents the stranded-asset timeline, showing the projected phaseout dates for fossil-fuel reserves under alternative IEA scenarios and the corresponding window of economic viability for extraction-dependent regions.
+Figure 15.2 presents the stranded-asset timeline, showing the projected phaseout dates for fossil-fuel reserves under alternative IEA scenarios and the corresponding window of economic viability for extraction-dependent regions.
 
-![Figure 15.3: Stranded asset timeline — projected fossil-fuel phaseout under IEA scenarios](../figures/fig_ch15_stranded_timeline.png)
+![Figure 15.2: Stranded asset timeline — projected fossil-fuel phaseout under IEA scenarios](../figures/fig_ch15_stranded_timeline.png)
 
 *Source: Author's calculations based on IEA World Energy Outlook (2023) and Carbon Tracker Initiative data.*
 
 The cross-regional comparison reveals a cruel irony: the regions most exposed to climate risk are, on average, the least equipped to adapt. Sub-Saharan Africa, South Asia, and the MENA conflict states face the most severe physical impacts and have the least institutional, financial, and human capital capacity for adaptation. The developed world faces more moderate physical impacts and has greater adaptive capacity. The climate transition is, in this sense, a spatial inequality amplifier — a mechanism that widens the gap between rich and poor regions through a channel (physical geography) that operates independently of the trade, investment, and institutional channels that conventional development economics focuses on.
 
-![Figure 15.2: Stranded fossil-fuel assets — top 10 countries at risk](../figures/fig_ch15_chart_stranded_assets.png)
+![Figure 15.3: Stranded fossil-fuel assets — top 10 countries at risk](../figures/fig_ch15_chart_stranded_assets.png)
 *Source: Author's calculations based on Carbon Tracker Initiative (2023) and IEA World Energy Outlook (2023).*
 
 ---
