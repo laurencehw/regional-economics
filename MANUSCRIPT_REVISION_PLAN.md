@@ -168,7 +168,7 @@ The manuscript is ready for external review when:
 
 - [~] Label each empirical item as published evidence, author calculation, lab output, synthetic illustration, preliminary result, or hypothesis. Ch. 6/8/11 figure notes and Lab 2 evidence status now distinguish illustration vs author calculation.
 - [~] Add uncertainty and sample/specification notes to all author calculations. Started on Ch. 6/8/11 figures and Lab 2 share specs.
-- [ ] Add evidence-strength tables where competing findings are central.
+- [~] Add evidence-strength tables where competing findings are central. Added for Cohesion Policy (Ch. 9) and African urbanization (Ch. 13).
 - [~] Ensure calibrated figures cannot be mistaken for reproduced data. Explicit “illustrative / not exact reproduction” notes on Ch. 6 and 8 charts.
 
 ### P2. Regional Balance
@@ -193,8 +193,8 @@ The manuscript is ready for external review when:
 
 - [~] Fix all label collisions and C-range figures identified in the editorial audit. Priority C/C- maps (Ch. 4/7/11/12) regenerated with offset/inset fixes; Ch. 9 figure order corrected (9.2 fan, 9.3 clubs).
 - [x] Add a Gulf inset to the Chapter 11 map.
-- [ ] Split Chapter 16's wide services-regime table.
-- [ ] Use a muted, accessible, color-blind-safe palette.
+- [x] Split Chapter 16's wide services-regime table. Tables 16.1a/16.1b already split; intro clarified.
+- [~] Use a muted, accessible, color-blind-safe palette. QUAL_PALETTE already muted; Ch. 9 RdYlBu_r; Ch. 15/5 desaturated accents.
 - [~] Add source, vintage, method, and uncertainty notes to every figure. Regional/synthesis chapters (4–16) now carry expanded figure source notes; theory chapters pending if needed.
 - [ ] Distribute figures through chapters rather than front-loading them.
 
@@ -205,7 +205,7 @@ The manuscript is ready for external review when:
 - [~] Add subentries and curated “see/see also” links. Capstone see-also links added; fuller subentry pass still open.
 - [x] Add missing capstone terms: stranded regions, climate migration, digital sovereignty, Splinternet, just transition, and related concepts.
 - [~] Audit notation and definitions across chapters, glossary, appendices, and labs. Aligned Ch. 14 gravity MR terms to $$P_j,\Pi_i$$; Ch. 16 now states PPML+FE as preferred; glossary MR notation note added.
-- [ ] Validate all internal links and chapter/lab references.
+- [~] Validate all internal links and chapter/lab references. Added `scripts/audit_internal_refs.py`; clean after excluding treaty chapter numbers; all 51 local image links resolve.
 
 ### P6. External Validation
 
@@ -261,4 +261,5 @@ The manuscript is ready for external review when:
 | 2026-08-03 | P4 | Gulf inset on Ch. 11 map; label-offset fixes Ch. 4/7/12; widen C-range maps; renumber Ch. 9 figures | Figure smoke tests ch04/07/11/12 |
 | 2026-08-03 | P5 | Notation pass: Ch. 14 structural gravity MR terms; Ch. 16 PPML+FE preferred form; glossary MR convention | Text cross-check vs Ch. 3-B / App. A |
 | 2026-08-03 | P1 | Pathway workload note + Pathway 1 schedule cleanup | Word-count audit of ch01–ch16 |
+| 2026-08-03 | P1/P4/P5 | Evidence-strength tables (Ch. 9/13); B-range map polish (9/13–15); internal-ref auditor; Ch. 16 table intro | Figure smoke ch09/13/14/15; `audit_internal_refs.py` clean |
 

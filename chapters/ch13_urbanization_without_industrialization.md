@@ -24,6 +24,13 @@ This chapter argues that institutions are central to the puzzle, but not the onl
 
 {% hint style="info" %}
 **Evidence and alternatives (African urbanization).** “Urbanization without industrialization” (Gollin, Jedwab, and Vollrath 2016) is a descriptive structural pattern. Competing drivers include high fertility and natural increase, climate and conflict displacement, resource-rent urban pull, premature deindustrialization, and thin tradable services. Municipal institutions and corridor connectivity are hypothesized mediators of whether density becomes productive agglomeration; Lab 6’s residual comparisons are sensitivity diagnostics, not causal attribution of governance failure alone.
+
+| Claim | Key sources | Design | Strength | Caveat |
+|---|---|---|---|---|
+| Urbanization without manufacturing absorption | Gollin, Jedwab, and Vollrath (2016) | Cross-country structural descriptives | Strong as pattern | Not a single causal story |
+| Distress / climate-push urbanization in Sahel | Dell et al. (2012); Hsiang et al. (2011); UN WUP | Climate–conflict empirics + demography | Moderate for push channel | Local variation; greening exceptions |
+| Density → productivity only with service capacity | Chapter comparison (Nairobi vs Lagos); Moretti-style multipliers | Case / correlational | Suggestive | Selection on city amenity and FDI |
+| Governance residualizes spatial clustering | Lab 6 Moran residualization | Diagnostic spatial stats | Weak for causality | Governance endogenous to activity |
 {% endhint %}
 
 ---

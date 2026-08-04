@@ -284,7 +284,7 @@ This hierarchy has spatial multiplier consequences. Moretti (2010) estimated tha
 
 ### USMCA's Digital Trade Provisions
 
-USMCA's Chapter 19 (Digital Trade) is, by some measures, the most consequential services trade framework in any major trade agreement. Its core provisions include:
+USMCA Chapter 19 (Digital Trade) is, by some measures, the most consequential services trade framework in any major trade agreement. Its core provisions include:
 
 - **Prohibition of data localization requirements**: no party may require that computing facilities be located in its territory as a condition for conducting business.
 - **Cross-border data flow guarantees**: parties must allow the cross-border transfer of information by electronic means for business purposes.
@@ -455,7 +455,7 @@ Chapter 5 extends this to Latin America, where premature deindustrialization, in
 
 5. Pittsburgh reinvented itself after deindustrialization; Detroit did not. Using the institutional frameworks of Chapter 2 and the spatial tools of Chapters 3-A and 3-B, describe an empirical strategy to identify the institutional factors that distinguish regions that successfully transition from those that do not. What data would you need, and what identification assumption would be most vulnerable to criticism?
 
-6. USMCA's digital trade provisions (Chapter 19) create a largely frictionless North American space for cross-border services trade, while its goods provisions (automotive rules of origin, LVC) create intensive compliance requirements. How might this asymmetry affect the relative geography of goods and services production in North America? Would you expect services trade to concentrate in the same cities that dominate goods trade, or in different ones? Using Moretti's local multiplier framework, what happens to a metro area's non-tradable service economy when a major APS firm relocates from New York to Austin — or from Austin to Monterrey?
+6. USMCA digital trade provisions (USMCA Chapter 19) create a largely frictionless North American space for cross-border services trade, while its goods provisions (automotive rules of origin, LVC) create intensive compliance requirements. How might this asymmetry affect the relative geography of goods and services production in North America? Would you expect services trade to concentrate in the same cities that dominate goods trade, or in different ones? Using Moretti's local multiplier framework, what happens to a metro area's non-tradable service economy when a major APS firm relocates from New York to Austin — or from Austin to Monterrey?
 
 ---
 

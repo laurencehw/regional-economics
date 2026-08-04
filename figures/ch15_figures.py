@@ -44,9 +44,9 @@ def plot_climate_vulnerability_map(output_dir: Path, seed: int = 42) -> dict:
     world_copy = world.copy()
     def vuln_color(iso):
         if iso in high_vuln:
-            return "#d62728"
+            return "#c44e52"
         elif iso in stranded:
-            return "#ff7f00"
+            return "#dd8452"
         return LAND_COLOR
 
     world_copy["_color"] = world_copy["iso3"].map(vuln_color)
@@ -55,7 +55,7 @@ def plot_climate_vulnerability_map(output_dir: Path, seed: int = 42) -> dict:
 
     for cv in world_copy["_color"].unique():
         subset = world_copy[world_copy["_color"] == cv]
-        alpha = 0.6 if cv != LAND_COLOR else 0.3
+        alpha = 0.55 if cv != LAND_COLOR else 0.3
         subset.plot(ax=ax, color=cv, edgecolor=BORDER_COLOR,
                     linewidth=0.2, alpha=alpha)
 
@@ -63,15 +63,15 @@ def plot_climate_vulnerability_map(output_dir: Path, seed: int = 42) -> dict:
 
     ann = load_annotations("ch15")
     if ann.get("arrows"):
-        annotate_arrows(ax, ann["arrows"])
+        annotate_arrows(ax, ann["arrows"], fontsize=7)
 
     from matplotlib.patches import Patch
     legend_items = [
-        Patch(facecolor="#d62728", alpha=0.6, label="High climate vulnerability"),
-        Patch(facecolor="#ff7f00", alpha=0.6, label="Stranded fossil-fuel assets"),
+        Patch(facecolor="#c44e52", alpha=0.55, label="High climate vulnerability"),
+        Patch(facecolor="#dd8452", alpha=0.55, label="Stranded fossil-fuel assets"),
         Patch(facecolor=LAND_COLOR, alpha=0.3, label="Lower vulnerability"),
     ]
-    ax.legend(handles=legend_items, fontsize=5.5, loc="lower left", frameon=False)
+    ax.legend(handles=legend_items, fontsize=6, loc="lower left", frameon=False)
 
     add_figure_source(fig, "ND-GAIN Index; IEA stranded assets data; IPCC AR6.")
     fig.tight_layout(rect=[0, 0.03, 1, 1])

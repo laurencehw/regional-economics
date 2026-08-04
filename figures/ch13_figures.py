@@ -51,15 +51,21 @@ def plot_ssa_urbanization_map(output_dir: Path, seed: int = 42) -> dict:
     ann = load_annotations("ch13")
     crs = PROJECTIONS["africa"]
     if ann.get("cities"):
-        # Plot cities with size proportional to importance
+        # Marker size hierarchy: major primate hubs larger than secondary cities
         for city in project_cities(ann["cities"], crs):
-            ax.scatter(city["lon"], city["lat"], s=50, c="#e6ab02",
-                       edgecolors="#333333", linewidths=0.5, zorder=5)
+            style = city.get("style", "major")
+            size = city.get("marker_size", 90 if style == "major" else 45)
+            ax.scatter(city["lon"], city["lat"], s=size, c="#c9a227",
+                       edgecolors="#333333", linewidths=0.5, zorder=5, alpha=0.9)
             dx, dy = city.get("label_offset", [5, 3])
-            ax.annotate(city["name"], (city["lon"], city["lat"]),
-                        fontsize=6, ha="left", va="bottom",
-                        xytext=(dx, dy), textcoords="offset points",
-                        zorder=6)
+            ax.annotate(
+                city["name"], (city["lon"], city["lat"]),
+                fontsize=6.5 if style == "major" else 5.5,
+                ha="left", va="bottom",
+                xytext=(dx, dy), textcoords="offset points",
+                zorder=6,
+                bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=0.5),
+            )
     if ann.get("corridors"):
         annotate_corridors(ax, project_corridors(ann["corridors"], crs))
 

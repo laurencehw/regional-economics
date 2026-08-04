@@ -323,13 +323,13 @@ def annotate_corridors(ax, corridors: List[Dict], transform=None):
         ax.annotate(
             corridor["name"],
             (pts[mid, 0], pts[mid, 1]),
-            fontsize=6.5, color=color, ha="center", va="bottom",
+            fontsize=7, color=color, ha="center", va="bottom",
             fontstyle="italic", zorder=6,
-            bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1),
+            bbox=dict(facecolor='white', alpha=0.75, edgecolor='none', pad=1),
         )
 
 
-def annotate_arrows(ax, arrows: List[Dict], transform=None, fontsize: float = 6.5):
+def annotate_arrows(ax, arrows: List[Dict], transform=None, fontsize: float = 7):
     """Draw directional flow arrows on a matplotlib axis.
 
     Each arrow dict: {label, start: [x,y], end: [x,y], style: str}

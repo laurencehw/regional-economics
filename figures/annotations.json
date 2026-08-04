@@ -32,7 +32,7 @@
     ],
     "trade_blocs": {
       "mercosur": {"iso3": ["BRA", "ARG", "URY", "PRY"], "color": "#1b9e77", "label": "Mercosur"},
-      "pacific_alliance": {"iso3": ["MEX", "COL", "PER", "CHL"], "color": "#d95f02", "label": "Pacific Alliance"},
+      "pacific_alliance": {"iso3": ["MEX", "COL", "PER", "CHL"], "color": "#dd8452", "label": "Pacific Alliance"},
       "cafta_dr": {"iso3": ["GTM", "HND", "SLV", "NIC", "CRI", "DOM"], "color": "#7570b3", "label": "CAFTA-DR"}
     }
   },
@@ -145,14 +145,14 @@
   },
   "ch13": {
     "cities": [
-      {"name": "Lagos", "lat": 6.52, "lon": 3.38, "label_offset": [-15, -8], "style": "major"},
-      {"name": "Nairobi", "lat": -1.29, "lon": 36.82, "label_offset": [5, 3], "style": "major"},
-      {"name": "Kinshasa", "lat": -4.44, "lon": 15.27, "label_offset": [-20, 3], "style": "major"},
-      {"name": "Johannesburg", "lat": -26.20, "lon": 28.05, "label_offset": [5, 3], "style": "major"},
-      {"name": "Addis Ababa", "lat": 9.02, "lon": 38.75, "label_offset": [5, 3], "style": "major"},
-      {"name": "Dar es Salaam", "lat": -6.79, "lon": 39.28, "label_offset": [5, -8], "style": "major"},
-      {"name": "Accra", "lat": 5.60, "lon": -0.19, "label_offset": [-15, -8], "style": "major"},
-      {"name": "Luanda", "lat": -8.84, "lon": 13.23, "label_offset": [-20, 3], "style": "major"}
+      {"name": "Lagos", "lat": 6.52, "lon": 3.38, "label_offset": [10, 8], "style": "major", "marker_size": 120},
+      {"name": "Nairobi", "lat": -1.29, "lon": 36.82, "label_offset": [8, 4], "style": "major", "marker_size": 90},
+      {"name": "Kinshasa", "lat": -4.44, "lon": 15.27, "label_offset": [-28, 6], "style": "major", "marker_size": 100},
+      {"name": "Johannesburg", "lat": -26.20, "lon": 28.05, "label_offset": [8, 4], "style": "major", "marker_size": 90},
+      {"name": "Addis Ababa", "lat": 9.02, "lon": 38.75, "label_offset": [8, 4], "style": "major", "marker_size": 80},
+      {"name": "Dar es Salaam", "lat": -6.79, "lon": 39.28, "label_offset": [8, -10], "style": "major", "marker_size": 80},
+      {"name": "Accra", "lat": 5.60, "lon": -0.19, "label_offset": [-28, -12], "style": "major", "marker_size": 70},
+      {"name": "Luanda", "lat": -8.84, "lon": 13.23, "label_offset": [-28, 6], "style": "major", "marker_size": 80}
     ],
     "corridors": [
       {"name": "Lagos–Accra Corridor", "waypoints": [[3.38, 6.52], [1.22, 6.13], [-0.19, 5.60]], "style": "trade"},
@@ -178,9 +178,9 @@
   },
   "ch15": {
     "arrows": [
-      {"label": "Climate migration", "start": [20, 10], "end": [10, 35], "color": "#e41a1c"},
-      {"label": "Climate migration", "start": [90, 20], "end": [100, 35], "color": "#e41a1c"},
-      {"label": "Sea-level rise", "start": [-80, 25], "end": [-80, 30], "color": "#377eb8"}
+      {"label": "Climate migration", "start": [20, 10], "end": [10, 35], "color": "#c44e52"},
+      {"label": "Climate migration", "start": [90, 20], "end": [100, 35], "color": "#c44e52"},
+      {"label": "Sea-level rise", "start": [-80, 25], "end": [-80, 30], "color": "#6a9bc3"}
     ],
     "vulnerability_zones": [
       {"name": "Sahel", "bbox": [-15, 10, 40, 20]},

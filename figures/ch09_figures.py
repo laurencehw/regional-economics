@@ -57,7 +57,7 @@ def plot_eu_convergence_map(output_dir: Path, seed: int = 42) -> dict:
         eu_proj, ctx_proj = eu, context
 
     ctx_proj.plot(ax=ax, color=LAND_COLOR, edgecolor=BORDER_COLOR, linewidth=0.3)
-    eu_proj.plot(ax=ax, column="gdp_index", cmap="RdYlGn", edgecolor=BORDER_COLOR,
+    eu_proj.plot(ax=ax, column="gdp_index", cmap="RdYlBu_r", edgecolor=BORDER_COLOR,
                  linewidth=0.5, legend=True,
                  legend_kwds={"label": "GDP per capita index (EU28 = 100)",
                               "shrink": 0.6, "orientation": "horizontal",
@@ -74,7 +74,15 @@ def plot_eu_convergence_map(output_dir: Path, seed: int = 42) -> dict:
     if ann.get("cities"):
         annotate_cities(ax, project_cities(ann["cities"], crs))
 
-    add_figure_source(fig, "Eurostat; Natural Earth. 75% threshold marks Structural Funds eligibility.")
+    ax.text(
+        0.02, 0.02,
+        "Color scale: GDP/capita index (EU≈100).\n75% of EU average ≈ less-developed eligibility.",
+        transform=ax.transAxes, fontsize=6, color="#333333",
+        ha="left", va="bottom",
+        bbox=dict(facecolor="white", alpha=0.8, edgecolor="none", pad=2),
+    )
+
+    add_figure_source(fig, "Eurostat; Natural Earth. Less-developed eligibility historically near 75% of EU GDP/capita.")
     fig.tight_layout(rect=[0, 0.03, 1, 1])
     paths = save_figure(fig, output_dir, "fig_ch09_map_eu_convergence")
     plt.close(fig)

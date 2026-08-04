@@ -85,6 +85,19 @@ Rodríguez-Pose and Fratesi (2004) push this analysis further by disaggregating 
 
 The counterargument, associated most prominently with Boldrin and Canova (2001), is that Cohesion Fund spending has had no detectable effect on convergence — that the observed convergence would have occurred anyway through market-driven catch-up, and that the transfers may actually retard convergence by subsidizing declining activities and reducing the incentives for structural adjustment. Their counterfactual analysis suggests that the convergence observed between 1980 and 1996 was driven primarily by the macroeconomic stabilization and trade liberalization that accompanied Single Market completion, not by the Structural Funds themselves. On this view, Cohesion Policy is a politically necessary side payment that buys peripheral countries' consent to deeper integration, but its development effects are negligible or even negative. The debate remains unresolved, in part because different methodological approaches (difference-in-differences, synthetic control, RDD) applied to different time periods and outcomes produce different conclusions — and because the counterfactual (what would have happened to these regions without the funds) is inherently unobservable.
 
+{% hint style="info" %}
+**Evidence strength: Does Cohesion Policy raise regional growth?**
+
+| Claim | Key sources | Design | Strength | Caveat |
+|---|---|---|---|---|
+| Positive local ITT near 75% GDP/capita threshold | Becker et al. (2010, 2013); Pellegrini et al. (2013) | Income-threshold / fuzzy RDD | Moderate–strong for eligibility; weaker for €-of-spend | Heterogeneous by human capital / institutions |
+| No detectable causal effect; market catch-up dominates | Boldrin and Canova (2001) | Counterfactual / macro comparison | Contested | Pre-dates modern RDD designs; different periods |
+| Infrastructure spending weak; human-capital spending stronger | Rodríguez-Pose and Fratesi (2004) | Category-disaggregated panel | Suggestive | Not a sharp eligibility design |
+| Lab 4 eligibility effect unstable across years | Lab 4 author calculation | Cross-section RDD (2019 vs 2022) | Preliminary / diagnostic | COVID disruption; not a published finding |
+
+Book stance: treat Cohesion Policy as an eligibility treatment with conditional returns, not as a settled euro-for-euro growth engine.
+{% endhint %}
+
 ### The "People Versus Places" Debate
 
 {% hint style="info" %}
