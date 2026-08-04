@@ -178,6 +178,20 @@
 
 ---
 
+## Climate, Digital Governance, and Transition
+
+**Climate migration.** Population relocation driven in whole or in part by climate-related hazards, slow-onset environmental change, or climate-policy shocks. In this manuscript, quantitative migration magnitudes from Groundswell and related studies are SSP–RCP scenarios with uncertainty bounds, not forecasts. Ch. 15, Ch. 7, Ch. 13.
+
+**Digital sovereignty.** The claim by states or blocs to govern data, platforms, and digital infrastructure within their jurisdiction — through localization rules, content regulation, industrial policy for semiconductors and cloud, or preferential digital-trade regimes. Creates new forms of institutional distance in services gravity. Ch. 16, Ch. 7.
+
+**Just transition.** Policy package that pairs decarbonization with support for workers and regions whose employment, fiscal base, or assets are stranded by the energy transition — including retraining, place-based investment, and social insurance. Ch. 15, Ch. 11.
+
+**Splinternet.** Fragmentation of the formerly global digital commons into competing regulatory and technical blocs (commonly US, EU, and China-centered regimes) with divergent rules for data flows, platforms, and digital trade. Ch. 16.
+
+**Stranded regions.** Places whose comparative advantage, fiscal base, or capital stock is at risk of premature economic obsolescence because of climate change, fossil-fuel demand decline, or green industrial policy elsewhere. Distinct from firm-level stranded assets, though the two interact. Ch. 15, Ch. 11.
+
+---
+
 ## Acronyms
 
 | Acronym | Full Form |

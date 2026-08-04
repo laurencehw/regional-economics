@@ -182,8 +182,8 @@ The manuscript is ready for external review when:
 
 ### P3. Prose and Structure
 
-- [~] Cut repeated framing and chapter conclusions by approximately 15–20%. Trimmed Ch. 6 and Ch. 11 conclusions; other chapters pending.
-- [ ] Reduce repeated use of “institutional thickness,” “binding constraint,” “spatial implication,” and formulaic transitions.
+- [~] Cut repeated framing and chapter conclusions by approximately 15–20%. Trimmed conclusions in Ch. 4–16 regional/synthesis set (plus earlier Ch. 6/8/11).
+- [~] Reduce repeated use of “institutional thickness,” “binding constraint,” “spatial implication,” and formulaic transitions. Conclusion trims removed much formulaic closing prose; in-body phrase audit remains.
 - [ ] Separate theory, evidence, illustration, and speculation visually.
 - [ ] Break long paragraphs and sentences where argument structure is obscured.
 - [ ] Reconcile pathway workload estimates with actual chapter length.
@@ -195,7 +195,7 @@ The manuscript is ready for external review when:
 - [ ] Add a Gulf inset to the Chapter 11 map.
 - [ ] Split Chapter 16's wide services-regime table.
 - [ ] Use a muted, accessible, color-blind-safe palette.
-- [~] Add source, vintage, method, and uncertainty notes to every figure. Completed for Ch. 6, 8, and 11; remaining chapters pending.
+- [~] Add source, vintage, method, and uncertainty notes to every figure. Regional/synthesis chapters (4–16) now carry expanded figure source notes; theory chapters pending if needed.
 - [ ] Distribute figures through chapters rather than front-loading them.
 
 ### P5. Glossary, Index, and Cross-References
@@ -203,7 +203,7 @@ The manuscript is ready for external review when:
 - [ ] Replace chapter-only index locators with page or section anchors.
 - [ ] Prevent bibliography/glossary-only and ambiguous regex matches from generating index entries.
 - [ ] Add subentries and curated “see/see also” links.
-- [ ] Add missing capstone terms: stranded regions, climate migration, digital sovereignty, Splinternet, just transition, and related concepts.
+- [x] Add missing capstone terms: stranded regions, climate migration, digital sovereignty, Splinternet, just transition, and related concepts.
 - [ ] Audit notation and definitions across chapters, glossary, appendices, and labs.
 - [ ] Validate all internal links and chapter/lab references.
 
@@ -254,4 +254,5 @@ The manuscript is ready for external review when:
 | 2026-08-03 | F1 / A1 / A2 | Seeded `CLAIM_LEDGER.md`; DVA imperfect-indicator language; Evidence-and-alternatives boxes (science parks, Syria); AfCFTA ROO dating to cutoff | Text review |
 | 2026-08-03 | A1 / A2 | Evidence boxes for Ruhr–Donbas, Pittsburgh–Detroit, LAC deindustrialization, Gulf diversification, African urbanization; policy dating in Ch. 4/7/11/16 | Text review |
 | 2026-08-03 | F1 / P2 | Deepened Ch. 6/8/11 claim ledger; figure vintage/method notes; trimmed Ch. 6 and 11 conclusions; qualified NASSCOM/NEOM/DVA figure labels | Text review |
+| 2026-08-03 | P2 / P5 | Expanded figure notes across Ch. 4–16; trimmed remaining regional/synthesis conclusions; added glossary terms (stranded regions, climate migration, digital sovereignty, Splinternet, just transition) | Text review |
 

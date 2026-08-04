@@ -18,7 +18,7 @@ The chapter proceeds in six sections. Section 4.1 traces the NAFTA-to-USMCA tran
 
 ![Figure 4.1: North America — USMCA corridors, maquiladora zones, and Rust Belt geography](../figures/fig_ch04_map_north_america.png)
 
-*Source: Natural Earth boundaries; BTS cross-border flow data.*
+*Source: Natural Earth boundaries; BTS cross-border flow data. Map schematic; BTS flows as reported through 2024 (July 1, 2026 cutoff).*
 
 ## 4.1 The NAFTA-to-USMCA Transition: Compliance as the New Comparative Advantage
 
@@ -26,7 +26,7 @@ The chapter proceeds in six sections. Section 4.1 traces the NAFTA-to-USMCA tran
 
 ![Figure 4.2: Manufacturing employment share — Rust Belt vs. Sun Belt, 1970–2020](../figures/fig_ch04_thematic_manufacturing_shift.png)
 
-*Source: BLS Current Employment Statistics. Illustrative; based on patterns in BLS data, not exact reproduction.*
+*Source: BLS Current Employment Statistics. Illustrative pattern calibration, not exact cell reproduction; CES vintage as cited.*
 
 For a quarter century, NAFTA created a distinctive spatial pattern in North American manufacturing. The agreement's relatively simple rules of origin — typically requiring 62.5 percent regional value content for automotive products — allowed firms to optimize production across the continent on cost grounds. The result was a three-tier spatial hierarchy:
 
@@ -343,7 +343,7 @@ Figure 4.3 presents the SAR coefficient estimates from Lab 1, showing how the sp
 
 ![Figure 4.3: Lab 1 SAR results — spatial lag and institutional interaction coefficients](../figures/fig_lab1_sar_results.png)
 
-*Source: Lab 1 output; author's calculations based on WDI and UN Comtrade data.*
+*Source: Lab 1 pipeline / author calculation from WDI and UN Comtrade. Synthetic demos are labeled in lab outputs; real-data runs are author calculations with sample/SE notes in Lab 1 README.*
 
 2. **Institution-interaction terms produce meaningful coefficients.** When border-governance quality is interacted with the spatial lag and other covariates, the estimates change materially. The interaction of institutional quality with log GDP per capita produces a negative coefficient ($$\beta \approx -3.7$$), suggesting that higher-quality institutions are associated with faster convergence — poorer countries with better institutions catch up more quickly. The interaction with manufacturing share produces a positive coefficient ($$\beta \approx 4.0$$), suggesting that institutional quality amplifies the growth contribution of manufacturing.
 
@@ -437,9 +437,9 @@ The lesson extends beyond USMCA. Every trade agreement creates an institutional 
 
 ## Conclusion: The Institutional Mediation of North American Integration
 
-This is the central empirical message of Part II: the spatial structure of growth in the Americas is not a simple matter of proximity or trade volume. It is mediated by institutions — and the institutions are not uniformly distributed. The NAFTA-to-USMCA transition illustrates the mechanism at continental scale: a trade agreement that raised compliance requirements rewarded regions with strong institutional capacity (the USMCA corridor from Ontario through Michigan to Querétaro) while leaving institutionally weaker regions further behind. The CHIPS Act and IRA repeat the pattern in a different register — industrial policy that channels investment toward regions that can meet regulatory, workforce, and infrastructure prerequisites. The border-friction evidence confirms that even between closely integrated economies, institutional barriers impose trade costs equivalent to thousands of miles of additional distance. And the Lab 1 spatial analysis reveals that the growth spillovers which should flow through trade networks are conditional on institutional quality: regions below a threshold of governance capacity are connected to the continental economy but cannot absorb its growth impulses.
+North American growth is mediated by institutions, not proximity or trade volume alone. USMCA's compliance requirements, CHIPS Act and IRA industrial policy, and persistent border frictions reward regions with regulatory, workforce, and infrastructure capacity — the Ontario–Michigan–Querétaro corridor — while leaving weaker regions connected but unable to absorb spillovers. Lab 1 confirms that continental growth impulses propagate only where governance crosses a threshold.
 
-The next chapter extends this argument to Latin America, where the institutional fragmentation is most severe and its consequences for structural upgrading most visible. Where this chapter examined the spatial effects of a specific institutional shock (the NAFTA-to-USMCA transition) on a specific set of regions (the USMCA corridor), Chapter 5 examines the structural conditions — premature deindustrialization, informality, the resource curse — that determine whether Latin American regions can participate in the compliance-intensive economy that USMCA creates.
+Chapter 5 extends this to Latin America, where premature deindustrialization, informality, and the resource curse determine whether sub-national regions can participate in the compliance-intensive economy USMCA creates.
 
 ---
 

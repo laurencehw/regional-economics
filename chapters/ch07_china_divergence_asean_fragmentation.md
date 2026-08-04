@@ -2,7 +2,7 @@
 
 ![Figure 7.1: China & ASEAN — BRI corridors and economic integration](../figures/fig_ch07_map_china_asean.png)
 
-*Source: Natural Earth; BRI official project list.*
+*Source: Natural Earth; BRI project lists. Corridor locations schematic; project status as of July 1, 2026 cutoff.*
 
 ---
 
@@ -24,7 +24,7 @@ The chapter proceeds in six sections. Section 7.1 analyzes China's coastal-inlan
 
 ![Figure 7.2: China provincial divergence — coastal vs. inland GDP per capita](../figures/fig_ch07_thematic_provincial_divergence.png)
 
-*Source: NBS China Statistical Yearbook. Illustrative; based on patterns in NBS data, not exact reproduction.*
+*Source: NBS China Statistical Yearbook. Illustrative; pattern-based, not exact reproduction. Provincial GDP measurement caveats apply.*
 
 ### Sequential Liberalization and the Coastal Premium
 
@@ -68,7 +68,7 @@ Figure 7.3 tracks interprovincial inequality using the Gini coefficient computed
 
 ![Figure 7.3: Provincial Gini coefficient — interprovincial inequality in China, 1990–2023](../figures/fig_ch07_provincial_gini.png)
 
-*Source: Author's calculations based on NBS China Statistical Yearbook data.*
+*Source: Author calculation from NBS China Statistical Yearbook. Subject to known provincial-national GDP reconciliation issues.*
 
 The empirical magnitude of this institutional distortion is substantial. Estimates of the Hukou wage penalty — the gap between what migrant workers earn and what observationally equivalent local residents earn in the same city — range from some 15 to 40 percent depending on methodology and city tier (Au and Henderson 2006, Combes et al. 2014). The penalty is not simply a return to unmeasured skill differences: it reflects the institutional exclusion from urban labor markets where Hukou registration serves as a screening device, particularly in public sector employment, licensed professions, and formal-sector jobs that offer social insurance. Migrant workers are systematically sorted into informal, temporary, and low-benefit employment — precisely the jobs that do not build the human capital accumulation that would close the income gap over time.
 
@@ -330,15 +330,11 @@ Section 7.2 established the economic logic of medical tourism as Mode 2 services
 
 ## Conclusion: Scale, Sovereignty, and Spatial Fragmentation
 
-This chapter has examined two distinct but interconnected spatial dynamics: China's institutionally produced internal divergence and ASEAN's sovereignty-produced external fragmentation. The common thread is that institutions — Hukou restrictions, fiscal federalism, regulatory heterogeneity, data localization rules — create spatial barriers that prevent the equalization of factor prices and economic opportunities across space.
+China's coastal–interior divergence is institutionally produced: Hukou permits labor migration without citizenship rights, subsidizing coastal agglomeration at interior expense. ASEAN's fragmentation is sovereignty-produced — regulatory heterogeneity and data localization raise trade costs — yet platforms like Grab and Gojek have achieved de facto integration that formal AEC agreements have not.
 
-China's case demonstrates that rapid aggregate growth can coexist with persistent and widening spatial inequality when institutional barriers prevent the migration of citizenship rights even as they permit the migration of labor. The Hukou system is the institutional mechanism through which China's coastal mega-regions extract labor from interior provinces without paying the full social cost of that labor — a spatial subsidy that accelerates coastal agglomeration at the expense of interior development.
+Climate stress in the Mekong and Pearl River Deltas will force large-scale relocation within decades; China's renewable industrial policy could rebalance investment inland, but transmission and inter-provincial coordination remain formidable bottlenecks.
 
-ASEAN's case demonstrates that platform economies can partially overcome regulatory fragmentation through network effects and institutional innovation — Grab and Gojek have created more functional economic integration across borders than the ASEAN Economic Community's formal agreements have achieved — but that the fragmentation imposes real costs visible in the city-by-city, country-by-country expansion strategies that would be unnecessary in a genuinely integrated single market.
-
-The climate dimension adds urgency to both dynamics. The Mekong and Pearl River Deltas face risks that will force large-scale population relocation within decades, and the institutional capacity to manage that relocation — to protect displaced populations while maintaining economic productivity — varies enormously across the region. China's renewable energy industrial policy offers the possibility of spatial rebalancing, directing investment toward interior provinces that the export-oriented model bypassed, but the transmission infrastructure and inter-provincial coordination challenges are formidable.
-
-Chapter 8 takes the analysis to South Asia, where India's IT services revolution presents a spatial dynamic distinct from both the East Asian manufacturing model and the Chinese developmental state: a services-led growth path that has created extreme spatial concentration in a small number of cities (Bangalore, Hyderabad, Pune) while bypassing the rest of the subcontinent. The tools developed here — convergence analysis, institutional barrier measurement, platform economy dynamics — travel directly into the Indian context, where the spatial paradox of services trade (Chapter 1's foundational puzzle) is most vividly illustrated.
+Chapter 8 turns to South Asia, where India's IT services revolution creates extreme metropolitan concentration while bypassing most of the subcontinent — the spatial paradox of services trade at its most vivid.
 
 ---
 

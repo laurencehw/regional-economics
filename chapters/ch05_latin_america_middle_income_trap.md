@@ -2,7 +2,7 @@
 
 ![Figure 5.1: Latin America — trade blocs, commodity zones, and key economies](../figures/fig_ch05_map_latin_america.png)
 
-*Source: Natural Earth; WTO trade agreements database.*
+*Source: Natural Earth; WTO trade agreements database. Agreement geography schematic as of July 1, 2026 cutoff.*
 
 ---
 
@@ -28,7 +28,7 @@ The chapter proceeds in five sections. Section 5.1 examines premature deindustri
 
 ![Figure 5.2: Middle-income trap — GDP per capita vs. growth rate across regions](../figures/fig_ch05_thematic_middle_income.png)
 
-*Source: World Bank WDI; Penn World Table 10.0.*
+*Source: World Bank WDI; Penn World Table 10.0. Series vintages as published; not rebased after the July 1, 2026 cutoff.*
 
 ### What Premature Deindustrialization Is — and Is Not
 
@@ -302,7 +302,7 @@ where $$X_{it}$$ includes institutional quality proxies (formal employment share
 
 ![Figure 5.3: The inverted U — manufacturing share vs. income across regions](../figures/fig_ch05_inverted_u.png)
 
-*Source: Author's calculations based on UNIDO and World Bank WDI data.*
+*Source: Author calculation from UNIDO and World Bank WDI. Constructed manufacturing-share trajectories; see chapter caveats on measurement.*
 
 **Sensitivity checks.** The key robustness exercise is to replace the ILO informality measure with alternative institutional proxies: (a) the World Bank's sub-national Doing Business scores (available for Mexico, Colombia, Peru); (b) own-source fiscal revenue as a share of total sub-national revenue (from OECD/ECLAC); (c) the Economic Complexity Index computed at the sub-national level (from the Growth Lab's sub-national complexity data). If the turning-point shift is robust to alternative institutional measures, the result is more credible.
 
@@ -368,17 +368,9 @@ CORFO's evolution from ISI vehicle to cluster-development agency illustrates tha
 
 ## Conclusion: Escaping the Spatial Middle-Income Trap
 
-Taken together, Chapters 4 and 5 deliver a unified message about the Americas: the continental economy is spatially interconnected through trade, investment, and migration, but the benefits of that interconnection are gated by institutional quality. Regions that have invested in formalization capacity, regulatory infrastructure, and human capital can exploit their trade linkages to grow. Regions that have not made those investments are connected to the same trade network but cannot absorb or transmit the growth impulses it carries.
+The Americas are spatially interconnected, but the gains from integration are gated by institutional quality. Regions with formalization capacity, regulatory infrastructure, and human capital exploit trade linkages; others remain connected but cannot absorb or transmit growth impulses — the middle-income trap as a spatial equilibrium.
 
-The policy implication is that trade liberalization and industrial policy are necessary but insufficient for regional convergence. Without institutional upgrading at the sub-national level — the formalization of labor markets, the professionalization of customs administrations, the building of educational infrastructure — the spatial multiplier remains weak, and the gains from integration accumulate in the already-strong regions. This is the middle-income trap expressed as a spatial equilibrium: countries are "trapped" not because they lack access to global markets, but because the institutional infrastructure needed to exploit that access is unevenly distributed across their territory.
-
-The contrast with East Asia illuminates what Latin America lacks. South Korea, Taiwan, and Singapore — the successful escapees from middle-income status — combined trade liberalization with aggressive institutional investment: universal education, meritocratic civil services, state-directed industrial policy, and regulatory capacity sufficient to manage complex supply chains. Their spatial economies are not free of inequality (see Chapters 6–7), but the institutional floor is high enough that even peripheral regions participate in the formal economy and benefit from trade integration.
-
-Latin America's institutional floor is much lower. Brazil's most institutionally developed state (São Paulo) is comparable to a middle-tier East Asian economy; its least developed states (Maranhão, Piauí) are comparable to Sub-Saharan Africa. The within-country institutional range in LAC is among the widest in the world — wider than within China, wider than within India, and vastly wider than within the East Asian tigers. This institutional heterogeneity is the structural condition that produces the conditional-spillover result in Lab 1 and the premature deindustrialization pattern documented in this chapter.
-
-The comparison suggests that escaping the middle-income trap requires not only the right macroeconomic policies (exchange rate management, fiscal discipline, trade openness) but also a minimum level of institutional thickness at the sub-national level — below which trade integration produces winners and losers rather than convergence. The challenge for Latin American policymakers is that building sub-national institutional capacity is slow, expensive, and politically unrewarding: its benefits are diffuse, long-term, and difficult to claim credit for. Building a factory is a photo opportunity; building a customs administration is not. But the evidence of this chapter suggests that the customs administration matters more.
-
-The comparison also illuminates a temporal dimension. South Korea's institutional transformation took thirty years (1960–1990), during which the country moved from a subsistence economy to an industrial powerhouse. Chile's transformation has taken forty years (1985–2025) and is still incomplete. The institutional prerequisites for escaping the middle-income trap are achievable — the East Asian examples prove that — but they require sustained investment over a period that exceeds most electoral cycles and most policy-planning horizons. The spatial dimension adds urgency: within-country inequality tends to increase during the transition, as institutional upgrading occurs first in the already-advantaged regions. The political backlash against regional inequality — visible in Brazil's Nordeste-Sudeste tensions, Mexico's north-south divide, and Colombia's center-periphery conflicts — can itself undermine the institutional reforms needed to address it. This is the political economy trap within the middle-income trap: the inequality that institutional reform creates in the short run generates political opposition to the reforms that would reduce inequality in the long run.
+East Asia's escape combined trade openness with aggressive institutional investment at a national floor high enough that even peripheral regions participated in formal supply chains. Latin America's within-country institutional range — São Paulo versus Maranhão — is among the widest in the world, producing the conditional-spillover results in Lab 1 and the premature deindustrialization documented here. Escaping the trap requires sub-national institutional upgrading that outlasts electoral cycles; the political backlash when upgrading concentrates in already-advantaged regions can itself undermine the reforms needed to close the gap.
 
 ---
 

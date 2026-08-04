@@ -2,7 +2,7 @@
 
 ![Figure 10.1: EU North-South divide and Brexit geography](../figures/fig_ch10_map_north_south.png)
 
-*Source: Natural Earth; Eurostat regional accounts.*
+*Source: Natural Earth; Eurostat regional accounts. Regional map schematic; accounts vintage as cited (July 1, 2026 cutoff).*
 
 ---
 
@@ -185,7 +185,7 @@ The spatial economics literature has engaged seriously with this diagnosis. McCa
 The UK government's post-Brexit "Levelling Up" agenda, which promised to direct public investment toward the north and midlands, was an explicit acknowledgment that spatial inequality had become a political crisis. The 2022 Levelling Up White Paper proposed twelve "missions" — from improving educational attainment to expanding broadband to dispersing R&D spending — but the program's implementation has been uneven, its funding modest relative to the scale of the challenge, and the fundamental structural centralisation of the UK state has not been reformed. The comparison to Chapter 4's analysis of the US Rust Belt is instructive: both the UK and the US have confronted the political consequences of spatially concentrated deindustrialization, and both have responded with place-based initiatives (Levelling Up, Opportunity Zones) that operate at a scale far smaller than the structural forces they are designed to counteract.
 
 ![Figure 10.2: Youth unemployment — Europe's North-South divergence, 2008 vs 2023](../figures/fig_ch10_chart_youth_unemployment.png)
-*Source: Author's calculations based on Eurostat Labour Force Survey (2008, 2023). Age 15–24.*
+*Source: Author calculation from Eurostat Labour Force Survey (2008, 2023). Age 15–24; series break and definition notes in Eurostat metadata.*
 
 ---
 
@@ -211,7 +211,7 @@ Figure 10.3 traces the Mezzogiorno's GDP per capita as a share of Center-North l
 
 ![Figure 10.3: The Mezzogiorno gap — Southern Italy's GDP per capita relative to Center-North, 1950–2023](../figures/fig_ch10_mezzogiorno_gap.png)
 
-*Source: Author's calculations based on ISTAT and SVIMEZ data.*
+*Source: Author calculation from ISTAT and SVIMEZ. Constructed Mezzogiorno comparisons; not official SVIMEZ table reproductions.*
 
 ### A Quantitative Portrait of Divergence
 
@@ -318,19 +318,13 @@ The spatial pattern of the eurozone crisis is visible in the European Central Ba
 
 ## Conclusion: The Dialectic of Integration and Dis-Integration
 
-This chapter has traced four forces that have disrupted the convergence narrative of Chapter 9. The eurozone crisis demonstrated that monetary integration without fiscal union creates asymmetric adjustment mechanisms that punish peripheral regions. Post-socialist integration created genuine convergence for CEE countries as a whole but concentrated the gains in metropolitan areas and western border regions, reproducing within the new member states the core-periphery patterns that Cohesion Funds were designed to reduce. Brexit showed that the political sustainability of integration depends on whether its benefits reach the regions that feel most threatened by the changes it produces. And the Mezzogiorno revealed the limits of redistribution itself — the uncomfortable truth that fiscal transfers without institutional transformation can entrench divergence rather than overcome it.
+Four forces disrupted Chapter 9's convergence narrative: the eurozone crisis showed that monetary union without fiscal union punishes peripheries; CEE integration concentrated gains in metros and western border regions; Brexit revealed that integration's political sustainability depends on benefits reaching threatened regions; and the Mezzogiorno demonstrated that transfers without institutional transformation can entrench divergence.
 
-As Section 10.4 documented, Italy's Mezzogiorno stands as the most sobering case study in the limits of integration and redistribution. Seventy years of continuous regional development policy — from the Cassa per il Mezzogiorno (1950–1992) through successive EU Cohesion Fund programming periods — have transferred hundreds of billions of euros to southern Italy without closing the North-South gap. The diagnosis connects every theme of this chapter and the last: weak institutional capacity prevents effective absorption of transfers (Section 9.3); the civic capital deficit that Putnam (1993) traced to medieval political structures shapes contemporary governance quality; emigration of the most talented workers compounds the human capital deficit; organized crime raises transaction costs and deters private investment; and the agglomeration forces that concentrate manufacturing in the Po Valley are self-reinforcing in ways that NEG predicts. The Mezzogiorno is not a failure of policy ambition; it is a failure of institutional foundations — and it stands as a warning for every region that hopes integration and transfers alone will deliver convergence.
+Italy's seventy years of southern development policy — Cassa per il Mezzogiorno through successive Cohesion Funds — transferred hundreds of billions of euros without closing the North–South gap. Weak absorptive capacity, civic capital deficits, brain drain, organized crime, and self-reinforcing Po Valley agglomeration explain why integration and redistribution alone could not deliver convergence.
 
-The dialectic between integration and dis-integration is not unique to Europe. Chapter 4's analysis of USMCA showed how the North American integration project has shifted from efficiency-maximizing free trade to compliance-intensive managed trade, partly in response to the spatial concentration of integration's costs in the Rust Belt. Chapter 7 showed how China's BRI creates dependencies and backlash in recipient countries. Chapter 14 will show how the AfCFTA must navigate the centrifugal forces of national sovereignty and uneven institutional capacity.
+The dialectic is not uniquely European — USMCA's shift to compliance-intensive trade, China's BRI dependencies, and AfCFTA's sovereignty challenges echo the same tension. What makes Europe distinctive is the depth of its instruments; that the euro nearly broke in 2012, the UK left in 2020, and populist movements persist suggests spatial tensions exceed even sophisticated architecture. Since 2022, Ukraine has added pressures for integration in defense, energy, and migration where sovereignty had blocked progress.
 
-What makes the European case analytically distinctive is the depth of the institutional infrastructure. The EU has instruments — Cohesion Funds, the ECB's balance sheet, Next Generation EU, the EIB — that no other regional arrangement possesses. If any institution can manage the spatial tensions of integration, the EU can. The fact that it has struggled — that the euro nearly broke apart in 2012, that the UK actually left in 2020, and that populist movements in Italy, France, and Hungary continue to challenge the integration project — suggests that the spatial tensions inherent in deep integration are more powerful than even the most sophisticated institutional architecture can fully resolve.
-
-The fundamental choice that the EU faces is between deeper integration and greater heterogeneity. Deeper integration — completing the banking union, creating a permanent fiscal capacity, harmonizing services regulation, building common defense procurement — would address the institutional incompleteness that made the eurozone crisis so destructive and that continues to fragment the Single Market. But deeper integration requires political legitimacy that comes from inclusive growth across the entire European territory, and the evidence of this chapter is that integration has not delivered inclusive growth. The alternative — accepting greater heterogeneity through variable geometry, multi-speed integration, or looser institutional coupling — would reduce the strain on regions that cannot keep pace with the integration frontier, but would also reduce the economic gains that integration generates. There is no resolution to this tension, only management — and the quality of that management depends on the institutional capacity, political leadership, and spatial policy imagination that the EU can mobilize.
-
-A new dimension has entered this calculation since 2022. Russia's invasion of Ukraine has forced the EU to confront the security implications of spatial economic interdependence — the same theme that Chapter 6 analyzed for East Asian semiconductor supply chains. European energy dependence on Russian gas, defense industrial fragmentation across 27 national procurement systems, and the need to absorb millions of Ukrainian refugees have created pressures for integration in domains (defense, energy, migration) where sovereignty concerns had previously blocked progress. Whether these pressures produce a new wave of institution-building — as the postwar period and the post-Maastricht period did — or merely add another layer of ad hoc crisis management remains the defining question of European spatial economics in the 2020s.
-
-Can economies built on resource extraction engineer diversification before the resource runs out -- or loses its value? The Middle East and North Africa present this question at its sharpest, where the intersection of resource rents, authoritarian governance, and climate vulnerability creates a distinctly different set of spatial economic challenges. Chapter 11 examines these dynamics, and how the EU's role as a neighboring economic bloc shapes the region's integration possibilities in ways that connect directly to the gravity model and institutional distance frameworks of this book.
+Chapter 11 examines whether resource economies can engineer diversification before hydrocarbons lose value — and how the EU's gravity as a neighboring bloc shapes MENA integration possibilities.
 
 ---
 

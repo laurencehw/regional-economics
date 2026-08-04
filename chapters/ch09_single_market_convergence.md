@@ -2,7 +2,7 @@
 
 ![Figure 9.1: EU convergence — GDP per capita index and Structural Funds eligibility](../figures/fig_ch09_map_eu_convergence.png)
 
-*Source: Eurostat; Natural Earth. 75% threshold marks Structural Funds eligibility.*
+*Source: Eurostat; Natural Earth. 75% PPS threshold marks Structural Funds eligibility; NUTS vintage as cited (July 1, 2026 cutoff).*
 
 ---
 
@@ -61,7 +61,7 @@ The political economy of these transfers is worth noting. Net contributions are 
 | Cohesion Fund | ~€48 billion | Member states with GNI/capita <90% of EU average (mainly CEE) | Transport networks (TEN-T), environment, climate |
 | Just Transition Fund | ~€19 billion | Regions dependent on fossil fuels or carbon-intensive industry | Economic diversification for coal and carbon-dependent areas |
 
-*Source: European Commission, Multiannual Financial Framework 2021--2027.*
+*Source: European Commission, Multiannual Financial Framework 2021--2027. Budget envelopes as adopted; later top-ups not silently substituted.*
 
 ### The Convergence Evidence
 
@@ -75,7 +75,7 @@ Figure 9.3 presents the convergence fan chart, plotting GDP per capita trajector
 
 ![Figure 9.3: EU convergence fan — GDP per capita trajectories relative to EU average](../figures/fig_ch09_convergence_fan.png)
 
-*Source: Author's calculations based on Eurostat regional accounts data.*
+*Source: Author calculation from Eurostat regional accounts. Convergence charts are constructed series; see Lab 4 eligibility-threshold notes.*
 
 The strongest evidence exploits discontinuities in eligibility near the threshold used for less-developed-region classification. This is an income-threshold RDD, not automatically a geographic RDD: the running variable is a reference-period measure of regional GDP per capita relative to the EU average, and regions close in that score need not share a border. Eligibility changes discretely, but actual transfers do not form a universally sharp binary treatment. Programming-period rules, transitional classifications, national co-financing, absorptive capacity, and project approval generate variation in treatment intensity. The design therefore identifies an intention-to-treat effect of eligibility unless eligibility is used as an instrument for realized transfers in a fuzzy RDD. The applicable threshold and reference years must be documented for each programming period.
 
@@ -188,7 +188,7 @@ Brexit severed London from the Single Market for services, and the consequences 
 The spatial pattern of these relocations reveals the gravitational forces that operate in services trade. Each destination city has attracted a specific functional specialization: Dublin has become the EU base for technology companies and fintech; Frankfurt has attracted banking operations that need ECB proximity; Amsterdam has captured euro-denominated trading; Paris has drawn asset management and advisory functions. No single city has replaced London — the agglomeration economies that made London dominant cannot be replicated — but the forced dis-integration of Brexit has distributed functions across multiple European cities, creating a polycentric financial geography that may prove more resilient than the monocentric model that preceded it. The NEG framework of Chapter 1 provides a useful lens: London's dominance represented a stable equilibrium in a world of low institutional barriers within the Single Market; the imposition of regulatory barriers through Brexit shifted the equilibrium toward polycentricity, and whether the new configuration is stable or transitional depends on whether continental European cities can develop the specialized labor markets, legal infrastructure, and network externalities that sustained London's advantage. The evidence to date suggests that the polycentric structure is self-reinforcing: each city's specialization reduces direct competition among them and creates complementarities (Amsterdam's trading infrastructure feeds Frankfurt's settlement operations, which generate legal work for Luxembourg's fund management), producing a network equilibrium that no single city has an incentive to disrupt.
 
 ![Figure 9.2: EU convergence clubs — GDP per capita relative to EU average](../figures/fig_ch09_chart_eu_convergence_bar.png)
-*Source: Author's calculations based on Eurostat (2023). Index: EU27 = 100, PPS-adjusted.*
+*Source: Author calculation from Eurostat (2023). Index: EU27 = 100, PPS-adjusted; NUTS and PPP revision sensitivity noted in text.*
 
 ---
 
@@ -283,17 +283,11 @@ A critical principle that runs through all three generations is **additionality*
 **Convergence vs. Divergence: Opposing Mechanisms.** Integration simultaneously activates two opposing spatial forces. *Convergence mechanisms* include factor price equalization (capital flows to low-wage regions), technology diffusion (lagging regions adopt frontier practices), and Cohesion Fund transfers. *Divergence mechanisms* include agglomeration economies (skilled workers and firms cluster in already-productive regions), brain drain (educated workers emigrate from periphery to core), and institutional sorting (strong institutions attract investment, reinforcing advantage). The net outcome depends on which set of forces dominates --- and the EU evidence shows that both operate simultaneously, producing between-country convergence alongside within-country divergence.
 {% endhint %}
 
-The EU's Single Market has generated real convergence at the country level, particularly for the post-2004 accession states. Poland, the Baltic states, the Czech Republic, and Slovakia have experienced catch-up growth that validates the theoretical prediction that removing barriers to trade, investment, and labor mobility should allow less-developed economies to exploit their comparative advantages and converge toward the income levels of their richer partners.
+The Single Market has generated real country-level convergence, especially for post-2004 accession states. Whether Poland and the Baltics would have caught up without Cohesion Funds is debatable — Asian Tigers converged without supranational transfers — but the EU's distinctive contribution may be institutional conditionality (acquis, rule-of-law requirements) rather than fiscal transfers alone; Lab 4 addresses the transfer margin but not the broader institutional channel.
 
-A fair assessment of the EU's convergence machine requires a counterfactual: would Poland and the Baltics have converged without Cohesion Funds? The Asian Tigers — South Korea, Taiwan, Singapore — achieved comparable convergence speeds without supranational transfer payments, driven by export-oriented industrial policy and human capital investment. Turkey, outside the EU, also converged toward European income levels during the 2000s before its institutional regression reversed the gains. The EU's distinctive contribution may be less the fiscal transfers themselves than the institutional conditionality that accompanies them — the acquis communautaire, the regulatory harmonization, the rule-of-law requirements for accession — which lock in the institutional foundations that Chapter 2 identifies as prerequisites for sustained growth. Disentangling the transfer effect from the institutional-conditionality effect is the key empirical challenge; Lab 4's RDD design addresses the transfer margin but cannot speak to the broader institutional channel.
+Convergence has been spatially selective: Warsaw and Prague converged faster than Podkarpackie and Lubelskie, feeding the geography of discontent that Chapter 10 analyzes. Services integration remains profoundly incomplete — the Four Freedoms operate for goods and capital, not services and people — a lesson for ASEAN and AfCFTA that tariff reduction alone cannot harmonize professional cultures and regulatory traditions.
 
-But the convergence has been spatially selective in ways that create new political tensions. The regions that have converged most rapidly are metropolitan areas that were already connected to European and global networks — the Warsaws and Pragues, not the Podkarpackies and Lubelskies. The rural peripheries of southern Italy, northern Greece, eastern Romania, and interior Spain have benefited less from integration, and the political consequences of this uneven convergence — from the rise of populist parties in "left-behind" regions to the Brexit vote itself — are the subject of Chapter 10.
-
-The theoretical lesson connects to the NEG framework of Chapter 1: the Single Market has not produced the simple convergence that neoclassical trade theory would predict, nor the complete agglomeration that the most aggressive NEG models would predict, but rather a pattern of selective convergence that reflects the interaction of economic forces (gravity, agglomeration, comparative advantage) with institutional structures (VoC, Cohesion Policy, S3) that vary across the European space. The outcome is a European economic geography that is more integrated than any other multi-state system but less spatially equal than most individual nation-states — a configuration that generates ongoing tension between the efficiency gains of deeper integration and the equity demands of regions that integration has left behind.
-
-The services dimension of the Single Market remains profoundly incomplete. The Four Freedoms are realized for goods and capital but not for services and people. The Services Directive, the Digital Single Market Strategy, and GDPR have made progress, but the fundamental fragmentation of services regulation across 27 member states persists. This fragmentation is not merely a technical problem — it reflects deep differences in institutional traditions, professional cultures, and political preferences that cannot be harmonized by directive. The lesson for other regional integration projects (ASEAN, AfCFTA) is that services integration requires a level of institutional convergence that goes far beyond tariff reduction.
-
-But the convergence machine carried structural vulnerabilities that its architects underestimated. What happens when a monetary union without fiscal transfers collides with an asymmetric financial shock? When post-socialist integration creates "Factory Germany" and a nearshore services belt that deepens core-periphery divides? When the geography of discontent drives a member state to reverse integration entirely? Chapter 10 examines these stresses and their devastating spatial consequences.
+The convergence machine also carried structural vulnerabilities: monetary union without fiscal transfers, post-socialist integration that deepened core–periphery divides within new member states, and incomplete services liberalization. Chapter 10 examines how these stresses produced dis-integration and their spatial consequences.
 
 ---
 

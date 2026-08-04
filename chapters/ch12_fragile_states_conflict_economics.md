@@ -2,7 +2,7 @@
 
 ![Figure 12.1: MENA conflict zones and refugee displacement](../figures/fig_ch12_map_conflict_zones.png)
 
-*Source: Natural Earth; UNHCR; ACLED conflict data.*
+*Source: Natural Earth; UNHCR; ACLED. Conflict/displacement geography schematic; event and stock vintages as cited (July 1, 2026 cutoff).*
 
 ---
 
@@ -123,7 +123,7 @@ The economic cost of this human capital destruction can be estimated, at least i
 The long-run spatial consequences of education disruption are severe. Human capital is the foundation of the agglomeration economies described in Chapter 1: knowledge spillovers, labor market pooling, and innovation all depend on a workforce with adequate education and skills. A generation of children who miss five, eight, or twelve years of schooling — the "lost generation" — will lack the human capital needed to participate in the knowledge economy, even if peace is restored and physical infrastructure is rebuilt. The spatial implication is that conflict-affected regions will be trapped in low-skill, low-productivity equilibria for decades after the fighting ends, because the human capital destruction is slower to reverse than the physical destruction.
 
 ![Figure 12.2: MENA displacement crisis — refugees and IDPs by country](../figures/fig_ch12_chart_refugee_displacement.png)
-*Source: Author's calculations based on UNHCR Global Trends (2023) and IDMC GRID (2023).*
+*Source: Author calculation from UNHCR Global Trends (2023) and IDMC GRID (2023). Stock definitions differ across agencies; see text.*
 
 ---
 
@@ -167,7 +167,7 @@ Lab 5's synthetic control methodology provides the framework for estimating what
 
 ![Figure 12.3: Synthetic control gap — actual vs. counterfactual GDP trajectory](../figures/fig_ch12_scm_gap.png)
 
-*Source: Lab 5 output; author's calculations based on World Bank WDI data.*
+*Source: Lab 5 pipeline / author calculation from World Bank WDI. SCM paths are author calculations; donor-pool and pre-period sensitivity apply.*
 
 **The donor pool problem for MENA.** Abadie, Diamond, and Hainmueller (2010) emphasize that the synthetic control method works best when the donor pool contains units that are "similar" to the treated unit in observable characteristics. For MENA fragile states, this requirement is hard to satisfy. The pool of non-conflict MENA countries is small — Jordan, Tunisia, Morocco, Oman, and the Gulf states are the principal candidates — and each differs from the treated countries in ways that may contaminate the synthetic control. Gulf economies are oil-dependent rentier states with per capita incomes ten times higher than Yemen's; Tunisia and Morocco have Mediterranean economies oriented toward Europe; Jordan is itself affected by spillovers from the Syrian conflict. Expanding the donor pool to include non-MENA comparators (the Philippines, Colombia, Sri Lanka) introduces geographic and institutional heterogeneity that may violate the assumption that the donor countries would have followed similar trajectories in the absence of treatment. Lab 5 asks students to systematically explore how their estimates change as the donor pool is expanded, contracted, or reweighted — an exercise in understanding how sensitive causal inference is to researcher discretion.
 
@@ -181,7 +181,7 @@ Lab 5's synthetic control methodology provides the framework for estimating what
 
 ![Figure 12.4: Lab 5 placebo distribution — post/pre RMSPE ratios for treated vs. donor countries](../figures/fig_lab5_placebo.png)
 
-*Source: Lab 5 output; author's calculations.*
+*Source: Lab 5 pipeline / author calculation. Synthetic-control weights and paths; not published official estimates.*
 
 The exercise develops the student's ability to work with imperfect data, to make explicit the assumptions that underlie causal inference, and to communicate uncertainty honestly — skills that are essential for anyone working on fragile-state economics.
 
@@ -269,13 +269,11 @@ The sectoral transformation is legible in the data. Agriculture’s share of GDP
 
 ## Conclusion: The Spatial Economics of Fragility
 
-Conflict and fragility create spatial economic patterns that are the inverse of the agglomeration economies described in earlier chapters. Where agglomeration concentrates talent, capital, and institutional capacity to produce increasing returns, conflict disperses talent (through emigration and displacement), destroys capital (through physical destruction and capital flight), and dismantles institutional capacity (through the collapse of statistical offices, courts, schools, and administrative systems). The result is a negative agglomeration dynamic — what we might call "dis-agglomeration" — in which the forces that drive economic geography operate in reverse. Once institutional thickness falls below a critical threshold, recovery becomes self-defeating: the professionals needed for reconstruction have emigrated, the investors who could finance recovery perceive too much risk, the statistical infrastructure needed to guide policy does not exist, and the property-rights vacuum prevents even willing returnees from reestablishing themselves. Collier (2007) identified the "conflict trap" as one of the fundamental mechanisms perpetuating global poverty; the spatial economics of this trap operate through precisely these dis-agglomeration channels.
+Conflict inverts agglomeration: it disperses talent, destroys capital, and dismantles statistical offices, courts, and administrative systems — a "dis-agglomeration" dynamic. Below a critical threshold, recovery becomes self-defeating as emigration, capital flight, and property-rights vacuums compound. Collier's conflict trap operates through these spatial channels.
 
-The climate-conflict nexus adds a forward-looking dimension to these concerns. As climate change intensifies water scarcity, degrades agricultural productivity, and increases the frequency of extreme weather events in the MENA region and the Sahel, the spatial economics of fragility will expand: more populations will be displaced, more institutions will be stressed, and more economies will enter the negative spiral of conflict and institutional collapse.
+Climate stress will expand fragility's geography across MENA and the Sahel. Post-conflict reconstruction is itself a spatial problem: reconstituting institutional capacity requires sequencing property rights, fiscal institutions, and education under minimum security — experiences from Iraq, Bosnia, and Rwanda show virtuous or vicious circles depending on that sequencing, with recovery concentrating in secure capitals while peripheries remain underserved.
 
-The reconstruction challenge, when it eventually arrives, will itself be a spatial economics problem. Post-conflict reconstruction is not simply a matter of replacing destroyed physical capital — rebuilding the bridges, hospitals, power plants, and housing that were damaged — but of reconstituting the institutional thickness that made economic coordination possible. The sequencing problem is acute: which institutions must be rebuilt first? Property rights and courts, so that investors face predictable rules? Central banking and fiscal institutions, so that the government can collect revenue and manage a currency? Statistical offices, so that policymakers can measure outcomes and allocate resources rationally? Education systems, so that the human capital deficit does not compound further? Each requires the others, and all require a minimum level of security that only a functioning state (or an effective international presence) can provide. The experiences of post-2003 Iraq, post-Dayton Bosnia, and post-genocide Rwanda suggest that the sequencing of institutional reconstruction determines whether recovery follows a virtuous circle (security enables governance, governance enables investment, investment enables employment, employment consolidates security) or a vicious one (institutional gaps perpetuate insecurity, insecurity deters investment, lack of investment perpetuates unemployment, unemployment fuels renewed conflict). The spatial dimension is inescapable: reconstruction does not proceed uniformly across national territory but concentrates in secure zones — typically the capital and a few major cities — while peripheries remain underserved, creating the center-periphery inequalities that may seed the next cycle of grievance.
-
-How do these dynamics play out in a region where urbanization is accelerating without the industrial base that historically accompanied it? Sub-Saharan Africa faces different but related challenges — urbanization without industrialization, data scarcity, and the transformative potential of the AfCFTA — that define its spatial economic landscape. The connection is not merely geographic: many of the fragile-state dynamics analyzed in this chapter — displacement, institutional collapse, climate vulnerability, youth unemployment — are shared between the MENA region and Sub-Saharan Africa, and the analytical methods developed here (synthetic control, night-lights proxies, spatial diffusion models) apply with equal force south of the Sahara. Indeed, the Sahel — the semi-arid belt that stretches from Mauritania to Eritrea — is the geographic seam where MENA and Sub-Saharan dynamics converge, and the conflicts that have erupted there (Mali, Burkina Faso, Niger, Nigeria's northeast) combine the institutional fragility analyzed in this chapter with the urbanization and data challenges that Chapter 13 will address. The student who has mastered the analytical tools of Chapters 11-12 will find them immediately applicable to the African cases that follow.
+Chapter 13 turns to Sub-Saharan Africa, where urbanization without industrialization, data scarcity, and AfCFTA potential define a related landscape. The Sahel is the seam where MENA and African dynamics converge; the analytical tools developed here apply directly south of the Sahara.
 
 ---
 

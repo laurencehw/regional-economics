@@ -2,7 +2,7 @@
 
 ![Figure 15.1: Global climate vulnerability — exposure, stranded assets, and migration](../figures/fig_ch15_map_climate_vulnerability.png)
 
-*Source: ND-GAIN Index; IEA stranded assets data; IPCC AR6.*
+*Source: ND-GAIN; IEA; IPCC AR6. Vulnerability/stranding map is a composite schematic; SSP–RCP scenarios are not forecasts (July 1, 2026 cutoff).*
 
 ---
 
@@ -156,12 +156,12 @@ Figure 15.2 presents the stranded-asset timeline, showing the projected phaseout
 
 ![Figure 15.2: Stranded asset timeline — projected fossil-fuel phaseout under IEA scenarios](../figures/fig_ch15_stranded_timeline.png)
 
-*Source: Author's calculations based on IEA World Energy Outlook (2023) and Carbon Tracker Initiative data.*
+*Source: Author calculation from IEA WEO (2023) and Carbon Tracker. Scenario-conditional stranded-asset magnitudes; pathway named in text.*
 
 The cross-regional comparison reveals a cruel irony: the regions most exposed to climate risk are, on average, the least equipped to adapt. Sub-Saharan Africa, South Asia, and the MENA conflict states face the most severe physical impacts and have the least institutional, financial, and human capital capacity for adaptation. The developed world faces more moderate physical impacts and has greater adaptive capacity. The climate transition is, in this sense, a spatial inequality amplifier — a mechanism that widens the gap between rich and poor regions through a channel (physical geography) that operates independently of the trade, investment, and institutional channels that conventional development economics focuses on.
 
 ![Figure 15.3: Stranded fossil-fuel assets — top 10 countries at risk](../figures/fig_ch15_chart_stranded_assets.png)
-*Source: Author's calculations based on Carbon Tracker Initiative (2023) and IEA World Energy Outlook (2023).*
+*Source: Author calculation from Carbon Tracker (2023) and IEA WEO (2023). Scenario illustration, not a point forecast.*
 
 ---
 
@@ -269,13 +269,13 @@ The comparison to the EU's Cohesion Funds (Chapter 9) is both instructive and so
 
 ## Conclusion: Toward a Climate-Aware Spatial Economics
 
-The climate transition is the defining spatial reallocation of the 21st century. It will redraw comparative advantage, redirect investment flows, displace hundreds of millions of people, and create new winners and losers across every region analyzed in this book. The analytical tools developed in Chapters 1-3 — agglomeration theory, institutional analysis, gravity models, spatial econometrics — are directly applicable to understanding and managing this transition. But they need to be supplemented with two elements that traditional spatial economics has underemphasized: the physical geography of climate change (which alters the "first nature" that NEG theory takes as given) and the political economy of climate policy (which determines how the costs and benefits of the transition are distributed across regions).
+The climate transition is the defining spatial reallocation of the twenty-first century — redrawing comparative advantage, redirecting investment, and displacing populations. Tools from Chapters 1–3 apply directly but must be supplemented by physical geography (altering NEG's "first nature") and the political economy of who bears transition costs.
 
-A note on uncertainty is warranted. Climate economics deals in scenarios, not predictions. The CMIP6 ensemble produces a range of outcomes conditional on SSP–RCP pathways, and the spread between low-forcing combinations near SSP1–2.6 and high-forcing combinations near SSP5–8.5 is enormous — roughly the difference between a world that keeps warming close to the Paris lower bound and one that substantially overshoots it. Worse, the economic damage functions that translate warming into GDP losses are themselves deeply uncertain, and several features of the climate system — the Atlantic Meridional Overturning Circulation (AMOC), permafrost methane release, the West Antarctic Ice Sheet — exhibit threshold behavior that could produce abrupt, irreversible shifts. As Weitzman (2009) argued in his "dismal theorem," the fat-tailed distribution of catastrophic climate outcomes means that standard cost-benefit analysis, which discounts low-probability events, systematically underestimates the expected damage from climate change. The spatial economist's task is not to predict which regions will thrive and which will decline, but to identify the structural vulnerabilities, institutional capacities, and policy levers that will determine outcomes across a range of scenarios.
+Climate economics deals in scenarios, not predictions; fat-tailed catastrophic risks (Weitzman 2009) mean standard cost-benefit analysis systematically understates expected damage. The spatial economist's task is to identify structural vulnerabilities and policy levers across pathways, not forecast winners and losers.
 
-The political economy of managed decline deserves a final word. No community embraces the label "stranded region." Coal communities in Appalachia, the Lausitz, Mpumalanga, and Shanxi vote for candidates who promise to preserve their industries, not manage their decline. The populist backlash against climate policy — visible in the "geography of discontent" that Chapter 10 analyzed for Brexit, and in the gilets jaunes protests against fuel tax increases in France — reflects a rational calculation by people in exposed regions that the benefits of climate policy accrue elsewhere while the costs land on them. Any climate spatial policy that ignores this political economy will fail, not because it is analytically wrong, but because it cannot build the coalitions needed for implementation. The just transition frameworks discussed in Section 15.3 — Germany's Kohlekommission, South Africa's JETP — are attempts to solve this political economy problem, with mixed results.
+No community embraces "stranded region" status — Appalachia, Lausitz, Mpumalanga, and Shanxi vote to preserve incumbent industries. Just-transition frameworks (Germany's Kohlekommission, South Africa's JETP) attempt to build coalitions, with mixed results; climate policy that ignores this geography of discontent fails politically even when analytically sound.
 
-The climate transition will reshape the map of comparative advantage. But it is not the only force doing so. Chapter 16 examines two other transformative forces — the telemigration of services and the fragmentation of the digital commons — that will interact with climate change to determine the economic geography of the mid-21st century. A heat-stressed city in South Asia that cannot attract manufacturing may nonetheless become a hub for remotely delivered digital services; a region stranded by decarbonization may reinvent itself as a data center corridor powered by the same wind and solar resources that replaced its coal plants. The future map is not determined by climate alone, but by the interaction of climate, technology, and institutions — the same triad that has shaped economic geography since the beginning.
+Chapter 16 examines telemigration and digital fragmentation as forces that interact with climate to reshape mid-century economic geography — a heat-stressed South Asian city may become a remote-services hub; a decarbonizing coal region may reinvent itself as a renewable-powered data corridor.
 
 ---
 

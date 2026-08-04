@@ -2,7 +2,7 @@
 
 ![Figure 13.1: Sub-Saharan Africa — primate cities and urbanization corridors](../figures/fig_ch13_map_ssa_urbanization.png)
 
-*Source: Natural Earth; UN World Urbanization Prospects.*
+*Source: Natural Earth; UN World Urbanization Prospects (2022 revision cited in text). City locations schematic as of July 1, 2026 cutoff.*
 
 ---
 
@@ -180,13 +180,13 @@ The spatial consequences in Africa are predictable from the institutional framew
 The policy implication is not that digital government is bad — the Rwandan evidence clearly shows its potential — but that its deployment must be paired with the analog investments that make digital access meaningful: charging stations, community service centers, digital literacy training, and vernacular-language interfaces. The spatial digital divide will otherwise reproduce, and in some cases widen, the institutional gradients that determine which African cities generate productive urbanization and which do not.
 
 ![Figure 13.2: Urbanization without industrialization — SSA vs. Asian comparators](../figures/fig_ch13_chart_urbanization_scatter.png)
-*Source: Author's calculations based on World Bank WDI (2023) and UN World Urbanization Prospects (2022).*
+*Source: Author calculation from World Bank WDI (2023) and UN WUP (2022). Urbanization–manufacturing plots are constructed series.*
 
 Figure 13.3 plots urbanization rates against industrial employment shares for SSA economies, illustrating the structural break from the canonical Lewis model in which urbanization and industrialization proceed together.
 
 ![Figure 13.3: Urbanization vs. industrial employment — SSA's divergence from the canonical path](../figures/fig_ch13_urbanization_industry.png)
 
-*Source: Author's calculations based on World Bank WDI and ILO data.*
+*Source: Author calculation from World Bank WDI and ILO. Informal-employment proxies as defined in text.*
 
 ---
 
@@ -250,7 +250,7 @@ Figure 13.4 shows the Moran permutation histogram from Lab 6, comparing the obse
 
 ![Figure 13.4: Lab 6 Moran permutation histogram — observed I vs. permutation distribution](../figures/fig_lab6_moran_permutation.png)
 
-*Source: Lab 6 output; author's calculations.*
+*Source: Lab 6 pipeline / author calculation. Residual comparisons are sensitivity diagnostics, not causal governance effects.*
 
 3. **Heterogeneity by urbanization level**: a separate regression can test whether the conditional governance association differs with urbanization. Comparing Moran statistics across small subsamples is not, by itself, a test of that interaction.
 
@@ -332,19 +332,11 @@ The Northern Corridor reforms illustrate the chapter's central argument: institu
 
 ## Conclusion: Density as Opportunity and Threat
 
-Africa's urban transition is the largest demographic event of the twenty-first century. Whether it produces prosperity or crisis depends on institutions — specifically, on whether municipal and national governments can build the service capacity that converts density into productivity before density produces intolerable congestion.
+Africa's urban transition is the century's largest demographic event. Whether it produces prosperity or crisis depends on building municipal service capacity that converts density into productivity before congestion overwhelms cities.
 
-The evidence of this chapter suggests that the outcome will be spatially uneven. Cities with adequate institutional capacity — Nairobi, Kigali, Accra, Johannesburg — will generate agglomeration economies that justify their growth. Cities without it — Kinshasa, Luanda, many secondary cities across the Sahel and the Great Lakes region — will grow anyway, driven by demographics, but the growth will produce congestion without proportionate productivity gains.
+The outcome will be spatially uneven. Cities with adequate institutional capacity — Nairobi, Kigali, Accra, Johannesburg — can generate agglomeration economies; Kinshasa, Luanda, and many Sahelian secondary cities will grow demographically but produce congestion without proportionate productivity. Lab 6's governance-residualized Moran's $$I$$ tests whether institutional quality explains spatial clustering; the policy prescription follows accordingly.
 
-Lab 6's Moran's $$I$$ analysis offers a spatial diagnostic: if governance quality explains a significant share of the spatial clustering of economic activity, then the institutional thesis has empirical support. If it does not — if night-lights cluster for purely geographic reasons (coastal access, resource deposits, river systems) that governance cannot explain — then the policy prescription shifts from institutional reform to infrastructure investment and geographic targeting.
-
-The spatial tools of this book — particularly Lab 6's Moran's $$I$$ analysis with governance residualization — offer a framework for monitoring the outcome. If governance-residualized Moran's $$I$$ declines over time (governance becomes a weaker predictor of spatial clustering), it may indicate that institutional reform is succeeding — economic activity is becoming less dependent on governance quality and more determined by market forces and geographic fundamentals. If it increases (governance becomes a stronger predictor), institutional inequality is deepening, and the urban transition is producing winners and losers along governance lines.
-
-The policy stakes could not be higher. By 2050, one in four humans will live in Africa, and the majority will live in cities. Whether those cities look like Nairobi (productive, connected, institutionally capable) or like Kinshasa (congested, disconnected, institutionally weak) will determine not just Africa's economic trajectory but the global economy's center of gravity. Productive African urbanization would add hundreds of millions of consumers and workers to the global economy. Unproductive urbanization would create a humanitarian crisis of unprecedented scale — hundreds of millions of urban residents trapped in congested cities without the infrastructure, governance, or economic opportunity to build decent lives.
-
-The next chapter examines the continental-scale institutional response to this challenge: the African Continental Free Trade Area and the functional-corridor model of regional integration. If Chapter 13 asks why some African cities are productive and others are not, Chapter 14 asks whether continental-scale institutional reform can raise the floor — connecting the productive cities to each other and giving the unproductive ones a path to institutional upgrading.
-
-One external force is already reshaping the spatial calculus. China's Belt and Road infrastructure — the standard-gauge railways (Kenya's Mombasa-Nairobi SGR, Ethiopia's Addis Ababa-Djibouti line) and the Special Economic Zones (Hawassa Industrial Park, the Zambia-China zone in Chambishi) — is altering African urban geography in real time. New railway stations generate instant land-value gradients; SEZs produce satellite urban nodes; and Chinese-built residential developments like Kilamba, Angola — 750 apartment blocks for 500,000 residents — create entire districts by fiat. The question is the same one Chapter 14 poses for AfCFTA corridors: do these investments generate genuine spatial development with backward linkages, or do they function as enclaves connected to Chinese supply chains but institutionally disconnected from their host cities? Early evidence from Hawassa is mixed: over 30,000 garment workers, but most inputs are imported and most output exported, with limited local procurement. Whether BRI infrastructure catalyzes productive urbanization or becomes a new form of enclave depends, as this chapter's framework predicts, on host governments' institutional capacity to integrate externally financed infrastructure into their own spatial planning.
+Chapter 14 examines AfCFTA and functional corridors as the continental response — whether integration can connect productive cities and give weaker ones a path to institutional upgrading. External infrastructure from China's BRI is already reshaping urban geography; whether it catalyzes development or new enclaves depends, as this chapter argues, on host governments' capacity to integrate externally financed assets into domestic spatial planning.
 
 ---
 
