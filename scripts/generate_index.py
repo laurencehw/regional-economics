@@ -409,65 +409,114 @@ def build_term_registry(glossary_terms: list[str]) -> dict[str, list[str]]:
     return registry
 
 
+# Numbered section headers: 4.1, 3A.1, 3-A.1, A.2, A.10
+SECTION_HEADER_RE = re.compile(
+    r"^##\s+(\d+[ABab]?|\d+-[ABab]|[A-C])\.(\d+)\b",
+    re.MULTILINE,
+)
+
+
+def _normalize_locator(chapter_part: str, section_num: str) -> str:
+    """Normalize header numbers to index locators (3A.1 → 3-A.1)."""
+    ch = re.sub(r"^(\d+)([ABab])$", r"\1-\2", chapter_part)
+    if "-" in ch:
+        prefix, letter = ch.split("-", 1)
+        ch = f"{prefix}-{letter.upper()}"
+    return f"{ch}.{section_num}"
+
+
 def chapter_sort_key(label: str) -> tuple:
-    """Sort key for chapter labels: numeric chapters first, then appendices."""
-    if label == "P":
-        return (0, 0, "")
-    if label == "Bib":
-        return (3, 0, "")
-    # Appendices: A, B, C
-    if label in ("A", "B", "C"):
-        return (2, 0, label)
-    # Numeric chapters: "1", "3-A", "3-B", "10", etc.
-    parts = label.split("-")
+    """Sort key for chapter/section locators: numeric chapters first, then appendices."""
+    base = label.split(".")[0]
+    sec = int(label.split(".")[1]) if "." in label else 0
+    if base == "P":
+        return (0, 0, "", 0)
+    if base == "Bib":
+        return (3, 0, "", 0)
+    if base in ("A", "B", "C"):
+        return (2, 0, base, sec)
+    parts = base.split("-")
     num = int(parts[0])
     suffix = parts[1] if len(parts) > 1 else ""
-    return (1, num, suffix)
+    return (1, num, suffix, sec)
+
+
+def _chapter_base(locator: str) -> str:
+    return locator.split(".")[0]
+
+
+def _iter_sections(text: str, chapter_label: str) -> list[tuple[str, str]]:
+    """Return (locator, section_text) pairs for a chapter.
+
+    Locators are section numbers when available (e.g. '4.1', '3-A.2');
+    intro / unnumbered material uses the bare chapter label.
+    """
+    matches = list(SECTION_HEADER_RE.finditer(text))
+    if not matches:
+        return [(chapter_label, text)]
+
+    sections: list[tuple[str, str]] = []
+    if matches[0].start() > 0:
+        intro = text[: matches[0].start()]
+        if intro.strip():
+            sections.append((chapter_label, intro))
+
+    for i, m in enumerate(matches):
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        locator = _normalize_locator(m.group(1), m.group(2))
+        sections.append((locator, text[m.start():end]))
+    return sections
 
 
 def search_chapters(registry: dict[str, list[str]]) -> dict[str, list[str]]:
-    """Search each chapter for each term and return {display: [chapter_labels]}."""
-    # Load all chapter texts
-    chapter_texts: list[tuple[str, str]] = []  # (label, text)
+    """Search each chapter/section for each term and return locators."""
+    chapter_texts: list[tuple[str, str]] = []
     for fname, label in FILES_AND_LABELS:
         fpath = CHAPTERS_DIR / fname
         if fpath.exists():
-            text = fpath.read_text(encoding="utf-8")
-            chapter_texts.append((label, text))
+            chapter_texts.append((label, fpath.read_text(encoding="utf-8")))
         else:
             print(f"  WARNING: {fname} not found, skipping")
 
-    # Compile patterns
     compiled: dict[str, list[re.Pattern]] = {}
     for display, patterns in registry.items():
         compiled[display] = [re.compile(p, re.IGNORECASE) for p in patterns]
 
-    # Search
     index: dict[str, set[str]] = defaultdict(set)
     for label, text in chapter_texts:
-        for display, pat_list in compiled.items():
-            for pat in pat_list:
-                if pat.search(text):
-                    index[display].add(label)
-                    break  # one match per chapter is enough
+        for sec_locator, sec_text in _iter_sections(text, label):
+            for display, pat_list in compiled.items():
+                for pat in pat_list:
+                    if pat.search(sec_text):
+                        index[display].add(sec_locator)
+                        break
 
-    # Filter: require at least one main-chapter hit (not glossary/appendix-only),
-    # and drop near-universal terms that appear almost everywhere.
-    main_labels = {
-        label for label, _ in chapter_texts if label not in APPARATUS_ONLY
-    }
-    total_main = len(main_labels)
-    max_chapters = max(total_main - 2, 8)
+    main_bases = {label for label, _ in chapter_texts if label not in APPARATUS_ONLY}
+    max_chapters = max(len(main_bases) - 2, 8)
 
     result = {}
     for display, labels in index.items():
-        has_main = bool(labels & main_labels)
-        if not has_main:
-            continue  # glossary/bibliography-only or apparatus-only
-        if len(labels) > max_chapters:
+        bases = {_chapter_base(loc) for loc in labels}
+        if not (bases & main_bases):
             continue
-        sorted_labels = sorted(labels, key=chapter_sort_key)
-        result[display] = sorted_labels
+        if len(bases) > max_chapters:
+            continue
+        # Cap to 3 section locators per chapter (prefer numbered over intro);
+        # drop glossary-only apparatus letter C (definitions live in App. C).
+        by_base: dict[str, list[str]] = defaultdict(list)
+        for loc in labels:
+            base = _chapter_base(loc)
+            if base == "C":
+                continue
+            by_base[base].append(loc)
+        if not by_base:
+            continue
+        capped: list[str] = []
+        for locs in by_base.values():
+            numbered = sorted((x for x in locs if "." in x), key=chapter_sort_key)
+            bare = [x for x in locs if "." not in x]
+            capped.extend((numbered or bare)[:3])
+        result[display] = sorted(capped, key=chapter_sort_key)
 
     return result
 
@@ -497,10 +546,11 @@ def format_index(index: dict[str, list[str]]) -> str:
     lines = [
         "# Subject Index",
         "",
-        "Terms are indexed by chapter number. "
-        '"P" = Preface, "A"/"B"/"C" = Appendices A/B/C. '
-        "Bibliography-only and glossary-only matches are omitted. "
-        "Locators remain chapter-level (not page anchors) in this edition.",
+        "Terms are indexed by chapter and section number where available "
+        "(e.g. 4.1 = Chapter 4, Section 4.1). "
+        '"P" = Preface; "A"/"B" = Appendices A/B. '
+        "Bibliography and glossary locators are omitted. "
+        "At most three section locators are kept per chapter.",
         "",
     ]
 

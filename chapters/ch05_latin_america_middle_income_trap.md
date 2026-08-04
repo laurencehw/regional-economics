@@ -30,10 +30,6 @@ The chapter proceeds in five sections. Section 5.1 examines premature deindustri
 
 ## 5.1 Premature Deindustrialization: The Spatial Anatomy of Structural Regression
 
-![Figure 5.2: Middle-income trap — GDP per capita vs. growth rate across regions](../figures/fig_ch05_thematic_middle_income.png)
-
-*Source: World Bank WDI; Penn World Table 10.0. Series vintages as published; not rebased after the July 1, 2026 cutoff.*
-
 ### What Premature Deindustrialization Is — and Is Not
 
 Before examining the data, it is important to clarify the concept. Deindustrialization — the decline of manufacturing's share of GDP and employment — is a normal feature of economic development. Every rich country has deindustrialized: manufacturing's share of US GDP fell from 28 percent in 1953 to 11 percent in 2024 (BEA 2024); Germany's fell from 40 percent to 20 percent; Japan's from 35 percent to 20 percent. This decline reflects the success of manufacturing: productivity growth in manufacturing outpaces services, so fewer workers are needed to produce the same (or greater) output. As incomes rise, consumer preferences shift toward services (healthcare, education, entertainment, travel) that are inherently labor-intensive and difficult to automate.
@@ -66,6 +62,10 @@ These explanations are correct at the global level but incomplete at the sub-nat
 | Institutions mediate where deindustrialization bites | Chapter argument; Lab 1 interaction specs | Conditional spillover / descriptive | Moderate at best | Not a sharp natural experiment |
 | Labor reallocation to informal services can be growth-reducing | Diao, McMillan, and Rodrik (2019) | Growth accounting / structural change | Strong for Africa; analogous for LAC | Sector productivity measurement noisy |
 {% endhint %}
+
+![Figure 5.2: Middle-income trap — GDP per capita vs. growth rate across regions](../figures/fig_ch05_thematic_middle_income.png)
+
+*Source: World Bank WDI; Penn World Table 10.0. Series vintages as published; not rebased after the July 1, 2026 cutoff.*
 
 The timing of Brazil's manufacturing collapse illustrates how external demand shocks interact with these structural forces. The China-driven commodity super-cycle (2003--2013) sent iron ore, soybean, and petroleum prices to historic highs, and the resulting export revenues generated classic Dutch Disease dynamics: the Brazilian real appreciated 40 percent in real effective terms between 2003 and 2011 (IMF 2012), making manufactured exports progressively uncompetitive in precisely the sectors -- textiles, footwear, machinery -- where Brazil had built ISI-era capacity (Bresser-Pereira 2008). Manufacturing's share of Brazilian GDP fell from 18 percent in 2002 to 11 percent by 2014 (World Bank 2015), with the steepest annual declines coinciding with the years of peak commodity revenue. The commodity boom did not cause premature deindustrialization -- Rodrik's structural forces were already at work -- but it dramatically compressed the timeline, depriving firms and workers of the adjustment period that a more gradual transition might have allowed. The spatial consequence was that regions dependent on commodity extraction (Minas Gerais iron ore, Mato Grosso soybeans) boomed while manufacturing regions lost ground, widening the sub-national divergence that the rest of this section documents.
 

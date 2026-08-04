@@ -28,10 +28,6 @@ The chapter proceeds in six sections. Section 4.1 traces the NAFTA-to-USMCA tran
 
 ### The NAFTA Equilibrium
 
-![Figure 4.2: Manufacturing employment share — Rust Belt vs. Sun Belt, 1970–2020](../figures/fig_ch04_thematic_manufacturing_shift.png)
-
-*Source: BLS Current Employment Statistics. Illustrative pattern calibration, not exact cell reproduction; CES vintage as cited.*
-
 For a quarter century, NAFTA created a distinctive spatial pattern in North American manufacturing. The agreement's relatively simple rules of origin — typically requiring 62.5 percent regional value content for automotive products — allowed firms to optimize production across the continent on cost grounds. The result was a three-tier spatial hierarchy:
 
 - **The Great Lakes corridor** (Michigan, Ohio, Ontario) housed capital-intensive final assembly, leveraging deep supplier ecosystems and proximity to the continent's largest consumer market.
@@ -59,6 +55,10 @@ The shift from NAFTA to USMCA was not a technocratic optimization exercise. It w
 {% endhint %}
 
 USMCA was, in part, a response to this political economy. Its labor provisions and origin requirements were designed to make offshoring costlier and reshoring more attractive — to reverse, or at least slow, the spatial reallocation that NAFTA had facilitated. Whether it succeeded is an empirical question that Lab 1 is designed to address. The early evidence is mixed: the Reshoring Initiative tracked over 350,000 jobs announced for reshoring or FDI in 2022-2023 (Reshoring Initiative 2024), but much of this investment flows to the Sun Belt and CHIPS-eligible regions, not to the Rust Belt communities that lost jobs under NAFTA. The spatial mismatch between where jobs were lost and where they are being created is the Rust Belt paradox in its starkest form.
+
+![Figure 4.2: Manufacturing employment share — Rust Belt vs. Sun Belt, 1970–2020](../figures/fig_ch04_thematic_manufacturing_shift.png)
+
+*Source: BLS Current Employment Statistics. Illustrative pattern calibration, not exact cell reproduction; CES vintage as cited.*
 
 ### What USMCA Changed
 
@@ -238,6 +238,19 @@ Detroit had no equivalent platform. The University of Michigan is in Ann Arbor, 
 
 {% hint style="info" %}
 **Evidence and alternatives (Pittsburgh–Detroit).** The paired comparison is descriptive, not identified. Competing explanations include industry mix (diversified residual vs mono-industrial auto), philanthropic endowments, university location, racial segregation and white flight, municipal bankruptcy, and state fiscal capacity. Local institutions may mediate those forces; they are not shown here to be the sole cause of divergent post-industrial paths.
+{% endhint %}
+
+{% hint style="info" %}
+**Evidence strength: Why did Pittsburgh rebound while Detroit lagged?**
+
+| Claim | Key sources | Design | Strength | Caveat |
+|---|---|---|---|---|
+| Pre-existing university / hospital / philanthropic assets enabled reinvention | City histories; Moretti (2012) superstar logic | Descriptive paired comparison | Suggestive | Not a clean institutional experiment |
+| Industry mix and mono-industrial auto lock-in dominate | Economic history of Detroit auto complex | Structural narrative | Moderate for path dependence | Hard to separate from race/fiscal confounders |
+| Racial segregation, white flight, and municipal bankruptcy constrained Detroit | Urban fiscal / demographic history | Descriptive | Important confounders | Not identified against institutional channel |
+| CHIPS / reshoring will close Rust Belt gaps | Policy announcements; Reshoring Initiative counts | Announced investment geography | Weak as causal claim | Flows skew Sun Belt / thick-labor markets |
+
+Book stance: treat the Pittsburgh–Detroit contrast as a multi-factor path-dependence story in which institutions interact with industry mix and fiscal capacity — not as proof that “institutions alone” decide post-industrial fate.
 {% endhint %}
 
 The spatial econometric evidence from Lab 1 is consistent with this story. The interaction between institutional quality (border-governance/logistics quality) and spatial lag is significant: higher-quality institutions amplify spatial spillovers. This means that a positive demand shock in one region transmits more strongly to regions with better institutional capacity. The implication is that industrial policy (CHIPS, USMCA compliance support, infrastructure investment) is more effective when it targets regions with the institutional capacity to absorb and transmit the investment — a finding that is uncomfortable for the political rhetoric of "bringing jobs back to left-behind communities" but consistent with the economic logic of conditional spillovers.

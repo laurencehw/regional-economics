@@ -1,9 +1,5 @@
 # Chapter 6: The Flying Geese and East Asia's Tech Ascendancy
 
-![Figure 6.1: East Asia & ASEAN — technology corridors and special economic zones](../figures/fig_ch06_map_east_asia.png)
-
-*Source: Natural Earth; ASEAN Secretariat; national SEZ databases. Map geometry vintage: Natural Earth (downloaded for manuscript figures); SEZ locations schematic as of July 1, 2026 cutoff.*
-
 ---
 
 ## Introduction: The Chip That Built an Economy
@@ -29,6 +25,10 @@ The chapter proceeds as follows. Section 6.1 examines the flying-geese framework
 ---
 
 ## 6.1 The Flying Geese: Mechanism, Evidence, and Institutional Critique
+
+![Figure 6.1: East Asia & ASEAN — technology corridors and special economic zones](../figures/fig_ch06_map_east_asia.png)
+
+*Source: Natural Earth; ASEAN Secretariat; national SEZ databases. Map geometry vintage: Natural Earth (downloaded for manuscript figures); SEZ locations schematic as of July 1, 2026 cutoff.*
 
 ### The Original Framework
 

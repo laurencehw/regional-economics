@@ -171,6 +171,8 @@ This book analyzes spatial economics at the regional and global scale — how re
 
 **Assessment ideas.** Each chapter ends with discussion questions (typically five to eight) that can serve as essay prompts. The labs produce replicable outputs (model summaries, datasets, visualizations) that can be submitted as empirical assignments. A capstone option: students choose a region not covered in their pathway and produce a "Regional Diagnostic" modeled on the book's template.
 
+**Reading cues (theory / evidence / illustration / speculation).** Callout boxes and figure notes are coded as follows: definitional and framework boxes introduce *theory*; “Evidence and alternatives” and “Evidence strength” tables summarize *published or lab evidence* with explicit caveats; figure captions marked “illustrative,” “calibrated,” or “author calculation” are *illustrations*, not reproductions of a single published table; forward-looking passages labeled “Interpretation / speculation” or scenario language (SSP–RCP, Vision 2030 envelopes) should not be graded as established fact.
+
 ---
 
 ## A Note on Regional Scope

@@ -168,7 +168,7 @@ The manuscript is ready for external review when:
 
 - [~] Label each empirical item as published evidence, author calculation, lab output, synthetic illustration, preliminary result, or hypothesis. Ch. 6/8/11 figure notes and Lab 2 evidence status now distinguish illustration vs author calculation.
 - [~] Add uncertainty and sample/specification notes to all author calculations. Started on Ch. 6/8/11 figures and Lab 2 share specs.
-- [~] Add evidence-strength tables where competing findings are central. Added for Cohesion (Ch. 9), premature deindustrialization (Ch. 5), Gulf diversification (Ch. 11), and African urbanization (Ch. 13).
+- [~] Add evidence-strength tables where competing findings are central. Added for Cohesion (Ch. 9), premature deindustrialization (Ch. 5), Gulf diversification (Ch. 11), African urbanization (Ch. 13), Pittsburgh–Detroit (Ch. 4), and brain circulation (Ch. 8).
 - [~] Ensure calibrated figures cannot be mistaken for reproduced data. Explicit “illustrative / not exact reproduction” notes on Ch. 6 and 8 charts.
 
 ### P2. Regional Balance
@@ -184,8 +184,8 @@ The manuscript is ready for external review when:
 
 - [~] Cut repeated framing and chapter conclusions by approximately 15–20%. Trimmed conclusions in Ch. 4–16 regional/synthesis set (plus earlier Ch. 6/8/11).
 - [~] Reduce repeated use of “institutional thickness,” “binding constraint,” “spatial implication,” and formulaic transitions. Diversified filler uses across Ch. 3-B/4/6/8–10/12–16; keep conceptual “institutional thickness” where it is the framework term (esp. Ch. 2/12).
-- [ ] Separate theory, evidence, illustration, and speculation visually.
-- [~] Break long paragraphs and sentences where argument structure is obscured. Split densest OCA and people-vs-places blocks in Ch. 9–10; further passes remain.
+- [~] Separate theory, evidence, illustration, and speculation visually. Preface reading cues; Interpretation/speculation boxes in Ch. 14–16 and Groundswell (Ch. 15); further chapters as needed.
+- [~] Break long paragraphs and sentences where argument structure is obscured. Split densest blocks in Ch. 3-B/9–10/14/16; further passes as needed.
 - [x] Reconcile pathway workload estimates with actual chapter length. Added instructor workload note (~95–115k words / 17–21 pp/week); moved Pathway 1’s misplaced week-14 elective into Electives and gave Ch. 14/15 two-week slots.
 - [x] Standardize discussion-question counts or remove the numerical promise. Preface now says “typically five to eight”; chapter sets standardized to six questions each.
 
@@ -196,11 +196,11 @@ The manuscript is ready for external review when:
 - [x] Split Chapter 16's wide services-regime table. Tables 16.1a/16.1b already split; intro clarified.
 - [~] Use a muted, accessible, color-blind-safe palette. QUAL_PALETTE already muted; Ch. 9 RdYlBu_r; Ch. 15/5 desaturated accents.
 - [~] Add source, vintage, method, and uncertainty notes to every figure. Regional/synthesis chapters (4–16) now carry expanded figure source notes; theory chapters pending if needed.
-- [ ] Distribute figures through chapters rather than front-loading them.
+- [~] Distribute figures through chapters rather than front-loading them. Moved opener maps into first analytical sections in Ch. 6/7/10/15 (plus earlier Ch. 4/5/14 moves).
 
 ### P5. Glossary, Index, and Cross-References
 
-- [ ] Replace chapter-only index locators with page or section anchors.
+- [~] Replace chapter-only index locators with page or section anchors. Section-level locators (e.g. 4.1, 3-A.2) now generated; page anchors still open.
 - [~] Prevent bibliography/glossary-only and ambiguous regex matches from generating index entries. `generate_index.py` now omits bibliography scanning and drops apparatus-only hits; regenerated `subject_index.md` (267 terms).
 - [~] Add subentries and curated “see/see also” links. Capstone see-also links added; fuller subentry pass still open.
 - [x] Add missing capstone terms: stranded regions, climate migration, digital sovereignty, Splinternet, just transition, and related concepts.
@@ -263,4 +263,6 @@ The manuscript is ready for external review when:
 | 2026-08-03 | P1 | Pathway workload note + Pathway 1 schedule cleanup | Word-count audit of ch01–ch16 |
 | 2026-08-03 | P1/P4/P5 | Evidence-strength tables (Ch. 9/13); B-range map polish (9/13–15); internal-ref auditor; Ch. 16 table intro | Figure smoke ch09/13/14/15; `audit_internal_refs.py` clean |
 | 2026-08-03 | P2/P1/P3 | Case-selection notes Ch. 4/6/7/10/12/14; evidence tables Ch. 5/11; long-paragraph breaks Ch. 9–10 | Text review |
+| 2026-08-03 | P3/P4/P5 | Section-level index locators; figure redistribution Ch. 6/7/10/15; long-para splits Ch. 3-B/14/16; speculation boxes Ch. 14–16 | `generate_index.py`; text review |
+| 2026-08-03 | P1 | Evidence-strength tables for Pittsburgh–Detroit (Ch. 4) and brain circulation (Ch. 8) | Text review |
 

@@ -1,9 +1,5 @@
 # Chapter 10: The North-South Divide and Dis-Integration
 
-![Figure 10.1: EU North-South divide and Brexit geography](../figures/fig_ch10_map_north_south.png)
-
-*Source: Natural Earth; Eurostat regional accounts. Regional map schematic; accounts vintage as cited (July 1, 2026 cutoff).*
-
 ---
 
 ## Introduction: When Integration Reverses
@@ -21,6 +17,10 @@ This chapter examines four dimensions of European dis-integration. Section 10.1 
 ---
 
 ## 10.1 The Eurozone Crisis: Monetary Union Without Fiscal Union
+
+![Figure 10.1: EU North-South divide and Brexit geography](../figures/fig_ch10_map_north_south.png)
+
+*Source: Natural Earth; Eurostat regional accounts. Regional map schematic; accounts vintage as cited (July 1, 2026 cutoff).*
 
 ### The Architecture of Asymmetry
 
