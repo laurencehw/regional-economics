@@ -191,8 +191,8 @@ The manuscript is ready for external review when:
 
 ### P4. Figures and Tables
 
-- [ ] Fix all label collisions and C-range figures identified in the editorial audit.
-- [ ] Add a Gulf inset to the Chapter 11 map.
+- [~] Fix all label collisions and C-range figures identified in the editorial audit. Priority C/C- maps (Ch. 4/7/11/12) regenerated with offset/inset fixes; Ch. 9 figure order corrected (9.2 fan, 9.3 clubs).
+- [x] Add a Gulf inset to the Chapter 11 map.
 - [ ] Split Chapter 16's wide services-regime table.
 - [ ] Use a muted, accessible, color-blind-safe palette.
 - [~] Add source, vintage, method, and uncertainty notes to every figure. Regional/synthesis chapters (4–16) now carry expanded figure source notes; theory chapters pending if needed.
@@ -258,4 +258,5 @@ The manuscript is ready for external review when:
 | 2026-08-03 | P3 / P5 / F1 | Phrase diversification (spatial implication / binding constraint fillers); index generator filters + see-also; regenerated subject index; ledgered Ch. 4/14/16 quantitative claims | `python scripts/generate_index.py` |
 | 2026-08-03 | P1 / F1 | Standardized discussion questions to six per chapter; softened preface count promise; ledgered Ch. 9/10 EU fiscal magnitudes | Question-count script; text review |
 | 2026-08-03 | P2 | Case-selection + comparative notes (CAFTA/Caribbean; Pakistan; Maghreb; francophone WA/Ethiopia); Oceania/Central Asia scope note confirmed | Text review |
+| 2026-08-03 | P4 | Gulf inset on Ch. 11 map; label-offset fixes Ch. 4/7/12; widen C-range maps; renumber Ch. 9 figures | Figure smoke tests ch04/07/11/12 |
 

@@ -67,20 +67,64 @@ def plot_mena_energy_map(output_dir: Path, seed: int = 42) -> dict:
     if ann.get("cities"):
         annotate_cities(ax, project_cities(ann["cities"], crs))
 
-    # Energy field markers (project to map CRS) — alternate offsets to reduce overlap
+    # Energy field markers on main map (markers only; labels live in Gulf inset)
     energy_zones = ann.get("energy_zones", [])
     if energy_zones:
-        proj_zones = project_cities(energy_zones, crs)  # same lon/lat structure
-        offset_cycle = [(5, 5), (-5, 8), (5, -8), (-5, -5), (8, 3), (-8, 3)]
-        for idx, field in enumerate(proj_zones):
+        proj_zones = project_cities(energy_zones, crs)
+        for field in proj_zones:
             ax.plot(field["lon"], field["lat"], "^", color="#c44e52",
-                    markersize=7, zorder=5, alpha=0.8)
-            dx, dy = offset_cycle[idx % len(offset_cycle)]
-            ax.annotate(field["name"], (field["lon"], field["lat"]),
-                        fontsize=6, ha="left", va="bottom",
-                        xytext=(dx, dy), textcoords="offset points",
-                        color="#c44e52",
-                        bbox=dict(facecolor="white", alpha=0.85, edgecolor="none", pad=1))
+                    markersize=6, zorder=5, alpha=0.8)
+
+    # Gulf inset: dense UAE/Qatar/fields cluster
+    from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+    from matplotlib.patches import Rectangle
+
+    gulf_iso = {"ARE", "QAT", "BHR", "KWT"}
+    gulf = mena_proj[mena_proj["iso3"].isin(gulf_iso | {"SAU", "OMN", "IRN"})]
+    if not gulf.empty:
+        axins = inset_axes(ax, width="38%", height="38%", loc="upper right",
+                           borderpad=0.8)
+        for cv in gulf["_color"].unique():
+            subset = gulf[gulf["_color"] == cv]
+            subset.plot(ax=axins, color=cv, edgecolor=BORDER_COLOR,
+                        linewidth=0.4, alpha=0.7)
+        gx0, gy0, gx1, gy1 = gulf.total_bounds
+        # Focus on Arabian Gulf littoral
+        axins.set_xlim(gx0 + (gx1 - gx0) * 0.35, gx1 + (gx1 - gx0) * 0.02)
+        axins.set_ylim(gy0 + (gy1 - gy0) * 0.35, gy1 - (gy1 - gy0) * 0.05)
+        axins.set_xticks([])
+        axins.set_yticks([])
+        axins.set_title("Gulf inset", fontsize=6, pad=2)
+        for spine in axins.spines.values():
+            spine.set_edgecolor("#555555")
+            spine.set_linewidth(0.8)
+
+        inset_cities = ann.get("gulf_inset_cities", [])
+        if inset_cities:
+            annotate_cities(axins, project_cities(inset_cities, crs))
+        if energy_zones:
+            inset_zones = project_cities(energy_zones, crs)
+            offset_cycle = [(6, 6), (-8, 8), (6, -10)]
+            for idx, field in enumerate(inset_zones):
+                axins.plot(field["lon"], field["lat"], "^", color="#c44e52",
+                           markersize=5, zorder=5, alpha=0.9)
+                odx, ody = offset_cycle[idx % len(offset_cycle)]
+                axins.annotate(
+                    field["name"], (field["lon"], field["lat"]),
+                    fontsize=5.5, ha="left", va="bottom",
+                    xytext=(odx, ody), textcoords="offset points",
+                    color="#c44e52",
+                    bbox=dict(facecolor="white", alpha=0.85, edgecolor="none", pad=0.5),
+                )
+
+        # Indicate inset extent on main map
+        rect = Rectangle(
+            (gx0 + (gx1 - gx0) * 0.35, gy0 + (gy1 - gy0) * 0.35),
+            (gx1 - gx0) * 0.67, (gy1 - gy0) * 0.60,
+            linewidth=0.8, edgecolor="#555555", facecolor="none",
+            linestyle="--", zorder=7,
+        )
+        ax.add_patch(rect)
 
     from matplotlib.patches import Patch
     from matplotlib.lines import Line2D
@@ -93,7 +137,8 @@ def plot_mena_energy_map(output_dir: Path, seed: int = 42) -> dict:
     ax.legend(handles=legend_items, fontsize=5.5, loc="lower left", frameon=False)
 
     add_figure_source(fig, "Natural Earth; EIA International Energy Statistics.")
-    fig.tight_layout(rect=[0, 0.03, 1, 1])
+    # inset_axes is incompatible with tight_layout; pad manually for source note
+    fig.subplots_adjust(left=0.04, right=0.98, top=0.94, bottom=0.06)
     paths = save_figure(fig, output_dir, "fig_ch11_map_mena_energy")
     plt.close(fig)
     return {"figure": "fig_ch11_map_mena_energy", "type": "map", **paths}

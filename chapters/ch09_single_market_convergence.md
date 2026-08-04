@@ -71,9 +71,9 @@ The empirical literature on Cohesion Fund effectiveness is large, methodological
 **Conditional vs. Absolute Convergence.** *Absolute convergence* holds that poorer regions grow faster than richer regions unconditionally, eventually reaching the same income level. *Conditional convergence* holds that regions converge toward their own steady state, which depends on institutional quality, human capital, and policy environment --- meaning that two regions with different institutions may converge at different rates toward different endpoints. The EU evidence strongly supports conditional convergence: regions with stronger institutions and higher human capital stocks show larger growth responses to the same Cohesion Fund transfers (Becker et al. 2013), implying that institutional environment mediates the convergence process.
 {% endhint %}
 
-Figure 9.3 presents the convergence fan chart, plotting GDP per capita trajectories for EU member states relative to the EU average, illustrating the divergent paths of the CEE convergence club versus the Mediterranean periphery.
+Figure 9.2 presents the convergence fan chart, plotting GDP per capita trajectories for EU member states relative to the EU average, illustrating the divergent paths of the CEE convergence club versus the Mediterranean periphery.
 
-![Figure 9.3: EU convergence fan — GDP per capita trajectories relative to EU average](../figures/fig_ch09_convergence_fan.png)
+![Figure 9.2: EU convergence fan — GDP per capita trajectories relative to EU average](../figures/fig_ch09_convergence_fan.png)
 
 *Source: Author calculation from Eurostat regional accounts. Convergence charts are constructed series; see Lab 4 eligibility-threshold notes.*
 
@@ -187,7 +187,7 @@ Brexit severed London from the Single Market for services, and the consequences 
 
 The spatial pattern of these relocations reveals the gravitational forces that operate in services trade. Each destination city has attracted a specific functional specialization: Dublin has become the EU base for technology companies and fintech; Frankfurt has attracted banking operations that need ECB proximity; Amsterdam has captured euro-denominated trading; Paris has drawn asset management and advisory functions. No single city has replaced London — the agglomeration economies that made London dominant cannot be replicated — but the forced dis-integration of Brexit has distributed functions across multiple European cities, creating a polycentric financial geography that may prove more resilient than the monocentric model that preceded it. The NEG framework of Chapter 1 provides a useful lens: London's dominance represented a stable equilibrium in a world of low institutional barriers within the Single Market; the imposition of regulatory barriers through Brexit shifted the equilibrium toward polycentricity, and whether the new configuration is stable or transitional depends on whether continental European cities can develop the specialized labor markets, legal infrastructure, and network externalities that sustained London's advantage. The evidence to date suggests that the polycentric structure is self-reinforcing: each city's specialization reduces direct competition among them and creates complementarities (Amsterdam's trading infrastructure feeds Frankfurt's settlement operations, which generate legal work for Luxembourg's fund management), producing a network equilibrium that no single city has an incentive to disrupt.
 
-![Figure 9.2: EU convergence clubs — GDP per capita relative to EU average](../figures/fig_ch09_chart_eu_convergence_bar.png)
+![Figure 9.3: EU convergence clubs — GDP per capita relative to EU average](../figures/fig_ch09_chart_eu_convergence_bar.png)
 *Source: Author calculation from Eurostat (2023). Index: EU27 = 100, PPS-adjusted; NUTS and PPP revision sensitivity noted in text.*
 
 ---

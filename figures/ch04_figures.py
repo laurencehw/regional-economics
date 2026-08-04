@@ -42,7 +42,7 @@ def plot_north_america_map(output_dir: Path, seed: int = 42) -> dict:
         ["GTM", "BLZ", "HND", "CUB", "JAM", "HTI", "DOM"]
     )]
 
-    fig, ax = plt.subplots(figsize=FIGSIZE_MAP)
+    fig, ax = plt.subplots(figsize=(7.5, 5.5))
     try:
         na_proj = na.to_crs(PROJECTIONS["americas"])
         ctx_proj = context.to_crs(PROJECTIONS["americas"])

@@ -45,7 +45,7 @@ def plot_conflict_zones_map(output_dir: Path, seed: int = 42) -> dict:
 
     mena["_color"] = mena["iso3"].map(color_fn)
 
-    fig, ax = plt.subplots(figsize=FIGSIZE_MAP)
+    fig, ax = plt.subplots(figsize=FIGSIZE_WIDE)
     try:
         mena_proj = mena.to_crs(PROJECTIONS["mena"])
         ctx_proj = context.to_crs(PROJECTIONS["mena"])

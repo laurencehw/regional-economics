@@ -16,7 +16,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from figure_utils import (
-    FIGSIZE_MAP, FIGSIZE_THEMATIC, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
+    FIGSIZE_MAP, FIGSIZE_THEMATIC, FIGSIZE_WIDE, LAND_COLOR, WATER_COLOR, BORDER_COLOR,
     REGION_COLORS, add_figure_source, save_figure, save_summary,
     add_common_args, get_output_dir, setup_map_ax, load_annotations,
     annotate_cities, annotate_corridors, project_cities, project_corridors,
@@ -36,7 +36,7 @@ def plot_china_asean_map(output_dir: Path, seed: int = 42) -> dict:
     focus = world[world["iso3"].isin(["CHN"] + asean)]
     context = world[world["iso3"].isin(["IND", "JPN", "KOR", "TWN", "RUS"])]
 
-    fig, ax = plt.subplots(figsize=FIGSIZE_MAP)
+    fig, ax = plt.subplots(figsize=FIGSIZE_WIDE)
     try:
         focus_proj = focus.to_crs(PROJECTIONS["east_asia"])
         ctx_proj = context.to_crs(PROJECTIONS["east_asia"])
