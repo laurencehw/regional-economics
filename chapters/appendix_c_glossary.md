@@ -134,7 +134,7 @@
 
 **Premature deindustrialization.** The decline of manufacturing's share of GDP and employment at income levels well below those at which advanced economies deindustrialized. Rodrik (2016) documented this pattern across developing countries, suggesting that the traditional manufacturing-led growth path may be closing for late industrializers. Ch. 5, Ch. 13.
 
-**Telemigration.** Baldwin's (2019) term for the remote provision of services across borders by workers who remain in their home country — a form of Mode 1 services trade that replicates some features of labor migration without physical movement. The spatial implications are potentially transformative: if services tasks can be performed remotely at scale, the geographic distribution of services employment could shift dramatically toward lower-cost locations. Ch. 16.
+**Telemigration.** Baldwin's (2019) term for the remote provision of services across borders by workers who remain in their home country — a form of Mode 1 services trade that replicates some features of labor migration without physical movement. The consequences for place are potentially transformative: if services tasks can be performed remotely at scale, the geographic distribution of services employment could shift dramatically toward lower-cost locations. Ch. 16.
 
 ---
 

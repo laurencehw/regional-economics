@@ -22,10 +22,36 @@ Manuscript information cutoff: **July 1, 2026** (see preface).
 | F1-14-03 | 14 | AfCFTA ROO coverage 92.3% of tariff lines | tralac 2024; Naumann 2024 | as of 2024 (text); cutoff July 1, 2026 | continental | qualified | Re-check if Secretariat publishes a later share |
 | F1-07-04 | 7 | Lab 2 ASEAN/Northeast Asia share-mode β coefficients | `labs/lab2_asia/output/real_asia/specs_share/` | author calculation | 10 Asian economies, `_T`/OECD | qualified | Negative point estimates, not significant; not manuscript findings |
 | F1-04-03 | 4 | CHIPS Act ~$52.7B subsidies + ~$24B tax credits | CRS 2023 | 2022 statute; awards as of July 1, 2026 cutoff | United States | verified | Facility AUM figures are announcements, not realized capex |
-| F1-04-04 | 4 | North American goods trade >$1.5T in 2024 | US Census Bureau 2025 | 2024 | USMCA partners | needs-source | Confirm series definition (goods only; customs basis) |
+| F1-04-04 | 4 | North American goods trade >$1.5T in 2024 | US Census Bureau 2025 | 2024 | USMCA partners | qualified | Goods trade with Canada+Mexico; confirm FT900/customs basis vs services-inclusive totals |
 | F1-07-05 | 7 | RCEP 15 members; ~30% global GDP; EIF from Jan 2022 | ASEAN Secretariat 2024 | as of July 1, 2026 cutoff | RCEP | qualified | Staggered entry into force by member |
 | F1-11-02 | 11 | Gulf SWF AUM (ADIA/KIA/QIA/PIF aggregate >$3T) | SWF Institute 2024 | 2024 vintage; cutoff July 1, 2026 | GCC | qualified | AUM estimates vary by source and valuation date |
 | F1-16-01 | 16 | Global digital services trade $3.8T in 2022 | WTO 2023 | 2022 | global | verified | Growth-rate comparisons are approximate |
+| F1-04-05 | 4 | TSMC Phoenix ~$40B; Samsung Taylor ~$17B; Intel Chandler ~$20B (announced) | TSMC 2024; Samsung 2021; Intel 2023 | announcements through July 1, 2026 cutoff | US Sun Belt fabs | qualified | Announced/committed investment, not realized capex |
+| F1-04-06 | 4 | Micron Syracuse ~$100B long-term; NY state incentives ~$5.5B | Micron 2022; New York State 2022 | announcements | Upstate NY | qualified | Multi-decade announcement; not current spend |
+| F1-04-07 | 4 | IRA clean-energy provisions ~$369B | US Congress 2022 (statute scorekeeping) | 2022 | United States | verified | Budgetary estimate; outlays contingent on uptake |
+| F1-04-08 | 4 | Battery Belt announced investment >$50B | BEA 2024 (as cited) | 2024 vintage | TN/GA/KY/MI corridor | needs-source | Confirm BEA series vs press aggregation |
+| F1-04-09 | 4 | Ambassador Bridge ~$300M goods/day; 2022 blockade ~$300–500M/day auto GDP | BTS 2023; contemporaneous estimates | 2022–2023 | Detroit–Windsor | qualified | Daily value fluctuates; blockade range is estimate |
+| F1-04-10 | 4 | Reshoring Initiative >350k jobs announced 2022–2023 | Reshoring Initiative 2024 | 2022–2023 | United States | qualified | Announcements, not verified hires |
+| F1-14-04 | 14 | Northern Corridor transit time 22→6 days via process reform | TradeMark Africa / World Bank corridor materials | ~2012–2023 reforms | Mombasa–Kampala–Kigali | verified | Canonical corridor result; not continental average |
+| F1-14-05 | 14 | Durban–Mombasa ~$1,800 / 18–22 days vs Durban–Rotterdam ~$1,200 / 16–18 days (2023) | World Bank LPI 2023; Freightos 2023 | 2023 spot | Africa coastal vs Europe | qualified | Spot freight; relative pattern more robust than levels |
+| F1-14-06 | 14 | Malaba OSBP cut crossing from 2–3 days to 4–8 hours | TradeMark Africa / corridor reports | post-OSBP | Kenya–Uganda | verified | Average crossing times; not door-to-door |
+| F1-14-07 | 14 | PAPSS potential savings ~$5B/year | Afreximbank 2022 | estimate | continental FX settlement | qualified | Potential, adoption-contingent |
+| F1-14-08 | 14 | Intra-African trade share ~15% (2023); AfCFTA +~52% by 2035 | UNCTAD 2024; UNECA 2024 | 2023 / scenario to 2035 | Africa | qualified | 2035 figure is model projection |
+| F1-16-02 | 16 | Upwork GSV $3.8B (2022); Fiverr revenue $337M (2022) | Upwork 2023; Fiverr 2023 | 2022 | global platforms | verified | Platform segment ≪ total services trade |
+| F1-16-03 | 16 | ~14M workers in cross-border digital platform work | ILO 2023 | 2023 | global | qualified | Excludes traditional BPO/corporate remote |
+| F1-16-04 | 16 | Coursera >130M registered learners by 2023 | Coursera 2024 | 2023 | global | verified | Registrations ≠ completions |
+| F1-16-05 | 16 | ~30% of US jobs could be performed remotely | Althoff et al. 2022 | 2022 | United States | verified | Capability estimate, not realized telemigration |
+| F1-09-03 | 9 | Cohesion Policy ~€392B per 2021–2027 MFF | European Commission 2021 | 2021–2027 | EU | verified | Programming-period allocation, not annual outturn |
+| F1-09-04 | 9 | Poland largest absolute cohesion recipient ~€76B (2021–2027) | European Commission 2021 | 2021–2027 | Poland | verified | Across ERDF/ESF+/CF as cited |
+| F1-09-05 | 9 | Germany net contribution ~€100 per citizen/year | European Commission 2024 | recent vintage in text | Germany | qualified | Per-capita net contribution; methodology varies by year |
+| F1-09-06 | 9 | Intra-EU services trade ~30% below potential; gap ~1.8% GDP / ~€300B | European Commission 2023 | 2023 estimate | EU | qualified | Counterfactual Commission estimate |
+| F1-09-07 | 9 | Brexit FS relocation ~7–10k jobs; ~€1T assets | Springford 2022 | post-Brexit early years | London→EU hubs | qualified | Estimate range; not a census of all moves |
+| F1-10-01 | 10 | Greece GDP/capita ~93%→72% of EU average (2008–2014) | Eurostat 2015 | 2008/2014 | Greece | verified | PPS/EU-average series as cited |
+| F1-10-02 | 10 | Greek real GDP fell ~25% (2008–2013) | Eurostat 2014 | 2008–2013 | Greece | verified | |
+| F1-10-03 | 10 | Spain construction job loss ~2M (2008–2013) | INE 2014 | 2008–2013 | Spain | verified | |
+| F1-10-04 | 10 | NGEU Italy largest recipient ~€191B grants+loans | European Commission 2021 | NGEU allocations | Italy | verified | Envelope, not disbursed-to-date |
+| F1-10-05 | 10 | Ireland bank bailout costs ~40% of GDP | IMF 2015 | crisis peak | Ireland | qualified | Peak fiscal cost estimate; definitions vary |
+| F1-10-06 | 10 | Greek emigration ~500k (2010–2019) | ELSTAT 2020 | 2010–2019 | Greece | qualified | Net vs gross emigration distinctions matter |
 
 | F1-06-02 | 6 | TSMC >90% of most advanced logic (<7nm) | SIA 2023 | 2023 industry estimate | global advanced nodes | qualified | Share refers to leading-edge logic, not all semiconductors |
 | F1-06-03 | 6 | Leading-edge fab cost $15–20B | SIA 2023 | 2023 | global | qualified | Order-of-magnitude; node- and location-specific |
@@ -40,7 +66,7 @@ Manuscript information cutoff: **July 1, 2026** (see preface).
 
 ## Extraction backlog (needs-source pass)
 
-Next quantitative sweep: Ch. 4 (IRA/CHIPS plant announcements beyond CRS totals), Ch. 14 (corridor transit-time claims), Ch. 16 (platform/AI subscriber counts), Ch. 9/10 EU fiscal magnitudes.
+Partially cleared: Ch. 4/9/10/14/16 quantitative sweeps ledgered (many `qualified`). Remaining: F1-04-08 Battery Belt source check; Ch. 16 AI subscriber/user counts if retained in text.
 
 ## How to extend
 

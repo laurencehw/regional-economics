@@ -39,8 +39,11 @@ FILES_AND_LABELS = [
     ("appendix_a_mathematical_foundations.md", "A"),
     ("appendix_b_data_software_guide.md", "B"),
     ("appendix_c_glossary.md", "C"),
-    ("bibliography.md", "Bib"),
+    # bibliography.md intentionally omitted: bibliography-only hits inflate the index
 ]
+
+# Locators that should not stand alone (definition-only / apparatus-only)
+APPARATUS_ONLY = {"C", "A", "B", "P"}
 
 
 def extract_glossary_terms(glossary_path: Path) -> list[str]:
@@ -360,6 +363,10 @@ def build_term_registry(glossary_terms: list[str]) -> dict[str, list[str]]:
         "infrastructure": [r"\binfrastructure\b"],
         "internally displaced persons": [r"\binternally\s+displaced\b", r"\bIDP\b"],
         "just transition": [r"\bjust\s+transition\b"],
+        "climate migration": [r"\bclimate\s+migration\b"],
+        "digital sovereignty": [r"\bdigital\s+sovereignty\b"],
+        "Splinternet": [r"\bSplinternet\b"],
+        "stranded regions": [r"\bstranded\s+regions?\b", r"\bstranded\s+assets?\b"],
         "knowledge economy": [r"\bknowledge\s+economy\b"],
         "labor mobility": [r"\blabor\s+mobility\b", r"\blabour\s+mobility\b"],
         "land use": [r"\bland\s+use\b"],
@@ -444,26 +451,42 @@ def search_chapters(registry: dict[str, list[str]]) -> dict[str, list[str]]:
                     index[display].add(label)
                     break  # one match per chapter is enough
 
-    # Filter: only keep terms that appear in at least 1 chapter
-    # (but not in ALL chapters — those are too generic)
-    total_chapters = len(chapter_texts)
-    max_chapters = total_chapters - 2  # allow very common terms but not literally everywhere
+    # Filter: require at least one main-chapter hit (not glossary/appendix-only),
+    # and drop near-universal terms that appear almost everywhere.
+    main_labels = {
+        label for label, _ in chapter_texts if label not in APPARATUS_ONLY
+    }
+    total_main = len(main_labels)
+    max_chapters = max(total_main - 2, 8)
 
     result = {}
     for display, labels in index.items():
-        if 1 <= len(labels) <= max_chapters:
-            sorted_labels = sorted(labels, key=chapter_sort_key)
-            result[display] = sorted_labels
+        has_main = bool(labels & main_labels)
+        if not has_main:
+            continue  # glossary/bibliography-only or apparatus-only
+        if len(labels) > max_chapters:
+            continue
+        sorted_labels = sorted(labels, key=chapter_sort_key)
+        result[display] = sorted_labels
 
     return result
 
 
+SEE_ALSO = {
+    "stranded regions": "see also just transition; decarbonization",
+    "climate migration": "see also migration; refugee",
+    "digital sovereignty": "see also Splinternet; GDPR (General Data Protection Regulation)",
+    "Splinternet": "see also digital sovereignty; digital services",
+    "just transition": "see also stranded regions; decarbonization",
+    "TiVA (Trade in Value Added)": "see also GVC (Global Value Chain); servicification",
+    "Institutional thickness": "see also Inclusive institutions; Path dependency",
+}
+
+
 def format_index(index: dict[str, list[str]]) -> str:
     """Format the index as markdown, grouped by first letter."""
-    # Sort entries case-insensitively
-    # Strip leading special chars for sorting (e.g., beta, sigma)
+
     def sort_key(display: str) -> str:
-        # Remove leading non-alpha chars for sorting
         clean = re.sub(r"^[^a-zA-Z]+", "", display)
         if not clean:
             clean = display
@@ -475,13 +498,14 @@ def format_index(index: dict[str, list[str]]) -> str:
         "# Subject Index",
         "",
         "Terms are indexed by chapter number. "
-        '"P" = Preface, "A"/"B"/"C" = Appendices A/B/C, "Bib" = Bibliography.',
+        '"P" = Preface, "A"/"B"/"C" = Appendices A/B/C. '
+        "Bibliography-only and glossary-only matches are omitted. "
+        "Locators remain chapter-level (not page anchors) in this edition.",
         "",
     ]
 
     current_letter = None
     for display in sorted_entries:
-        # Determine letter heading
         clean = re.sub(r"^[^a-zA-Z]+", "", display)
         if not clean:
             letter = "#"
@@ -494,7 +518,11 @@ def format_index(index: dict[str, list[str]]) -> str:
             lines.append("")
 
         chapters_str = ", ".join(index[display])
-        lines.append(f"**{display}**, {chapters_str}")
+        see = SEE_ALSO.get(display)
+        if see:
+            lines.append(f"**{display}**, {chapters_str}; {see}")
+        else:
+            lines.append(f"**{display}**, {chapters_str}")
         lines.append("")
 
     return "\n".join(lines)

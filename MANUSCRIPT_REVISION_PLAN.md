@@ -173,21 +173,21 @@ The manuscript is ready for external review when:
 
 ### P2. Regional Balance
 
-- [ ] Expand case-selection rationale in every regional part.
-- [ ] Broaden Latin American treatment of Central America and the Caribbean.
-- [ ] Broaden South Asian treatment beyond India and Bangladesh.
-- [ ] Broaden MENA treatment beyond the GCC and Syria.
-- [ ] Add proportionate treatment of francophone West Africa, Central Africa, Ethiopia, Sudan, and current conflict/displacement cases.
-- [ ] Review whether Oceania and Central Asia need a dedicated comparative box or an explicit scope note.
+- [~] Expand case-selection rationale in every regional part. Added selection notes in Ch. 5/8/11/13; remaining regional chapters can inherit the same pattern.
+- [~] Broaden Latin American treatment of Central America and the Caribbean. CAFTA-DR / Caribbean comparative note in Ch. 5 (Dry Corridor already in body).
+- [~] Broaden South Asian treatment beyond India and Bangladesh. Pakistan comparative note + existing Sri Lanka/SAARC material in Ch. 8.
+- [~] Broaden MENA treatment beyond the GCC and Syria. Maghreb/Eastern Mediterranean note in Ch. 11; conflict MENA deferred to Ch. 12.
+- [~] Add proportionate treatment of francophone West Africa, Central Africa, Ethiopia, Sudan, and current conflict/displacement cases. Francophone/Ethiopia note in Ch. 13; Sudan via Ch. 12.
+- [x] Review whether Oceania and Central Asia need a dedicated comparative box or an explicit scope note. Explicit scope note already in `preface_pathways.md`.
 
 ### P3. Prose and Structure
 
 - [~] Cut repeated framing and chapter conclusions by approximately 15–20%. Trimmed conclusions in Ch. 4–16 regional/synthesis set (plus earlier Ch. 6/8/11).
-- [~] Reduce repeated use of “institutional thickness,” “binding constraint,” “spatial implication,” and formulaic transitions. Conclusion trims removed much formulaic closing prose; in-body phrase audit remains.
+- [~] Reduce repeated use of “institutional thickness,” “binding constraint,” “spatial implication,” and formulaic transitions. Diversified filler uses across Ch. 3-B/4/6/8–10/12–16; keep conceptual “institutional thickness” where it is the framework term (esp. Ch. 2/12).
 - [ ] Separate theory, evidence, illustration, and speculation visually.
 - [ ] Break long paragraphs and sentences where argument structure is obscured.
 - [ ] Reconcile pathway workload estimates with actual chapter length.
-- [ ] Standardize discussion-question counts or remove the numerical promise.
+- [x] Standardize discussion-question counts or remove the numerical promise. Preface now says “typically five to eight”; chapter sets standardized to six questions each.
 
 ### P4. Figures and Tables
 
@@ -201,8 +201,8 @@ The manuscript is ready for external review when:
 ### P5. Glossary, Index, and Cross-References
 
 - [ ] Replace chapter-only index locators with page or section anchors.
-- [ ] Prevent bibliography/glossary-only and ambiguous regex matches from generating index entries.
-- [ ] Add subentries and curated “see/see also” links.
+- [~] Prevent bibliography/glossary-only and ambiguous regex matches from generating index entries. `generate_index.py` now omits bibliography scanning and drops apparatus-only hits; regenerated `subject_index.md` (267 terms).
+- [~] Add subentries and curated “see/see also” links. Capstone see-also links added; fuller subentry pass still open.
 - [x] Add missing capstone terms: stranded regions, climate migration, digital sovereignty, Splinternet, just transition, and related concepts.
 - [ ] Audit notation and definitions across chapters, glossary, appendices, and labs.
 - [ ] Validate all internal links and chapter/lab references.
@@ -255,4 +255,7 @@ The manuscript is ready for external review when:
 | 2026-08-03 | A1 / A2 | Evidence boxes for Ruhr–Donbas, Pittsburgh–Detroit, LAC deindustrialization, Gulf diversification, African urbanization; policy dating in Ch. 4/7/11/16 | Text review |
 | 2026-08-03 | F1 / P2 | Deepened Ch. 6/8/11 claim ledger; figure vintage/method notes; trimmed Ch. 6 and 11 conclusions; qualified NASSCOM/NEOM/DVA figure labels | Text review |
 | 2026-08-03 | P2 / P5 | Expanded figure notes across Ch. 4–16; trimmed remaining regional/synthesis conclusions; added glossary terms (stranded regions, climate migration, digital sovereignty, Splinternet, just transition) | Text review |
+| 2026-08-03 | P3 / P5 / F1 | Phrase diversification (spatial implication / binding constraint fillers); index generator filters + see-also; regenerated subject index; ledgered Ch. 4/14/16 quantitative claims | `python scripts/generate_index.py` |
+| 2026-08-03 | P1 / F1 | Standardized discussion questions to six per chapter; softened preface count promise; ledgered Ch. 9/10 EU fiscal magnitudes | Question-count script; text review |
+| 2026-08-03 | P2 | Case-selection + comparative notes (CAFTA/Caribbean; Pakistan; Maghreb; francophone WA/Ethiopia); Oceania/Central Asia scope note confirmed | Text review |
 
