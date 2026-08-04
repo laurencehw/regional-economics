@@ -186,7 +186,7 @@ The manuscript is ready for external review when:
 - [~] Reduce repeated use of “institutional thickness,” “binding constraint,” “spatial implication,” and formulaic transitions. Diversified filler uses across Ch. 3-B/4/6/8–10/12–16; keep conceptual “institutional thickness” where it is the framework term (esp. Ch. 2/12).
 - [ ] Separate theory, evidence, illustration, and speculation visually.
 - [ ] Break long paragraphs and sentences where argument structure is obscured.
-- [ ] Reconcile pathway workload estimates with actual chapter length.
+- [x] Reconcile pathway workload estimates with actual chapter length. Added instructor workload note (~95–115k words / 17–21 pp/week); moved Pathway 1’s misplaced week-14 elective into Electives and gave Ch. 14/15 two-week slots.
 - [x] Standardize discussion-question counts or remove the numerical promise. Preface now says “typically five to eight”; chapter sets standardized to six questions each.
 
 ### P4. Figures and Tables
@@ -260,4 +260,5 @@ The manuscript is ready for external review when:
 | 2026-08-03 | P2 | Case-selection + comparative notes (CAFTA/Caribbean; Pakistan; Maghreb; francophone WA/Ethiopia); Oceania/Central Asia scope note confirmed | Text review |
 | 2026-08-03 | P4 | Gulf inset on Ch. 11 map; label-offset fixes Ch. 4/7/12; widen C-range maps; renumber Ch. 9 figures | Figure smoke tests ch04/07/11/12 |
 | 2026-08-03 | P5 | Notation pass: Ch. 14 structural gravity MR terms; Ch. 16 PPML+FE preferred form; glossary MR convention | Text cross-check vs Ch. 3-B / App. A |
+| 2026-08-03 | P1 | Pathway workload note + Pathway 1 schedule cleanup | Word-count audit of ch01–ch16 |
 

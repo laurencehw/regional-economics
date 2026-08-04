@@ -48,11 +48,10 @@ The manuscript's general information cutoff is **July 1, 2026**. Every contempor
 | 5–6 | Ch. 4 | North America: USMCA, border effects, left-behind regions | Lab 1 |
 | 7–8 | Ch. 5 | Latin America: middle-income trap, informality, premature deindustrialization | — |
 | 9–10 | Ch. 13 | Africa: urbanization without industrialization, night-lights, M-Pesa | Lab 6 |
-| 11 | Ch. 14 | AfCFTA: functional corridors, services protocol | — |
-| 12–13 | Ch. 15 | Climate synthesis: stranded regions, adaptive capacity | — |
-| 14 | Ch. 9 | Europe: Cohesion Funds, convergence machine (elective) | Lab 4 |
+| 11–12 | Ch. 14 | AfCFTA: functional corridors, services protocol | — |
+| 13–14 | Ch. 15 | Climate synthesis: stranded regions, adaptive capacity | — |
 
-**Electives:** Ch. 8 (India IT services), Ch. 12 (fragile states)
+**Electives:** Ch. 9 (Cohesion Funds / Lab 4), Ch. 8 (India IT services), Ch. 12 (fragile states)
 
 **Learning arc:** Students start with theory (why spatial inequality persists), learn measurement tools (convergence, spatial autocorrelation), study three regions at different development levels, and synthesize through the climate lens.
 
@@ -165,6 +164,8 @@ This book analyzes spatial economics at the regional and global scale — how re
 **Selecting a pathway.** The pathways are designed to be self-contained: each provides enough theoretical foundation (from Part I) to support the regional chapters it includes. Students who have taken a prior course in international trade can skip Ch. 3-B; students with spatial econometrics background can skim Ch. 3-A. The elective chapters allow instructors to add depth in areas that match their expertise or their students' interests.
 
 **Combining pathways.** A two-semester sequence might combine Pathway 1 (fall) with Pathway 2 (spring), or Pathway 3 (fall) with Pathway 4 (spring). In a two-semester sequence, Part I need only be taught once.
+
+**Workload.** Core pathways run about 95–115k words of chapter text (roughly 240–290 manuscript pages at ~400 words/page), or about 17–21 pages per week before labs and electives. Pathway 4–5 are the densest; Pathway 1 is the lightest. Chapter 14 (AfCFTA) and Chapter 10 (European disintegration) are the longest single-week regional assignments—pair them with lighter companion weeks or use selective sectioning. Lab weeks should budget the MVV (2–3 hours) or Extended (6–10 hours) versions explicitly so reading load does not stack with a full empirical project.
 
 **Lab flexibility.** Each lab has a Minimum Viable Version (2–3 hours, guided replication) and an Extended Version (6–10 hours, independent analysis). Courses with a quantitative focus should assign 4–5 labs; courses with a reading-and-discussion focus might assign 1–2 labs as optional extensions.
 
