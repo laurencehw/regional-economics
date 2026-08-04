@@ -54,13 +54,13 @@ The AfCFTA's Protocol on Trade Facilitation and the African Union's Programme fo
 
 ### The Gravity Model Evidence
 
-The gravity model provides the standard framework for measuring border effects. In its structural form (Anderson and Van Wincoop, 2003), bilateral trade between countries $$i$$ and $$j$$ is:
+The gravity model provides the standard framework for measuring border effects. In its structural form (Anderson and van Wincoop 2003; notation as in Chapter 3-B), bilateral trade from exporter $$i$$ to importer $$j$$ is:
 
 $$
-X_{ij} = \frac{Y_i \cdot Y_j}{Y_W} \cdot \left(\frac{t_{ij}}{P_i \cdot P_j}\right)^{1-\sigma}
+X_{ij} = \frac{Y_i \cdot E_j}{Y^W} \cdot \left(\frac{t_{ij}}{P_j \cdot \Pi_i}\right)^{1-\sigma}
 $$
 
-where $$Y_i$$ and $$Y_j$$ are GDPs, $$Y_W$$ is world GDP, $$t_{ij}$$ is the bilateral trade cost, $$P_i$$ and $$P_j$$ are multilateral resistance terms (each country's average trade cost with all partners), and $$\sigma$$ is the elasticity of substitution.
+where $$Y_i$$ is exporter output, $$E_j$$ is importer expenditure, $$Y^W$$ is world income, $$t_{ij}$$ is the bilateral trade cost, $$P_j$$ and $$\Pi_i$$ are inward and outward multilateral resistance, and $$\sigma$$ is the elasticity of substitution.
 
 Three coefficients are easily confused. A **contiguity** dummy identifies how much more or less two countries with a shared land border trade than otherwise comparable international pairs; it commonly predicts *more* trade because adjacent markets are close. An **international-border** indicator requires domestic flows and compares cross-border with within-country trade. A **corridor** indicator compares connected international pairs with other international pairs but is potentially endogenous because corridors are built where trade is already valuable. None of these coefficients, by itself, isolates customs delays or informal payments from every other bilateral friction.
 

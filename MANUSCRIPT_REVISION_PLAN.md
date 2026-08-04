@@ -204,7 +204,7 @@ The manuscript is ready for external review when:
 - [~] Prevent bibliography/glossary-only and ambiguous regex matches from generating index entries. `generate_index.py` now omits bibliography scanning and drops apparatus-only hits; regenerated `subject_index.md` (267 terms).
 - [~] Add subentries and curated “see/see also” links. Capstone see-also links added; fuller subentry pass still open.
 - [x] Add missing capstone terms: stranded regions, climate migration, digital sovereignty, Splinternet, just transition, and related concepts.
-- [ ] Audit notation and definitions across chapters, glossary, appendices, and labs.
+- [~] Audit notation and definitions across chapters, glossary, appendices, and labs. Aligned Ch. 14 gravity MR terms to $$P_j,\Pi_i$$; Ch. 16 now states PPML+FE as preferred; glossary MR notation note added.
 - [ ] Validate all internal links and chapter/lab references.
 
 ### P6. External Validation
@@ -259,4 +259,5 @@ The manuscript is ready for external review when:
 | 2026-08-03 | P1 / F1 | Standardized discussion questions to six per chapter; softened preface count promise; ledgered Ch. 9/10 EU fiscal magnitudes | Question-count script; text review |
 | 2026-08-03 | P2 | Case-selection + comparative notes (CAFTA/Caribbean; Pakistan; Maghreb; francophone WA/Ethiopia); Oceania/Central Asia scope note confirmed | Text review |
 | 2026-08-03 | P4 | Gulf inset on Ch. 11 map; label-offset fixes Ch. 4/7/12; widen C-range maps; renumber Ch. 9 figures | Figure smoke tests ch04/07/11/12 |
+| 2026-08-03 | P5 | Notation pass: Ch. 14 structural gravity MR terms; Ch. 16 PPML+FE preferred form; glossary MR convention | Text cross-check vs Ch. 3-B / App. A |
 

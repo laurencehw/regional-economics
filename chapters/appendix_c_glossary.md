@@ -78,7 +78,7 @@
 
 **Mode 4 (Presence of natural persons).** Services trade where individual service providers temporarily move to the consumer's country. Examples: consulting engagements, construction workers, nurses. Ch. 2.
 
-**Multilateral resistance.** The Anderson and van Wincoop (2003) insight that bilateral trade depends not only on bilateral trade costs but on each country's trade costs with all other partners. A country that is remote from all partners faces high multilateral resistance, which makes any given bilateral trade cost less deterrent. Ch. 3-B, Appendix A.
+**Multilateral resistance.** The Anderson and van Wincoop (2003) insight that bilateral trade depends not only on bilateral trade costs but on each country's trade costs with all other partners. A country that is remote from all partners faces high multilateral resistance, which makes any given bilateral trade cost less deterrent. Book notation (Head–Mayer convention): $$P_j$$ = inward (importer) resistance, $$\Pi_i$$ = outward (exporter) resistance. Ch. 3-B, Appendix A.
 
 **Negative list.** A listing approach in trade agreements where all sectors are liberalized unless specifically excluded. More liberalizing than positive list. Used by USMCA, CPTPP. Ch. 2, Ch. 16.
 

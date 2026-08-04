@@ -275,13 +275,17 @@ Figure 16.3 presents the services gravity estimates from Lab 7, comparing distan
 
 *Source: Lab 7 pipeline / author calculation from WTO BOP services and CEPII gravity variables. Structural PPML with exporter/importer FE; see Lab 7 README.*
 
-The gravity model for services trade — deployed in Lab 7's `gravity_services_scaffold.py` — extends the goods-trade gravity framework of Chapter 3-B to bilateral services flows. The basic specification is identical:
+The gravity model for services trade — deployed in Lab 7's `gravity_services_scaffold.py` — extends the goods-trade gravity framework of Chapter 3-B to bilateral services flows. The textbook OLS-in-logs form below is a pedagogical baseline only; Lab 7's preferred estimator is structural PPML with exporter and importer fixed effects (which absorb size and multilateral resistance):
 
 $$
 \ln(X_{ij}) = \beta_0 + \beta_1 \ln(GDP_i) + \beta_2 \ln(GDP_j) + \beta_3 \ln(d_{ij}) + \gamma Z_{ij} + \varepsilon_{ij}
 $$
 
-where $$X_{ij}$$ is bilateral services trade from country $$i$$ to country $$j$$, $$d_{ij}$$ is distance, and $$Z_{ij}$$ is a vector of institutional and cultural variables (common language, colonial ties, shared legal origin, regional trade agreement membership). The key innovation for services is the inclusion of the OECD Services Trade Restrictiveness Index (STRI) — a composite measure of regulatory barriers to services trade across specific sectors (financial services, telecommunications, professional services, digital services, transport). The STRI ranges from 0 (completely open) to 1 (completely closed) and is computed separately for each country-sector pair, allowing researchers to estimate the tariff-equivalent trade cost of services regulation.
+$$
+X_{ij} = \exp\!\big(\alpha_i + \gamma_j + \beta_3 \ln(d_{ij}) + \boldsymbol{\delta}'\mathbf{Z}_{ij}\big) + u_{ij}
+$$
+
+where $$X_{ij}$$ is bilateral services trade from country $$i$$ to country $$j$$, $$d_{ij}$$ is distance, and $$\mathbf{Z}_{ij}$$ is a vector of institutional and cultural variables (common language, colonial ties, shared legal origin, regional trade agreement membership). The key innovation for services is the inclusion of the OECD Services Trade Restrictiveness Index (STRI) — a composite measure of regulatory barriers to services trade across specific sectors (financial services, telecommunications, professional services, digital services, transport). The STRI ranges from 0 (completely open) to 1 (completely closed) and is computed separately for each country-sector pair, allowing researchers to estimate the tariff-equivalent trade cost of services regulation.
 
 Kimura and Lee (2006) and Head, Mayer, and Ries (2009) established two empirical regularities that define the services gravity literature. First, the distance elasticity for services trade is often larger in absolute value than for goods trade — a counterintuitive finding given that services delivered digitally have zero transport costs. The explanation is that distance proxies for institutional and cultural barriers (time zone differences, legal system compatibility, language similarity, trust) that matter more for services than for goods. Second, language, colonial ties, and regulatory similarity have substantially larger effects on services trade than on goods trade, confirming that institutional distance is the dominant friction in services markets.
 
