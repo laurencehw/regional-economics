@@ -14,6 +14,10 @@ This is not a shipping anomaly. It is a condensed expression of Africa's fundame
 
 The African Continental Free Trade Area, which entered implementation in January 2021, is the most ambitious attempt to fix this. With 54 signatories, 1.4 billion people, and $3.4 trillion in combined GDP (AfCFTA Secretariat 2023), it is the world's largest free trade area by membership. It is also the most complex trade agreement ever attempted, because it must nest within -- and partially supersede -- eight existing Regional Economic Communities, each with its own tariff schedules, rules of origin, and institutional architecture.
 
+{% hint style="info" %}
+**Case selection.** The Northern Corridor is the canonical reform case; South Africa–SADC, Kenya–EAC, and Nigeria–ECOWAS illustrate asymmetric regional hegemony. AfCFTA legal architecture is continental, but empirical claims prioritize corridors with measurable transit-time reforms rather than uniform coverage of all 54 members.
+{% endhint %}
+
 ---
 
 {% hint style="info" %}

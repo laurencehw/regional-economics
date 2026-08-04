@@ -168,12 +168,12 @@ The manuscript is ready for external review when:
 
 - [~] Label each empirical item as published evidence, author calculation, lab output, synthetic illustration, preliminary result, or hypothesis. Ch. 6/8/11 figure notes and Lab 2 evidence status now distinguish illustration vs author calculation.
 - [~] Add uncertainty and sample/specification notes to all author calculations. Started on Ch. 6/8/11 figures and Lab 2 share specs.
-- [~] Add evidence-strength tables where competing findings are central. Added for Cohesion Policy (Ch. 9) and African urbanization (Ch. 13).
+- [~] Add evidence-strength tables where competing findings are central. Added for Cohesion (Ch. 9), premature deindustrialization (Ch. 5), Gulf diversification (Ch. 11), and African urbanization (Ch. 13).
 - [~] Ensure calibrated figures cannot be mistaken for reproduced data. Explicit “illustrative / not exact reproduction” notes on Ch. 6 and 8 charts.
 
 ### P2. Regional Balance
 
-- [~] Expand case-selection rationale in every regional part. Added selection notes in Ch. 5/8/11/13; remaining regional chapters can inherit the same pattern.
+- [x] Expand case-selection rationale in every regional part. Selection notes now in Ch. 4–8 and 10–14.
 - [~] Broaden Latin American treatment of Central America and the Caribbean. CAFTA-DR / Caribbean comparative note in Ch. 5 (Dry Corridor already in body).
 - [~] Broaden South Asian treatment beyond India and Bangladesh. Pakistan comparative note + existing Sri Lanka/SAARC material in Ch. 8.
 - [~] Broaden MENA treatment beyond the GCC and Syria. Maghreb/Eastern Mediterranean note in Ch. 11; conflict MENA deferred to Ch. 12.
@@ -185,7 +185,7 @@ The manuscript is ready for external review when:
 - [~] Cut repeated framing and chapter conclusions by approximately 15–20%. Trimmed conclusions in Ch. 4–16 regional/synthesis set (plus earlier Ch. 6/8/11).
 - [~] Reduce repeated use of “institutional thickness,” “binding constraint,” “spatial implication,” and formulaic transitions. Diversified filler uses across Ch. 3-B/4/6/8–10/12–16; keep conceptual “institutional thickness” where it is the framework term (esp. Ch. 2/12).
 - [ ] Separate theory, evidence, illustration, and speculation visually.
-- [ ] Break long paragraphs and sentences where argument structure is obscured.
+- [~] Break long paragraphs and sentences where argument structure is obscured. Split densest OCA and people-vs-places blocks in Ch. 9–10; further passes remain.
 - [x] Reconcile pathway workload estimates with actual chapter length. Added instructor workload note (~95–115k words / 17–21 pp/week); moved Pathway 1’s misplaced week-14 elective into Electives and gave Ch. 14/15 two-week slots.
 - [x] Standardize discussion-question counts or remove the numerical promise. Preface now says “typically five to eight”; chapter sets standardized to six questions each.
 
@@ -262,4 +262,5 @@ The manuscript is ready for external review when:
 | 2026-08-03 | P5 | Notation pass: Ch. 14 structural gravity MR terms; Ch. 16 PPML+FE preferred form; glossary MR convention | Text cross-check vs Ch. 3-B / App. A |
 | 2026-08-03 | P1 | Pathway workload note + Pathway 1 schedule cleanup | Word-count audit of ch01–ch16 |
 | 2026-08-03 | P1/P4/P5 | Evidence-strength tables (Ch. 9/13); B-range map polish (9/13–15); internal-ref auditor; Ch. 16 table intro | Figure smoke ch09/13/14/15; `audit_internal_refs.py` clean |
+| 2026-08-03 | P2/P1/P3 | Case-selection notes Ch. 4/6/7/10/12/14; evidence tables Ch. 5/11; long-paragraph breaks Ch. 9–10 | Text review |
 

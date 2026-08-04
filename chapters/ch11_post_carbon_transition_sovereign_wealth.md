@@ -19,7 +19,15 @@ The question for regional economics is not whether NEOM will succeed -- predicti
 This chapter examines the spatial economics of resource dependence and the diversification strategies MENA states have adopted. The Gulf states represent one pole -- economies with the resources to attempt diversification at unmatched scale. Whether sovereign wealth can substitute for organic institutional development is the open question; competing constraints include Dutch Disease and dollar pegs, kafala labor segmentation, political risk, and the difference between free-zone enclaves and broad-based private-sector upgrading. The other pole is grimmer: what becomes of spatial economies when institutions collapse entirely? Chapter 12 turns to fragile and conflict-affected states.
 
 {% hint style="info" %}
-**Evidence and alternatives (Gulf diversification).** Mega-projects and SWF domestic investment are treated as spatial policy instruments under resource dependence, not as proven substitutes for broad-based private-sector upgrading. Competing constraints — Dutch Disease and dollar pegs, kafala labor segmentation, political-risk premia, and enclave free-zone strategies — can generate “diversification on paper” (lower merchandise HHI, higher non-oil GDP shares) without tradable-sector competitiveness. SWF AUM and project announcements below are dated to the July 1, 2026 cutoff unless a different vintage is stated.
+**Evidence and alternatives (Gulf diversification).** Mega-projects and SWF domestic investment are treated as spatial policy instruments under resource dependence, not as proven substitutes for broad-based private-sector upgrading. SWF AUM and project announcements below are dated to the July 1, 2026 cutoff unless a different vintage is stated.
+
+| Claim | Key sources | Design | Strength | Caveat |
+|---|---|---|---|---|
+| Hydrocarbon rents weaken tax–accountability link | Beblawi and Luciani (1987); IMF tax notes | Institutional theory + fiscal descriptives | Strong as framework | Pre-VAT Gulf was never literally tax-free |
+| Dollar pegs amplify Dutch Disease real appreciation | IMF REER estimates; peg regimes | Macro mechanism | Moderate | Hard to isolate from spending cycles |
+| Dubai hub model = successful services diversification | Dubai Statistics Center; hub case narrative | Single-city case | Suggestive / not easily portable | Selection on governance and first-mover aviation |
+| Mega-projects create self-sustaining agglomeration | Vision 2030 / PIF announcements | Policy design, not outcome data | Weak / speculative | Announcements ≠ realized clusters |
+| Merchandise HHI fall = true diversification | Lab 5 / chapter HHI exercises | Descriptive indices | Weak alone | Misses services; petroleum downstream counts as “diverse” |
 {% endhint %}
 
 ---
